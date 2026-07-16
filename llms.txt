@@ -1,0 +1,49 @@
+# Prof. Aleks Farseev
+
+> Aleks Farseev (Aleksandr Farseev, 法信夫) is the Founder & CEO of SOMIN.ai, a Guest Professor in AI at NUS and INSEAD, an award-winning AI researcher (h-index 23 on Google Scholar, 30+ peer-reviewed papers), an international keynote speaker, and a professional accordionist. He is based in Singapore, with a presence in London and Hong Kong.
+
+Aleks earned his Ph.D. in Computer Science from the National University of Singapore, where his research pioneered multi-view user profiling — synthesising fragmented social-network signals into predictive models of human behaviour. He now leads SOMIN.ai, a generative-AI platform for marketers, and researches explainable generative AI (tackling LLM hallucination and opacity). He is a Marketing & Advertising Community Leader and columnist at the Forbes Technology Council, and the founder of the Accordion Singapore community.
+
+## Key facts
+- Full name: Aleksandr "Aleks" Farseev (Chinese name: 法信夫)
+- Role: Founder & CEO of SOMIN.ai
+- Academia: Guest Professor at NUS and INSEAD; Research Professor at ITMO University; Faculty at Singapore University of Social Sciences (SUSS)
+- Research areas: multi-view user profiling, multimodal sensor fusion, cross-network recommendation, generative-AI explainability
+- Scholarship: h-index 23 (Google Scholar); 30+ peer-reviewed publications (ACM Multimedia, WWW, SIGIR, WSDM, AAAI); named inventor on a filed US patent for automated insight generation using LLMs
+- Awards: Gartner Cool Vendor — AI for Marketing (2020); Echelon Top 10 Startups (e27, 2025); SBR National Business Award (2022); Web Science Trust Person of the Year
+- Music: professional accordionist; founder of Accordion Singapore; violin-and-accordion duo (A&A Music Academy) with Prof. Alexander Souptel; 500+ performances since 1990
+- Faith: APAC / Southeast Asia Ambassador for the Faith Driven Entrepreneur movement; SOMIN.ai is part of DMV Redemptive Labs
+- Languages: English, Russian, Chinese
+- Location: Singapore · London · Hong Kong
+- Contact: a@somin.ai · +65 9122 7009
+
+## Profiles
+- [Google Scholar](https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en): publications and citation metrics (h-index 23)
+- [LinkedIn](https://www.linkedin.com/in/aiprof/): professional profile
+- [Forbes Technology Council](https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/): columns and author profile
+- [ACM Digital Library](https://dl.acm.org/profile/99658727991): peer-reviewed publications and author profile
+- [e27](https://e27.co/user/farseev/): Aleks's startup and marketing column
+- [Crunchbase](https://www.crunchbase.com/person/aleks-farseev): founder profile
+
+## Ventures
+- [SOMIN.ai](https://somin.ai/): generative-AI marketing platform. Capabilities span audience targeting, competitor analytics, generative content and influencer discovery, with predictions anchored in industry-verified data on Meta and Google. Certified Google ISV; Meta Llama Incubator (APAC).
+
+## Music
+- [Accordion Singapore / A&A Music Academy](https://accordion.sg/): Singapore's premier violin-and-accordion duo and music school; performances, weddings and lessons.
+
+## Talks and keynotes
+- [INSEAD lecture: How AI Cut Marketing Costs for a Beef Brand](https://www.youtube.com/watch?v=gfq1emHjvMQ)
+- [From 6 Weeks to 13 Minutes: Pitching SOMIN AI at ATxSG 2026](https://www.youtube.com/watch?v=xp1uRlQzRfw)
+- [The Future of Generative AI in Marketing Communications (DMCKL 2025)](https://www.youtube.com/watch?v=oYNUePziK1o)
+- [ACM Multimedia 2025 — Industry Expert Talk](https://acmmm2025.org/industry-expert-talks/)
+
+## Selected publications
+- MindFuse: Towards GenAI Explainability in Marketing Strategy Co-Creation (ACM MM 2025)
+- Against Opacity: Explainable AI and LLMs for Effective Digital Advertising (ACM MM 2023)
+- SoMonitor: Explainable Marketing Data Processing & Analysis with LLMs (arXiv 2024)
+- Cross-Domain Recommendation via Clustering on Multi-Layer Graphs (SIGIR 2017)
+
+## Faith
+- [Faith Driven Singapore](https://faithdriven.sg/): Christ-following entrepreneur community (Aleks is APAC/SEA Ambassador)
+- [Salt&Light feature](https://saltandlight.sg/business/how-a-child-like-prayer-for-ducks-laid-the-faith-foundation-for-an-ai-start-up/): Aleks's story of faith and entrepreneurship
+- [Orthodox Singapore](https://orthodox.sg/): Aleks is part of Singapore's Orthodox Christian community

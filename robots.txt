@@ -1,0 +1,59 @@
+# robots.txt — Prof. Aleks Farseev (https://aleksfarseev.com/)
+# Personal site of the Founder & CEO of SOMIN.ai. Search indexing and
+# AI citation are welcome. Replace the domain below with your live domain.
+
+# --- Standard search engines: allow everything ---
+User-agent: *
+Allow: /
+
+# --- AI / LLM crawlers: explicitly opted IN (Generative Engine Optimization) ---
+# These tokens control use for AI answers, grounding and training. Listing them
+# with "Allow: /" signals that Aleks WANTS to be discoverable and cited by AI.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# --- Sitemap ---
+Sitemap: https://aleksfarseev.com/sitemap.xml
