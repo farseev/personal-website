@@ -48,3 +48,35 @@ NOTES
 - To update the copyright year or any content, edit index.html directly.
 - Confirm the exact Google Scholar h-index on the live profile (currently shown as 23);
   it is a one-value edit in index.html and llms.txt if it needs changing.
+
+============================================================
+UPDATE (2026-08) — favicon, Faith journey, live Scholar
+============================================================
+1) GOOGLE SEARCH FAVICON FIX
+   The old icon was a 32px PNG + a data-URI SVG — below Google's 48px
+   minimum, so search results rendered a tiny/blurry mark. Replaced with
+   a redesigned AF monogram that fills the tile, provided at multiples of
+   48px (favicon-48/96/192/512.png), a real favicon.ico and favicon.svg,
+   plus site.webmanifest. index.html now references crawlable, root-
+   absolute icons (/favicon.ico, /favicon.svg, /favicon-96.png,
+   /favicon-192.png). After deploy, request re-indexing in Google Search
+   Console; the larger favicon can take a crawl cycle or two to appear.
+
+2) FAITH JOURNEY (now ~1/3 of the page)
+   The Faith section is expanded into a full 11-chapter journey (#faith),
+   a "people who said yes" grid (Henry Kaestner, Aidan Chan, Yuh Tyng
+   Hsiao) and a "Come build with us" join card with the faithdriven.sg QR
+   and the Sept 18, 2026 watch party. Styled entirely in the SOMIN teal
+   system (per the SOMIN brand guideline). Portraits are embedded (base64),
+   processed to a teal-tinted duotone — no image folder required.
+
+3) LIVE GOOGLE SCHOLAR (browser-only, no backend)
+   The publications section now fetches the public Google Scholar profile
+   (user ZJW7F18AAAAJ) live from the visitor's browser via public CORS
+   proxies, parses it client-side, and renders SOMIN-styled cards plus
+   live citation / h-index / i10-index metrics (the h-index also updates
+   the "Impact at a glance" stat). If every proxy is unreachable it falls
+   back to the curated list below (which is also what search crawlers and
+   no-JS visitors see). To point it at a different profile, change USER_ID
+   in the Scholar <script> near the end of index.html. Public proxies can
+   rate-limit; the curated fallback guarantees the section is never empty.

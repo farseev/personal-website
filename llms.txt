@@ -44,6 +44,7 @@ Aleks earned his Ph.D. in Computer Science from the National University of Singa
 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs (SIGIR 2017)
 
 ## Faith
+- Aleks is the APAC / Southeast Asia Ambassador for the Faith Driven Entrepreneur movement and the founder of its Singapore chapter (Faith Driven Singapore), now 200+ members. The chapter began with an invitation from FDE co-founder Henry Kaestner to "start one here"; it has since spread to Taipei, with London (Meta's office) and Kenya launching next. Co-builders include Aidan Chan and Yuh Tyng Hsiao.
 - [Faith Driven Singapore](https://faithdriven.sg/): Christ-following entrepreneur community (Aleks is APAC/SEA Ambassador)
 - [Salt&Light feature](https://saltandlight.sg/business/how-a-child-like-prayer-for-ducks-laid-the-faith-foundation-for-an-ai-start-up/): Aleks's story of faith and entrepreneurship
 - [Orthodox Singapore](https://orthodox.sg/): Aleks is part of Singapore's Orthodox Christian community
