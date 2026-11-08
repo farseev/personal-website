@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Serangan Distilasi: Arti Model AI Tiruan bagi Anda | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Lembaga-lembaga AS menyebut enam perusahaan AI Tiongkok dalam sebuah advisori tentang distilasi, dan Anthropic menyatakan pertahanannya memangkas data yang dipanen sebesar 90 hingga 99%. Apa artinya bagi pembeli AI." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Serangan Distilasi: Arti Model AI Tiruan bagi Anda | Prof. Aleks Farseev" />
+<meta property="og:description" content="Lembaga-lembaga AS menyebut enam perusahaan AI Tiongkok dalam sebuah advisori tentang distilasi, dan Anthropic menyatakan pertahanannya memangkas data yang dipanen sebesar 90 hingga 99%. Apa artinya bagi pembeli AI." />
+<meta property="og:url" content="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulasi dan keamanan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Serangan Distilasi: Arti Model AI Tiruan bagi Anda | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Lembaga-lembaga AS menyebut enam perusahaan AI Tiongkok dalam sebuah advisori tentang distilasi, dan Anthropic menyatakan pertahanannya memangkas data yang dipanen sebesar 90 hingga 99%. Apa artinya bagi pembeli AI." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/","headline":"Serangan Distilasi: Arti Model AI Tiruan bagi Anda","description":"Lembaga-lembaga AS menyebut enam perusahaan AI Tiongkok dalam sebuah advisori tentang distilasi, dan Anthropic menyatakan pertahanannya memangkas data yang dipanen sebesar 90 hingga 99%. Apa artinya bagi pembeli AI.","image":"https://farseev.com/og-image.png","inLanguage":"id","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/id/blog/#blog"},"articleSection":"Regulasi dan keamanan","about":{"@type":"Thing","name":"CISA, NSA, dan FBI menerbitkan advisori tentang distilasi model AI AS berskala industri; Anthropic melaporkan pertahanan antidistilasi yang baru"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"Apa itu serangan distilasi AI?","acceptedAnswer":{"@type":"Answer","text":"Serangan ini adalah kampanye terselubung berskala besar yang mengekstraksi kemampuan sebuah model dengan mengajukan kueri kepadanya, sering kali melalui jaringan akun palsu, lalu menggunakan keluarannya untuk melatih model lain tanpa izin pengembang aslinya."}},{"@type":"Question","name":"Perusahaan mana saja yang disebut dalam advisori AS?","acceptedAnswer":{"@type":"Answer","text":"Menurut laporan Help Net Security, advisori CISA, NSA, dan FBI menyebut DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun, dan Z.AI. Laporan itu tidak menyertakan tanggapan dari perusahaan-perusahaan tersebut."}},{"@type":"Question","name":"Apakah distilasi model selalu buruk?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Distilasi adalah teknik standar untuk melatih model yang lebih kecil dan lebih murah dari model yang lebih besar. Masalahnya adalah ekstraksi tanpa izin dari model milik pihak lain, yang memunculkan pertanyaan tentang persetujuan, pengaman, dan asal-usul."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://farseev.com/id/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/id/blog/"},{"@type":"ListItem","position":3,"name":"Serangan Distilasi: Arti Model AI Tiruan bagi Anda","item":"https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/id/","jobTitle":"Pendiri & CEO SOMIN.ai; Guest Professor bidang AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/id/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/id/#about">Tentang</a><a href="/id/#research">Riset</a><a href="/id/blog/" aria-current="page">Berita AI</a><a href="/id/#talks">Ceramah</a><a href="/id/#connect">Kontak</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-distillation-attacks-cisa-advisory/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-distillation-attacks-cisa-advisory/">Tiếng Việt</option><option value="id" lang="id" selected>Bahasa Indonesia</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/id/">Beranda</a></li><li><a href="/id/blog/">Berita AI</a></li><li aria-current="page">Serangan Distilasi: Arti Model AI Tiruan bagi Anda</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Regulasi dan keamanan</p>
+      <h1 class="h-display">Serangan Distilasi: Arti Model AI Tiruan bagi Anda</h1>
+      <p class="lead">Lembaga-lembaga AS menyebut enam perusahaan AI Tiongkok dalam sebuah advisori tentang distilasi, dan Anthropic menyatakan pertahanannya memangkas data yang dipanen sebesar 90 hingga 99%. Apa artinya bagi pembeli AI.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Beritanya: CISA, NSA, dan FBI menerbitkan advisori tentang distilasi model AI AS berskala industri; Anthropic melaporkan pertahanan antidistilasi yang baru (<time datetime="2026-10-12">12 Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 menit baca</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>"Distilasi" dulunya kata yang sopan dalam machine learning. Istilah ini menggambarkan pelatihan model kecil untuk meniru model besar, sebuah teknik yang standar dan berguna. Pada September dan Oktober 2026, istilah ini menjadi isu keamanan dan perdagangan. Jika Anda membeli atau membangun AI untuk pemasaran, Anda perlu memahami kedua maknanya.</p>
+<h2>Apa yang terjadi</h2>
+<p>Pada awal September, CISA, NSA, dan FBI menerbitkan advisori bersama tentang apa yang mereka sebut distilasi pengetahuan berskala industri oleh perusahaan AI yang berbasis di Tiongkok. Menurut <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">laporan Help Net Security tentang advisori tersebut</a>, lembaga-lembaga itu menyebut DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun, dan Z.AI, dan menyatakan bahwa perusahaan-perusahaan itu telah mengekstraksi miliaran token melalui jutaan permintaan ke model frontier AS setidaknya sejak akhir 2024. Advisori tersebut mencantumkan sinyal deteksi, seperti penggunaan sepanjang waktu tanpa jeda istirahat manusia dan kumpulan akun yang berperilaku terkoordinasi, serta merekomendasikan pemeriksaan identitas yang lebih ketat, pemantauan, dan berbagi informasi antarpenyedia AI. Laporan itu mencatat bahwa tidak ada pernyataan dari perusahaan-perusahaan yang disebut.</p>
+<p>Pada 12 Oktober Anthropic memaparkan responsnya sendiri. Dalam <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>, Anthropic menyatakan bahwa bukti awal menunjukkan metodenya telah mengurangi data yang dipanen oleh pelaku distilasi sekitar 90 hingga 99%. Langkah-langkahnya meliputi mencegah akun API yang lebih baru menyunting penalaran Claude sebelumnya, pengklasifikasi dua tahap yang dilatih pada upaya ekstraksi dengan tingkat positif palsu di bawah 0,1%, batasan dan larangan yang lebih ketat untuk upaya berulang, serta pengenaan biaya untuk permintaan yang diblokir oleh pengamannya. Anthropic menyatakan telah memblokir puluhan ribu akun yang terkait distilasi dan memperkirakan "permainan kucing dan tikus" yang berkelanjutan.</p>
+<h2>Mengapa ini penting</h2>
+<p>Ada dua alasan mengapa seorang pemasar perlu peduli pada pertarungan antarlab AI.</p>
+<p>Yang pertama adalah risiko rantai pasok. Jika sebuah model dibangun dengan menyalin perilaku model lain tanpa izin, Anda tidak tahu pengaman apa saja yang ikut terbawa. Tulisan Anthropic berargumen bahwa model hasil distilasi dapat mendekati kemampuan frontier sambil hadir dengan perlindungan yang lebih lemah. Ketika Anda memilih model untuk menjalankan layanan pelanggan atau membuat iklan, asal-usul adalah bagian dari kualitas.</p>
+<p>Yang kedua adalah hambatan bagi pengguna yang sah. Pertahanan ada biayanya. Anthropic mengakui bahwa sebagian pengembang harus memperbarui integrasinya, bahwa sebagian kecil permintaan yang wajar dapat terblokir, dan bahwa permintaan yang diblokir kini dapat dikenai biaya. Jika stack pemasaran Anda melakukan banyak panggilan otomatis ke API frontier, sebagian trafik itu dapat terlihat seperti kampanye ekstraksi. Bacalah kebijakan penyedia Anda sekarang, bukan setelah pipeline Anda rusak.</p>
+<h2>Apa kata riset saya</h2>
+<p>Distilasi bukanlah penjahatnya di sini. Jika dilakukan secara sah, distilasi adalah cara kita membuat AI terjangkau. Model besar mengajari model kecil; model kecil berjalan murah dalam skala besar. Saya berpendapat di Forbes bahwa dalam pemasaran, <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">teknik lebih penting daripada ukuran model</a>, dan distilasi adalah salah satu teknik tersebut.</p>
+<p>Yang mengubah gambaran adalah persetujuan dan transparansi. Karya saya tentang AI yang dapat dijelaskan berangkat dari prinsip sederhana: pemasar harus dapat melihat mengapa sebuah sistem merekomendasikan sesuatu. Dalam <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) kami memasangkan prediksi rasio klik-tayang dengan asisten LLM yang menjelaskan faktor-faktor pendorongnya. Dalam <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (pracetak 2024) kami menjelaskan penggabungan model kinerja yang dapat dijelaskan dengan LLM untuk analitik pesaing. Penjelasan hanya bermakna jika Anda tahu model apa itu dan dari mana asalnya.</p>
+<p>Ada pula ironi yang patut dicermati. Pertahanan yang dijelaskan Anthropic, yaitu meringkas atau membatasi akses ke penalaran lengkap model, membuat sistem sedikit kurang transparan bagi semua orang, karena penalaran itulah yang diincar para penyalin. Kompromi ini akan menentukan seberapa banyak penjelasan yang bersedia dibuka vendor AI. Pembeli sebaiknya meminta penjelasan yang dirancang untuk mereka, tentang data dan keputusan mereka, alih-alih jejak penalaran mentah.</p>
+<h2>Apa yang sebaiknya dilakukan pembeli AI pemasaran sekarang</h2>
+<ul><li>Tanyakan kepada setiap vendor model apa yang ada di balik produk mereka dan dari mana model itu berasal.</li><li>Periksa ketentuan API yang Anda panggil. Penggunaan otomatis bervolume tinggi adalah hal biasa dalam pemasaran; pastikan penggunaan Anda jelas sah, teridentifikasi, dan dalam batas.</li><li>Rencanakan pergantian model. Kebijakan, harga, dan akses dapat berubah dengan cepat. Jaga agar prompt, prosedur, dan set evaluasi tetap portabel.</li><li>Lakukan distilasi model Anda sendiri secara sah. Jika Anda membutuhkan model murah untuk tugas yang sempit, latih dengan data Anda sendiri atau dengan keluaran yang memang berlisensi untuk Anda gunakan.</li><li>Utamakan penjelasan keputusan daripada pembukaan bagian internal. Yang perlu Anda audit adalah mengapa sebuah rekomendasi dibuat untuk kampanye Anda.</li></ul>
+<p>Pertarungan distilasi adalah soal siapa yang boleh menyalin siapa. Bagi pemasar, ini pengingat bahwa "model yang mana?" kini merupakan pertanyaan tata kelola, bukan sekadar pertanyaan teknis.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Apa itu serangan distilasi AI?</summary><p>Serangan ini adalah kampanye terselubung berskala besar yang mengekstraksi kemampuan sebuah model dengan mengajukan kueri kepadanya, sering kali melalui jaringan akun palsu, lalu menggunakan keluarannya untuk melatih model lain tanpa izin pengembang aslinya.</p></details><details><summary>Perusahaan mana saja yang disebut dalam advisori AS?</summary><p>Menurut laporan Help Net Security, advisori CISA, NSA, dan FBI menyebut DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun, dan Z.AI. Laporan itu tidak menyertakan tanggapan dari perusahaan-perusahaan tersebut.</p></details><details><summary>Apakah distilasi model selalu buruk?</summary><p>Tidak. Distilasi adalah teknik standar untuk melatih model yang lebih kecil dan lebih murah dari model yang lebih besar. Masalahnya adalah ekstraksi tanpa izin dari model milik pihak lain, yang memunculkan pertanyaan tentang persetujuan, pengaman, dan asal-usul.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> adalah pendiri dan CEO SOMIN.ai serta Guest Professor bidang AI di NUS dan INSEAD. Riset peer-reviewed-nya mencakup user profiling multi-sumber, rekomendasi yang memperhitungkan kepribadian, dan AI yang dapat dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/id/">Tentang Aleks</a><a href="/id/#publications">Publikasi</a><a href="/id/blog/">Berita AI lainnya</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Baca terus</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Berita AI lainnya, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/id/blog/mas-ai-risk-management-guidelines/"><span class="meta">Regulasi dan keamanan · 7 Oktober 2026</span><h3>Pedoman Risiko AI MAS: Templat Berguna di Luar Perbankan</h3><p>MAS menerbitkan pedoman manajemen risiko AI bagi lembaga keuangan. Aturan inventaris dan pihak ketiganya menjadi templat yang baik bagi tim pemasaran.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulasi dan keamanan · 29 September 2026</span><h3>White House AI Accord dan Evaluator Independen</h3><p>Para pemimpin teknologi menandatangani kesepakatan sukarela Gedung Putih yang menjanjikan evaluator eksternal, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Iklan dan AI pemasaran · 29 Oktober 2026</span><h3>Q3 2026 WPP: Model Agensi di Bawah Tekanan AI</h3><p>WPP melaporkan penurunan pendapatan bersih like-for-like, sementara CEO-nya menyoroti permintaan layanan berbasis AI melalui WPP Open. Apa artinya bagi agensi.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, pembicara utama, dan akordeonis. Menjembatani riset mendalam dan pemasaran di dunia nyata, dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Jelajahi</h6>
+        <ul>
+          <li><a href="/id/">Beranda</a></li>
+          <li><a href="/id/blog/">Blog berita AI</a></li>
+          <li><a href="/id/#research">Riset</a></li>
+          <li><a href="/id/#publications">Publikasi</a></li>
+          <li><a href="/id/#connect">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opini adalah milik saya pribadi. Fakta berita ditautkan ke sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

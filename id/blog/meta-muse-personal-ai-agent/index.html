@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: Saat Pelanggan Anda Mengirim Agen | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta meluncurkan Muse, agen AI pribadi yang dapat memesan, berbelanja, dan bernegosiasi atas nama pengguna. Memasarkan kepada agen, bukan hanya kepada manusia, kini menjadi pertanyaan praktis." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: Saat Pelanggan Anda Mengirim Agen | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta meluncurkan Muse, agen AI pribadi yang dapat memesan, berbelanja, dan bernegosiasi atas nama pengguna. Memasarkan kepada agen, bukan hanya kepada manusia, kini menjadi pertanyaan praktis." />
+<meta property="og:url" content="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agen" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: Saat Pelanggan Anda Mengirim Agen | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta meluncurkan Muse, agen AI pribadi yang dapat memesan, berbelanja, dan bernegosiasi atas nama pengguna. Memasarkan kepada agen, bukan hanya kepada manusia, kini menjadi pertanyaan praktis." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: Saat Pelanggan Anda Mengirim Agen","description":"Meta meluncurkan Muse, agen AI pribadi yang dapat memesan, berbelanja, dan bernegosiasi atas nama pengguna. Memasarkan kepada agen, bukan hanya kepada manusia, kini menjadi pertanyaan praktis.","image":"https://farseev.com/og-image.png","inLanguage":"id","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/id/blog/#blog"},"articleSection":"Agen","about":{"@type":"Thing","name":"Meta meluncurkan Muse, agen AI pribadi untuk tugas sehari-hari, di AS"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Apa itu Meta Muse?","acceptedAnswer":{"@type":"Answer","text":"Muse adalah agen AI pribadi yang diluncurkan Meta pada 8 September 2026. Menurut Associated Press, Muse membantu tugas sehari-hari seperti penjadwalan dan belanja, dan Meta menyatakan Muse dapat membuka browser, mengisi formulir, dan bernegosiasi atas nama pengguna."}},{"@type":"Question","name":"Di mana Meta Muse tersedia?","acceptedAnswer":{"@type":"Answer","text":"Saat diluncurkan, Muse hanya tersedia di AS, bagi orang berusia 18 tahun ke atas, melalui aplikasi Muse tersendiri atau di dalam WhatsApp."}},{"@type":"Question","name":"Bagaimana merek sebaiknya bersiap menghadapi agen AI pribadi?","acceptedAnswer":{"@type":"Answer","text":"Dengan menerbitkan penawaran dan kebijakan yang jelas dan dapat dibaca mesin, menghapus pola desain manipulatif, menentukan sejak awal ketentuan mana yang dapat dinegosiasikan, dan mempertahankan kreatif yang kuat bagi manusia untuk saat pelanggan mengambil keputusan akhir."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://farseev.com/id/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/id/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: Saat Pelanggan Anda Mengirim Agen","item":"https://farseev.com/id/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/id/","jobTitle":"Pendiri & CEO SOMIN.ai; Guest Professor bidang AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/id/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/id/#about">Tentang</a><a href="/id/#research">Riset</a><a href="/id/blog/" aria-current="page">Berita AI</a><a href="/id/#talks">Ceramah</a><a href="/id/#connect">Kontak</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-muse-personal-ai-agent/">Tiếng Việt</option><option value="id" lang="id" selected>Bahasa Indonesia</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/id/">Beranda</a></li><li><a href="/id/blog/">Berita AI</a></li><li aria-current="page">Meta Muse: Saat Pelanggan Anda Mengirim Agen</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Agen</p>
+      <h1 class="h-display">Meta Muse: Saat Pelanggan Anda Mengirim Agen</h1>
+      <p class="lead">Meta meluncurkan Muse, agen AI pribadi yang dapat memesan, berbelanja, dan bernegosiasi atas nama pengguna. Memasarkan kepada agen, bukan hanya kepada manusia, kini menjadi pertanyaan praktis.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Beritanya: Meta meluncurkan Muse, agen AI pribadi untuk tugas sehari-hari, di AS (<time datetime="2026-09-08">8 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 menit baca</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Selama dua puluh tahun, pemasaran digital berasumsi bahwa ada seseorang di ujung funnel. Pada 8 September Meta meluncurkan Muse, agen AI pribadi yang dapat bertindak untuk orang itu: mengirim email, memesan perjalanan, mengisi formulir, dan, dalam kata-kata Meta, "bernegosiasi atas nama mereka". Orangnya masih ada. Namun makin sering, ada agen yang berdiri di antara mereka dan Anda.</p>
+<h2>Apa yang terjadi</h2>
+<p>Menurut <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">laporan Associated Press</a>, Muse adalah agen AI pribadi untuk tugas sehari-hari seperti jadwal dan belanja. Meta menyatakan bahwa begitu pengguna menyampaikan tujuan, Muse menyusun rencana yang dipersonalisasi, mengoordinasikan waktu dan sumber daya, serta memajukan pekerjaan itu secara mandiri. Contohnya berkisar dari mengirim email atau memesan perjalanan hingga menyusun rencana olahraga setahun atau mendirikan bisnis baru. Meta menyatakan Muse dapat membuka browser, mengisi formulir, dan bernegosiasi untuk pengguna.</p>
+<p>Muse tersedia bagi orang berusia 18 tahun ke atas, saat ini hanya di AS, melalui aplikasi Muse tersendiri atau di dalam WhatsApp. Meta menekankan keselamatan dan privasi serta menyatakan Muse berjalan di mesin virtual khusus yang aman yang menampung agen sekaligus data pengguna. AP mengaitkan peluncuran ini dengan esai Mark Zuckerberg tentang superintelligence pribadi, tempat ia menulis bahwa setiap orang akan memiliki "agen pribadi yang luar biasa mumpuni yang memahami Anda, tujuan Anda".</p>
+<h2>Mengapa ini penting</h2>
+<p>Ketika seseorang membandingkan tiga hotel, merek Anda punya kesempatan untuk memikatnya: sebuah foto, sebuah ulasan, sebuah perasaan. Ketika agen membandingkan tiga hotel atas nama orang tersebut, ia membaca fakta, kebijakan, dan harga yang terstruktur, dan mungkin tidak pernah "melihat" foto seperti manusia melihatnya. Negosiasi adalah bagian yang lebih radikal. Agen yang bernegosiasi tidak bereaksi terhadap banner kelangkaan.</p>
+<p>Distribusi juga penting. Muse berada di dalam WhatsApp, salah satu kanal perpesanan terpenting di Asia, Amerika Latin, dan Afrika. Untuk saat ini hanya tersedia di AS, tetapi agen pribadi yang tertanam di aplikasi perpesanan yang sudah digunakan banyak pelanggan kita bukanlah eksperimen ceruk.</p>
+<h2>Apa kata riset saya</h2>
+<p>Riset saya selalu tentang memahami manusia dari jejak digital mereka. Dalam <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) dan dalam <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017), yang menggabungkan unggahan media sosial dengan data sensor wearable untuk mempelajari profil kesehatan, kami menunjukkan bahwa menggabungkan sumber memberikan gambaran tentang seseorang yang jauh lebih kaya daripada satu sumber mana pun.</p>
+<p>Agen pribadi adalah versi puncak dari gagasan itu, dengan satu perbedaan besar: profilnya kini berada di agen milik pengguna, bukan di pengiklan. Muse dirancang untuk memahami tujuan pengguna dan bertindak berdasarkan tujuan itu. Hal itu menggeser keseimbangan informasi. Merek tidak lagi memprofilkan pelanggan untuk memutuskan apa yang akan ditampilkan. Agen pelangganlah yang memprofilkan merek untuk memutuskan apa yang akan diterima.</p>
+<p>Hal itu mengubah makna "personalisasi". Dalam karya kami tentang <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">rekomendasi konten berbasis kepribadian</a> (ACM Multimedia 2022), tujuannya adalah mencocokkan konten dengan sifat-sifat seseorang. Dengan agen di dalam siklus, Anda membutuhkan dua lapisan: penawaran yang jelas, faktual, dan dapat dibaca mesin yang dapat dievaluasi agen, serta kreatif yang ditujukan kepada manusia untuk saat orang itu menengok dan memutuskan. Pemasaran yang baik kepada agen akan tampak seperti dokumentasi yang baik. Pemasaran yang baik kepada manusia akan tetap tampak seperti penceritaan yang baik.</p>
+<p>Ada juga pertanyaan tanggung jawab yang saya pedulikan. Agen yang bernegosiasi atas nama pengguna harus setia kepada pengguna tersebut. Jika agen mulai menerima preferensi berbayar tanpa pengungkapan, kita akan membangun kembali bagian terburuk industri iklan di dalam perangkat lunak paling intim yang pernah digunakan manusia. Penekanan Meta pada privasi patut disambut baik; transparansi tentang pengaruh komersial atas keputusan agen akan sama pentingnya.</p>
+<h2>Apa yang sebaiknya dilakukan pemasar sekarang</h2>
+<ul><li>Buat penawaran Anda dapat dibaca mesin. Harga, ketersediaan, kebijakan pengembalian, waktu pengiriman, dan ketentuan harus eksplisit, konsisten, dan mudah diurai di situs dan feed Anda.</li><li>Hapus dark pattern. Penghitung waktu mundur dan biaya tersembunyi menjadi hambatan bagi agen dan masalah kepercayaan bagi manusia.</li><li>Bersiaplah untuk bernegosiasi. Tentukan sejak awal ketentuan mana yang fleksibel, seperti paket bundel, jendela pengiriman, atau keuntungan loyalitas, agar permintaan otomatis dapat memperoleh jawaban yang cepat dan konsisten.</li><li>Pertahankan momen manusia. "Ya" terakhir sering kali masih diucapkan manusia. Kisah merek, ulasan, dan kreatif Anda tetap penting pada tahap itu.</li><li>Cermati kanal perpesanan. Jika agen berada di dalam WhatsApp, penyiapan conversational commerce Anda akan makin penting.</li></ul>
+<p>Muse adalah satu produk di satu negara. Pola yang diwakilinya, yaitu pelanggan yang mendelegasikan, akan menyebar. Bangunlah untuk kedua audiens: agen yang membandingkan dan manusia yang memutuskan.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Apa itu Meta Muse?</summary><p>Muse adalah agen AI pribadi yang diluncurkan Meta pada 8 September 2026. Menurut Associated Press, Muse membantu tugas sehari-hari seperti penjadwalan dan belanja, dan Meta menyatakan Muse dapat membuka browser, mengisi formulir, dan bernegosiasi atas nama pengguna.</p></details><details><summary>Di mana Meta Muse tersedia?</summary><p>Saat diluncurkan, Muse hanya tersedia di AS, bagi orang berusia 18 tahun ke atas, melalui aplikasi Muse tersendiri atau di dalam WhatsApp.</p></details><details><summary>Bagaimana merek sebaiknya bersiap menghadapi agen AI pribadi?</summary><p>Dengan menerbitkan penawaran dan kebijakan yang jelas dan dapat dibaca mesin, menghapus pola desain manipulatif, menentukan sejak awal ketentuan mana yang dapat dinegosiasikan, dan mempertahankan kreatif yang kuat bagi manusia untuk saat pelanggan mengambil keputusan akhir.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> adalah pendiri dan CEO SOMIN.ai serta Guest Professor bidang AI di NUS dan INSEAD. Riset peer-reviewed-nya mencakup user profiling multi-sumber, rekomendasi yang memperhitungkan kepribadian, dan AI yang dapat dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/id/">Tentang Aleks</a><a href="/id/#publications">Publikasi</a><a href="/id/blog/">Berita AI lainnya</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Baca terus</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Berita AI lainnya, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/id/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Agen · 22 Oktober 2026</span><h3>Agent Skills Menjadi Netral Vendor: Mengapa Pemasar Perlu Peduli</h3><p>Anthropic menyumbangkan standar Agent Skills ke Agentic AI Foundation. Pengetahuan praktis yang tertulis dan portabel adalah persis yang dibutuhkan tim pemasaran dari agen AI.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/workday-c1-ai-agent-identity/"><span class="meta">Agen · 13 Oktober 2026</span><h3>Workday Membeli C1.ai: Agen Pemasaran Anda Juga Butuh Identitas</h3><p>Workday setuju membeli C1.ai, yang mengatur akses bagi manusia dan agen AI. Agen pemasaran yang menyentuh CRM dan akun iklan membutuhkan aturan yang sama.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/openai-agent-medicare-portal-australia/"><span class="meta">Agen · 24 September 2026</span><h3>Agen AI yang Tidak Mau Menerima Penolakan</h3><p>Perdana menteri Australia menyatakan bahwa agen riset OpenAI berhasil menembus blokir di portal statistik Medicare. Pelajaran bagi agen pemasaran adalah soal cakupan.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, pembicara utama, dan akordeonis. Menjembatani riset mendalam dan pemasaran di dunia nyata, dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Jelajahi</h6>
+        <ul>
+          <li><a href="/id/">Beranda</a></li>
+          <li><a href="/id/blog/">Blog berita AI</a></li>
+          <li><a href="/id/#research">Riset</a></li>
+          <li><a href="/id/#publications">Publikasi</a></li>
+          <li><a href="/id/#connect">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opini adalah milik saya pribadi. Fakta berita ditautkan ke sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

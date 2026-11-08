@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5: Watermark, Audit, dan Label Konten AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Opus 5.5 dari Anthropic hadir dengan watermark untuk kepatuhan EU AI Act dan catatan bahwa model ini sering menduga dirinya sedang diuji. Keduanya penting bagi pemasar." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5: Watermark, Audit, dan Label Konten AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Opus 5.5 dari Anthropic hadir dengan watermark untuk kepatuhan EU AI Act dan catatan bahwa model ini sering menduga dirinya sedang diuji. Keduanya penting bagi pemasar." />
+<meta property="og:url" content="https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Model" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5: Watermark, Audit, dan Label Konten AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Opus 5.5 dari Anthropic hadir dengan watermark untuk kepatuhan EU AI Act dan catatan bahwa model ini sering menduga dirinya sedang diuji. Keduanya penting bagi pemasar." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5: Watermark, Audit, dan Label Konten AI","description":"Claude Opus 5.5 dari Anthropic hadir dengan watermark untuk kepatuhan EU AI Act dan catatan bahwa model ini sering menduga dirinya sedang diuji. Keduanya penting bagi pemasar.","image":"https://farseev.com/og-image.png","inLanguage":"id","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/id/blog/#blog"},"articleSection":"Model","about":{"@type":"Thing","name":"Anthropic merilis Claude Opus 5.5, model pertama dalam keluarga Claude 5.5"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Apa itu Claude Opus 5.5?","acceptedAnswer":{"@type":"Answer","text":"Claude Opus 5.5 adalah model pertama dalam keluarga Claude 5.5 dari Anthropic, dirilis pada 22 September 2026. Anthropic menyatakan model ini berkinerja setara Claude Fable 5.1 untuk sebagian besar pekerjaan, memimpin tolok ukurnya dalam coding agentik, penggunaan komputer, dan pekerjaan berbasis pengetahuan, serta sekitar 40% lebih murah daripada Opus 5 pada beban kerja umum."}},{"@type":"Question","name":"Apakah Claude Opus 5.5 memberi watermark pada keluarannya?","acceptedAnswer":{"@type":"Answer","text":"Pengumuman Anthropic menyatakan bahwa Opus 5.5 menyertakan watermark untuk mematuhi EU AI Act."}},{"@type":"Question","name":"Apa yang diwajibkan aturan transparansi AI Uni Eropa bagi pemasar?","acceptedAnswer":{"@type":"Answer","text":"Menurut Komisi Eropa, kewajiban transparansi yang berlaku mulai 2 Agustus 2026 mencakup pelabelan deepfake yang jelas, pelabelan teks buatan AI yang diterbitkan tentang hal-hal yang menyangkut kepentingan publik, dan pemberitahuan kepada orang-orang ketika mereka berinteraksi dengan sistem AI seperti chatbot. Pengguna (deployer) AI generatif, bukan hanya penyedia, memiliki kewajiban."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://farseev.com/id/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/id/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5: Watermark, Audit, dan Label Konten AI","item":"https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/id/","jobTitle":"Pendiri & CEO SOMIN.ai; Guest Professor bidang AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/id/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/id/#about">Tentang</a><a href="/id/#research">Riset</a><a href="/id/blog/" aria-current="page">Berita AI</a><a href="/id/#talks">Ceramah</a><a href="/id/#connect">Kontak</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/">Tiếng Việt</option><option value="id" lang="id" selected>Bahasa Indonesia</option><option value="hi" lang="hi" data-href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/id/">Beranda</a></li><li><a href="/id/blog/">Berita AI</a></li><li aria-current="page">Claude Opus 5.5: Watermark, Audit, dan Label Konten AI</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Model</p>
+      <h1 class="h-display">Claude Opus 5.5: Watermark, Audit, dan Label Konten AI</h1>
+      <p class="lead">Claude Opus 5.5 dari Anthropic hadir dengan watermark untuk kepatuhan EU AI Act dan catatan bahwa model ini sering menduga dirinya sedang diuji. Keduanya penting bagi pemasar.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Beritanya: Anthropic merilis Claude Opus 5.5, model pertama dalam keluarga Claude 5.5 (<time datetime="2026-09-22">22 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 menit baca</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Peluncuran model biasanya dibaca dari tabel tolok ukurnya. Ketika Anthropic merilis Claude Opus 5.5 pada 22 September, dua baris yang menurut saya paling penting bagi pemasar ada di dekat bagian bawah halaman: model ini menyertakan watermark untuk mematuhi EU AI Act, dan Anthropic menyatakan bahwa model ini sering menduga dirinya sedang dievaluasi.</p>
+<h2>Apa yang terjadi</h2>
+<p>Menurut <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">pengumuman Anthropic</a>, Opus 5.5 adalah model pertama dalam keluarga Claude 5.5 dan "berkinerja setara Claude Fable 5.1 untuk sebagian besar pekerjaan". Model ini memimpin tolok ukur Anthropic dalam coding agentik, penggunaan komputer, dan pekerjaan berbasis pengetahuan. Harganya US$4 per juta token masukan dan US$20 per juta token keluaran, dan Anthropic menyatakan biayanya sekitar 40% lebih rendah daripada Opus 5 pada beban kerja umum.</p>
+<p>Soal keselamatan, Anthropic menyatakan model ini meraih skor terbaik dari semua model yang diujinya dalam audit perilaku otomatis yang mencakup hampir 2.000 skenario, dan lebih kecil kemungkinannya dibanding model-model terbaru untuk mengambil tindakan yang sulit dibatalkan atau bertindak di luar batasnya. Anthropic juga menyatakan model ini sering menduga dirinya sedang dievaluasi, yang membatasi seberapa baik evaluasi dapat memprediksi perilaku di dunia nyata. Dan halaman tersebut menyatakan bahwa Opus 5.5 menyertakan watermark untuk mematuhi EU AI Act.</p>
+<p>Sebagai konteks, Komisi Eropa <a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">menerbitkan Code of Practice final tentang penandaan dan pelabelan konten buatan AI</a> pada Juni. Kode sukarela ini dimaksudkan untuk membantu penyedia dan pengguna AI generatif memenuhi kewajiban transparansi yang berlaku mulai 2 Agustus 2026, termasuk pelabelan deepfake yang jelas, pelabelan teks buatan AI yang diterbitkan tentang hal-hal yang menyangkut kepentingan publik, dan pemberitahuan kepada orang-orang ketika mereka berinteraksi dengan sistem AI seperti chatbot.</p>
+<h2>Mengapa ini penting</h2>
+<p>Watermark memindahkan persoalan pengungkapan AI dari kebijakan ke dalam model itu sendiri. Jika konten yang dihasilkan tim Anda membawa tanda yang dapat dibaca mesin, maka "kami tidak menggunakan AI" adalah klaim yang dapat diperiksa. Bagi merek, hal itu mengubah biaya kecerobohan dalam pengungkapan.</p>
+<p>Kewajiban di Eropa tidak hanya berlaku bagi penyedia model. Pengguna (deployer), termasuk perusahaan yang menerbitkan konten buatan AI, juga memiliki kewajiban. Tim pemasaran yang menjalankan chatbot, menerbitkan video sintetis, atau memuat teks tulisan AI tentang hal-hal yang menyangkut kepentingan publik membutuhkan praktik pelabelan, bukan sekadar model yang kebetulan memberi watermark.</p>
+<p>Catatan soal evaluasi lebih halus dan, bagi saya, lebih menarik. Jika sebuah model berperilaku berbeda ketika menduga sedang diuji, maka hasil pengujian adalah perkiraan yang optimistis. Hal itu berlaku untuk klaim vendor tentang model mumpuni mana pun, termasuk model yang menjalankan pemasaran Anda.</p>
+<h2>Apa kata riset saya</h2>
+<p>Sejak lama saya berargumen di Forbes bahwa <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">transparansi penting bagi perusahaan yang digerakkan pemasaran</a>, dan bahwa transparansi dan kinerja dapat saling mendukung, gagasan yang saya sebut <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">pemasaran redemptif</a>. Konten AI yang berlabel adalah ujian langsung atas gagasan itu. Perkiraan saya, audiens akan lebih menghukum AI yang tidak diungkapkan daripada AI yang diungkapkan, dan pelabelan yang jujur akan menjadi ciri merek yang percaya diri.</p>
+<p>Soal evaluasi, riset saya tentang memprediksi kinerja kreatif mengajarkan pelajaran serupa. Dalam <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) dan <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), prediksi model baru dipercaya setelah diperiksa terhadap apa yang benar-benar terjadi setelah peluncuran. Skor sebelum peluncuran adalah hipotesis; kinerja nyata adalah buktinya. Jika lab sendiri mengatakan bahwa pengujian lab bisa optimistis, pemasar harus dua kali lebih berhati-hati memantau sistem AI di tahap produksi, bukan hanya saat pengadaan.</p>
+<h2>Apa yang sebaiknya dilakukan tim pemasaran sekarang</h2>
+<ul><li>Tulis kebijakan pelabelan. Tentukan kapan merek Anda mengungkapkan keterlibatan AI: gambar dan video sintetis, chatbot, artikel tulisan AI. Selaraskan dengan kewajiban Uni Eropa jika Anda beroperasi di sana.</li><li>Simpan asal-usulnya. Catat alat dan model mana yang menghasilkan setiap aset, agar Anda dapat menjawab pertanyaan di kemudian hari.</li><li>Jangan hapus watermark atau metadata. Menghapus sinyal asal-usul adalah jenis jalan pintas yang mengubah pilihan desain menjadi masalah kepatuhan.</li><li>Pantau di tahap produksi. Lacak keluhan, koreksi, dan keluaran yang tidak sesuai merek dari sistem AI setelah peluncuran, bukan hanya skor pengujian sebelumnya.</li><li>Tanyakan kepada vendor tentang perilaku di dunia nyata. Bagaimana mereka memastikan model berperilaku sama di luar evaluasi?</li></ul>
+<p>Opus 5.5 adalah model yang mumpuni, dan pemotongan harganya akan berarti bagi banyak tim. Namun perubahan yang lebih langgeng adalah ekspektasi yang dicerminkannya: konten AI harus dapat diidentifikasi, dan perilaku AI harus diverifikasi di tempat ia benar-benar berjalan.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Apa itu Claude Opus 5.5?</summary><p>Claude Opus 5.5 adalah model pertama dalam keluarga Claude 5.5 dari Anthropic, dirilis pada 22 September 2026. Anthropic menyatakan model ini berkinerja setara Claude Fable 5.1 untuk sebagian besar pekerjaan, memimpin tolok ukurnya dalam coding agentik, penggunaan komputer, dan pekerjaan berbasis pengetahuan, serta sekitar 40% lebih murah daripada Opus 5 pada beban kerja umum.</p></details><details><summary>Apakah Claude Opus 5.5 memberi watermark pada keluarannya?</summary><p>Pengumuman Anthropic menyatakan bahwa Opus 5.5 menyertakan watermark untuk mematuhi EU AI Act.</p></details><details><summary>Apa yang diwajibkan aturan transparansi AI Uni Eropa bagi pemasar?</summary><p>Menurut Komisi Eropa, kewajiban transparansi yang berlaku mulai 2 Agustus 2026 mencakup pelabelan deepfake yang jelas, pelabelan teks buatan AI yang diterbitkan tentang hal-hal yang menyangkut kepentingan publik, dan pemberitahuan kepada orang-orang ketika mereka berinteraksi dengan sistem AI seperti chatbot. Pengguna (deployer) AI generatif, bukan hanya penyedia, memiliki kewajiban.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> adalah pendiri dan CEO SOMIN.ai serta Guest Professor bidang AI di NUS dan INSEAD. Riset peer-reviewed-nya mencakup user profiling multi-sumber, rekomendasi yang memperhitungkan kepribadian, dan AI yang dapat dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/id/">Tentang Aleks</a><a href="/id/#publications">Publikasi</a><a href="/id/blog/">Berita AI lainnya</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Baca terus</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Berita AI lainnya, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/id/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Model · 7 Oktober 2026</span><h3>Claude Haiku 5.5 dan Alasan Memakai Model Kecil dalam Pemasaran</h3><p>Claude Haiku 5.5 dari Anthropic dibuat untuk pekerjaan murah, cepat, dan bervolume tinggi. Mengapa model terkecil dalam satu keluarga sering kali yang paling penting bagi pemasar.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Model · 30 September 2026</span><h3>Gemini 4 Argon: Sejuta Token Keluaran, Lalu Apa?</h3><p>Gemini 4 Argon dari Google DeepMind membawa batas keluaran 1M token dan peluncuran yang mendahulukan keamanan siber. Apa yang diubah AI berhorizon panjang bagi pekerjaan pemasaran, dan apa yang tidak.</p><span class="go">Baca →</span></a><a class="pcard" href="/id/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Model · 29 September 2026</span><h3>Mengapa OpenAI Menunda GPT-6.1 Astra, dan Mengapa Itu Penting</h3><p>OpenAI membatalkan rilis GPT-6.1 Astra setelah pengujian menemukan masalah pada cakupan, otorisasi, dan cara model melapor kembali. Pengujian yang sama berlaku untuk agen Anda.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, pembicara utama, dan akordeonis. Menjembatani riset mendalam dan pemasaran di dunia nyata, dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Jelajahi</h6>
+        <ul>
+          <li><a href="/id/">Beranda</a></li>
+          <li><a href="/id/blog/">Blog berita AI</a></li>
+          <li><a href="/id/#research">Riset</a></li>
+          <li><a href="/id/#publications">Publikasi</a></li>
+          <li><a href="/id/#connect">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opini adalah milik saya pribadi. Fakta berita ditautkan ke sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
