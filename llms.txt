@@ -61,6 +61,10 @@ Aleks earned his Ph.D. in Computer Science from the National University of Singa
 - [Korea's Free AI Agents for Every Citizen: A New Front Door](https://farseev.com/blog/korea-ai-for-all-free-agents/): South Korea plans free AI agents for every citizen via KakaoTalk, calls and texts, run by SKT, KT and Kakao. What a public agent layer means for brands.
 - [GPT-6 Astra and the "AGI Era": A Marketer's Reality Check](https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/): OpenAI launched GPT-6 Astra and its president said it is not unreasonable to feel we are in the AGI era. What that claim does and does not mean for marketing teams.
 
+## Other languages
+
+- [简体中文](https://farseev.com/zh-hans/) · [AI news blog](https://farseev.com/zh-hans/blog/) (30 articles)
+
 ## Ventures
 - [SOMIN.ai](https://somin.ai/): generative-AI marketing platform. Capabilities span audience targeting, competitor analytics, generative content and influencer discovery, with predictions anchored in industry-verified data on Meta and Google. Certified Google ISV; Meta Llama Incubator (APAC).
 

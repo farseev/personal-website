@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>阿里巴巴云栖大会 2026：巨型模型与小模型的现实 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="阿里巴巴云栖大会 2026：巨型模型与小模型的现实 | Prof. Aleks Farseev" />
+<meta property="og:description" content="在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="亚洲与新加坡" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="阿里巴巴云栖大会 2026：巨型模型与小模型的现实 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/","url":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/","headline":"阿里巴巴云栖大会 2026：巨型模型与小模型的现实","description":"在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"亚洲与新加坡","about":{"@type":"Thing","name":"阿里巴巴 CEO Eddie Wu 在云栖大会上公布 5 万亿至 10 万亿参数模型与 Zhenwu V900 芯片的计划"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip","url":"https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip","publisher":"The Standard (Reuters)","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference","url":"https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/","publisher":"Alizila (Alibaba)","datePublished":"2026-09-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/#faq","mainEntity":[{"@type":"Question","name":"阿里巴巴在 2026 云栖大会上发布了什么？","acceptedAnswer":{"@type":"Answer","text":"据路透社报道，CEO Eddie Wu 表示阿里巴巴计划训练一个拥有 5 万亿至 10 万亿参数的模型，发布了性能为上一代三倍的 Zhenwu V900 AI 芯片，并设定了到 2032 年阿里云数据中心容量超过 20 吉瓦的目标。"}},{"@type":"Question","name":"阿里巴巴当前的旗舰 Qwen 模型有多大？","acceptedAnswer":{"@type":"Answer","text":"路透社报道称，阿里巴巴当前的旗舰模型 Qwen 3.8 Max 拥有 2.4 万亿参数，因此计划中的新模型将大约是其两到四倍。"}},{"@type":"Question","name":"为什么开源、可本地部署的模型对亚洲营销人员很重要？","acceptedAnswer":{"@type":"Answer","text":"它们可以在选定的司法辖区内运行，可以针对本地语言和数据进行适配，规模化运行的成本也更低，这有助于满足数据驻留要求、提升文化相关性，并支撑始终在线的智能体工作负载。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"阿里巴巴云栖大会 2026：巨型模型与小模型的现实","item":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/alibaba-apsara-2026-qwen-roadmap/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">阿里巴巴云栖大会 2026：巨型模型与小模型的现实</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 亚洲与新加坡</p>
+      <h1 class="h-display">阿里巴巴云栖大会 2026：巨型模型与小模型的现实</h1>
+      <p class="lead">在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：阿里巴巴 CEO Eddie Wu 在云栖大会上公布 5 万亿至 10 万亿参数模型与 Zhenwu V900 芯片的计划（<time datetime="2026-09-22">2026 年 9 月 22 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>每年 9 月在中国举行的最大规模 AI 大会，是阿里云在杭州举办的云栖大会（Apsara Conference）。今年的主题演讲里有两个故事。一个关于规模：一个比阿里巴巴此前训练过的任何模型都大数倍的模型。另一个几乎是顺带一提：一个开发者真正在用的小型开源模型。对亚洲的营销人员来说，第二个故事可能更重要。</p>
+<h2>发生了什么</h2>
+<p>据<a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">路透社（经 The Standard 转载）</a>报道，阿里巴巴 CEO Eddie Wu 于 9 月 22 日表示，Qwen 团队计划训练一个拥有 5 万亿至 10 万亿参数的新模型，面向更复杂、更长周期的任务。阿里巴巴当前的旗舰模型 Qwen 3.8 Max 拥有 2.4 万亿参数。Wu 还表示，团队在递归自我改进方面取得了“有意义的进展”；他发布了阿里巴巴旗下平头哥（T-Head）的 Zhenwu V900 AI 芯片，性能是上一代的三倍；并设定目标，到 2032 年阿里云全球数据中心容量将超过 20 吉瓦。他说：“行业中长期的需求远远超过我们的供给能力。”</p>
+<p>在 <a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">Alizila</a> 发布的主题演讲文本中，Wu 称开源的 Qwen-27B 是“全球开发者最欢迎的模型”，并表示阿里巴巴将继续优化面向本地部署的模型。他还表示，预计智能体将成为云端的长期“居民”，执行长周期任务、持续消耗算力。</p>
+<h2>为什么重要</h2>
+<p>对一位区域营销人员来说，万亿参数竞赛基本上只是一项观赏性运动。即便用到这类模型，你也会通过 API 使用。开源、可本地部署的模型则不同：你的公司或供应商可以在自己的基础设施上、在自己选择的司法辖区内运行它，并用自己的数据进行微调。</p>
+<p>出于现实原因，这在亚洲尤为重要。区域内各地的数据驻留规定各不相同；许多企业不愿把客户数据发送给境外 API；而主要以英语调优的模型，对东南亚和东亚的语言与文化语境支持不足。一个能力出色、可在本地适配的中型开源模型，能同时解决这三个问题。</p>
+<p>Wu 关于智能体成为云端“居民”的说法，是另一个信号。如果智能体持续运行，单个任务的成本就会成为一个战略变量。大部分这类工作将由高效模型承担。</p>
+<h2>我的研究怎么看</h2>
+<p>我曾在 Forbes 上论证过，在营销中<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">技术比模型大小更重要</a>。一个针对你的受众、语言和任务做了良好适配的小模型，通常胜过一个被随意使用的通用巨型模型。</p>
+<p>我的研究也说明了本地适配为何重要。在<a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a>（AAAI 2020）中，我们发现模型所学习的社交网络会改变其准确性。在<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Do we behave differently on Twitter and Facebook?</a>（Frontiers in Big Data，2022）中，我们表明人们在不同平台上表达性格的方式不同。更宏观的结论是：行为取决于情境，模型需要特定情境的数据才能正确解读它。亚洲的平台、语言和文化，正是在别处训练的模型不会自动具备的情境。</p>
+<p>高效模型还让大规模可解释性变得负担得起。在<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）中，我们将效果预测与大语言模型的解释结合起来。只有当语言模型便宜到可以处理所有内容时，每天为每一条创意运行解释层才是现实的。</p>
+<h2>亚洲的营销团队现在应该做什么</h2>
+<ul><li>在一项区域性任务上测试一个开源中型模型，例如对印尼语或泰语的社交帖子进行分类，并在准确率和成本上与你当前使用的 API 模型进行比较。</li><li>决定你的数据可以流向哪里。梳理哪些客户数据可以发送给外部 API，哪些需要在本地处理。</li><li>用你自己的情境进行微调。即使是少量带标注的本地数据，也能显著改善语气和准确性。</li><li>为始终在线的智能体做好规划。估算持续监测与报告的算力成本，并据此选择模型。</li><li>关注前沿，但不依赖前沿。在明显能创造价值的地方使用最大的模型，其他场景则使用高效模型。</li></ul>
+<p>杭州传出的头条是一个带十二个零的数字。而对营销人员来说，真正有用的消息是：优秀的小模型在不断进步，而且它们可以离你的客户更近。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>阿里巴巴在 2026 云栖大会上发布了什么？</summary><p>据路透社报道，CEO Eddie Wu 表示阿里巴巴计划训练一个拥有 5 万亿至 10 万亿参数的模型，发布了性能为上一代三倍的 Zhenwu V900 AI 芯片，并设定了到 2032 年阿里云数据中心容量超过 20 吉瓦的目标。</p></details><details><summary>阿里巴巴当前的旗舰 Qwen 模型有多大？</summary><p>路透社报道称，阿里巴巴当前的旗舰模型 Qwen 3.8 Max 拥有 2.4 万亿参数，因此计划中的新模型将大约是其两到四倍。</p></details><details><summary>为什么开源、可本地部署的模型对亚洲营销人员很重要？</summary><p>它们可以在选定的司法辖区内运行，可以针对本地语言和数据进行适配，规模化运行的成本也更低，这有助于满足数据驻留要求、提升文化相关性，并支撑始终在线的智能体工作负载。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip</a> — The Standard (Reuters), 22 September 2026</li><li translate="no"><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference</a> — Alizila (Alibaba), 22 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/malaysia-ai-governance-bill/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 29 日</span><h3>马来西亚《AI Governance Bill》：按角色划分责任</h3><p>马来西亚的《AI Governance Bill》草案预计最迟于 2027 年初出台，将义务落在开发、提供或使用 AI 的各方身上。按角色划分的规则对营销人员意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/anthropic-singapore-office-mou/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 14 日</span><h3>Anthropic 进驻新加坡：谅解备忘录真正释放的信号</h3><p>Anthropic 在新加坡开设办公室，并与 MDDI 签署了关于 AI 安全与评估的谅解备忘录。为何用本地语言进行测试才是真正的看点。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 1 日</span><h3>日本 AI 行动计划：增长政策转向采用政策</h3><p>首相 Sanae Takaichi 要求各部门在年底前拿出 AI 推广行动计划，并与日本增长战略挂钩。“采用优先”的政策对营销人员意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

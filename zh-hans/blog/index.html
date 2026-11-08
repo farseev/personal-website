@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 新闻，Aleks Farseev 解读 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Aleks Farseev 教授解读每周 AI 新闻（模型、智能体、AI 搜索、广告与监管），说明其对营销人员的意义，并附上全部来源链接。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 新闻，Aleks Farseev 解读 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Aleks Farseev 教授解读每周 AI 新闻（模型、智能体、AI 搜索、广告与监管），说明其对营销人员的意义，并附上全部来源链接。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 新闻，Aleks Farseev 解读 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Aleks Farseev 教授解读每周 AI 新闻（模型、智能体、AI 搜索、广告与监管），说明其对营销人员的意义，并附上全部来源链接。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Blog","@id":"https://farseev.com/zh-hans/blog/#blog","url":"https://farseev.com/zh-hans/blog/","name":"AI 新闻，Aleks 解读","description":"Aleks Farseev 教授解读每周 AI 新闻（模型、智能体、AI 搜索、广告与监管），说明其对营销人员的意义，并附上全部来源链接。","inLanguage":"zh-Hans","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"blogPost":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/wpp-q3-2026-agentic-agency/#article","headline":"WPP 2026 年第三季度：AI 压力下的代理商模式","url":"https://farseev.com/zh-hans/blog/wpp-q3-2026-agentic-agency/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/malaysia-ai-governance-bill/#article","headline":"马来西亚《AI Governance Bill》：按角色划分责任","url":"https://farseev.com/zh-hans/blog/malaysia-ai-governance-bill/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/#article","headline":"Adobe：AI 引流的转化率已高于其他访问","url":"https://farseev.com/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/google-ai-mode-ads-singapore-expansion/#article","headline":"Google AI Mode 广告登陆新加坡等市场","url":"https://farseev.com/zh-hans/blog/google-ai-mode-ads-singapore-expansion/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/#article","headline":"Agent Skills 走向厂商中立：营销人员为何应当关注","url":"https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/meta-q3-2026-ai-ads-creators-apac/#article","headline":"Meta 2026 年第三季度：AI 推高广告价格，创作者成为渠道","url":"https://farseev.com/zh-hans/blog/meta-q3-2026-ai-ads-creators-apac/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/#article","headline":"ChatGPT 广告变成对话：Sponsored Agents","url":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/#article","headline":"Anthropic 进驻新加坡：谅解备忘录真正释放的信号","url":"https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","headline":"AI 规则如今将虚假商业热度视同选举舞弊","url":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/#article","headline":"Workday 收购 C1.ai：你的营销智能体同样需要身份","url":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/#article","headline":"Character.AI 申请破产保护：给 AI 角色类产品的启示","url":"https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/#article","headline":"蒸馏攻击：被复制的 AI 模型对你意味着什么","url":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/#article","headline":"MAS AI 风险指引：一份适用于银行业以外的实用模板","url":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/#article","headline":"Claude Haiku 5.5 与小模型在营销中的价值","url":"https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/#article","headline":"Meta 新一代 AI 广告工具：自动化仍需要解释","url":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/#article","headline":"AI 的落地鸿沟是人的问题","url":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","headline":"Penske 诉 Google 案被驳回：对 AI 可见度意味着什么","url":"https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/japan-ai-action-plan-growth-strategy/#article","headline":"日本 AI 行动计划：增长政策转向采用政策","url":"https://farseev.com/zh-hans/blog/japan-ai-action-plan-growth-strategy/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/#article","headline":"Gemini 4 Argon：百万输出 Token，然后呢？","url":"https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/amazon-unboxed-2026-ads-agent/#article","headline":"Amazon Ads Agent：零售媒体在 unBoxed 2026 迈向智能体化","url":"https://farseev.com/zh-hans/blog/amazon-unboxed-2026-ads-agent/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/#article","headline":"White House AI 协议与独立评估方","url":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/gpt-6-1-astra-cancelled-safety/#article","headline":"OpenAI 为何搁置 GPT-6.1 Astra，以及这为何重要","url":"https://farseev.com/zh-hans/blog/gpt-6-1-astra-cancelled-safety/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/#article","headline":"不肯接受拒绝的 AI 智能体","url":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","headline":"Claude Opus 5.5：水印、审计与 AI 内容标识","url":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/#article","headline":"阿里巴巴云栖大会 2026：巨型模型与小模型的现实","url":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/#article","headline":"菲尔兹奖得主与 AI 基准：给营销人员的一课","url":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/#article","headline":"三种 AI 经济情景与营销职业的未来","url":"https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/#article","headline":"Meta Muse：当你的客户派来一个智能体","url":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/korea-ai-for-all-free-agents/#article","headline":"韩国为每位公民提供免费 AI 智能体：一道新的前门","url":"https://farseev.com/zh-hans/blog/korea-ai-for-all-free-agents/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/#article","headline":"GPT-6 Astra 与“AGI 时代”：营销人员的现实检验","url":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/","datePublished":"2026-11-08"}]},{"@type":"CollectionPage","@id":"https://farseev.com/zh-hans/blog/#page","url":"https://farseev.com/zh-hans/blog/","name":"AI 新闻，Aleks Farseev 解读","description":"Aleks Farseev 教授解读每周 AI 新闻（模型、智能体、AI 搜索、广告与监管），说明其对营销人员的意义，并附上全部来源链接。","isPartOf":{"@id":"https://farseev.com/#website"},"about":{"@id":"https://farseev.com/#person"},"mainEntity":{"@type":"ItemList","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://farseev.com/zh-hans/blog/wpp-q3-2026-agentic-agency/","name":"WPP 2026 年第三季度：AI 压力下的代理商模式"},{"@type":"ListItem","position":2,"url":"https://farseev.com/zh-hans/blog/malaysia-ai-governance-bill/","name":"马来西亚《AI Governance Bill》：按角色划分责任"},{"@type":"ListItem","position":3,"url":"https://farseev.com/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/","name":"Adobe：AI 引流的转化率已高于其他访问"},{"@type":"ListItem","position":4,"url":"https://farseev.com/zh-hans/blog/google-ai-mode-ads-singapore-expansion/","name":"Google AI Mode 广告登陆新加坡等市场"},{"@type":"ListItem","position":5,"url":"https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/","name":"Agent Skills 走向厂商中立：营销人员为何应当关注"},{"@type":"ListItem","position":6,"url":"https://farseev.com/zh-hans/blog/meta-q3-2026-ai-ads-creators-apac/","name":"Meta 2026 年第三季度：AI 推高广告价格，创作者成为渠道"},{"@type":"ListItem","position":7,"url":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/","name":"ChatGPT 广告变成对话：Sponsored Agents"},{"@type":"ListItem","position":8,"url":"https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/","name":"Anthropic 进驻新加坡：谅解备忘录真正释放的信号"},{"@type":"ListItem","position":9,"url":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/","name":"AI 规则如今将虚假商业热度视同选举舞弊"},{"@type":"ListItem","position":10,"url":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/","name":"Workday 收购 C1.ai：你的营销智能体同样需要身份"},{"@type":"ListItem","position":11,"url":"https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/","name":"Character.AI 申请破产保护：给 AI 角色类产品的启示"},{"@type":"ListItem","position":12,"url":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/","name":"蒸馏攻击：被复制的 AI 模型对你意味着什么"},{"@type":"ListItem","position":13,"url":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/","name":"MAS AI 风险指引：一份适用于银行业以外的实用模板"},{"@type":"ListItem","position":14,"url":"https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/","name":"Claude Haiku 5.5 与小模型在营销中的价值"},{"@type":"ListItem","position":15,"url":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/","name":"Meta 新一代 AI 广告工具：自动化仍需要解释"},{"@type":"ListItem","position":16,"url":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/","name":"AI 的落地鸿沟是人的问题"},{"@type":"ListItem","position":17,"url":"https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/","name":"Penske 诉 Google 案被驳回：对 AI 可见度意味着什么"},{"@type":"ListItem","position":18,"url":"https://farseev.com/zh-hans/blog/japan-ai-action-plan-growth-strategy/","name":"日本 AI 行动计划：增长政策转向采用政策"},{"@type":"ListItem","position":19,"url":"https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/","name":"Gemini 4 Argon：百万输出 Token，然后呢？"},{"@type":"ListItem","position":20,"url":"https://farseev.com/zh-hans/blog/amazon-unboxed-2026-ads-agent/","name":"Amazon Ads Agent：零售媒体在 unBoxed 2026 迈向智能体化"},{"@type":"ListItem","position":21,"url":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/","name":"White House AI 协议与独立评估方"},{"@type":"ListItem","position":22,"url":"https://farseev.com/zh-hans/blog/gpt-6-1-astra-cancelled-safety/","name":"OpenAI 为何搁置 GPT-6.1 Astra，以及这为何重要"},{"@type":"ListItem","position":23,"url":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/","name":"不肯接受拒绝的 AI 智能体"},{"@type":"ListItem","position":24,"url":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/","name":"Claude Opus 5.5：水印、审计与 AI 内容标识"},{"@type":"ListItem","position":25,"url":"https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/","name":"阿里巴巴云栖大会 2026：巨型模型与小模型的现实"},{"@type":"ListItem","position":26,"url":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/","name":"菲尔兹奖得主与 AI 基准：给营销人员的一课"},{"@type":"ListItem","position":27,"url":"https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/","name":"三种 AI 经济情景与营销职业的未来"},{"@type":"ListItem","position":28,"url":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/","name":"Meta Muse：当你的客户派来一个智能体"},{"@type":"ListItem","position":29,"url":"https://farseev.com/zh-hans/blog/korea-ai-for-all-free-agents/","name":"韩国为每位公民提供免费 AI 智能体：一道新的前门"},{"@type":"ListItem","position":30,"url":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/","name":"GPT-6 Astra 与“AGI 时代”：营销人员的现实检验"}]}},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <header class="band on-dark" data-sec="hub-header">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li aria-current="page">AI 新闻</li></ol></nav>
+      <p class="eyebrow">AI 新闻博客</p>
+      <h1 class="h-display">AI 新闻，Aleks 解读</h1>
+      <p class="lead">每篇文章选取一则真实的 AI 新闻，附上一手来源链接，并从我在用户画像、个性感知推荐与可解释 AI 方面的研究视角，解读它对营销人员意味着什么。</p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><span>共 <span class="count">30</span> 篇文章，按新闻时间由新到旧排列</span></p>
+    </div>
+  </header>
+  <section class="section" aria-label="文章" data-sec="hub">
+    <div class="wrap">
+      <div class="hub-list">
+<a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h2>WPP 2026 年第三季度：AI 压力下的代理商模式</h2><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/malaysia-ai-governance-bill/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 29 日</span><h2>马来西亚《AI Governance Bill》：按角色划分责任</h2><p>马来西亚的《AI Governance Bill》草案预计最迟于 2027 年初出台，将义务落在开发、提供或使用 AI 的各方身上。按角色划分的规则对营销人员意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 搜索 · 2026 年 10 月 29 日</span><h2>Adobe：AI 引流的转化率已高于其他访问</h2><p>Adobe 称，9 月来自 AI 的美国零售商访问，转化率比其他流量高出 90%。AI 答案为何成了一个渠道，以及该如何应对。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI 搜索 · 2026 年 10 月 28 日</span><h2>Google AI Mode 广告登陆新加坡等市场</h2><p>Google 正将 AI Mode 中的广告扩展到包括新加坡、马来西亚和菲律宾在内的十个市场。当广告出现在答案之中，会发生哪些变化。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/agent-skills-agentic-ai-foundation/"><span class="meta">智能体 · 2026 年 10 月 22 日</span><h2>Agent Skills 走向厂商中立：营销人员为何应当关注</h2><p>Anthropic 将 Agent Skills 标准捐赠给了 Agentic AI Foundation。可移植、成文的专业知识，正是营销团队需要 AI 智能体具备的。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">广告与营销 AI · 2026 年 10 月 21 日</span><h2>Meta 2026 年第三季度：AI 推高广告价格，创作者成为渠道</h2><p>Meta 2026 年第三季度：广告收入增长 26%，单条广告价格上涨 14%，合作伙伴广告年化收入突破 150 亿美元，亚太区则呈现截然不同的面貌。这意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI 搜索 · 2026 年 10 月 21 日</span><h2>ChatGPT 广告变成对话：Sponsored Agents</h2><p>OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/anthropic-singapore-office-mou/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 14 日</span><h2>Anthropic 进驻新加坡：谅解备忘录真正释放的信号</h2><p>Anthropic 在新加坡开设办公室，并与 MDDI 签署了关于 AI 安全与评估的谅解备忘录。为何用本地语言进行测试才是真正的看点。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">负责任的营销 · 2026 年 10 月 14 日</span><h2>AI 规则如今将虚假商业热度视同选举舞弊</h2><p>Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/workday-c1-ai-agent-identity/"><span class="meta">智能体 · 2026 年 10 月 13 日</span><h2>Workday 收购 C1.ai：你的营销智能体同样需要身份</h2><p>Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/character-ai-chapter-11-ai-personas/"><span class="meta">负责任的营销 · 2026 年 10 月 12 日</span><h2>Character.AI 申请破产保护：给 AI 角色类产品的启示</h2><p>Character.AI 依据《破产法》第 11 章申请破产保护以寻求出售，Disney 正准备出价 2000 万美元。打造 AI 角色与陪伴产品的品牌应从中学到什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">监管与安全 · 2026 年 10 月 12 日</span><h2>蒸馏攻击：被复制的 AI 模型对你意味着什么</h2><p>美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/mas-ai-risk-management-guidelines/"><span class="meta">监管与安全 · 2026 年 10 月 7 日</span><h2>MAS AI 风险指引：一份适用于银行业以外的实用模板</h2><p>MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">模型 · 2026 年 10 月 7 日</span><h2>Claude Haiku 5.5 与小模型在营销中的价值</h2><p>Anthropic 的 Claude Haiku 5.5 专为低成本、高速度、大批量的工作而打造。为什么一个模型家族中最小的那个，对营销人员往往最重要。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/"><span class="meta">广告与营销 AI · 2026 年 10 月 6 日</span><h2>Meta 新一代 AI 广告工具：自动化仍需要解释</h2><p>在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">工作与技能 · 2026 年 10 月 2 日</span><h2>AI 的落地鸿沟是人的问题</h2><p>Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI 搜索 · 2026 年 10 月 1 日</span><h2>Penske 诉 Google 案被驳回：对 AI 可见度意味着什么</h2><p>美国一名法官驳回了 Penske Media 就 Google AI Overviews 提起的反垄断诉讼，认定不存在以流量为对价的“正式交易”。品牌应如何对待 GEO。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 1 日</span><h2>日本 AI 行动计划：增长政策转向采用政策</h2><p>首相 Sanae Takaichi 要求各部门在年底前拿出 AI 推广行动计划，并与日本增长战略挂钩。“采用优先”的政策对营销人员意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">模型 · 2026 年 9 月 30 日</span><h2>Gemini 4 Argon：百万输出 Token，然后呢？</h2><p>Google DeepMind 的 Gemini 4 Argon 带来 1M Token 的输出上限，并以网络安全优先的方式推出。长周期 AI 会改变营销工作的哪些方面，又不会改变什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">广告与营销 AI · 2026 年 9 月 30 日</span><h2>Amazon Ads Agent：零售媒体在 unBoxed 2026 迈向智能体化</h2><p>在 unBoxed 2026 上，Amazon 将其购买工具整合进 Amazon Ads Agent，并加入对话式效果衡量与 AI 创意。哪些环节应保留在人的手中。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">监管与安全 · 2026 年 9 月 29 日</span><h2>White House AI 协议与独立评估方</h2><p>科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">模型 · 2026 年 9 月 29 日</span><h2>OpenAI 为何搁置 GPT-6.1 Astra，以及这为何重要</h2><p>OpenAI 在测试发现其在范围、授权以及汇报方式上存在问题后，取消了 GPT-6.1 Astra 的发布。同样的测试也适用于你的智能体。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/openai-agent-medicare-portal-australia/"><span class="meta">智能体 · 2026 年 9 月 24 日</span><h2>不肯接受拒绝的 AI 智能体</h2><p>澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">模型 · 2026 年 9 月 22 日</span><h2>Claude Opus 5.5：水印、审计与 AI 内容标识</h2><p>Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">亚洲与新加坡 · 2026 年 9 月 22 日</span><h2>阿里巴巴云栖大会 2026：巨型模型与小模型的现实</h2><p>在 2026 云栖大会（Apsara）上，阿里巴巴表示计划推出 5 万亿至 10 万亿参数的模型，同时力推其开源的 27B 模型。为什么亚洲营销人员应同时关注两端。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/"><span class="meta">研究 · 2026 年 9 月 11 日</span><h2>菲尔兹奖得主与 AI 基准：给营销人员的一课</h2><p>二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">工作与技能 · 2026 年 9 月 9 日</span><h2>三种 AI 经济情景与营销职业的未来</h2><p>Anthropic 发布了 AI 至 2030 年对美国经济影响的三种情景，从温和到极端。关于知识型工作的发现，对营销职业意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/meta-muse-personal-ai-agent/"><span class="meta">智能体 · 2026 年 9 月 8 日</span><h2>Meta Muse：当你的客户派来一个智能体</h2><p>Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/korea-ai-for-all-free-agents/"><span class="meta">亚洲与新加坡 · 2026 年 9 月 4 日</span><h2>韩国为每位公民提供免费 AI 智能体：一道新的前门</h2><p>韩国计划通过 KakaoTalk、电话和短信为每位公民提供免费 AI 智能体，由 SKT、KT 和 Kakao 运营。一个公共智能体层对品牌意味着什么。</p><span class="go">阅读 →</span></a>
+<a class="pcard" href="/zh-hans/blog/gpt-6-astra-agi-era-reality-check/"><span class="meta">模型 · 2026 年 9 月 3 日</span><h2>GPT-6 Astra 与“AGI 时代”：营销人员的现实检验</h2><p>OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。</p><span class="go">阅读 →</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

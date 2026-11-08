@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 的落地鸿沟是人的问题 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 的落地鸿沟是人的问题 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="工作与技能" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 的落地鸿沟是人的问题 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/","headline":"AI 的落地鸿沟是人的问题","description":"Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"工作与技能","about":{"@type":"Thing","name":"Anthropic 推出 Claude Frontier Academy，承诺投入 1 亿美元培养 10,000 名工程师"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"什么是 Claude Frontier Academy？","acceptedAnswer":{"@type":"Answer","text":"这是 Anthropic 于 2026 年 10 月 2 日推出的培训项目，以 1 亿美元的承诺投入为支持，计划在 2027 年底前通过线下培训加上 12 周真实项目驻场的方式，培养 10,000 名 Frontier Deployed Engineer。"}},{"@type":"Question","name":"首批 Claude Frontier Academy 学员来自哪些公司？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 列举了 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 和 Novo Nordisk 等公司，培训班设在旧金山、纽约和伦敦。"}},{"@type":"Question","name":"为什么营销需要 AI 部署专家？","acceptedAnswer":{"@type":"Answer","text":"因为模型的获取已不再是瓶颈。价值来自围绕 AI 重新设计真实的营销工作流，并内置效果衡量与防护措施，这需要既懂技术、又懂营销决策的人。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"AI 的落地鸿沟是人的问题","item":"https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">AI 的落地鸿沟是人的问题</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 工作与技能</p>
+      <h1 class="h-display">AI 的落地鸿沟是人的问题</h1>
+      <p class="lead">Anthropic 承诺投入 1 亿美元，联合咨询公司与银行在 2027 年前培养 10,000 名 Frontier Deployed Engineer。为什么营销也需要这一角色的自有版本。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Anthropic 推出 Claude Frontier Academy，承诺投入 1 亿美元培养 10,000 名工程师（<time datetime="2026-10-02">2026 年 10 月 2 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI 项目令人失望的最常见原因，并不在于模型，而在于组织里没有人知道如何把一个能力出色的模型变成一套可运转的流程。10 月 2 日，Anthropic 为这个问题标了价：投入 1 亿美元，培养 10,000 名恰好以此为职责的人。</p>
+<h2>发生了什么</h2>
+<p>根据 <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic 的公告</a>，新成立的 Claude Frontier Academy 计划在 2027 年底前培养 10,000 名“Frontier Deployed Engineer”，并以 1 亿美元的承诺投入作为支持。首个项目是一种驻场培训，用 Anthropic 的话说，“借鉴了医学培养专业能力的模式”。各机构提名优秀工程师，每人带着一个具体的 Claude 项目前来。他们先参加为期数天的线下培训，包括一次模拟的企业部署和一项计分的实操考核；随后用 12 周时间，在 Anthropic 工程师的支持下，在本机构主导一个真实用例；最后进行终期评估。</p>
+<p>培训班分别在旧金山、纽约和伦敦开设。首批学员所属的公司包括 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 和 Novo Nordisk。Anthropic 表示，该学院建立在其合作伙伴网络之上，网络中来自 46,000 家公司的专业人士已获得超过 175,000 项认证。</p>
+<p>公告中引用的一位 Accenture 负责人表示，这项驻场培训评估的是“在模拟企业部署中接受检验的判断力，而不是孤立的技术技能”。</p>
+<h2>为什么重要</h2>
+<p>看看首批参与者名单：咨询公司、银行、一家制药企业。这些正是将在其他公司内部——包括营销部门内部——部署 AI 的机构。这种模式并不新鲜；现场工程师和解决方案架构师存在于每一个企业软件品类中。新的是规模，以及对真实部署中判断力的强调。</p>
+<p>营销领域存在同样的鸿沟，而致力于填补它的人更少。如今许多团队都能用上出色的模型和工具，但很少有团队拥有这样一个人：其职责是把一个杂乱的营销流程——例如竞品监测、创意测试或报告——围绕 AI 重新设计，并内置效果衡量、防护措施与推广落地。</p>
+<p>培训班的所在地也值得注意：没有一个在亚洲。对我们这个地区而言，这要么是一个需要在本地填补的空白，要么意味着第一批经过认证的部署人才将集中在其他地方。</p>
+<h2>我的研究怎么看</h2>
+<p>在我看来，应用 AI 中最难的一步，是从一个可用的模型走到一套可用的流程。我们的研究也体现了这一点。在<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）以及<a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">ACM Multimedia 2025 上的 SOMIN 行业演示</a>中，贡献不只在于模型本身，更在于它们如何融入营销人员的策略工作：效果预测，加上一个负责解释和提出建议的大语言模型。</p>
+<p>我曾在 Forbes 撰文讨论<a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">弥合营销与 AI 系统之间的鸿沟</a>，以及<a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">在聊天机器人之外的商业场景中运用大语言模型</a>。始终如一的主题是：只有当有人同时理解两端——模型能可靠地做什么，以及业务真正需要什么——价值才会显现。这样的人在营销领域很少见。</p>
+<p>我也在 NUS、INSEAD 等院校任教，医学驻场培训的框架让我很有共鸣。部署能力不是从幻灯片上学来的，而是在指导下亲自负责一个真实案例、并接受对判断力的评估而学会的。</p>
+<h2>营销团队现在可以如何建立这一角色</h2>
+<ul><li>指定负责人。让一个人明确负责把 AI 能力转化为营销流程，并给予其足够的时间。</li><li>在真实案例中学习。选择一个正在运行的工作流，例如每周的竞品报告，从头到尾重新设计，设定基线与目标。</li><li>让营销与技术结对。最好的部署，来自一位了解决策的营销人员与一位了解系统的技术人员的协作。</li><li>评估判断力，而不是工具熟练度。这个人能否解释什么时候不应该信任 AI，以及那时该怎么办？</li><li>分享有效的做法。把每一次部署写成一个简短的案例：问题、设计、结果、失效模式。</li></ul>
+<p>对培训来说，一亿美元是个大数字；但与各机构在那些从未进入日常工作的 AI 项目上所损失的相比，这只是个小数字。营销不应坐等别人来培养它的部署人才。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 Claude Frontier Academy？</summary><p>这是 Anthropic 于 2026 年 10 月 2 日推出的培训项目，以 1 亿美元的承诺投入为支持，计划在 2027 年底前通过线下培训加上 12 周真实项目驻场的方式，培养 10,000 名 Frontier Deployed Engineer。</p></details><details><summary>首批 Claude Frontier Academy 学员来自哪些公司？</summary><p>Anthropic 列举了 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 和 Novo Nordisk 等公司，培训班设在旧金山、纽约和伦敦。</p></details><details><summary>为什么营销需要 AI 部署专家？</summary><p>因为模型的获取已不再是瓶颈。价值来自围绕 AI 重新设计真实的营销工作流，并内置效果衡量与防护措施，这需要既懂技术、又懂营销决策的人。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">工作与技能 · 2026 年 9 月 9 日</span><h3>三种 AI 经济情景与营销职业的未来</h3><p>Anthropic 发布了 AI 至 2030 年对美国经济影响的三种情景，从温和到极端。关于知识型工作的发现，对营销职业意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/malaysia-ai-governance-bill/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 29 日</span><h3>马来西亚《AI Governance Bill》：按角色划分责任</h3><p>马来西亚的《AI Governance Bill》草案预计最迟于 2027 年初出台，将义务落在开发、提供或使用 AI 的各方身上。按角色划分的规则对营销人员意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

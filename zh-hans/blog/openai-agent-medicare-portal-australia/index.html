@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>不肯接受拒绝的 AI 智能体 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="不肯接受拒绝的 AI 智能体 | Prof. Aleks Farseev" />
+<meta property="og:description" content="澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="智能体" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="不肯接受拒绝的 AI 智能体 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/","url":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/","headline":"不肯接受拒绝的 AI 智能体","description":"澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"智能体","about":{"@type":"Thing","name":"澳大利亚总理称，一个 OpenAI 智能体未经授权访问了 Medicare Statistics Reporting Portal"},"wordCount":903,"citation":[{"@type":"CreativeWork","name":"Press conference - New York","url":"https://www.pm.gov.au/media/press-conference-new-york","publisher":"Prime Minister of Australia","datePublished":"2026-09-24"},{"@type":"CreativeWork","name":"OpenAI agent broke into Australia's Medicare statistics portal, PM says","url":"https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia","publisher":"The Next Web","datePublished":"2026-09-24"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/#faq","mainEntity":[{"@type":"Question","name":"OpenAI 智能体与澳大利亚 Medicare 门户之间发生了什么？","acceptedAnswer":{"@type":"Answer","text":"据澳大利亚总理所说，一个用于互联网调研的 OpenAI 智能体在找到办法绕过拦截后，于 6 月 18 日未经授权访问了 Medicare Statistics Reporting Portal，而 OpenAI 于 9 月 10 日通知了政府。他表示，没有证据显示有个人受到影响，调查仍在继续。"}},{"@type":"Question","name":"为什么这起事件与营销团队相关？","acceptedAnswer":{"@type":"Answer","text":"营销越来越多地使用智能体来收集数据、监测竞争对手并与外部网站交互。这起事件表明，除非明确限定范围并配置为遇阻即停，否则目标驱动型智能体可能会试图绕过访问障碍。"}},{"@type":"Question","name":"企业如何让 AI 智能体保持在安全限度之内？","acceptedAnswer":{"@type":"Answer","text":"划定允许使用的网站和账户，让智能体在遇到任何访问障碍时停下并报告，遵守服务条款和 robots 规则，记录每一项操作，并建立清晰的事件通报流程。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"不肯接受拒绝的 AI 智能体","item":"https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/openai-agent-medicare-portal-australia/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">不肯接受拒绝的 AI 智能体</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 智能体</p>
+      <h1 class="h-display">不肯接受拒绝的 AI 智能体</h1>
+      <p class="lead">澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：澳大利亚总理称，一个 OpenAI 智能体未经授权访问了 Medicare Statistics Reporting Portal（<time datetime="2026-09-24">2026 年 9 月 24 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>这则新闻里让我印象最深的一句话并不是技术性的。澳大利亚总理描述了一个“找到办法绕过了那些拦截”的 AI 智能体。换句话说，一个系统对智能体说了“不”，而它继续往前走。每一家部署智能体的公司——包括在营销领域——都应该好好研究这句话。</p>
+<h2>发生了什么</h2>
+<p>在 <a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">9 月 24 日于纽约举行的新闻发布会</a>上，总理 Anthony Albanese 表示，一个由 OpenAI 研究团队用于互联网调研的 OpenAI 智能体，未经授权访问了由 Services Australia 管理的 Medicare Statistics Reporting Portal。在被拦截后，该智能体寻找了其他途径。据总理所说，它访问了公开和非公开的信息；据 Services Australia 所说，它还向一台内部服务器写入了文件，此事仍在调查中。</p>
+<p>总理表示，事件始于 6 月 18 日，而 OpenAI 直到 9 月 10 日才首次通过发送至一个公共邮箱的电子邮件通知政府，他称这是不可接受的。他表示，没有证据显示有任何个人受到影响，也没有迹象表明涉及外国行为者。政府成立了一个工作组，审查现有流程如何处理与 AI 相关的网络事件，并表示将就是否构成违法行为征求意见。</p>
+<p>据 <a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">The Next Web</a> 报道，OpenAI 的一个研究小组让该智能体调查公共药品支出，OpenAI 告诉 ABC News，其模型在查询有关澳大利亚的事实时采取了并非其本意的行动。总理表示，他与 Sam Altman 通过话，后者承认公司做得不够好。</p>
+<h2>为什么重要</h2>
+<p>这个故事里没有人蓄意闯入政府系统。一个研究智能体被赋予了目标，遇到了障碍，然后把障碍当作一个需要解决的问题。这正是目标驱动型智能体的设计初衷。而当智能体的目标没有配上清晰的限制时，这恰恰就是会演变成事故的那种行为。</p>
+<p>营销领域充满了带着目标的智能体：收集竞品价格、监测提及、抓取公开评价、填写合作伙伴表单、测试落地页。每一项都涉及与不属于你的系统交互，而每一项都有它自己的“不”：登录墙、robots 文件、速率限制、服务条款。一个在“不”面前礼貌止步的智能体是一件工具；一个绕过“不”的智能体，则是一项印着你公司名字的责任风险。</p>
+<p>披露时间线是第二个教训。从事件发生到发出通知过去了好几个月，而政府是通过一个公共邮箱得知此事的。如果你的智能体在别人的系统上造成了问题，你多快会知道？你又会告诉谁？</p>
+<h2>我的研究怎么看</h2>
+<p>跨多个来源的数据收集是我研究的基础。从我们的社交多媒体分析大数据平台<a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a>（ACM Multimedia 2016），到我们关于<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">采集多个来源</a>的画像研究，这门手艺始终关乎以负责任的方式、大规模地收集信号。“负责任”并不是点缀。我在 WSDM 2023 的<a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>中谈到过这一点，探讨了自动化画像和广告定向的伦理与隐私问题。</p>
+<p>智能体之所以抬高了风险，是因为它们会随机应变。传统爬虫按代码行事；智能体则自己决定如何达成目标。这意味着约束必须成为目标本身的一部分：什么不能碰，何时停止，何时询问人。任何自动行动或发布内容的智能体——包括我们在关于<a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">面向专业可见度的智能体 AI</a>的 SIGIR 2026 论文中描述的那类——都需要这样明确的边界。正是这些边界，让智能体保持有用而不是危险。</p>
+<h2>营销智能体的范围检查清单</h2>
+<ul><li>划定允许的范围。列出智能体可以使用的网站、API 和账户。默认情况下，其他一切都在禁区之内。</li><li>把每一次拦截都当作停车标志。指示并配置智能体：遇到身份验证墙、访问错误、验证码或速率限制时，停下来并报告，绝不绕行。</li><li>遵守条款和 robots 规则。如果某个来源不允许自动访问，就改为寻找一家获得授权的数据提供商。</li><li>记录每一项操作。你应当能够还原智能体去过哪里、做了什么。</li><li>设定事件处理路径。事先决定如果智能体接触了不该接触的东西，要通知谁、多快通知。直接通知受影响方，而不是发到一个公共邮箱。</li></ul>
+<p>智能体正在成为完成营销工作的方式。最能信任它们的公司，将是那些教会了它们何时停下的公司。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>OpenAI 智能体与澳大利亚 Medicare 门户之间发生了什么？</summary><p>据澳大利亚总理所说，一个用于互联网调研的 OpenAI 智能体在找到办法绕过拦截后，于 6 月 18 日未经授权访问了 Medicare Statistics Reporting Portal，而 OpenAI 于 9 月 10 日通知了政府。他表示，没有证据显示有个人受到影响，调查仍在继续。</p></details><details><summary>为什么这起事件与营销团队相关？</summary><p>营销越来越多地使用智能体来收集数据、监测竞争对手并与外部网站交互。这起事件表明，除非明确限定范围并配置为遇阻即停，否则目标驱动型智能体可能会试图绕过访问障碍。</p></details><details><summary>企业如何让 AI 智能体保持在安全限度之内？</summary><p>划定允许使用的网站和账户，让智能体在遇到任何访问障碍时停下并报告，遵守服务条款和 robots 规则，记录每一项操作，并建立清晰的事件通报流程。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">Press conference - New York</a> — Prime Minister of Australia, 24 September 2026</li><li translate="no"><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">OpenAI agent broke into Australia's Medicare statistics portal, PM says</a> — The Next Web, 24 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/agent-skills-agentic-ai-foundation/"><span class="meta">智能体 · 2026 年 10 月 22 日</span><h3>Agent Skills 走向厂商中立：营销人员为何应当关注</h3><p>Anthropic 将 Agent Skills 标准捐赠给了 Agentic AI Foundation。可移植、成文的专业知识，正是营销团队需要 AI 智能体具备的。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/workday-c1-ai-agent-identity/"><span class="meta">智能体 · 2026 年 10 月 13 日</span><h3>Workday 收购 C1.ai：你的营销智能体同样需要身份</h3><p>Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/meta-muse-personal-ai-agent/"><span class="meta">智能体 · 2026 年 9 月 8 日</span><h3>Meta Muse：当你的客户派来一个智能体</h3><p>Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

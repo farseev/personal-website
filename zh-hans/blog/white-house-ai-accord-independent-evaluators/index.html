@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>White House AI 协议与独立评估方 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="White House AI 协议与独立评估方 | Prof. Aleks Farseev" />
+<meta property="og:description" content="科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="监管与安全" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="White House AI 协议与独立评估方 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/","headline":"White House AI 协议与独立评估方","description":"科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"监管与安全","about":{"@type":"Thing","name":"科技领袖签署 White House Accord on Super Intelligence；Anthropic 让 METR 评估人员以类似员工的权限入驻"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"什么是 White House Accord on Super Intelligence？","acceptedAnswer":{"@type":"Answer","text":"这是一份题为“Joint Commitment on Frontier Responsibilities”的自愿性文件，于 2026 年 9 月 29 日由特朗普总统与 Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai 和 Greg Brockman 等领导者签署。它要求企业承诺建立内部控制、内部团队、独立外部评估方以及董事会层面的监督。"}},{"@type":"Question","name":"白宫 AI 协议具有约束力吗？","acceptedAnswer":{"@type":"Answer","text":"没有。特朗普称其具有“道德约束力”，但据 MercoPress 报道，它没有设定任何违约后果，一些学者批评其力度薄弱。"}},{"@type":"Question","name":"Anthropic 向独立评估方开放了哪些权限？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 表示，六名 METR 员工已完成入职，获得了类似员工的访问权限，可使用公司硬件、工具和系统；METR 将公开其风险评估；Anthropic 无法否决这些公开内容，但可以要求对机密知识产权等预先界定的类别进行删改。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"White House AI 协议与独立评估方","item":"https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/white-house-ai-accord-independent-evaluators/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">White House AI 协议与独立评估方</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 监管与安全</p>
+      <h1 class="h-display">White House AI 协议与独立评估方</h1>
+      <p class="lead">科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：科技领袖签署 White House Accord on Super Intelligence；Anthropic 让 METR 评估人员以类似员工的权限入驻（<time datetime="2026-09-29">2026 年 9 月 29 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI 公司的自愿性承诺，记录好坏参半。有些不到一年就被遗忘了。最新这一份之所以有意思，不在于白宫的仪式，而在于其中一个具体的理念：独立评估方。两周后，一家实验室展示了它在实践中可以是什么样子。</p>
+<h2>发生了什么</h2>
+<p>据 <a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a> 报道，9 月 29 日，特朗普总统与多家科技公司的负责人签署了“White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities”，这份文件只有 300 多个英文单词。所列签署人除总统外，还有 Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai 以及 OpenAI 总裁 Greg Brockman。</p>
+<p>Forbes 概括了对训练和部署前沿模型的公司提出的四项承诺：维持内部控制，监测模型能力与对齐情况，包括确保模型不会以非预期方式访问技术系统；由一个内部团队确保这些控制有效、问题得到修复；与一个“独立的外部审计方或评估方”合作；以及指定一个“董事会独立委员会”来监督这些控制措施和审计方。特朗普称该协议具有“道德约束力”，“在某种程度上几乎就像一部宪法”。<a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a> 指出，它没有设定任何违约后果，并援引悉尼大学教授 Kimberlee Weatherall 的话，称其“极其乏善可陈”。</p>
+<p>10 月 15 日，Anthropic 发布了<a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a>。文中称，它已向评估前沿模型的非营利机构 METR 的一个团队开放了类似员工的访问权限：六名 METR 员工完成入职，配备公司硬件和内部工具，权限与 Anthropic 自己的风险团队大致相当。METR 将公开其风险评估；Anthropic 表示它无法否决这些公开内容，但可以要求对机密知识产权等预先界定的类别进行删改。Anthropic 将这种模式比作银行监管机构向大型银行派驻检查人员，并表示所有前沿 AI 公司都应这样做。</p>
+<h2>为什么重要</h2>
+<p>这份协议内容单薄，批评者说得没错：一份没有后果的自愿性文本什么也保证不了。但独立评估方这项承诺是一个有用的抓手，因为它可以被核查：一家公司要么有一个拥有真实访问权限和公开自由的外部评估方，要么没有。</p>
+<p>Anthropic 的安排设定了一个看得见的标杆：深度访问、公开权利，以及对删改的明确限制。其他公司现在可以拿来与之比较。自愿性承诺正是这样变成行业规范的。</p>
+<h2>我的研究怎么看</h2>
+<p>我的研究领域——面向营销的可解释 AI——在更小的尺度上建立在同样的原则之上：关于模型做了什么的说法，应当能由模型所有者以外的人加以验证。在<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）和<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）中，解释层的存在，就是为了让营销人员能够检查一项预测为何作出，而不是全凭信任。</p>
+<p>我曾在 Forbes 上主张<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">透明对营销驱动型公司至关重要</a>。前沿实验室如今在安全问题上正趋向于这一理念的某个版本：内部控制、内部团队、外部评估方、董事会监督。营销 AI 并不承担同等的灾难性风险，但它确实承担着真实的风险：有偏差的定向、误导性的宣传主张、隐私泄露、花在错误信号上的预算。同样的四层结构，缩小规模后同样适用。</p>
+<h2>营销 AI 治理的四层模型</h2>
+<ul><li>内部控制。监测你的 AI 系统在做什么：它们定向哪些受众、生成哪些宣传主张、使用哪些数据。</li><li>内部负责人。指定一个人或一个团队，负责检查这些控制措施并修复问题。</li><li>外部视角。让一个独立方——例如审计机构、研究合作伙伴或另一家供应商——定期测试你的关键模型和宣传主张。</li><li>高层监督。像报告财务风险一样向领导层报告 AI 风险，并赋予其暂停某个系统的权力。</li></ul>
+<p>当你采购营销 AI 时，向供应商提出这份协议所引出的同样问题：谁在外部评估你的模型？他们拥有什么访问权限？他们能公开自己的发现吗？这些答案告诉你的，会比一份功能清单更多。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 White House Accord on Super Intelligence？</summary><p>这是一份题为“Joint Commitment on Frontier Responsibilities”的自愿性文件，于 2026 年 9 月 29 日由特朗普总统与 Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai 和 Greg Brockman 等领导者签署。它要求企业承诺建立内部控制、内部团队、独立外部评估方以及董事会层面的监督。</p></details><details><summary>白宫 AI 协议具有约束力吗？</summary><p>没有。特朗普称其具有“道德约束力”，但据 MercoPress 报道，它没有设定任何违约后果，一些学者批评其力度薄弱。</p></details><details><summary>Anthropic 向独立评估方开放了哪些权限？</summary><p>Anthropic 表示，六名 METR 员工已完成入职，获得了类似员工的访问权限，可使用公司硬件、工具和系统；METR 将公开其风险评估；Anthropic 无法否决这些公开内容，但可以要求对机密知识产权等预先界定的类别进行删改。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">监管与安全 · 2026 年 10 月 12 日</span><h3>蒸馏攻击：被复制的 AI 模型对你意味着什么</h3><p>美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/mas-ai-risk-management-guidelines/"><span class="meta">监管与安全 · 2026 年 10 月 7 日</span><h3>MAS AI 风险指引：一份适用于银行业以外的实用模板</h3><p>MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

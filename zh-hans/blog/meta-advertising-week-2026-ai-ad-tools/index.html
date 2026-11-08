@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta 新一代 AI 广告工具：自动化仍需要解释 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta 新一代 AI 广告工具：自动化仍需要解释 | Prof. Aleks Farseev" />
+<meta property="og:description" content="在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="广告与营销 AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta 新一代 AI 广告工具：自动化仍需要解释 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Meta 新一代 AI 广告工具：自动化仍需要解释","description":"在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"广告与营销 AI","about":{"@type":"Thing","name":"Meta 在 2026 年纽约广告周上发布新的 AI 广告工具"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Meta 在 2026 年广告周上发布了哪些 AI 广告工具？","acceptedAnswer":{"@type":"Answer","text":"根据 Relevant Audience 和 TechJuice 的报道，Meta 发布了全面开放的、由静态图片生成的 Advantage+ 创意视频，更大范围推出的 Ads Creative Studio，一个具备记忆并正在测试智能体操作的助手，“细分定位”中的自然语言受众发现，经过扩展的 Ads MCP server，以及聊天内结账的测试。"}},{"@type":"Question","name":"什么是 Meta 的 Ads MCP server？","acceptedAnswer":{"@type":"Answer","text":"它是一个基于 Model Context Protocol 的接口，让第三方 AI 工具能够接入 Meta 的广告系统，执行上传创意、预览、报告和起草广告活动等任务。Relevant Audience 列出了十家合作伙伴，包括 Databricks、Perplexity 和 Snowflake。"}},{"@type":"Question","name":"广告主应该让 AI 助手调整预算和定向吗？","acceptedAnswer":{"@type":"Answer","text":"只能在有规则的前提下。使用预览和审批功能，明确哪些调整可以自动进行，并通过对照测试等独立衡量方式核查结果，而不是只依赖平台报告的转化。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"Meta 新一代 AI 广告工具：自动化仍需要解释","item":"https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">Meta 新一代 AI 广告工具：自动化仍需要解释</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 广告与营销 AI</p>
+      <h1 class="h-display">Meta 新一代 AI 广告工具：自动化仍需要解释</h1>
+      <p class="lead">在纽约广告周上，Meta 扩展了 AI 视频、广告助手、自然语言受众设定以及 Ads MCP server。哪些事情仍应由营销人员掌控。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Meta 在 2026 年纽约广告周上发布新的 AI 广告工具（<time datetime="2026-10-06">2026 年 10 月 6 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>每年，各大平台都会朝着替你运营整个广告活动再迈进一步。10 月 6 日在纽约广告周上，Meta 一次迈出了好几步：一个具备记忆的广告助手、由静态图片生成的视频、自然语言受众发现，以及一个经过扩展、让外部 AI 工具能够操作其广告系统的服务器。都是有用的工具。但缺乏解释的自动化，是一种由你承担、而不是 Meta 替你承担的风险。</p>
+<h2>发生了什么</h2>
+<p>我无法打开 Meta 自己的公告页面，因此依据两篇详细的报道。根据 <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Relevant Audience 的拆解</a>和 <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">TechJuice 的报道</a>，Meta 发布了：</p>
+<ul><li>由静态图片生成的 Advantage+ 创意视频（现已全面开放），以及面向符合条件广告主的目录商品视频（测试版）。</li><li>Ads Creative Studio，一个此前仅限部分合作伙伴使用的创意工作区，开始向更多广告主推出。</li><li>一个具备跨对话记忆能力的商业 AI 助手，正在测试导入策略文档和品牌规范、定期报告和提醒，以及广告活动设置和预算调整等智能体操作，并提供预览和审批。</li><li>一个面向所有广告主开放的客户生命周期策略工具，以及“细分定位”（Detailed Targeting）中由 AI 支持的受众发现功能，广告主可以用自然语言描述理想客户。Relevant Audience 报道称，Meta 给出的时间是“年底前”。</li><li>一个经过扩展的 Ads MCP server，列出了包括 Databricks、Perplexity、Snowflake 和 Triple Whale 在内的十家合作伙伴，让第三方 AI 工具能够与 Meta 的广告系统协作。</li><li>电商功能，包括通过 Messenger 上的 Meta Business Agent 与 Shopify 合作测试直接结账，以及与 Adyen、PayPal、Shopify 和 Stripe 等合作伙伴在 Meta AI 中测试直接结账。</li></ul>
+<p>Meta 还声称，采纳其助手建议的广告主“通常”能在单次转化成本不变的情况下多获得 5% 的转化，而且在 Facebook 和 Instagram 上超过 60% 的时间花在视频上。Relevant Audience 指出，Meta 没有公布这些数字的计算方法。</p>
+<h2>为什么重要</h2>
+<p>其中有两项发布改变了由谁来思考。</p>
+<p>自然语言受众发现意味着平台把你对客户的描述转化为定向设置，这是一项画像决策。由助手驱动的预算和定向调整，意味着平台还要决定如何处理这一结果。而 MCP server 则意味着你在 Meta 之外使用的 AI，如今可以在 Meta 内部采取行动。</p>
+<p>每一步都节省了时间。但合在一起，它们把决策集中到了以平台目标为优化方向、并用平台自有数据来衡量的系统之中。当同一家公司出售广告、选择受众、生成创意并报告结果时，一个独立的视角会变得更有价值，而不是更没价值。</p>
+<h2>我的研究怎么看</h2>
+<p>用文字描述受众、再得到一个目标人群，这是我研究了很长时间的问题。我们关于<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">跨 Twitter、Facebook 和 PersonalityCafe 的多视角用户性格画像</a>的工作（Frontiers in Big Data，2022）表明，你对人的推断在很大程度上取决于你使用了哪些信号。一段自然语言描述，是关于你的客户的一个假设。它应当被检验，而不只是被执行。</p>
+<p>在创意方面，我的团队一直致力于投放前评分。在<a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>（WSDM 2023）中，我们展示了一个多模态模型，可在广告上线前利用文本、图片、定向和设置，为广告主的 Meta 广告创意打分。在<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）中，我们增加了一个大语言模型助手，用于解释预测点击率背后的驱动因素。我对平台工具采用同样的原则：一个无法解释的分数，就是一个你无法从中学习的分数。</p>
+<p>由静态图片生成视频，会让一个品牌能够投放的版本数量成倍增加。这是好事，前提是仍有人决定哪些版本值得投入预算，并理解胜出者为什么会胜出。否则，你得到的是更多的创意、更少的认知。</p>
+<h2>广告主现在应该做什么</h2>
+<ul><li>使用新的视频和创意工具，但保留一道投放前的筛选。在各版本花钱之前先审阅和打分，并记录每个版本上线的理由。</li><li>把自然语言受众当作实验。写好描述，与你现有的最佳受众进行对比测试，比较的是每个真实结果的成本，而不只是平台报告的转化。</li><li>审慎批准智能体操作。使用 Meta 所说的预览和审批功能，并制定规则，明确助手在没有人工参与的情况下可以作出哪些调整。</li><li>谨慎对待你导入的内容。策略文档和品牌规范都很敏感。想清楚助手真正需要什么。</li><li>保持独立的衡量视角。对照组、增量测试和你自己的数据分析，是对平台报告结果的制衡。</li></ul>
+<p>Meta 的工具已经好到让瓶颈从执行转向判断。确保行使判断的仍然是你的团队。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>Meta 在 2026 年广告周上发布了哪些 AI 广告工具？</summary><p>根据 Relevant Audience 和 TechJuice 的报道，Meta 发布了全面开放的、由静态图片生成的 Advantage+ 创意视频，更大范围推出的 Ads Creative Studio，一个具备记忆并正在测试智能体操作的助手，“细分定位”中的自然语言受众发现，经过扩展的 Ads MCP server，以及聊天内结账的测试。</p></details><details><summary>什么是 Meta 的 Ads MCP server？</summary><p>它是一个基于 Model Context Protocol 的接口，让第三方 AI 工具能够接入 Meta 的广告系统，执行上传创意、预览、报告和起草广告活动等任务。Relevant Audience 列出了十家合作伙伴，包括 Databricks、Perplexity 和 Snowflake。</p></details><details><summary>广告主应该让 AI 助手调整预算和定向吗？</summary><p>只能在有规则的前提下。使用预览和审批功能，明确哪些调整可以自动进行，并通过对照测试等独立衡量方式核查结果，而不是只依赖平台报告的转化。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">广告与营销 AI · 2026 年 10 月 21 日</span><h3>Meta 2026 年第三季度：AI 推高广告价格，创作者成为渠道</h3><p>Meta 2026 年第三季度：广告收入增长 26%，单条广告价格上涨 14%，合作伙伴广告年化收入突破 150 亿美元，亚太区则呈现截然不同的面貌。这意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">广告与营销 AI · 2026 年 9 月 30 日</span><h3>Amazon Ads Agent：零售媒体在 unBoxed 2026 迈向智能体化</h3><p>在 unBoxed 2026 上，Amazon 将其购买工具整合进 Amazon Ads Agent，并加入对话式效果衡量与 AI 创意。哪些环节应保留在人的手中。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>菲尔兹奖得主与 AI 基准：给营销人员的一课 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="菲尔兹奖得主与 AI 基准：给营销人员的一课 | Prof. Aleks Farseev" />
+<meta property="og:description" content="二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="研究" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="菲尔兹奖得主与 AI 基准：给营销人员的一课 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"菲尔兹奖得主与 AI 基准：给营销人员的一课","description":"二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"研究","about":{"@type":"Thing","name":"菲尔兹奖得主发表《A Severe Misalignment of AI in Mathematics》；OpenAI 退出加州理工学院的一场 AI 数学马拉松"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"《A Severe Misalignment of AI in Mathematics》是什么？","acceptedAnswer":{"@type":"Answer","text":"据 The Next Web 报道，这是一份于 2026 年 9 月 11 日发布、由 25 位菲尔兹奖得主签署的宣言。它认为解题只是数学真正目标——概念上的理解——的代理指标，并警告高速批量生产命题可能会损害这一领域。"}},{"@type":"Question","name":"OpenAI 退出了加州理工学院的数学马拉松吗？","acceptedAnswer":{"@type":"Answer","text":"The Next Web 报道称，OpenAI 于 2026 年 9 月 10 日撤回了其向加州理工学院学生组织的数学马拉松提供的价值 100 万美元的额度，而 Anthropic 保留了其支持，活动照常举行。"}},{"@type":"Question","name":"AI 数学之争对营销意味着什么？","acceptedAnswer":{"@type":"Answer","text":"这是一个关于针对代理指标进行优化的警示。营销团队应把 AI 指标与真实结果挂钩，计算人工核查的成本，并衡量借助 AI 完成的工作是否仍保有辨识度。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"菲尔兹奖得主与 AI 基准：给营销人员的一课","item":"https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">菲尔兹奖得主与 AI 基准：给营销人员的一课</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 研究</p>
+      <h1 class="h-display">菲尔兹奖得主与 AI 基准：给营销人员的一课</h1>
+      <p class="lead">二十五位菲尔兹奖得主警告：让 AI 竞相攻克未解难题，是把代理指标误当成了目标。营销也面临同样的基准问题。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：菲尔兹奖得主发表《A Severe Misalignment of AI in Mathematics》；OpenAI 退出加州理工学院的一场 AI 数学马拉松（<time datetime="2026-09-11">2026 年 9 月 11 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>数学家通常不会就营销写公开信。但一群菲尔兹奖得主在 9 月提出的论点，几乎可以逐字套用到我们这个行业衡量 AI 的方式上。他们的观点是：解题只是一个代理指标，真正的目标是理解。把两者混为一谈，就可能损害你原本想要改进的东西。</p>
+<h2>发生了什么</h2>
+<p>据 <a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a> 报道，9 月 11 日，一份题为<em>A Severe Misalignment of AI in Mathematics</em>的宣言在 mathandai.org 上发布。网站列出了 25 位签署人，包括 Terence Tao、Peter Scholze、Maryna Viazovska、Cédric Villani、Pierre Deligne、Manjul Bhargava 和 Martin Hairer。宣言认为，解题是一种工具和代理指标，而数学的首要目标是概念上的理解与洞见。它警告说，以越来越快的速度批量生产或真或假的命题，“可能摧毁肥沃的土壤”。TNW 将其描述为一份关于基准测试的声明；宣言并未点名任何具体事件。</p>
+<p>同一周，另一封公开信批评了加州理工学院一场由学生组织的 AI“数学马拉松”（Mathathon），称这种形式是“垃圾数学”（slop mathematics），并认为核查和纠正 AI 结果的劳动“没有报酬、没有署名、也没有得到承认”。TNW 报道称，OpenAI 于 9 月 10 日撤回了其向该活动提供的价值 100 万美元的额度，而 Anthropic 保留了其支持；组织者增加了一些要求，但并未取消活动。</p>
+<h2>为什么重要</h2>
+<p>数学家们抱怨的是一个熟悉的陷阱。当一个著名难题变成基准测试，实验室就会针对“给出答案”进行优化。答案是可衡量的，理解则不然。久而久之，可衡量的东西会挤掉有价值的东西，而核查输出的工作则留给了别人。</p>
+<p>营销 AI 恰恰也有这个问题。我们用容易计数的东西来衡量工具：生成的素材数量、节省的时间、点击率、提及品牌的 AI 答案占比。这些数字很重要。但营销的目标不是产出，而是足够理解客户、从而服务好他们，并建立一个人们信任的品牌。一个用内容淹没各个渠道、在代理指标上大获全胜的系统，可能会悄无声息地侵蚀这两者。</p>
+<p>关于无偿核查的观点同样切中要害。生成内容的成本很低，核查的成本却很高。如果核查工作在你的指标中不可见，那么你的“生产力提升”有一部分只是会计上的把戏。</p>
+<h2>我的研究怎么看</h2>
+<p>我近期的研究正是围绕这一区分展开的。在我们的 SIGIR 2026 论文<a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a>中，我们要解决的问题恰恰是 AI 撰写的内容会趋同：每个人的助手都写出同样合格却千篇一律的帖子。我们的方法是在写作前检索真实的上下文数据，让输出保持独特。没有辨识度的数量，就是营销版的“垃圾内容”。</p>
+<p>在效果衡量方面，我曾在 e27 上指出：<a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">所有仪表盘都是绿的，却没人能说清什么起了作用</a>。全线上扬的代理指标，并不等于知道结果是由什么造成的。而在我们从<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>到<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>的可解释 AI 工作中，目标不只是更好的预测，而是营销人员能从中学习的解释。这就是营销版的、数学家所说的“概念上的理解”。</p>
+<h2>营销团队可以从中得到什么启示</h2>
+<ul><li>为每个指标写明背后的目标。为每一项 AI KPI 写一句话，说明它应当代表什么真实结果，并定期检查这种对应关系是否仍然成立。</li><li>把核查成本算进去。跟踪人工审阅和纠正 AI 输出所花的时间，并将其计入投资回报率。</li><li>衡量辨识度。把你借助 AI 制作的内容与竞争对手的进行比较。如果它们变得难以区分，你就是赢了代理指标，输了品牌。</li><li>优先选择解释，而不是分数。一个告诉你“为什么有效”的工具，会积累团队知识；一个只告诉你“有效”的工具，则只会制造依赖。</li><li>给人以应有的认可。如果有人在为 AI 输出收拾残局，就让这项工作被看见、被重视，而不是被视为理所当然。</li></ul>
+<p>数学家们正在保护自己的领域，使其免受一种把答案误当作理解的基准文化的侵害。营销也应当避免犯同样的错误。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>《A Severe Misalignment of AI in Mathematics》是什么？</summary><p>据 The Next Web 报道，这是一份于 2026 年 9 月 11 日发布、由 25 位菲尔兹奖得主签署的宣言。它认为解题只是数学真正目标——概念上的理解——的代理指标，并警告高速批量生产命题可能会损害这一领域。</p></details><details><summary>OpenAI 退出了加州理工学院的数学马拉松吗？</summary><p>The Next Web 报道称，OpenAI 于 2026 年 9 月 10 日撤回了其向加州理工学院学生组织的数学马拉松提供的价值 100 万美元的额度，而 Anthropic 保留了其支持，活动照常举行。</p></details><details><summary>AI 数学之争对营销意味着什么？</summary><p>这是一个关于针对代理指标进行优化的警示。营销团队应把 AI 指标与真实结果挂钩，计算人工核查的成本，并衡量借助 AI 完成的工作是否仍保有辨识度。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/malaysia-ai-governance-bill/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 29 日</span><h3>马来西亚《AI Governance Bill》：按角色划分责任</h3><p>马来西亚的《AI Governance Bill》草案预计最迟于 2027 年初出台，将义务落在开发、提供或使用 AI 的各方身上。按角色划分的规则对营销人员意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 搜索 · 2026 年 10 月 29 日</span><h3>Adobe：AI 引流的转化率已高于其他访问</h3><p>Adobe 称，9 月来自 AI 的美国零售商访问，转化率比其他流量高出 90%。AI 答案为何成了一个渠道，以及该如何应对。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

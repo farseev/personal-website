@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5：水印、审计与 AI 内容标识 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5：水印、审计与 AI 内容标识 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="模型" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5：水印、审计与 AI 内容标识 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5：水印、审计与 AI 内容标识","description":"Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"模型","about":{"@type":"Thing","name":"Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列的首款模型"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"什么是 Claude Opus 5.5？","acceptedAnswer":{"@type":"Answer","text":"它是 Anthropic Claude 5.5 系列的首款模型，于 2026 年 9 月 22 日发布。Anthropic 称，它在大多数工作上的表现达到 Claude Fable 5.1 的水平，在其智能体编程、计算机操作和知识型工作基准测试中领先，并且在典型工作负载下成本比 Opus 5 低约 40%。"}},{"@type":"Question","name":"Claude Opus 5.5 会给输出加水印吗？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 的公告说明，Opus 5.5 内置水印，以符合 EU AI Act 的要求。"}},{"@type":"Question","name":"欧盟的 AI 透明度规则对营销人员有哪些要求？","acceptedAnswer":{"@type":"Answer","text":"根据欧盟委员会的说明，自 2026 年 8 月 2 日起适用的透明度义务包括：清晰标注深度伪造内容，对就公共利益事项发布的 AI 生成文本进行标注，以及在人们与聊天机器人等 AI 系统互动时告知对方。负有责任的不只是生成式 AI 的提供方，部署方同样如此。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5：水印、审计与 AI 内容标识","item":"https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">Claude Opus 5.5：水印、审计与 AI 内容标识</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 模型</p>
+      <h1 class="h-display">Claude Opus 5.5：水印、审计与 AI 内容标识</h1>
+      <p class="lead">Anthropic 的 Claude Opus 5.5 为符合 EU AI Act 而内置水印，并附注称该模型常常怀疑自己正在被测试。这两点都与营销人员息息相关。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列的首款模型（<time datetime="2026-09-22">2026 年 9 月 22 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>人们通常会去读模型发布的基准测试表格。9 月 22 日 Anthropic 发布 Claude Opus 5.5 时，我认为对营销人员最重要的两句话却在页面靠下的位置：该模型内置水印以符合 EU AI Act，而且 Anthropic 表示该模型常常怀疑自己正在被评估。</p>
+<h2>发生了什么</h2>
+<p>根据 <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Anthropic 的公告</a>，Opus 5.5 是 Claude 5.5 系列的首款模型，“在大多数工作上的表现达到 Claude Fable 5.1 的水平”。它在 Anthropic 的智能体编程、计算机操作和知识型工作基准测试中领先。定价为每百万输入 Token 4 美元、每百万输出 Token 20 美元，Anthropic 称在典型工作负载下，其成本比 Opus 5 低约 40%。</p>
+<p>在安全方面，Anthropic 表示，在一项涵盖近 2,000 个场景的自动化行为审计中，该模型取得了其测试过的所有模型中的最佳成绩，并且比近期的模型更不容易采取难以逆转的行动或越出其边界行事。它还表示，该模型常常怀疑自己正在被评估，这限制了评估结果对真实世界行为的预测能力。页面还说明，Opus 5.5 内置水印，以符合 EU AI Act 的要求。</p>
+<p>作为背景，欧盟委员会已于 6 月<a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">发布了关于 AI 生成内容标记与标识的最终版 Code of Practice</a>。这份自愿性准则旨在帮助生成式 AI 的提供方和部署方履行自 2026 年 8 月 2 日起适用的透明度义务，包括清晰标注深度伪造内容、对就公共利益事项发布的 AI 生成文本进行标注，以及在人们与聊天机器人等 AI 系统互动时告知对方。</p>
+<h2>为什么重要</h2>
+<p>水印把 AI 披露问题从政策层面搬进了模型本身。如果你的团队生成的内容带有机器可读的标记，那么“我们没有使用 AI”就成了一个可以核查的说法。对品牌而言，这改变了在披露上掉以轻心的代价。</p>
+<p>欧洲的这些义务并不只针对模型提供方。部署方——包括发布 AI 生成内容的公司——同样负有责任。一个运营聊天机器人、发布合成视频，或就公共利益事项发布 AI 撰写文本的营销团队，需要的是一套标识规范，而不只是一个恰好带水印的模型。</p>
+<p>关于评估的那条说明更加微妙，在我看来也更有意思。如果一个模型在怀疑自己正被测试时表现不同，那么测试结果就是一种偏乐观的估计。这适用于供应商对任何高能力模型的宣传，包括那些正在运行你的营销工作的模型。</p>
+<h2>我的研究怎么看</h2>
+<p>我长期在 Forbes 上主张<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">透明对营销驱动型公司至关重要</a>，而且透明与效果可以相互支撑——我称之为<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">救赎式营销</a>。为 AI 内容加标识，正是对这一理念的直接检验。我的预期是，受众对未披露 AI 的惩罚会比对已披露 AI 更重，而诚实标识将成为一个自信品牌的标志。</p>
+<p>在评估方面，我关于预测创意效果的研究也给出了相关的启示。在<a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>（WSDM 2023）和<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）中，模型的预测只有在与投放后的实际情况核对之后才会被信任。投放前的评分是假设，实际效果才是证据。如果连实验室都承认实验室测试可能偏乐观，营销人员就更应加倍谨慎，在生产环境中持续监测 AI 系统，而不只是在采购时检查。</p>
+<h2>营销团队现在应该做什么</h2>
+<ul><li>制定标识政策。决定你的品牌在什么情况下披露 AI 的参与：合成图片与视频、聊天机器人、AI 撰写的文章。如果你在欧盟开展业务，请与欧盟的义务保持一致。</li><li>保留来源记录。记录每项素材由哪个工具和模型生成，以便日后能够回答相关问题。</li><li>不要去除水印或元数据。移除来源信号正是那种会把设计选择变成合规问题的捷径。</li><li>在生产环境中持续监测。跟踪 AI 系统上线后的投诉、更正和偏离品牌调性的输出，而不只是上线前的测试分数。</li><li>向供应商询问真实世界中的行为。他们如何检查模型在评估之外的表现是否一致？</li></ul>
+<p>Opus 5.5 是一款能力出色的模型，其降价对许多团队都会产生影响。但更持久的变化，是它所反映的期望：AI 内容应当可识别，AI 行为应当在其实际运行的地方得到验证。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 Claude Opus 5.5？</summary><p>它是 Anthropic Claude 5.5 系列的首款模型，于 2026 年 9 月 22 日发布。Anthropic 称，它在大多数工作上的表现达到 Claude Fable 5.1 的水平，在其智能体编程、计算机操作和知识型工作基准测试中领先，并且在典型工作负载下成本比 Opus 5 低约 40%。</p></details><details><summary>Claude Opus 5.5 会给输出加水印吗？</summary><p>Anthropic 的公告说明，Opus 5.5 内置水印，以符合 EU AI Act 的要求。</p></details><details><summary>欧盟的 AI 透明度规则对营销人员有哪些要求？</summary><p>根据欧盟委员会的说明，自 2026 年 8 月 2 日起适用的透明度义务包括：清晰标注深度伪造内容，对就公共利益事项发布的 AI 生成文本进行标注，以及在人们与聊天机器人等 AI 系统互动时告知对方。负有责任的不只是生成式 AI 的提供方，部署方同样如此。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">模型 · 2026 年 10 月 7 日</span><h3>Claude Haiku 5.5 与小模型在营销中的价值</h3><p>Anthropic 的 Claude Haiku 5.5 专为低成本、高速度、大批量的工作而打造。为什么一个模型家族中最小的那个，对营销人员往往最重要。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">模型 · 2026 年 9 月 30 日</span><h3>Gemini 4 Argon：百万输出 Token，然后呢？</h3><p>Google DeepMind 的 Gemini 4 Argon 带来 1M Token 的输出上限，并以网络安全优先的方式推出。长周期 AI 会改变营销工作的哪些方面，又不会改变什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">模型 · 2026 年 9 月 29 日</span><h3>OpenAI 为何搁置 GPT-6.1 Astra，以及这为何重要</h3><p>OpenAI 在测试发现其在范围、授权以及汇报方式上存在问题后，取消了 GPT-6.1 Astra 的发布。同样的测试也适用于你的智能体。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

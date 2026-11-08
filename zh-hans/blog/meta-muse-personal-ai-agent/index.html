@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse：当你的客户派来一个智能体 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse：当你的客户派来一个智能体 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="智能体" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse：当你的客户派来一个智能体 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse：当你的客户派来一个智能体","description":"Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"智能体","about":{"@type":"Thing","name":"Meta 在美国推出面向日常任务的个人 AI 智能体 Muse"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"什么是 Meta Muse？","acceptedAnswer":{"@type":"Answer","text":"Muse 是 Meta 于 2026 年 9 月 8 日推出的个人 AI 智能体。据美联社报道，它帮助处理日程安排和购物等日常任务，Meta 称它可以打开浏览器、填写表单，并代表用户进行谈判。"}},{"@type":"Question","name":"Meta Muse 在哪些地区可用？","acceptedAnswer":{"@type":"Answer","text":"推出时仅限美国，面向 18 岁及以上用户，可通过独立的 Muse 应用或在 WhatsApp 内使用。"}},{"@type":"Question","name":"品牌应如何为个人 AI 智能体做准备？","acceptedAnswer":{"@type":"Answer","text":"发布清晰、机器可读的报价和政策，去除操纵性的设计模式，事先决定哪些条款可以谈判，并在客户作出最终决定的时刻保留有力的、面向人的创意。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse：当你的客户派来一个智能体","item":"https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">Meta Muse：当你的客户派来一个智能体</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 智能体</p>
+      <h1 class="h-display">Meta Muse：当你的客户派来一个智能体</h1>
+      <p class="lead">Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Meta 在美国推出面向日常任务的个人 AI 智能体 Muse（<time datetime="2026-09-08">2026 年 9 月 8 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>二十年来，数字营销一直假定漏斗的末端坐着一个人。9 月 8 日，Meta 推出了 Muse，一个可以代表这个人行事的个人 AI 智能体：发送电子邮件、预订行程、填写表单，用 Meta 的话说，还能“代表他们进行谈判”。人仍然在那里，但越来越多的时候，一个智能体站在了他们和你之间。</p>
+<h2>发生了什么</h2>
+<p>根据<a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">美联社的报道</a>，Muse 是一个处理日程安排和购物等日常任务的个人 AI 智能体。Meta 表示，用户一旦说出目标，Muse 就会制定个性化计划，协调时间和资源，并自行推进工作。示例从发送电子邮件或预订行程，到制定为期一年的锻炼计划或创办一家新企业。Meta 称，Muse 可以打开浏览器、填写表单，并代表用户进行谈判。</p>
+<p>Muse 面向 18 岁及以上用户开放，目前仅限美国，可通过独立的 Muse 应用或在 WhatsApp 内使用。Meta 强调了安全与隐私，并称 Muse 运行在一台专用的安全虚拟机上，智能体和用户数据都存放于其中。美联社将这次发布与 Mark Zuckerberg 关于个人超级智能的文章联系起来，他在文中写道，每个人都将拥有“一个能力非凡、理解你和你的目标的个人智能体”。</p>
+<h2>为什么重要</h2>
+<p>当一个人比较三家酒店时，你的品牌有机会打动他们：一张照片、一条评价、一种感觉。而当一个智能体代表这个人比较三家酒店时，它读取的是结构化的事实、政策和价格，而且可能永远不会像人那样“看到”那张照片。谈判是更激进的部分：一个会谈判的智能体，不会对“库存紧张”的横幅作出反应。</p>
+<p>分发渠道同样重要。Muse 存在于 WhatsApp 之中，而 WhatsApp 是亚洲、拉丁美洲和非洲最重要的即时通讯渠道之一。它目前仅限美国，但一个嵌入在我们许多客户日常使用的即时通讯应用中的个人智能体，绝不是一个小众实验。</p>
+<h2>我的研究怎么看</h2>
+<p>我的研究一直是关于如何从人们的数字足迹中理解他们。在<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a>（ICMR 2015）以及<a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a>（AAAI 2017，结合社交媒体帖子与可穿戴传感器数据来学习健康画像）中，我们表明，综合多个来源所得到的人物图景，远比任何单一来源丰富。</p>
+<p>个人智能体是这一理念的终极形态，但有一个重大区别：画像现在掌握在用户的智能体手中，而不是广告主手中。Muse 的设计目标是理解用户的目标并据此行动。这改变了信息的力量对比。不再是品牌为客户画像、决定展示什么；而是客户的智能体为品牌画像、决定接受什么。</p>
+<p>这改变了“个性化”的含义。在我们关于<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">性格驱动的内容推荐</a>的工作（ACM Multimedia 2022）中，目标是让内容与人的特质相匹配。当智能体参与其中，你需要两个层次：一份智能体能够评估的、清晰、真实、机器可读的报价，以及在人抬起头作决定的那一刻面向人的创意。面向智能体的好营销，看起来会像好的文档；面向人的好营销，看起来仍会像好的故事。</p>
+<p>还有一个我很在意的责任问题。一个代表用户谈判的智能体，必须忠于这位用户。如果智能体开始在不披露的情况下接受付费偏好，我们就会在人们用过的最私密的软件里，重建广告行业中最糟糕的部分。Meta 对隐私的强调值得肯定；而关于商业因素对智能体决策影响的透明度，同样重要。</p>
+<h2>营销人员现在应该做什么</h2>
+<ul><li>让你的报价对机器清晰可读。价格、库存、退货政策、配送时间和条款，都应在你的网站和数据源中写得明确、一致、易于解析。</li><li>去除暗黑模式。倒计时和隐藏费用，对智能体是阻力，对人则是信任问题。</li><li>为谈判做好准备。事先决定哪些条款是灵活的，例如组合套装、配送时段或会员福利，让自动化请求能够得到快速、一致的答复。</li><li>保留属于人的时刻。最终的那个“是”往往仍由人来说。在这一步，你的品牌故事、评价和创意依然重要。</li><li>关注即时通讯渠道。如果智能体存在于 WhatsApp 之中，你的对话式商务布局将变得更加重要。</li></ul>
+<p>Muse 只是一个国家里的一款产品。它所代表的模式——一个会委托他人代劳的客户——将会扩散开来。请同时为两类受众而构建：负责比较的智能体，以及负责决定的人。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 Meta Muse？</summary><p>Muse 是 Meta 于 2026 年 9 月 8 日推出的个人 AI 智能体。据美联社报道，它帮助处理日程安排和购物等日常任务，Meta 称它可以打开浏览器、填写表单，并代表用户进行谈判。</p></details><details><summary>Meta Muse 在哪些地区可用？</summary><p>推出时仅限美国，面向 18 岁及以上用户，可通过独立的 Muse 应用或在 WhatsApp 内使用。</p></details><details><summary>品牌应如何为个人 AI 智能体做准备？</summary><p>发布清晰、机器可读的报价和政策，去除操纵性的设计模式，事先决定哪些条款可以谈判，并在客户作出最终决定的时刻保留有力的、面向人的创意。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/agent-skills-agentic-ai-foundation/"><span class="meta">智能体 · 2026 年 10 月 22 日</span><h3>Agent Skills 走向厂商中立：营销人员为何应当关注</h3><p>Anthropic 将 Agent Skills 标准捐赠给了 Agentic AI Foundation。可移植、成文的专业知识，正是营销团队需要 AI 智能体具备的。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/workday-c1-ai-agent-identity/"><span class="meta">智能体 · 2026 年 10 月 13 日</span><h3>Workday 收购 C1.ai：你的营销智能体同样需要身份</h3><p>Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/openai-agent-medicare-portal-australia/"><span class="meta">智能体 · 2026 年 9 月 24 日</span><h3>不肯接受拒绝的 AI 智能体</h3><p>澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

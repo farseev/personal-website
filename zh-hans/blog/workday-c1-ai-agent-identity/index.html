@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workday 收购 C1.ai：你的营销智能体同样需要身份 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Workday 收购 C1.ai：你的营销智能体同样需要身份 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="智能体" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Workday 收购 C1.ai：你的营销智能体同样需要身份 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/","url":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/","headline":"Workday 收购 C1.ai：你的营销智能体同样需要身份","description":"Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"智能体","about":{"@type":"Thing","name":"Workday 签署最终协议，收购面向人与智能体的智能体身份平台 C1.ai"},"wordCount":864,"citation":[{"@type":"CreativeWork","name":"Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents","url":"https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents","publisher":"Workday Newsroom","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/#faq","mainEntity":[{"@type":"Question","name":"什么是 C1.ai？","acceptedAnswer":{"@type":"Answer","text":"据 Workday 介绍，C1.ai 是一个智能体身份平台，可连接电子邮件、CRM、代码仓库、财务系统和云基础设施等业务系统，在需要时为人和 AI 智能体授予访问权限、在不需要时将其收回，并提供限定范围的访问、策略、人工审批和操作记录。"}},{"@type":"Question","name":"Workday 对 C1.ai 的收购何时完成？","acceptedAnswer":{"@type":"Answer","text":"Workday 预计该交易将在其 2027 财年第四季度（截至 2027 年 1 月 31 日）完成，须满足惯常的交割条件。收购价格未披露。"}},{"@type":"Question","name":"为什么营销中的 AI 智能体需要独立的身份？","acceptedAnswer":{"@type":"Answer","text":"因为智能体越来越多地接触客户数据、广告预算和品牌渠道。独立、限定范围且有记录的身份，使得限制每个智能体能做什么、对高风险操作要求审批，以及为审计追溯每一项变更成为可能。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"Workday 收购 C1.ai：你的营销智能体同样需要身份","item":"https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/workday-c1-ai-agent-identity/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">Workday 收购 C1.ai：你的营销智能体同样需要身份</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 智能体</p>
+      <h1 class="h-display">Workday 收购 C1.ai：你的营销智能体同样需要身份</h1>
+      <p class="lead">Workday 同意收购 C1.ai，后者负责管理人与 AI 智能体的访问权限。接触 CRM 与广告账户的营销智能体，也需要同样的规则。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Workday 签署最终协议，收购面向人与智能体的智能体身份平台 C1.ai（<time datetime="2026-10-13">2026 年 10 月 13 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>当一名新员工入职时，会有人为其创建账户、决定其可以查看什么，并在其离职时收回权限。当一个新的 AI 智能体加入你的营销团队时，谁来做这些事？10 月 13 日，Workday 宣布将收购一家以回答这个问题为全部业务的公司。</p>
+<h2>发生了什么</h2>
+<p>根据 <a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday 的新闻稿</a>，它已签署最终协议，收购“面向人与智能体的智能体身份平台”C1.ai。收购价格未披露，交易预计将在 Workday 2027 财年第四季度（截至 2027 年 1 月 31 日）完成，须满足惯常条件。</p>
+<p>C1.ai 可以连接电子邮件、CRM、代码仓库、财务系统和云基础设施等业务系统。它在需要时为每个人和每个智能体授予访问权限，并在不再需要时将其收回。按其自身的描述，该平台提供限定范围的访问、强制执行的策略、人工审批，以及每一项操作的记录。</p>
+<p>新闻稿用两个数字勾勒出这一问题：援引 C1.ai 的研究，称 95% 的美国大公司已经在运行自主智能体；援引 Deloitte 的数据，称只有 21% 的公司表示拥有成熟的智能体治理方式。Workday 的 Gerrit Kazmaier 表示：“当今的企业依靠由人和 AI 智能体共同组成的劳动力运转。”C1.ai 的 CEO Alex Bovee 说得更直白：“企业无法用昨天的 IT 工单来保障 AI 时代的安全。”</p>
+<h2>为什么重要</h2>
+<p>营销是公司中权限需求最重的职能之一，尽管它给人的感觉并非如此。想想一个能干的营销智能体可能需要接触什么：存有客户数据的 CRM、带有预算的广告账户、数据分析、内容管理系统、代表品牌发声的社交账户、电子邮件平台，以及装满未发布计划的共享网盘。</p>
+<p>大多数团队仍以老方法授予这些权限：有人共享一个登录账号；一个 API 密钥躺在电子表格里；某个工具获得了“管理员”权限，因为这样更省事。对人来说这本来就有风险；而对于持续运行、以机器速度行动的智能体，这就成了首要风险。</p>
+<p>C1.ai 的主张说对了答案的形态：访问权限限定在任务范围内、按需即时授予、在必要时由人批准，并且有记录。这不是 IT 细节，它决定了一个智能体能否被安全地委以真正的工作。</p>
+<h2>我的研究怎么看</h2>
+<p>早在智能体出现之前，我的团队就研究过一个更简单的身份问题。在<a href="https://doi.org/10.1007/978-3-030-13283-5_9" target="_blank" rel="noopener">Person, Organization, or Personage: Towards User Account Type Prediction in Microblogs</a>（EGOSE 2018）中，我们研究了如何区分个人账户、机构账户和名人账户。动机在于：如果你不知道是哪类行为者产生了某种行为，你就无法正确解读这种行为。</p>
+<p>同样的原则如今适用于公司内部。你的营销技术栈中的每一项操作都应当可以追溯：这次预算调整是由一个人作出的，由一个代表某人的智能体作出的，还是由一条自动化规则作出的？没有这一点，你就无法审计结果、解释失误，或从有效的做法中学习。在我们从<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>到<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>的可解释 AI 研究中，解释依赖于知道是哪些输入和哪些决策导致了某个结果。身份就是第一个输入。</p>
+<p>我也把这看作我在 <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes 专栏</a>中所倡导的转变的一部分：营销人员从手动内容创作者转变为 AI 工具的策展人。策展智能体，就包括决定每一个智能体被允许做什么。</p>
+<h2>营销运营现在应该做什么</h2>
+<ul><li>给每个智能体独立的身份。不共享人的登录账号。如果某个平台不支持服务账户或限定范围的 API 密钥，就把它视为一个危险信号。</li><li>按任务限定范围。一个撰写报告的智能体需要的是数据分析的读取权限，而不是广告预算的写入权限。</li><li>对不可逆的操作要求审批。发布内容、超过阈值的支出以及删除数据，都应当需要人的同意。</li><li>让权限到期失效。在一场广告活动或一项任务的期间内授予权限，结束后自动收回。</li><li>记录并复核。保留智能体的操作记录并真正去看，尤其是在支出或信息发布出现任何意外之后。</li><li>把智能体纳入离职流程。当与某家供应商、某个工具或某家代理商的合作结束时，撤销随之而来的智能体和密钥。</li></ul>
+<p>Workday 的这笔交易表明，企业软件界如今已把智能体视为劳动力的一员。营销也应如此——从谁拿到钥匙开始。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 C1.ai？</summary><p>据 Workday 介绍，C1.ai 是一个智能体身份平台，可连接电子邮件、CRM、代码仓库、财务系统和云基础设施等业务系统，在需要时为人和 AI 智能体授予访问权限、在不需要时将其收回，并提供限定范围的访问、策略、人工审批和操作记录。</p></details><details><summary>Workday 对 C1.ai 的收购何时完成？</summary><p>Workday 预计该交易将在其 2027 财年第四季度（截至 2027 年 1 月 31 日）完成，须满足惯常的交割条件。收购价格未披露。</p></details><details><summary>为什么营销中的 AI 智能体需要独立的身份？</summary><p>因为智能体越来越多地接触客户数据、广告预算和品牌渠道。独立、限定范围且有记录的身份，使得限制每个智能体能做什么、对高风险操作要求审批，以及为审计追溯每一项变更成为可能。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents</a> — Workday Newsroom, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/agent-skills-agentic-ai-foundation/"><span class="meta">智能体 · 2026 年 10 月 22 日</span><h3>Agent Skills 走向厂商中立：营销人员为何应当关注</h3><p>Anthropic 将 Agent Skills 标准捐赠给了 Agentic AI Foundation。可移植、成文的专业知识，正是营销团队需要 AI 智能体具备的。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/openai-agent-medicare-portal-australia/"><span class="meta">智能体 · 2026 年 9 月 24 日</span><h3>不肯接受拒绝的 AI 智能体</h3><p>澳大利亚总理表示，一个 OpenAI 研究智能体绕过了 Medicare 统计门户的访问限制。给营销智能体的教训关乎“范围”。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/meta-muse-personal-ai-agent/"><span class="meta">智能体 · 2026 年 9 月 8 日</span><h3>Meta Muse：当你的客户派来一个智能体</h3><p>Meta 推出了 Muse，一个能代表用户预订、购物和谈判的个人 AI 智能体。面向智能体而不仅是面向人做营销，如今已成为一个现实问题。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

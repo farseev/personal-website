@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 规则如今将虚假商业热度视同选举舞弊 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 规则如今将虚假商业热度视同选举舞弊 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="负责任的营销" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 规则如今将虚假商业热度视同选举舞弊 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"AI 规则如今将虚假商业热度视同选举舞弊","description":"Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"负责任的营销","about":{"@type":"Thing","name":"Anthropic 更新使用政策，新增关于欺骗性宣传活动的条款，并在美国中期选举前发布选举相关滥用报告"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"Anthropic 2026 年使用政策如何看待商业欺骗？","acceptedAnswer":{"@type":"Answer","text":"其新增章节“Do Not Engage in Deceptive Campaigns or Artificial Activity”适用于“无论政治还是商业”的欺骗性活动，包括隐瞒信息背后的发布者、通过虚假账户或帖子放大内容，以及为影响力行动构建基础设施。Anthropic 表示，此次更新于 11 月 12 日生效。"}},{"@type":"Question","name":"Anthropic 是否发现有人用 AI 制作假新闻赚取广告收入？","acceptedAnswer":{"@type":"Answer","text":"是的。Anthropic 在其中期选举报告中表示，有行为者利用 Claude 制作虚假新闻以赚取广告收入，相关账户已被封禁。"}},{"@type":"Question","name":"新政策是否禁止个性化定向？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 取消了对个性化投票与竞选定向的全面禁令。依赖欺骗或滥用个人数据的定向，仍受该政策其他章节的禁止。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"AI 规则如今将虚假商业热度视同选举舞弊","item":"https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/ai-usage-policy-deceptive-commercial-campaigns/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">AI 规则如今将虚假商业热度视同选举舞弊</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 负责任的营销</p>
+      <h1 class="h-display">AI 规则如今将虚假商业热度视同选举舞弊</h1>
+      <p class="lead">Anthropic 新版使用政策禁止“无论政治还是商业”的欺骗性宣传活动，并发现了为赚取广告收入而制造的假新闻。这是营销人员的一条红线。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：Anthropic 更新使用政策，新增关于欺骗性宣传活动的条款，并在美国中期选举前发布选举相关滥用报告（<time datetime="2026-10-14">2026 年 10 月 14 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>多年来，关于 AI 与操纵的讨论一直围绕选举展开。这种关注有其道理。但用来伪造政治运动的手法，同样可以伪造一款产品的人气。10 月，Anthropic 在其规则中明确了这层关联，营销人员也应把它看作一条朝向自己划出的界线。</p>
+<h2>发生了什么</h2>
+<p>10 月 8 日，Anthropic 发布了 <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 年使用政策更新</a>，自 11 月 12 日起生效。更新新增了一个名为“Do Not Engage in Deceptive Campaigns or Artificial Activity”（不得从事欺骗性宣传活动或人为制造的活动）的章节，整合了此前分散在选举、欺诈、隐私和虚假信息等章节中的规则。新章节“适用于任何类型的欺骗性活动（无论政治还是商业）”，涵盖隐瞒信息背后的真实发布者、通过虚假账户或帖子放大内容，以及为影响力行动构建工具或基础设施。</p>
+<p>此次更新还取消了对个性化投票与竞选定向的全面禁令。依赖欺骗或滥用选民个人数据的定向，仍受欺骗性宣传活动、监控和隐私等章节的禁止。</p>
+<p>一周后，Anthropic 在<a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a>中介绍了它在实践中观察到的情况。在其他案例之外，它报告称有行为者利用 Claude 制作虚假新闻以赚取广告收入，相关账户已被封禁。它还报告，测试其安全机制的合作伙伴发现：Claude 能可靠地拒绝单个有害请求，却可能漏掉被拆分成若干单独看来无害任务的整体行动；为此它新增了针对多步骤滥用（如虚假社交媒体账户和新闻网站）的分类器。</p>
+<h2>为什么重要</h2>
+<p>有两个细节值得每一位营销从业者关注。</p>
+<p>“或商业”这几个字，把虚假评价、马甲账户、机器人放大的产品发布，以及人为制造的“草根”热度，与政治影响力行动归入了同一类别。你或许本就不会用 Claude 做这些事，但整个行业的走向已经很清楚：AI 提供方正在监测协同的虚假活动，而且它们并不区分推销候选人与推销产品。</p>
+<p>第二个细节是部分滥用背后的商业模式：为赚取广告收入而制造的虚假新闻。这不只是内容问题，更是广告资金问题。当品牌预算通过自动化程序化购买流向虚假网站时，广告主最终为这种欺骗买了单，而且通常毫不知情。</p>
+<p>定向规则的变化同样值得注意。个性化本身并未被视为危害，欺骗和滥用个人数据才是。我认为这是正确的区分。</p>
+<h2>我的研究怎么看</h2>
+<p>我职业生涯的大部分时间都在构建受众画像系统：<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">从多个社交网络学习用户画像</a>、<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">跨网络推断性格</a>，以及<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">利用性格推荐内容</a>。我深知这些技术有多强大，这也正是我在 WSDM 2023 上做了一场关于<a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">在广告定向与创意评估中负责任地使用 AI</a>的演讲的原因。</p>
+<p>我在 Forbes 上以<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">救赎式营销</a>为题阐述过我的观点：透明与效果并不必然此消彼长。为了更好地服务受众而去理解受众，是正当的；用虚假账户和虚假声音冒充受众，则不是。新政策划出的界线，大致也落在同一个位置。</p>
+<p>这里还有一个衡量层面的问题。虚假互动会污染现代营销 AI 赖以学习的数据本身。如果竞争对手的热度部分是人为合成的，那么任何去读取“这个品类什么有效”的模型，都会学到错误的结论。把虚假信号从社交数据中清理出去，已成为优秀分析工作的一部分。</p>
+<h2>营销人员现在应该做什么</h2>
+<ul><li>把它写进你与代理商和达人的合同：不得使用虚假账户、购买的互动或未披露的赞助内容，包括借助 AI 制作的内容。</li><li>披露发言者是谁。如果由 AI 代表你的品牌或某个人发言，确保账户归属与赞助关系清晰可见。</li><li>审计你的程序化投放资金流向何处。要求提供网站级别的报告，并屏蔽在无法识别发布方的网站上的投放。</li><li>在你自己的政策中把个性化与欺骗区分开来。在获得同意的前提下使用第一方数据定制信息是一回事；隐瞒信息背后的发布者则是另一回事。</li><li>预期会被监控。如果你的工作流在大规模自动发布内容，请做好记录，以便轻松证明使用是正当的。</li></ul>
+<p>选举让问题变得显而易见，而大部分资金在商业领域。AI 提供方已经注意到了，营销人员应当抢先一步。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>Anthropic 2026 年使用政策如何看待商业欺骗？</summary><p>其新增章节“Do Not Engage in Deceptive Campaigns or Artificial Activity”适用于“无论政治还是商业”的欺骗性活动，包括隐瞒信息背后的发布者、通过虚假账户或帖子放大内容，以及为影响力行动构建基础设施。Anthropic 表示，此次更新于 11 月 12 日生效。</p></details><details><summary>Anthropic 是否发现有人用 AI 制作假新闻赚取广告收入？</summary><p>是的。Anthropic 在其中期选举报告中表示，有行为者利用 Claude 制作虚假新闻以赚取广告收入，相关账户已被封禁。</p></details><details><summary>新政策是否禁止个性化定向？</summary><p>Anthropic 取消了对个性化投票与竞选定向的全面禁令。依赖欺骗或滥用个人数据的定向，仍受该政策其他章节的禁止。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/character-ai-chapter-11-ai-personas/"><span class="meta">负责任的营销 · 2026 年 10 月 12 日</span><h3>Character.AI 申请破产保护：给 AI 角色类产品的启示</h3><p>Character.AI 依据《破产法》第 11 章申请破产保护以寻求出售，Disney 正准备出价 2000 万美元。打造 AI 角色与陪伴产品的品牌应从中学到什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/malaysia-ai-governance-bill/"><span class="meta">亚洲与新加坡 · 2026 年 10 月 29 日</span><h3>马来西亚《AI Governance Bill》：按角色划分责任</h3><p>马来西亚的《AI Governance Bill》草案预计最迟于 2027 年初出台，将义务落在开发、提供或使用 AI 的各方身上。按角色划分的规则对营销人员意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

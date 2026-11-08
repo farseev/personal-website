@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAS AI 风险指引：一份适用于银行业以外的实用模板 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="MAS AI 风险指引：一份适用于银行业以外的实用模板 | Prof. Aleks Farseev" />
+<meta property="og:description" content="MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="监管与安全" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MAS AI 风险指引：一份适用于银行业以外的实用模板 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/","headline":"MAS AI 风险指引：一份适用于银行业以外的实用模板","description":"MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"监管与安全","about":{"@type":"Thing","name":"MAS 发布面向金融机构的《Guidelines on Artificial Intelligence Risk Management》"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"MAS 的 AI 风险管理指引何时生效？","acceptedAnswer":{"@type":"Answer","text":"MAS 表示，该指引将于 2027 年 10 月 7 日生效，机构可分阶段实施，部分后续章节须于 2028 年 10 月 7 日前适用。"}},{"@type":"Question","name":"MAS 指引是否涵盖来自供应商的 AI？","acceptedAnswer":{"@type":"Answer","text":"是的。MAS 表示，金融机构须为其服务中使用的 AI 负责，包括来自第三方的 AI，并应获取保证、评估适用性并实施补偿性控制；若风险超出其风险偏好，则应对相关服务加以限制、暂停或替换。"}},{"@type":"Question","name":"MAS 指引是否涵盖智能体 AI？","acceptedAnswer":{"@type":"Answer","text":"MAS 提到，能够自主行动并调用工具的智能体 AI 系统的使用日益增多，并表示计划于 2027 年就哪些关于智能体 AI 的额外指引会有所帮助征询业界意见。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"MAS AI 风险指引：一份适用于银行业以外的实用模板","item":"https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">MAS AI 风险指引：一份适用于银行业以外的实用模板</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 监管与安全</p>
+      <h1 class="h-display">MAS AI 风险指引：一份适用于银行业以外的实用模板</h1>
+      <p class="lead">MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：MAS 发布面向金融机构的《Guidelines on Artificial Intelligence Risk Management》（<time datetime="2026-10-07">2026 年 10 月 7 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>为银行制定的监管规定，很少能让营销人员感到兴奋。但这一份至少值得他们做做笔记。10 月 7 日，新加坡金融管理局（MAS）发布了《Guidelines on Artificial Intelligence Risk Management》。银行、保险公司和其他金融机构是其直接对象。但这份指引的逻辑，可以为任何使用 AI 对客户作出决策的团队——包括营销团队——提供一个清晰的模板。</p>
+<h2>发生了什么</h2>
+<p>根据 <a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS 的新闻稿</a>，该指引适用于所有金融机构和所有形式的 AI 技术，采用“基于原则、与风险相称的方法”。MAS 曾于 2025 年 11 月就此征询意见。</p>
+<p>这些期望可分为几类。董事会和高级管理层应监督 AI 风险，明确角色、风险偏好和框架；如果现有架构能提供充分监督，则不要求设立专门的 AI 委员会。机构应识别自身的 AI 用途，维护清单，评估每项用途的重要程度，并在整个生命周期中实施相称的控制，涵盖数据治理、测试、人工监督、网络安全、监测和变更管理。即使 AI 来自第三方，机构仍须为其服务中使用的 AI 负责，并应获取保证、实施补偿性控制，或对风险超出其风险偏好的服务加以限制、暂停或替换。</p>
+<p>该指引将于 2027 年 10 月 7 日生效，部分章节须于 2028 年 10 月 7 日前适用。MAS 还提到，能够自主行动并使用工具的智能体 AI 系统的使用日益增多，并表示计划于 2027 年就哪些额外指引会有所帮助征询业界意见。</p>
+<h2>为什么重要</h2>
+<p>看看如今银行里 AI 接触客户的地方：产品推荐、“下一最佳优惠”引擎、聊天机器人、信贷营销、欺诈筛查、广告活动中的生成内容。其中很多是由营销部门运营或委托的。根据这份指引，其中相当一部分需要列入清单、评估重要程度，并在整个生命周期中受到治理。</p>
+<p>第三方条款对营销来说最为重要。营销团队采购大量 AI：来自广告平台、营销技术供应商、代理商，以及使用自有工具的自由职业者。MAS 明确表示，责任仍在机构自身。“是供应商做的”不是一项控制措施。</p>
+<p>时间表虽然宽松，但并不长。距离主要章节生效还有一年，足够把清单认真建立起来，但不足以拖到最后一个季度才动手。</p>
+<h2>我的研究怎么看</h2>
+<p>我曾在 WSDM 2023 上做过一场题为<a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a>的演讲。核心论点是：围绕自动化画像、定向和创意评分的伦理与隐私问题并不抽象，它们源于可以被记录和控制的具体设计选择。</p>
+<p>这正是 AI 清单迫使你去做的事。针对每一项用途，写下输入了什么数据、输出了什么决策、由谁检查，以及出错时会发生什么。我在营销可解释 AI 方面的研究，从<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）到<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025），都建立在同样的直觉之上：如果一个模型的建议会影响资金或客户，负责的人就应当能看到它为何作出这一建议。</p>
+<p>我也曾在 Forbes 上主张<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">透明对营销驱动型公司至关重要</a>。监管机构如今正把这一原则转化为监管期望。已经在实践可解释性的团队，会发现合规的成本要低得多。</p>
+<h2>营销团队的实用检查清单（适用于金融业及其他行业）</h2>
+<ul><li>建立清单。列出营销部门使用或委托的每一个 AI 系统：定向、推荐、聊天机器人、内容生成、创意评分、数据分析。</li><li>如实评定重要程度。一个起草内部笔记的工具风险很低；一个决定哪些客户能看到信贷优惠的模型则不然。</li><li>梳理第三方。针对每一家供应商和代理商，记录它们代表你使用了哪些 AI，以及你获得了哪些保证。</li><li>在关键环节安排人工。明确面向客户的输出在上线前必须经过人工审核的环节。</li><li>上线后持续监测。模型会漂移，广告活动会变化。安排定期复核，尤其是在供应商的模型更新之后。</li><li>关注关于智能体的意见征询。如果你正在试点基于客户数据采取行动的智能体，应预期会有专门的指引，并从现在起就按可审计的要求进行设计。</li></ul>
+<p>新加坡监管机构有一个习惯：它们制定的指引日后往往会成为区域默认标准。如果你的公司在东南亚多地运营，即使你不是银行，把这份指引视为一次提前预览也是合理的。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>MAS 的 AI 风险管理指引何时生效？</summary><p>MAS 表示，该指引将于 2027 年 10 月 7 日生效，机构可分阶段实施，部分后续章节须于 2028 年 10 月 7 日前适用。</p></details><details><summary>MAS 指引是否涵盖来自供应商的 AI？</summary><p>是的。MAS 表示，金融机构须为其服务中使用的 AI 负责，包括来自第三方的 AI，并应获取保证、评估适用性并实施补偿性控制；若风险超出其风险偏好，则应对相关服务加以限制、暂停或替换。</p></details><details><summary>MAS 指引是否涵盖智能体 AI？</summary><p>MAS 提到，能够自主行动并调用工具的智能体 AI 系统的使用日益增多，并表示计划于 2027 年就哪些关于智能体 AI 的额外指引会有所帮助征询业界意见。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">监管与安全 · 2026 年 10 月 12 日</span><h3>蒸馏攻击：被复制的 AI 模型对你意味着什么</h3><p>美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">监管与安全 · 2026 年 9 月 29 日</span><h3>White House AI 协议与独立评估方</h3><p>科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

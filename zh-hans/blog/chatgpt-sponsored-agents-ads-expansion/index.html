@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ChatGPT 广告变成对话：Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="ChatGPT 广告变成对话：Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 搜索" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ChatGPT 广告变成对话：Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"ChatGPT 广告变成对话：Sponsored Agents","description":"OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"AI 搜索","about":{"@type":"Thing","name":"OpenAI 在 ChatGPT 中测试 Sponsored Agents，并将 ChatGPT 广告扩展至另外 26 个国家"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"什么是 ChatGPT Sponsored Agents？","acceptedAnswer":{"@type":"Answer","text":"它们是由企业赞助的智能体，用户在 ChatGPT 中点击广告后可以选择与之对话。OpenAI 将这种体验描述为一场清晰标注、有别于 ChatGPT 独立回答的对话。测试从部分美国广告主开始。"}},{"@type":"Question","name":"ChatGPT 广告已在多少个国家上线？","acceptedAnswer":{"@type":"Answer","text":"路透社于 2026 年 10 月 21 日报道，OpenAI 正将 ChatGPT 广告扩展至另外 26 个国家，总数达到 89 个。"}},{"@type":"Question","name":"付费的 ChatGPT 用户会看到广告吗？","acceptedAnswer":{"@type":"Answer","text":"据路透社报道，广告仅出现在 ChatGPT 的 Free 和 Go 方案中；Plus、Pro 和 Enterprise 订阅仍然无广告。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"ChatGPT 广告变成对话：Sponsored Agents","item":"https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">ChatGPT 广告变成对话：Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · AI 搜索</p>
+      <h1 class="h-display">ChatGPT 广告变成对话：Sponsored Agents</h1>
+      <p class="lead">OpenAI 正在 ChatGPT 内测试 Sponsored Agents，并已将 ChatGPT 广告扩展至 89 个国家。当广告会回话，标注与诚实本身就成了产品。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：OpenAI 在 ChatGPT 中测试 Sponsored Agents，并将 ChatGPT 广告扩展至另外 26 个国家（<time datetime="2026-10-21">2026 年 10 月 21 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>搜索广告是一句话加一个链接；ChatGPT 的 Sponsored Agent 则是一场对话。9 月至 10 月间，OpenAI 开始测试会回话的广告，并把 ChatGPT 广告推广到 89 个国家。这两项举措合在一起，改变了广告的本质。</p>
+<h2>发生了什么</h2>
+<p>据 <a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a> 报道，9 月 16 日，OpenAI 开始与部分美国广告主测试 Sponsored Agents。用户点击广告后，可以选择与“ChatGPT 中由企业赞助的智能体”开启一场 OpenAI 所称的“清晰标注的对话”，例如询问一张餐桌是否适合某个房间、如何保养桌面涂层，然后再点击链接前往该企业的网站。OpenAI 表示，这种赞助对话“有别于 ChatGPT 的独立回答”。</p>
+<p>同一公告还为广告主带来了多款工具：一个 Ads Manager 插件，可在 ChatGPT 内用自然语言创建和分析广告活动；基于落地页自动建议广告文案与图片；以及一项需主动开启的功能，可根据对话语境调整标题，并将广告文案翻译成用户的语言。HubSpot 和 Shopify 被列为首批 CRM 与电商合作伙伴。</p>
+<p>10 月 21 日，<a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">路透社报道</a>，OpenAI 正将 ChatGPT 广告扩展至另外 26 个国家，总数达到 89 个，覆盖拉丁美洲、欧洲、非洲和亚洲的市场，包括柬埔寨、孟加拉国和巴基斯坦。该公司表示，已有超过 100,000 家广告主投放过广告活动，其广告业务在 8 月达到 10 亿美元的年化收入。广告仅出现在 Free 和 Go 方案中；Plus、Pro 和 Enterprise 仍然无广告。</p>
+<h2>为什么重要</h2>
+<p>当广告变成智能体，有三件事随之改变。</p>
+<p>第一，广告现在能回答问题了。如果回答准确，这对用户来说比静态横幅更好。但这也是一种新的责任风险：一个夸大产品功能的赞助智能体，就是一则会说话的误导性广告。</p>
+<p>第二，助手与广告主之间的界线必须在每一轮对话中都清晰可见。OpenAI 的措辞——一场有别于 ChatGPT 独立回答的、清晰标注的对话——是正确的原则。其价值完全取决于，一位普通用户在聊天进行到一半时，能否清楚感知到这种区隔。</p>
+<p>第三，如今出现了一个双层注意力市场：付费用户看不到广告，免费用户能看到。在快速增长、大多数人使用免费版的市场里，ChatGPT 正在成为一个规模化的广告渠道。而在付费订阅用户更多的市场里，一批高价值受众只能通过自然回答触达。</p>
+<h2>我的研究怎么看</h2>
+<p>赞助智能体是实时的个性化，对话本身就是画像。我关于<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">性格驱动的内容推荐</a>（ACM Multimedia 2022）和<a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">性格驱动的内容生成</a>（WSDM 2021）的研究，探讨了如何推断一个人会对什么产生反应，并据此定制内容。这些技术是有效的。也正因如此，防护措施才至关重要：一个能根据每位用户的性格调整说服方式的智能体非常有效，而在缺乏透明的情况下，也非常容易被滥用。</p>
+<p>我曾在 Forbes 上倡导<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">救赎式营销</a>，即透明与效果可以相互促进。对话式广告正是检验这一理念的地方。长期来看，胜出的品牌将是这样的：它们的赞助智能体坦诚说明局限，在产品确实不适合时会说“这款产品不适合你”，并在问题超出其能力范围时转交给真人。</p>
+<p>自动翻译功能同样需要谨慎对待。把广告文案翻译成用户的语言很有用，但对于在不同市场受到不同监管的宣传主张来说，也存在风险。</p>
+<h2>广告主现在应该做什么</h2>
+<ul><li>先写赞助智能体的规则，再写它的脚本。哪些主张是允许的，哪些问题它必须拒绝回答，何时转交给真人。</li><li>以你自己的事实为依据。产品规格、价格、政策和保养说明应来自一个持续维护的信息源，而不是模型的通用知识。</li><li>审核翻译后文案中受监管的宣传主张，尤其是健康、金融和儿童产品领域。</li><li>为两个层级都做好规划。在免费用户就是你的受众的地方使用付费投放，同时为使用无广告方案的用户投入自然可见度建设。</li><li>衡量点击之外的效果。跟踪对话是否带来了购买、退货或投诉，而不仅仅是对话持续了多久。</li></ul>
+<p>搜索广告教会了我们如何针对一条查询来写作。对话式广告将教会我们如何像一位值得信赖的销售人员那样作答——规模化地，用每一种语言。这更难，也更有意思。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 ChatGPT Sponsored Agents？</summary><p>它们是由企业赞助的智能体，用户在 ChatGPT 中点击广告后可以选择与之对话。OpenAI 将这种体验描述为一场清晰标注、有别于 ChatGPT 独立回答的对话。测试从部分美国广告主开始。</p></details><details><summary>ChatGPT 广告已在多少个国家上线？</summary><p>路透社于 2026 年 10 月 21 日报道，OpenAI 正将 ChatGPT 广告扩展至另外 26 个国家，总数达到 89 个。</p></details><details><summary>付费的 ChatGPT 用户会看到广告吗？</summary><p>据路透社报道，广告仅出现在 ChatGPT 的 Free 和 Go 方案中；Plus、Pro 和 Enterprise 订阅仍然无广告。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 搜索 · 2026 年 10 月 29 日</span><h3>Adobe：AI 引流的转化率已高于其他访问</h3><p>Adobe 称，9 月来自 AI 的美国零售商访问，转化率比其他流量高出 90%。AI 答案为何成了一个渠道，以及该如何应对。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI 搜索 · 2026 年 10 月 28 日</span><h3>Google AI Mode 广告登陆新加坡等市场</h3><p>Google 正将 AI Mode 中的广告扩展到包括新加坡、马来西亚和菲律宾在内的十个市场。当广告出现在答案之中，会发生哪些变化。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI 搜索 · 2026 年 10 月 1 日</span><h3>Penske 诉 Google 案被驳回：对 AI 可见度意味着什么</h3><p>美国一名法官驳回了 Penske Media 就 Google AI Overviews 提起的反垄断诉讼，认定不存在以流量为对价的“正式交易”。品牌应如何对待 GEO。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

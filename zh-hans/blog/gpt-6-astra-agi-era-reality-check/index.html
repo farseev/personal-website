@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GPT-6 Astra 与“AGI 时代”：营销人员的现实检验 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="GPT-6 Astra 与“AGI 时代”：营销人员的现实检验 | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="模型" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GPT-6 Astra 与“AGI 时代”：营销人员的现实检验 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/","url":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/","headline":"GPT-6 Astra 与“AGI 时代”：营销人员的现实检验","description":"OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"模型","about":{"@type":"Thing","name":"OpenAI 推出新一代前沿模型 GPT-6 Astra，声称在计算机操作与智能体工作方面达到业界领先水平"},"wordCount":825,"citation":[{"@type":"CreativeWork","name":"OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'","url":"https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities","publisher":"Fox Business","datePublished":"2026-09-03"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/#faq","mainEntity":[{"@type":"Question","name":"什么是 GPT-6 Astra？","acceptedAnswer":{"@type":"Answer","text":"它是 OpenAI 于 2026 年 9 月 3 日发布的前沿模型。OpenAI 称，它在计算机操作、浏览器操作、软件工程、网络安全和科学领域均达到业界领先水平，能够执行填写表单、更新客户记录等日常电脑任务。"}},{"@type":"Question","name":"OpenAI 说过 GPT-6 Astra 就是 AGI 吗？","acceptedAnswer":{"@type":"Answer","text":"OpenAI 总裁 Greg Brockman 对记者表示，“觉得我们现在已身处 AGI 时代，并非不合理”。OpenAI 将 AGI 定义为在大多数具有经济价值的工作上超越人类的高度自主系统。这是一个有待检验的说法，而不是一项既定的测量结果。"}},{"@type":"Question","name":"营销人员应如何评估一个新的前沿模型？","acceptedAnswer":{"@type":"Answer","text":"在你自己的工作流上对照基线进行测试，衡量节省的时间、错误和人工介入，让策略决策扎根于可解释的数据，并把模型的权限限制在每项任务所需的范围内。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"GPT-6 Astra 与“AGI 时代”：营销人员的现实检验","item":"https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-astra-agi-era-reality-check/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">GPT-6 Astra 与“AGI 时代”：营销人员的现实检验</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 模型</p>
+      <h1 class="h-display">GPT-6 Astra 与“AGI 时代”：营销人员的现实检验</h1>
+      <p class="lead">OpenAI 推出了 GPT-6 Astra，其总裁表示，觉得我们已身处 AGI 时代“并非不合理”。这一说法对营销团队意味着什么，又不意味着什么。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：OpenAI 推出新一代前沿模型 GPT-6 Astra，声称在计算机操作与智能体工作方面达到业界领先水平（<time datetime="2026-09-03">2026 年 9 月 3 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>每隔几年，就会有一家实验室说出那个词。9 月 3 日，OpenAI 发布了 GPT-6 Astra，其总裁 Greg Brockman 对记者表示，“觉得我们现在已身处 AGI 时代，并非不合理”。我既是研究者，也是创业者，所以同时持有两个想法：这确实是一个能力出色的系统；而“AGI”是一种说法，而不是一项测量结果。</p>
+<h2>发生了什么</h2>
+<p>据 <a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">Fox Business</a> 报道，OpenAI 首先向享有抢先体验资格的企业客户推出 Astra，ChatGPT Plus、Pro、Business 和 Enterprise 用户、API 以及 Amazon Web Services 将在数日内跟进。OpenAI 称，该模型在计算机操作、浏览器操作、软件工程、网络安全和科学领域均达到业界领先水平，能够执行填写在线表单、更新客户记录、整理日程、开展调研等日常电脑任务，还能创建文档、电子表格和演示文稿。</p>
+<p>Sam Altman 称其为公司“有史以来对齐程度最高的模型”。OpenAI 还表示，Astra 在网络能力上有显著跃升，达到了其 Preparedness Framework 中的“Critical”（关键）级别门槛。文章引用了 OpenAI 自己对 AGI 的定义：“在大多数具有经济价值的工作上超越人类的高度自主系统。”文章没有引用任何具体的基准测试分数。</p>
+<h2>为什么重要</h2>
+<p>撇开标签不谈，实际的转变是清楚的。OpenAI 所强调的能力并不在于写出更好的句子，而在于在软件中完成工作：填写表单、更新记录、在浏览器和电子表格之间操作。这正是营销运营的日常质感：广告活动设置、报告、CRM 数据维护、竞品监测、商品数据源管理。一个擅长计算机操作的模型，瞄准的是工时，而不只是文字。</p>
+<p>这也是“AGI”这一提法值得审慎对待的原因。OpenAI 的定义说的是在“大多数具有经济价值的工作”上超越人类。这对你的团队是否成立，是一个可以检验的实证问题，而答案会因任务而异。一个模型可能非常擅长汇编效果报告，却仍然不善于判断哪个创意能打动雅加达一群持怀疑态度的受众。</p>
+<h2>我的研究怎么看</h2>
+<p>我曾在 Forbes 上撰文讨论<a href="https://www.forbes.com/councils/forbestechcouncil/2022/10/21/will-machines-replace-human-creativity/" target="_blank" rel="noopener">机器是否会取代人类的创造力</a>，以及<a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">弥合营销与 AI 系统之间的鸿沟</a>。我一贯的立场是：差距很少在于纯粹的智能，而在于“扎根”——系统是否了解你的受众、你的数据和你的约束条件，以及它能否展示自己的推理过程。</p>
+<p>这正是我们研究的目标。在<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）中，我们构建了可解释的生成式 AI，将创意点击率评分与大语言模型结合，基于真实广告数据共同制定营销策略。在<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>（ACM TOIS 2025）中，我们将效果预测与大语言模型结合，让建议附带理由。理由才是关键。更强大的通用模型会让语言更好、行动更快，但它本身并不能告诉你，对于某一特定受众，为什么这则广告会胜过那一则。这仍然需要对照真实结果进行衡量。</p>
+<p>所以，我的现实检验并不是“Astra 被过度炒作了”，而是“Astra 是一台更强的引擎；而证据和解释，仍然是你自己的工作”。</p>
+<h2>营销负责人现在应该做什么</h2>
+<ul><li>挑选三个耗时的运营工作流，例如每周报告、广告活动设置或 CRM 更新，在监督下用一个具备计算机操作能力的模型进行试点。</li><li>对照基线进行衡量：节省的时间、错误率，以及人需要介入的频率。“感觉更快了”不算结果。</li><li>把执行与判断分开。让智能体执行定义清晰的步骤；创意与策略决策则要与你能够解释的数据挂钩。</li><li>注意权限。一个能更新客户记录的模型，也可能更新错误的记录。只授予智能体能完成工作的最小权限，并记录每一项操作。</li><li>在采购中忽略标签。向供应商索要在与你相似的工作上、以任务为单位的证据，而不是形容词。</li></ul>
+<p>无论这是否是“AGI 时代”，这显然是 AI 承担运营工作的时代。围绕这一点建立审慎、可衡量的工作流的团队将获得收益；为一个词买单的团队只会收到一张账单。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 GPT-6 Astra？</summary><p>它是 OpenAI 于 2026 年 9 月 3 日发布的前沿模型。OpenAI 称，它在计算机操作、浏览器操作、软件工程、网络安全和科学领域均达到业界领先水平，能够执行填写表单、更新客户记录等日常电脑任务。</p></details><details><summary>OpenAI 说过 GPT-6 Astra 就是 AGI 吗？</summary><p>OpenAI 总裁 Greg Brockman 对记者表示，“觉得我们现在已身处 AGI 时代，并非不合理”。OpenAI 将 AGI 定义为在大多数具有经济价值的工作上超越人类的高度自主系统。这是一个有待检验的说法，而不是一项既定的测量结果。</p></details><details><summary>营销人员应如何评估一个新的前沿模型？</summary><p>在你自己的工作流上对照基线进行测试，衡量节省的时间、错误和人工介入，让策略决策扎根于可解释的数据，并把模型的权限限制在每项任务所需的范围内。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'</a> — Fox Business, 3 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">模型 · 2026 年 10 月 7 日</span><h3>Claude Haiku 5.5 与小模型在营销中的价值</h3><p>Anthropic 的 Claude Haiku 5.5 专为低成本、高速度、大批量的工作而打造。为什么一个模型家族中最小的那个，对营销人员往往最重要。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">模型 · 2026 年 9 月 30 日</span><h3>Gemini 4 Argon：百万输出 Token，然后呢？</h3><p>Google DeepMind 的 Gemini 4 Argon 带来 1M Token 的输出上限，并以网络安全优先的方式推出。长周期 AI 会改变营销工作的哪些方面，又不会改变什么。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">模型 · 2026 年 9 月 29 日</span><h3>OpenAI 为何搁置 GPT-6.1 Astra，以及这为何重要</h3><p>OpenAI 在测试发现其在范围、授权以及汇报方式上存在问题后，取消了 GPT-6.1 Astra 的发布。同样的测试也适用于你的智能体。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

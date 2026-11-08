@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>蒸馏攻击：被复制的 AI 模型对你意味着什么 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="蒸馏攻击：被复制的 AI 模型对你意味着什么 | Prof. Aleks Farseev" />
+<meta property="og:description" content="美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。" />
+<meta property="og:url" content="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新闻解读" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="监管与安全" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="蒸馏攻击：被复制的 AI 模型对你意味着什么 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/","headline":"蒸馏攻击：被复制的 AI 模型对你意味着什么","description":"美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hans","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hans/blog/#blog"},"articleSection":"监管与安全","about":{"@type":"Thing","name":"CISA、NSA 与 FBI 就针对美国 AI 模型的工业化规模蒸馏发布公告；Anthropic 公布新的反蒸馏防御措施"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"什么是 AI 蒸馏攻击？","acceptedAnswer":{"@type":"Answer","text":"这是一种隐蔽的大规模行动：通过查询某个模型（往往借助大量欺诈账户）来提取其能力，并在未经原开发者许可的情况下，用这些输出训练另一个模型。"}},{"@type":"Question","name":"美国的公告点名了哪些公司？","acceptedAnswer":{"@type":"Answer","text":"根据 Help Net Security 的报道，CISA、NSA 与 FBI 的公告点名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 和 Z.AI。报道中未包含这些公司的回应。"}},{"@type":"Question","name":"模型蒸馏一定是坏事吗？","acceptedAnswer":{"@type":"Answer","text":"不是。蒸馏是一种用大模型训练更小、更便宜模型的标准技术。问题在于未经授权地从他人模型中提取能力，这会引发关于同意、安全机制与来源的问题。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://farseev.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"AI 新闻","item":"https://farseev.com/zh-hans/blog/"},{"@type":"ListItem","position":3,"name":"蒸馏攻击：被复制的 AI 模型对你意味着什么","item":"https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hans/","jobTitle":"SOMIN.ai 创始人兼首席执行官；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hans/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要内容"><a href="/zh-hans/#about">关于</a><a href="/zh-hans/#research">研究</a><a href="/zh-hans/blog/" aria-current="page">AI 新闻</a><a href="/zh-hans/#talks">演讲</a><a href="/zh-hans/#connect">联系</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="语言" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" selected>简体中文</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh-hans/">首页</a></li><li><a href="/zh-hans/blog/">AI 新闻</a></li><li aria-current="page">蒸馏攻击：被复制的 AI 模型对你意味着什么</li></ol></nav>
+      <p class="eyebrow">AI 新闻解读 · 监管与安全</p>
+      <h1 class="h-display">蒸馏攻击：被复制的 AI 模型对你意味着什么</h1>
+      <p class="lead">美国多个机构在一份关于蒸馏的公告中点名六家中国 AI 公司，Anthropic 称其防御措施使被窃取的数据减少了 90% 至 99%。这对 AI 采购方意味着什么。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新闻：CISA、NSA 与 FBI 就针对美国 AI 模型的工业化规模蒸馏发布公告；Anthropic 公布新的反蒸馏防御措施（<time datetime="2026-10-12">2026 年 10 月 12 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>阅读约 4 分钟</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>“蒸馏”在机器学习中曾是一个温和的词，指训练一个小模型去模仿一个大模型，是一种标准且有用的技术。2026 年 9 月和 10 月，它变成了一个关乎安全与贸易的话题。如果你采购或开发用于营销的 AI，就应当同时理解它的两层含义。</p>
+<h2>发生了什么</h2>
+<p>9 月初，CISA、NSA 与 FBI 联合发布公告，针对他们所称的中国 AI 公司进行的工业化规模知识蒸馏。根据 <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Help Net Security 对该公告的报道</a>，这些机构点名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 和 Z.AI，称其至少自 2024 年底以来，通过向美国前沿模型发出数百万次请求，提取了数十亿个 Token。公告列出了若干识别信号，例如全天候使用、没有人类的空闲时段，以及成批账户协同行动，并建议加强身份核验、监控以及 AI 提供方之间的信息共享。报道指出，其中未包含被点名公司的回应。</p>
+<p>10 月 12 日，Anthropic 介绍了自己的应对措施。在<a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>一文中，它表示初步证据显示，其方法已使蒸馏者获取的数据减少约 90% 至 99%。这些措施包括：禁止较新的 API 账户编辑 Claude 先前的推理内容；一个基于提取尝试训练、误报率低于 0.1% 的两阶段分类器；对屡次尝试者实施更严格的限制和封禁；以及对被其安全机制拦截的请求收费。Anthropic 称已封禁数万个与蒸馏相关的账户，并预计这将是一场持续的“猫鼠游戏”。</p>
+<h2>为什么重要</h2>
+<p>营销人员之所以应当关注 AI 实验室之间的这场较量，有两个原因。</p>
+<p>第一是供应链风险。如果一个模型是在未经许可的情况下复制另一个模型的行为而构建的，你就无从知道它随之带来了哪些安全机制。Anthropic 的文章指出，蒸馏模型可以逼近前沿能力，却只配备较弱的防护。当你选择一个模型来运行客户服务或生成广告时，来源本身就是质量的一部分。</p>
+<p>第二是对正当用户造成的摩擦。防御是有代价的。Anthropic 承认，一些开发者不得不更新集成；一小部分正常请求可能被拦截；被拦截的请求如今也可能被收费。如果你的营销技术栈对前沿 API 进行大量自动化调用，其中部分流量可能看起来就像一场提取行动。现在就去阅读供应商的政策，别等到你的流程中断之后。</p>
+<h2>我的研究怎么看</h2>
+<p>蒸馏本身并不是反派。以正当方式进行时，它正是让 AI 变得可负担的方法：大模型教小模型，小模型低成本地规模化运行。我曾在 Forbes 上主张，在营销中<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">技术比模型大小更重要</a>，而蒸馏正是其中一种技术。</p>
+<p>改变局面的是同意与透明。我在可解释 AI 方面的工作始于一个简单的原则：营销人员应当能看到系统为何作出某项推荐。在<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）中，我们将点击率预测与一个解释驱动因素的大语言模型助手结合起来。在<a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a>（2024 年预印本）中，我们描述了如何将可解释的效果模型与大语言模型结合用于竞品分析。只有当你知道模型是什么、从何而来时，解释才有意义。</p>
+<p>还有一个值得注意的讽刺之处。Anthropic 所描述的防御——对模型的完整推理进行摘要或限制访问——会让系统对所有人都变得稍微不那么透明，因为推理过程恰恰是复制者想要的。这种取舍将决定 AI 供应商愿意公开多少解释。采购方应当要求为自己设计的解释——关于自己的数据和自己的决策——而不是原始的推理轨迹。</p>
+<h2>营销 AI 的采购方现在应该做什么</h2>
+<ul><li>询问每一家供应商：其产品底层使用了哪些模型，这些模型又来自哪里。</li><li>检查你所调用 API 的条款。自动化、大批量使用在营销中很常见；确保你的使用明确正当、身份可识别，并处于限额之内。</li><li>为更换模型做好准备。政策、价格和访问权限都可能迅速变化。让提示词、流程和评估集保持可移植。</li><li>以正当方式蒸馏你自己的模型。如果你需要一个低成本模型来完成某项特定任务，就用你自己的数据，或用你获授权使用的输出来训练它。</li><li>优先要求对决策的解释，而不是对内部机制的暴露。你需要审计的，是某条推荐为何针对你的广告活动而作出。</li></ul>
+<p>蒸馏之争关乎谁可以复制谁。对营销人员而言，它提醒我们：“用哪个模型？”如今已是一个治理问题，而不仅是技术问题。</p>
+<h2 id="faq">常见问题</h2>
+<div class="faq"><details><summary>什么是 AI 蒸馏攻击？</summary><p>这是一种隐蔽的大规模行动：通过查询某个模型（往往借助大量欺诈账户）来提取其能力，并在未经原开发者许可的情况下，用这些输出训练另一个模型。</p></details><details><summary>美国的公告点名了哪些公司？</summary><p>根据 Help Net Security 的报道，CISA、NSA 与 FBI 的公告点名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 和 Z.AI。报道中未包含这些公司的回应。</p></details><details><summary>模型蒸馏一定是坏事吗？</summary><p>不是。蒸馏是一种用大模型训练更小、更便宜模型的标准技术。问题在于未经授权地从他人模型中提取能力，这会引发关于同意、安全机制与来源的问题。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">来源</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 创始人兼首席执行官，NUS 与 INSEAD 的 AI 客座教授。他的同行评审研究涵盖多源用户画像、个性感知推荐以及面向营销的可解释 AI。</p>
+<p class="links"><a href="/zh-hans/">关于 Aleks</a><a href="/zh-hans/#publications">论文发表</a><a href="/zh-hans/blog/">更多 AI 新闻</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">继续阅读</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新闻解读</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hans/blog/mas-ai-risk-management-guidelines/"><span class="meta">监管与安全 · 2026 年 10 月 7 日</span><h3>MAS AI 风险指引：一份适用于银行业以外的实用模板</h3><p>MAS 发布了面向金融机构的 AI 风险管理指引。其中关于清单盘点与第三方的规则，可作为营销团队的良好模板。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">监管与安全 · 2026 年 9 月 29 日</span><h3>White House AI 协议与独立评估方</h3><p>科技领袖签署了一份自愿性的 White House 协议，承诺引入外部评估方，Anthropic 则向 METR 开放了深度访问权限。审计为何对营销 AI 至关重要。</p><span class="go">阅读 →</span></a><a class="pcard" href="/zh-hans/blog/wpp-q3-2026-agentic-agency/"><span class="meta">广告与营销 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季度：AI 压力下的代理商模式</h3><p>WPP 公布同口径净收入下滑，而其 CEO 则强调客户对 WPP Open 所提供 AI 赋能服务的需求。这对代理商意味着什么。</p><span class="go">阅读 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 首席执行官、AI 教授、主题演讲嘉宾与手风琴演奏家。从新加坡到世界，架起深度研究与现实营销的桥梁。</p>
+      </div>
+      <div>
+        <h6>浏览</h6>
+        <ul>
+          <li><a href="/zh-hans/">首页</a></li>
+          <li><a href="/zh-hans/blog/">AI 新闻博客</a></li>
+          <li><a href="/zh-hans/#research">研究</a></li>
+          <li><a href="/zh-hans/#publications">论文发表</a></li>
+          <li><a href="/zh-hans/#connect">联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>观点仅代表个人。新闻事实均链接至原始来源。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
