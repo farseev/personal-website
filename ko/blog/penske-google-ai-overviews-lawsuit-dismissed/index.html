@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Penske 대 Google 소송 기각: AI 가시성에 주는 의미 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Penske 대 Google 소송 기각: AI 가시성에 주는 의미 | Prof. Aleks Farseev" />
+<meta property="og:description" content="미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일." />
+<meta property="og:url" content="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 검색" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Penske 대 Google 소송 기각: AI 가시성에 주는 의미 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","mainEntityOfPage":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/","url":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/","headline":"Penske 대 Google 소송 기각: AI 가시성에 주는 의미","description":"미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"AI 검색","about":{"@type":"Thing","name":"미국 연방지방법원 Amit Mehta 판사, Google AI Overviews를 둘러싼 Penske Media와 Chegg의 반독점 소송 기각"},"wordCount":856,"citation":[{"@type":"CreativeWork","name":"Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google","url":"https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/","publisher":"Press Gazette","datePublished":"2026-10-01"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/#faq","mainEntity":[{"@type":"Question","name":"Penske Media의 Google 상대 소송은 왜 기각되었나요?","acceptedAnswer":{"@type":"Answer","text":"Press Gazette에 따르면 Amit Mehta 판사는 크롤링과 트래픽을 맞바꾸는 “공식적 거래”가 퍼블리셔와 Google 사이에 없었다고 판단하며 트래픽에 대한 기대는 “합의가 아니다”라고 썼고, 검색과 AI Overviews가 불법적으로 끼워 판 별개의 제품이라는 주장도 받아들이지 않았습니다."}},{"@type":"Question","name":"Penske 판결은 확정되었나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. Press Gazette는 2026년 10월 30일 Penske와 Chegg가 기각 결정에 항소하고 있다고 보도했습니다."}},{"@type":"Question","name":"판결 이후 브랜드는 AI 검색에서의 가시성을 위해 무엇을 해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"정보성 질의에서 클릭이 줄어들 것에 대비하고, AI 시스템이 인용할 수 있는 구체적이고 출처가 분명한 콘텐츠를 게시하며, 사이트 전반에서 제품 정보를 일관되게 유지하고, 제외 여부를 신중하게 판단하며, 고객과의 직접 채널을 구축해야 합니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Penske 대 Google 소송 기각: AI 가시성에 주는 의미","item":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/penske-google-ai-overviews-lawsuit-dismissed/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Penske 대 Google 소송 기각: AI 가시성에 주는 의미</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · AI 검색</p>
+      <h1 class="h-display">Penske 대 Google 소송 기각: AI 가시성에 주는 의미</h1>
+      <p class="lead">미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: 미국 연방지방법원 Amit Mehta 판사, Google AI Overviews를 둘러싼 Penske Media와 Chegg의 반독점 소송 기각(<time datetime="2026-10-01">2026년 10월 1일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>20년 동안 웹은 불문율 위에서 돌아갔습니다. Google이 페이지를 크롤링하게 해 주면 Google이 방문자를 보내 준다는 것입니다. 10월 1일 보도된 판결에서 미국 연방 판사는 사실상 그것이 애초에 거래가 아니었다고 말했습니다. 검색 트래픽에 의존하는 사람이라면 누구에게나 이 판결은 가시성을 처음부터 다시 생각해야 할 이유입니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Press Gazette</a>에 따르면 미국 연방지방법원 Amit Mehta 판사는 AI Overviews를 둘러싸고 Penske Media Corporation이 Google을 상대로 제기한 반독점 소송을 기각하고, Chegg의 유사한 주장도 받아들이지 않았습니다. Penske는 AI Overviews 출시 이후 검색 트래픽과 제휴, 광고, 구독 매출을 잃었다고 주장했습니다.</p>
+<p>판사는 퍼블리셔와 Google 사이에 “공식적 거래”가 없었다고 판단했습니다. 그는 퍼블리셔들이 “Google이 검색 트래픽을 보내 줄 것이라는 ‘기대’가 있었다고 주장했을 뿐”이며, “기대는 합의가 아니다. 그것은 단지 범용 검색 엔진이 작동하는 방식이다”라고 썼습니다. 그는 또한 검색과 AI Overviews가 Google이 불법적으로 끼워 판 별개의 제품이라는 주장도 받아들이지 않았습니다. 다만 “법원은 원고들이 주장하는 피해를 가볍게 여기지 않는다”고 덧붙였습니다.</p>
+<p>Press Gazette의 10월 30일 업데이트에 따르면 Penske와 Chegg는 항소하고 있으며, Google은 영국 경쟁시장청(CMA)의 명령에 따라 퍼블리셔가 AI Overviews에서 제외되기를 선택할 수 있는 Search Console 옵션을 출시하고 있고, AI 기능에 상당한 기여를 하는 콘텐츠의 퍼블리셔에게 대가를 지급하는 방안을 시험 중인 것으로 알려졌습니다.</p>
+<h2>왜 중요한가</h2>
+<p>항소 결과가 어떻든 판결은 현재 상황을 분명히 합니다. 트래픽에 대한 법적 권리는 없습니다. 검색 엔진은 질문에 스스로 답하기로 결정할 수 있습니다. 여러분의 비즈니스 모델이나 마케팅 계획이 순위가 곧 방문이라는 가정 위에 있다면, 합의가 아니라 기대 위에 짓고 있는 것입니다.</p>
+<p>이것은 퍼블리셔만의 문제가 아닙니다. 브랜드도 가이드, 제품 페이지, 비교 콘텐츠, 리서치를 게시합니다. 이 모든 것이 이제 클릭 없이도 사용자를 만족시킬 수 있는 AI 답변의 원재료입니다. 질문은 “어떻게 순위를 올릴까?”에서 “어떻게 답변 안에서 인용되고, 선택되고, 기억될까?”로 바뀝니다. 이것이 요즘 생성형 엔진 최적화, 즉 GEO라고 부르는 것입니다.</p>
+<p>제외 옵션과 대가 지급 시험은 트레이드오프를 분명히 드러냅니다. 제외를 선택하면 콘텐츠를 보호할 수 있지만, 고객이 읽는 답변에서도 사라집니다. 대부분의 브랜드에게 그것은 너무 비싼 대가입니다. 일부 퍼블리셔에게는 그것이 유일한 협상력일 수도 있습니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>AI 답변에 인용되는 것은 본질적으로 검색(retrieval)의 문제입니다. <a href="https://doi.org/10.1145/3077136.3080774" target="_blank" rel="noopener">다층 그래프 클러스터링을 통한 크로스 도메인 추천</a>(SIGIR 2017)에 관한 제 초기 연구는 서로 다른 출처의 신호를 모아 무엇을 추천할지 정하는 것이었습니다. 오늘날의 답변 엔진은 그 아이디어의 먼 후손입니다. 생성하기 전에 출처를 검색하고, 군집화하고, 선택합니다. 구체적이고, 출처 간에 일관되며, 출처를 밝히기 쉬운 콘텐츠가 검색되고 선택될 가능성이 높습니다.</p>
+<p>설명 가능한 AI에 관한 제 연구는 나머지 절반을 가리킵니다. <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a>(WWW 2025 Companion)에서 저희는 경쟁사의 커뮤니케이션, 즉 그들이 무엇을 말하고 그것이 왜 효과가 있는지를 설명하는 데 집중했습니다. GEO에도 같은 규율이 필요합니다. 경쟁사가 AI 답변에 등장한다는 사실을 아는 것으로는 부족합니다. 어떤 주장, 형식, 출처가 그것을 가능하게 하는지 이해해야 합니다.</p>
+<p>그리고 여기서도 측정은 함정입니다. 저는 e27에서 <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">모든 대시보드가 초록색인데도 무엇이 효과가 있었는지 아무도 말하지 못한다</a>고 썼습니다. AI 가시성 도구는 또 하나의 초록색 숫자 묶음을 더할 것입니다. 이를 신호로 다루고, 결과에 비춰 검증하며, 언급을 고객으로 착각하지 마십시오.</p>
+<h2>퍼블리셔와 브랜드가 지금 해야 할 일</h2>
+<ul><li>트래픽을 권리로 여기고 계획하는 것을 멈추십시오. 정보성 질의가 클릭 없이 답변되는 시나리오를 모델링하고, 어떤 콘텐츠가 여전히 비용을 감당할 가치가 있는지 정하십시오.</li><li>인용되도록 쓰십시오. 명확한 주장, 독자적인 데이터, 저자 이름, 날짜, 출처는 AI 시스템이 콘텐츠를 검색하고 출처를 밝히기 쉽게 만듭니다.</li><li>웹 전반에서 일관성을 유지하십시오. 답변 엔진은 교차 확인합니다. 제품 정보는 자사 사이트, 마켓플레이스, 파트너 페이지에서 일치해야 합니다.</li><li>제외 여부는 신중하게 결정하십시오. 반사적으로 사이트 전체에 적용하지 말고, 페이지 유형별로 잃는 가시성과 얻는 협상력을 따져 보십시오.</li><li>직접적인 관계를 구축하십시오. 뉴스레터, 커뮤니티, 앱은 어떤 판결도 빼앗을 수 없는 채널입니다.</li></ul>
+<p>법원은 AI 검색이 자신이 읽는 저작물의 주인들에게 무엇을 빚지고 있는가라는 더 큰 질문을 해결하지 않았습니다. 하지만 당분간 한 가지 실질적인 점은 정리했습니다. 누구도 클릭을 받을 권리는 없습니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Penske Media의 Google 상대 소송은 왜 기각되었나요?</summary><p>Press Gazette에 따르면 Amit Mehta 판사는 크롤링과 트래픽을 맞바꾸는 “공식적 거래”가 퍼블리셔와 Google 사이에 없었다고 판단하며 트래픽에 대한 기대는 “합의가 아니다”라고 썼고, 검색과 AI Overviews가 불법적으로 끼워 판 별개의 제품이라는 주장도 받아들이지 않았습니다.</p></details><details><summary>Penske 판결은 확정되었나요?</summary><p>아닙니다. Press Gazette는 2026년 10월 30일 Penske와 Chegg가 기각 결정에 항소하고 있다고 보도했습니다.</p></details><details><summary>판결 이후 브랜드는 AI 검색에서의 가시성을 위해 무엇을 해야 하나요?</summary><p>정보성 질의에서 클릭이 줄어들 것에 대비하고, AI 시스템이 인용할 수 있는 구체적이고 출처가 분명한 콘텐츠를 게시하며, 사이트 전반에서 제품 정보를 일관되게 유지하고, 제외 여부를 신중하게 판단하며, 고객과의 직접 채널을 구축해야 합니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google</a> — Press Gazette, 1 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 검색 · 2026년 10월 29일</span><h3>Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아</h3><p>Adobe에 따르면 9월 미국 소매업체에서 AI 추천 방문의 전환율은 다른 트래픽보다 90% 높았습니다. AI 답변이 채널이 된 이유와 대응 방법.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI 검색 · 2026년 10월 28일</span><h3>Google AI Mode 광고, 싱가포르와 그 밖의 시장에 도입</h3><p>Google이 AI Mode 광고를 싱가포르, 말레이시아, 필리핀을 포함한 10개 시장으로 확대합니다. 광고가 답변 안에 들어가면 무엇이 달라지는지 살펴봅니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI 검색 · 2026년 10월 21일</span><h3>대화가 된 ChatGPT 광고: Sponsored Agents</h3><p>OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

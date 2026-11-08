@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 경제 시나리오 세 가지와 마케팅 일자리의 미래 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 경제 시나리오 세 가지와 마케팅 일자리의 미래 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미." />
+<meta property="og:url" content="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="일과 역량" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 경제 시나리오 세 가지와 마케팅 일자리의 미래 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/#article","mainEntityOfPage":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/","url":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/","headline":"AI 경제 시나리오 세 가지와 마케팅 일자리의 미래","description":"Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"일과 역량","about":{"@type":"Thing","name":"Anthropic, 변혁적 AI의 경제 시나리오를 탐색하는 인터랙티브 도구 공개"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Scenarios for our Economic Future","url":"https://www.anthropic.com/institute/econ-scenarios","publisher":"Anthropic","datePublished":"2026-09-09"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/#faq","mainEntity":[{"@type":"Question","name":"Anthropic이 제시한 AI 경제 시나리오 세 가지는 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"AI의 영향이 인터넷과 비슷한 완만한 시나리오, AI가 2030년까지 지식 노동의 절반을 할 수 있고 성장률이 평소의 약 두 배인 상당한 시나리오, 그리고 AI가 대부분의 지식 작업에서 사람을 능가하고 성장률이 연 15%에 이르며 실업률이 높아질 수 있는 극단적인 시나리오입니다."}},{"@type":"Question","name":"시나리오는 지식 노동자에 대해 무엇을 말하나요?","acceptedAnswer":{"@type":"Answer","text":"상당한 시나리오에서 지식 노동자의 임금은 거의 제자리인 반면 다른 노동자들은 임금이 오릅니다. 극단적인 시나리오에서는 지식 노동자의 임금이 10% 넘게 하락하고 지식 직종이 대체 위험에 직면합니다."}},{"@type":"Question","name":"마케터는 AI가 일자리에 미칠 영향에 어떻게 대비해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"직무를 작업 단위로 나누고, 판단과 책임에 시간을 옮기며, AI 결과물을 실제 데이터에 비춰 평가하는 법을 배우고, 도메인 깊이를 쌓으며, 산출물보다 성과에 집중해야 합니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"AI 경제 시나리오 세 가지와 마케팅 일자리의 미래","item":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-economic-scenarios-knowledge-work/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-economic-scenarios-knowledge-work/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">AI 경제 시나리오 세 가지와 마케팅 일자리의 미래</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 일과 역량</p>
+      <h1 class="h-display">AI 경제 시나리오 세 가지와 마케팅 일자리의 미래</h1>
+      <p class="lead">Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Anthropic, 변혁적 AI의 경제 시나리오를 탐색하는 인터랙티브 도구 공개(<time datetime="2026-09-09">2026년 9월 9일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI와 일자리에 관한 대부분의 전망은 숫자 하나와 넘치는 확신을 제시합니다. 9월 Anthropic은 더 유용한 것을 내놓았습니다. 가정을 명시한 세 가지 시나리오입니다. 마케팅은 지식 노동이므로, 저는 이것을 제 분야와 제가 가르치는 사람들에 관한 전망으로 읽었습니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p>Anthropic 경제팀은 기술 보고서 <em>Economic Scenarios for Transformative AI</em>(Korinek 외, 2026)를 바탕으로 한 인터랙티브 탐색 도구 <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a>를 공개했습니다. 이 도구는 경제를 AI가 보강하거나 자동화하거나 새로 만들어 낼 수 있는 작업의 묶음으로 보고, 2030년까지 AI가 미국의 일자리, 성장, 실업에 어떤 영향을 줄 수 있는지 모델링합니다.</p>
+<p>시나리오는 세 가지입니다. 완만한 시나리오에서 AI의 영향은 인터넷과 비슷하며, 2030년 미국 GDP는 34조 1,000억 US$에 이릅니다. 상당한 시나리오에서 AI는 2030년까지 지식 노동의 절반을 할 수 있지만 대부분은 여전히 AI 없이 이루어집니다. 성장률은 평소의 약 두 배이고 GDP는 36조 3,000억 US$에 이르며, 지식 노동자의 임금은 거의 제자리인 반면 다른 노동자들은 임금이 오릅니다. 극단적인 시나리오에서는 AI가 대부분의 지식 작업에서 사람을 능가하고, 성장률은 연 15%에 이르며, GDP는 44조 4,000억 US$에 달하고, 실업률은 일반적인 경기 침체 수준을 넘어설 수 있으며, 지식 노동자의 임금은 10% 넘게 하락합니다.</p>
+<p>모든 시나리오에서 GDP 중 노동 몫은 줄고 자본 몫은 늘어납니다. Anthropic은 일반 시민 10,980명을 대상으로 설문도 진행했습니다. 보고서는 “주된 과제는 경제 성장을 이루는 것이 아니라 그 혜택이 널리 공유되도록 하는 것”이라고 밝히며, 이 도구를 실제 결과와 크게 다를 수 있는 1.0 버전이라고 부릅니다.</p>
+<h2>왜 중요한가</h2>
+<p>압력이 어디에 떨어지는지 보십시오. 상당한 시나리오와 극단적인 시나리오에서 대체 위험에 직면하는 것은 지식 직종이며, 다른 직종에서는 수요가 늘어납니다. 마케팅은 정확히 지식 쪽에 속합니다. 리서치, 글쓰기, 분석, 기획, 보고입니다.</p>
+<p>제가 계획의 기준으로 가장 현실적이라고 보는 것은 상당한 시나리오이며, 그 가장 흥미로운 세부 사항은 격차입니다. AI가 지식 노동의 절반을 할 수 있는데도 대부분은 여전히 AI 없이 이루어진다는 것입니다. 앞으로 몇 년간 커리어가 만들어지거나 무너지는 곳이 바로 그 격차입니다. 마케터에게 질문은 AI가 업무의 일부를 할 수 있느냐가 아닙니다. 중요한 부분에 AI를 적용할 줄 아는 사람이 바로 여러분이냐는 것입니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>저는 <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes 칼럼</a>에서 마케터가 수작업 콘텐츠 제작자에서 자율 AI 도구의 큐레이터로 진화해야 한다고 주장했고, <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete?</a>에서 관련된 질문을 던졌습니다. 이 시나리오들은 그 주장을 더 날카롭게 만듭니다. 자동화되는 것이 작업이라면, 자동화 가능한 작업만으로 이루어진 직무는 취약하고, 판단, 맥락, 책임을 중심으로 한 직무는 회복력이 있습니다.</p>
+<p>제 연구는 지속적인 가치가 어디에 있는지 시사합니다. <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>(ACM Multimedia 2025)에서 저희는 크리에이티브 성과 점수와 LLM을 결합해 사람이 방향을 잡는 마케팅 전략의 공동 창작자로 AI를 설정했습니다. <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>(ACM TOIS 2025)에서 결과물은 마케터가 여전히 실행 여부를 선택해야 하는 추천입니다. 이런 시스템은 많은 분석 작업을 없애 줍니다. 그리고 질문을 설정하고, 트레이드오프를 판단하고, 의사결정을 책임지는 사람의 가치를 높입니다.</p>
+<p><a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">콘텐츠 획일화에 대응하는 방법</a>에 관한 저희 SIGIR 2026 논문은 시장 차원의 요점을 더합니다. 모두가 같은 작업에 같은 도구를 쓰면 결과물은 수렴합니다. 차별성은 희소해지고, 희소한 것은 프리미엄을 받습니다. AI의 도움을 받은 작업을 그 누구와도 다르게 들리고 다르게 성과를 내도록 만들 수 있는 마케터는 어떤 시나리오에서든 수요가 있을 것입니다.</p>
+<h2>마케터가 지금 해야 할 일</h2>
+<ul><li>자신의 직무를 작업 단위로 나눠 보십시오. AI가 이미 잘하는 작업, AI가 보조하는 작업, 여전히 여러분이 필요한 작업을 표시하십시오. 마지막 그룹으로 의도적으로 시간을 옮기십시오.</li><li>프롬프트만이 아니라 평가하는 법을 배우십시오. AI 결과물을 실제 데이터에 비춰 판단하는 능력이야말로 시나리오들이 보상하는 역량입니다.</li><li>산출물이 아니라 성과를 책임지십시오. 산출물로 정의된 역할은 결과로 정의된 역할보다 자동화하기 쉽습니다.</li><li>도메인 깊이를 쌓으십시오. 시장, 카테고리, 고객에 관한 맥락은 범용 모델이 복제하기 어렵습니다.</li><li>이익의 공유를 요구하십시오. AI가 팀의 생산성을 높인다면 비용 절감만이 아니라 교육, 커리어 경로, 새로운 역할을 주장하십시오.</li></ul>
+<p>시나리오는 예측이 아닙니다. 그 가치는 가정을 논의할 수 있게 만든다는 데 있습니다. 마케팅에서 논의할 가치가 있는 가정은 간단합니다. 작업은 직함보다 빠르게 바뀔 것입니다. 그에 대비하십시오.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Anthropic이 제시한 AI 경제 시나리오 세 가지는 무엇인가요?</summary><p>AI의 영향이 인터넷과 비슷한 완만한 시나리오, AI가 2030년까지 지식 노동의 절반을 할 수 있고 성장률이 평소의 약 두 배인 상당한 시나리오, 그리고 AI가 대부분의 지식 작업에서 사람을 능가하고 성장률이 연 15%에 이르며 실업률이 높아질 수 있는 극단적인 시나리오입니다.</p></details><details><summary>시나리오는 지식 노동자에 대해 무엇을 말하나요?</summary><p>상당한 시나리오에서 지식 노동자의 임금은 거의 제자리인 반면 다른 노동자들은 임금이 오릅니다. 극단적인 시나리오에서는 지식 노동자의 임금이 10% 넘게 하락하고 지식 직종이 대체 위험에 직면합니다.</p></details><details><summary>마케터는 AI가 일자리에 미칠 영향에 어떻게 대비해야 하나요?</summary><p>직무를 작업 단위로 나누고, 판단과 책임에 시간을 옮기며, AI 결과물을 실제 데이터에 비춰 평가하는 법을 배우고, 도메인 깊이를 쌓으며, 산출물보다 성과에 집중해야 합니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a> — Anthropic, 9 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">일과 역량 · 2026년 10월 2일</span><h3>AI 도입 격차는 사람의 문제다</h3><p>Anthropic은 컨설팅사, 은행과 함께 2027년까지 Frontier Deployed Engineer 1만 명을 양성하는 데 1억 달러를 투입하기로 했습니다. 마케팅에도 이런 역할이 필요한 이유.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h3>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h3><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h3>말레이시아 AI Governance Bill: 역할별 책임</h3><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

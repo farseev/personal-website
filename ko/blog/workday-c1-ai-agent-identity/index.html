@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다." />
+<meta property="og:url" content="https://farseev.com/ko/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="에이전트" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/#article","mainEntityOfPage":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/","url":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/","headline":"Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다","description":"Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"에이전트","about":{"@type":"Thing","name":"Workday, 사람과 에이전트를 위한 에이전트형 ID 플랫폼 C1.ai 인수 최종 계약 체결"},"wordCount":864,"citation":[{"@type":"CreativeWork","name":"Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents","url":"https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents","publisher":"Workday Newsroom","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/#faq","mainEntity":[{"@type":"Question","name":"C1.ai란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"Workday에 따르면 C1.ai는 이메일, CRM, 코드 저장소, 재무 시스템, 클라우드 인프라 같은 비즈니스 시스템에 연결되는 에이전트형 ID 플랫폼으로, 사람과 AI 에이전트에게 필요할 때 접근 권한을 부여하고 필요 없어지면 회수하며, 범위가 제한된 접근, 정책, 사람의 승인, 행동 기록을 제공합니다."}},{"@type":"Question","name":"Workday의 C1.ai 인수는 언제 완료되나요?","acceptedAnswer":{"@type":"Answer","text":"Workday는 통상적인 거래 완료 조건을 충족하는 전제로, 2027년 1월 31일에 끝나는 2027회계연도 4분기에 거래가 완료될 것으로 예상합니다. 인수 가격은 공개되지 않았습니다."}},{"@type":"Question","name":"마케팅의 AI 에이전트에 왜 고유한 ID가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"에이전트가 점점 더 고객 데이터, 광고 예산, 브랜드 채널을 다루기 때문입니다. 분리되고, 범위가 제한되며, 기록되는 ID가 있어야 각 에이전트가 할 수 있는 일을 제한하고, 위험한 행동에 승인을 요구하며, 감사를 위해 모든 변경의 출처를 밝힐 수 있습니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다","item":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/workday-c1-ai-agent-identity/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/workday-c1-ai-agent-identity/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/workday-c1-ai-agent-identity/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 에이전트</p>
+      <h1 class="h-display">Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다</h1>
+      <p class="lead">Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Workday, 사람과 에이전트를 위한 에이전트형 ID 플랫폼 C1.ai 인수 최종 계약 체결(<time datetime="2026-10-13">2026년 10월 13일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>신입 직원이 입사하면 누군가가 계정을 만들고, 무엇을 볼 수 있는지 정하고, 퇴사하면 접근 권한을 회수합니다. 새로운 AI 에이전트가 마케팅 팀에 합류하면 누가 그 일을 합니까? 10월 13일 Workday는 바로 그 질문에 답하는 것이 사업의 전부인 회사를 인수하겠다고 발표했습니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday의 보도자료</a>에 따르면 Workday는 “사람과 에이전트를 위한 에이전트형 ID 플랫폼” C1.ai를 인수하는 최종 계약을 체결했습니다. 인수 가격은 공개되지 않았으며, 거래는 통상적인 조건을 충족하는 전제로 2027년 1월 31일에 끝나는 Workday 2027회계연도 4분기에 완료될 예정입니다.</p>
+<p>C1.ai는 이메일, CRM, 코드 저장소, 재무 시스템, 클라우드 인프라 같은 비즈니스 시스템에 연결됩니다. 사람과 에이전트 각각에게 필요할 때 접근 권한을 부여하고 필요 없어지면 회수합니다. 자체 설명에 따르면 이 플랫폼은 범위가 제한된 접근, 강제되는 정책, 사람의 승인, 모든 행동의 기록을 제공합니다.</p>
+<p>보도자료는 두 가지 수치로 문제를 제시합니다. C1.ai의 조사를 인용해 미국 대기업의 95%가 이미 자율 에이전트를 운영하고 있다고 하고, Deloitte를 인용해 이를 관리하는 성숙한 방법을 갖췄다고 답한 곳은 21%에 불과하다고 말합니다. Workday의 Gerrit Kazmaier는 “오늘날 기업은 사람과 AI 에이전트가 결합된 인력으로 운영됩니다”라고 말했습니다. C1.ai의 CEO Alex Bovee는 더 직설적으로 표현했습니다. “기업은 어제의 IT 티켓으로 AI 시대를 지킬 수 없습니다.”</p>
+<h2>왜 중요한가</h2>
+<p>마케팅은 그렇게 느껴지지 않더라도 회사에서 권한이 가장 많이 얽힌 부서 중 하나입니다. 유능한 마케팅 에이전트가 건드려야 할 것들을 떠올려 보십시오. 고객 데이터가 담긴 CRM, 예산이 걸린 광고 계정, 분석 도구, 콘텐츠 관리 시스템, 브랜드를 대변하는 소셜 계정, 이메일 플랫폼, 공개 전 계획이 가득한 공유 드라이브.</p>
+<p>대부분의 팀은 이 접근 권한을 예전 방식으로 부여합니다. 누군가 로그인 정보를 공유합니다. API 키가 스프레드시트에 들어 있습니다. 더 쉬워서 도구에 “관리자” 권한을 줍니다. 사람에게도 이미 위험한 방식이었습니다. 쉬지 않고 기계의 속도로 행동하는 에이전트에게는 그것이 가장 큰 리스크가 됩니다.</p>
+<p>C1.ai의 제안이 제대로 짚은 것은 답의 형태입니다. 작업 범위로 제한되고, 필요한 시점에 부여되며, 필요하면 사람이 승인하고, 기록되는 접근 권한입니다. 이것은 IT의 세부 사항이 아닙니다. 에이전트에게 실제 업무를 안전하게 맡길 수 있는지를 결정합니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>에이전트가 등장하기 훨씬 전, 제 팀은 더 단순한 ID 문제를 연구했습니다. <a href="https://doi.org/10.1007/978-3-030-13283-5_9" target="_blank" rel="noopener">Person, Organization, or Personage: Towards User Account Type Prediction in Microblogs</a>(EGOSE 2018)에서 저희는 개인, 조직, 유명인 계정을 구분하는 방법을 연구했습니다. 동기는 어떤 종류의 행위자가 만든 행동인지 모르면 그 행동을 올바르게 해석할 수 없다는 것이었습니다.</p>
+<p>이제 같은 원칙이 회사 내부에 적용됩니다. 마케팅 스택의 모든 행동은 출처를 밝힐 수 있어야 합니다. 이 예산 변경은 사람이 했는가, 사람을 대신한 에이전트가 했는가, 자동화 규칙이 했는가? 그렇지 않으면 결과를 감사하거나, 실수를 설명하거나, 효과가 있었던 것에서 배울 수 없습니다. <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>부터 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>까지 저희의 설명 가능한 AI 연구에서 설명은 어떤 입력과 어떤 결정이 결과로 이어졌는지 아는 데 달려 있습니다. ID는 첫 번째 입력입니다.</p>
+<p>저는 이것을 제가 <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes 칼럼</a>에서 주장해 온 변화, 즉 마케터가 수작업 콘텐츠 제작자에서 AI 도구의 큐레이터로 바뀌는 흐름의 일부로도 봅니다. 에이전트를 큐레이션하는 일에는 각 에이전트가 무엇을 할 수 있는지 정하는 것도 포함됩니다.</p>
+<h2>마케팅 운영이 지금 해야 할 일</h2>
+<ul><li>모든 에이전트에게 고유한 ID를 주십시오. 사람의 로그인 정보를 공유하지 마십시오. 플랫폼이 서비스 계정이나 범위가 제한된 API 키를 지원하지 않는다면 위험 신호로 보십시오.</li><li>작업별로 범위를 정하십시오. 보고서를 쓰는 에이전트에게 필요한 것은 분석 도구의 읽기 권한이지 광고 예산의 쓰기 권한이 아닙니다.</li><li>되돌릴 수 없는 행동에는 승인을 요구하십시오. 게시, 기준액 이상의 지출, 데이터 삭제에는 사람의 “예”가 필요해야 합니다.</li><li>접근 권한에 만료를 두십시오. 캠페인이나 작업 기간 동안만 권한을 부여하고, 이후에는 자동으로 회수하십시오.</li><li>기록하고 검토하십시오. 에이전트의 행동 기록을 남기고, 특히 지출이나 메시지에 예상치 못한 일이 생긴 뒤에는 반드시 살펴보십시오.</li><li>오프보딩에 에이전트를 포함하십시오. 벤더, 도구, 에이전시와의 관계가 끝나면 함께 들어온 에이전트와 키를 회수하십시오.</li></ul>
+<p>Workday의 인수는 기업용 소프트웨어 세계가 이제 에이전트를 인력의 일원으로 다룬다는 신호입니다. 마케팅도 그래야 하며, 그 출발점은 누가 열쇠를 갖느냐입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>C1.ai란 무엇인가요?</summary><p>Workday에 따르면 C1.ai는 이메일, CRM, 코드 저장소, 재무 시스템, 클라우드 인프라 같은 비즈니스 시스템에 연결되는 에이전트형 ID 플랫폼으로, 사람과 AI 에이전트에게 필요할 때 접근 권한을 부여하고 필요 없어지면 회수하며, 범위가 제한된 접근, 정책, 사람의 승인, 행동 기록을 제공합니다.</p></details><details><summary>Workday의 C1.ai 인수는 언제 완료되나요?</summary><p>Workday는 통상적인 거래 완료 조건을 충족하는 전제로, 2027년 1월 31일에 끝나는 2027회계연도 4분기에 거래가 완료될 것으로 예상합니다. 인수 가격은 공개되지 않았습니다.</p></details><details><summary>마케팅의 AI 에이전트에 왜 고유한 ID가 필요한가요?</summary><p>에이전트가 점점 더 고객 데이터, 광고 예산, 브랜드 채널을 다루기 때문입니다. 분리되고, 범위가 제한되며, 기록되는 ID가 있어야 각 에이전트가 할 수 있는 일을 제한하고, 위험한 행동에 승인을 요구하며, 감사를 위해 모든 변경의 출처를 밝힐 수 있습니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents</a> — Workday Newsroom, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/agent-skills-agentic-ai-foundation/"><span class="meta">에이전트 · 2026년 10월 22일</span><h3>벤더 중립이 된 Agent Skills: 마케터가 주목해야 할 이유</h3><p>Anthropic이 Agent Skills 표준을 Agentic AI Foundation에 기증했습니다. 이식 가능하고 문서화된 노하우야말로 마케팅 팀이 AI 에이전트에게 필요로 하는 것입니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/openai-agent-medicare-portal-australia/"><span class="meta">에이전트 · 2026년 9월 24일</span><h3>“안 된다”를 받아들이지 않은 AI 에이전트</h3><p>호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/meta-muse-personal-ai-agent/"><span class="meta">에이전트 · 2026년 9월 8일</span><h3>Meta Muse: 고객이 에이전트를 보내면 무슨 일이 생길까</h3><p>Meta는 사용자를 대신해 예약하고 쇼핑하고 협상할 수 있는 개인 AI 에이전트 Muse를 출시했습니다. 사람뿐 아니라 에이전트를 대상으로 한 마케팅이 이제 현실적인 질문이 되었습니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

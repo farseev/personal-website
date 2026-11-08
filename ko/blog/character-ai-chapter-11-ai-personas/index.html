@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점." />
+<meta property="og:url" content="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="책임 있는 마케팅" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/#article","mainEntityOfPage":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/","url":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/","headline":"Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈","description":"Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"책임 있는 마케팅","about":{"@type":"Thing","name":"Character.AI, Chapter 11 파산 신청. Disney는 IP 라이선스를 위한 2,000만 달러 규모의 스토킹 호스 입찰 준비"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy","url":"https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal","publisher":"TheWrap","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/#faq","mainEntity":[{"@type":"Question","name":"Character.AI는 파산을 신청했나요?","acceptedAnswer":{"@type":"Answer","text":"그렇습니다. TheWrap에 따르면 Character.AI는 자산 매각을 촉진하기 위해 2026년 10월 12일 Chapter 11 파산을 신청했으며, 절차가 진행되는 동안 서비스는 계속 운영됩니다."}},{"@type":"Question","name":"Character.AI 매각에서 Disney의 역할은 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"TheWrap에 따르면 Disney는 특정 지식재산에 대한 비독점 영구 라이선스를 위해 2,000만 US$ 입찰을 준비하고 있으며, 11월 말이나 12월 초로 예상되는 경매의 기준가를 정하는 스토킹 호스 입찰자 역할을 맡게 됩니다."}},{"@type":"Question","name":"브랜드는 Character.AI의 어려움에서 무엇을 배워야 하나요?","acceptedAnswer":{"@type":"Answer","text":"AI 페르소나에는 지식재산, 안전, 신뢰의 리스크가 따른다는 점입니다. 브랜드는 자사가 소유한 IP를 기반으로 하고, 페르소나가 주장할 수 있는 범위를 엄격히 제한하며, 취약한 사용자를 고려해 설계하고, 사용자에게 AI와 대화 중임을 알리며, 참여도와 함께 웰빙을 측정해야 합니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈","item":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/character-ai-chapter-11-ai-personas/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/character-ai-chapter-11-ai-personas/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/character-ai-chapter-11-ai-personas/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 책임 있는 마케팅</p>
+      <h1 class="h-display">Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈</h1>
+      <p class="lead">Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Character.AI, Chapter 11 파산 신청. Disney는 IP 라이선스를 위한 2,000만 달러 규모의 스토킹 호스 입찰 준비(<time datetime="2026-10-12">2026년 10월 12일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>몇 년 전만 해도 AI 캐릭터는 거대 언어 모델의 가장 자연스러운 소비자용 애플리케이션처럼 보였습니다. 개성을 가진 챗봇이 하루 종일 곁에 있는 것이었습니다. 10월 12일, 이 분야에서 가장 잘 알려진 기업 중 하나인 Character.AI가 Chapter 11 파산을 신청했습니다. 이제 브랜드들이 자체 AI 캐릭터, 마스코트, 컴패니언을 만들고 있습니다. 이 이야기는 자세히 읽어 볼 가치가 있습니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">TheWrap</a>에 따르면 Character.AI는 10월 12일 월요일 늦게 자산의 “가치를 극대화하는 매각을 촉진하기 위해” Chapter 11을 신청했습니다. Disney는 특정 지식재산에 대한 비독점 영구 라이선스를 위해 2,000만 US$ 입찰을 준비하고 있으며, 11월 말이나 12월 초로 예상되는 경매의 기준가를 정하는 “스토킹 호스” 역할을 맡습니다. 다른 입찰자들도 여전히 더 나은 제안을 할 수 있습니다.</p>
+<p>TheWrap은 Disney가 2025년 9월 자사 캐릭터의 무단 사용을 이유로 Character.AI에 중지 요청서를 보냈고, 이 플랫폼이 AI 에이전트가 십 대를 자해로 이끌었다고 주장하는 여러 소송을 합의로 마무리한 뒤 마이크로드라마 쪽으로 방향을 틀었으며, 펜실베이니아주가 가짜 의료 전문 자격증 생성을 이유로 소송을 제기했다고 전합니다. CEO Colin Adams는 법원 감독하의 매각이 가치를 극대화할 “최선의 기회를 회사에 제공한다”고 말하며, 안전하고 몰입감 있는 사용자 경험이 “여전히 최우선 과제”라고 밝혔습니다. 서비스는 계속 운영됩니다.</p>
+<h2>왜 중요한가</h2>
+<p>보도된 내용을 넘어 회사의 재무 상황을 추측하지는 않겠습니다. 하지만 공개된 사실만으로도 모든 AI 페르소나 제품이 안고 있는 세 가지 리스크가 드러납니다.</p>
+<p>첫째는 지식재산입니다. 사람들이 사랑하는 캐릭터에는 대개 주인이 있습니다. 사용자가 유명 캐릭터를 흉내 내는 데 기반한 제품은 TheWrap이 묘사한 바로 그런 분쟁을 불러옵니다.</p>
+<p>둘째는 안전입니다. 몰입감 있고 감정적으로 반응하도록 설계된 캐릭터는 설계상 영향력이 큽니다. 사용자 중에 십 대가 있다면, 가드레일이 실패할 때 그 영향력은 부채가 됩니다.</p>
+<p>셋째는 신뢰와 권위입니다. 그럴듯한 가짜 자격증을 만들어 낼 수 있는 챗봇은 페르소나가 갖고 있지도 않은 전문성을 얼마나 쉽게 주장할 수 있는지 보여 줍니다.</p>
+<p>브랜드에게 주는 교훈은 “AI 캐릭터를 피하라”가 아닙니다. 페르소나는 하나의 약속이며, 그것을 배포한 기업이 페르소나가 하는 모든 말에 책임진다는 것입니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>성격은 제 핵심 연구 주제 중 하나입니다. 동료들과 함께 <a href="https://doi.org/10.1609/aaai.v31i1.11105" target="_blank" rel="noopener">여러 소셜 네트워크의 활동으로 성격을 추론하는 연구</a>(AAAI 2017), <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">성격 기반 콘텐츠 생성</a>(WSDM 2021), <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">성격 기반 소셜 멀티미디어 콘텐츠 추천</a>(ACM Multimedia 2022)을 진행했습니다. 연구 결과는 분명합니다. 콘텐츠를 성격에 맞추면 더 몰입감이 높아집니다.</p>
+<p>바로 그래서 책임이 무겁습니다. 사용자마다 성격을 맞춰 바꾸는 시스템은 어떤 정적인 광고보다 빠르게 애착을 형성할 수 있습니다. 잘 쓰면 더 관련성 높고 더 도움이 되는 브랜드 경험이 됩니다. 부주의하게 쓰면 조작이 되며, 특히 취약한 사용자에게 그렇습니다. 저는 WSDM 2023 강연 <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>에서 자동화된 프로파일링과 타기팅의 윤리 및 개인정보 측면을 다뤘고, Forbes에서는 투명성을 비용이 아니라 성과의 일부로 보는 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">구속적 마케팅</a>을 주장했습니다.</p>
+<p>브랜드 페르소나는 브랜드 대변인만큼 신중하게 설계해야 합니다. 차이가 있다면 수백만 명과 동시에 대화하며 결코 지치지 않는다는 점입니다.</p>
+<h2>AI 캐릭터를 만드는 브랜드를 위한 체크리스트</h2>
+<ul><li>IP를 소유하십시오. 자사가 소유하거나 라이선스를 받은 캐릭터와 목소리로 페르소나를 만들고, 타인의 캐릭터를 흉내 내는 것은 차단하십시오.</li><li>페르소나가 절대 주장해서는 안 되는 것을 정하십시오. 자격증, 정해진 범위를 벗어난 전문적 조언, 회사가 지키지 않을 약속은 안 됩니다.</li><li>가장 취약한 사용자를 기준으로 설계하십시오. 목표 대상이 아니더라도 미성년자와 어려움에 처한 사람이 사용할 수 있다고 가정하고, 사람의 도움으로 연결되는 경로를 만드십시오.</li><li>명확하게 공개하십시오. 사용자는 자신이 AI와 대화하고 있다는 것과 그 뒤에 누가 있는지 항상 알아야 합니다.</li><li>참여도만이 아니라 웰빙을 측정하십시오. 이용 시간은 컴패니언 제품의 성공 지표가 아닙니다. 불만, 사람 상담 연결, 유해 콘텐츠 신고도 추적하십시오.</li><li>끝을 대비하십시오. 제품이 종료되거나 매각될 경우 사용자 대화와 데이터가 어떻게 되는지 미리 정하십시오.</li></ul>
+<p>AI 페르소나는 브랜드 경험의 일부가 될 것입니다. 이를 단순한 참여 엔진이 아니라 책임으로 다루는 기업이 5년 뒤에도 계속 운영하고 있을 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Character.AI는 파산을 신청했나요?</summary><p>그렇습니다. TheWrap에 따르면 Character.AI는 자산 매각을 촉진하기 위해 2026년 10월 12일 Chapter 11 파산을 신청했으며, 절차가 진행되는 동안 서비스는 계속 운영됩니다.</p></details><details><summary>Character.AI 매각에서 Disney의 역할은 무엇인가요?</summary><p>TheWrap에 따르면 Disney는 특정 지식재산에 대한 비독점 영구 라이선스를 위해 2,000만 US$ 입찰을 준비하고 있으며, 11월 말이나 12월 초로 예상되는 경매의 기준가를 정하는 스토킹 호스 입찰자 역할을 맡게 됩니다.</p></details><details><summary>브랜드는 Character.AI의 어려움에서 무엇을 배워야 하나요?</summary><p>AI 페르소나에는 지식재산, 안전, 신뢰의 리스크가 따른다는 점입니다. 브랜드는 자사가 소유한 IP를 기반으로 하고, 페르소나가 주장할 수 있는 범위를 엄격히 제한하며, 취약한 사용자를 고려해 설계하고, 사용자에게 AI와 대화 중임을 알리며, 참여도와 함께 웰빙을 측정해야 합니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy</a> — TheWrap, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">책임 있는 마케팅 · 2026년 10월 14일</span><h3>AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다</h3><p>Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h3>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h3><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h3>말레이시아 AI Governance Bill: 역할별 책임</h3><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

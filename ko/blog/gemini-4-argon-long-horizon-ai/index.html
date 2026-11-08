@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: 출력 토큰 100만 개, 그다음은? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: 출력 토큰 100만 개, 그다음은? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것." />
+<meta property="og:url" content="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="모델" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: 출력 토큰 100만 개, 그다음은? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?","description":"Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"모델","about":{"@type":"Thing","name":"Google DeepMind, 장기·다단계 작업을 위한 프런티어 모델 Gemini 4 Argon 공개"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Gemini 4 Argon이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"Google DeepMind가 2026년 9월 30일 공개한 프런티어 모델로, 실제 코딩, 기업 지식 작업, 사이버 방어를 위해 만들어졌으며 출력 한도가 64,000토큰에서 100만 토큰으로 늘었습니다."}},{"@type":"Question","name":"Gemini 4 Argon은 누가 먼저 사용할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"Google에 따르면 Fairwind Program을 통해 신뢰할 수 있는 사이버 방어 인력에게 먼저 제공되며, 이후 유료 API 고객과 Google AI Ultra 구독자를 시작으로 개발자, 기업, 소비자로 확대될 예정입니다."}},{"@type":"Question","name":"Gemini 4 Argon의 가격은 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"Google이 제시한 출시 기념 가격은 입력 토큰 100만 개당 2 US$, 출력 토큰 100만 개당 10 US$이며, 기념 기간이 끝나면 4 US$와 20 US$로 오르고, 캐시된 입력 토큰은 95% 할인됩니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?","item":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 모델</p>
+      <h1 class="h-display">Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?</h1>
+      <p class="lead">Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Google DeepMind, 장기·다단계 작업을 위한 프런티어 모델 Gemini 4 Argon 공개(<time datetime="2026-09-30">2026년 9월 30일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>예전에는 컨텍스트 윈도가 경쟁의 초점이었습니다. Gemini 4 Argon은 모델의 반대쪽 끝, 즉 한 번에 얼마나 많이 만들어 낼 수 있는가로 관심을 옮깁니다. 9월 30일 Google DeepMind는 출력 한도를 64,000토큰에서 100만 토큰으로 늘린 Argon을 공개했습니다. 책 한 권 분량의 답변입니다. 마케터에게 더 흥미로운 질문은 어떤 종류의 일이 그런 답변을 필요로 하느냐입니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google의 발표</a>에서 Koray Kavukcuoglu는 Argon을 “실제 코딩, 기업 지식 작업, 사이버 방어를 위한” Google의 프런티어 모델이라고 설명합니다. 출력 토큰 한도는 100만 개로 늘었고, 모델은 소프트웨어 엔지니어링, 법률·금융 업무, 사이버 보안의 장기·다단계 작업을 위해 설계되었으며, 차트 분석과 장편 동영상 이해 같은 강력한 시각적 이해 능력을 갖췄습니다.</p>
+<p>출시 방식은 이례적입니다. Argon은 Google의 Fairwind Program을 통해 신뢰할 수 있는 사이버 방어 인력에게 먼저 제공되며, 이후 유료 API 고객과 Google AI Ultra 구독자를 시작으로 개발자, 기업, 소비자로 확대될 예정입니다. 출시 기념 가격은 입력 토큰 100만 개당 2 US$, 출력 토큰 100만 개당 10 US$이고, 기념 기간이 끝나면 4 US$와 20 US$로 오르며, 캐시된 입력은 95% 할인됩니다.</p>
+<p>Google은 DeepSWE v1.1에서 77.9%, 장편 동영상 벤치마크 LVBench에서 91.7% 등 벤치마크 결과를 제시하고, 대규모 코드 마이그레이션 같은 내부 활용 사례를 소개합니다. 오용과 정렬 실패 모니터링, 간접 프롬프트 인젝션에 대한 복원력 등 안전 조치도 설명합니다. 모두 Google 자체 결과입니다.</p>
+<h2>왜 중요한가</h2>
+<p>출력 토큰 100만 개는 더 긴 블로그 글을 쓰기 위한 것이 아닙니다. 긴 출력은 하나의 일관된 흐름으로 완결된 결과물을 만들어야 할 때 중요합니다. 코드베이스 전체 마이그레이션, 계약서 세트, 대규모 구조화 데이터셋 같은 것들입니다. 마케팅에서 가장 가까운 예는 제품 피드 전체 재작성, 웹사이트 전체 현지화, 서로 맞물린 수백 개 변형으로 이루어진 캠페인 라이브러리 같은 것입니다.</p>
+<p>제게는 장편 동영상 이해가 당장 더 유용한 능력입니다. 소셜 플랫폼은 동영상이 지배하는데, 대부분의 브랜드는 여전히 샘플을 보고 메모하는 방식으로 분석합니다. 긴 동영상을 대규모로 안정적으로 읽을 수 있는 모델은 예전에는 철저히 할 수 없었던 경쟁사 분석과 카테고리 분석의 길을 엽니다.</p>
+<p>그리고 사이버 보안 우선 출시는 프런티어 연구소들이 리스크가 어디에 있다고 보는지 보여 주는 신호입니다. 연구소가 다른 누구보다 방어자에게 먼저 접근 권한을 준다는 것은, 그 모델이 공격자에게도 의미 있을 만큼 유능하다는 뜻입니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>제 연구의 상당 부분은 텍스트만이 아니라 소셜 멀티미디어에 관한 것이었습니다. 초기에 저희는 여러 네트워크에 걸친 소셜 멀티미디어를 분석하는 빅데이터 플랫폼 <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a>(ACM Multimedia 2016)를 만들었습니다. 최근에는 <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a>(WWW 2025 Companion)에서 경쟁사가 무엇을 소통하고 그것이 왜 효과가 있는지 설명하는 데 집중했습니다.</p>
+<p>그 연구에서 얻은 교훈은 분석의 규모가 문제의 절반일 뿐이라는 것입니다. 경쟁사 동영상 천 편을 볼 수 있는 모델이라도 전략가가 관심을 갖는 질문에 답해야 합니다. 어떤 메시지가 반복되는지, 어떤 메시지가 성과를 내는지, 어떤 오디언스를 겨냥하는지, 어떤 빈틈이 남아 있는지 말입니다. 긴 컨텍스트와 긴 출력을 갖춘 모델은 읽고 쓰는 비용을 낮춥니다. 질문을 설정하고 검증하는 일은 성과 데이터의 뒷받침을 받는 사람의 몫으로 남습니다.</p>
+<p>한 가지 주의할 점을 덧붙이겠습니다. 매우 긴 출력은 확인하기 어렵습니다. 200페이지짜리 생성 문서는 98%가 맞더라도 여러분을 곤란하게 만들 주장 하나를 담고 있을 수 있습니다. 출력이 길어질수록 구조, 샘플링, 자동 검사가 더 필요합니다.</p>
+<h2>저라면 장기 과제형 모델을 마케팅에 이렇게 쓰겠습니다</h2>
+<ul><li>카테고리 동영상 감사. 경쟁사 동영상 전체에 걸쳐 훅, 주장, 형식, 행동 유도 문구에 관한 구조화된 결과를 요청하십시오. 그런 다음 샘플을 직접 검증하십시오.</li><li>일관된 자산 라이브러리. 캠페인의 전체 변형 세트를 한 번에 생성해 어조와 주장이 일관되게 유지되도록 하고, 체크리스트로 검토하십시오.</li><li>사이트 전체 현지화 초안. 새 시장을 위한 완전한 초안을 만든 뒤, 트래픽이 많은 페이지부터 원어민 검토자가 확인하게 하십시오.</li><li>색인이 있는 긴 문서. 모델이 출처와 함께 주장 목록 표를 만들도록 요구해, 사람이 위험한 부분을 빠르게 검증할 수 있게 하십시오.</li></ul>
+<p>Argon의 대표 수치는 인상적입니다. 마케터에게 가치는 그 역량을 결과물을 확인하는 규율과 짝지을 때 나올 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Gemini 4 Argon이란 무엇인가요?</summary><p>Google DeepMind가 2026년 9월 30일 공개한 프런티어 모델로, 실제 코딩, 기업 지식 작업, 사이버 방어를 위해 만들어졌으며 출력 한도가 64,000토큰에서 100만 토큰으로 늘었습니다.</p></details><details><summary>Gemini 4 Argon은 누가 먼저 사용할 수 있나요?</summary><p>Google에 따르면 Fairwind Program을 통해 신뢰할 수 있는 사이버 방어 인력에게 먼저 제공되며, 이후 유료 API 고객과 Google AI Ultra 구독자를 시작으로 개발자, 기업, 소비자로 확대될 예정입니다.</p></details><details><summary>Gemini 4 Argon의 가격은 얼마인가요?</summary><p>Google이 제시한 출시 기념 가격은 입력 토큰 100만 개당 2 US$, 출력 토큰 100만 개당 10 US$이며, 기념 기간이 끝나면 4 US$와 20 US$로 오르고, 캐시된 입력 토큰은 95% 할인됩니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">모델 · 2026년 10월 7일</span><h3>Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유</h3><p>Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">모델 · 2026년 9월 29일</span><h3>OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미</h3><p>OpenAI는 테스트에서 작업 범위, 권한, 결과 보고 방식의 문제가 드러나자 GPT-6.1 Astra 출시를 취소했습니다. 같은 테스트가 여러분의 에이전트에도 적용됩니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">모델 · 2026년 9월 22일</span><h3>Claude Opus 5.5: 워터마크, 감사, AI 콘텐츠 표시</h3><p>Anthropic의 Claude Opus 5.5는 EU AI Act 준수를 위한 워터마킹을 갖추고 출시되었으며, 모델이 테스트 중이라고 의심하는 경우가 많다는 설명도 함께 나왔습니다. 둘 다 마케터에게 중요합니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

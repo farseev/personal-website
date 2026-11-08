@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유." />
+<meta property="og:url" content="https://farseev.com/ko/blog/anthropic-singapore-office-mou/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="아시아·싱가포르" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/#article","mainEntityOfPage":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/","url":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/","headline":"Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것","description":"Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"아시아·싱가포르","about":{"@type":"Thing","name":"Anthropic, 싱가포르 사무소를 열고 싱가포르 디지털개발정보부(MDDI)와 MOU 체결"},"wordCount":970,"citation":[{"@type":"CreativeWork","name":"Anthropic opens Singapore office and signs MOU with the Government of Singapore","url":"https://www.anthropic.com/news/singapore-office-opening","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/#faq","mainEntity":[{"@type":"Question","name":"Anthropic과 싱가포르의 MOU는 무엇을 다루나요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic에 따르면 AI 안전, 보안, 모델 평가에 관한 협력, AI 도입과 그 영향에 관한 연구, 그리고 중소기업과 공무원 지원을 포함한 공공·민간 부문 전반의 책임 있는 AI 도입을 다룹니다."}},{"@type":"Question","name":"MOU에는 누가 서명했나요?","acceptedAnswer":{"@type":"Answer","text":"Singapore International Cyber Week 기간 중 MDDI 차관 Kai Fong Chng과 Anthropic 공동 창업자 Ben Mann이 서명했으며, 디지털개발정보부 장관 Josephine Teo와 Anthropic APAC 정책 총괄 Michael Sellitto가 참관했습니다."}},{"@type":"Question","name":"다국어 AI 평가가 아시아 마케터에게 왜 중요한가요?","acceptedAnswer":{"@type":"Answer","text":"동남아시아 고객은 다양한 언어를 사용하며, 영어에서의 모델 품질과 안전성이 말레이어, 타밀어, 중국어에서도 같은 동작을 보장하지 않기 때문입니다. 고객이 쓰는 각 언어로 테스트하면 브랜드에 맞지 않거나 안전하지 않은 출력의 위험을 줄일 수 있습니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것","item":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-singapore-office-mou/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-singapore-office-mou/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-singapore-office-mou/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 아시아·싱가포르</p>
+      <h1 class="h-display">Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것</h1>
+      <p class="lead">Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Anthropic, 싱가포르 사무소를 열고 싱가포르 디지털개발정보부(MDDI)와 MOU 체결(<time datetime="2026-10-14">2026년 10월 14일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>또 하나의 AI 연구소가 싱가포르에 깃발을 꽂았습니다. 10월 14일 Anthropic은 이곳에 사무소를 열고 정부와 양해각서를 체결했습니다. 저는 이 도시에 살며 사업을 하고 있기에 두 가지 질문을 품고 발표를 읽었습니다. 실제로 무엇을 약속하는가, 그리고 아시아에서 AI로 고객과 소통하는 기업에 무엇이 달라지는가.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropic의 발표</a>에 따르면 싱가포르는 아시아태평양 지역에서 다섯 번째 사무소입니다. MOU의 상대는 디지털개발정보부(MDDI)입니다. Singapore International Cyber Week 기간 중 MDDI 차관 Kai Fong Chng과 Anthropic 공동 창업자 Ben Mann이 서명했고, Josephine Teo 장관이 참관했습니다.</p>
+<p>MOU는 세 가지 영역을 다룹니다. AI 안전, 보안, 모델 평가에 관한 협력, AI 도입과 그 영향에 관한 연구, 그리고 공공과 민간 부문 전반의 책임 있는 도입입니다. 계획된 활동으로는 평가, 테스트 표준, 사고 대응에 관한 싱가포르 AI 안전·보증 기관과의 기술 교류, 중소기업 지원, Anthropic의 Economic Index 같은 연구 공유가 포함됩니다.</p>
+<p>게시글의 몇몇 수치가 눈에 띄었습니다. Anthropic에 따르면 싱가포르는 인구 대비 Claude.ai 사용량에서 121개국 중 2위로, 국가 규모로 예상되는 수준의 거의 6배입니다. GovTech Singapore의 엔지니어와 기술 인력 1,500명 이상이 Claude Code를 도입했고, Claude로 구축한 Grab의 영업 어시스턴트 BriX는 영업팀의 시간을 분기마다 약 4만 시간 절약해 준다고 합니다. 모두 회사 자체 수치입니다.</p>
+<p>제가 가장 흥미롭게 본 대목은 과거 이력입니다. Anthropic은 2023년 IMDA와 AI Verify Foundation이 운영하는 Generative AI Evaluation Sandbox에 참여했고, 이후 이들과 함께 영어, 중국어(표준어), 말레이어, 타밀어로 레드팀 프로젝트를 진행했다고 밝혔습니다.</p>
+<h2>왜 중요한가</h2>
+<p>사무소 개설은 과대 해석하기 쉽습니다. MOU는 의향의 표명이지 제품이 아닙니다. 저는 최근 e27에서 관련된 주장을 했습니다. <a href="https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/" target="_blank" rel="noopener">Singapore and Romania don't need another MOU, they need first customers</a>. 협약은 누군가가 쓸 수 있는 일로 바뀔 때 의미가 있습니다.</p>
+<p>이번 협약을 지켜볼 만하게 만드는 것은 평가 조항입니다. 싱가포르는 AI 평가를 인프라로 다루는 데 유난히 일관적이었습니다. 샌드박스, 테스트 툴킷, 그리고 이제 프런티어 연구소와의 모델 평가 교류까지. 기업에게는 이 부분이 복리처럼 쌓입니다. 명확한 테스트 표준은 입증 책임이 공유되고 문서화되기 때문에 은행, 통신사, 소매업체가 AI 도입에 “예”라고 말하는 비용을 낮춰 줍니다.</p>
+<p>다국어 레드팀이 중요한 이유는 다릅니다. 공개되는 안전성·품질 테스트의 대부분은 여전히 영어로 이루어집니다. 동남아시아 사람들은 영어로만 쇼핑하고, 불만을 제기하고, 검색하지 않습니다. 영어에서는 잘 작동하다가 말레이어나 타밀어에서 엇나가는 모델은 이 시장에 안전한 모델이 아닙니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>NUS에서의 제 박사 연구는 여러 네트워크에 걸친 게시물, 이미지, 체크인, 센서 데이터 등 여러 출처를 동시에 활용해 사람이 어떤 사람인지 학습하는 것이었습니다. 제게 오래 남은 발견 하나는 나중에 <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a>(AAAI 2020)에서 나왔습니다. 어떤 데이터 출처를 선택하느냐가 AI 사용자 모델의 정확도를 바꾼다는 것입니다. 언어도 하나의 출처입니다. 한 언어로 평가된 모델은 여러분이 서비스하는 인구 집단에 대해 평가된 것이 아닙니다.</p>
+<p>같은 논리가 마케팅을 위한 설명 가능한 AI에 관한 제 연구를 이끕니다. <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>(ACM Multimedia 2023)에서 저희는 새 광고 크리에이티브의 클릭률을 예측하고, LLM 어시스턴트로 무엇이 그 예측을 이끌었는지 설명했습니다. <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>(ACM Multimedia 2025)에서는 크리에이티브 점수와 LLM을 결합해 실제 광고 데이터로 전략을 함께 만들었습니다. 두 경우 모두 마케터가 결과를 신뢰하고 실행하게 해 주는 것은 설명입니다. 평가와 설명은 같은 약속의 두 반쪽입니다. 작동한다는 것을 보여 주고, 왜 작동하는지 보여 주는 것입니다.</p>
+<p>그래서 정부와 연구소가 평가 표준에 협력하기로 합의했다면, 저는 이것을 규제 당국만이 아니라 마케터에게도 좋은 소식으로 읽습니다. “이 AI는 이 시장에서 이 일에 적합하다”를 말하는 공통 언어의 시작이기 때문입니다.</p>
+<h2>싱가포르 기업이 지금 해야 할 일</h2>
+<ul><li>고객이 쓰는 언어로 테스트하십시오. 챗봇이나 콘텐츠 도구가 말레이어, 타밀어, 중국어 사용자를 대상으로 한다면, 출시 전에 영어만이 아니라 그 언어들로 평가하십시오.</li><li>아직 아무도 요구하지 않더라도 평가 내용을 문서화하십시오. 무엇을, 어떻게 테스트했고 결과가 어땠는지 짧게 기록해 두는 것은 여러분이 만들 수 있는 가장 저렴한 컴플라이언스 자산입니다.</li><li>벤더에게 기능만이 아니라 평가에 대해 물으십시오. 어떤 테스트를, 어떤 언어로 진행했고, 무엇이 실패했는가?</li><li>공공 프로그램을 활용하십시오. 특히 중소기업은 비싼 컨설팅을 사기 전에 이 MOU와 유사한 제도에서 정부와 파트너들이 무엇을 제공하는지 살펴봐야 합니다.</li><li>새로운 언어로 브랜드를 대변하는 모든 것에 대해서는 최종 결정을 사람에게 맡기십시오.</li></ul>
+<p>싱가포르는 협약을 표준으로 바꾸는 데 능합니다. 이 MOU가 다국어 AI를 위한 실질적인 평가 지침을 낳는다면, 그 의미는 한 기업의 사무소를 훨씬 넘어설 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Anthropic과 싱가포르의 MOU는 무엇을 다루나요?</summary><p>Anthropic에 따르면 AI 안전, 보안, 모델 평가에 관한 협력, AI 도입과 그 영향에 관한 연구, 그리고 중소기업과 공무원 지원을 포함한 공공·민간 부문 전반의 책임 있는 AI 도입을 다룹니다.</p></details><details><summary>MOU에는 누가 서명했나요?</summary><p>Singapore International Cyber Week 기간 중 MDDI 차관 Kai Fong Chng과 Anthropic 공동 창업자 Ben Mann이 서명했으며, 디지털개발정보부 장관 Josephine Teo와 Anthropic APAC 정책 총괄 Michael Sellitto가 참관했습니다.</p></details><details><summary>다국어 AI 평가가 아시아 마케터에게 왜 중요한가요?</summary><p>동남아시아 고객은 다양한 언어를 사용하며, 영어에서의 모델 품질과 안전성이 말레이어, 타밀어, 중국어에서도 같은 동작을 보장하지 않기 때문입니다. 고객이 쓰는 각 언어로 테스트하면 브랜드에 맞지 않거나 안전하지 않은 출력의 위험을 줄일 수 있습니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropic opens Singapore office and signs MOU with the Government of Singapore</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h3>말레이시아 AI Governance Bill: 역할별 책임</h3><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">아시아·싱가포르 · 2026년 10월 1일</span><h3>일본 AI 실행 계획: 성장 정책이 도입 정책이 되다</h3><p>Sanae Takaichi 총리는 일본 성장 전략과 연계한 AI 추진 실행 계획을 연말까지 마련하라고 각료들에게 지시했습니다. 도입 우선 정책이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">아시아·싱가포르 · 2026년 9월 22일</span><h3>Alibaba Apsara 2026: 초거대 모델, 그러나 현실은 소형 모델</h3><p>Apsara 2026에서 Alibaba는 5조~10조 파라미터 모델 계획을 밝히면서 공개 27B 모델을 치켜세웠습니다. 아시아 마케터가 양쪽 끝을 모두 지켜봐야 하는 이유.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

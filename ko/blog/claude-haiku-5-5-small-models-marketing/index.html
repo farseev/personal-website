@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유." />
+<meta property="og:url" content="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="모델" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유","description":"Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"모델","about":{"@type":"Thing","name":"Anthropic, 대량·비용 민감 작업을 위한 소형 모델 Claude Haiku 5.5 출시"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"Claude Haiku 5.5는 무엇을 위해 설계되었나요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic은 이 모델을 요약, 분류, 데이터베이스 쿼리, 실시간 고객 지원, 브라우저 사용, 서브에이전트 작업 같은 대량·비용 민감 작업용으로 내세우며, 복잡한 에이전트형 코딩에는 Sonnet 5.5와 Opus 5.5를 권장합니다."}},{"@type":"Question","name":"Claude Haiku 5.5의 가격은 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic은 100,000토큰 이하의 프롬프트에 대해 입력 토큰 100만 개당 0.10 US$, 출력 토큰 100만 개당 0.50 US$를 제시하며, 평균적으로 Haiku 4.5보다 약 75% 저렴하다고 말합니다."}},{"@type":"Question","name":"소형 언어 모델로 마케팅 작업을 충분히 처리할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"태깅, 요약, 라우팅 같은 많은 대량 작업에는 잘 고른 소형 모델로 충분하며 훨씬 저렴합니다. 자사의 레이블된 예시로 테스트하고, 크리에이티브 평가 같은 작업에는 특화된 예측 모델을 유지하면서 LLM으로 그 출력을 설명하십시오."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유","item":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/claude-haiku-5-5-small-models-marketing/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-haiku-5-5-small-models-marketing/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 모델</p>
+      <h1 class="h-display">Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유</h1>
+      <p class="lead">Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Anthropic, 대량·비용 민감 작업을 위한 소형 모델 Claude Haiku 5.5 출시(<time datetime="2026-10-07">2026년 10월 7일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>모든 모델 출시는 그 자리에서 가장 큰 모델과 비교됩니다. 저는 그것이 대부분의 마케팅 업무에 맞지 않는 관점이라고 생각합니다. 10월 7일 Anthropic은 Claude Haiku 5.5를 출시했는데, 흥미로운 부분은 프런티어에 얼마나 가까운가가 아닙니다. 백만 번 돌리는 데 드는 비용이 얼마인가입니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p>Anthropic은 Haiku 5.5를 <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">지금까지 출시한 소형 모델 중 가장 저렴하고, 가장 빠르며, 가장 유능한 모델</a>이라고 부릅니다. 요약, 분류, 데이터베이스 쿼리, 실시간 고객 지원, 브라우저 사용, 그리고 더 큰 Opus 5.5 및 Sonnet 5.5 모델과 함께하는 서브에이전트 작업처럼 대량이고 비용에 민감한 작업을 겨냥합니다. Haiku급 모델로는 처음으로 노력 수준 조절 설정을 갖춰, 사용자가 비용과 지능을 맞바꿀 수 있습니다. Anthropic은 복잡한 에이전트형 코딩에는 Sonnet 5.5와 Opus 5.5가 여전히 더 낫다고 분명히 밝힙니다.</p>
+<p>헤드라인은 가격입니다. 100,000토큰 이하의 프롬프트에 대해 Anthropic이 제시한 가격은 입력 토큰 100만 개당 0.10 US$, 출력 토큰 100만 개당 0.50 US$이며, Haiku 5.5는 평균적으로 Haiku 4.5보다 약 75% 저렴하다고 합니다. 출시 페이지에는 고객 사례도 실려 있습니다. 예를 들어 HubSpot은 자사 CRM 평가 세트에서 92.8%를 기록했다고 말합니다. 이는 회사와 고객사의 수치이지 독립적인 테스트 결과가 아닙니다.</p>
+<h2>왜 중요한가</h2>
+<p>마케팅 AI는 물량의 비즈니스입니다. 캠페인 하나에 수천 개의 크리에이티브 변형, 분류해야 할 수만 개의 댓글, 수십만 행의 제품 피드, 수십 개 시장에 걸친 일일 보고가 따라올 수 있습니다. 그중 가장 강력한 모델이 필요한 일은 거의 없습니다. 필요한 것은 충분히 좋고, 빠르고, 예측 가능하며, 모든 것에 돌릴 수 있을 만큼 저렴한 모델입니다.</p>
+<p>소형 모델이 훨씬 좋아지는 동시에 훨씬 저렴해지면, 무엇을 자동화할지에 관한 경제성이 바뀝니다. 경쟁사 광고 하나하나에 태그를 달거나 고객 리뷰를 하나하나 요약하는 것처럼 모든 항목에 돌리기엔 너무 비쌌던 작업이 일상이 됩니다. 그리고 아키텍처가 바뀝니다. 큰 모델이 계획하고 판단하며, 그 아래에서 작은 모델들이 반복 작업을 합니다. Haiku를 서브에이전트로 설명하는 Anthropic의 표현이 정확히 그 패턴입니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>저는 오랫동안 이렇게 주장해 왔습니다. Forbes에서 <a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">클수록 좋은가</a>를 물었고, 이후 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">마케팅에서 LLM과 소형 신경망</a>을 비교했습니다. 제 답은 바뀌지 않았습니다. 모델 크기는 기법과 작업 적합성보다 훨씬 덜 중요합니다.</p>
+<p>저희 연구는 늘 두 종류의 모델 중 하나를 고르기보다 둘을 결합해 왔습니다. <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>(WSDM 2023)에서 저희는 텍스트, 이미지, 타기팅, 설정을 활용해 광고주의 Meta 광고 크리에이티브를 집행 전에 평가하는 멀티모달 모델을 시연했습니다. <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>(ACM Transactions on Information Systems, 2025)에서는 광고 성과 예측 모델과 LLM을 결합해 크리에이티브 점수가 마케터가 실행할 수 있는 추천이 되도록 했습니다.</p>
+<p>그 연구에서 얻은 교훈은 특화된 효율적 모델이 측정을 하고 거대 언어 모델이 설명을 한다는 것입니다. 더 저렴하고 유능한 소형 LLM이 특화된 예측 모델을 대체하지는 않습니다. 대신 마케팅이 실제로 이루어지는 규모에서 설명과 오케스트레이션 계층을 감당할 수 있는 비용으로 만들어 줍니다.</p>
+<h2>저라면 이런 모델을 이렇게 쓰겠습니다</h2>
+<ul><li>전수 분류. 샘플링하는 대신 카테고리 내 모든 경쟁사 게시물, 모든 리뷰, 모든 광고에 주제, 오퍼, 형식별로 태그를 다십시오.</li><li>1차 요약. 긴 보고서, 녹취록, 댓글 스레드를 사람이나 더 큰 모델이 검토할 짧은 요약본으로 바꾸십시오.</li><li>파이프라인 속 서브에이전트. 더 큰 모델이 경쟁사 분석을 계획하게 하고, 반복적인 추출 단계는 소형 모델에 넘기십시오.</li><li>고객 응대 속도. 실시간 채팅처럼 지연 시간이 중요한 곳에는 빠른 모델을 쓰고, 어려운 사례는 더 강력한 모델이나 사람에게 넘기십시오.</li></ul>
+<h2>전환하기 전에 마케터가 확인해야 할 것</h2>
+<ul><li>자체 평가를 돌리십시오. 벤더 벤치마크는 여러분의 작업이 아닙니다. 실제 업무에서 200개의 예시를 뽑아 레이블을 달고, 그 세트로 모델을 비교하십시오.</li><li>토큰당 비용이 아니라 작업당 비용을 보십시오. Anthropic은 Haiku 5.5가 새 토크나이저를 사용해 작업당 토큰을 약간 더 쓴다고 밝힙니다. 청구액은 워크플로 전체에 달려 있습니다.</li><li>노력 수준 설정을 의도적으로 쓰십시오. 단순 태깅은 낮은 노력 수준을 기본으로 하고, 평가에서 품질 향상이 확인된 곳에서만 높이십시오.</li><li>특화 모델이 더 나은 곳에서는 그대로 두십시오. 자사 성과 데이터로 훈련한 모델이 이미 있다면, LLM은 그 출력을 대체하는 것이 아니라 설명해야 합니다.</li></ul>
+<p>헤드라인은 프런티어가 차지합니다. 하지만 대부분의 일과 대부분의 절감은 소형 모델에서 일어날 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Claude Haiku 5.5는 무엇을 위해 설계되었나요?</summary><p>Anthropic은 이 모델을 요약, 분류, 데이터베이스 쿼리, 실시간 고객 지원, 브라우저 사용, 서브에이전트 작업 같은 대량·비용 민감 작업용으로 내세우며, 복잡한 에이전트형 코딩에는 Sonnet 5.5와 Opus 5.5를 권장합니다.</p></details><details><summary>Claude Haiku 5.5의 가격은 얼마인가요?</summary><p>Anthropic은 100,000토큰 이하의 프롬프트에 대해 입력 토큰 100만 개당 0.10 US$, 출력 토큰 100만 개당 0.50 US$를 제시하며, 평균적으로 Haiku 4.5보다 약 75% 저렴하다고 말합니다.</p></details><details><summary>소형 언어 모델로 마케팅 작업을 충분히 처리할 수 있나요?</summary><p>태깅, 요약, 라우팅 같은 많은 대량 작업에는 잘 고른 소형 모델로 충분하며 훨씬 저렴합니다. 자사의 레이블된 예시로 테스트하고, 크리에이티브 평가 같은 작업에는 특화된 예측 모델을 유지하면서 LLM으로 그 출력을 설명하십시오.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">모델 · 2026년 9월 30일</span><h3>Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?</h3><p>Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">모델 · 2026년 9월 29일</span><h3>OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미</h3><p>OpenAI는 테스트에서 작업 범위, 권한, 결과 보고 방식의 문제가 드러나자 GPT-6.1 Astra 출시를 취소했습니다. 같은 테스트가 여러분의 에이전트에도 적용됩니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">모델 · 2026년 9월 22일</span><h3>Claude Opus 5.5: 워터마크, 감사, AI 콘텐츠 표시</h3><p>Anthropic의 Claude Opus 5.5는 EU AI Act 준수를 위한 워터마킹을 갖추고 출시되었으며, 모델이 테스트 중이라고 의심하는 경우가 많다는 설명도 함께 나왔습니다. 둘 다 마케터에게 중요합니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>백악관 AI 협약과 독립 평가 기관 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="백악관 AI 협약과 독립 평가 기관 | Prof. Aleks Farseev" />
+<meta property="og:description" content="테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유." />
+<meta property="og:url" content="https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="규제·보안" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="백악관 AI 협약과 독립 평가 기관 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/","headline":"백악관 AI 협약과 독립 평가 기관","description":"테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"규제·보안","about":{"@type":"Thing","name":"테크 리더들, White House Accord on Super Intelligence에 서명. Anthropic은 METR 평가자에게 직원 수준의 접근 권한 부여"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"White House Accord on Super Intelligence란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"“Joint Commitment on Frontier Responsibilities”라는 제목의 자발적 문서로, 2026년 9월 29일 트럼프 대통령과 Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai, Greg Brockman 등 리더들이 서명했습니다. 기업들이 내부 통제, 내부 팀, 독립적인 외부 평가자, 이사회 차원의 감독을 갖추도록 약속합니다."}},{"@type":"Question","name":"백악관 AI 협약은 구속력이 있나요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 트럼프 대통령은 이를 “도덕적 구속력이 있다”고 표현했지만, MercoPress에 따르면 위반에 대한 결과를 정하지 않으며 일부 학자들은 약하다고 비판했습니다."}},{"@type":"Question","name":"Anthropic은 독립 평가자에게 어떤 접근 권한을 주었나요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic에 따르면 METR 직원 6명이 회사 하드웨어, 도구, 시스템에 대한 직원 수준의 접근 권한을 갖고 합류했으며, METR은 리스크 평가를 공개할 예정이고, Anthropic은 그 공개를 거부할 수 없지만 기밀 IP 같은 사전에 정한 범주의 삭제는 요구할 수 있습니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"백악관 AI 협약과 독립 평가 기관","item":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/white-house-ai-accord-independent-evaluators/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/white-house-ai-accord-independent-evaluators/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">백악관 AI 협약과 독립 평가 기관</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 규제·보안</p>
+      <h1 class="h-display">백악관 AI 협약과 독립 평가 기관</h1>
+      <p class="lead">테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: 테크 리더들, White House Accord on Super Intelligence에 서명. Anthropic은 METR 평가자에게 직원 수준의 접근 권한 부여(<time datetime="2026-09-29">2026년 9월 29일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI 기업들의 자발적 약속은 엇갈린 이력을 갖고 있습니다. 어떤 것은 1년 안에 잊힙니다. 이번 약속이 흥미로운 이유는 백악관의 행사가 아니라 그 안에 담긴 구체적인 아이디어 하나, 바로 독립 평가자입니다. 2주 뒤 한 연구소가 그것이 실제로 어떤 모습일 수 있는지 보여 주었습니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a>에 따르면 9월 29일 트럼프 대통령과 여러 테크 기업의 수장들은 300단어를 조금 넘는 문서인 “White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities”에 서명했습니다. 대통령과 함께 서명자로 이름을 올린 이들은 Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai, 그리고 OpenAI 회장 Greg Brockman입니다.</p>
+<p>Forbes는 프런티어 모델을 훈련하고 배포하는 기업을 위한 네 가지 약속을 요약합니다. 모델이 의도하지 않은 방식으로 기술 시스템에 접근하지 않도록 하는 것을 포함해 모델의 역량과 정렬을 모니터링하는 내부 통제를 유지할 것, 내부 팀이 그 통제가 작동하고 문제가 해결되도록 할 것, “독립적인 외부 감사인 또는 평가자”와 협력할 것, 통제와 감사인을 감독하는 “이사회의 독립 위원회”를 지정할 것입니다. 트럼프 대통령은 이 협약을 “도덕적 구속력이 있다”며 “어떤 면에서는 거의 헌법과 같다”고 했습니다. <a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a>는 협약이 위반에 대한 결과를 정하지 않는다고 지적하며, 시드니 대학교 Kimberlee Weatherall 교수가 이를 “전혀 인상적이지 않다”고 평가했다고 인용합니다.</p>
+<p>10월 15일 Anthropic은 <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a>를 발표했습니다. 프런티어 모델을 평가하는 비영리 단체 METR의 팀에게 직원 수준의 접근 권한을 부여했다는 내용입니다. METR 직원 6명이 회사 하드웨어와 내부 도구를 지급받아 합류했으며, 이는 Anthropic 자체 리스크 팀과 대체로 같은 수준입니다. METR은 자체 리스크 평가를 공개할 예정이며, Anthropic은 그 공개를 거부할 수 없지만 기밀 IP 같은 사전에 정한 범주의 삭제는 요구할 수 있다고 말합니다. Anthropic은 이 모델을 대형 은행 내부에 검사관을 상주시키는 은행 감독 당국에 비유하며, 모든 프런티어 AI 기업이 같은 방식을 따라야 한다고 말합니다.</p>
+<h2>왜 중요한가</h2>
+<p>협약은 얄팍하며, 결과가 따르지 않는 자발적 문서는 아무것도 보장하지 않는다는 비판은 옳습니다. 하지만 독립 평가자 약속은 확인할 수 있기 때문에 유용한 고리입니다. 기업에 실질적인 접근 권한과 공개의 자유를 가진 외부 평가자가 있거나, 없거나 둘 중 하나입니다.</p>
+<p>Anthropic의 방식은 깊은 접근, 공개 권리, 명확한 삭제 한도라는 눈에 보이는 기준을 세웁니다. 이제 다른 기업들을 그 기준과 비교할 수 있습니다. 자발적 약속은 그렇게 규범이 됩니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>제 연구 분야인 마케팅을 위한 설명 가능한 AI도 더 작은 규모에서 같은 원칙에 기반합니다. 모델이 무엇을 하는지에 관한 주장은 모델 소유자가 아닌 다른 누군가가 검증할 수 있어야 한다는 것입니다. <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>(ACM Multimedia 2023)와 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>(ACM Multimedia 2025)에서 설명 계층은 마케터가 예측을 믿음으로 받아들이는 대신 왜 그런 예측이 나왔는지 확인할 수 있도록 존재합니다.</p>
+<p>저는 Forbes에서 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">마케팅 중심 기업에 투명성이 중요하다</a>고 주장했습니다. 프런티어 연구소들은 이제 안전을 위해 그것의 한 형태로 수렴하고 있습니다. 내부 통제, 내부 팀, 외부 평가자, 이사회 감독입니다. 마케팅 AI는 같은 수준의 재앙적 리스크를 지니지는 않지만, 편향된 타기팅, 오해를 부르는 주장, 개인정보 유출, 잘못된 신호에 쓰인 예산 같은 실질적인 리스크를 지닙니다. 같은 4계층 구조는 작은 규모에도 잘 적용됩니다.</p>
+<h2>마케팅 AI 거버넌스를 위한 4계층 모델</h2>
+<ul><li>내부 통제. AI 시스템이 무엇을 하는지 모니터링하십시오. 어떤 오디언스를 타기팅하는지, 어떤 주장을 생성하는지, 어떤 데이터를 쓰는지.</li><li>내부 담당자. 그 통제를 확인하고 문제를 해결할 책임자나 팀을 지정하십시오.</li><li>외부의 눈. 감사인, 연구 파트너, 다른 벤더 같은 독립적인 당사자가 주요 모델과 주장을 주기적으로 테스트하게 하십시오.</li><li>경영진 감독. 재무 리스크를 보고하듯 AI 리스크를 경영진에 보고하고, 시스템을 일시 중지할 권한을 두십시오.</li></ul>
+<p>마케팅 AI를 구매할 때는 협약이 제기하는 것과 같은 질문을 벤더에게 던지십시오. 외부에서 누가 모델을 평가합니까? 그들은 어떤 접근 권한을 갖고 있습니까? 발견한 내용을 공개할 수 있습니까? 그 답이 기능 목록보다 더 많은 것을 알려 줄 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>White House Accord on Super Intelligence란 무엇인가요?</summary><p>“Joint Commitment on Frontier Responsibilities”라는 제목의 자발적 문서로, 2026년 9월 29일 트럼프 대통령과 Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai, Greg Brockman 등 리더들이 서명했습니다. 기업들이 내부 통제, 내부 팀, 독립적인 외부 평가자, 이사회 차원의 감독을 갖추도록 약속합니다.</p></details><details><summary>백악관 AI 협약은 구속력이 있나요?</summary><p>아닙니다. 트럼프 대통령은 이를 “도덕적 구속력이 있다”고 표현했지만, MercoPress에 따르면 위반에 대한 결과를 정하지 않으며 일부 학자들은 약하다고 비판했습니다.</p></details><details><summary>Anthropic은 독립 평가자에게 어떤 접근 권한을 주었나요?</summary><p>Anthropic에 따르면 METR 직원 6명이 회사 하드웨어, 도구, 시스템에 대한 직원 수준의 접근 권한을 갖고 합류했으며, METR은 리스크 평가를 공개할 예정이고, Anthropic은 그 공개를 거부할 수 없지만 기밀 IP 같은 사전에 정한 범주의 삭제는 요구할 수 있습니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">규제·보안 · 2026년 10월 12일</span><h3>증류 공격: 복제된 AI 모델이 여러분에게 의미하는 것</h3><p>미국 기관들이 증류 관련 권고문에서 중국 AI 기업 6곳을 지목했고, Anthropic은 자사 방어 체계로 수집된 데이터를 90~99% 줄였다고 밝혔습니다. AI 구매자에게 주는 의미.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/mas-ai-risk-management-guidelines/"><span class="meta">규제·보안 · 2026년 10월 7일</span><h3>MAS AI 리스크 가이드라인: 은행 밖에서도 유용한 템플릿</h3><p>MAS가 금융기관을 위한 AI 리스크 관리 가이드라인을 발표했습니다. 그 인벤토리 및 제3자 규칙은 마케팅 팀에게도 좋은 템플릿이 됩니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h3>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h3><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

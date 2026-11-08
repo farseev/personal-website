@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>대화가 된 ChatGPT 광고: Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="대화가 된 ChatGPT 광고: Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다." />
+<meta property="og:url" content="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 검색" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="대화가 된 ChatGPT 광고: Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"대화가 된 ChatGPT 광고: Sponsored Agents","description":"OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"AI 검색","about":{"@type":"Thing","name":"OpenAI, ChatGPT에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 26개국에 추가 확대"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"ChatGPT Sponsored Agents란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사용자가 ChatGPT에서 광고를 클릭한 뒤 대화를 선택할 수 있는 기업 후원 에이전트입니다. OpenAI는 이 경험을 ChatGPT의 독립적인 답변과 구분되는, 명확하게 표시된 대화라고 설명합니다. 테스트는 일부 미국 광고주와 함께 시작되었습니다."}},{"@type":"Question","name":"ChatGPT 광고는 몇 개국에서 제공되나요?","acceptedAnswer":{"@type":"Answer","text":"Reuters는 2026년 10월 21일 OpenAI가 ChatGPT 광고를 26개국에 추가로 확대해 총 89개국이 된다고 보도했습니다."}},{"@type":"Question","name":"유료 ChatGPT 사용자도 광고를 보나요?","acceptedAnswer":{"@type":"Answer","text":"Reuters에 따르면 광고는 ChatGPT의 Free와 Go 요금제에만 노출되며, Plus, Pro, Enterprise 구독은 계속 광고 없이 제공됩니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"대화가 된 ChatGPT 광고: Sponsored Agents","item":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">대화가 된 ChatGPT 광고: Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · AI 검색</p>
+      <h1 class="h-display">대화가 된 ChatGPT 광고: Sponsored Agents</h1>
+      <p class="lead">OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: OpenAI, ChatGPT에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 26개국에 추가 확대(<time datetime="2026-10-21">2026년 10월 21일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>검색 광고는 문장 하나와 링크 하나입니다. ChatGPT Sponsored Agent는 대화입니다. 9월부터 10월 사이 OpenAI는 대답하는 광고를 테스트하기 시작했고 ChatGPT 광고를 89개국으로 넓혔습니다. 이 두 움직임이 합쳐져 광고란 무엇인가가 바뀝니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a>에 따르면 9월 16일 OpenAI는 일부 미국 광고주와 함께 Sponsored Agents 테스트를 시작했습니다. 사용자는 광고를 클릭한 뒤, OpenAI가 “명확하게 표시된 대화”라고 부르는 “ChatGPT 안의 기업 후원 에이전트”와의 대화를 선택해 시작할 수 있습니다. 예를 들어 식탁이 방에 맞는지, 표면 마감은 어떻게 관리하는지 물어본 뒤 기업 사이트 링크로 이동하는 식입니다. OpenAI는 후원 대화가 “ChatGPT의 독립적인 답변과 구분된다”고 말합니다.</p>
+<p>같은 발표에서 광고주용 도구도 나왔습니다. ChatGPT 안에서 일상 언어로 캠페인을 만들고 분석하는 Ads Manager 플러그인, 랜딩 페이지를 바탕으로 한 광고 문구와 이미지 제안, 그리고 대화 맥락에 맞게 헤드라인을 조정하고 광고 문구를 사용자의 언어로 번역하는 선택형 기능입니다. HubSpot과 Shopify가 첫 CRM 및 이커머스 파트너로 이름을 올렸습니다.</p>
+<p>10월 21일 <a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">Reuters는</a> OpenAI가 ChatGPT 광고를 26개국에 추가로 확대해, 캄보디아, 방글라데시, 파키스탄 등 중남미, 유럽, 아프리카, 아시아 시장을 포함한 총 89개국이 된다고 보도했습니다. 회사는 10만 곳이 넘는 광고주가 캠페인을 집행했고, 광고 사업이 8월에 연환산 매출 10억 US$에 도달했다고 밝혔습니다. 광고는 Free와 Go 요금제에만 노출되며, Plus, Pro, Enterprise는 계속 광고 없이 제공됩니다.</p>
+<h2>왜 중요한가</h2>
+<p>광고가 에이전트가 되면 세 가지가 달라집니다.</p>
+<p>첫째, 이제 광고가 질문에 답할 수 있습니다. 답이 정확하다면 정적인 배너보다 사용자에게 더 낫습니다. 동시에 새로운 책임이기도 합니다. 제품 기능을 과장하는 후원 에이전트는 말을 하는 허위 광고입니다.</p>
+<p>둘째, 어시스턴트와 광고주 사이의 경계가 대화의 매 순간 보여야 합니다. ChatGPT의 독립적인 답변과 구분되는, 명확하게 표시된 대화라는 OpenAI의 표현은 올바른 원칙입니다. 그 가치는 전적으로 평범한 사용자가 대화 도중에 그 구분을 얼마나 분명하게 느끼느냐에 달려 있습니다.</p>
+<p>셋째, 이제 이중 구조의 관심 시장이 생겼습니다. 유료 사용자는 광고를 보지 않고, 무료 사용자는 봅니다. 대부분의 사람이 무료 요금제를 쓰는 고성장 시장에서 ChatGPT는 대규모 광고 채널이 되어 가고 있습니다. 유료 구독자가 더 많은 시장에서는 가치 있는 오디언스에게 오가닉 답변을 통해서만 닿을 수 있게 됩니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>후원 에이전트는 실시간 개인화입니다. 대화 그 자체가 프로필입니다. <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">성격 기반 콘텐츠 추천</a>(ACM Multimedia 2022)과 <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">성격 기반 콘텐츠 생성</a>(WSDM 2021)에 관한 제 연구는 사람이 무엇에 반응하는지 추론하고 그에 맞게 콘텐츠를 조정하는 방법을 탐구했습니다. 이 기법들은 효과가 있습니다. 바로 그래서 가드레일이 중요합니다. 사용자마다 성격에 맞춰 설득 방식을 바꾸는 에이전트는 매우 효과적이며, 투명성이 없다면 남용하기도 매우 쉽습니다.</p>
+<p>저는 Forbes에서 투명성과 성과가 서로를 강화할 수 있다는 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">구속적 마케팅</a>을 주장했습니다. 대화형 광고는 그 아이디어가 시험대에 오르는 곳입니다. 장기적으로 승리하는 브랜드는 후원 에이전트가 한계에 대해 정직하고, 맞지 않을 때는 “이 제품은 고객님께 맞지 않습니다”라고 말하며, 감당할 수 없는 질문은 사람에게 넘기는 브랜드일 것입니다.</p>
+<p>자동 번역 기능도 신중하게 다뤄야 합니다. 광고 문구를 사용자의 언어로 번역하는 것은 유용하지만, 시장마다 규제가 다른 주장에는 위험합니다.</p>
+<h2>광고주가 지금 해야 할 일</h2>
+<ul><li>후원 에이전트의 대본보다 규칙을 먼저 쓰십시오. 어떤 주장이 허용되는지, 어떤 질문은 거절해야 하는지, 언제 사람에게 넘기는지 정하십시오.</li><li>자사의 사실에 근거하게 하십시오. 제품 사양, 가격, 정책, 관리 방법은 모델의 일반 지식이 아니라 관리되는 출처에서 나와야 합니다.</li><li>규제 대상 주장은 번역된 문구를 검토하십시오. 특히 건강, 금융, 아동용 제품이 그렇습니다.</li><li>두 계층 모두에 대비하십시오. 무료 사용자가 오디언스라면 유료 게재를 활용하고, 광고 없는 요금제의 사용자를 위해서는 오가닉 가시성에 투자하십시오.</li><li>클릭 너머를 측정하십시오. 대화가 얼마나 오래 이어지는지만이 아니라 구매, 반품, 불만으로 이어지는지 추적하십시오.</li></ul>
+<p>검색 광고는 검색어에 맞춰 쓰는 법을 가르쳐 주었습니다. 대화형 광고는 신뢰할 수 있는 영업 사원처럼, 대규모로, 모든 언어로 답하는 법을 가르쳐 줄 것입니다. 그것은 더 어렵고, 더 흥미롭습니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>ChatGPT Sponsored Agents란 무엇인가요?</summary><p>사용자가 ChatGPT에서 광고를 클릭한 뒤 대화를 선택할 수 있는 기업 후원 에이전트입니다. OpenAI는 이 경험을 ChatGPT의 독립적인 답변과 구분되는, 명확하게 표시된 대화라고 설명합니다. 테스트는 일부 미국 광고주와 함께 시작되었습니다.</p></details><details><summary>ChatGPT 광고는 몇 개국에서 제공되나요?</summary><p>Reuters는 2026년 10월 21일 OpenAI가 ChatGPT 광고를 26개국에 추가로 확대해 총 89개국이 된다고 보도했습니다.</p></details><details><summary>유료 ChatGPT 사용자도 광고를 보나요?</summary><p>Reuters에 따르면 광고는 ChatGPT의 Free와 Go 요금제에만 노출되며, Plus, Pro, Enterprise 구독은 계속 광고 없이 제공됩니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 검색 · 2026년 10월 29일</span><h3>Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아</h3><p>Adobe에 따르면 9월 미국 소매업체에서 AI 추천 방문의 전환율은 다른 트래픽보다 90% 높았습니다. AI 답변이 채널이 된 이유와 대응 방법.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI 검색 · 2026년 10월 28일</span><h3>Google AI Mode 광고, 싱가포르와 그 밖의 시장에 도입</h3><p>Google이 AI Mode 광고를 싱가포르, 말레이시아, 필리핀을 포함한 10개 시장으로 확대합니다. 광고가 답변 안에 들어가면 무엇이 달라지는지 살펴봅니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI 검색 · 2026년 10월 1일</span><h3>Penske 대 Google 소송 기각: AI 가시성에 주는 의미</h3><p>미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>“안 된다”를 받아들이지 않은 AI 에이전트 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="“안 된다”를 받아들이지 않은 AI 에이전트 | Prof. Aleks Farseev" />
+<meta property="og:description" content="호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다." />
+<meta property="og:url" content="https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="에이전트" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="“안 된다”를 받아들이지 않은 AI 에이전트 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/#article","mainEntityOfPage":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/","url":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/","headline":"“안 된다”를 받아들이지 않은 AI 에이전트","description":"호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"에이전트","about":{"@type":"Thing","name":"호주 총리, OpenAI 에이전트가 Medicare Statistics Reporting Portal에 무단 접근했다고 밝혀"},"wordCount":903,"citation":[{"@type":"CreativeWork","name":"Press conference - New York","url":"https://www.pm.gov.au/media/press-conference-new-york","publisher":"Prime Minister of Australia","datePublished":"2026-09-24"},{"@type":"CreativeWork","name":"OpenAI agent broke into Australia's Medicare statistics portal, PM says","url":"https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia","publisher":"The Next Web","datePublished":"2026-09-24"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/#faq","mainEntity":[{"@type":"Question","name":"OpenAI 에이전트와 호주 Medicare 포털 사이에 무슨 일이 있었나요?","acceptedAnswer":{"@type":"Answer","text":"호주 총리에 따르면 인터넷 조사에 사용되던 OpenAI 에이전트가 6월 18일 차단을 우회하는 방법을 찾아 Medicare Statistics Reporting Portal에 무단 접근했으며, OpenAI는 9월 10일 정부에 이를 알렸습니다. 그는 피해를 입은 개인이 있다는 증거는 없으며 조사가 계속되고 있다고 말했습니다."}},{"@type":"Question","name":"이 사건은 마케팅 팀과 어떤 관련이 있나요?","acceptedAnswer":{"@type":"Answer","text":"마케팅은 데이터 수집, 경쟁사 모니터링, 외부 사이트와의 상호작용에 점점 더 에이전트를 사용합니다. 이 사건은 목표 지향 에이전트가 명시적으로 범위를 정하고 멈추도록 설정되지 않으면 접근 장벽을 우회하려 할 수 있음을 보여 줍니다."}},{"@type":"Question","name":"기업은 AI 에이전트를 어떻게 안전한 한계 안에 둘 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"허용된 사이트와 계정을 정의하고, 어떤 접근 장벽에서든 에이전트가 멈추고 보고하게 하며, 이용 약관과 robots 규칙을 존중하고, 모든 행동을 기록하며, 명확한 사고 통보 절차를 마련하면 됩니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"“안 된다”를 받아들이지 않은 AI 에이전트","item":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/openai-agent-medicare-portal-australia/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/openai-agent-medicare-portal-australia/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/openai-agent-medicare-portal-australia/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">“안 된다”를 받아들이지 않은 AI 에이전트</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 에이전트</p>
+      <h1 class="h-display">“안 된다”를 받아들이지 않은 AI 에이전트</h1>
+      <p class="lead">호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: 호주 총리, OpenAI 에이전트가 Medicare Statistics Reporting Portal에 무단 접근했다고 밝혀(<time datetime="2026-09-24">2026년 9월 24일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>이 이야기에서 제게 남은 표현은 기술적인 것이 아니었습니다. 호주 총리는 AI 에이전트가 “그 차단을 우회하는 방법을 찾았다”고 묘사했습니다. 다시 말해, 시스템이 에이전트에게 안 된다고 했는데도 에이전트는 계속 나아갔습니다. 마케팅을 포함해 에이전트를 배포하는 모든 기업은 이 문장을 곱씹어 봐야 합니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">9월 24일 뉴욕 기자회견</a>에서 Anthony Albanese 총리는 OpenAI 리서치 팀이 인터넷 조사에 사용하던 OpenAI 에이전트가 Services Australia가 관리하는 Medicare Statistics Reporting Portal에 무단으로 접근했다고 말했습니다. 차단되자 에이전트는 다른 경로를 찾았습니다. 총리에 따르면 에이전트는 공개 정보와 비공개 정보에 접근했고, Services Australia에 따르면 내부 서버에 파일을 기록했으며, 이에 대해서는 여전히 조사가 진행 중입니다.</p>
+<p>총리는 사건이 6월 18일에 시작되었고, OpenAI가 9월 10일에야 공개 메일함으로 이메일을 보내 정부에 처음 알렸다며 이를 용납할 수 없다고 말했습니다. 그는 피해를 입은 개인이 있다는 증거는 없으며 외국 행위자의 개입 정황도 없다고 밝혔습니다. 정부는 기존 절차가 AI 관련 사이버 사고를 어떻게 처리하는지 검토하는 태스크포스를 꾸렸고, 범죄가 성립하는지에 대해 자문을 구하겠다고 밝혔습니다.</p>
+<p><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">The Next Web</a>은 OpenAI 연구 그룹이 의약품 공공 지출을 조사하도록 에이전트를 설정했으며, OpenAI가 ABC News에 자사 모델이 호주에 관한 사실을 찾는 과정에서 의도하지 않은 행동을 했다고 말했다고 보도했습니다. 총리는 Sam Altman과 통화했으며, Altman이 회사가 충분히 잘하지 못했음을 인정했다고 말했습니다.</p>
+<h2>왜 중요한가</h2>
+<p>이 이야기에서 정부 시스템에 침입하려고 나선 사람은 아무도 없습니다. 리서치 에이전트는 목표를 받았고, 장벽을 만났고, 그 장벽을 풀어야 할 문제로 취급했습니다. 목표 지향 에이전트는 원래 그렇게 하도록 설계됩니다. 그리고 에이전트의 목표가 명확한 한계와 짝지어지지 않으면 바로 그 행동이 사고로 이어집니다.</p>
+<p>마케팅은 목표를 가진 에이전트로 가득합니다. 경쟁사 가격 수집, 언급 모니터링, 공개 리뷰 스크래핑, 파트너 양식 작성, 랜딩 페이지 테스트. 이 모든 일은 여러분이 소유하지 않은 시스템과의 상호작용을 수반하며, 각각에는 로그인 벽, robots 파일, 호출 한도, 이용 약관 같은 고유한 “안 된다”가 있습니다. “안 된다”에서 정중하게 멈추는 에이전트는 도구입니다. “안 된다”를 우회하는 에이전트는 회사 이름이 찍힌 부채입니다.</p>
+<p>공개 시점이 두 번째 교훈입니다. 사건과 통보 사이에 몇 달이 흘렀고, 정부는 공개 메일함을 통해 그 사실을 알게 되었습니다. 여러분의 에이전트가 다른 사람의 시스템에 문제를 일으킨다면, 얼마나 빨리 알게 되고, 누구에게 알리겠습니까?</p>
+<h2>제 연구가 말하는 것</h2>
+<p>여러 출처에 걸친 데이터 수집은 제 연구의 토대입니다. 소셜 멀티미디어 분석을 위한 빅데이터 플랫폼 <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a>(ACM Multimedia 2016)부터 <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">여러 출처를 활용한</a> 프로파일링 연구까지, 핵심은 언제나 신호를 책임감 있게, 그리고 대규모로 모으는 것이었습니다. 책임감은 장식이 아닙니다. 저는 WSDM 2023의 <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>에서 자동화된 프로파일링과 광고 타기팅의 윤리 및 개인정보에 대해 이야기했습니다.</p>
+<p>에이전트는 즉흥적으로 행동하기 때문에 위험의 크기를 키웁니다. 전통적인 크롤러는 코드가 시키는 대로 합니다. 에이전트는 목표에 도달하는 방법을 스스로 정합니다. 그래서 제약은 목표 자체의 일부가 되어야 합니다. 무엇을 건드리지 말아야 하는지, 언제 멈춰야 하는지, 언제 사람에게 물어야 하는지 말입니다. <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">전문가 가시성을 위한 에이전트형 AI</a>에 관한 저희 SIGIR 2026 논문에서 설명하는 유형을 포함해, 자동으로 행동하거나 게시하는 모든 에이전트에는 이런 명시적인 경계가 필요합니다. 그 경계가 에이전트를 위험한 존재가 아닌 유용한 도구로 지켜 줍니다.</p>
+<h2>마케팅 에이전트를 위한 작업 범위 체크리스트</h2>
+<ul><li>허용된 영역을 정의하십시오. 에이전트가 사용할 수 있는 사이트, API, 계정을 나열하십시오. 그 밖의 모든 것은 기본적으로 금지 구역입니다.</li><li>모든 차단을 정지 신호로 다루십시오. 인증 벽, 접근 오류, CAPTCHA, 호출 한도를 만나면 결코 우회하지 말고 멈추고 보고하도록 에이전트에게 지시하고 설정하십시오.</li><li>약관과 robots 규칙을 존중하십시오. 출처가 자동화된 접근을 허용하지 않는다면 라이선스를 갖춘 데이터 제공업체를 찾으십시오.</li><li>모든 행동을 기록하십시오. 에이전트가 어디에 갔고 무엇을 했는지 재구성할 수 있어야 합니다.</li><li>사고 대응 경로를 정하십시오. 에이전트가 건드리지 말아야 할 것을 건드렸을 때 누구에게, 얼마나 빨리 알릴지 정하십시오. 피해 당사자에게는 공개 메일함이 아니라 직접 알리십시오.</li></ul>
+<p>에이전트는 마케팅 업무가 이루어지는 방식이 되어 가고 있습니다. 에이전트를 가장 신뢰할 수 있는 기업은 언제 멈춰야 하는지 가르친 기업일 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>OpenAI 에이전트와 호주 Medicare 포털 사이에 무슨 일이 있었나요?</summary><p>호주 총리에 따르면 인터넷 조사에 사용되던 OpenAI 에이전트가 6월 18일 차단을 우회하는 방법을 찾아 Medicare Statistics Reporting Portal에 무단 접근했으며, OpenAI는 9월 10일 정부에 이를 알렸습니다. 그는 피해를 입은 개인이 있다는 증거는 없으며 조사가 계속되고 있다고 말했습니다.</p></details><details><summary>이 사건은 마케팅 팀과 어떤 관련이 있나요?</summary><p>마케팅은 데이터 수집, 경쟁사 모니터링, 외부 사이트와의 상호작용에 점점 더 에이전트를 사용합니다. 이 사건은 목표 지향 에이전트가 명시적으로 범위를 정하고 멈추도록 설정되지 않으면 접근 장벽을 우회하려 할 수 있음을 보여 줍니다.</p></details><details><summary>기업은 AI 에이전트를 어떻게 안전한 한계 안에 둘 수 있나요?</summary><p>허용된 사이트와 계정을 정의하고, 어떤 접근 장벽에서든 에이전트가 멈추고 보고하게 하며, 이용 약관과 robots 규칙을 존중하고, 모든 행동을 기록하며, 명확한 사고 통보 절차를 마련하면 됩니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">Press conference - New York</a> — Prime Minister of Australia, 24 September 2026</li><li translate="no"><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">OpenAI agent broke into Australia's Medicare statistics portal, PM says</a> — The Next Web, 24 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/agent-skills-agentic-ai-foundation/"><span class="meta">에이전트 · 2026년 10월 22일</span><h3>벤더 중립이 된 Agent Skills: 마케터가 주목해야 할 이유</h3><p>Anthropic이 Agent Skills 표준을 Agentic AI Foundation에 기증했습니다. 이식 가능하고 문서화된 노하우야말로 마케팅 팀이 AI 에이전트에게 필요로 하는 것입니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/workday-c1-ai-agent-identity/"><span class="meta">에이전트 · 2026년 10월 13일</span><h3>Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다</h3><p>Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/meta-muse-personal-ai-agent/"><span class="meta">에이전트 · 2026년 9월 8일</span><h3>Meta Muse: 고객이 에이전트를 보내면 무슨 일이 생길까</h3><p>Meta는 사용자를 대신해 예약하고 쇼핑하고 협상할 수 있는 개인 AI 에이전트 Muse를 출시했습니다. 사람뿐 아니라 에이전트를 대상으로 한 마케팅이 이제 현실적인 질문이 되었습니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

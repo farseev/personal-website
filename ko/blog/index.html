@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aleks Farseev가 설명하는 AI 뉴스 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Aleks Farseev 교수가 이번 주 AI 뉴스(모델, 에이전트, AI 검색, 광고, 규제)를 읽고 마케터에게 주는 의미를 모든 출처 링크와 함께 설명합니다." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Aleks Farseev가 설명하는 AI 뉴스 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Aleks Farseev 교수가 이번 주 AI 뉴스(모델, 에이전트, AI 검색, 광고, 규제)를 읽고 마케터에게 주는 의미를 모든 출처 링크와 함께 설명합니다." />
+<meta property="og:url" content="https://farseev.com/ko/blog/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aleks Farseev가 설명하는 AI 뉴스 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Aleks Farseev 교수가 이번 주 AI 뉴스(모델, 에이전트, AI 검색, 광고, 규제)를 읽고 마케터에게 주는 의미를 모든 출처 링크와 함께 설명합니다." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Blog","@id":"https://farseev.com/ko/blog/#blog","url":"https://farseev.com/ko/blog/","name":"AI 뉴스, Aleks가 설명합니다","description":"Aleks Farseev 교수가 이번 주 AI 뉴스(모델, 에이전트, AI 검색, 광고, 규제)를 읽고 마케터에게 주는 의미를 모든 출처 링크와 함께 설명합니다.","inLanguage":"ko","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"blogPost":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/wpp-q3-2026-agentic-agency/#article","headline":"WPP 2026년 3분기: AI 압박 속 에이전시 모델","url":"https://farseev.com/ko/blog/wpp-q3-2026-agentic-agency/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/malaysia-ai-governance-bill/#article","headline":"말레이시아 AI Governance Bill: 역할별 책임","url":"https://farseev.com/ko/blog/malaysia-ai-governance-bill/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/adobe-ai-traffic-retail-conversion-2026/#article","headline":"Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아","url":"https://farseev.com/ko/blog/adobe-ai-traffic-retail-conversion-2026/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/google-ai-mode-ads-singapore-expansion/#article","headline":"Google AI Mode 광고, 싱가포르와 그 밖의 시장에 도입","url":"https://farseev.com/ko/blog/google-ai-mode-ads-singapore-expansion/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/#article","headline":"벤더 중립이 된 Agent Skills: 마케터가 주목해야 할 이유","url":"https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/meta-q3-2026-ai-ads-creators-apac/#article","headline":"Meta 2026년 3분기: AI가 광고 단가를 올리고 크리에이터가 채널이 되다","url":"https://farseev.com/ko/blog/meta-q3-2026-ai-ads-creators-apac/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/#article","headline":"대화가 된 ChatGPT 광고: Sponsored Agents","url":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/#article","headline":"Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것","url":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","headline":"AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다","url":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/#article","headline":"Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다","url":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/#article","headline":"Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈","url":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/#article","headline":"증류 공격: 복제된 AI 모델이 여러분에게 의미하는 것","url":"https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/#article","headline":"MAS AI 리스크 가이드라인: 은행 밖에서도 유용한 템플릿","url":"https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/#article","headline":"Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유","url":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/#article","headline":"Meta의 새 AI 광고 도구: 자동화에도 여전히 설명이 필요하다","url":"https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/#article","headline":"AI 도입 격차는 사람의 문제다","url":"https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","headline":"Penske 대 Google 소송 기각: AI 가시성에 주는 의미","url":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/japan-ai-action-plan-growth-strategy/#article","headline":"일본 AI 실행 계획: 성장 정책이 도입 정책이 되다","url":"https://farseev.com/ko/blog/japan-ai-action-plan-growth-strategy/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/#article","headline":"Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?","url":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/amazon-unboxed-2026-ads-agent/#article","headline":"Amazon Ads Agent: unBoxed 2026에서 에이전트형이 된 리테일 미디어","url":"https://farseev.com/ko/blog/amazon-unboxed-2026-ads-agent/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/#article","headline":"백악관 AI 협약과 독립 평가 기관","url":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/gpt-6-1-astra-cancelled-safety/#article","headline":"OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미","url":"https://farseev.com/ko/blog/gpt-6-1-astra-cancelled-safety/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/#article","headline":"“안 된다”를 받아들이지 않은 AI 에이전트","url":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","headline":"Claude Opus 5.5: 워터마크, 감사, AI 콘텐츠 표시","url":"https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/#article","headline":"Alibaba Apsara 2026: 초거대 모델, 그러나 현실은 소형 모델","url":"https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/#article","headline":"필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈","url":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/#article","headline":"AI 경제 시나리오 세 가지와 마케팅 일자리의 미래","url":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/meta-muse-personal-ai-agent/#article","headline":"Meta Muse: 고객이 에이전트를 보내면 무슨 일이 생길까","url":"https://farseev.com/ko/blog/meta-muse-personal-ai-agent/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/korea-ai-for-all-free-agents/#article","headline":"모든 국민에게 무료 AI 에이전트를: 한국의 새로운 관문","url":"https://farseev.com/ko/blog/korea-ai-for-all-free-agents/","datePublished":"2026-11-08"},{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/#article","headline":"GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검","url":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/","datePublished":"2026-11-08"}]},{"@type":"CollectionPage","@id":"https://farseev.com/ko/blog/#page","url":"https://farseev.com/ko/blog/","name":"Aleks Farseev가 설명하는 AI 뉴스","description":"Aleks Farseev 교수가 이번 주 AI 뉴스(모델, 에이전트, AI 검색, 광고, 규제)를 읽고 마케터에게 주는 의미를 모든 출처 링크와 함께 설명합니다.","isPartOf":{"@id":"https://farseev.com/#website"},"about":{"@id":"https://farseev.com/#person"},"mainEntity":{"@type":"ItemList","numberOfItems":30,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://farseev.com/ko/blog/wpp-q3-2026-agentic-agency/","name":"WPP 2026년 3분기: AI 압박 속 에이전시 모델"},{"@type":"ListItem","position":2,"url":"https://farseev.com/ko/blog/malaysia-ai-governance-bill/","name":"말레이시아 AI Governance Bill: 역할별 책임"},{"@type":"ListItem","position":3,"url":"https://farseev.com/ko/blog/adobe-ai-traffic-retail-conversion-2026/","name":"Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아"},{"@type":"ListItem","position":4,"url":"https://farseev.com/ko/blog/google-ai-mode-ads-singapore-expansion/","name":"Google AI Mode 광고, 싱가포르와 그 밖의 시장에 도입"},{"@type":"ListItem","position":5,"url":"https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/","name":"벤더 중립이 된 Agent Skills: 마케터가 주목해야 할 이유"},{"@type":"ListItem","position":6,"url":"https://farseev.com/ko/blog/meta-q3-2026-ai-ads-creators-apac/","name":"Meta 2026년 3분기: AI가 광고 단가를 올리고 크리에이터가 채널이 되다"},{"@type":"ListItem","position":7,"url":"https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/","name":"대화가 된 ChatGPT 광고: Sponsored Agents"},{"@type":"ListItem","position":8,"url":"https://farseev.com/ko/blog/anthropic-singapore-office-mou/","name":"Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것"},{"@type":"ListItem","position":9,"url":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/","name":"AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다"},{"@type":"ListItem","position":10,"url":"https://farseev.com/ko/blog/workday-c1-ai-agent-identity/","name":"Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다"},{"@type":"ListItem","position":11,"url":"https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/","name":"Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈"},{"@type":"ListItem","position":12,"url":"https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/","name":"증류 공격: 복제된 AI 모델이 여러분에게 의미하는 것"},{"@type":"ListItem","position":13,"url":"https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/","name":"MAS AI 리스크 가이드라인: 은행 밖에서도 유용한 템플릿"},{"@type":"ListItem","position":14,"url":"https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/","name":"Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유"},{"@type":"ListItem","position":15,"url":"https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/","name":"Meta의 새 AI 광고 도구: 자동화에도 여전히 설명이 필요하다"},{"@type":"ListItem","position":16,"url":"https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/","name":"AI 도입 격차는 사람의 문제다"},{"@type":"ListItem","position":17,"url":"https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/","name":"Penske 대 Google 소송 기각: AI 가시성에 주는 의미"},{"@type":"ListItem","position":18,"url":"https://farseev.com/ko/blog/japan-ai-action-plan-growth-strategy/","name":"일본 AI 실행 계획: 성장 정책이 도입 정책이 되다"},{"@type":"ListItem","position":19,"url":"https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/","name":"Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?"},{"@type":"ListItem","position":20,"url":"https://farseev.com/ko/blog/amazon-unboxed-2026-ads-agent/","name":"Amazon Ads Agent: unBoxed 2026에서 에이전트형이 된 리테일 미디어"},{"@type":"ListItem","position":21,"url":"https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/","name":"백악관 AI 협약과 독립 평가 기관"},{"@type":"ListItem","position":22,"url":"https://farseev.com/ko/blog/gpt-6-1-astra-cancelled-safety/","name":"OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미"},{"@type":"ListItem","position":23,"url":"https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/","name":"“안 된다”를 받아들이지 않은 AI 에이전트"},{"@type":"ListItem","position":24,"url":"https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/","name":"Claude Opus 5.5: 워터마크, 감사, AI 콘텐츠 표시"},{"@type":"ListItem","position":25,"url":"https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/","name":"Alibaba Apsara 2026: 초거대 모델, 그러나 현실은 소형 모델"},{"@type":"ListItem","position":26,"url":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/","name":"필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈"},{"@type":"ListItem","position":27,"url":"https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/","name":"AI 경제 시나리오 세 가지와 마케팅 일자리의 미래"},{"@type":"ListItem","position":28,"url":"https://farseev.com/ko/blog/meta-muse-personal-ai-agent/","name":"Meta Muse: 고객이 에이전트를 보내면 무슨 일이 생길까"},{"@type":"ListItem","position":29,"url":"https://farseev.com/ko/blog/korea-ai-for-all-free-agents/","name":"모든 국민에게 무료 AI 에이전트를: 한국의 새로운 관문"},{"@type":"ListItem","position":30,"url":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/","name":"GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검"}]}},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <header class="band on-dark" data-sec="hub-header">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li aria-current="page">AI 뉴스</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 블로그</p>
+      <h1 class="h-display">AI 뉴스, Aleks가 설명합니다</h1>
+      <p class="lead">각 글은 실제 AI 뉴스 하나를 골라 1차 출처를 링크하고, 사용자 프로파일링, 성격 인식 추천, 설명 가능한 AI에 관한 제 연구의 관점에서 그것이 마케터에게 어떤 의미인지 설명합니다.</p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><span>글 <span class="count">30</span>편, 최신 뉴스순</span></p>
+    </div>
+  </header>
+  <section class="section" aria-label="글 목록" data-sec="hub">
+    <div class="wrap">
+      <div class="hub-list">
+<a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h2>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h2><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h2>말레이시아 AI Governance Bill: 역할별 책임</h2><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 검색 · 2026년 10월 29일</span><h2>Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아</h2><p>Adobe에 따르면 9월 미국 소매업체에서 AI 추천 방문의 전환율은 다른 트래픽보다 90% 높았습니다. AI 답변이 채널이 된 이유와 대응 방법.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI 검색 · 2026년 10월 28일</span><h2>Google AI Mode 광고, 싱가포르와 그 밖의 시장에 도입</h2><p>Google이 AI Mode 광고를 싱가포르, 말레이시아, 필리핀을 포함한 10개 시장으로 확대합니다. 광고가 답변 안에 들어가면 무엇이 달라지는지 살펴봅니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/agent-skills-agentic-ai-foundation/"><span class="meta">에이전트 · 2026년 10월 22일</span><h2>벤더 중립이 된 Agent Skills: 마케터가 주목해야 할 이유</h2><p>Anthropic이 Agent Skills 표준을 Agentic AI Foundation에 기증했습니다. 이식 가능하고 문서화된 노하우야말로 마케팅 팀이 AI 에이전트에게 필요로 하는 것입니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">광고·마케팅 AI · 2026년 10월 21일</span><h2>Meta 2026년 3분기: AI가 광고 단가를 올리고 크리에이터가 채널이 되다</h2><p>Meta 2026년 3분기: 광고 매출 26% 증가, 광고당 가격 14% 상승, 파트너십 광고 연환산 150억 달러 돌파, 그리고 크게 달라진 아시아태평양. 그 의미는.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI 검색 · 2026년 10월 21일</span><h2>대화가 된 ChatGPT 광고: Sponsored Agents</h2><p>OpenAI가 ChatGPT 안에서 Sponsored Agents를 테스트하고 ChatGPT 광고를 89개국으로 확대했습니다. 광고가 대답을 하게 되면 표시와 정직성이 곧 제품이 됩니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/anthropic-singapore-office-mou/"><span class="meta">아시아·싱가포르 · 2026년 10월 14일</span><h2>Anthropic 싱가포르 진출: MOU가 실제로 의미하는 것</h2><p>Anthropic이 싱가포르 사무소를 열고 MDDI와 AI 안전성 및 평가에 관한 MOU를 체결했습니다. 현지 언어로 하는 테스트가 진짜 핵심인 이유.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">책임 있는 마케팅 · 2026년 10월 14일</span><h2>AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다</h2><p>Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/workday-c1-ai-agent-identity/"><span class="meta">에이전트 · 2026년 10월 13일</span><h2>Workday의 C1.ai 인수: 마케팅 에이전트에도 ID가 필요하다</h2><p>Workday가 사람과 AI 에이전트의 접근 권한을 관리하는 C1.ai를 인수하기로 했습니다. CRM과 광고 계정을 다루는 마케팅 에이전트에도 같은 규칙이 필요합니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/character-ai-chapter-11-ai-personas/"><span class="meta">책임 있는 마케팅 · 2026년 10월 12일</span><h2>Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈</h2><p>Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">규제·보안 · 2026년 10월 12일</span><h2>증류 공격: 복제된 AI 모델이 여러분에게 의미하는 것</h2><p>미국 기관들이 증류 관련 권고문에서 중국 AI 기업 6곳을 지목했고, Anthropic은 자사 방어 체계로 수집된 데이터를 90~99% 줄였다고 밝혔습니다. AI 구매자에게 주는 의미.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/mas-ai-risk-management-guidelines/"><span class="meta">규제·보안 · 2026년 10월 7일</span><h2>MAS AI 리스크 가이드라인: 은행 밖에서도 유용한 템플릿</h2><p>MAS가 금융기관을 위한 AI 리스크 관리 가이드라인을 발표했습니다. 그 인벤토리 및 제3자 규칙은 마케팅 팀에게도 좋은 템플릿이 됩니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">모델 · 2026년 10월 7일</span><h2>Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유</h2><p>Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/"><span class="meta">광고·마케팅 AI · 2026년 10월 6일</span><h2>Meta의 새 AI 광고 도구: 자동화에도 여전히 설명이 필요하다</h2><p>Advertising Week New York에서 Meta는 AI 동영상, 광고 어시스턴트, 일상 언어 오디언스, Ads MCP server를 확대했습니다. 마케터가 여전히 쥐고 있어야 할 것은.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">일과 역량 · 2026년 10월 2일</span><h2>AI 도입 격차는 사람의 문제다</h2><p>Anthropic은 컨설팅사, 은행과 함께 2027년까지 Frontier Deployed Engineer 1만 명을 양성하는 데 1억 달러를 투입하기로 했습니다. 마케팅에도 이런 역할이 필요한 이유.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI 검색 · 2026년 10월 1일</span><h2>Penske 대 Google 소송 기각: AI 가시성에 주는 의미</h2><p>미국 판사가 Google AI Overviews를 둘러싼 Penske Media의 반독점 소송을 기각하며 트래픽에 대한 ‘공식적 거래’는 없었다고 판단했습니다. 브랜드가 GEO에서 해야 할 일.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">아시아·싱가포르 · 2026년 10월 1일</span><h2>일본 AI 실행 계획: 성장 정책이 도입 정책이 되다</h2><p>Sanae Takaichi 총리는 일본 성장 전략과 연계한 AI 추진 실행 계획을 연말까지 마련하라고 각료들에게 지시했습니다. 도입 우선 정책이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">모델 · 2026년 9월 30일</span><h2>Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?</h2><p>Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">광고·마케팅 AI · 2026년 9월 30일</span><h2>Amazon Ads Agent: unBoxed 2026에서 에이전트형이 된 리테일 미디어</h2><p>unBoxed 2026에서 Amazon은 구매 도구를 Amazon Ads Agent로 통합하고 대화형 측정과 AI 크리에이티브를 더했습니다. 사람이 계속 쥐고 있어야 할 것은.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">규제·보안 · 2026년 9월 29일</span><h2>백악관 AI 협약과 독립 평가 기관</h2><p>테크 리더들이 외부 평가 기관을 약속하는 자발적 백악관 협약에 서명했고, Anthropic은 METR에 깊은 접근 권한을 부여했습니다. 마케팅 AI에서 감사가 중요한 이유.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">모델 · 2026년 9월 29일</span><h2>OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미</h2><p>OpenAI는 테스트에서 작업 범위, 권한, 결과 보고 방식의 문제가 드러나자 GPT-6.1 Astra 출시를 취소했습니다. 같은 테스트가 여러분의 에이전트에도 적용됩니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/openai-agent-medicare-portal-australia/"><span class="meta">에이전트 · 2026년 9월 24일</span><h2>“안 된다”를 받아들이지 않은 AI 에이전트</h2><p>호주 총리는 OpenAI의 리서치 에이전트가 Medicare 통계 포털의 차단을 우회했다고 밝혔습니다. 마케팅 에이전트가 얻을 교훈은 작업 범위에 관한 것입니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">모델 · 2026년 9월 22일</span><h2>Claude Opus 5.5: 워터마크, 감사, AI 콘텐츠 표시</h2><p>Anthropic의 Claude Opus 5.5는 EU AI Act 준수를 위한 워터마킹을 갖추고 출시되었으며, 모델이 테스트 중이라고 의심하는 경우가 많다는 설명도 함께 나왔습니다. 둘 다 마케터에게 중요합니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">아시아·싱가포르 · 2026년 9월 22일</span><h2>Alibaba Apsara 2026: 초거대 모델, 그러나 현실은 소형 모델</h2><p>Apsara 2026에서 Alibaba는 5조~10조 파라미터 모델 계획을 밝히면서 공개 27B 모델을 치켜세웠습니다. 아시아 마케터가 양쪽 끝을 모두 지켜봐야 하는 이유.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/fields-medallists-ai-mathematics-benchmarks/"><span class="meta">연구 · 2026년 9월 11일</span><h2>필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈</h2><p>필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">일과 역량 · 2026년 9월 9일</span><h2>AI 경제 시나리오 세 가지와 마케팅 일자리의 미래</h2><p>Anthropic은 2030년까지 AI가 미국 경제에 미칠 영향에 대해 완만한 수준부터 극단적인 수준까지 세 가지 시나리오를 발표했습니다. 지식 노동 분석 결과가 마케팅 커리어에 주는 의미.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/meta-muse-personal-ai-agent/"><span class="meta">에이전트 · 2026년 9월 8일</span><h2>Meta Muse: 고객이 에이전트를 보내면 무슨 일이 생길까</h2><p>Meta는 사용자를 대신해 예약하고 쇼핑하고 협상할 수 있는 개인 AI 에이전트 Muse를 출시했습니다. 사람뿐 아니라 에이전트를 대상으로 한 마케팅이 이제 현실적인 질문이 되었습니다.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/korea-ai-for-all-free-agents/"><span class="meta">아시아·싱가포르 · 2026년 9월 4일</span><h2>모든 국민에게 무료 AI 에이전트를: 한국의 새로운 관문</h2><p>한국은 SKT, KT, Kakao가 운영하는 무료 AI 에이전트를 KakaoTalk, 전화, 문자를 통해 모든 국민에게 제공할 계획입니다. 공공 에이전트 계층이 브랜드에 주는 의미.</p><span class="go">읽기 →</span></a>
+<a class="pcard" href="/ko/blog/gpt-6-astra-agi-era-reality-check/"><span class="meta">모델 · 2026년 9월 3일</span><h2>GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검</h2><p>OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것.</p><span class="go">읽기 →</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

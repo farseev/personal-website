@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선." />
+<meta property="og:url" content="https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="책임 있는 마케팅" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다","description":"Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"책임 있는 마케팅","about":{"@type":"Thing","name":"Anthropic, 기만적 캠페인에 관한 조항을 추가해 이용 정책을 개정하고 미국 중간선거를 앞두고 선거 관련 오용 사례를 보고"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"Anthropic의 2026년 이용 정책은 상업적 기만에 대해 무엇이라고 말하나요?","acceptedAnswer":{"@type":"Answer","text":"새 조항 “Do Not Engage in Deceptive Campaigns or Artificial Activity”는 “정치적이든 상업적이든” 기만적 활동에 적용되며, 메시지의 배후를 숨기는 것, 가짜 계정이나 게시물로 콘텐츠를 증폭하는 것, 영향력 공작을 위한 인프라를 구축하는 것을 포함합니다. Anthropic은 개정안이 11월 12일부터 시행된다고 밝혔습니다."}},{"@type":"Question","name":"Anthropic은 광고 수익을 노린 가짜 뉴스 제작에 AI가 사용된 사례를 발견했나요?","acceptedAnswer":{"@type":"Answer","text":"그렇습니다. 중간선거 보고서에서 Anthropic은 일부 행위자가 광고 수익을 위해 Claude로 조작된 뉴스를 만들었고, 관련 계정을 차단했다고 밝혔습니다."}},{"@type":"Question","name":"새 정책에서 개인화 타기팅은 금지되나요?","acceptedAnswer":{"@type":"Answer","text":"Anthropic은 개인화된 투표 및 선거 캠페인 타기팅에 대한 전면 금지를 없앴습니다. 기만이나 개인정보 오용에 의존하는 타기팅은 정책의 다른 조항에 따라 여전히 금지됩니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다","item":"https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/ai-usage-policy-deceptive-commercial-campaigns/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 책임 있는 마케팅</p>
+      <h1 class="h-display">AI 규칙, 가짜 상업적 입소문을 선거 조작처럼 다루다</h1>
+      <p class="lead">Anthropic의 새 이용 정책은 ‘정치적이든 상업적이든’ 기만적 캠페인을 금지하며, 광고 수익을 노린 가짜 뉴스도 적발했습니다. 마케터가 지켜야 할 선.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: Anthropic, 기만적 캠페인에 관한 조항을 추가해 이용 정책을 개정하고 미국 중간선거를 앞두고 선거 관련 오용 사례를 보고(<time datetime="2026-10-14">2026년 10월 14일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>수년간 AI와 조작에 관한 논의는 선거에 집중되어 왔습니다. 그럴 만한 이유가 있습니다. 하지만 정치 운동을 조작하는 바로 그 기법으로 제품의 인기도 조작할 수 있습니다. 10월 Anthropic은 규칙에서 이 연결 고리를 명시했고, 마케터는 이것을 자신들을 향해서도 그어진 선으로 읽어야 합니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p>10월 8일 Anthropic은 11월 12일부터 시행되는 <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026년 이용 정책 개정안</a>을 발표했습니다. 여기에는 “Do Not Engage in Deceptive Campaigns or Artificial Activity(기만적 캠페인이나 인위적 활동에 관여하지 말 것)”라는 조항이 추가되었는데, 이전에 선거, 사기, 개인정보, 허위정보 조항에 흩어져 있던 규칙을 하나로 모은 것입니다. 새 조항은 “(정치적이든 상업적이든) 모든 종류의 기만적 활동에 적용”됩니다. 메시지의 배후를 숨기는 것, 가짜 계정이나 게시물로 콘텐츠를 증폭하는 것, 영향력 공작을 위한 도구나 인프라를 구축하는 것이 포함됩니다.</p>
+<p>개정안은 또한 개인화된 투표 및 선거 캠페인 타기팅에 대한 전면 금지를 없앴습니다. 기만이나 유권자 개인정보 오용에 의존하는 타기팅은 기만적 캠페인, 감시, 개인정보 조항에 따라 계속 금지됩니다.</p>
+<p>일주일 뒤 Anthropic은 <a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a>에서 실제로 관찰한 내용을 설명했습니다. 여러 사례 가운데, 일부 행위자가 광고 수익을 위해 Claude로 조작된 뉴스를 만들었고 관련 계정을 차단했다고 보고합니다. 또한 안전장치를 테스트한 파트너들이 Claude가 단일한 유해 요청은 안정적으로 거부하지만 개별적으로는 무해한 작업들로 쪼갠 캠페인은 놓칠 수 있다는 점을 발견했고, 이에 가짜 소셜 미디어 계정이나 뉴스 사이트 같은 다단계 오용을 잡는 분류기를 추가했다고 밝혔습니다.</p>
+<h2>왜 중요한가</h2>
+<p>마케팅에 종사하는 사람이라면 주목해야 할 세부 사항이 두 가지 있습니다.</p>
+<p>“또는 상업적”이라는 표현은 가짜 리뷰, 차명 계정, 봇으로 증폭한 출시, 조작된 “풀뿌리” 입소문을 정치적 영향력 공작과 같은 범주에 넣습니다. 이 중 어느 것에도 Claude를 사용할 수 없지만, 업계 전반의 흐름은 분명합니다. AI 제공업체들은 조직적인 비진정성 활동을 감시하고 있으며, 후보를 파는 것과 제품을 파는 것을 구분하지 않습니다.</p>
+<p>두 번째 세부 사항은 일부 남용의 배후에 있는 비즈니스 모델, 즉 광고 수익을 노리고 만든 조작된 뉴스입니다. 이것은 콘텐츠 문제일 뿐 아니라 광고 자금의 문제입니다. 브랜드 예산이 자동화된 프로그래매틱 구매를 거쳐 조작된 사이트로 흘러가면, 광고주는 대개 모르는 사이에 기만의 비용을 대게 됩니다.</p>
+<p>타기팅 관련 변경도 눈여겨볼 만합니다. 개인화 자체는 해악으로 취급되지 않습니다. 해악은 기만과 개인정보의 오용입니다. 저는 이것이 올바른 구분이라고 생각합니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>저는 커리어의 상당 부분을 오디언스를 프로파일링하는 시스템을 만드는 데 보냈습니다. <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">여러 소셜 네트워크에서 사용자 프로필을 학습하는 것</a>, <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">네트워크 전반에서 성격을 추론하는 것</a>, <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">성격을 활용해 콘텐츠를 추천하는 것</a>이었습니다. 이 기법들이 얼마나 강력한지 알기에, 저는 WSDM 2023에서 <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">광고 타기팅과 크리에이티브 평가에 AI를 책임 있게 활용하는 방법</a>에 대해 강연했습니다.</p>
+<p>제가 Forbes에서 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">구속적 마케팅</a>이라는 이름으로 제시한 견해는, 투명성과 성과가 서로 맞바꿔야 하는 관계가 아니라는 것입니다. 오디언스를 더 잘 섬기기 위해 이해하는 것은 정당합니다. 가짜 계정과 가짜 목소리로 오디언스인 척하는 것은 그렇지 않습니다. 새 정책은 대체로 같은 곳에 선을 긋습니다.</p>
+<p>측정의 관점도 있습니다. 가짜 참여는 현대 마케팅 AI가 학습하는 바로 그 데이터를 오염시킵니다. 경쟁사의 입소문이 일부 합성된 것이라면, “이 카테고리에서 무엇이 통하는가”를 읽는 모든 모델은 잘못된 교훈을 배우게 됩니다. 소셜 데이터에서 비진정성 신호를 걸러 내는 일은 이제 좋은 분석의 일부가 되었습니다.</p>
+<h2>마케터가 지금 해야 할 일</h2>
+<ul><li>에이전시 및 인플루언서 계약서에 명시하십시오. AI로 제작한 경우를 포함해 가짜 계정, 구매한 참여, 공개되지 않은 협찬 콘텐츠를 금지하십시오.</li><li>누가 말하는지 밝히십시오. AI가 브랜드나 개인을 대신해 글을 쓴다면, 계정과 협찬 여부가 분명히 드러나게 하십시오.</li><li>프로그래매틱 예산이 어디로 가는지 감사하십시오. 사이트 단위 보고를 요청하고, 식별 가능한 퍼블리셔가 없는 사이트의 게재 위치는 차단하십시오.</li><li>자체 정책에서 개인화와 기만을 구분하십시오. 동의를 받은 퍼스트파티 데이터로 메시지를 맞춤화하는 것과 그 배후를 숨기는 것은 별개의 일입니다.</li><li>모니터링을 예상하십시오. 대규모 게시를 자동화하는 워크플로가 있다면, 정당한 사용임을 쉽게 입증할 수 있도록 문서화해 두십시오.</li></ul>
+<p>선거가 문제를 드러냈습니다. 하지만 돈이 가장 많이 몰린 곳은 상거래입니다. AI 제공업체들은 이미 알아차렸습니다. 마케터도 먼저 대비해야 합니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Anthropic의 2026년 이용 정책은 상업적 기만에 대해 무엇이라고 말하나요?</summary><p>새 조항 “Do Not Engage in Deceptive Campaigns or Artificial Activity”는 “정치적이든 상업적이든” 기만적 활동에 적용되며, 메시지의 배후를 숨기는 것, 가짜 계정이나 게시물로 콘텐츠를 증폭하는 것, 영향력 공작을 위한 인프라를 구축하는 것을 포함합니다. Anthropic은 개정안이 11월 12일부터 시행된다고 밝혔습니다.</p></details><details><summary>Anthropic은 광고 수익을 노린 가짜 뉴스 제작에 AI가 사용된 사례를 발견했나요?</summary><p>그렇습니다. 중간선거 보고서에서 Anthropic은 일부 행위자가 광고 수익을 위해 Claude로 조작된 뉴스를 만들었고, 관련 계정을 차단했다고 밝혔습니다.</p></details><details><summary>새 정책에서 개인화 타기팅은 금지되나요?</summary><p>Anthropic은 개인화된 투표 및 선거 캠페인 타기팅에 대한 전면 금지를 없앴습니다. 기만이나 개인정보 오용에 의존하는 타기팅은 정책의 다른 조항에 따라 여전히 금지됩니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/character-ai-chapter-11-ai-personas/"><span class="meta">책임 있는 마케팅 · 2026년 10월 12일</span><h3>Character.AI의 Chapter 11: AI 페르소나 제품을 위한 교훈</h3><p>Character.AI가 매각을 위해 Chapter 11을 신청했고, Disney는 2,000만 달러 인수 제안을 준비하고 있습니다. AI 캐릭터와 컴패니언을 만드는 브랜드가 배워야 할 점.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h3>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h3><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h3>말레이시아 AI Governance Bill: 역할별 책임</h3><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

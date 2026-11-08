@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈 | Prof. Aleks Farseev" />
+<meta property="og:description" content="필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다." />
+<meta property="og:url" content="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="연구" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈","description":"필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"연구","about":{"@type":"Thing","name":"필즈상 수상자들, “A Severe Misalignment of AI in Mathematics” 발표. OpenAI는 Caltech AI 매서톤에서 철수"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"“A Severe Misalignment of AI in Mathematics”란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"The Next Web에 따르면 2026년 9월 11일 발표되고 필즈상 수상자 25명이 서명한 선언문입니다. 문제 풀이는 수학의 진짜 목표인 개념적 이해의 대리 지표라고 주장하며, 명제를 빠른 속도로 대량 생산하는 것이 이 분야에 해를 끼칠 수 있다고 경고합니다."}},{"@type":"Question","name":"OpenAI는 Caltech Mathathon에서 철수했나요?","acceptedAnswer":{"@type":"Answer","text":"The Next Web에 따르면 OpenAI는 2026년 9월 10일 학생들이 운영하는 Caltech Mathathon에 제공하기로 한 100만 US$ 상당의 크레딧을 철회했고, Anthropic은 기여를 유지했으며 행사는 예정대로 진행되었습니다."}},{"@type":"Question","name":"AI 수학 논쟁은 마케팅에 어떤 의미가 있나요?","acceptedAnswer":{"@type":"Answer","text":"대리 지표에 최적화하는 것에 대한 경고입니다. 마케팅 팀은 AI 지표를 실제 결과와 연결하고, 사람의 검증 비용을 계산하며, AI의 도움을 받은 작업이 차별성을 유지하는지 측정해야 합니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈","item":"https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/fields-medallists-ai-mathematics-benchmarks/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 연구</p>
+      <h1 class="h-display">필즈상 수상자 대 AI 벤치마크: 마케터를 위한 교훈</h1>
+      <p class="lead">필즈상 수상자 25명은 AI를 미해결 문제 경쟁으로 내모는 것이 대리 지표를 목표로 착각하는 일이라고 경고했습니다. 마케팅에도 같은 벤치마크 문제가 있습니다.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: 필즈상 수상자들, “A Severe Misalignment of AI in Mathematics” 발표. OpenAI는 Caltech AI 매서톤에서 철수(<time datetime="2026-09-11">2026년 9월 11일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>수학자들이 마케팅에 관한 공개서한을 쓰는 일은 흔치 않습니다. 하지만 9월 필즈상 수상자들이 펼친 주장은 우리 업계가 AI를 측정하는 방식에 거의 그대로 적용됩니다. 그들의 요점은 이렇습니다. 문제를 푸는 것은 대리 지표이고, 진짜 목표는 이해입니다. 둘을 혼동하면 개선하려던 바로 그것을 망가뜨릴 수 있습니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a>에 따르면 9월 11일 mathandai.org에 <em>A Severe Misalignment of AI in Mathematics</em>라는 제목의 선언문이 게시되었습니다. 사이트에는 Terence Tao, Peter Scholze, Maryna Viazovska, Cédric Villani, Pierre Deligne, Manjul Bhargava, Martin Hairer를 포함한 25명의 서명자가 올라 있습니다. 선언문은 문제 풀이는 도구이자 대리 지표이며, 수학의 일차적 목표는 개념적 이해와 통찰이라고 주장합니다. 그리고 참이거나 거짓인 명제를 점점 더 빠른 속도로 대량 생산하는 것이 “비옥한 토양을 파괴할 수 있다”고 경고합니다. TNW는 이를 벤치마크에 관한 성명으로 설명하며, 선언문은 특정 사건을 지목하지 않습니다.</p>
+<p>같은 주에 별도의 공개서한은 Caltech에서 학생들이 운영하는 AI “Mathathon(매서톤)”을 비판하며, 그 형식을 “찌꺼기 수학(slop mathematics)”이라 부르고 AI 결과를 검증하고 수정하는 노동이 “보상도, 공로 인정도, 인정도 받지 못한다”고 주장했습니다. TNW에 따르면 OpenAI는 9월 10일 이 행사에 제공하기로 한 100만 US$ 상당의 크레딧을 철회했고 Anthropic은 기여를 유지했으며, 주최 측은 요건을 추가했지만 행사를 취소하지는 않았습니다.</p>
+<h2>왜 중요한가</h2>
+<p>수학자들의 불만은 익숙한 함정에 관한 것입니다. 어렵고 유명한 문제가 벤치마크가 되면, 연구소들은 그 문제의 답을 내는 데 최적화합니다. 답은 측정할 수 있습니다. 이해는 그렇지 않습니다. 시간이 지나면 측정 가능한 것이 가치 있는 것을 밀어내고, 출력을 확인하는 일은 다른 누군가에게 남겨집니다.</p>
+<p>마케팅 AI에도 정확히 이 문제가 있습니다. 우리는 생성된 자산 수, 절약된 시간, 클릭률, 브랜드를 언급하는 AI 답변의 비율처럼 세기 쉬운 것으로 도구를 벤치마크합니다. 이 숫자들은 중요합니다. 하지만 마케팅의 목표는 산출물이 아니라, 고객을 잘 섬길 만큼 충분히 이해하고 사람들이 신뢰하는 브랜드를 세우는 것입니다. 채널을 콘텐츠로 뒤덮고 대리 지표에서 이기는 시스템은 조용히 그 둘을 모두 잠식할 수 있습니다.</p>
+<p>보상받지 못하는 검증에 관한 지적도 정곡을 찌릅니다. 생성된 콘텐츠는 만들기는 싸고 확인하기는 비쌉니다. 확인 작업이 지표에 드러나지 않는다면 여러분의 “생산성 향상”은 일부 회계상의 착시입니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>제 최근 연구는 이 구분을 중심으로 이루어져 있습니다. SIGIR 2026 논문 <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a>에서 저희가 다루는 문제가 바로 AI가 쓴 콘텐츠의 수렴입니다. 모두의 어시스턴트가 똑같이 유능하고 일반적인 게시물을 만들어 냅니다. 저희의 접근법은 글을 쓰기 전에 실제 맥락 데이터를 검색해 결과물이 독창성을 유지하도록 하는 것입니다. 차별성 없는 물량은 마케팅판 “찌꺼기(slop)”입니다.</p>
+<p>측정에 관해 저는 e27에서 <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">모든 대시보드가 초록색인데도 무엇이 효과가 있었는지 아무도 말하지 못한다</a>고 주장했습니다. 모두 위를 가리키는 대리 지표는 무엇이 결과를 낳았는지 아는 것과 같지 않습니다. 그리고 <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>부터 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>까지 저희의 설명 가능한 AI 연구가 목표로 하는 것은 더 나은 예측만이 아니라 마케터가 배울 수 있는 설명입니다. 그것이 수학자들이 말하는 “개념적 이해”의 마케팅판입니다.</p>
+<h2>마케팅 팀이 여기서 얻을 수 있는 것</h2>
+<ul><li>각 지표 뒤의 목표에 이름을 붙이십시오. 모든 AI KPI마다 그것이 대변해야 할 실제 결과를 한 문장으로 적고, 그 연결이 여전히 유효한지 주기적으로 확인하십시오.</li><li>검증 비용을 계산하십시오. AI 출력을 검토하고 수정하는 데 드는 사람의 시간을 추적해 ROI에 포함하십시오.</li><li>차별성을 측정하십시오. AI의 도움을 받은 콘텐츠를 경쟁사의 것과 비교하십시오. 구별하기 어려워지고 있다면, 대리 지표에서 이기고 브랜드는 잃고 있는 것입니다.</li><li>점수보다 설명을 택하십시오. 무언가가 왜 효과가 있었는지 알려 주는 도구는 팀의 지식을 쌓아 주고, 효과가 있었다는 사실만 알려 주는 도구는 의존을 쌓습니다.</li><li>사람의 공로를 인정하십시오. 사람들이 AI 출력을 정리하고 있다면, 그 일을 당연시하지 말고 눈에 보이게 하고 가치 있게 대우하십시오.</li></ul>
+<p>수학자들은 답을 이해로 착각하는 벤치마크 문화로부터 자신의 분야를 지키고 있습니다. 마케팅도 같은 실수로부터 스스로를 지켜야 합니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>“A Severe Misalignment of AI in Mathematics”란 무엇인가요?</summary><p>The Next Web에 따르면 2026년 9월 11일 발표되고 필즈상 수상자 25명이 서명한 선언문입니다. 문제 풀이는 수학의 진짜 목표인 개념적 이해의 대리 지표라고 주장하며, 명제를 빠른 속도로 대량 생산하는 것이 이 분야에 해를 끼칠 수 있다고 경고합니다.</p></details><details><summary>OpenAI는 Caltech Mathathon에서 철수했나요?</summary><p>The Next Web에 따르면 OpenAI는 2026년 9월 10일 학생들이 운영하는 Caltech Mathathon에 제공하기로 한 100만 US$ 상당의 크레딧을 철회했고, Anthropic은 기여를 유지했으며 행사는 예정대로 진행되었습니다.</p></details><details><summary>AI 수학 논쟁은 마케팅에 어떤 의미가 있나요?</summary><p>대리 지표에 최적화하는 것에 대한 경고입니다. 마케팅 팀은 AI 지표를 실제 결과와 연결하고, 사람의 검증 비용을 계산하며, AI의 도움을 받은 작업이 차별성을 유지하는지 측정해야 합니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/wpp-q3-2026-agentic-agency/"><span class="meta">광고·마케팅 AI · 2026년 10월 29일</span><h3>WPP 2026년 3분기: AI 압박 속 에이전시 모델</h3><p>WPP의 동일 기준 순매출은 감소했지만 CEO는 WPP Open을 통한 AI 기반 서비스 수요를 강조했습니다. 에이전시에 주는 시사점.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/malaysia-ai-governance-bill/"><span class="meta">아시아·싱가포르 · 2026년 10월 29일</span><h3>말레이시아 AI Governance Bill: 역할별 책임</h3><p>2027년 초까지 마련될 말레이시아 AI Governance Bill 초안은 AI를 개발·제공·사용하는 주체에 의무를 부과합니다. 역할 기반 규칙이 마케터에게 갖는 의미.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI 검색 · 2026년 10월 29일</span><h3>Adobe: AI 유입 트래픽, 다른 방문보다 전환율 높아</h3><p>Adobe에 따르면 9월 미국 소매업체에서 AI 추천 방문의 전환율은 다른 트래픽보다 90% 높았습니다. AI 답변이 채널이 된 이유와 대응 방법.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

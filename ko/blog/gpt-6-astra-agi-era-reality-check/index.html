@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검 | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것." />
+<meta property="og:url" content="https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 교수 — AI 뉴스 해설" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="모델" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/#article","mainEntityOfPage":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/","url":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/","headline":"GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검","description":"OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것.","image":"https://farseev.com/og-image.png","inLanguage":"ko","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ko/blog/#blog"},"articleSection":"모델","about":{"@type":"Thing","name":"OpenAI, 최첨단 컴퓨터 사용 및 에이전트 작업 성능을 내세운 새 프런티어 모델 GPT-6 Astra 출시"},"wordCount":825,"citation":[{"@type":"CreativeWork","name":"OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'","url":"https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities","publisher":"Fox Business","datePublished":"2026-09-03"}]},{"@type":"FAQPage","@id":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/#faq","mainEntity":[{"@type":"Question","name":"GPT-6 Astra란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"2026년 9월 3일 출시된 OpenAI의 프런티어 모델입니다. OpenAI는 이 모델이 컴퓨터 사용, 브라우저 사용, 소프트웨어 엔지니어링, 사이버 보안, 과학에서 최고 수준이며, 양식 작성과 고객 기록 업데이트 같은 일상적인 컴퓨터 작업을 수행할 수 있다고 말합니다."}},{"@type":"Question","name":"OpenAI는 GPT-6 Astra가 AGI라고 말했나요?","acceptedAnswer":{"@type":"Answer","text":"OpenAI 회장 Greg Brockman은 기자들에게 “우리가 이제 AGI 시대에 있다고 느끼는 것은 무리가 아니다”라고 말했습니다. OpenAI는 AGI를 경제적으로 가치 있는 대부분의 일에서 인간을 능가하는 고도로 자율적인 시스템으로 정의합니다. 이것은 검증해야 할 주장이지 확립된 측정값이 아닙니다."}},{"@type":"Question","name":"마케터는 새로운 프런티어 모델을 어떻게 평가해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"기준선을 두고 자사 워크플로에서 테스트하고, 절약된 시간, 오류, 사람의 개입을 측정하며, 전략적 결정은 설명 가능한 데이터에 근거하게 하고, 모델의 권한은 각 작업에 필요한 만큼으로 제한해야 합니다."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://farseev.com/ko/"},{"@type":"ListItem","position":2,"name":"AI 뉴스","item":"https://farseev.com/ko/blog/"},{"@type":"ListItem","position":3,"name":"GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검","item":"https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ko/","jobTitle":"SOMIN.ai 창업자 겸 CEO, AI 초빙교수","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ko/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="본문"><a href="/ko/#about">소개</a><a href="/ko/#research">연구</a><a href="/ko/blog/" aria-current="page">AI 뉴스</a><a href="/ko/#talks">강연</a><a href="/ko/#connect">연락</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="언어" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-astra-agi-era-reality-check/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gpt-6-astra-agi-era-reality-check/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/gpt-6-astra-agi-era-reality-check/">日本語</option><option value="ko" lang="ko" selected>한국어</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">AI 뉴스</a></li><li aria-current="page">GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검</li></ol></nav>
+      <p class="eyebrow">AI 뉴스 해설 · 모델</p>
+      <h1 class="h-display">GPT-6 Astra와 “AGI 시대”: 마케터를 위한 현실 점검</h1>
+      <p class="lead">OpenAI가 GPT-6 Astra를 출시했고, 그 회장은 우리가 AGI 시대에 있다고 느끼는 것이 무리가 아니라고 말했습니다. 이 주장이 마케팅 팀에 의미하는 것과 의미하지 않는 것.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>뉴스: OpenAI, 최첨단 컴퓨터 사용 및 에이전트 작업 성능을 내세운 새 프런티어 모델 GPT-6 Astra 출시(<time datetime="2026-09-03">2026년 9월 3일</time>)</span></p>
+      <p class="byline"><span>글: <b>Aleks Farseev 교수</b></span><span class="dot"></span><time datetime="2026-11-08">2026년 11월 8일</time><span class="dot"></span><span>4분 읽기</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>몇 년에 한 번씩 어떤 연구소가 그 단어를 꺼냅니다. 9월 3일 OpenAI는 GPT-6 Astra를 출시했고, 회장 Greg Brockman은 기자들에게 “우리가 이제 AGI 시대에 있다고 느끼는 것은 무리가 아니다”라고 말했습니다. 저는 연구자이자 창업자이므로 두 가지 생각을 동시에 합니다. 이것은 진정으로 유능한 시스템이며, “AGI”는 측정값이 아니라 주장이라는 것입니다.</p>
+<h2>무슨 일이 있었나</h2>
+<p><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">Fox Business</a>에 따르면 OpenAI는 Astra를 먼저 조기 접근 권한을 가진 기업 고객에게 공개했고, 며칠 안에 ChatGPT Plus, Pro, Business, Enterprise 사용자, API, Amazon Web Services로 확대할 예정입니다. OpenAI는 이 모델이 컴퓨터 사용, 브라우저 사용, 소프트웨어 엔지니어링, 사이버 보안, 과학에서 최고 수준이며, 온라인 양식 작성, 고객 기록 업데이트, 일정 정리, 리서치 같은 일상적인 컴퓨터 작업은 물론 문서, 스프레드시트, 프레젠테이션 제작도 수행할 수 있다고 말합니다.</p>
+<p>Sam Altman은 이를 회사의 “역대 가장 잘 정렬된 모델”이라고 불렀습니다. OpenAI는 또한 Astra가 사이버 역량에서 상당한 도약을 이루었으며 자사 Preparedness Framework상 “Critical” 기준에 해당한다고 밝혔습니다. 기사는 OpenAI의 AGI 정의를 인용합니다. “경제적으로 가치 있는 대부분의 일에서 인간을 능가하는 고도로 자율적인 시스템.” 구체적인 벤치마크 점수는 인용하지 않습니다.</p>
+<h2>왜 중요한가</h2>
+<p>라벨을 걷어 내면 실질적인 변화는 분명합니다. OpenAI가 강조하는 역량은 더 나은 문장을 쓰는 것이 아닙니다. 소프트웨어 안에서 일을 하는 것입니다. 양식을 채우고, 기록을 업데이트하고, 브라우저와 스프레드시트를 오가는 일입니다. 그것이 마케팅 운영의 일상입니다. 캠페인 세팅, 보고, CRM 정리, 경쟁사 모니터링, 피드 관리. 컴퓨터 사용에 능한 모델은 단어만이 아니라 시간을 공략합니다.</p>
+<p>그래서 AGI라는 프레임에는 신중해야 합니다. OpenAI의 정의는 “경제적으로 가치 있는 대부분의 일”에서 인간을 능가하는 것에 관한 것입니다. 그것이 여러분의 팀에 맞는지는 테스트할 수 있는 경험적 질문이며, 답은 작업마다 다를 것입니다. 모델은 성과 보고서를 조립하는 데는 탁월하면서도 자카르타의 회의적인 오디언스를 움직일 크리에이티브 아이디어를 고르는 데는 약할 수 있습니다.</p>
+<h2>제 연구가 말하는 것</h2>
+<p>저는 Forbes에 <a href="https://www.forbes.com/councils/forbestechcouncil/2022/10/21/will-machines-replace-human-creativity/" target="_blank" rel="noopener">기계가 인간의 창의성을 대체할 것인가</a>와 <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">마케팅과 AI 시스템 사이의 간극을 좁히는 방법</a>에 대해 썼습니다. 제 일관된 입장은 간극이 순수한 지능의 문제인 경우는 드물다는 것입니다. 문제는 근거입니다. 시스템이 여러분의 오디언스, 데이터, 제약을 알고 있는가, 그리고 추론을 보여 줄 수 있는가입니다.</p>
+<p>그것이 저희 연구가 겨냥하는 바입니다. <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>(ACM Multimedia 2025)에서 저희는 크리에이티브 클릭률 점수와 LLM을 결합해 실제 광고 데이터로 마케팅 전략을 함께 만드는 설명 가능한 생성형 AI를 구축했습니다. <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>(ACM TOIS 2025)에서는 성과 예측과 LLM을 결합해 추천에 이유가 따라오도록 했습니다. 핵심은 그 이유입니다. 더 강력한 범용 모델은 언어를 더 좋게, 행동을 더 빠르게 만듭니다. 하지만 그것만으로는 특정 오디언스에게 어떤 광고가 다른 광고를 이길지, 그리고 왜 그런지 알려 주지 않습니다. 그것은 여전히 실제 결과에 비춘 측정이 필요합니다.</p>
+<p>그래서 제 현실 점검은 “Astra는 과대평가되었다”가 아닙니다. “Astra는 더 강력한 엔진이지만, 증거와 설명은 여전히 여러분의 몫이다”입니다.</p>
+<h2>마케팅 리더가 지금 해야 할 일</h2>
+<ul><li>주간 보고, 캠페인 세팅, CRM 업데이트처럼 시간이 많이 드는 운영 워크플로 세 가지를 골라, 감독하에 컴퓨터 사용 모델로 시범 운영하십시오.</li><li>기준선에 비춰 측정하십시오. 절약된 시간, 오류율, 사람이 개입해야 했던 빈도를 보십시오. “더 빨라진 느낌”은 결과가 아닙니다.</li><li>실행과 판단을 분리하십시오. 잘 정의된 단계는 에이전트가 실행하게 하고, 크리에이티브와 전략 결정은 설명할 수 있는 데이터에 묶어 두십시오.</li><li>권한에 유의하십시오. 고객 기록을 업데이트할 수 있는 모델은 엉뚱한 기록도 업데이트할 수 있습니다. 에이전트에게는 작동에 필요한 가장 좁은 접근 권한만 주고 모든 행동을 기록하십시오.</li><li>구매 단계에서는 라벨을 무시하십시오. 벤더에게 형용사가 아니라 여러분의 업무와 비슷한 작업 단위의 증거를 요구하십시오.</li></ul>
+<p>지금이 “AGI 시대”이든 아니든, AI가 운영 업무를 하는 시대인 것은 분명합니다. 그 위에 신중하고 측정 가능한 워크플로를 구축하는 팀은 이익을 얻을 것입니다. 단어를 사는 팀은 청구서를 받게 될 것입니다.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>GPT-6 Astra란 무엇인가요?</summary><p>2026년 9월 3일 출시된 OpenAI의 프런티어 모델입니다. OpenAI는 이 모델이 컴퓨터 사용, 브라우저 사용, 소프트웨어 엔지니어링, 사이버 보안, 과학에서 최고 수준이며, 양식 작성과 고객 기록 업데이트 같은 일상적인 컴퓨터 작업을 수행할 수 있다고 말합니다.</p></details><details><summary>OpenAI는 GPT-6 Astra가 AGI라고 말했나요?</summary><p>OpenAI 회장 Greg Brockman은 기자들에게 “우리가 이제 AGI 시대에 있다고 느끼는 것은 무리가 아니다”라고 말했습니다. OpenAI는 AGI를 경제적으로 가치 있는 대부분의 일에서 인간을 능가하는 고도로 자율적인 시스템으로 정의합니다. 이것은 검증해야 할 주장이지 확립된 측정값이 아닙니다.</p></details><details><summary>마케터는 새로운 프런티어 모델을 어떻게 평가해야 하나요?</summary><p>기준선을 두고 자사 워크플로에서 테스트하고, 절약된 시간, 오류, 사람의 개입을 측정하며, 전략적 결정은 설명 가능한 데이터에 근거하게 하고, 모델의 권한은 각 작업에 필요한 만큼으로 제한해야 합니다.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">출처</h2><ol><li translate="no"><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'</a> — Fox Business, 3 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 교수</b>는 SOMIN.ai 창업자 겸 CEO이자 NUS와 INSEAD의 AI 초빙교수입니다. 동료심사를 거친 그의 연구는 다중 출처 사용자 프로파일링, 성격 인식 추천, 마케팅을 위한 설명 가능한 AI를 다룹니다.</p>
+<p class="links"><a href="/ko/">Aleks 소개</a><a href="/ko/#publications">논문</a><a href="/ko/blog/">더 많은 AI 뉴스</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">계속 읽기</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">더 많은 AI 뉴스 해설</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ko/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">모델 · 2026년 10월 7일</span><h3>Claude Haiku 5.5와 마케팅에서 소형 모델이 중요한 이유</h3><p>Anthropic의 Claude Haiku 5.5는 저렴하고 빠른 대량 작업을 위해 만들어졌습니다. 모델 제품군에서 가장 작은 모델이 마케터에게 가장 중요한 경우가 많은 이유.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">모델 · 2026년 9월 30일</span><h3>Gemini 4 Argon: 출력 토큰 100만 개, 그다음은?</h3><p>Google DeepMind의 Gemini 4 Argon은 100만 토큰 출력 한도와 사이버 보안 우선 출시를 내세웁니다. 장기 과제형 AI가 마케팅 업무에서 바꾸는 것과 바꾸지 않는 것.</p><span class="go">읽기 →</span></a><a class="pcard" href="/ko/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">모델 · 2026년 9월 29일</span><h3>OpenAI가 GPT-6.1 Astra 출시를 보류한 이유와 그 의미</h3><p>OpenAI는 테스트에서 작업 범위, 권한, 결과 보고 방식의 문제가 드러나자 GPT-6.1 Astra 출시를 취소했습니다. 같은 테스트가 여러분의 에이전트에도 적용됩니다.</p><span class="go">읽기 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">생성형 AI CEO, AI 교수, 기조연설자이자 아코디언 연주자. 싱가포르에서 세계로, 심층 연구와 현실 마케팅을 잇습니다.</p>
+      </div>
+      <div>
+        <h6>둘러보기</h6>
+        <ul>
+          <li><a href="/ko/">홈</a></li>
+          <li><a href="/ko/blog/">AI 뉴스 블로그</a></li>
+          <li><a href="/ko/#research">연구</a></li>
+          <li><a href="/ko/#publications">논문</a></li>
+          <li><a href="/ko/#connect">연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>다른 채널</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>의견은 저의 개인적 견해입니다. 뉴스 사실관계는 출처에 링크되어 있습니다.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
