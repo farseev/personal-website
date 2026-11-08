@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Prof. Aleks Farseev — GenAI CEO, Professor in AI &amp; Keynote Speaker</title>
 
+<!-- ============ Google Analytics 4 (property 366187063, stream "farseev.com - GA4") ============ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Key events (mark in GA4 > Admin > Events): contact_click (email/phone), venture_click (SOMIN and the other
+   ventures). Others: publication_click (Scholar, ACM, Forbes, e27 and press), social_click. No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sec=(a.closest('section[id]')||{}).id||'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+
 <!-- ============ SEO ============ -->
 <meta name="description" content="Prof. Aleks Farseev (法信夫): Founder &amp; CEO of SOMIN.ai, Guest Professor at NUS and INSEAD, AI researcher with 30+ peer-reviewed papers and keynote speaker." />
 <meta name="keywords" content="Aleks Farseev, Aleksandr Farseev, 法信夫, SOMIN, SOMIN.ai, SoMonitor, Marketing AI, Generative AI, AI advertising, keynote speaker, NUS, INSEAD, machine learning, large language models, user profiling, AdTech, Accordion Singapore, accordionist, Faith Driven Entrepreneur Singapore" />
