@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GPT-6 Astra và "kỷ nguyên AGI": Góc nhìn thực tế của marketer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI ra mắt GPT-6 Astra và chủ tịch của họ nói rằng không phải vô lý khi cảm thấy chúng ta đang ở kỷ nguyên AGI. Tuyên bố đó có và không có ý nghĩa gì với đội ngũ marketing." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="GPT-6 Astra và &quot;kỷ nguyên AGI&quot;: Góc nhìn thực tế của marketer | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI ra mắt GPT-6 Astra và chủ tịch của họ nói rằng không phải vô lý khi cảm thấy chúng ta đang ở kỷ nguyên AGI. Tuyên bố đó có và không có ý nghĩa gì với đội ngũ marketing." />
+<meta property="og:url" content="https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mô hình" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GPT-6 Astra và &quot;kỷ nguyên AGI&quot;: Góc nhìn thực tế của marketer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI ra mắt GPT-6 Astra và chủ tịch của họ nói rằng không phải vô lý khi cảm thấy chúng ta đang ở kỷ nguyên AGI. Tuyên bố đó có và không có ý nghĩa gì với đội ngũ marketing." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/#article","mainEntityOfPage":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/","url":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/","headline":"GPT-6 Astra và \"kỷ nguyên AGI\": Góc nhìn thực tế của marketer","description":"OpenAI ra mắt GPT-6 Astra và chủ tịch của họ nói rằng không phải vô lý khi cảm thấy chúng ta đang ở kỷ nguyên AGI. Tuyên bố đó có và không có ý nghĩa gì với đội ngũ marketing.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Mô hình","about":{"@type":"Thing","name":"OpenAI ra mắt GPT-6 Astra, mô hình tiên phong mới, với tuyên bố đạt trình độ hàng đầu về sử dụng máy tính và công việc agent"},"wordCount":825,"citation":[{"@type":"CreativeWork","name":"OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'","url":"https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities","publisher":"Fox Business","datePublished":"2026-09-03"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/#faq","mainEntity":[{"@type":"Question","name":"GPT-6 Astra là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là mô hình tiên phong của OpenAI phát hành ngày 3 tháng 9 năm 2026. OpenAI cho biết mô hình đạt trình độ hàng đầu về sử dụng máy tính, sử dụng trình duyệt, kỹ thuật phần mềm, an ninh mạng và khoa học, và có thể thực hiện các tác vụ máy tính thường ngày như điền biểu mẫu và cập nhật hồ sơ khách hàng."}},{"@type":"Question","name":"OpenAI có nói GPT-6 Astra là AGI không?","acceptedAnswer":{"@type":"Answer","text":"Chủ tịch OpenAI Greg Brockman nói với báo chí rằng \"không phải vô lý khi cảm thấy chúng ta giờ đang ở kỷ nguyên AGI.\" OpenAI định nghĩa AGI là các hệ thống tự chủ cao vượt trội con người trong hầu hết công việc có giá trị kinh tế. Đó là một tuyên bố cần kiểm chứng, không phải một phép đo đã được xác lập."}},{"@type":"Question","name":"Marketer nên đánh giá một mô hình tiên phong mới như thế nào?","acceptedAnswer":{"@type":"Answer","text":"Kiểm thử trên quy trình của chính bạn so với mức cơ sở, đo thời gian tiết kiệm, lỗi và số lần con người can thiệp, giữ các quyết định chiến lược dựa trên dữ liệu có thể giải thích, và giới hạn quyền hạn của mô hình ở mức mỗi tác vụ cần."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"GPT-6 Astra và \"kỷ nguyên AGI\": Góc nhìn thực tế của marketer","item":"https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-astra-agi-era-reality-check/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gpt-6-astra-agi-era-reality-check/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gpt-6-astra-agi-era-reality-check/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gpt-6-astra-agi-era-reality-check/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gpt-6-astra-agi-era-reality-check/">한국어</option><option value="th" lang="th" data-href="/th/blog/gpt-6-astra-agi-era-reality-check/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/gpt-6-astra-agi-era-reality-check/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/gpt-6-astra-agi-era-reality-check/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">GPT-6 Astra và "kỷ nguyên AGI": Góc nhìn thực tế của marketer</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Mô hình</p>
+      <h1 class="h-display">GPT-6 Astra và "kỷ nguyên AGI": Góc nhìn thực tế của marketer</h1>
+      <p class="lead">OpenAI ra mắt GPT-6 Astra và chủ tịch của họ nói rằng không phải vô lý khi cảm thấy chúng ta đang ở kỷ nguyên AGI. Tuyên bố đó có và không có ý nghĩa gì với đội ngũ marketing.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: OpenAI ra mắt GPT-6 Astra, mô hình tiên phong mới, với tuyên bố đạt trình độ hàng đầu về sử dụng máy tính và công việc agent (<time datetime="2026-09-03">3 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Cứ vài năm lại có một phòng thí nghiệm nói ra từ đó. Ngày 3 tháng 9, OpenAI phát hành GPT-6 Astra, và chủ tịch Greg Brockman nói với báo chí rằng "không phải vô lý khi cảm thấy chúng ta giờ đang ở kỷ nguyên AGI." Tôi là nhà nghiên cứu và nhà sáng lập, nên tôi giữ hai suy nghĩ cùng lúc: đây là một hệ thống thực sự có năng lực, và "AGI" là một tuyên bố, không phải một phép đo.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">Fox Business</a>, OpenAI phát hành Astra trước tiên cho khách hàng doanh nghiệp có quyền truy cập sớm, với người dùng ChatGPT Plus, Pro, Business và Enterprise, API và Amazon Web Services sẽ theo sau trong vài ngày. OpenAI cho biết mô hình đạt trình độ hàng đầu về sử dụng máy tính, sử dụng trình duyệt, kỹ thuật phần mềm, an ninh mạng và khoa học, và có thể thực hiện các tác vụ máy tính thường ngày như điền biểu mẫu trực tuyến, cập nhật hồ sơ khách hàng, sắp xếp lịch và nghiên cứu, cũng như tạo tài liệu, bảng tính và bài thuyết trình.</p>
+<p>Sam Altman gọi đây là "mô hình được căn chỉnh tốt nhất từ trước đến nay" của công ty. OpenAI cũng cho biết Astra là một bước nhảy đáng kể về năng lực an ninh mạng và đạt ngưỡng "Critical" theo Preparedness Framework của họ. Bài báo trích dẫn định nghĩa AGI của chính OpenAI: "các hệ thống tự chủ cao vượt trội con người trong hầu hết công việc có giá trị kinh tế." Bài báo không dẫn điểm benchmark cụ thể nào.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Gạt nhãn mác sang một bên, chuyển dịch thực tế rất rõ ràng. Những năng lực OpenAI nhấn mạnh không phải là viết câu hay hơn. Mà là làm việc trong phần mềm: điền biểu mẫu, cập nhật hồ sơ, di chuyển qua trình duyệt và bảng tính. Đó là nhịp điệu hằng ngày của vận hành marketing. Thiết lập chiến dịch, báo cáo, chuẩn hóa dữ liệu CRM, giám sát đối thủ, quản lý nguồn cấp. Một mô hình giỏi sử dụng máy tính tấn công vào số giờ làm việc, không chỉ vào câu chữ.</p>
+<p>Đó cũng là lý do cách đóng khung AGI cần được tiếp nhận thận trọng. Định nghĩa của OpenAI là về việc vượt trội con người trong "hầu hết công việc có giá trị kinh tế". Điều đó có đúng với đội ngũ của bạn hay không là câu hỏi thực nghiệm mà bạn có thể kiểm chứng, và câu trả lời sẽ khác nhau theo từng tác vụ. Một mô hình có thể xuất sắc trong việc tổng hợp báo cáo hiệu quả mà vẫn yếu trong việc quyết định ý tưởng sáng tạo nào sẽ lay động một nhóm khán giả hoài nghi tại Jakarta.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Tôi đã viết trên Forbes về <a href="https://www.forbes.com/councils/forbestechcouncil/2022/10/21/will-machines-replace-human-creativity/" target="_blank" rel="noopener">liệu máy móc có thay thế sự sáng tạo của con người</a> và về <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">thu hẹp khoảng cách giữa marketing và các hệ thống AI</a>. Quan điểm nhất quán của tôi là khoảng cách hiếm khi nằm ở trí thông minh thuần túy. Mà ở sự neo vào thực tế: hệ thống có biết đối tượng, dữ liệu và ràng buộc của bạn không, và nó có thể trình bày lập luận của mình không?</p>
+<p>Đó là điều nghiên cứu của chúng tôi hướng tới. Trong <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), chúng tôi xây dựng AI tạo sinh có khả năng giải thích, kết hợp chấm điểm tỷ lệ nhấp của mẫu sáng tạo với LLM để đồng kiến tạo chiến lược marketing từ dữ liệu quảng cáo thực. Trong <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a> (ACM TOIS 2025), chúng tôi kết hợp dự đoán hiệu quả với LLM để đề xuất đi kèm lý do. Lý do mới là điểm mấu chốt. Một mô hình tổng quát mạnh hơn khiến ngôn ngữ tốt hơn và hành động nhanh hơn. Nó tự thân không cho bạn biết vì sao một quảng cáo sẽ thắng quảng cáo khác với một nhóm đối tượng cụ thể. Điều đó vẫn cần đo lường dựa trên kết quả thực tế.</p>
+<p>Vì vậy, góc nhìn thực tế của tôi không phải là "Astra bị thổi phồng." Mà là "Astra là một động cơ mạnh hơn; bằng chứng và lời giải thích vẫn là việc của bạn."</p>
+<h2>Lãnh đạo marketing nên làm gì ngay bây giờ</h2>
+<ul><li>Chọn ba quy trình vận hành tốn thời gian, như báo cáo hằng tuần, thiết lập chiến dịch hoặc cập nhật CRM, và thí điểm chúng với một mô hình sử dụng máy tính dưới sự giám sát.</li><li>Đo lường so với mức cơ sở. Thời gian tiết kiệm, tỷ lệ lỗi, và tần suất con người phải can thiệp. "Cảm thấy nhanh hơn" không phải là kết quả.</li><li>Tách thực thi khỏi phán đoán. Để agent thực thi các bước được định nghĩa rõ; giữ các quyết định sáng tạo và chiến lược gắn với dữ liệu mà bạn có thể giải thích.</li><li>Lưu ý quyền hạn. Một mô hình có thể cập nhật hồ sơ khách hàng cũng có thể cập nhật nhầm hồ sơ. Cấp cho agent quyền truy cập hẹp nhất vẫn đủ để hoạt động và ghi nhật ký mọi hành động.</li><li>Bỏ qua nhãn mác khi mua sắm. Yêu cầu nhà cung cấp đưa ra bằng chứng ở cấp độ tác vụ cho công việc tương tự của bạn, không phải tính từ.</li></ul>
+<p>Dù đây có phải "kỷ nguyên AGI" hay không, rõ ràng đây là kỷ nguyên AI làm công việc vận hành. Những đội ngũ xây dựng quy trình cẩn trọng, có đo lường xoay quanh điều đó sẽ thu được lợi ích. Những đội ngũ mua một từ ngữ sẽ nhận về hóa đơn.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>GPT-6 Astra là gì?</summary><p>Đó là mô hình tiên phong của OpenAI phát hành ngày 3 tháng 9 năm 2026. OpenAI cho biết mô hình đạt trình độ hàng đầu về sử dụng máy tính, sử dụng trình duyệt, kỹ thuật phần mềm, an ninh mạng và khoa học, và có thể thực hiện các tác vụ máy tính thường ngày như điền biểu mẫu và cập nhật hồ sơ khách hàng.</p></details><details><summary>OpenAI có nói GPT-6 Astra là AGI không?</summary><p>Chủ tịch OpenAI Greg Brockman nói với báo chí rằng "không phải vô lý khi cảm thấy chúng ta giờ đang ở kỷ nguyên AGI." OpenAI định nghĩa AGI là các hệ thống tự chủ cao vượt trội con người trong hầu hết công việc có giá trị kinh tế. Đó là một tuyên bố cần kiểm chứng, không phải một phép đo đã được xác lập.</p></details><details><summary>Marketer nên đánh giá một mô hình tiên phong mới như thế nào?</summary><p>Kiểm thử trên quy trình của chính bạn so với mức cơ sở, đo thời gian tiết kiệm, lỗi và số lần con người can thiệp, giữ các quyết định chiến lược dựa trên dữ liệu có thể giải thích, và giới hạn quyền hạn của mô hình ở mức mỗi tác vụ cần.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'</a> — Fox Business, 3 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Mô hình · 7 tháng 10, 2026</span><h3>Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing</h3><p>Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Mô hình · 30 tháng 9, 2026</span><h3>Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?</h3><p>Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Mô hình · 29 tháng 9, 2026</span><h3>Vì sao OpenAI gác lại GPT-6.1 Astra, và vì sao điều đó quan trọng</h3><p>OpenAI đã hủy phát hành GPT-6.1 Astra sau khi kiểm thử phát hiện vấn đề về phạm vi, ủy quyền và cách mô hình báo cáo lại. Những bài kiểm tra tương tự cũng áp dụng cho agent của bạn.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

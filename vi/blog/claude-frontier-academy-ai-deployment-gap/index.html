@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Khoảng trống triển khai AI là bài toán con người | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Khoảng trống triển khai AI là bài toán con người | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này." />
+<meta property="og:url" content="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Công việc và kỹ năng" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Khoảng trống triển khai AI là bài toán con người | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/","headline":"Khoảng trống triển khai AI là bài toán con người","description":"Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Công việc và kỹ năng","about":{"@type":"Thing","name":"Anthropic ra mắt Claude Frontier Academy với cam kết 100 triệu USD để đào tạo 10.000 kỹ sư"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"Claude Frontier Academy là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là chương trình đào tạo do Anthropic ra mắt ngày 2 tháng 10 năm 2026, với cam kết 100 triệu US$, nhằm đào tạo 10.000 Frontier Deployed Engineer trước cuối năm 2027 thông qua một chương trình trực tiếp, tiếp theo là kỳ nội trú 12 tuần trên một dự án thực tế."}},{"@type":"Question","name":"Những công ty nào có mặt trong các khóa Claude Frontier Academy đầu tiên?","acceptedAnswer":{"@type":"Answer","text":"Anthropic nêu tên Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley và Novo Nordisk, cùng nhiều công ty khác, với các khóa tại San Francisco, New York và London."}},{"@type":"Question","name":"Vì sao marketing cần chuyên gia triển khai AI?","acceptedAnswer":{"@type":"Answer","text":"Vì quyền truy cập vào mô hình không còn là nút thắt cổ chai. Giá trị đến từ việc thiết kế lại các quy trình marketing thực tế xoay quanh AI với đo lường và rào chắn, điều đòi hỏi những người hiểu cả công nghệ lẫn quyết định marketing."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Khoảng trống triển khai AI là bài toán con người","item":"https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-frontier-academy-ai-deployment-gap/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-frontier-academy-ai-deployment-gap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Khoảng trống triển khai AI là bài toán con người</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Công việc và kỹ năng</p>
+      <h1 class="h-display">Khoảng trống triển khai AI là bài toán con người</h1>
+      <p class="lead">Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Anthropic ra mắt Claude Frontier Academy với cam kết 100 triệu USD để đào tạo 10.000 kỹ sư (<time datetime="2026-10-02">2 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Lý do phổ biến nhất khiến các dự án AI gây thất vọng không phải là mô hình. Mà là không ai trong tổ chức biết cách biến một mô hình có năng lực thành một quy trình vận hành được. Ngày 2 tháng 10, Anthropic đã định giá cho vấn đề đó: 100 triệu US$ để đào tạo 10.000 người có công việc chính là làm điều đó.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">thông báo của Anthropic</a>, Claude Frontier Academy mới đặt mục tiêu đào tạo 10.000 "Frontier Deployed Engineer" trước cuối năm 2027, với cam kết 100 triệu US$. Chương trình đầu tiên là một kỳ nội trú mà theo lời Anthropic "đi theo mô hình y khoa để xây dựng chuyên môn". Các tổ chức đề cử những kỹ sư giỏi, mỗi người mang theo một dự án Claude cụ thể. Họ trước tiên tham gia một chương trình trực tiếp kéo dài nhiều ngày với một đợt triển khai doanh nghiệp mô phỏng và một bài thực hành có chấm điểm, sau đó dành 12 tuần dẫn dắt một tình huống sử dụng thực tế tại chính tổ chức của mình với sự hỗ trợ từ các kỹ sư Anthropic, kết thúc bằng một bài đánh giá cuối khóa.</p>
+<p>Các khóa đang diễn ra tại San Francisco, New York và London. Các công ty có tên trong những khóa đầu tiên gồm Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley và Novo Nordisk. Anthropic cho biết học viện được xây dựng trên mạng lưới đối tác của công ty, nơi các chuyên gia tại 46.000 doanh nghiệp đã đạt hơn 175.000 chứng chỉ.</p>
+<p>Một lãnh đạo của Accenture được trích dẫn trong thông báo cho biết kỳ nội trú đánh giá "khả năng phán đoán được kiểm nghiệm qua một đợt triển khai doanh nghiệp mô phỏng, không phải kỹ năng kỹ thuật tách biệt."</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Hãy đọc danh sách những người tham gia đầu tiên: các công ty tư vấn, ngân hàng, một công ty dược phẩm. Đây là những tổ chức sẽ triển khai AI bên trong các công ty khác, kể cả trong phòng marketing. Mô hình này không mới; kỹ sư hiện trường và kiến trúc sư giải pháp tồn tại trong mọi mảng phần mềm doanh nghiệp. Điều mới là quy mô và sự nhấn mạnh vào khả năng phán đoán trong các đợt triển khai thực tế.</p>
+<p>Marketing cũng có khoảng trống tương tự, và ít người giải quyết nó hơn. Nhiều đội ngũ giờ đã có quyền truy cập vào các mô hình và công cụ xuất sắc. Nhưng ít hơn hẳn có một người mà công việc là nhận một quy trình marketing rối rắm, như giám sát đối thủ, thử nghiệm sáng tạo hay báo cáo, và thiết kế lại nó xoay quanh AI, với đo lường, rào chắn và việc áp dụng được tích hợp sẵn.</p>
+<p>Địa điểm các khóa học cũng đáng chú ý. Không có nơi nào ở châu Á. Với khu vực của chúng ta, đó hoặc là khoảng trống cần được lấp tại chỗ, hoặc là dấu hiệu cho thấy làn sóng nhân lực triển khai được chứng nhận đầu tiên sẽ tập trung ở nơi khác.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Theo tôi, bước khó nhất trong AI ứng dụng là bước nằm giữa một mô hình hoạt động được và một quy trình hoạt động được. Nghiên cứu của chúng tôi phản ánh điều đó. Trong <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) và trong <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">bản trình diễn công nghiệp SOMIN tại ACM Multimedia 2025</a>, đóng góp không chỉ nằm ở các mô hình mà ở cách chúng khớp vào công việc chiến lược của marketer: dự đoán hiệu quả cộng với một LLM giải thích và đề xuất.</p>
+<p>Tôi đã viết trên Forbes về <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">thu hẹp khoảng cách giữa marketing và các hệ thống AI</a> và về <a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">khai thác LLM trong kinh doanh vượt ra ngoài chatbot</a>. Chủ đề xuyên suốt là giá trị xuất hiện khi có người hiểu cả hai phía: mô hình có thể làm gì một cách đáng tin cậy, và doanh nghiệp thực sự cần gì. Người như vậy rất hiếm trong marketing.</p>
+<p>Tôi cũng giảng dạy, tại NUS và INSEAD cùng nhiều nơi khác, và cách ví von với chương trình nội trú y khoa rất thuyết phục với tôi. Bạn không học triển khai từ slide. Bạn học bằng cách tự chịu trách nhiệm một tình huống thực tế, dưới sự giám sát, và được đánh giá về khả năng phán đoán.</p>
+<h2>Đội ngũ marketing có thể xây dựng vai trò này ngay bây giờ như thế nào</h2>
+<ul><li>Chỉ định người phụ trách. Giao cho một người trách nhiệm rõ ràng về việc biến năng lực AI thành quy trình marketing, kèm thời gian để thực hiện.</li><li>Học trên một tình huống thực tế. Chọn một quy trình đang vận hành, chẳng hạn báo cáo đối thủ hằng tuần, và thiết kế lại từ đầu đến cuối, với mức cơ sở và mục tiêu.</li><li>Kết hợp marketing và kỹ thuật. Những đợt triển khai tốt nhất đến từ một marketer hiểu quyết định và một chuyên gia công nghệ hiểu hệ thống, cùng làm việc với nhau.</li><li>Đánh giá khả năng phán đoán, không phải sự thành thạo công cụ. Người đó có giải thích được khi nào không nên tin AI và khi đó điều gì sẽ xảy ra không?</li><li>Chia sẻ những gì hiệu quả. Ghi lại mỗi đợt triển khai thành một tình huống ngắn: vấn đề, thiết kế, kết quả, các kiểu thất bại.</li></ul>
+<p>Một trăm triệu đô la là con số lớn cho đào tạo. Nhưng là con số nhỏ so với những gì các tổ chức mất vào các dự án AI không bao giờ đi vào công việc hằng ngày. Marketing không nên chờ người khác đào tạo đội ngũ triển khai cho mình.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Claude Frontier Academy là gì?</summary><p>Đó là chương trình đào tạo do Anthropic ra mắt ngày 2 tháng 10 năm 2026, với cam kết 100 triệu US$, nhằm đào tạo 10.000 Frontier Deployed Engineer trước cuối năm 2027 thông qua một chương trình trực tiếp, tiếp theo là kỳ nội trú 12 tuần trên một dự án thực tế.</p></details><details><summary>Những công ty nào có mặt trong các khóa Claude Frontier Academy đầu tiên?</summary><p>Anthropic nêu tên Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley và Novo Nordisk, cùng nhiều công ty khác, với các khóa tại San Francisco, New York và London.</p></details><details><summary>Vì sao marketing cần chuyên gia triển khai AI?</summary><p>Vì quyền truy cập vào mô hình không còn là nút thắt cổ chai. Giá trị đến từ việc thiết kế lại các quy trình marketing thực tế xoay quanh AI với đo lường và rào chắn, điều đòi hỏi những người hiểu cả công nghệ lẫn quyết định marketing.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">Công việc và kỹ năng · 9 tháng 9, 2026</span><h3>Ba kịch bản kinh tế AI và tương lai việc làm marketing</h3><p>Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Quảng cáo và AI marketing · 29 tháng 10, 2026</span><h3>WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h3><p>WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/malaysia-ai-governance-bill/"><span class="meta">Châu Á và Singapore · 29 tháng 10, 2026</span><h3>AI Governance Bill của Malaysia: Trách nhiệm theo vai trò</h3><p>Dự thảo AI Governance Bill của Malaysia, dự kiến hoàn tất trước đầu năm 2027, đặt nghĩa vụ lên bên phát triển, cung cấp hoặc sử dụng AI. Quy định theo vai trò có ý nghĩa gì với marketer.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

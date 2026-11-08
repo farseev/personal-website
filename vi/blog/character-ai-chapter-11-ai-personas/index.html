@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Character.AI đã nộp đơn theo Chapter 11 để tìm phương án bán, với Disney đang chuẩn bị đề nghị 20 triệu USD. Thương hiệu xây dựng nhân vật và bạn đồng hành AI nên học được gì." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona | Prof. Aleks Farseev" />
+<meta property="og:description" content="Character.AI đã nộp đơn theo Chapter 11 để tìm phương án bán, với Disney đang chuẩn bị đề nghị 20 triệu USD. Thương hiệu xây dựng nhân vật và bạn đồng hành AI nên học được gì." />
+<meta property="og:url" content="https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Marketing có trách nhiệm" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Character.AI đã nộp đơn theo Chapter 11 để tìm phương án bán, với Disney đang chuẩn bị đề nghị 20 triệu USD. Thương hiệu xây dựng nhân vật và bạn đồng hành AI nên học được gì." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/#article","mainEntityOfPage":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/","url":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/","headline":"Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona","description":"Character.AI đã nộp đơn theo Chapter 11 để tìm phương án bán, với Disney đang chuẩn bị đề nghị 20 triệu USD. Thương hiệu xây dựng nhân vật và bạn đồng hành AI nên học được gì.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Marketing có trách nhiệm","about":{"@type":"Thing","name":"Character.AI nộp đơn phá sản theo Chapter 11; Disney chuẩn bị đề nghị \"stalking-horse\" 20 triệu USD cho giấy phép sở hữu trí tuệ"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy","url":"https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal","publisher":"TheWrap","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/#faq","mainEntity":[{"@type":"Question","name":"Character.AI có nộp đơn phá sản không?","acceptedAnswer":{"@type":"Answer","text":"Có. Theo TheWrap, Character.AI đã nộp đơn phá sản theo Chapter 11 vào ngày 12 tháng 10 năm 2026 để tạo điều kiện bán tài sản, và dịch vụ vẫn tiếp tục hoạt động trong quá trình này."}},{"@type":"Question","name":"Disney đóng vai trò gì trong thương vụ bán Character.AI?","acceptedAnswer":{"@type":"Answer","text":"TheWrap cho biết Disney đang chuẩn bị đề nghị 20 triệu US$ cho một giấy phép vĩnh viễn, không độc quyền đối với một số tài sản sở hữu trí tuệ và sẽ đóng vai trò bên đặt giá \"stalking horse\", thiết lập mức sàn cho cuộc đấu giá dự kiến diễn ra vào cuối tháng 11 hoặc đầu tháng 12."}},{"@type":"Question","name":"Thương hiệu nên học được gì từ khó khăn của Character.AI?","acceptedAnswer":{"@type":"Answer","text":"Rằng AI persona mang theo rủi ro về sở hữu trí tuệ, an toàn và niềm tin. Thương hiệu nên xây dựng trên IP mình sở hữu, đặt giới hạn chặt chẽ cho những gì persona được phép tuyên bố, thiết kế cho người dùng dễ bị tổn thương, công khai rằng người dùng đang nói chuyện với AI và đo lường sức khỏe tinh thần song song với mức tương tác."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona","item":"https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/character-ai-chapter-11-ai-personas/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/character-ai-chapter-11-ai-personas/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/character-ai-chapter-11-ai-personas/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/character-ai-chapter-11-ai-personas/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/character-ai-chapter-11-ai-personas/">한국어</option><option value="th" lang="th" data-href="/th/blog/character-ai-chapter-11-ai-personas/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/character-ai-chapter-11-ai-personas/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/character-ai-chapter-11-ai-personas/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Marketing có trách nhiệm</p>
+      <h1 class="h-display">Character.AI nộp Chapter 11: Bài học cho sản phẩm AI persona</h1>
+      <p class="lead">Character.AI đã nộp đơn theo Chapter 11 để tìm phương án bán, với Disney đang chuẩn bị đề nghị 20 triệu USD. Thương hiệu xây dựng nhân vật và bạn đồng hành AI nên học được gì.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Character.AI nộp đơn phá sản theo Chapter 11; Disney chuẩn bị đề nghị "stalking-horse" 20 triệu USD cho giấy phép sở hữu trí tuệ (<time datetime="2026-10-12">12 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Vài năm trước, nhân vật AI từng được xem là ứng dụng tiêu dùng tự nhiên nhất của các mô hình ngôn ngữ lớn: một chatbot có tính cách, sẵn sàng cả ngày. Ngày 12 tháng 10, một trong những công ty nổi tiếng nhất trong lĩnh vực này, Character.AI, đã nộp đơn phá sản theo Chapter 11. Các thương hiệu hiện đang xây dựng nhân vật, linh vật và bạn đồng hành AI của riêng mình. Câu chuyện này đáng được đọc kỹ.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">TheWrap</a>, Character.AI đã nộp đơn theo Chapter 11 vào tối thứ Hai, 12 tháng 10, nhằm "tạo điều kiện cho một thương vụ bán tối đa hóa giá trị" tài sản của mình. Disney đang chuẩn bị đề nghị 20 triệu US$ cho một giấy phép vĩnh viễn, không độc quyền đối với một số tài sản sở hữu trí tuệ, đóng vai trò bên "stalking horse" có đề nghị đặt mức sàn cho cuộc đấu giá, dự kiến diễn ra vào cuối tháng 11 hoặc đầu tháng 12. Các bên khác vẫn có thể đưa ra đề nghị tốt hơn.</p>
+<p>TheWrap lưu ý rằng Disney đã gửi Character.AI thư yêu cầu chấm dứt vi phạm vào tháng 9/2025 vì sử dụng trái phép các nhân vật của mình, rằng nền tảng đã chuyển hướng sang phim ngắn dạng microdrama sau khi dàn xếp nhiều vụ kiện cáo buộc AI agent của họ dẫn dắt thanh thiếu niên đến hành vi tự gây hại, và rằng bang Pennsylvania đã khởi kiện vì việc tạo ra giấy phép hành nghề y giả. CEO Colin Adams cho biết thương vụ bán dưới sự giám sát của tòa án "mang lại cho Công ty cơ hội tốt nhất" để tối đa hóa giá trị và trải nghiệm người dùng an toàn, hấp dẫn "vẫn là ưu tiên hàng đầu". Dịch vụ vẫn tiếp tục hoạt động.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Tôi sẽ không suy đoán về tình hình tài chính của công ty ngoài những gì đã được đưa tin. Nhưng các dữ kiện công khai đã phác họa ba rủi ro mà bất kỳ sản phẩm AI persona nào cũng mang theo.</p>
+<p>Thứ nhất là sở hữu trí tuệ. Những nhân vật được yêu thích thường thuộc về ai đó. Một sản phẩm xây dựng trên việc người dùng bắt chước các nhân vật nổi tiếng sẽ mời gọi đúng loại tranh chấp mà TheWrap mô tả.</p>
+<p>Thứ hai là an toàn. Một nhân vật được thiết kế để hấp dẫn và phản hồi cảm xúc, về bản chất, có sức ảnh hưởng. Khi người dùng bao gồm thanh thiếu niên, sức ảnh hưởng đó trở thành trách nhiệm pháp lý nếu các rào chắn thất bại.</p>
+<p>Thứ ba là niềm tin và thẩm quyền. Một chatbot có thể tạo ra chứng chỉ giả thuyết phục cho thấy một persona dễ dàng tự nhận chuyên môn mà nó không có đến mức nào.</p>
+<p>Với thương hiệu, bài học không phải là "tránh nhân vật AI". Mà là một persona là một lời hứa, và công ty triển khai nó chịu trách nhiệm về mọi điều nó nói.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Tính cách là một trong những chủ đề nghiên cứu cốt lõi của tôi. Cùng các đồng nghiệp, tôi đã nghiên cứu về <a href="https://doi.org/10.1609/aaai.v31i1.11105" target="_blank" rel="noopener">suy luận tính cách từ hoạt động trên nhiều mạng xã hội</a> (AAAI 2017), về <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">tạo nội dung dựa trên tính cách</a> (WSDM 2021) và về <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">gợi ý nội dung đa phương tiện xã hội dựa trên tính cách</a> (ACM Multimedia 2022). Nghiên cứu cho thấy rõ rằng khớp nội dung với tính cách giúp nội dung hấp dẫn hơn.</p>
+<p>Đó chính là lý do trách nhiệm rất nặng nề. Một hệ thống điều chỉnh tính cách theo từng người dùng có thể tạo ra sự gắn bó nhanh hơn bất kỳ quảng cáo tĩnh nào. Dùng tốt, điều đó mang lại trải nghiệm thương hiệu phù hợp hơn, hữu ích hơn. Dùng thiếu cẩn trọng, đó là thao túng, đặc biệt với người dùng dễ bị tổn thương. Tôi đã bàn về khía cạnh đạo đức và quyền riêng tư của việc lập hồ sơ và nhắm mục tiêu tự động trong bài nói tại WSDM 2023, <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>, và tôi đã lập luận trên Forbes cho <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing cứu chuộc (redemptive marketing)</a>, nơi minh bạch là một phần của hiệu quả chứ không phải chi phí.</p>
+<p>Một persona thương hiệu cần được thiết kế cẩn thận như một người phát ngôn thương hiệu, với khác biệt là nó nói chuyện với hàng triệu người cùng lúc và không bao giờ mệt mỏi.</p>
+<h2>Danh sách kiểm tra cho thương hiệu xây dựng nhân vật AI</h2>
+<ul><li>Sở hữu IP của bạn. Xây dựng persona trên nhân vật và giọng nói mà bạn sở hữu hoặc đã được cấp phép, và chặn việc bắt chước nhân vật của người khác.</li><li>Xác định những gì persona không bao giờ được tuyên bố. Không chứng chỉ, không tư vấn chuyên môn ngoài giới hạn đã định, không hứa hẹn những điều công ty sẽ không thực hiện.</li><li>Thiết kế cho người dùng dễ bị tổn thương nhất. Giả định rằng trẻ vị thành niên và người đang gặp khủng hoảng có thể sử dụng, kể cả khi họ không phải đối tượng mục tiêu, và xây dựng cơ chế chuyển tiếp đến sự trợ giúp của con người.</li><li>Công khai rõ ràng. Người dùng luôn phải biết họ đang nói chuyện với AI và ai đứng sau nó.</li><li>Đo lường sức khỏe tinh thần, không chỉ mức tương tác. Thời gian sử dụng không phải là chỉ số thành công cho một sản phẩm bạn đồng hành. Hãy theo dõi cả khiếu nại, các lượt chuyển tiếp và cảnh báo nội dung có hại.</li><li>Lên kế hoạch cho hồi kết. Quyết định điều gì sẽ xảy ra với các cuộc hội thoại và dữ liệu của người dùng nếu sản phẩm bị đóng cửa hoặc bán đi.</li></ul>
+<p>AI persona sẽ là một phần của trải nghiệm thương hiệu. Những công ty coi chúng là trách nhiệm, không chỉ là cỗ máy tạo tương tác, sẽ là những công ty vẫn còn vận hành chúng sau năm năm nữa.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Character.AI có nộp đơn phá sản không?</summary><p>Có. Theo TheWrap, Character.AI đã nộp đơn phá sản theo Chapter 11 vào ngày 12 tháng 10 năm 2026 để tạo điều kiện bán tài sản, và dịch vụ vẫn tiếp tục hoạt động trong quá trình này.</p></details><details><summary>Disney đóng vai trò gì trong thương vụ bán Character.AI?</summary><p>TheWrap cho biết Disney đang chuẩn bị đề nghị 20 triệu US$ cho một giấy phép vĩnh viễn, không độc quyền đối với một số tài sản sở hữu trí tuệ và sẽ đóng vai trò bên đặt giá "stalking horse", thiết lập mức sàn cho cuộc đấu giá dự kiến diễn ra vào cuối tháng 11 hoặc đầu tháng 12.</p></details><details><summary>Thương hiệu nên học được gì từ khó khăn của Character.AI?</summary><p>Rằng AI persona mang theo rủi ro về sở hữu trí tuệ, an toàn và niềm tin. Thương hiệu nên xây dựng trên IP mình sở hữu, đặt giới hạn chặt chẽ cho những gì persona được phép tuyên bố, thiết kế cho người dùng dễ bị tổn thương, công khai rằng người dùng đang nói chuyện với AI và đo lường sức khỏe tinh thần song song với mức tương tác.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy</a> — TheWrap, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">Marketing có trách nhiệm · 14 tháng 10, 2026</span><h3>Quy định AI nay coi tin đồn thương mại giả như gian lận bầu cử</h3><p>Chính sách sử dụng mới của Anthropic cấm các chiến dịch lừa dối 'dù mang tính chính trị hay thương mại', và họ đã phát hiện tin giả được tạo ra để kiếm tiền quảng cáo. Một ranh giới cho marketer.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Quảng cáo và AI marketing · 29 tháng 10, 2026</span><h3>WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h3><p>WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/malaysia-ai-governance-bill/"><span class="meta">Châu Á và Singapore · 29 tháng 10, 2026</span><h3>AI Governance Bill của Malaysia: Trách nhiệm theo vai trò</h3><p>Dự thảo AI Governance Bill của Malaysia, dự kiến hoàn tất trước đầu năm 2027, đặt nghĩa vụ lên bên phát triển, cung cấp hoặc sử dụng AI. Quy định theo vai trò có ý nghĩa gì với marketer.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

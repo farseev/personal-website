@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta đã ra mắt Muse, một AI agent cá nhân có thể đặt chỗ, mua sắm và thương lượng thay người dùng. Marketing hướng tới agent, không chỉ con người, nay đã là một câu hỏi thực tế." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta đã ra mắt Muse, một AI agent cá nhân có thể đặt chỗ, mua sắm và thương lượng thay người dùng. Marketing hướng tới agent, không chỉ con người, nay đã là một câu hỏi thực tế." />
+<meta property="og:url" content="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agent" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta đã ra mắt Muse, một AI agent cá nhân có thể đặt chỗ, mua sắm và thương lượng thay người dùng. Marketing hướng tới agent, không chỉ con người, nay đã là một câu hỏi thực tế." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến","description":"Meta đã ra mắt Muse, một AI agent cá nhân có thể đặt chỗ, mua sắm và thương lượng thay người dùng. Marketing hướng tới agent, không chỉ con người, nay đã là một câu hỏi thực tế.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Agent","about":{"@type":"Thing","name":"Meta ra mắt Muse, một AI agent cá nhân cho các tác vụ hằng ngày, tại Mỹ"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Meta Muse là gì?","acceptedAnswer":{"@type":"Answer","text":"Muse là một AI agent cá nhân do Meta ra mắt ngày 8 tháng 9 năm 2026. Theo Associated Press, nó hỗ trợ các tác vụ hằng ngày như lên lịch và mua sắm, và Meta cho biết nó có thể mở trình duyệt, điền biểu mẫu và thương lượng thay mặt người dùng."}},{"@type":"Question","name":"Meta Muse có mặt ở đâu?","acceptedAnswer":{"@type":"Answer","text":"Khi ra mắt, Muse chỉ có tại Mỹ, dành cho người từ 18 tuổi trở lên, qua ứng dụng Muse riêng hoặc bên trong WhatsApp."}},{"@type":"Question","name":"Thương hiệu nên chuẩn bị thế nào cho AI agent cá nhân?","acceptedAnswer":{"@type":"Answer","text":"Bằng cách công bố lời chào hàng và chính sách rõ ràng, máy có thể đọc được, loại bỏ các mẫu thiết kế thao túng, quyết định trước những điều khoản nào có thể thương lượng, và giữ nội dung sáng tạo hướng đến con người thật mạnh cho khoảnh khắc khách hàng đưa ra quyết định cuối cùng."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến","item":"https://farseev.com/vi/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Agent</p>
+      <h1 class="h-display">Meta Muse: Điều gì xảy ra khi khách hàng cử agent đến</h1>
+      <p class="lead">Meta đã ra mắt Muse, một AI agent cá nhân có thể đặt chỗ, mua sắm và thương lượng thay người dùng. Marketing hướng tới agent, không chỉ con người, nay đã là một câu hỏi thực tế.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Meta ra mắt Muse, một AI agent cá nhân cho các tác vụ hằng ngày, tại Mỹ (<time datetime="2026-09-08">8 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Suốt hai mươi năm, digital marketing mặc định rằng có một con người ở cuối phễu. Ngày 8 tháng 9, Meta ra mắt Muse, một AI agent cá nhân có thể hành động thay người đó: gửi email, đặt chuyến đi, điền biểu mẫu và, theo lời Meta, "thương lượng thay mặt họ". Con người vẫn ở đó. Nhưng ngày càng nhiều, một agent đang đứng giữa họ và bạn.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">bài tường thuật của Associated Press</a>, Muse là một AI agent cá nhân cho các tác vụ hằng ngày như lịch trình và mua sắm. Meta cho biết khi người dùng chia sẻ một mục tiêu, Muse sẽ xây dựng kế hoạch cá nhân hóa, điều phối thời gian và nguồn lực và tự mình thúc đẩy công việc. Các ví dụ trải dài từ gửi email hay đặt chuyến đi đến xây dựng kế hoạch tập luyện kéo dài một năm hay thành lập một doanh nghiệp mới. Meta cho biết Muse có thể mở trình duyệt, điền biểu mẫu và thương lượng cho người dùng.</p>
+<p>Muse dành cho người từ 18 tuổi trở lên, hiện chỉ có tại Mỹ, qua ứng dụng Muse riêng hoặc bên trong WhatsApp. Meta nhấn mạnh an toàn và quyền riêng tư và cho biết Muse chạy trên một máy ảo chuyên dụng, bảo mật, chứa cả agent lẫn dữ liệu của người dùng. AP liên hệ đợt ra mắt với bài luận của Mark Zuckerberg về siêu trí tuệ cá nhân, trong đó ông viết rằng mỗi người sẽ có "một agent cá nhân có năng lực vượt trội, hiểu bạn, hiểu mục tiêu của bạn".</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Khi một người so sánh ba khách sạn, thương hiệu của bạn có cơ hội chinh phục họ: một bức ảnh, một đánh giá, một cảm xúc. Khi một agent so sánh ba khách sạn thay mặt người đó, nó đọc các dữ kiện có cấu trúc, chính sách và giá, và có thể không bao giờ "nhìn" bức ảnh theo cách con người nhìn. Thương lượng là phần mang tính cách mạng hơn. Một agent biết thương lượng sẽ không phản ứng với banner khan hiếm.</p>
+<p>Kênh phân phối cũng quan trọng. Muse nằm bên trong WhatsApp, một trong những kênh nhắn tin quan trọng nhất ở châu Á, Mỹ Latinh và châu Phi. Hiện tại nó chỉ có ở Mỹ, nhưng một agent cá nhân được tích hợp trong ứng dụng nhắn tin mà nhiều khách hàng của chúng ta đang dùng không phải là một thử nghiệm ngách.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Nghiên cứu của tôi luôn xoay quanh việc hiểu con người từ dấu vết số của họ. Trong <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) và trong <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017), công trình kết hợp bài đăng mạng xã hội với dữ liệu cảm biến đeo được để học hồ sơ sức khỏe, chúng tôi đã chỉ ra rằng kết hợp các nguồn cho bức tranh về một người phong phú hơn nhiều so với bất kỳ nguồn đơn lẻ nào.</p>
+<p>Một agent cá nhân là phiên bản tối thượng của ý tưởng đó, với một khác biệt lớn: hồ sơ giờ nằm ở agent của người dùng, không phải ở nhà quảng cáo. Muse được thiết kế để hiểu mục tiêu của người dùng và hành động theo đó. Điều đó dịch chuyển cán cân thông tin. Thương hiệu không còn lập hồ sơ khách hàng để quyết định hiển thị gì. Agent của khách hàng lập hồ sơ thương hiệu để quyết định chấp nhận gì.</p>
+<p>Điều đó thay đổi ý nghĩa của "cá nhân hóa". Trong nghiên cứu của chúng tôi về <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">gợi ý nội dung dựa trên tính cách</a> (ACM Multimedia 2022), mục tiêu là khớp nội dung với đặc điểm của con người. Khi có agent tham gia, bạn cần hai lớp: một lời chào hàng rõ ràng, dựa trên dữ kiện, máy có thể đọc được để agent đánh giá, và nội dung sáng tạo hướng đến con người cho khoảnh khắc người đó ngẩng lên và quyết định. Marketing tốt hướng tới agent sẽ trông giống tài liệu tốt. Marketing tốt hướng tới con người vẫn sẽ trông giống kể chuyện hay.</p>
+<p>Còn một câu hỏi về trách nhiệm mà tôi quan tâm. Một agent thương lượng thay mặt người dùng phải trung thành với người dùng đó. Nếu agent bắt đầu chấp nhận các ưu tiên trả phí mà không công khai, chúng ta sẽ tái tạo những phần tệ nhất của ngành quảng cáo bên trong phần mềm riêng tư nhất mà con người từng sử dụng. Sự nhấn mạnh của Meta về quyền riêng tư là đáng hoan nghênh; minh bạch về ảnh hưởng thương mại lên quyết định của agent cũng sẽ quan trọng không kém.</p>
+<h2>Marketer nên làm gì ngay bây giờ</h2>
+<ul><li>Làm cho lời chào hàng của bạn dễ đọc với máy. Giá, tình trạng hàng, chính sách đổi trả, thời gian giao hàng và điều khoản phải rõ ràng, nhất quán và dễ phân tích trên trang web và nguồn cấp của bạn.</li><li>Loại bỏ dark pattern. Đồng hồ đếm ngược và phí ẩn là trở ngại với agent và là vấn đề niềm tin với con người.</li><li>Chuẩn bị thương lượng. Quyết định trước những điều khoản nào linh hoạt, như gói sản phẩm, khung giờ giao hàng hay ưu đãi khách hàng thân thiết, để một yêu cầu tự động có thể nhận được câu trả lời nhanh và nhất quán.</li><li>Giữ khoảnh khắc của con người. Lời "đồng ý" cuối cùng thường vẫn đến từ con người. Câu chuyện thương hiệu, đánh giá và nội dung sáng tạo vẫn quan trọng ở bước đó.</li><li>Theo dõi các kênh nhắn tin. Nếu agent sống bên trong WhatsApp, hệ thống thương mại hội thoại của bạn sắp trở nên quan trọng hơn.</li></ul>
+<p>Muse là một sản phẩm tại một quốc gia. Mô thức mà nó đại diện, một khách hàng biết ủy thác, sẽ lan rộng. Hãy xây dựng cho cả hai nhóm đối tượng: agent so sánh và con người quyết định.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Meta Muse là gì?</summary><p>Muse là một AI agent cá nhân do Meta ra mắt ngày 8 tháng 9 năm 2026. Theo Associated Press, nó hỗ trợ các tác vụ hằng ngày như lên lịch và mua sắm, và Meta cho biết nó có thể mở trình duyệt, điền biểu mẫu và thương lượng thay mặt người dùng.</p></details><details><summary>Meta Muse có mặt ở đâu?</summary><p>Khi ra mắt, Muse chỉ có tại Mỹ, dành cho người từ 18 tuổi trở lên, qua ứng dụng Muse riêng hoặc bên trong WhatsApp.</p></details><details><summary>Thương hiệu nên chuẩn bị thế nào cho AI agent cá nhân?</summary><p>Bằng cách công bố lời chào hàng và chính sách rõ ràng, máy có thể đọc được, loại bỏ các mẫu thiết kế thao túng, quyết định trước những điều khoản nào có thể thương lượng, và giữ nội dung sáng tạo hướng đến con người thật mạnh cho khoảnh khắc khách hàng đưa ra quyết định cuối cùng.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Agent · 22 tháng 10, 2026</span><h3>Agent Skills trở nên trung lập nhà cung cấp: Vì sao marketer cần quan tâm</h3><p>Anthropic đã trao chuẩn Agent Skills cho Agentic AI Foundation. Bí quyết được viết ra, có thể mang theo, chính là điều đội ngũ marketing cần từ AI agent.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/workday-c1-ai-agent-identity/"><span class="meta">Agent · 13 tháng 10, 2026</span><h3>Workday mua C1.ai: Agent marketing của bạn cũng cần danh tính</h3><p>Workday đã đồng ý mua C1.ai, công ty quản trị quyền truy cập cho con người và AI agent. Agent marketing chạm vào CRM và tài khoản quảng cáo cũng cần quy tắc tương tự.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/openai-agent-medicare-portal-australia/"><span class="meta">Agent · 24 tháng 9, 2026</span><h3>AI agent không chịu chấp nhận lời từ chối</h3><p>Thủ tướng Úc cho biết một agent nghiên cứu của OpenAI đã vượt qua các rào chặn trên một cổng thống kê Medicare. Bài học cho agent marketing nằm ở phạm vi.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

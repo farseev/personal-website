@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WPP quý 3/2026: Mô hình agency dưới sức ép của AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/wpp-q3-2026-agentic-agency/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="WPP quý 3/2026: Mô hình agency dưới sức ép của AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency." />
+<meta property="og:url" content="https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Quảng cáo và AI marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WPP quý 3/2026: Mô hình agency dưới sức ép của AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/#article","mainEntityOfPage":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/","url":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/","headline":"WPP quý 3/2026: Mô hình agency dưới sức ép của AI","description":"WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Quảng cáo và AI marketing","about":{"@type":"Thing","name":"WPP công bố bản cập nhật kinh doanh quý 3/2026, nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"WPP Third Quarter Trading Update 2026","url":"https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf","publisher":"WPP plc","datePublished":"2026-10-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/#faq","mainEntity":[{"@type":"Question","name":"WPP hoạt động thế nào trong quý 3/2026?","acceptedAnswer":{"@type":"Answer","text":"WPP báo cáo doanh thu trừ chi phí chuyển giao quý 3 đạt 2.411 triệu £, giảm 2,1% theo cơ sở so sánh tương đương, và doanh thu headline tăng 0,5%. Công ty dự kiến mức giảm theo cơ sở so sánh tương đương ở mức một chữ số thấp đến trung bình trong nửa cuối năm 2026."}},{"@type":"Question","name":"WPP Open là gì?","acceptedAnswer":{"@type":"Answer","text":"WPP mô tả WPP Open là nền tảng marketing dạng agent của mình. Trong bản cập nhật quý 3/2026, CEO Cindy Rose cho biết nền tảng này vận hành các giải pháp media, sáng tạo, sản xuất và doanh nghiệp ứng dụng AI của WPP."}},{"@type":"Question","name":"AI có khiến các agency quảng cáo trở nên lỗi thời không?","acceptedAnswer":{"@type":"Answer","text":"Không hẳn, nhưng AI đang gây áp lực lên các mô hình agency xây dựng trên giờ làm tính phí. Những agency có thể giải thích và dự đoán điều gì hiệu quả, sử dụng dữ liệu và chuyên môn độc quyền, có vị thế tốt hơn những agency chủ yếu sản xuất thêm tài sản."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"WPP quý 3/2026: Mô hình agency dưới sức ép của AI","item":"https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/wpp-q3-2026-agentic-agency/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/wpp-q3-2026-agentic-agency/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/wpp-q3-2026-agentic-agency/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/wpp-q3-2026-agentic-agency/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/wpp-q3-2026-agentic-agency/">한국어</option><option value="th" lang="th" data-href="/th/blog/wpp-q3-2026-agentic-agency/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/wpp-q3-2026-agentic-agency/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/wpp-q3-2026-agentic-agency/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">WPP quý 3/2026: Mô hình agency dưới sức ép của AI</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Quảng cáo và AI marketing</p>
+      <h1 class="h-display">WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h1>
+      <p class="lead">WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: WPP công bố bản cập nhật kinh doanh quý 3/2026, nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open (<time datetime="2026-10-29">29 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Năm 2025, tôi đã đặt câu hỏi trên Forbes liệu AI có khiến các agency trở nên lỗi thời. Một năm rưỡi sau, tập đoàn quảng cáo lớn nhất thế giới đưa ra câu trả lời một phần qua chính các con số của mình: mảng kinh doanh cũ đang thu hẹp, và công ty đang đặt cược tương lai vào các dịch vụ ứng dụng AI. Cả hai vế của câu đó đều quan trọng.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p><a href="https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf" target="_blank" rel="noopener">Bản cập nhật kinh doanh quý 3/2026</a> của WPP, công bố ngày 29 tháng 10, báo cáo doanh thu trừ chi phí chuyển giao (revenue less pass-through costs) đạt 2.411 triệu £ trong quý, giảm 2,0% theo số liệu báo cáo và 2,1% theo cơ sở so sánh tương đương (like-for-like). Tính từ đầu năm, con số này là 7.156 triệu £, giảm 3,9% theo cơ sở so sánh tương đương. Doanh thu headline trong quý tăng 0,5%. WPP dự kiến doanh thu trừ chi phí chuyển giao theo cơ sở so sánh tương đương sẽ giảm ở mức một chữ số thấp đến trung bình trong nửa cuối năm 2026, và biên lợi nhuận hoạt động headline cả năm ở mức 12% đến 13%.</p>
+<p>Về AI, giám đốc điều hành Cindy Rose cho biết "nhu cầu của khách hàng vẫn ổn định đối với các giải pháp media, sáng tạo, sản xuất và doanh nghiệp ứng dụng AI của chúng tôi", vốn được "vận hành bởi nền tảng marketing dạng agent WPP Open của chúng tôi." Bản cập nhật cũng mô tả sản xuất ảo ứng dụng AI tại một trung tâm sản xuất mới ở East London, việc Burson mua lại Limbik, một công ty AI nhận thức đứng sau nền tảng trí tuệ dự đoán Decipher, và kế hoạch dài hạn mở rộng các quy trình dạng agent trên toàn cầu. Bản cập nhật cũng liệt kê việc sử dụng AI và AI tạo sinh là một yếu tố rủi ro.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Trong nhiều năm, kinh tế học của agency được xây dựng trên thời gian của con người. AI tấn công mô hình đó từ hai hướng. Khách hàng có thể tự làm nhiều hơn với công cụ AI, và những việc agency vẫn làm cần ít giờ hơn. Nếu bạn tính phí theo giờ, hiệu quả là một vấn đề doanh thu.</p>
+<p>Câu trả lời của WPP, giống như của các tập đoàn holding khác, là trở thành một nền tảng: một hệ điều hành dạng agent vận hành hoạt động marketing của khách hàng, với con người giám sát và các chuyên gia bổ sung khả năng phán đoán. Điều đó hợp lý về mặt chiến lược. Câu hỏi còn bỏ ngỏ, mà không một quý nào có thể giải đáp, là liệu khách hàng có sẵn lòng trả biên lợi nhuận ở mức nền tảng cho điều đó, hay họ sẽ tự xây dựng hoặc mua trực tiếp những năng lực tương tự.</p>
+<p>Việc Burson mua lại một công ty trí tuệ dự đoán là một chi tiết nhỏ mang tín hiệu lớn. Dự đoán, không chỉ sản xuất, đang trở thành một phần trong lời chào hàng của agency.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Khi tôi viết <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete? The Future Of Advertising</a> cho Forbes, và sau đó thảo luận chủ đề này trong bài nói chuyên gia ngành tại ACM Multimedia 2025, tôi đã so sánh ba cách AI đi vào quảng cáo: thay thế công việc sáng tạo, hỗ trợ nó, và giải thích nó. Quan điểm của tôi là "giải thích" là cách bị đánh giá thấp nhất trong ba cách, và là nơi agency có thể xây dựng giá trị bền vững.</p>
+<p>Nghiên cứu của tôi được xây dựng trên con đường thứ ba đó. Trong <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), chúng tôi dự đoán tỷ lệ nhấp cho các mẫu sáng tạo mới và giải thích các yếu tố tác động bằng một LLM. Trong <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion), chúng tôi áp dụng AI có khả năng giải thích cho truyền thông của đối thủ. Trong <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), chúng tôi dùng AI tạo sinh có khả năng giải thích để đồng kiến tạo chiến lược từ dữ liệu quảng cáo thực. Một agency có thể nói cho khách hàng biết vì sao điều gì đó sẽ hiệu quả, kèm bằng chứng, là đang bán khả năng phán đoán. Một agency chỉ sản xuất nhiều tài sản hơn, nhanh hơn là đang bán giờ làm, và giờ làm chính là thứ AI đang nén lại.</p>
+<p>Còn có rủi ro đồng nhất hóa. Nếu mọi tập đoàn holding vận hành những nền tảng agent tương tự trên những mô hình nền tảng tương tự, công việc cho khách hàng có thể bắt đầu hội tụ. Bài báo SIGIR 2026 của chúng tôi về <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">chống đồng nhất hóa nội dung</a> lập luận rằng agent cần dữ liệu bối cảnh đặc thù để tránh tạo ra đầu ra giống mọi người khác. Với agency, dữ liệu và chuyên môn độc quyền chính là bối cảnh đó.</p>
+<h2>Thương hiệu và agency nên làm gì ngay bây giờ</h2>
+<ul><li>Thương hiệu: đàm phán lại dựa trên kết quả. Nếu AI khiến sản xuất rẻ hơn, định giá dựa trên giờ làm hay sản phẩm bàn giao không còn phản ánh giá trị. Hãy thống nhất về kết quả và về những gì AI của agency thực sự làm.</li><li>Thương hiệu: hỏi về nền tảng. Mô hình nào, dữ liệu nào, ai sở hữu đầu ra và những bài học rút ra, và điều gì xảy ra với chúng nếu bạn rời đi?</li><li>Agency: bán lời giải thích. Xây dựng dịch vụ cho khách hàng biết vì sao công việc hiệu quả, được hỗ trợ bởi đo lường, không chỉ là làm nhiều hơn.</li><li>Agency: bảo vệ tính khác biệt. Cung cấp cho agent của bạn insight độc quyền, hiểu biết văn hóa và khả năng phán đoán sáng tạo để đầu ra không bị hội tụ.</li><li>Cả hai: đầu tư vào những người có thể giám sát AI. Kỹ năng khan hiếm là đánh giá và điều hướng công việc tự động, không phải vận hành công cụ.</li></ul>
+<p>Quý vừa qua của WPP không chứng minh rằng agency đã lỗi thời. Nó cho thấy phiên bản agency xây dựng trên giờ làm tính phí đang chịu áp lực thực sự, và phiên bản xây dựng trên khả năng phán đoán được AI hỗ trợ vẫn đang trong quá trình được chứng minh.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>WPP hoạt động thế nào trong quý 3/2026?</summary><p>WPP báo cáo doanh thu trừ chi phí chuyển giao quý 3 đạt 2.411 triệu £, giảm 2,1% theo cơ sở so sánh tương đương, và doanh thu headline tăng 0,5%. Công ty dự kiến mức giảm theo cơ sở so sánh tương đương ở mức một chữ số thấp đến trung bình trong nửa cuối năm 2026.</p></details><details><summary>WPP Open là gì?</summary><p>WPP mô tả WPP Open là nền tảng marketing dạng agent của mình. Trong bản cập nhật quý 3/2026, CEO Cindy Rose cho biết nền tảng này vận hành các giải pháp media, sáng tạo, sản xuất và doanh nghiệp ứng dụng AI của WPP.</p></details><details><summary>AI có khiến các agency quảng cáo trở nên lỗi thời không?</summary><p>Không hẳn, nhưng AI đang gây áp lực lên các mô hình agency xây dựng trên giờ làm tính phí. Những agency có thể giải thích và dự đoán điều gì hiệu quả, sử dụng dữ liệu và chuyên môn độc quyền, có vị thế tốt hơn những agency chủ yếu sản xuất thêm tài sản.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf" target="_blank" rel="noopener">WPP Third Quarter Trading Update 2026</a> — WPP plc, 29 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Quảng cáo và AI marketing · 21 tháng 10, 2026</span><h3>Meta quý 3/2026: AI đẩy giá quảng cáo, nhà sáng tạo thành một kênh</h3><p>Meta quý 3/2026: doanh thu quảng cáo tăng 26%, giá mỗi quảng cáo tăng 14%, quảng cáo hợp tác vượt mức 15 tỷ USD/năm, và một châu Á – Thái Bình Dương rất khác. Ý nghĩa là gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/meta-advertising-week-2026-ai-ad-tools/"><span class="meta">Quảng cáo và AI marketing · 6 tháng 10, 2026</span><h3>Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích</h3><p>Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Quảng cáo và AI marketing · 30 tháng 9, 2026</span><h3>Amazon Ads Agent: Retail media chuyển sang agent tại unBoxed 2026</h3><p>Tại unBoxed 2026, Amazon hợp nhất các công cụ mua quảng cáo vào Amazon Ads Agent, với đo lường dạng hội thoại và sáng tạo bằng AI. Những gì nên giữ trong tay con người.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer." />
+<meta property="og:url" content="https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mô hình" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing","description":"Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Mô hình","about":{"@type":"Thing","name":"Anthropic phát hành Claude Haiku 5.5, một mô hình nhỏ cho công việc khối lượng lớn, nhạy cảm về chi phí"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"Claude Haiku 5.5 được thiết kế để làm gì?","acceptedAnswer":{"@type":"Answer","text":"Anthropic định vị mô hình cho công việc khối lượng lớn, nhạy cảm về chi phí như tóm tắt, phân loại, truy vấn cơ sở dữ liệu, hỗ trợ khách hàng trực tiếp, sử dụng trình duyệt và các tác vụ subagent, đồng thời khuyến nghị Sonnet 5.5 và Opus 5.5 cho lập trình agent phức tạp."}},{"@type":"Question","name":"Claude Haiku 5.5 có giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Anthropic niêm yết 0,10 US$ cho mỗi triệu token đầu vào và 0,50 US$ cho mỗi triệu token đầu ra với prompt lên đến 100.000 token, và cho biết mô hình rẻ hơn khoảng 75% so với Haiku 4.5 tính trung bình."}},{"@type":"Question","name":"Mô hình ngôn ngữ nhỏ có đủ tốt cho các tác vụ marketing không?","acceptedAnswer":{"@type":"Answer","text":"Với nhiều tác vụ khối lượng lớn, như gắn thẻ, tóm tắt và định tuyến, một mô hình nhỏ được chọn kỹ là đủ và rẻ hơn nhiều. Hãy kiểm thử trên các ví dụ đã gắn nhãn của chính bạn, và giữ các mô hình dự đoán chuyên biệt cho những việc như chấm điểm sáng tạo, dùng LLM để giải thích đầu ra của chúng."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing","item":"https://farseev.com/vi/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/claude-haiku-5-5-small-models-marketing/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-haiku-5-5-small-models-marketing/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-haiku-5-5-small-models-marketing/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-haiku-5-5-small-models-marketing/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-haiku-5-5-small-models-marketing/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/claude-haiku-5-5-small-models-marketing/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-haiku-5-5-small-models-marketing/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Mô hình</p>
+      <h1 class="h-display">Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing</h1>
+      <p class="lead">Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Anthropic phát hành Claude Haiku 5.5, một mô hình nhỏ cho công việc khối lượng lớn, nhạy cảm về chi phí (<time datetime="2026-10-07">7 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Mỗi lần ra mắt mô hình đều bị đo so với mô hình lớn nhất hiện có. Tôi cho rằng đó là lăng kính sai cho phần lớn công việc marketing. Ngày 7 tháng 10, Anthropic phát hành Claude Haiku 5.5, và phần thú vị không phải là nó tiến gần đến mức tiên phong đến đâu. Mà là chi phí để chạy nó một triệu lần.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Anthropic gọi Haiku 5.5 là <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">mô hình nhỏ rẻ nhất, nhanh nhất và có năng lực cao nhất mà công ty từng phát hành</a>. Mô hình hướng tới công việc khối lượng lớn, nhạy cảm về chi phí: tóm tắt, phân loại, truy vấn cơ sở dữ liệu, hỗ trợ khách hàng trực tiếp, sử dụng trình duyệt và làm subagent bên cạnh các mô hình lớn hơn Opus 5.5 và Sonnet 5.5. Đây là mô hình hạng Haiku đầu tiên có thiết lập mức nỗ lực điều chỉnh được, để người dùng cân bằng giữa chi phí và trí thông minh. Anthropic nói rõ rằng Sonnet 5.5 và Opus 5.5 vẫn tốt hơn cho lập trình agent phức tạp.</p>
+<p>Giá cả là tiêu điểm. Với prompt lên đến 100.000 token, Anthropic niêm yết 0,10 US$ cho mỗi triệu token đầu vào và 0,50 US$ cho mỗi triệu token đầu ra, và cho biết Haiku 5.5 rẻ hơn khoảng 75% so với Haiku 4.5 tính trung bình. Trang ra mắt cũng có các báo cáo từ khách hàng; chẳng hạn HubSpot cho biết mô hình đạt 92,8% trên bộ đánh giá CRM của họ. Đó là số liệu của công ty và khách hàng, không phải kiểm thử độc lập.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>AI marketing là một ngành kinh doanh khối lượng. Một chiến dịch có thể liên quan đến hàng nghìn biến thể sáng tạo, hàng chục nghìn bình luận cần phân loại, nguồn cấp sản phẩm với hàng trăm nghìn dòng, và báo cáo hằng ngày trên hàng chục thị trường. Gần như không việc nào trong số đó cần mô hình mạnh nhất hiện có. Chúng cần một mô hình đủ tốt, nhanh, dễ dự đoán và đủ rẻ để chạy trên mọi thứ.</p>
+<p>Khi mô hình nhỏ vừa tốt hơn nhiều vừa rẻ hơn nhiều cùng lúc, kinh tế học của những gì bạn tự động hóa thay đổi. Những tác vụ từng quá đắt để chạy trên từng mục, như gắn thẻ mọi quảng cáo của đối thủ hay tóm tắt mọi đánh giá của khách hàng, trở thành việc thường nhật. Và kiến trúc cũng thay đổi: một mô hình lớn lập kế hoạch và đánh giá, các mô hình nhỏ làm công việc lặp lại bên dưới. Chính mô tả của Anthropic về Haiku như một subagent là đúng mô thức đó.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Tôi đã lập luận điều này từ lâu. Trên Forbes, tôi từng đặt câu hỏi liệu <a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">lớn hơn có tốt hơn</a>, và sau đó so sánh <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">LLM và mạng nơ-ron nhỏ trong marketing</a>. Câu trả lời của tôi không thay đổi: quy mô mô hình ít quan trọng hơn nhiều so với kỹ thuật và mức độ phù hợp với tác vụ.</p>
+<p>Nghiên cứu của chúng tôi luôn kết hợp hai loại mô hình thay vì chọn một. Trong <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023), chúng tôi trình diễn một mô hình đa phương thức chấm điểm các mẫu quảng cáo Meta của nhà quảng cáo, sử dụng văn bản, hình ảnh, nhắm mục tiêu và thiết lập, trước khi ra mắt. Trong <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a> (ACM Transactions on Information Systems, 2025), chúng tôi kết hợp các mô hình dự đoán hiệu quả quảng cáo với LLM, để điểm số sáng tạo trở thành một đề xuất mà marketer có thể hành động.</p>
+<p>Bài học từ công trình đó là các mô hình chuyên biệt, hiệu quả đảm nhận việc đo lường và các mô hình ngôn ngữ lớn đảm nhận việc giải thích. Một LLM nhỏ rẻ hơn, năng lực cao hơn không thay thế bộ dự đoán chuyên biệt. Nó giúp lớp giải thích và điều phối trở nên khả thi về chi phí ở quy mô mà marketing thực sự diễn ra.</p>
+<h2>Tôi sẽ dùng một mô hình như thế này như thế nào</h2>
+<ul><li>Phân loại với độ phủ toàn bộ. Gắn thẻ mọi bài đăng của đối thủ, mọi đánh giá, mọi quảng cáo trong ngành hàng của bạn theo chủ đề, ưu đãi và định dạng, thay vì lấy mẫu.</li><li>Tóm tắt bước đầu. Biến các báo cáo dài, bản ghi và chuỗi bình luận thành các bản tóm lược ngắn để một người, hoặc một mô hình lớn hơn, xem xét.</li><li>Subagent trong một pipeline. Để một mô hình lớn hơn lập kế hoạch phân tích đối thủ và giao các bước trích xuất lặp lại cho mô hình nhỏ.</li><li>Tốc độ khi phục vụ khách hàng. Dùng mô hình nhanh ở nơi độ trễ quan trọng, như chat trực tiếp, và chuyển các trường hợp khó cho một mô hình mạnh hơn hoặc cho con người.</li></ul>
+<h2>Marketer nên kiểm tra gì trước khi chuyển đổi</h2>
+<ul><li>Tự chạy đánh giá. Benchmark của nhà cung cấp không phải tác vụ của bạn. Lấy 200 ví dụ thực tế từ công việc, gắn nhãn, và so sánh các mô hình trên bộ dữ liệu đó.</li><li>Theo dõi chi phí mỗi tác vụ, không phải chi phí mỗi token. Anthropic lưu ý rằng Haiku 5.5 dùng một tokenizer mới và nhiều token hơn một chút cho mỗi tác vụ. Hóa đơn phụ thuộc vào toàn bộ quy trình.</li><li>Dùng thiết lập mức nỗ lực một cách có chủ đích. Mặc định mức nỗ lực thấp cho gắn thẻ đơn giản và chỉ tăng lên ở nơi đánh giá của bạn cho thấy chất lượng được cải thiện.</li><li>Giữ các mô hình chuyên biệt ở nơi chúng tốt hơn. Nếu bạn đã có một mô hình được huấn luyện trên dữ liệu hiệu quả của chính mình, LLM nên giải thích đầu ra của nó, không thay thế nó.</li></ul>
+<p>Các mô hình tiên phong chiếm trọn tiêu đề. Còn mô hình nhỏ là nơi phần lớn công việc, và phần lớn khoản tiết kiệm, sẽ diễn ra.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Claude Haiku 5.5 được thiết kế để làm gì?</summary><p>Anthropic định vị mô hình cho công việc khối lượng lớn, nhạy cảm về chi phí như tóm tắt, phân loại, truy vấn cơ sở dữ liệu, hỗ trợ khách hàng trực tiếp, sử dụng trình duyệt và các tác vụ subagent, đồng thời khuyến nghị Sonnet 5.5 và Opus 5.5 cho lập trình agent phức tạp.</p></details><details><summary>Claude Haiku 5.5 có giá bao nhiêu?</summary><p>Anthropic niêm yết 0,10 US$ cho mỗi triệu token đầu vào và 0,50 US$ cho mỗi triệu token đầu ra với prompt lên đến 100.000 token, và cho biết mô hình rẻ hơn khoảng 75% so với Haiku 4.5 tính trung bình.</p></details><details><summary>Mô hình ngôn ngữ nhỏ có đủ tốt cho các tác vụ marketing không?</summary><p>Với nhiều tác vụ khối lượng lớn, như gắn thẻ, tóm tắt và định tuyến, một mô hình nhỏ được chọn kỹ là đủ và rẻ hơn nhiều. Hãy kiểm thử trên các ví dụ đã gắn nhãn của chính bạn, và giữ các mô hình dự đoán chuyên biệt cho những việc như chấm điểm sáng tạo, dùng LLM để giải thích đầu ra của chúng.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Mô hình · 30 tháng 9, 2026</span><h3>Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?</h3><p>Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Mô hình · 29 tháng 9, 2026</span><h3>Vì sao OpenAI gác lại GPT-6.1 Astra, và vì sao điều đó quan trọng</h3><p>OpenAI đã hủy phát hành GPT-6.1 Astra sau khi kiểm thử phát hiện vấn đề về phạm vi, ủy quyền và cách mô hình báo cáo lại. Những bài kiểm tra tương tự cũng áp dụng cho agent của bạn.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Mô hình · 22 tháng 9, 2026</span><h3>Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI</h3><p>Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

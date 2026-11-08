@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ba kịch bản kinh tế AI và tương lai việc làm marketing | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Ba kịch bản kinh tế AI và tương lai việc làm marketing | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing." />
+<meta property="og:url" content="https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Công việc và kỹ năng" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ba kịch bản kinh tế AI và tương lai việc làm marketing | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/#article","mainEntityOfPage":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/","url":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/","headline":"Ba kịch bản kinh tế AI và tương lai việc làm marketing","description":"Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Công việc và kỹ năng","about":{"@type":"Thing","name":"Anthropic công bố công cụ tương tác khám phá các kịch bản kinh tế cho AI mang tính chuyển đổi"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Scenarios for our Economic Future","url":"https://www.anthropic.com/institute/econ-scenarios","publisher":"Anthropic","datePublished":"2026-09-09"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/#faq","mainEntity":[{"@type":"Question","name":"Ba kịch bản kinh tế về AI của Anthropic là gì?","acceptedAnswer":{"@type":"Answer","text":"Khiêm tốn, khi tác động của AI tương tự internet; đáng kể, khi AI có thể làm một nửa lao động tri thức vào năm 2030 và tăng trưởng ở mức khoảng gấp đôi bình thường; và cực đoan, khi AI vượt trội con người ở hầu hết tác vụ tri thức và tăng trưởng đạt 15% mỗi năm, kèm khả năng thất nghiệp tăng cao."}},{"@type":"Question","name":"Các kịch bản nói gì về lao động tri thức?","acceptedAnswer":{"@type":"Answer","text":"Trong kịch bản đáng kể, lương lao động tri thức gần như đi ngang trong khi các lao động khác được tăng. Trong kịch bản cực đoan, lương lao động tri thức giảm hơn 10% và các nghề tri thức đối mặt với nguy cơ bị thay thế."}},{"@type":"Question","name":"Marketer nên chuẩn bị thế nào trước tác động của AI lên việc làm?","acceptedAnswer":{"@type":"Answer","text":"Chia công việc thành các tác vụ, dịch chuyển thời gian sang phán đoán và trách nhiệm giải trình, học cách đánh giá đầu ra AI dựa trên dữ liệu thực, xây dựng chiều sâu chuyên môn và tập trung vào kết quả thay vì sản phẩm bàn giao."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Ba kịch bản kinh tế AI và tương lai việc làm marketing","item":"https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-economic-scenarios-knowledge-work/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-economic-scenarios-knowledge-work/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/anthropic-economic-scenarios-knowledge-work/">한국어</option><option value="th" lang="th" data-href="/th/blog/anthropic-economic-scenarios-knowledge-work/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/anthropic-economic-scenarios-knowledge-work/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/anthropic-economic-scenarios-knowledge-work/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Ba kịch bản kinh tế AI và tương lai việc làm marketing</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Công việc và kỹ năng</p>
+      <h1 class="h-display">Ba kịch bản kinh tế AI và tương lai việc làm marketing</h1>
+      <p class="lead">Anthropic đã công bố ba kịch bản về tác động của AI lên nền kinh tế Mỹ đến năm 2030, từ khiêm tốn đến cực đoan. Những phát hiện về lao động tri thức có ý nghĩa gì với sự nghiệp marketing.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Anthropic công bố công cụ tương tác khám phá các kịch bản kinh tế cho AI mang tính chuyển đổi (<time datetime="2026-09-09">9 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Hầu hết các dự báo về AI và việc làm đưa ra một con số và rất nhiều sự tự tin. Vào tháng 9, Anthropic đã công bố một thứ hữu ích hơn: ba kịch bản, với các giả định được viết ra rõ ràng. Marketing là lao động tri thức, nên tôi đọc nó như một dự báo về chính lĩnh vực của mình và những người tôi giảng dạy.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Nhóm Kinh tế của Anthropic đã phát hành <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a>, một công cụ khám phá tương tác dựa trên báo cáo kỹ thuật <em>Economic Scenarios for Transformative AI</em> (Korinek et al., 2026). Công cụ mô hình hóa cách AI có thể tác động đến việc làm, tăng trưởng và thất nghiệp tại Mỹ đến năm 2030, coi nền kinh tế như các gói tác vụ mà AI có thể hỗ trợ, tự động hóa hoặc tạo ra.</p>
+<p>Có ba kịch bản. Trong kịch bản khiêm tốn, tác động của AI tương tự internet, với GDP Mỹ đạt 34,1 nghìn tỷ US$ vào năm 2030. Trong kịch bản đáng kể, AI có thể làm một nửa lao động tri thức vào năm 2030 nhưng phần lớn vẫn được thực hiện mà không có AI; tăng trưởng ở mức khoảng gấp đôi bình thường, GDP đạt 36,3 nghìn tỷ US$, và lương của lao động tri thức gần như đi ngang trong khi các lao động khác được tăng. Trong kịch bản cực đoan, AI vượt trội con người ở hầu hết tác vụ tri thức, tăng trưởng đạt 15% mỗi năm, GDP đạt 44,4 nghìn tỷ US$, thất nghiệp có thể tăng vượt mức suy thoái thông thường và lương lao động tri thức giảm hơn 10%.</p>
+<p>Trong mọi kịch bản, tỷ trọng của lao động trong GDP giảm khi tỷ trọng của vốn tăng. Anthropic cũng khảo sát 10.980 người dân. Công ty nêu rằng "thách thức chính không phải là đạt được tăng trưởng kinh tế, mà là đảm bảo lợi ích được chia sẻ rộng rãi", và gọi công cụ này là phiên bản 1.0 mà kết quả thực tế có thể khác biệt đáng kể.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Hãy để ý áp lực rơi vào đâu. Trong kịch bản đáng kể và cực đoan, chính các nghề tri thức đối mặt với nguy cơ bị thay thế, trong khi nhu cầu tăng ở các nghề khác. Marketing nằm gọn trong cột tri thức: nghiên cứu, viết, phân tích, lập kế hoạch, báo cáo.</p>
+<p>Kịch bản đáng kể là kịch bản tôi thấy thực tế nhất để làm cơ sở lập kế hoạch, và chi tiết thú vị nhất của nó là khoảng trống: AI có thể làm một nửa lao động tri thức, nhưng phần lớn vẫn được thực hiện mà không có AI. Khoảng trống đó là nơi sự nghiệp được tạo dựng hoặc đánh mất trong vài năm tới. Câu hỏi cho một marketer không phải là AI có làm được một phần công việc hay không. Mà là liệu bạn có phải người biết áp dụng nó vào những phần quan trọng hay không.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Tôi đã lập luận trong <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">các chuyên mục trên Forbes</a> rằng marketer cần chuyển mình từ người sáng tạo nội dung thủ công thành người tuyển chọn và điều phối các công cụ AI tự hành, và tôi đã đặt một câu hỏi liên quan trong <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete?</a> Các kịch bản khiến lập luận đó sắc bén hơn. Nếu thứ bị tự động hóa là tác vụ, thì một công việc chỉ gồm các tác vụ có thể tự động hóa là mong manh, còn một công việc xây dựng quanh khả năng phán đoán, bối cảnh và trách nhiệm giải trình thì bền vững.</p>
+<p>Nghiên cứu của tôi gợi ý giá trị bền vững nằm ở đâu. Trong <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), chúng tôi định vị AI như người đồng sáng tạo chiến lược marketing, kết hợp chấm điểm hiệu quả sáng tạo với LLM, với con người cầm lái. Trong <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), đầu ra là một đề xuất mà marketer vẫn phải tự quyết định có hành động hay không. Các hệ thống này loại bỏ rất nhiều công việc phân tích. Chúng làm tăng giá trị của người đặt vấn đề, cân nhắc đánh đổi và chịu trách nhiệm về quyết định.</p>
+<p>Bài báo SIGIR 2026 của chúng tôi về <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">chống đồng nhất hóa nội dung</a> bổ sung một điểm ở cấp độ thị trường. Khi mọi người dùng cùng công cụ cho cùng tác vụ, đầu ra hội tụ. Sự khác biệt trở nên khan hiếm, và thứ khan hiếm thì có giá cao. Những marketer có thể khiến công việc có AI hỗ trợ nghe và hoạt động không giống ai sẽ được săn đón trong mọi kịch bản.</p>
+<h2>Marketer nên làm gì ngay bây giờ</h2>
+<ul><li>Chia công việc của chính bạn thành các tác vụ. Đánh dấu tác vụ nào AI đã làm tốt, tác vụ nào AI hỗ trợ, và tác vụ nào vẫn cần bạn. Chủ động dịch chuyển thời gian sang nhóm cuối cùng.</li><li>Học cách đánh giá, không chỉ viết prompt. Khả năng đánh giá đầu ra của AI dựa trên dữ liệu thực là kỹ năng được các kịch bản tưởng thưởng.</li><li>Chịu trách nhiệm về kết quả, không chỉ sản phẩm đầu ra. Vai trò được định nghĩa bằng sản phẩm bàn giao dễ bị tự động hóa hơn vai trò được định nghĩa bằng kết quả.</li><li>Xây dựng chiều sâu chuyên môn. Hiểu biết về một thị trường, ngành hàng hay khách hàng là thứ các mô hình tổng quát khó sao chép.</li><li>Thúc đẩy chia sẻ lợi ích. Nếu AI nâng cao năng suất của đội ngũ, hãy đề xuất đào tạo, lộ trình nghề nghiệp và vai trò mới, không chỉ cắt giảm chi phí.</li></ul>
+<p>Kịch bản không phải là dự đoán. Giá trị của chúng là khiến các giả định có thể đem ra thảo luận. Với marketing, giả định đáng thảo luận rất đơn giản: các tác vụ sẽ thay đổi nhanh hơn chức danh. Hãy lên kế hoạch cho điều đó.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Ba kịch bản kinh tế về AI của Anthropic là gì?</summary><p>Khiêm tốn, khi tác động của AI tương tự internet; đáng kể, khi AI có thể làm một nửa lao động tri thức vào năm 2030 và tăng trưởng ở mức khoảng gấp đôi bình thường; và cực đoan, khi AI vượt trội con người ở hầu hết tác vụ tri thức và tăng trưởng đạt 15% mỗi năm, kèm khả năng thất nghiệp tăng cao.</p></details><details><summary>Các kịch bản nói gì về lao động tri thức?</summary><p>Trong kịch bản đáng kể, lương lao động tri thức gần như đi ngang trong khi các lao động khác được tăng. Trong kịch bản cực đoan, lương lao động tri thức giảm hơn 10% và các nghề tri thức đối mặt với nguy cơ bị thay thế.</p></details><details><summary>Marketer nên chuẩn bị thế nào trước tác động của AI lên việc làm?</summary><p>Chia công việc thành các tác vụ, dịch chuyển thời gian sang phán đoán và trách nhiệm giải trình, học cách đánh giá đầu ra AI dựa trên dữ liệu thực, xây dựng chiều sâu chuyên môn và tập trung vào kết quả thay vì sản phẩm bàn giao.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a> — Anthropic, 9 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">Công việc và kỹ năng · 2 tháng 10, 2026</span><h3>Khoảng trống triển khai AI là bài toán con người</h3><p>Anthropic cam kết 100 triệu USD để đào tạo 10.000 Frontier Deployed Engineer đến năm 2027 cùng các công ty tư vấn và ngân hàng. Vì sao marketing cần phiên bản riêng của vai trò này.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Quảng cáo và AI marketing · 29 tháng 10, 2026</span><h3>WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h3><p>WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/malaysia-ai-governance-bill/"><span class="meta">Châu Á và Singapore · 29 tháng 10, 2026</span><h3>AI Governance Bill của Malaysia: Trách nhiệm theo vai trò</h3><p>Dự thảo AI Governance Bill của Malaysia, dự kiến hoàn tất trước đầu năm 2027, đặt nghĩa vụ lên bên phát triển, cung cấp hoặc sử dụng AI. Quy định theo vai trò có ý nghĩa gì với marketer.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

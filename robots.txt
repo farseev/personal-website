@@ -63,5 +63,6 @@ Sitemap: https://farseev.com/sitemap-zh-hant.xml
 Sitemap: https://farseev.com/sitemap-ja.xml
 Sitemap: https://farseev.com/sitemap-ko.xml
 Sitemap: https://farseev.com/sitemap-th.xml
+Sitemap: https://farseev.com/sitemap-vi.xml
 Sitemap: https://farseev.com/sitemap-hi.xml
 Sitemap: https://farseev.com/sitemap-ru.xml

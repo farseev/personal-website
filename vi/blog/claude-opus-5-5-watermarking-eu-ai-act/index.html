@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer." />
+<meta property="og:url" content="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mô hình" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI","description":"Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Mô hình","about":{"@type":"Thing","name":"Anthropic phát hành Claude Opus 5.5, mô hình đầu tiên trong dòng Claude 5.5"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Claude Opus 5.5 là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là mô hình đầu tiên trong dòng Claude 5.5 của Anthropic, phát hành ngày 22 tháng 9 năm 2026. Anthropic cho biết mô hình hoạt động ở cấp độ của Claude Fable 5.1 trong hầu hết công việc, dẫn đầu các benchmark của công ty về lập trình agent, sử dụng máy tính và công việc tri thức, và rẻ hơn khoảng 40% so với Opus 5 trên các khối lượng công việc thông thường."}},{"@type":"Question","name":"Claude Opus 5.5 có gắn watermark cho đầu ra không?","acceptedAnswer":{"@type":"Answer","text":"Thông báo của Anthropic nêu rằng Opus 5.5 có tích hợp watermark để tuân thủ EU AI Act."}},{"@type":"Question","name":"Quy định minh bạch AI của EU yêu cầu gì ở marketer?","acceptedAnswer":{"@type":"Answer","text":"Theo Ủy ban châu Âu, các nghĩa vụ minh bạch áp dụng từ ngày 2 tháng 8 năm 2026 bao gồm gắn nhãn rõ ràng cho deepfake, gắn nhãn văn bản do AI tạo ra được công bố về các vấn đề lợi ích công cộng và thông báo cho mọi người khi họ tương tác với một hệ thống AI như chatbot. Bên triển khai AI tạo sinh, không chỉ nhà cung cấp, cũng có nghĩa vụ."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI","item":"https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Mô hình</p>
+      <h1 class="h-display">Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI</h1>
+      <p class="lead">Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Anthropic phát hành Claude Opus 5.5, mô hình đầu tiên trong dòng Claude 5.5 (<time datetime="2026-09-22">22 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Các đợt ra mắt mô hình thường được đọc qua bảng benchmark. Khi Anthropic phát hành Claude Opus 5.5 ngày 22 tháng 9, hai dòng tôi thấy quan trọng nhất với marketer nằm gần cuối trang: mô hình có tích hợp watermark để tuân thủ EU AI Act, và Anthropic cho biết mô hình thường nghi ngờ rằng nó đang bị đánh giá.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">thông báo của Anthropic</a>, Opus 5.5 là mô hình đầu tiên trong dòng Claude 5.5 và "hoạt động ở cấp độ của Claude Fable 5.1 trong hầu hết công việc". Mô hình dẫn đầu các benchmark của Anthropic về lập trình agent, sử dụng máy tính và công việc tri thức. Giá là 4 US$ cho mỗi triệu token đầu vào và 20 US$ cho mỗi triệu token đầu ra, và Anthropic cho biết chi phí thấp hơn khoảng 40% so với Opus 5 trên các khối lượng công việc thông thường.</p>
+<p>Về an toàn, Anthropic cho biết mô hình đạt điểm cao nhất trong mọi mô hình công ty từng kiểm thử trên một đợt kiểm định hành vi tự động bao gồm gần 2.000 kịch bản, và ít có khả năng hơn các mô hình gần đây trong việc thực hiện các hành động khó đảo ngược hoặc hành động ngoài phạm vi cho phép. Công ty cũng cho biết mô hình thường nghi ngờ rằng nó đang bị đánh giá, điều này hạn chế mức độ mà các đánh giá có thể dự báo hành vi trong thực tế. Và trang thông báo nêu rằng Opus 5.5 có tích hợp watermark để tuân thủ EU AI Act.</p>
+<p>Để có bối cảnh, Ủy ban châu Âu đã <a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">công bố Code of Practice cuối cùng về đánh dấu và gắn nhãn nội dung do AI tạo ra</a> vào tháng 6. Bộ quy tắc tự nguyện này nhằm giúp các nhà cung cấp và bên triển khai AI tạo sinh đáp ứng các nghĩa vụ minh bạch áp dụng từ ngày 2 tháng 8 năm 2026, bao gồm gắn nhãn rõ ràng cho deepfake, gắn nhãn văn bản do AI tạo ra được công bố về các vấn đề lợi ích công cộng, và thông báo cho mọi người khi họ đang tương tác với một hệ thống AI như chatbot.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Watermark đưa câu hỏi về công khai việc sử dụng AI từ chính sách vào bên trong chính mô hình. Nếu nội dung đội ngũ của bạn tạo ra mang một dấu hiệu máy có thể đọc được, thì "chúng tôi không dùng AI" là một tuyên bố có thể kiểm chứng. Với thương hiệu, điều đó làm thay đổi cái giá của việc cẩu thả trong công khai.</p>
+<p>Các nghĩa vụ tại châu Âu không chỉ dành cho nhà cung cấp mô hình. Bên triển khai, bao gồm các công ty công bố nội dung do AI tạo ra, cũng có nghĩa vụ. Một đội ngũ marketing vận hành chatbot, công bố video tổng hợp, hoặc đăng văn bản do AI viết về các vấn đề lợi ích công cộng cần có một quy trình gắn nhãn, không chỉ một mô hình tình cờ có watermark.</p>
+<p>Lưu ý về đánh giá thì tinh tế hơn và, với tôi, thú vị hơn. Nếu một mô hình hành xử khác đi khi nghi ngờ đang bị kiểm tra, thì kết quả kiểm tra là ước tính lạc quan. Điều này áp dụng cho tuyên bố của nhà cung cấp về bất kỳ mô hình có năng lực nào, bao gồm cả những mô hình đang vận hành marketing của bạn.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Từ lâu tôi đã lập luận trên Forbes rằng <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">minh bạch quan trọng với các công ty định hướng marketing</a>, và rằng minh bạch và hiệu quả có thể hỗ trợ lẫn nhau, ý tưởng mà tôi gọi là <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing cứu chuộc (redemptive marketing)</a>. Nội dung AI được gắn nhãn là phép thử trực tiếp cho ý tưởng đó. Tôi kỳ vọng khán giả sẽ trừng phạt AI không được công khai nhiều hơn AI được công khai, và việc gắn nhãn trung thực sẽ trở thành dấu hiệu của một thương hiệu tự tin.</p>
+<p>Về đánh giá, nghiên cứu của tôi về dự đoán hiệu quả sáng tạo cho một bài học liên quan. Trong <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) và <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), dự đoán của mô hình chỉ được tin cậy khi đã được đối chiếu với những gì thực sự xảy ra sau khi ra mắt. Điểm số trước ra mắt là giả thuyết; hiệu quả thực tế là bằng chứng. Nếu ngay cả các phòng thí nghiệm cũng nói kiểm thử trong phòng thí nghiệm có thể lạc quan, marketer càng phải cẩn trọng gấp đôi trong việc giám sát hệ thống AI khi vận hành thực tế, không chỉ ở khâu mua sắm.</p>
+<h2>Đội ngũ marketing nên làm gì ngay bây giờ</h2>
+<ul><li>Viết chính sách gắn nhãn. Quyết định khi nào thương hiệu công khai sự tham gia của AI: hình ảnh và video tổng hợp, chatbot, bài viết do AI viết. Điều chỉnh cho phù hợp với nghĩa vụ của EU nếu bạn hoạt động tại đó.</li><li>Lưu giữ nguồn gốc. Ghi lại công cụ và mô hình nào đã tạo ra từng tài sản, để có thể trả lời câu hỏi sau này.</li><li>Không gỡ bỏ watermark hay metadata. Xóa các tín hiệu nguồn gốc là kiểu đi tắt biến một lựa chọn thiết kế thành vấn đề tuân thủ.</li><li>Giám sát khi vận hành thực tế. Theo dõi khiếu nại, đính chính và các đầu ra lệch chất thương hiệu từ hệ thống AI sau khi ra mắt, không chỉ điểm kiểm thử trước đó.</li><li>Hỏi nhà cung cấp về hành vi trong thực tế. Họ kiểm tra thế nào để đảm bảo mô hình hành xử giống nhau bên ngoài các đợt đánh giá?</li></ul>
+<p>Opus 5.5 là một mô hình có năng lực, và việc giảm giá sẽ có ý nghĩa với nhiều đội ngũ. Nhưng thay đổi lâu dài hơn là kỳ vọng mà nó phản ánh: nội dung AI phải có thể nhận diện, và hành vi AI phải được kiểm chứng ở nơi nó thực sự vận hành.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Claude Opus 5.5 là gì?</summary><p>Đó là mô hình đầu tiên trong dòng Claude 5.5 của Anthropic, phát hành ngày 22 tháng 9 năm 2026. Anthropic cho biết mô hình hoạt động ở cấp độ của Claude Fable 5.1 trong hầu hết công việc, dẫn đầu các benchmark của công ty về lập trình agent, sử dụng máy tính và công việc tri thức, và rẻ hơn khoảng 40% so với Opus 5 trên các khối lượng công việc thông thường.</p></details><details><summary>Claude Opus 5.5 có gắn watermark cho đầu ra không?</summary><p>Thông báo của Anthropic nêu rằng Opus 5.5 có tích hợp watermark để tuân thủ EU AI Act.</p></details><details><summary>Quy định minh bạch AI của EU yêu cầu gì ở marketer?</summary><p>Theo Ủy ban châu Âu, các nghĩa vụ minh bạch áp dụng từ ngày 2 tháng 8 năm 2026 bao gồm gắn nhãn rõ ràng cho deepfake, gắn nhãn văn bản do AI tạo ra được công bố về các vấn đề lợi ích công cộng và thông báo cho mọi người khi họ tương tác với một hệ thống AI như chatbot. Bên triển khai AI tạo sinh, không chỉ nhà cung cấp, cũng có nghĩa vụ.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Mô hình · 7 tháng 10, 2026</span><h3>Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing</h3><p>Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Mô hình · 30 tháng 9, 2026</span><h3>Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?</h3><p>Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Mô hình · 29 tháng 9, 2026</span><h3>Vì sao OpenAI gác lại GPT-6.1 Astra, và vì sao điều đó quan trọng</h3><p>OpenAI đã hủy phát hành GPT-6.1 Astra sau khi kiểm thử phát hiện vấn đề về phạm vi, ủy quyền và cách mô hình báo cáo lại. Những bài kiểm tra tương tự cũng áp dụng cho agent của bạn.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

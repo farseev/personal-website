@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì." />
+<meta property="og:url" content="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mô hình" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?","description":"Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Mô hình","about":{"@type":"Thing","name":"Google DeepMind giới thiệu Gemini 4 Argon, mô hình tiên phong cho các tác vụ dài, nhiều bước"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Gemini 4 Argon là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là mô hình tiên phong của Google DeepMind được giới thiệu ngày 30 tháng 9 năm 2026 cho lập trình thực tế, công việc tri thức doanh nghiệp và phòng thủ an ninh mạng, với giới hạn đầu ra 1 triệu token, tăng từ 64.000."}},{"@type":"Question","name":"Ai có thể dùng Gemini 4 Argon trước tiên?","acceptedAnswer":{"@type":"Answer","text":"Google cho biết mô hình được triển khai trước tiên cho các chuyên gia phòng thủ an ninh mạng đáng tin cậy thông qua Fairwind Program, với kế hoạch phát hành rộng rãi hơn cho nhà phát triển, doanh nghiệp và người tiêu dùng, bắt đầu từ khách hàng API trả phí và người đăng ký Google AI Ultra."}},{"@type":"Question","name":"Gemini 4 Argon có giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Google niêm yết giá ưu đãi ban đầu 2 US$ cho mỗi triệu token đầu vào và 10 US$ cho mỗi triệu token đầu ra, tăng lên 4 US$ và 20 US$ sau giai đoạn ưu đãi, với token đầu vào được lưu bộ nhớ đệm giảm 95%."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?","item":"https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="th" lang="th" data-href="/th/blog/gemini-4-argon-long-horizon-ai/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/gemini-4-argon-long-horizon-ai/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/gemini-4-argon-long-horizon-ai/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Mô hình</p>
+      <h1 class="h-display">Gemini 4 Argon: Một triệu token đầu ra, rồi sao nữa?</h1>
+      <p class="lead">Gemini 4 Argon của Google DeepMind mang đến giới hạn đầu ra 1M token và lộ trình triển khai ưu tiên an ninh mạng. AI tầm xa thay đổi gì trong công việc marketing, và không thay đổi gì.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Google DeepMind giới thiệu Gemini 4 Argon, mô hình tiên phong cho các tác vụ dài, nhiều bước (<time datetime="2026-09-30">30 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Cửa sổ ngữ cảnh từng là cuộc đua chính. Gemini 4 Argon chuyển sự chú ý sang đầu kia của mô hình: nó có thể tạo ra bao nhiêu trong một lần. Ngày 30 tháng 9, Google DeepMind giới thiệu Argon với giới hạn đầu ra một triệu token, tăng từ 64.000. Đó là một câu trả lời dài bằng cả cuốn sách. Câu hỏi thú vị hơn cho marketer là loại công việc nào cần đến điều đó.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Trong <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">thông báo của Google</a>, Koray Kavukcuoglu mô tả Argon là mô hình tiên phong của Google "cho lập trình thực tế, công việc tri thức doanh nghiệp và phòng thủ an ninh mạng". Giới hạn token đầu ra mở rộng lên 1M, và mô hình được thiết kế cho các tác vụ dài, nhiều bước trong kỹ thuật phần mềm, công việc pháp lý và tài chính và an ninh mạng, với khả năng hiểu hình ảnh mạnh như phân tích biểu đồ và hiểu video dài.</p>
+<p>Lộ trình triển khai khá bất thường. Argon được cấp trước tiên cho một nhóm chuyên gia phòng thủ an ninh mạng đáng tin cậy thông qua Fairwind Program của Google, với kế hoạch mở rộng quyền truy cập cho nhà phát triển, doanh nghiệp và người tiêu dùng, bắt đầu từ khách hàng API trả phí và người đăng ký Google AI Ultra. Giá ưu đãi ban đầu là 2 US$ cho mỗi triệu token đầu vào và 10 US$ cho mỗi triệu token đầu ra, tăng lên 4 US$ và 20 US$ sau giai đoạn ưu đãi, với đầu vào được lưu bộ nhớ đệm giảm 95%.</p>
+<p>Google liệt kê các kết quả benchmark, bao gồm 77,9% trên DeepSWE v1.1 và 91,7% trên benchmark video dài LVBench, và mô tả các ứng dụng nội bộ như di chuyển mã nguồn quy mô lớn. Công ty cũng mô tả các biện pháp an toàn, bao gồm giám sát lạm dụng và lệch hướng (misalignment) và khả năng chống chịu trước prompt injection gián tiếp. Đây là kết quả do chính Google công bố.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Một triệu token đầu ra không phải để viết các bài blog dài hơn. Đầu ra dài quan trọng khi công việc là tạo ra một sản phẩm hoàn chỉnh trong một lượt nhất quán: một đợt di chuyển toàn bộ codebase, một bộ hợp đồng, một tập dữ liệu có cấu trúc lớn. Trong marketing, những thứ tương đương gần nhất là viết lại toàn bộ nguồn cấp sản phẩm, bản địa hóa trọn vẹn một trang web, hay một thư viện chiến dịch với hàng trăm biến thể được phối hợp.</p>
+<p>Với tôi, khả năng hiểu video dài mới là năng lực hữu ích ngay lập tức hơn. Video thống trị các nền tảng mạng xã hội, và hầu hết thương hiệu vẫn phân tích video bằng cách xem mẫu và ghi chép. Một mô hình có thể đọc video dài một cách đáng tin cậy, ở quy mô lớn, mở ra khả năng phân tích đối thủ và ngành hàng mà trước đây không thể làm một cách thấu đáo.</p>
+<p>Và lộ trình ưu tiên an ninh mạng là một tín hiệu về nơi các phòng thí nghiệm tiên phong cho rằng rủi ro nằm ở đó. Khi một phòng thí nghiệm cấp quyền truy cập cho bên phòng thủ trước mọi người khác, họ đang nói với bạn rằng mô hình đủ năng lực để có ý nghĩa với cả kẻ tấn công.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Phần lớn nghiên cứu của tôi xoay quanh đa phương tiện xã hội, không chỉ văn bản. Từ sớm, chúng tôi đã xây dựng <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> (ACM Multimedia 2016), một nền tảng dữ liệu lớn để phân tích đa phương tiện xã hội trên nhiều mạng. Gần đây hơn, trong <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> (WWW 2025 Companion), chúng tôi tập trung giải thích đối thủ truyền thông điều gì và vì sao nó hiệu quả.</p>
+<p>Bài học từ công trình đó là quy mô phân tích chỉ là một nửa vấn đề. Một mô hình có thể xem một nghìn video của đối thủ vẫn phải trả lời những câu hỏi mà nhà chiến lược quan tâm: thông điệp nào lặp lại, thông điệp nào hiệu quả, chúng nhắm đến đối tượng nào và khoảng trống nào còn bỏ ngỏ. Các mô hình ngữ cảnh dài và đầu ra dài khiến việc đọc và viết rẻ hơn. Việc đặt vấn đề và kiểm chứng vẫn là đóng góp của con người, được hỗ trợ bởi dữ liệu hiệu quả.</p>
+<p>Tôi muốn thêm một lời cảnh báo. Đầu ra rất dài thì khó kiểm tra. Một tài liệu được tạo ra dài 200 trang có thể đúng 98% mà vẫn chứa đúng một tuyên bố khiến bạn gặp rắc rối. Đầu ra càng dài, bạn càng cần cấu trúc, lấy mẫu và kiểm tra tự động.</p>
+<h2>Tôi sẽ dùng một mô hình tầm xa trong marketing như thế nào</h2>
+<ul><li>Kiểm định video trong ngành hàng. Yêu cầu các phát hiện có cấu trúc trên toàn bộ video của đối thủ: điểm móc (hook), tuyên bố, định dạng, lời kêu gọi hành động. Sau đó kiểm chứng thủ công một mẫu.</li><li>Thư viện tài sản được phối hợp. Tạo toàn bộ biến thể cho một chiến dịch trong một lượt để giọng điệu và tuyên bố nhất quán, và xem xét chúng theo một danh sách kiểm tra.</li><li>Bản nháp bản địa hóa toàn bộ trang web. Tạo bản nháp hoàn chỉnh cho thị trường mới, sau đó để người bản ngữ kiểm tra các trang có lưu lượng cao trước.</li><li>Tài liệu dài kèm chỉ mục. Yêu cầu mô hình tạo bảng các tuyên bố kèm nguồn, để con người có thể nhanh chóng kiểm chứng những phần rủi ro.</li></ul>
+<p>Con số tiêu điểm của Argon rất ấn tượng. Giá trị cho marketer sẽ đến từ việc kết hợp năng lực đó với kỷ luật kiểm tra những gì nó tạo ra.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Gemini 4 Argon là gì?</summary><p>Đó là mô hình tiên phong của Google DeepMind được giới thiệu ngày 30 tháng 9 năm 2026 cho lập trình thực tế, công việc tri thức doanh nghiệp và phòng thủ an ninh mạng, với giới hạn đầu ra 1 triệu token, tăng từ 64.000.</p></details><details><summary>Ai có thể dùng Gemini 4 Argon trước tiên?</summary><p>Google cho biết mô hình được triển khai trước tiên cho các chuyên gia phòng thủ an ninh mạng đáng tin cậy thông qua Fairwind Program, với kế hoạch phát hành rộng rãi hơn cho nhà phát triển, doanh nghiệp và người tiêu dùng, bắt đầu từ khách hàng API trả phí và người đăng ký Google AI Ultra.</p></details><details><summary>Gemini 4 Argon có giá bao nhiêu?</summary><p>Google niêm yết giá ưu đãi ban đầu 2 US$ cho mỗi triệu token đầu vào và 10 US$ cho mỗi triệu token đầu ra, tăng lên 4 US$ và 20 US$ sau giai đoạn ưu đãi, với token đầu vào được lưu bộ nhớ đệm giảm 95%.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Mô hình · 7 tháng 10, 2026</span><h3>Claude Haiku 5.5 và lý lẽ cho mô hình nhỏ trong marketing</h3><p>Claude Haiku 5.5 của Anthropic được xây dựng cho công việc rẻ, nhanh, khối lượng lớn. Vì sao mô hình nhỏ nhất trong một dòng thường là mô hình quan trọng nhất với marketer.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Mô hình · 29 tháng 9, 2026</span><h3>Vì sao OpenAI gác lại GPT-6.1 Astra, và vì sao điều đó quan trọng</h3><p>OpenAI đã hủy phát hành GPT-6.1 Astra sau khi kiểm thử phát hiện vấn đề về phạm vi, ủy quyền và cách mô hình báo cáo lại. Những bài kiểm tra tương tự cũng áp dụng cho agent của bạn.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Mô hình · 22 tháng 9, 2026</span><h3>Claude Opus 5.5: Watermark, kiểm định và nhãn nội dung AI</h3><p>Claude Opus 5.5 của Anthropic ra mắt kèm watermark để tuân thủ EU AI Act và một ghi chú rằng mô hình thường nghi ngờ mình đang bị kiểm tra. Cả hai đều quan trọng với marketer.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

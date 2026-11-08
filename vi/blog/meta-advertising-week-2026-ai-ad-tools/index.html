@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích | Prof. Aleks Farseev" />
+<meta property="og:description" content="Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì." />
+<meta property="og:url" content="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Quảng cáo và AI marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích","description":"Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Quảng cáo và AI marketing","about":{"@type":"Thing","name":"Meta công bố các công cụ quảng cáo AI mới tại Advertising Week New York 2026"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Meta đã công bố những công cụ quảng cáo AI nào tại Advertising Week 2026?","acceptedAnswer":{"@type":"Answer","text":"Theo Relevant Audience và TechJuice, Meta đã công bố video sáng tạo Advantage+ từ hình ảnh tĩnh ở dạng phát hành chính thức, mở rộng Ads Creative Studio, một trợ lý có bộ nhớ cùng thử nghiệm các hành động dạng agent, khám phá đối tượng bằng ngôn ngữ tự nhiên trong Detailed Targeting, một Ads MCP server mở rộng và thử nghiệm thanh toán ngay trong khung chat."}},{"@type":"Question","name":"Ads MCP server của Meta là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là một giao diện dựa trên Model Context Protocol cho phép công cụ AI bên thứ ba kết nối với hệ thống quảng cáo của Meta cho các tác vụ như tải lên mẫu sáng tạo, xem trước, báo cáo và soạn thảo chiến dịch. Relevant Audience liệt kê mười đối tác, bao gồm Databricks, Perplexity và Snowflake."}},{"@type":"Question","name":"Nhà quảng cáo có nên để trợ lý AI thay đổi ngân sách và nhắm mục tiêu không?","acceptedAnswer":{"@type":"Answer","text":"Chỉ khi có quy tắc. Dùng tính năng xem trước và phê duyệt, xác định những thay đổi nào có thể diễn ra tự động, và kiểm tra kết quả bằng đo lường độc lập như thử nghiệm đối chứng thay vì chỉ dựa vào chuyển đổi do nền tảng báo cáo."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích","item":"https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-advertising-week-2026-ai-ad-tools/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/meta-advertising-week-2026-ai-ad-tools/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-advertising-week-2026-ai-ad-tools/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Quảng cáo và AI marketing</p>
+      <h1 class="h-display">Công cụ quảng cáo AI mới của Meta: Tự động hóa vẫn cần giải thích</h1>
+      <p class="lead">Tại Advertising Week New York, Meta mở rộng video AI, trợ lý quảng cáo, tệp đối tượng bằng ngôn ngữ tự nhiên và một Ads MCP server. Marketer vẫn nên tự nắm giữ những gì.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Meta công bố các công cụ quảng cáo AI mới tại Advertising Week New York 2026 (<time datetime="2026-10-06">6 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Mỗi năm, các nền tảng lớn lại tiến thêm một bước tới việc vận hành toàn bộ chiến dịch thay bạn. Tại Advertising Week New York ngày 6 tháng 10, Meta tiến nhiều bước cùng lúc: một trợ lý quảng cáo có bộ nhớ, video được tạo từ hình ảnh tĩnh, khám phá đối tượng bằng ngôn ngữ tự nhiên và một server mở rộng cho phép công cụ AI bên ngoài vận hành hệ thống quảng cáo của họ. Những công cụ hữu ích. Nhưng tự động hóa không kèm giải thích là rủi ro mà bạn gánh, không phải Meta gánh thay bạn.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Tôi không mở được trang thông báo của chính Meta, nên tôi dựa vào hai bài phân tích chi tiết. Theo <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">bài phân tích của Relevant Audience</a> và <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">bài tường thuật của TechJuice</a>, Meta đã công bố:</p>
+<ul><li>Video sáng tạo Advantage+ từ hình ảnh tĩnh, nay đã phát hành chính thức, và video sản phẩm từ catalog trong giai đoạn beta cho các nhà quảng cáo đủ điều kiện.</li><li>Ads Creative Studio, không gian làm việc sáng tạo trước đây chỉ dành cho một số đối tác được chọn, bắt đầu được mở rộng cho nhiều nhà quảng cáo hơn.</li><li>Một trợ lý AI cho doanh nghiệp có bộ nhớ xuyên suốt các cuộc hội thoại, với các thử nghiệm nhập tài liệu chiến lược và hướng dẫn thương hiệu, báo cáo và cảnh báo theo lịch, cùng các hành động dạng agent như thiết lập chiến dịch và thay đổi ngân sách có xem trước và phê duyệt.</li><li>Một công cụ chiến lược vòng đời khách hàng, nay dành cho mọi nhà quảng cáo, cùng tính năng khám phá đối tượng ứng dụng AI trong Detailed Targeting, nơi nhà quảng cáo mô tả khách hàng lý tưởng bằng ngôn ngữ tự nhiên. Relevant Audience cho biết thời điểm Meta đưa ra cho tính năng này là "trước cuối năm".</li><li>Một Ads MCP server mở rộng, với mười đối tác được nêu tên gồm Databricks, Perplexity, Snowflake và Triple Whale, để các công cụ AI bên thứ ba có thể làm việc với hệ thống quảng cáo của Meta.</li><li>Các tính năng thương mại, bao gồm thử nghiệm thanh toán trực tiếp qua Business Agent của Meta trên Messenger với Shopify, và thanh toán trực tiếp trong Meta AI với các đối tác như Adyen, PayPal, Shopify và Stripe.</li></ul>
+<p>Meta cũng tuyên bố rằng các nhà quảng cáo áp dụng đề xuất của trợ lý "thường" có thêm 5% chuyển đổi với cùng chi phí mỗi chuyển đổi, và hơn 60% thời gian trên Facebook và Instagram được dành cho video. Relevant Audience lưu ý rằng Meta không công bố phương pháp tính cho các số liệu này.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Hai trong số các đợt ra mắt này thay đổi ai là người tư duy.</p>
+<p>Khám phá đối tượng bằng ngôn ngữ tự nhiên có nghĩa là nền tảng chuyển mô tả của bạn về khách hàng thành thiết lập nhắm mục tiêu. Đó là một quyết định lập hồ sơ. Việc trợ lý thay đổi ngân sách và nhắm mục tiêu có nghĩa là nền tảng cũng quyết định làm gì với kết quả. Và MCP server có nghĩa là AI bạn dùng bên ngoài Meta giờ có thể hành động bên trong Meta.</p>
+<p>Mỗi bước đều tiết kiệm thời gian. Gộp lại, chúng tập trung các quyết định vào bên trong những hệ thống được tối ưu hóa cho mục tiêu của nền tảng và được đo lường bằng dữ liệu của chính nền tảng. Khi cùng một công ty bán quảng cáo, chọn đối tượng, tạo mẫu sáng tạo và báo cáo kết quả, một góc nhìn độc lập càng trở nên giá trị hơn, chứ không kém đi.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Mô tả đối tượng bằng lời và nhận lại một phân khúc mục tiêu là vấn đề tôi đã nghiên cứu từ lâu. Công trình của chúng tôi về <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">lập hồ sơ tính cách người dùng đa góc nhìn trên Twitter, Facebook và PersonalityCafe</a> (Frontiers in Big Data, 2022) cho thấy những gì bạn suy luận về con người phụ thuộc rất nhiều vào tín hiệu bạn sử dụng. Một mô tả bằng ngôn ngữ tự nhiên là một giả thuyết về khách hàng. Nó cần được kiểm chứng, không chỉ được thực thi.</p>
+<p>Về sáng tạo, đội ngũ của tôi đã nghiên cứu việc chấm điểm trước khi ra mắt. Trong <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023), chúng tôi trình diễn một mô hình đa phương thức chấm điểm các mẫu quảng cáo Meta của nhà quảng cáo, sử dụng văn bản, hình ảnh, nhắm mục tiêu và thiết lập, trước khi chúng được chạy. Trong <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), chúng tôi bổ sung một trợ lý LLM giải thích điều gì tác động đến tỷ lệ nhấp dự đoán. Nguyên tắc cũng chính là nguyên tắc tôi áp dụng cho công cụ của nền tảng: một điểm số bạn không giải thích được là điểm số bạn không học được gì từ nó.</p>
+<p>Video được tạo từ hình ảnh tĩnh sẽ nhân số lượng biến thể mà một thương hiệu có thể chạy. Điều đó tốt, miễn là vẫn có người quyết định biến thể nào xứng đáng nhận ngân sách và hiểu vì sao biến thể thắng lại thắng. Nếu không, bạn có nhiều mẫu sáng tạo hơn và ít hiểu biết hơn.</p>
+<h2>Nhà quảng cáo nên làm gì ngay bây giờ</h2>
+<ul><li>Dùng các công cụ video và sáng tạo mới, nhưng giữ một bộ lọc trước khi ra mắt. Xem xét và chấm điểm biến thể trước khi chúng tiêu tiền, và lưu lại lý do vì sao từng biến thể được đưa ra.</li><li>Coi đối tượng mô tả bằng ngôn ngữ tự nhiên là thử nghiệm. Viết mô tả, chạy nó so với tệp đối tượng tốt nhất hiện có, và so sánh chi phí trên mỗi kết quả thực, không chỉ chuyển đổi do nền tảng báo cáo.</li><li>Phê duyệt các thay đổi dạng agent một cách có chủ đích. Dùng tính năng xem trước và phê duyệt mà Meta mô tả, và đặt quy tắc về những thay đổi nào trợ lý được phép thực hiện mà không cần con người.</li><li>Cẩn trọng với những gì bạn nhập vào. Tài liệu chiến lược và hướng dẫn thương hiệu là nhạy cảm. Hãy quyết định trợ lý thực sự cần gì.</li><li>Giữ một góc nhìn đo lường độc lập. Thử nghiệm đối chứng, kiểm định mức tăng thực và phân tích của riêng bạn là đối trọng với kết quả do nền tảng báo cáo.</li></ul>
+<p>Công cụ của Meta đang trở nên đủ tốt để nút thắt chuyển từ thực thi sang phán đoán. Hãy đảm bảo đội ngũ của bạn vẫn là người thực hiện việc phán đoán đó.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>Meta đã công bố những công cụ quảng cáo AI nào tại Advertising Week 2026?</summary><p>Theo Relevant Audience và TechJuice, Meta đã công bố video sáng tạo Advantage+ từ hình ảnh tĩnh ở dạng phát hành chính thức, mở rộng Ads Creative Studio, một trợ lý có bộ nhớ cùng thử nghiệm các hành động dạng agent, khám phá đối tượng bằng ngôn ngữ tự nhiên trong Detailed Targeting, một Ads MCP server mở rộng và thử nghiệm thanh toán ngay trong khung chat.</p></details><details><summary>Ads MCP server của Meta là gì?</summary><p>Đó là một giao diện dựa trên Model Context Protocol cho phép công cụ AI bên thứ ba kết nối với hệ thống quảng cáo của Meta cho các tác vụ như tải lên mẫu sáng tạo, xem trước, báo cáo và soạn thảo chiến dịch. Relevant Audience liệt kê mười đối tác, bao gồm Databricks, Perplexity và Snowflake.</p></details><details><summary>Nhà quảng cáo có nên để trợ lý AI thay đổi ngân sách và nhắm mục tiêu không?</summary><p>Chỉ khi có quy tắc. Dùng tính năng xem trước và phê duyệt, xác định những thay đổi nào có thể diễn ra tự động, và kiểm tra kết quả bằng đo lường độc lập như thử nghiệm đối chứng thay vì chỉ dựa vào chuyển đổi do nền tảng báo cáo.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Quảng cáo và AI marketing · 29 tháng 10, 2026</span><h3>WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h3><p>WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Quảng cáo và AI marketing · 21 tháng 10, 2026</span><h3>Meta quý 3/2026: AI đẩy giá quảng cáo, nhà sáng tạo thành một kênh</h3><p>Meta quý 3/2026: doanh thu quảng cáo tăng 26%, giá mỗi quảng cáo tăng 14%, quảng cáo hợp tác vượt mức 15 tỷ USD/năm, và một châu Á – Thái Bình Dương rất khác. Ý nghĩa là gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Quảng cáo và AI marketing · 30 tháng 9, 2026</span><h3>Amazon Ads Agent: Retail media chuyển sang agent tại unBoxed 2026</h3><p>Tại unBoxed 2026, Amazon hợp nhất các công cụ mua quảng cáo vào Amazon Ads Agent, với đo lường dạng hội thoại và sáng tạo bằng AI. Những gì nên giữ trong tay con người.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

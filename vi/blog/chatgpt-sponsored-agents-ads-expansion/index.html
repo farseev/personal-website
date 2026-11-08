@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quảng cáo ChatGPT thành hội thoại: Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI đang thử nghiệm Sponsored Agents trong ChatGPT và đã mở rộng quảng cáo ChatGPT ra 89 quốc gia. Khi quảng cáo có thể trò chuyện lại, việc gắn nhãn và tính trung thực trở thành chính sản phẩm." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Quảng cáo ChatGPT thành hội thoại: Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI đang thử nghiệm Sponsored Agents trong ChatGPT và đã mở rộng quảng cáo ChatGPT ra 89 quốc gia. Khi quảng cáo có thể trò chuyện lại, việc gắn nhãn và tính trung thực trở thành chính sản phẩm." />
+<meta property="og:url" content="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Tìm kiếm AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Quảng cáo ChatGPT thành hội thoại: Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI đang thử nghiệm Sponsored Agents trong ChatGPT và đã mở rộng quảng cáo ChatGPT ra 89 quốc gia. Khi quảng cáo có thể trò chuyện lại, việc gắn nhãn và tính trung thực trở thành chính sản phẩm." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"Quảng cáo ChatGPT thành hội thoại: Sponsored Agents","description":"OpenAI đang thử nghiệm Sponsored Agents trong ChatGPT và đã mở rộng quảng cáo ChatGPT ra 89 quốc gia. Khi quảng cáo có thể trò chuyện lại, việc gắn nhãn và tính trung thực trở thành chính sản phẩm.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Tìm kiếm AI","about":{"@type":"Thing","name":"OpenAI thử nghiệm Sponsored Agents trong ChatGPT và mở rộng quảng cáo ChatGPT ra thêm 26 quốc gia"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"ChatGPT Sponsored Agents là gì?","acceptedAnswer":{"@type":"Answer","text":"Đó là các agent do doanh nghiệp tài trợ mà người dùng có thể chọn trò chuyện sau khi nhấp vào quảng cáo trong ChatGPT. OpenAI mô tả trải nghiệm này là một cuộc hội thoại được gắn nhãn rõ ràng, tách biệt với các câu trả lời độc lập của ChatGPT. Thử nghiệm bắt đầu với một số nhà quảng cáo được chọn tại Mỹ."}},{"@type":"Question","name":"Quảng cáo ChatGPT có mặt tại bao nhiêu quốc gia?","acceptedAnswer":{"@type":"Answer","text":"Reuters đưa tin ngày 21 tháng 10 năm 2026 rằng OpenAI đang mở rộng quảng cáo ChatGPT ra thêm 26 quốc gia, nâng tổng số lên 89."}},{"@type":"Question","name":"Người dùng ChatGPT trả phí có thấy quảng cáo không?","acceptedAnswer":{"@type":"Answer","text":"Theo Reuters, quảng cáo chỉ xuất hiện trên gói Free và Go của ChatGPT; các gói Plus, Pro và Enterprise vẫn không có quảng cáo."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Quảng cáo ChatGPT thành hội thoại: Sponsored Agents","item":"https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/">한국어</option><option value="th" lang="th" data-href="/th/blog/chatgpt-sponsored-agents-ads-expansion/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/chatgpt-sponsored-agents-ads-expansion/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/chatgpt-sponsored-agents-ads-expansion/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Quảng cáo ChatGPT thành hội thoại: Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Tìm kiếm AI</p>
+      <h1 class="h-display">Quảng cáo ChatGPT thành hội thoại: Sponsored Agents</h1>
+      <p class="lead">OpenAI đang thử nghiệm Sponsored Agents trong ChatGPT và đã mở rộng quảng cáo ChatGPT ra 89 quốc gia. Khi quảng cáo có thể trò chuyện lại, việc gắn nhãn và tính trung thực trở thành chính sản phẩm.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: OpenAI thử nghiệm Sponsored Agents trong ChatGPT và mở rộng quảng cáo ChatGPT ra thêm 26 quốc gia (<time datetime="2026-10-21">21 tháng 10, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Quảng cáo tìm kiếm là một câu và một đường link. Sponsored Agent của ChatGPT là một cuộc hội thoại. Từ tháng 9 đến tháng 10, OpenAI bắt đầu thử nghiệm quảng cáo biết trò chuyện lại và đưa quảng cáo ChatGPT đến 89 quốc gia. Cùng nhau, hai động thái này thay đổi bản chất của quảng cáo.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a>, ngày 16 tháng 9, OpenAI bắt đầu thử nghiệm Sponsored Agents với một số nhà quảng cáo được chọn tại Mỹ. Sau khi nhấp vào quảng cáo, người dùng có thể chọn bắt đầu điều mà OpenAI gọi là "một cuộc hội thoại được gắn nhãn rõ ràng" với "một agent do doanh nghiệp tài trợ trong ChatGPT", chẳng hạn để hỏi một chiếc bàn ăn có vừa với căn phòng không hoặc cách bảo quản lớp hoàn thiện, trước khi theo link đến trang web của doanh nghiệp. OpenAI cho biết cuộc hội thoại được tài trợ "tách biệt với các câu trả lời độc lập của ChatGPT".</p>
+<p>Cùng thông báo đó mang đến các công cụ cho nhà quảng cáo: một plugin Ads Manager để tạo và phân tích chiến dịch bằng ngôn ngữ tự nhiên ngay trong ChatGPT, gợi ý nội dung và hình ảnh quảng cáo dựa trên trang đích, và một tính năng tùy chọn điều chỉnh tiêu đề theo bối cảnh hội thoại và dịch nội dung quảng cáo sang ngôn ngữ của người dùng. HubSpot và Shopify được nêu tên là các đối tác CRM và thương mại điện tử đầu tiên.</p>
+<p>Ngày 21 tháng 10, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">Reuters đưa tin</a> OpenAI đang mở rộng quảng cáo ChatGPT ra thêm 26 quốc gia, nâng tổng số lên 89, bao gồm các thị trường ở Mỹ Latinh, châu Âu, châu Phi và châu Á như Campuchia, Bangladesh và Pakistan. Công ty cho biết hơn 100.000 nhà quảng cáo đã chạy chiến dịch và mảng quảng cáo đạt mức doanh thu quy năm 1 tỷ US$ vào tháng 8. Quảng cáo chỉ xuất hiện trên gói Free và Go; Plus, Pro và Enterprise vẫn không có quảng cáo.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Ba điều thay đổi khi quảng cáo trở thành agent.</p>
+<p>Thứ nhất, quảng cáo giờ có thể trả lời câu hỏi. Điều đó tốt hơn cho người dùng so với một banner tĩnh, nếu câu trả lời chính xác. Đó cũng là một rủi ro pháp lý mới: một sponsored agent phóng đại tính năng sản phẩm là một quảng cáo gây hiểu lầm biết nói.</p>
+<p>Thứ hai, ranh giới giữa trợ lý và nhà quảng cáo phải hiển thị rõ ở mọi lượt trao đổi. Cách diễn đạt của OpenAI, một cuộc hội thoại được gắn nhãn rõ ràng, tách biệt với các câu trả lời độc lập của ChatGPT, là nguyên tắc đúng. Giá trị của nó phụ thuộc hoàn toàn vào việc sự tách biệt đó rõ ràng đến đâu với một người dùng bình thường đang ở giữa cuộc trò chuyện.</p>
+<p>Thứ ba, giờ đây có một thị trường sự chú ý hai tầng. Người dùng trả phí không thấy quảng cáo; người dùng miễn phí thì có. Tại các thị trường tăng trưởng nhanh, nơi phần lớn người dùng ở gói miễn phí, ChatGPT đang trở thành một kênh quảng cáo quy mô lớn. Tại các thị trường có nhiều người đăng ký trả phí hơn, một nhóm đối tượng giá trị sẽ chỉ có thể tiếp cận qua câu trả lời tự nhiên.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Sponsored agent là cá nhân hóa theo thời gian thực. Bản thân cuộc hội thoại chính là hồ sơ. Nghiên cứu của tôi về <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">gợi ý nội dung dựa trên tính cách</a> (ACM Multimedia 2022) và về <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">tạo nội dung dựa trên tính cách</a> (WSDM 2021) đã khám phá cách suy luận điều một người phản hồi và điều chỉnh nội dung theo đó. Những kỹ thuật này hiệu quả. Đó chính là lý do các rào chắn quan trọng: một agent điều chỉnh cách thuyết phục theo tính cách của từng người dùng thì rất hiệu quả và, nếu thiếu minh bạch, rất dễ bị lạm dụng.</p>
+<p>Tôi đã lập luận trên Forbes cho <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing cứu chuộc (redemptive marketing)</a>, ý tưởng rằng minh bạch và hiệu quả có thể củng cố lẫn nhau. Quảng cáo hội thoại là nơi ý tưởng đó được thử thách. Những thương hiệu chiến thắng lâu dài sẽ là những thương hiệu có sponsored agent trung thực về giới hạn, nói "sản phẩm này không phù hợp với bạn" khi đúng là vậy, và chuyển cho con người khi câu hỏi vượt quá khả năng.</p>
+<p>Tính năng dịch tự động cũng cần được cẩn trọng. Dịch nội dung quảng cáo sang ngôn ngữ của người dùng rất hữu ích, nhưng cũng rủi ro với những tuyên bố được quản lý khác nhau ở mỗi thị trường.</p>
+<h2>Nhà quảng cáo nên làm gì ngay bây giờ</h2>
+<ul><li>Viết quy tắc cho sponsored agent trước khi viết kịch bản. Tuyên bố nào được phép, câu hỏi nào phải từ chối, khi nào chuyển cho con người.</li><li>Neo nó vào dữ kiện của chính bạn. Thông số sản phẩm, giá, chính sách và hướng dẫn bảo quản nên đến từ một nguồn được duy trì, không phải từ kiến thức chung của mô hình.</li><li>Rà soát nội dung đã dịch đối với các tuyên bố chịu quản lý, đặc biệt trong lĩnh vực sức khỏe, tài chính và sản phẩm cho trẻ em.</li><li>Lên kế hoạch cho cả hai tầng. Dùng vị trí trả phí khi người dùng miễn phí là đối tượng của bạn, và đầu tư vào khả năng hiển thị tự nhiên cho người dùng các gói không quảng cáo.</li><li>Đo lường vượt ra ngoài lượt nhấp. Theo dõi xem các cuộc hội thoại có dẫn đến mua hàng, trả hàng hay khiếu nại không, không chỉ là chúng kéo dài bao lâu.</li></ul>
+<p>Quảng cáo tìm kiếm dạy chúng ta viết cho một truy vấn. Quảng cáo hội thoại sẽ dạy chúng ta trả lời như một nhân viên bán hàng đáng tin cậy, ở quy mô lớn, bằng mọi ngôn ngữ. Điều đó khó hơn, và thú vị hơn.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>ChatGPT Sponsored Agents là gì?</summary><p>Đó là các agent do doanh nghiệp tài trợ mà người dùng có thể chọn trò chuyện sau khi nhấp vào quảng cáo trong ChatGPT. OpenAI mô tả trải nghiệm này là một cuộc hội thoại được gắn nhãn rõ ràng, tách biệt với các câu trả lời độc lập của ChatGPT. Thử nghiệm bắt đầu với một số nhà quảng cáo được chọn tại Mỹ.</p></details><details><summary>Quảng cáo ChatGPT có mặt tại bao nhiêu quốc gia?</summary><p>Reuters đưa tin ngày 21 tháng 10 năm 2026 rằng OpenAI đang mở rộng quảng cáo ChatGPT ra thêm 26 quốc gia, nâng tổng số lên 89.</p></details><details><summary>Người dùng ChatGPT trả phí có thấy quảng cáo không?</summary><p>Theo Reuters, quảng cáo chỉ xuất hiện trên gói Free và Go của ChatGPT; các gói Plus, Pro và Enterprise vẫn không có quảng cáo.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Tìm kiếm AI · 29 tháng 10, 2026</span><h3>Adobe: Lưu lượng từ AI nay chuyển đổi tốt hơn các lượt truy cập khác</h3><p>Adobe cho biết các lượt truy cập từ AI đến nhà bán lẻ Mỹ trong tháng 9 có tỷ lệ chuyển đổi cao hơn 90% so với lưu lượng khác. Vì sao câu trả lời AI đã trở thành một kênh, và nên làm gì.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">Tìm kiếm AI · 28 tháng 10, 2026</span><h3>Quảng cáo trong Google AI Mode đến Singapore và nhiều thị trường khác</h3><p>Google đang mở rộng quảng cáo trong AI Mode ra mười thị trường, gồm Singapore, Malaysia và Philippines. Điều gì thay đổi khi quảng cáo nằm ngay trong câu trả lời.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">Tìm kiếm AI · 1 tháng 10, 2026</span><h3>Penske v. Google bị bác: Ý nghĩa với khả năng hiển thị trên AI</h3><p>Một thẩm phán Mỹ đã bác vụ kiện chống độc quyền của Penske Media về AI Overviews của Google, cho rằng không có 'thỏa thuận chính thức' nào về lưu lượng. Thương hiệu nên làm gì với GEO.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

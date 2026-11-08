@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Hai mươi lăm nhà toán học đoạt Huy chương Fields cảnh báo rằng chạy đua AI vào các bài toán chưa giải là nhầm lẫn thước đo đại diện với mục tiêu. Marketing cũng gặp đúng vấn đề benchmark đó." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer | Prof. Aleks Farseev" />
+<meta property="og:description" content="Hai mươi lăm nhà toán học đoạt Huy chương Fields cảnh báo rằng chạy đua AI vào các bài toán chưa giải là nhầm lẫn thước đo đại diện với mục tiêu. Marketing cũng gặp đúng vấn đề benchmark đó." />
+<meta property="og:url" content="https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Tin AI, giải thích" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Nghiên cứu" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Hai mươi lăm nhà toán học đoạt Huy chương Fields cảnh báo rằng chạy đua AI vào các bài toán chưa giải là nhầm lẫn thước đo đại diện với mục tiêu. Marketing cũng gặp đúng vấn đề benchmark đó." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer","description":"Hai mươi lăm nhà toán học đoạt Huy chương Fields cảnh báo rằng chạy đua AI vào các bài toán chưa giải là nhầm lẫn thước đo đại diện với mục tiêu. Marketing cũng gặp đúng vấn đề benchmark đó.","image":"https://farseev.com/og-image.png","inLanguage":"vi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/vi/blog/#blog"},"articleSection":"Nghiên cứu","about":{"@type":"Thing","name":"Các nhà toán học đoạt Huy chương Fields công bố \"A Severe Misalignment of AI in Mathematics\"; OpenAI rút khỏi một cuộc thi toán AI tại Caltech"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"\"A Severe Misalignment of AI in Mathematics\" là gì?","acceptedAnswer":{"@type":"Answer","text":"Theo The Next Web, đó là một tuyên bố được công bố ngày 11 tháng 9 năm 2026 và được ký bởi 25 nhà toán học đoạt Huy chương Fields. Tuyên bố lập luận rằng giải bài toán là thước đo đại diện cho mục tiêu thực sự của toán học, tức sự thấu hiểu khái niệm, và cảnh báo rằng sản xuất hàng loạt mệnh đề với tốc độ cao có thể gây hại cho lĩnh vực này."}},{"@type":"Question","name":"OpenAI có rút khỏi Caltech Mathathon không?","acceptedAnswer":{"@type":"Answer","text":"The Next Web đưa tin OpenAI đã rút khoản tín dụng 1 triệu US$ khỏi cuộc thi Caltech Mathathon do sinh viên tổ chức vào ngày 10 tháng 9 năm 2026, trong khi Anthropic giữ nguyên đóng góp và sự kiện vẫn diễn ra."}},{"@type":"Question","name":"Cuộc tranh luận về AI trong toán học có ý nghĩa gì với marketing?","acceptedAnswer":{"@type":"Answer","text":"Đó là lời cảnh báo về việc tối ưu hóa cho các chỉ số đại diện. Đội ngũ marketing nên gắn các chỉ số AI với kết quả thực tế, tính đến chi phí kiểm chứng của con người và đo lường xem công việc có AI hỗ trợ có giữ được nét riêng hay không."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://farseev.com/vi/"},{"@type":"ListItem","position":2,"name":"Tin AI","item":"https://farseev.com/vi/blog/"},{"@type":"ListItem","position":3,"name":"Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer","item":"https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/vi/","jobTitle":"Nhà sáng lập kiêm CEO SOMIN.ai; Giáo sư thỉnh giảng về AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/vi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Nội dung chính"><a href="/vi/#about">Giới thiệu</a><a href="/vi/#research">Nghiên cứu</a><a href="/vi/blog/" aria-current="page">Tin AI</a><a href="/vi/#talks">Bài nói</a><a href="/vi/#connect">Kết nối</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Ngôn ngữ" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/fields-medallists-ai-mathematics-benchmarks/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/fields-medallists-ai-mathematics-benchmarks/">한국어</option><option value="th" lang="th" data-href="/th/blog/fields-medallists-ai-mathematics-benchmarks/">ไทย</option><option value="vi" lang="vi" selected>Tiếng Việt</option><option value="hi" lang="hi" data-href="/hi/blog/fields-medallists-ai-mathematics-benchmarks/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/fields-medallists-ai-mathematics-benchmarks/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/blog/">Tin AI</a></li><li aria-current="page">Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer</li></ol></nav>
+      <p class="eyebrow">Tin AI, giải thích · Nghiên cứu</p>
+      <h1 class="h-display">Chủ nhân Huy chương Fields và benchmark AI: Bài học cho marketer</h1>
+      <p class="lead">Hai mươi lăm nhà toán học đoạt Huy chương Fields cảnh báo rằng chạy đua AI vào các bài toán chưa giải là nhầm lẫn thước đo đại diện với mục tiêu. Marketing cũng gặp đúng vấn đề benchmark đó.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Tin tức: Các nhà toán học đoạt Huy chương Fields công bố "A Severe Misalignment of AI in Mathematics"; OpenAI rút khỏi một cuộc thi toán AI tại Caltech (<time datetime="2026-09-11">11 tháng 9, 2026</time>)</span></p>
+      <p class="byline"><span>Tác giả: <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 tháng 11, 2026</time><span class="dot"></span><span>4 phút đọc</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Các nhà toán học thường không viết thư ngỏ về marketing. Nhưng lập luận mà một nhóm nhà toán học đoạt Huy chương Fields đưa ra vào tháng 9 áp dụng gần như nguyên văn cho cách ngành của chúng ta đo lường AI. Quan điểm của họ: giải bài toán là một thước đo đại diện, còn mục tiêu thực sự là sự thấu hiểu. Nhầm lẫn hai điều này, và bạn có thể làm tổn hại chính thứ mình đang cố cải thiện.</p>
+<h2>Điều gì đã xảy ra</h2>
+<p>Theo <a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a>, ngày 11 tháng 9, một tuyên bố mang tên <em>A Severe Misalignment of AI in Mathematics</em> đã được công bố trên mathandai.org. Trang web liệt kê 25 người ký, bao gồm Terence Tao, Peter Scholze, Maryna Viazovska, Cédric Villani, Pierre Deligne, Manjul Bhargava và Martin Hairer. Tuyên bố lập luận rằng giải bài toán là một công cụ và một thước đo đại diện, trong khi mục tiêu chính của toán học là sự thấu hiểu và nhận thức về khái niệm. Văn bản cảnh báo rằng sản xuất hàng loạt các mệnh đề đúng hoặc sai với tốc độ ngày càng nhanh "có thể phá hủy mảnh đất màu mỡ". TNW mô tả đây là một tuyên bố về benchmark; văn bản không nêu tên sự kiện cụ thể nào.</p>
+<p>Cùng tuần đó, một thư ngỏ khác chỉ trích cuộc thi "Mathathon" AI do sinh viên tổ chức tại Caltech, gọi định dạng này là "toán học rác" ("slop mathematics") và lập luận rằng công sức kiểm chứng và sửa kết quả của AI "không được trả công, không được ghi công và không được thừa nhận". TNW đưa tin OpenAI đã rút khoản tín dụng 1 triệu US$ khỏi sự kiện vào ngày 10 tháng 9, trong khi Anthropic giữ nguyên đóng góp của mình, và ban tổ chức đã bổ sung yêu cầu nhưng không hủy sự kiện.</p>
+<h2>Vì sao điều này quan trọng</h2>
+<p>Lời phàn nàn của các nhà toán học nói về một cái bẫy quen thuộc. Khi một bài toán khó, nổi tiếng trở thành benchmark, các phòng thí nghiệm tối ưu hóa để tạo ra câu trả lời cho nó. Câu trả lời đo lường được. Sự thấu hiểu thì không. Theo thời gian, thứ đo lường được lấn át thứ có giá trị, và người khác phải ở lại kiểm tra đầu ra.</p>
+<p>AI marketing có đúng vấn đề này. Chúng ta đánh giá công cụ dựa trên những gì dễ đếm: số tài sản được tạo, thời gian tiết kiệm, tỷ lệ nhấp, tỷ lệ câu trả lời AI nhắc đến thương hiệu. Những con số đó quan trọng. Nhưng mục tiêu của marketing không phải là sản lượng; mà là hiểu khách hàng đủ sâu để phục vụ họ, và xây dựng một thương hiệu được tin tưởng. Một hệ thống tràn ngập các kênh bằng nội dung và thắng trên các chỉ số đại diện có thể âm thầm bào mòn cả hai.</p>
+<p>Điểm về công kiểm chứng không được trả công cũng rất xác đáng. Nội dung được tạo ra thì rẻ để sản xuất và đắt để kiểm tra. Nếu việc kiểm tra không hiện diện trong các chỉ số của bạn, thì "mức tăng năng suất" của bạn một phần là thủ thuật kế toán.</p>
+<h2>Nghiên cứu của tôi nói gì</h2>
+<p>Nghiên cứu gần đây của tôi được xây dựng quanh sự phân biệt này. Trong bài báo SIGIR 2026 của chúng tôi, <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a>, vấn đề chúng tôi giải quyết chính là việc nội dung do AI viết hội tụ: trợ lý của mọi người đều tạo ra những bài đăng chung chung, đủ tốt, giống nhau. Cách tiếp cận của chúng tôi là truy xuất dữ liệu bối cảnh thực trước khi viết, để đầu ra giữ được nét riêng. Sản lượng mà không có sự khác biệt chính là phiên bản marketing của "nội dung rác".</p>
+<p>Về đo lường, tôi đã lập luận trên e27 rằng <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">mọi dashboard đều xanh, nhưng không ai nói được điều gì đã hiệu quả</a>. Các chỉ số đại diện cùng đi lên không đồng nghĩa với việc biết điều gì tạo ra kết quả. Và trong nghiên cứu AI có khả năng giải thích của chúng tôi, từ <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> đến <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>, mục tiêu không chỉ là dự đoán tốt hơn mà là một lời giải thích mà marketer có thể học hỏi. Đó là phiên bản marketing của "sự thấu hiểu khái niệm" mà các nhà toán học nói đến.</p>
+<h2>Đội ngũ marketing có thể rút ra gì từ điều này</h2>
+<ul><li>Gọi tên mục tiêu đằng sau mỗi chỉ số. Với mỗi KPI về AI, viết một câu về kết quả thực tế mà nó được cho là đại diện, và định kỳ kiểm tra xem mối liên hệ đó còn đúng không.</li><li>Tính đến chi phí kiểm chứng. Theo dõi thời gian con người dành để xem xét và sửa đầu ra của AI và đưa nó vào ROI.</li><li>Đo lường tính khác biệt. So sánh nội dung có AI hỗ trợ của bạn với của đối thủ. Nếu nó đang trở nên không thể phân biệt, bạn đang thắng một chỉ số đại diện và đánh mất thương hiệu.</li><li>Ưu tiên lời giải thích hơn điểm số. Một công cụ cho bạn biết vì sao điều gì đó hiệu quả sẽ xây dựng tri thức cho đội ngũ; một công cụ chỉ cho bạn biết rằng nó hiệu quả sẽ tạo ra sự phụ thuộc.</li><li>Ghi công cho con người. Nếu mọi người đang dọn dẹp đầu ra của AI, hãy làm cho công việc đó được nhìn thấy và trân trọng, không bị coi là hiển nhiên.</li></ul>
+<p>Các nhà toán học đang bảo vệ lĩnh vực của họ khỏi một văn hóa benchmark nhầm câu trả lời với sự thấu hiểu. Marketing nên tự bảo vệ mình khỏi cùng sai lầm đó.</p>
+<h2 id="faq">Câu hỏi thường gặp</h2>
+<div class="faq"><details><summary>"A Severe Misalignment of AI in Mathematics" là gì?</summary><p>Theo The Next Web, đó là một tuyên bố được công bố ngày 11 tháng 9 năm 2026 và được ký bởi 25 nhà toán học đoạt Huy chương Fields. Tuyên bố lập luận rằng giải bài toán là thước đo đại diện cho mục tiêu thực sự của toán học, tức sự thấu hiểu khái niệm, và cảnh báo rằng sản xuất hàng loạt mệnh đề với tốc độ cao có thể gây hại cho lĩnh vực này.</p></details><details><summary>OpenAI có rút khỏi Caltech Mathathon không?</summary><p>The Next Web đưa tin OpenAI đã rút khoản tín dụng 1 triệu US$ khỏi cuộc thi Caltech Mathathon do sinh viên tổ chức vào ngày 10 tháng 9 năm 2026, trong khi Anthropic giữ nguyên đóng góp và sự kiện vẫn diễn ra.</p></details><details><summary>Cuộc tranh luận về AI trong toán học có ý nghĩa gì với marketing?</summary><p>Đó là lời cảnh báo về việc tối ưu hóa cho các chỉ số đại diện. Đội ngũ marketing nên gắn các chỉ số AI với kết quả thực tế, tính đến chi phí kiểm chứng của con người và đo lường xem công việc có AI hỗ trợ có giữ được nét riêng hay không.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Nguồn</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> là nhà sáng lập kiêm CEO của SOMIN.ai và Giáo sư thỉnh giảng về AI tại NUS và INSEAD. Các nghiên cứu bình duyệt của ông bao gồm lập hồ sơ người dùng đa nguồn, gợi ý có nhận biết tính cách và AI có khả năng giải thích cho marketing.</p>
+<p class="links"><a href="/vi/">Về Aleks</a><a href="/vi/#publications">Công bố khoa học</a><a href="/vi/blog/">Thêm tin AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Đọc tiếp</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Thêm tin AI, được giải thích</h2></div>
+    <div class="cards-3"><a class="pcard" href="/vi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Quảng cáo và AI marketing · 29 tháng 10, 2026</span><h3>WPP quý 3/2026: Mô hình agency dưới sức ép của AI</h3><p>WPP báo cáo doanh thu thuần so sánh cùng kỳ giảm, trong khi CEO nhấn mạnh nhu cầu dịch vụ ứng dụng AI qua WPP Open. Điều đó nói gì về các agency.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/malaysia-ai-governance-bill/"><span class="meta">Châu Á và Singapore · 29 tháng 10, 2026</span><h3>AI Governance Bill của Malaysia: Trách nhiệm theo vai trò</h3><p>Dự thảo AI Governance Bill của Malaysia, dự kiến hoàn tất trước đầu năm 2027, đặt nghĩa vụ lên bên phát triển, cung cấp hoặc sử dụng AI. Quy định theo vai trò có ý nghĩa gì với marketer.</p><span class="go">Đọc →</span></a><a class="pcard" href="/vi/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Tìm kiếm AI · 29 tháng 10, 2026</span><h3>Adobe: Lưu lượng từ AI nay chuyển đổi tốt hơn các lượt truy cập khác</h3><p>Adobe cho biết các lượt truy cập từ AI đến nhà bán lẻ Mỹ trong tháng 9 có tỷ lệ chuyển đổi cao hơn 90% so với lưu lượng khác. Vì sao câu trả lời AI đã trở thành một kênh, và nên làm gì.</p><span class="go">Đọc →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Giáo sư AI, diễn giả chính và nghệ sĩ accordion. Kết nối nghiên cứu chuyên sâu với marketing thực tế, từ Singapore ra thế giới.</p>
+      </div>
+      <div>
+        <h6>Khám phá</h6>
+        <ul>
+          <li><a href="/vi/">Trang chủ</a></li>
+          <li><a href="/vi/blog/">Blog tin tức AI</a></li>
+          <li><a href="/vi/#research">Nghiên cứu</a></li>
+          <li><a href="/vi/#publications">Công bố khoa học</a></li>
+          <li><a href="/vi/#connect">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Nơi khác</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Quan điểm là của riêng tôi. Các dữ kiện tin tức đều dẫn link đến nguồn.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
