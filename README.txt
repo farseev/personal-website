@@ -100,3 +100,30 @@ Honesty rules: every news fact comes from a listed source that was opened and re
 no invented quotes, statistics, events or personal anecdotes; opinions are fine.
 Articles carry the publication date (published:) and the news date (news_date:);
 the hub and the home strip sort by news date, newest first.
+
+============================================================
+UPDATE (2026-11) — 16 languages (static pages + hreflang)
+============================================================
+The home page, the AI news hub and every article are published as static pages per
+language when 100% translated: /<code>/ and /<code>/blog/<slug>/ for
+zh-hans, zh-hant, ja, ko, th, vi, id, ms, hi, fil, es, fr, de, pt, ar (rtl), ru.
+English stays at the root and is the x-default.
+
+  i18n/source.json, i18n/pages.json   English segments and the segment ids of each page (generated)
+  i18n/<code>.json                    translation memory per language {id: translation}
+  tools/i18n.py                       extract | import-dict | todo | merge | build | status
+
+  python3 tools/build_blog.py          # English blog pages (after editing content/blog/*.txt)
+  python3 tools/i18n.py build          # language pages, switcher, hreflang, sitemaps, robots.txt, llms.txt
+  python3 tools/check_site.py          # must end with 0 errors
+
+Translate: `python3 tools/i18n.py todo <code>` lists untranslated segments as id<TAB>English;
+write id<TAB>translation lines (keep <g1>…</g1> / <x1/> placeholders) and run
+`python3 tools/i18n.py merge <code> file.tsv`, then build and check.
+A language goes live when its home page is complete; until then visitors keep the English
+page. On the English home page, zh/ja/ko/hi/ru without a static page yet keep the original
+in-browser dictionary (their entries were imported into i18n/<code>.json with
+`tools/i18n.py import-dict`, so they are not translated twice). Language pages load the
+home photos from assets/img/home/ (extracted from the base64 images at build time);
+the English index.html stays self-contained. sitemap.xml is now a sitemap index
+(sitemap-en.xml, sitemap-<code>.xml). The language menu fires the GA4 event language_switch.

@@ -172,7 +172,7 @@ def nav(active):
     links = "".join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if k and k == active else "", t) for h, t, k in items)
     return """<header class="nav">
   <div class="nav-inner">
-    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <a href="/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
     <nav class="nav-links" id="navLinks" aria-label="Main">%s</nav>
     <div class="nav-right">
       %s
@@ -186,7 +186,7 @@ FOOTER = """<footer class="foot" data-sec="footer">
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
         <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
       </div>
       <div>
@@ -391,7 +391,7 @@ def hub_page(arts):
       <p class="eyebrow">The AI news blog</p>
       <h1 class="h-display">AI news, explained by Aleks</h1>
       <p class="lead">Each article takes one real AI news item, links the primary source, and explains what it means for marketers through the lens of my research on user profiling, personality-aware recommendation and explainable AI.</p>
-      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><span>%(n)d articles, newest news first</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><span><span class="count">%(n)d</span> articles, newest news first</span></p>
     </div>
   </header>
   <section class="section" aria-label="Articles" data-sec="hub">

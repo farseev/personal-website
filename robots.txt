@@ -57,3 +57,4 @@ Allow: /
 
 # --- Sitemap ---
 Sitemap: https://farseev.com/sitemap.xml
+Sitemap: https://farseev.com/sitemap-en.xml
