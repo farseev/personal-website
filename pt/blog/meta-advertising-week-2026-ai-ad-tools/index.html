@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Na Advertising Week New York, a Meta expandiu o vídeo com IA, seu assistente de anúncios, públicos em linguagem simples e um Ads MCP server. O que o marketing ainda deve controlar." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação | Prof. Aleks Farseev" />
+<meta property="og:description" content="Na Advertising Week New York, a Meta expandiu o vídeo com IA, seu assistente de anúncios, públicos em linguagem simples e um Ads MCP server. O que o marketing ainda deve controlar." />
+<meta property="og:url" content="https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — notícias de IA, explicadas" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Anúncios e IA para marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Na Advertising Week New York, a Meta expandiu o vídeo com IA, seu assistente de anúncios, públicos em linguagem simples e um Ads MCP server. O que o marketing ainda deve controlar." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação","description":"Na Advertising Week New York, a Meta expandiu o vídeo com IA, seu assistente de anúncios, públicos em linguagem simples e um Ads MCP server. O que o marketing ainda deve controlar.","image":"https://farseev.com/og-image.png","inLanguage":"pt","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/pt/blog/#blog"},"articleSection":"Anúncios e IA para marketing","about":{"@type":"Thing","name":"A Meta anuncia novas ferramentas de publicidade com IA na Advertising Week New York 2026"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Quais ferramentas de anúncios com IA a Meta anunciou na Advertising Week 2026?","acceptedAnswer":{"@type":"Answer","text":"Segundo a Relevant Audience e a TechJuice, a Meta anunciou a disponibilidade geral do vídeo de criativo Advantage+ a partir de imagens estáticas, uma liberação mais ampla do Ads Creative Studio, um assistente com memória e testes de ações agênticas, a descoberta de públicos em linguagem simples no Detailed Targeting, um Ads MCP server ampliado e testes de checkout dentro do chat."}},{"@type":"Question","name":"O que é o Ads MCP server da Meta?","acceptedAnswer":{"@type":"Answer","text":"É uma interface baseada no Model Context Protocol que permite que ferramentas de IA de terceiros se conectem ao sistema de publicidade da Meta para tarefas como upload de criativos, prévias, relatórios e rascunhos de campanhas. A Relevant Audience lista dez parceiros, incluindo Databricks, Perplexity e Snowflake."}},{"@type":"Question","name":"Os anunciantes devem deixar assistentes de IA alterarem orçamentos e segmentação?","acceptedAnswer":{"@type":"Answer","text":"Só com regras. Use prévias e aprovações, defina quais mudanças podem acontecer automaticamente e verifique os resultados com mensuração independente, como testes com grupo de controle, em vez de depender apenas das conversões reportadas pela plataforma."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://farseev.com/pt/"},{"@type":"ListItem","position":2,"name":"Notícias de IA","item":"https://farseev.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação","item":"https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/pt/","jobTitle":"Fundador e CEO da SOMIN.ai; professor convidado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/pt/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/pt/#about">Sobre</a><a href="/pt/#research">Pesquisa</a><a href="/pt/blog/" aria-current="page">Notícias de IA</a><a href="/pt/#talks">Palestras</a><a href="/pt/#connect">Contato</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-advertising-week-2026-ai-ad-tools/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-advertising-week-2026-ai-ad-tools/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-advertising-week-2026-ai-ad-tools/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/meta-advertising-week-2026-ai-ad-tools/">Filipino</option><option value="es" lang="es" data-href="/es/blog/meta-advertising-week-2026-ai-ad-tools/">Español</option><option value="pt" lang="pt" selected>Português</option><option value="ru" lang="ru" data-href="/ru/blog/meta-advertising-week-2026-ai-ad-tools/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Trilha de navegação"><ol><li><a href="/pt/">Início</a></li><li><a href="/pt/blog/">Notícias de IA</a></li><li aria-current="page">Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação</li></ol></nav>
+      <p class="eyebrow">Notícias de IA, explicadas · Anúncios e IA para marketing</p>
+      <h1 class="h-display">Novas ferramentas de anúncios com IA da Meta: automação ainda precisa de explicação</h1>
+      <p class="lead">Na Advertising Week New York, a Meta expandiu o vídeo com IA, seu assistente de anúncios, públicos em linguagem simples e um Ads MCP server. O que o marketing ainda deve controlar.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>A notícia: a Meta anuncia novas ferramentas de publicidade com IA na Advertising Week New York 2026 (<time datetime="2026-10-06">6 de outubro de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de novembro de 2026</time><span class="dot"></span><span>4 min de leitura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Todo ano, as grandes plataformas dão mais um passo rumo a rodar a campanha inteira por você. Na Advertising Week New York, em 6 de outubro, a Meta deu vários de uma vez: um assistente de publicidade com memória, vídeo gerado a partir de imagens estáticas, descoberta de públicos em linguagem simples e um servidor ampliado que permite que ferramentas de IA externas operem seu sistema de anúncios. Ferramentas úteis. Mas automação sem explicação é um risco que você assume, e não um que a Meta assume por você.</p>
+<h2>O que aconteceu</h2>
+<p>Não consegui abrir a página de anúncio da própria Meta, então me baseio em duas análises detalhadas. Segundo o <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">detalhamento da Relevant Audience</a> e a <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">reportagem da TechJuice</a>, a Meta anunciou:</p>
+<ul><li>Vídeo de criativo Advantage+ a partir de imagens estáticas, agora disponível para todos, e vídeo de produtos do catálogo em beta para anunciantes elegíveis.</li><li>O Ads Creative Studio, um espaço de trabalho criativo antes limitado a parceiros selecionados, começando a ser liberado para mais anunciantes.</li><li>Um assistente de IA para negócios com memória entre conversas, com testes de importação de documentos de estratégia e diretrizes de marca, relatórios e alertas programados e ações agênticas, como configuração de campanhas e mudanças de orçamento, com prévias e aprovações.</li><li>Uma ferramenta de estratégia para o ciclo de vida do cliente, agora disponível para todos os anunciantes, além da descoberta de públicos com IA no Detailed Targeting, em que os anunciantes descrevem um cliente ideal em linguagem simples. A Relevant Audience informa que o prazo da Meta para isso é “até o fim do ano”.</li><li>Um Ads MCP server ampliado, com dez parceiros nomeados, incluindo Databricks, Perplexity, Snowflake e Triple Whale, para que ferramentas de IA de terceiros possam trabalhar com o sistema de publicidade da Meta.</li><li>Recursos de comércio, incluindo testes de checkout direto pelo Business Agent da Meta no Messenger com a Shopify e checkout direto na Meta AI com parceiros como Adyen, PayPal, Shopify e Stripe.</li></ul>
+<p>A Meta também afirmou que os anunciantes que adotam as recomendações de seu assistente “normalmente” obtêm 5% mais conversões com o mesmo custo por conversão e que mais de 60% do tempo no Facebook e no Instagram é gasto com vídeo. A Relevant Audience observa que a Meta não publicou a metodologia desses números.</p>
+<h2>Por que isso importa</h2>
+<p>Dois desses lançamentos mudam quem faz o raciocínio.</p>
+<p>A descoberta de públicos em linguagem simples significa que a plataforma traduz sua descrição de um cliente em segmentação. Isso é uma decisão de perfilamento. Mudanças de orçamento e segmentação conduzidas pelo assistente significam que a plataforma também decide o que fazer com o resultado. E o MCP server significa que a IA que você usa fora da Meta agora pode agir dentro da Meta.</p>
+<p>Cada passo economiza tempo. Juntos, eles concentram decisões dentro de sistemas otimizados para os objetivos da plataforma e medidos com os dados da própria plataforma. Quando a mesma empresa vende o anúncio, escolhe o público, gera o criativo e reporta o resultado, uma visão independente se torna mais valiosa, e não menos.</p>
+<h2>O que minha pesquisa diz</h2>
+<p>Descrever um público em palavras e receber de volta um segmento-alvo é um problema que estudo há muito tempo. Nosso trabalho sobre <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">perfilamento multivisão da personalidade de usuários no Twitter, no Facebook e no PersonalityCafe</a> (Frontiers in Big Data, 2022) mostrou que o que você infere sobre as pessoas depende muito de quais sinais você usa. Uma descrição em linguagem simples é uma hipótese sobre o seu cliente. Ela merece ser testada, e não apenas executada.</p>
+<p>Em criativos, minha equipe trabalhou com pontuação antes do lançamento. Em <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023), demonstramos um modelo multimodal que pontua os criativos de anúncios de um anunciante na Meta, usando texto, imagem, segmentação e configurações, antes de irem ao ar. Em <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), acrescentamos um assistente baseado em LLM que explica o que determina uma taxa de cliques prevista. O princípio é o mesmo que aplico às ferramentas das plataformas: uma nota que você não consegue explicar é uma nota com a qual você não consegue aprender.</p>
+<p>O vídeo gerado a partir de imagens estáticas vai multiplicar o número de variantes que uma marca pode rodar. Isso é bom, desde que alguém ainda decida quais variantes merecem verba e entenda por que as vencedoras venceram. Caso contrário, você terá mais criativos e menos conhecimento.</p>
+<h2>O que os anunciantes devem fazer agora</h2>
+<ul><li>Use as novas ferramentas de vídeo e de criativos, mas mantenha um filtro pré-lançamento. Revise e pontue as variantes antes que elas gastem dinheiro e mantenha um registro de por que cada uma foi publicada.</li><li>Trate públicos em linguagem simples como experimentos. Escreva a descrição, rode-a contra seu melhor público atual e compare o custo por resultado real, e não apenas as conversões da plataforma.</li><li>Aprove mudanças agênticas de forma deliberada. Use as prévias e aprovações que a Meta descreve e defina regras sobre quais mudanças um assistente pode fazer sem um humano.</li><li>Tenha cuidado com o que você importa. Documentos de estratégia e diretrizes de marca são sensíveis. Decida do que o assistente realmente precisa.</li><li>Mantenha uma visão de mensuração independente. Grupos de controle, testes de incrementalidade e suas próprias análises são o contrapeso aos resultados reportados pela plataforma.</li></ul>
+<p>As ferramentas da Meta estão ficando boas o suficiente para que o gargalo passe da execução para o julgamento. Garanta que sua equipe continue sendo quem o exerce.</p>
+<h2 id="faq">Perguntas frequentes</h2>
+<div class="faq"><details><summary>Quais ferramentas de anúncios com IA a Meta anunciou na Advertising Week 2026?</summary><p>Segundo a Relevant Audience e a TechJuice, a Meta anunciou a disponibilidade geral do vídeo de criativo Advantage+ a partir de imagens estáticas, uma liberação mais ampla do Ads Creative Studio, um assistente com memória e testes de ações agênticas, a descoberta de públicos em linguagem simples no Detailed Targeting, um Ads MCP server ampliado e testes de checkout dentro do chat.</p></details><details><summary>O que é o Ads MCP server da Meta?</summary><p>É uma interface baseada no Model Context Protocol que permite que ferramentas de IA de terceiros se conectem ao sistema de publicidade da Meta para tarefas como upload de criativos, prévias, relatórios e rascunhos de campanhas. A Relevant Audience lista dez parceiros, incluindo Databricks, Perplexity e Snowflake.</p></details><details><summary>Os anunciantes devem deixar assistentes de IA alterarem orçamentos e segmentação?</summary><p>Só com regras. Use prévias e aprovações, defina quais mudanças podem acontecer automaticamente e verifique os resultados com mensuração independente, como testes com grupo de controle, em vez de depender apenas das conversões reportadas pela plataforma.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fontes</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> é fundador e CEO da SOMIN.ai e professor convidado de IA na NUS e no INSEAD. Sua pesquisa revisada por pares abrange perfilamento de usuários multifonte, recomendação sensível à personalidade e IA explicável para marketing.</p>
+<p class="links"><a href="/pt/">Sobre Aleks</a><a href="/pt/#publications">Publicações</a><a href="/pt/blog/">Mais notícias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continue lendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Mais notícias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/pt/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Anúncios e IA para marketing · 29 de outubro de 2026</span><h3>WPP no 3º tri de 2026: o modelo de agência sob a pressão da IA</h3><p>A WPP registrou queda na receita líquida comparável enquanto seu CEO apontava a demanda por serviços com IA via WPP Open. O que isso diz sobre as agências.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Anúncios e IA para marketing · 21 de outubro de 2026</span><h3>Meta no 3º tri de 2026: IA eleva preços e criadores viram canal</h3><p>Meta no 3º tri de 2026: receita de anúncios +26%, preço por anúncio +14%, anúncios de parceria acima de US$ 15 bi anualizados e uma Ásia-Pacífico bem diferente. O que significa.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Anúncios e IA para marketing · 30 de setembro de 2026</span><h3>Amazon Ads Agent: o retail media se torna agêntico no unBoxed 2026</h3><p>No unBoxed 2026, a Amazon unificou suas ferramentas de compra no Amazon Ads Agent, com mensuração conversacional e criativos com IA. O que manter em mãos humanas.</p><span class="go">Ler →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO de GenAI, professor de IA, palestrante keynote e acordeonista. Unindo pesquisa de ponta e marketing do mundo real, de Singapura para o mundo.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/pt/">Início</a></li>
+          <li><a href="/pt/blog/">Blog de notícias de IA</a></li>
+          <li><a href="/pt/#research">Pesquisa</a></li>
+          <li><a href="/pt/#publications">Publicações</a></li>
+          <li><a href="/pt/#connect">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Em outros lugares</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>As opiniões são minhas. Os fatos noticiados têm link para suas fontes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

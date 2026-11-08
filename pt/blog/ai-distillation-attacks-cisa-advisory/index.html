@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ataques de destilação: o que modelos de IA copiados significam para você | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Agências dos EUA citaram seis empresas chinesas de IA em um alerta sobre destilação, e a Anthropic diz que suas defesas reduziram em 90% a 99% os dados coletados. O que isso significa para quem compra IA." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Ataques de destilação: o que modelos de IA copiados significam para você | Prof. Aleks Farseev" />
+<meta property="og:description" content="Agências dos EUA citaram seis empresas chinesas de IA em um alerta sobre destilação, e a Anthropic diz que suas defesas reduziram em 90% a 99% os dados coletados. O que isso significa para quem compra IA." />
+<meta property="og:url" content="https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — notícias de IA, explicadas" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulação e segurança" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ataques de destilação: o que modelos de IA copiados significam para você | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Agências dos EUA citaram seis empresas chinesas de IA em um alerta sobre destilação, e a Anthropic diz que suas defesas reduziram em 90% a 99% os dados coletados. O que isso significa para quem compra IA." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/","headline":"Ataques de destilação: o que modelos de IA copiados significam para você","description":"Agências dos EUA citaram seis empresas chinesas de IA em um alerta sobre destilação, e a Anthropic diz que suas defesas reduziram em 90% a 99% os dados coletados. O que isso significa para quem compra IA.","image":"https://farseev.com/og-image.png","inLanguage":"pt","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/pt/blog/#blog"},"articleSection":"Regulação e segurança","about":{"@type":"Thing","name":"CISA, NSA e FBI emitem alerta sobre destilação em escala industrial de modelos de IA dos EUA; a Anthropic relata novas defesas contra destilação"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"O que é um ataque de destilação de IA?","acceptedAnswer":{"@type":"Answer","text":"É uma campanha encoberta e em larga escala que extrai as capacidades de um modelo consultando-o, muitas vezes por meio de redes de contas fraudulentas, e usa as saídas para treinar outro modelo sem a permissão do desenvolvedor original."}},{"@type":"Question","name":"Quais empresas o alerta dos EUA citou?","acceptedAnswer":{"@type":"Answer","text":"Segundo a reportagem da Help Net Security, o alerta de CISA, NSA e FBI citou DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun e Z.AI. A reportagem não incluiu resposta das empresas."}},{"@type":"Question","name":"A destilação de modelos é sempre ruim?","acceptedAnswer":{"@type":"Answer","text":"Não. A destilação é uma técnica padrão para treinar um modelo menor e mais barato a partir de um maior. O problema é a extração não autorizada do modelo de outra pessoa, o que levanta questões de consentimento, salvaguardas e procedência."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://farseev.com/pt/"},{"@type":"ListItem","position":2,"name":"Notícias de IA","item":"https://farseev.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Ataques de destilação: o que modelos de IA copiados significam para você","item":"https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/pt/","jobTitle":"Fundador e CEO da SOMIN.ai; professor convidado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/pt/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/pt/#about">Sobre</a><a href="/pt/#research">Pesquisa</a><a href="/pt/blog/" aria-current="page">Notícias de IA</a><a href="/pt/#talks">Palestras</a><a href="/pt/#connect">Contato</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-distillation-attacks-cisa-advisory/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-distillation-attacks-cisa-advisory/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/ai-distillation-attacks-cisa-advisory/">Filipino</option><option value="es" lang="es" data-href="/es/blog/ai-distillation-attacks-cisa-advisory/">Español</option><option value="pt" lang="pt" selected>Português</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Trilha de navegação"><ol><li><a href="/pt/">Início</a></li><li><a href="/pt/blog/">Notícias de IA</a></li><li aria-current="page">Ataques de destilação: o que modelos de IA copiados significam para você</li></ol></nav>
+      <p class="eyebrow">Notícias de IA, explicadas · Regulação e segurança</p>
+      <h1 class="h-display">Ataques de destilação: o que modelos de IA copiados significam para você</h1>
+      <p class="lead">Agências dos EUA citaram seis empresas chinesas de IA em um alerta sobre destilação, e a Anthropic diz que suas defesas reduziram em 90% a 99% os dados coletados. O que isso significa para quem compra IA.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>A notícia: CISA, NSA e FBI emitem alerta sobre destilação em escala industrial de modelos de IA dos EUA; a Anthropic relata novas defesas contra destilação (<time datetime="2026-10-12">12 de outubro de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de novembro de 2026</time><span class="dot"></span><span>4 min de leitura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>“Destilação” costumava ser uma palavra educada no machine learning. Descrevia o treinamento de um modelo pequeno para imitar um grande, uma técnica padrão e útil. Em setembro e outubro de 2026, ela virou uma pauta de segurança e de comércio. Se você compra ou constrói IA para marketing, deve entender os dois sentidos.</p>
+<h2>O que aconteceu</h2>
+<p>No início de setembro, CISA, NSA e FBI publicaram um alerta conjunto sobre o que descrevem como destilação de conhecimento em escala industrial por empresas de IA sediadas na China. Segundo a <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">reportagem da Help Net Security sobre o alerta</a>, as agências citaram DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun e Z.AI e afirmaram que elas extraíram bilhões de tokens por meio de milhões de requisições a modelos de fronteira dos EUA desde pelo menos o fim de 2024. O alerta lista sinais de detecção, como uso ininterrupto sem tempo ocioso humano e grupos de contas agindo de forma coordenada, e recomenda verificações de identidade mais fortes, monitoramento e compartilhamento de informações entre provedores de IA. A reportagem observa que não incluiu manifestação das empresas citadas.</p>
+<p>Em 12 de outubro, a Anthropic descreveu sua própria resposta. Em <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>, afirmou que evidências preliminares sugerem que seus métodos reduziram em cerca de 90% a 99% os dados coletados por destiladores. As medidas incluem impedir que contas de API mais novas editem o raciocínio anterior do Claude, um classificador em duas etapas treinado com tentativas de extração e com taxa de falsos positivos abaixo de 0,1%, limites mais rígidos e banimentos para tentativas repetidas, e a cobrança por requisições bloqueadas por suas salvaguardas. A Anthropic diz ter banido dezenas de milhares de contas ligadas à destilação e espera um contínuo “jogo de gato e rato”.</p>
+<h2>Por que isso importa</h2>
+<p>Há dois motivos para um profissional de marketing se importar com uma briga entre laboratórios de IA.</p>
+<p>O primeiro é o risco na cadeia de suprimentos. Se um modelo foi construído copiando o comportamento de outro modelo sem permissão, você não sabe quais salvaguardas vieram junto. O post da Anthropic argumenta que modelos destilados podem se aproximar da capacidade de fronteira enquanto são lançados com proteções mais fracas. Quando você escolhe um modelo para rodar seu atendimento ao cliente ou gerar anúncios, a procedência faz parte da qualidade.</p>
+<p>O segundo é o atrito para usuários legítimos. Defesas têm custos. A Anthropic reconhece que alguns desenvolvedores precisaram atualizar integrações, que uma pequena parcela de requisições benignas pode ser bloqueada e que requisições bloqueadas agora podem ser cobradas. Se o seu stack de marketing faz muitas chamadas automatizadas a uma API de fronteira, parte desse tráfego pode parecer uma campanha de extração. Leia as políticas dos seus provedores agora, não depois que seu pipeline quebrar.</p>
+<h2>O que minha pesquisa diz</h2>
+<p>A destilação não é a vilã aqui. Feita de forma legítima, é como tornamos a IA acessível. Um modelo grande ensina um pequeno; o pequeno roda barato em escala. Argumentei na Forbes que, no marketing, <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">a técnica importa mais do que o tamanho do modelo</a>, e a destilação é uma dessas técnicas.</p>
+<p>O que muda o quadro é consentimento e transparência. Meu trabalho em IA explicável parte de um princípio simples: um profissional de marketing deve poder ver por que um sistema recomenda algo. Em <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), combinamos a previsão de taxa de cliques com um assistente baseado em LLM que explica os fatores determinantes. Em <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (um preprint de 2024), descrevemos a combinação de modelos de desempenho explicáveis com LLMs para análise de concorrentes. Explicações só significam algo se você sabe o que é o modelo e de onde ele veio.</p>
+<p>Há também uma ironia que vale notar. A defesa que a Anthropic descreve, resumir ou restringir o acesso ao raciocínio completo do modelo, torna os sistemas um pouco menos transparentes para todos, porque o raciocínio é o que os copiadores querem. Esse trade-off vai moldar quanto de explicação os fornecedores de IA estarão dispostos a expor. Os compradores devem pedir explicações pensadas para eles, sobre seus dados e suas decisões, em vez de rastros brutos de raciocínio.</p>
+<h2>O que quem compra IA para marketing deve fazer agora</h2>
+<ul><li>Pergunte a cada fornecedor quais modelos estão por trás do produto e de onde esses modelos vêm.</li><li>Verifique os termos das APIs que você chama. O uso automatizado e de alto volume é normal no marketing; garanta que o seu seja claramente legítimo, identificado e dentro dos limites.</li><li>Planeje uma troca de modelo. Políticas, preços e acesso podem mudar rapidamente. Mantenha prompts, procedimentos e conjuntos de avaliação portáteis.</li><li>Destile seus próprios modelos de forma legítima. Se você precisa de um modelo barato para uma tarefa restrita, treine-o com seus próprios dados ou com saídas que você tem licença para usar.</li><li>Prefira explicações de decisões à exposição de mecanismos internos. O que você precisa auditar é por que uma recomendação foi feita para a sua campanha.</li></ul>
+<p>A briga da destilação é sobre quem pode copiar quem. Para o marketing, é um lembrete de que “qual modelo?” agora é uma questão de governança, e não apenas técnica.</p>
+<h2 id="faq">Perguntas frequentes</h2>
+<div class="faq"><details><summary>O que é um ataque de destilação de IA?</summary><p>É uma campanha encoberta e em larga escala que extrai as capacidades de um modelo consultando-o, muitas vezes por meio de redes de contas fraudulentas, e usa as saídas para treinar outro modelo sem a permissão do desenvolvedor original.</p></details><details><summary>Quais empresas o alerta dos EUA citou?</summary><p>Segundo a reportagem da Help Net Security, o alerta de CISA, NSA e FBI citou DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun e Z.AI. A reportagem não incluiu resposta das empresas.</p></details><details><summary>A destilação de modelos é sempre ruim?</summary><p>Não. A destilação é uma técnica padrão para treinar um modelo menor e mais barato a partir de um maior. O problema é a extração não autorizada do modelo de outra pessoa, o que levanta questões de consentimento, salvaguardas e procedência.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fontes</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> é fundador e CEO da SOMIN.ai e professor convidado de IA na NUS e no INSEAD. Sua pesquisa revisada por pares abrange perfilamento de usuários multifonte, recomendação sensível à personalidade e IA explicável para marketing.</p>
+<p class="links"><a href="/pt/">Sobre Aleks</a><a href="/pt/#publications">Publicações</a><a href="/pt/blog/">Mais notícias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continue lendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Mais notícias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/pt/blog/mas-ai-risk-management-guidelines/"><span class="meta">Regulação e segurança · 7 de outubro de 2026</span><h3>Diretrizes de risco de IA da MAS: um modelo útil além dos bancos</h3><p>A MAS publicou diretrizes de gestão de riscos de IA para instituições financeiras. Suas regras de inventário e de terceiros são um bom modelo para equipes de marketing.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulação e segurança · 29 de setembro de 2026</span><h3>O acordo de IA da Casa Branca e os avaliadores independentes</h3><p>Líderes de tecnologia assinaram um acordo voluntário com a Casa Branca prometendo avaliadores externos, e a Anthropic deu acesso amplo ao METR. Por que auditorias importam para a IA de marketing.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Anúncios e IA para marketing · 29 de outubro de 2026</span><h3>WPP no 3º tri de 2026: o modelo de agência sob a pressão da IA</h3><p>A WPP registrou queda na receita líquida comparável enquanto seu CEO apontava a demanda por serviços com IA via WPP Open. O que isso diz sobre as agências.</p><span class="go">Ler →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO de GenAI, professor de IA, palestrante keynote e acordeonista. Unindo pesquisa de ponta e marketing do mundo real, de Singapura para o mundo.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/pt/">Início</a></li>
+          <li><a href="/pt/blog/">Blog de notícias de IA</a></li>
+          <li><a href="/pt/#research">Pesquisa</a></li>
+          <li><a href="/pt/#publications">Publicações</a></li>
+          <li><a href="/pt/#connect">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Em outros lugares</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>As opiniões são minhas. Os fatos noticiados têm link para suas fontes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

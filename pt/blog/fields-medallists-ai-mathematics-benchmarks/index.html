@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Vinte e cinco medalhistas Fields alertaram que lançar a IA contra problemas não resolvidos confunde um indicador indireto com o objetivo. O marketing tem o mesmo problema de benchmark." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing | Prof. Aleks Farseev" />
+<meta property="og:description" content="Vinte e cinco medalhistas Fields alertaram que lançar a IA contra problemas não resolvidos confunde um indicador indireto com o objetivo. O marketing tem o mesmo problema de benchmark." />
+<meta property="og:url" content="https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — notícias de IA, explicadas" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Pesquisa" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Vinte e cinco medalhistas Fields alertaram que lançar a IA contra problemas não resolvidos confunde um indicador indireto com o objetivo. O marketing tem o mesmo problema de benchmark." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing","description":"Vinte e cinco medalhistas Fields alertaram que lançar a IA contra problemas não resolvidos confunde um indicador indireto com o objetivo. O marketing tem o mesmo problema de benchmark.","image":"https://farseev.com/og-image.png","inLanguage":"pt","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/pt/blog/#blog"},"articleSection":"Pesquisa","about":{"@type":"Thing","name":"Medalhistas Fields publicam “A Severe Misalignment of AI in Mathematics”; a OpenAI se retira de um mathathon de IA no Caltech"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"O que é “A Severe Misalignment of AI in Mathematics”?","acceptedAnswer":{"@type":"Answer","text":"É uma declaração publicada em 11 de setembro de 2026 e assinada por 25 medalhistas Fields, segundo o The Next Web. Ela argumenta que resolver problemas é um indicador indireto do objetivo real da matemática, a compreensão conceitual, e alerta que produzir afirmações em massa e em alta velocidade pode prejudicar a área."}},{"@type":"Question","name":"A OpenAI se retirou do Mathathon do Caltech?","acceptedAnswer":{"@type":"Answer","text":"O The Next Web informa que a OpenAI retirou seus US$ 1 milhão em créditos do Mathathon organizado por estudantes no Caltech em 10 de setembro de 2026, enquanto a Anthropic manteve sua contribuição e o evento foi realizado."}},{"@type":"Question","name":"O que o debate sobre IA na matemática significa para o marketing?","acceptedAnswer":{"@type":"Answer","text":"É um alerta sobre otimizar para métricas indiretas. As equipes de marketing devem vincular as métricas de IA a resultados reais, contabilizar o custo da verificação humana e medir se o trabalho assistido por IA continua diferenciado."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://farseev.com/pt/"},{"@type":"ListItem","position":2,"name":"Notícias de IA","item":"https://farseev.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing","item":"https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/pt/","jobTitle":"Fundador e CEO da SOMIN.ai; professor convidado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/pt/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/pt/#about">Sobre</a><a href="/pt/#research">Pesquisa</a><a href="/pt/blog/" aria-current="page">Notícias de IA</a><a href="/pt/#talks">Palestras</a><a href="/pt/#connect">Contato</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/fields-medallists-ai-mathematics-benchmarks/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/fields-medallists-ai-mathematics-benchmarks/">한국어</option><option value="th" lang="th" data-href="/th/blog/fields-medallists-ai-mathematics-benchmarks/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/fields-medallists-ai-mathematics-benchmarks/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/fields-medallists-ai-mathematics-benchmarks/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/fields-medallists-ai-mathematics-benchmarks/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/fields-medallists-ai-mathematics-benchmarks/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/fields-medallists-ai-mathematics-benchmarks/">Filipino</option><option value="es" lang="es" data-href="/es/blog/fields-medallists-ai-mathematics-benchmarks/">Español</option><option value="pt" lang="pt" selected>Português</option><option value="ru" lang="ru" data-href="/ru/blog/fields-medallists-ai-mathematics-benchmarks/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Trilha de navegação"><ol><li><a href="/pt/">Início</a></li><li><a href="/pt/blog/">Notícias de IA</a></li><li aria-current="page">Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing</li></ol></nav>
+      <p class="eyebrow">Notícias de IA, explicadas · Pesquisa</p>
+      <h1 class="h-display">Medalhistas Fields vs. benchmarks de IA: uma lição para o marketing</h1>
+      <p class="lead">Vinte e cinco medalhistas Fields alertaram que lançar a IA contra problemas não resolvidos confunde um indicador indireto com o objetivo. O marketing tem o mesmo problema de benchmark.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>A notícia: medalhistas Fields publicam “A Severe Misalignment of AI in Mathematics”; a OpenAI se retira de um mathathon de IA no Caltech (<time datetime="2026-09-11">11 de setembro de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de novembro de 2026</time><span class="dot"></span><span>4 min de leitura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Matemáticos não costumam escrever cartas abertas sobre marketing. Mas o argumento que um grupo de medalhistas Fields apresentou em setembro se aplica quase palavra por palavra à forma como o nosso setor mede a IA. O ponto deles: resolver problemas é um indicador indireto, e o objetivo real é a compreensão. Confunda os dois e você pode danificar justamente aquilo que tentava melhorar.</p>
+<h2>O que aconteceu</h2>
+<p>Segundo o <a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a>, em 11 de setembro uma declaração intitulada <em>A Severe Misalignment of AI in Mathematics</em> foi publicada em mathandai.org. O site lista 25 signatários, entre eles Terence Tao, Peter Scholze, Maryna Viazovska, Cédric Villani, Pierre Deligne, Manjul Bhargava e Martin Hairer. A declaração argumenta que resolver problemas é uma ferramenta e um indicador indireto, enquanto o objetivo principal da matemática é a compreensão conceitual e o insight. Ela alerta que produzir em massa afirmações verdadeiras ou falsas em ritmo crescente “poderia destruir um terreno fértil”. O TNW a descreve como uma declaração sobre benchmarks; ela não cita nenhum evento específico.</p>
+<p>Na mesma semana, uma carta aberta separada criticou um “Mathathon” de IA organizado por estudantes no Caltech, chamando o formato de “matemática de baixa qualidade” e argumentando que o trabalho de verificar e corrigir resultados de IA fica “sem remuneração, sem crédito e sem reconhecimento”. O TNW informa que a OpenAI retirou seus US$ 1 milhão em créditos do evento em 10 de setembro, enquanto a Anthropic manteve sua contribuição, e que os organizadores acrescentaram exigências, mas não cancelaram.</p>
+<h2>Por que isso importa</h2>
+<p>A queixa dos matemáticos é sobre uma armadilha conhecida. Quando um problema difícil e famoso vira benchmark, os laboratórios otimizam para produzir respostas a ele. Respostas são mensuráveis. Compreensão, não. Com o tempo, o que é mensurável expulsa o que é valioso, e sobra para outra pessoa verificar o resultado.</p>
+<p>A IA para marketing tem exatamente esse problema. Avaliamos as ferramentas pelo que é fácil de contar: número de ativos gerados, tempo economizado, taxa de cliques, parcela das respostas de IA que mencionam a marca. Esses números importam. Mas o objetivo do marketing não é produção; é entender os clientes bem o suficiente para atendê-los e construir uma marca em que as pessoas confiem. Um sistema que inunda os canais de conteúdo e vence em métricas indiretas pode corroer silenciosamente as duas coisas.</p>
+<p>O ponto sobre a verificação não remunerada também procede. Conteúdo gerado é barato de produzir e caro de verificar. Se a verificação não aparece nas suas métricas, seus “ganhos de produtividade” são em parte um truque contábil.</p>
+<h2>O que minha pesquisa diz</h2>
+<p>Minha pesquisa recente é construída em torno dessa distinção. Em nosso artigo no SIGIR 2026, <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a>, o problema que abordamos é justamente que o conteúdo escrito por IA converge: o assistente de todo mundo produz os mesmos posts competentes e genéricos. Nossa abordagem é recuperar dados reais de contexto antes de escrever, para que o resultado continue diferenciado. Volume sem diferenciação é a versão de marketing do conteúdo de baixa qualidade.</p>
+<p>Sobre mensuração, defendi no e27 que <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">todo dashboard está verde, mas ninguém consegue dizer o que funcionou</a>. Métricas indiretas que apontam todas para cima não são o mesmo que saber o que causou os resultados. E em nosso trabalho de IA explicável, de <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> ao <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>, o objetivo não é só uma previsão melhor, mas uma explicação com a qual um profissional de marketing possa aprender. Esse é o equivalente, no marketing, à “compreensão conceitual” dos matemáticos.</p>
+<h2>O que as equipes de marketing podem tirar disso</h2>
+<ul><li>Nomeie o objetivo por trás de cada métrica. Para cada KPI de IA, escreva uma frase sobre qual resultado real ele deveria representar e verifique periodicamente se o vínculo ainda se sustenta.</li><li>Contabilize o custo de verificação. Acompanhe o tempo humano gasto revisando e corrigindo o resultado da IA e inclua-o no seu ROI.</li><li>Meça a diferenciação. Compare seu conteúdo assistido por IA com o dos concorrentes. Se ele está ficando indistinguível, você está vencendo em um indicador indireto e perdendo a marca.</li><li>Prefira explicações a notas. Uma ferramenta que diz por que algo funcionou constrói conhecimento na equipe; uma que só diz que funcionou constrói dependência.</li><li>Dê crédito às pessoas. Se há pessoas limpando o resultado da IA, torne esse trabalho visível e valorizado, e não presumido.</li></ul>
+<p>Os matemáticos estão protegendo sua área de uma cultura de benchmarks que confunde respostas com compreensão. O marketing deveria se proteger do mesmo erro.</p>
+<h2 id="faq">Perguntas frequentes</h2>
+<div class="faq"><details><summary>O que é “A Severe Misalignment of AI in Mathematics”?</summary><p>É uma declaração publicada em 11 de setembro de 2026 e assinada por 25 medalhistas Fields, segundo o The Next Web. Ela argumenta que resolver problemas é um indicador indireto do objetivo real da matemática, a compreensão conceitual, e alerta que produzir afirmações em massa e em alta velocidade pode prejudicar a área.</p></details><details><summary>A OpenAI se retirou do Mathathon do Caltech?</summary><p>O The Next Web informa que a OpenAI retirou seus US$ 1 milhão em créditos do Mathathon organizado por estudantes no Caltech em 10 de setembro de 2026, enquanto a Anthropic manteve sua contribuição e o evento foi realizado.</p></details><details><summary>O que o debate sobre IA na matemática significa para o marketing?</summary><p>É um alerta sobre otimizar para métricas indiretas. As equipes de marketing devem vincular as métricas de IA a resultados reais, contabilizar o custo da verificação humana e medir se o trabalho assistido por IA continua diferenciado.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fontes</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> é fundador e CEO da SOMIN.ai e professor convidado de IA na NUS e no INSEAD. Sua pesquisa revisada por pares abrange perfilamento de usuários multifonte, recomendação sensível à personalidade e IA explicável para marketing.</p>
+<p class="links"><a href="/pt/">Sobre Aleks</a><a href="/pt/#publications">Publicações</a><a href="/pt/blog/">Mais notícias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continue lendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Mais notícias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/pt/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Anúncios e IA para marketing · 29 de outubro de 2026</span><h3>WPP no 3º tri de 2026: o modelo de agência sob a pressão da IA</h3><p>A WPP registrou queda na receita líquida comparável enquanto seu CEO apontava a demanda por serviços com IA via WPP Open. O que isso diz sobre as agências.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/malaysia-ai-governance-bill/"><span class="meta">Ásia e Singapura · 29 de outubro de 2026</span><h3>AI Governance Bill da Malásia: responsabilidade por papel</h3><p>O projeto do AI Governance Bill da Malásia, previsto até o início de 2027, impõe deveres a quem desenvolve, fornece ou usa IA. O que regras por papel significam para o marketing.</p><span class="go">Ler →</span></a><a class="pcard" href="/pt/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Busca com IA · 29 de outubro de 2026</span><h3>Adobe: tráfego de IA já converte mais que outras visitas</h3><p>A Adobe diz que visitas vindas de IA a varejistas dos EUA converteram 90% mais que outros tráfegos em setembro. Por que respostas de IA viraram um canal e o que fazer.</p><span class="go">Ler →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO de GenAI, professor de IA, palestrante keynote e acordeonista. Unindo pesquisa de ponta e marketing do mundo real, de Singapura para o mundo.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/pt/">Início</a></li>
+          <li><a href="/pt/blog/">Blog de notícias de IA</a></li>
+          <li><a href="/pt/#research">Pesquisa</a></li>
+          <li><a href="/pt/#publications">Publicações</a></li>
+          <li><a href="/pt/#connect">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Em outros lugares</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>As opiniões são minhas. Os fatos noticiados têm link para suas fontes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
