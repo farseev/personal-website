@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic の新しい利用ポリシーは「政治的か商業的かを問わず」欺瞞的なキャンペーンを禁止し、広告収入目的で作られたフェイクニュースを発見しました。マーケターにとっての一線です。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic の新しい利用ポリシーは「政治的か商業的かを問わず」欺瞞的なキャンペーンを禁止し、広告収入目的で作られたフェイクニュースを発見しました。マーケターにとっての一線です。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="責任あるマーケティング" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic の新しい利用ポリシーは「政治的か商業的かを問わず」欺瞞的なキャンペーンを禁止し、広告収入目的で作られたフェイクニュースを発見しました。マーケターにとっての一線です。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う","description":"Anthropic の新しい利用ポリシーは「政治的か商業的かを問わず」欺瞞的なキャンペーンを禁止し、広告収入目的で作られたフェイクニュースを発見しました。マーケターにとっての一線です。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"責任あるマーケティング","about":{"@type":"Thing","name":"Anthropic が利用ポリシーに欺瞞的キャンペーンに関する項を追加し、米国中間選挙を前に選挙関連の悪用について報告"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"Anthropic の2026年版利用ポリシーは、商業的な欺瞞について何と述べていますか？","acceptedAnswer":{"@type":"Answer","text":"新しい項「Do Not Engage in Deceptive Campaigns or Artificial Activity」は、「政治的か商業的かを問わず」欺瞞的な活動に適用され、メッセージの発信者を隠すこと、偽のアカウントや投稿でコンテンツを拡散すること、影響工作のためのインフラを構築することが含まれます。Anthropic によると、この更新は11月12日に発効します。"}},{"@type":"Question","name":"Anthropic は、広告収入目的でフェイクニュースを作るためにAIが使われているのを発見したのですか？","acceptedAnswer":{"@type":"Answer","text":"はい。中間選挙に関する報告で、Anthropic は、一部の行為者が広告収入を得るために Claude を使って捏造ニュースを作成しており、関与したアカウントを利用停止にしたと述べています。"}},{"@type":"Question","name":"新しいポリシーのもとで、パーソナライズされたターゲティングは禁止されていますか？","acceptedAnswer":{"@type":"Answer","text":"Anthropic は、投票や選挙運動のパーソナライズされたターゲティングの全面禁止を撤廃しました。欺瞞や個人データの悪用に依拠するターゲティングは、ポリシーの他の項のもとで引き続き禁止されています。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う","item":"https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/ai-usage-policy-deceptive-commercial-campaigns/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · 責任あるマーケティング</p>
+      <h1 class="h-display">AIルールは偽の商業的な話題づくりを選挙不正と同様に扱う</h1>
+      <p class="lead">Anthropic の新しい利用ポリシーは「政治的か商業的かを問わず」欺瞞的なキャンペーンを禁止し、広告収入目的で作られたフェイクニュースを発見しました。マーケターにとっての一線です。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Anthropic が利用ポリシーに欺瞞的キャンペーンに関する項を追加し、米国中間選挙を前に選挙関連の悪用について報告（<time datetime="2026-10-14">2026年10月14日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>長年、AIと世論操作をめぐる議論は選挙が中心でした。その焦点は理にかなっています。しかし、政治運動を偽装するのと同じ手法で、製品の人気も偽装できます。10月、Anthropic はそのつながりを自社のルールで明確にしました。マーケターはこれを、自分たちの方向にも引かれた一線として読むべきです。</p>
+<h2>何が起きたのか</h2>
+<p>10月8日、Anthropic は11月12日発効の<a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026年版利用ポリシーの更新</a>を公表しました。これは「Do Not Engage in Deceptive Campaigns or Artificial Activity（欺瞞的キャンペーンや人為的な活動に関与しないこと）」という項を追加するもので、これまで選挙、詐欺、プライバシー、偽情報の各項に分散していたルールを統合しています。新しい項は「あらゆる種類の欺瞞的な活動（政治的か商業的かを問わず）に適用される」としています。メッセージの発信者を隠すこと、偽のアカウントや投稿でコンテンツを拡散すること、影響工作のためのツールやインフラを構築することが対象です。</p>
+<p>この更新では、投票や選挙運動のパーソナライズされたターゲティングの全面禁止も撤廃されました。欺瞞や有権者の個人データの悪用に依拠するターゲティングは、欺瞞的キャンペーン、監視、プライバシーの各項のもとで引き続き禁止されています。</p>
+<p>1週間後、<a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> で、Anthropic は実際に目にしていることを説明しました。いくつかの事例の中で、一部の行為者が広告収入を得るために Claude を使って捏造されたニュースを作成しており、関与したアカウントを利用停止にしたと報告しています。また、安全対策をテストしたパートナーが、Claude は単発の有害なリクエストは確実に拒否したものの、個々には無害なタスクに分割されたキャンペーンを見逃すことがあると気づいたこと、そして偽のソーシャルメディアアカウントやニュースサイトといった多段階の悪用に対する分類器を追加したことも報告しています。</p>
+<h2>なぜ重要なのか</h2>
+<p>マーケティングに携わる人なら誰もが注目すべき点が2つあります。</p>
+<p>「または商業的」という言葉は、偽のレビュー、なりすましアカウント、ボットで拡散された製品発表、偽装された「草の根」の話題づくりを、政治的な影響工作と同じカテゴリーに入れています。これらのいずれにも Claude を使うことはできませんが、業界全体の方向性は明らかです。AIプロバイダーは組織的な偽装行為を監視しており、候補者を売り込むことと製品を売り込むことを区別していません。</p>
+<p>2つ目は、一部の悪用の背後にあるビジネスモデル、つまり広告収入を得るために作られた捏造ニュースです。これはコンテンツだけの問題ではありません。広告資金の問題です。ブランドの予算が自動化されたプログラマティック購入を通じて捏造サイトに流れると、広告主は多くの場合知らないうちに、その欺瞞の費用を負担することになります。</p>
+<p>ターゲティングに関する変更も注目に値します。パーソナライゼーションそのものは害とはみなされていません。害とされるのは欺瞞と個人データの悪用です。私はそれが正しい区別だと考えます。</p>
+<h2>私の研究が示すこと</h2>
+<p>私はキャリアの大半を、オーディエンスをプロファイリングするシステムの構築に費やしてきました。<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">複数のソーシャルネットワークからのユーザープロファイル学習</a>、<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">ネットワークをまたいだパーソナリティの推定</a>、<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">パーソナリティを用いたコンテンツ推薦</a>などです。これらの手法がいかに強力かを知っているからこそ、WSDM 2023 で<a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">広告ターゲティングとクリエイティブ評価におけるAIの責任ある活用</a>について講演しました。</p>
+<p>私が Forbes で<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">贖いのマーケティング（redemptive marketing）</a>として示した見解は、透明性とパフォーマンスはトレードオフの関係にある必要はないというものです。オーディエンスによりよく応えるためにオーディエンスを理解することは正当です。偽のアカウントや偽の声でオーディエンスになりすますことは正当ではありません。新しいポリシーは、おおむね同じ場所に線を引いています。</p>
+<p>効果測定の観点もあります。偽のエンゲージメントは、現代のマーケティングAIが学習するデータそのものを汚染します。競合の話題の一部が人工的なものなら、「このカテゴリーで何が効くか」を読み取るモデルは誤った教訓を学ぶでしょう。ソーシャルデータから偽装された信号を取り除くことは、優れた分析の一部になっています。</p>
+<h2>マーケターが今すべきこと</h2>
+<ul><li>代理店やインフルエンサーとの契約に明記しましょう。偽のアカウント、購入したエンゲージメント、開示されていないスポンサードコンテンツは、AIで制作された場合も含めて禁止です。</li><li>誰が話しているのかを開示しましょう。AIがブランドや個人に代わって書く場合は、アカウントとスポンサーシップを明確にしてください。</li><li>プログラマティック広告費の行き先を監査しましょう。サイト単位のレポートを求め、発行元が特定できないサイトへの配信をブロックしてください。</li><li>自社のポリシーで、パーソナライゼーションと欺瞞を区別しましょう。同意を得たファーストパーティデータでメッセージを最適化することと、発信者を隠すことはまったく別のことです。</li><li>監視されることを前提にしましょう。ワークフローで大規模な投稿を自動化しているなら、正当な利用であることを容易に示せるよう文書化しておいてください。</li></ul>
+<p>選挙は問題を可視化しました。しかし、資金の大半があるのは商取引です。AIプロバイダーはそれに気づいています。マーケターは先手を打つべきです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>Anthropic の2026年版利用ポリシーは、商業的な欺瞞について何と述べていますか？</summary><p>新しい項「Do Not Engage in Deceptive Campaigns or Artificial Activity」は、「政治的か商業的かを問わず」欺瞞的な活動に適用され、メッセージの発信者を隠すこと、偽のアカウントや投稿でコンテンツを拡散すること、影響工作のためのインフラを構築することが含まれます。Anthropic によると、この更新は11月12日に発効します。</p></details><details><summary>Anthropic は、広告収入目的でフェイクニュースを作るためにAIが使われているのを発見したのですか？</summary><p>はい。中間選挙に関する報告で、Anthropic は、一部の行為者が広告収入を得るために Claude を使って捏造ニュースを作成しており、関与したアカウントを利用停止にしたと述べています。</p></details><details><summary>新しいポリシーのもとで、パーソナライズされたターゲティングは禁止されていますか？</summary><p>Anthropic は、投票や選挙運動のパーソナライズされたターゲティングの全面禁止を撤廃しました。欺瞞や個人データの悪用に依拠するターゲティングは、ポリシーの他の項のもとで引き続き禁止されています。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/character-ai-chapter-11-ai-personas/"><span class="meta">責任あるマーケティング · 2026年10月12日</span><h3>Character.AI の Chapter 11：AIペルソナ製品への教訓</h3><p>Character.AI は売却を目指して Chapter 11 を申請し、Disney が2,000万ドルでの入札を準備しています。AIキャラクターやコンパニオンを開発するブランドが学ぶべきことを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/wpp-q3-2026-agentic-agency/"><span class="meta">広告・マーケティングAI · 2026年10月29日</span><h3>WPP の2026年第3四半期：AIの圧力にさらされる代理店モデル</h3><p>WPP は既存事業ベースの純収益の減少を報告し、CEO は WPP Open を通じたAI活用サービスへの需要を強調しました。代理店にとっての意味を考えます。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/malaysia-ai-governance-bill/"><span class="meta">アジア・シンガポール · 2026年10月29日</span><h3>マレーシアの AI Governance Bill：役割に応じた責任</h3><p>2027年初頭までに提出予定のマレーシアの AI Governance Bill 草案は、AIを開発・提供・利用する者に義務を課します。役割別のルールがマーケターに意味することを解説します。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

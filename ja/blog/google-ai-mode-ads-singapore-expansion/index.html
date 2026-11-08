@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Google AI Mode の広告がシンガポールなどに上陸 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/google-ai-mode-ads-singapore-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/google-ai-mode-ads-singapore-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/google-ai-mode-ads-singapore-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Google AI Mode の広告がシンガポールなどに上陸 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI検索" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Google AI Mode の広告がシンガポールなどに上陸 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/#article","mainEntityOfPage":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/","url":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/","headline":"Google AI Mode の広告がシンガポールなどに上陸","description":"Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"AI検索","about":{"@type":"Thing","name":"Google が AI Mode の広告を新たに10市場に拡大し、米国でマルチターン広告を開始"},"wordCount":970,"citation":[{"@type":"CreativeWork","name":"Ads in AI Mode expand to new markets","url":"https://blog.google/products/ads-commerce/ads-in-ai-mode-global/","publisher":"Google (The Keyword)","datePublished":"2026-10-28"},{"@type":"CreativeWork","name":"Alphabet Q3 2026: Google Search revenue up 12% to $63.35 billion, flat on Q2","url":"https://www.relevantaudience.com/google-ads-en/alphabet-q3-2026-search-revenue-ai-mode-monetization/","publisher":"Relevant Audience","datePublished":"2026-10-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/#faq","mainEntity":[{"@type":"Question","name":"Google の AI Mode で広告が表示される市場はどこですか？","acceptedAnswer":{"@type":"Answer","text":"Google によると、オーストラリア、カナダ、インド、ケニア、マレーシア、ニュージーランド、ナイジェリア、パキスタン、フィリピン、シンガポールで AI Mode の広告を拡大しており、ブラジル、メキシコ、英国は2026年第4四半期に予定されています。マルチターン広告は米国で開始されます。"}},{"@type":"Question","name":"AI Mode のマルチターン広告とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"最初のクエリだけでなく、AI Mode の対話の中のフォローアップの質問にも表示されうる広告です。Google によると、まず米国で開始され、「スポンサー」のラベルが付きます。"}},{"@type":"Question","name":"広告主は、AI検索の広告にどう備えるべきですか？","acceptedAnswer":{"@type":"Answer","text":"長く状況に即した質問に向けて書き、顧客が尋ねそうなフォローアップの質問を整理し、明確で解析しやすい商品情報を公開し、クリック率だけでなくホールドアウトテストで成果を判断することです。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"Google AI Mode の広告がシンガポールなどに上陸","item":"https://farseev.com/ja/blog/google-ai-mode-ads-singapore-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/google-ai-mode-ads-singapore-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/google-ai-mode-ads-singapore-expansion/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">Google AI Mode の広告がシンガポールなどに上陸</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · AI検索</p>
+      <h1 class="h-display">Google AI Mode の広告がシンガポールなどに上陸</h1>
+      <p class="lead">Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Google が AI Mode の広告を新たに10市場に拡大し、米国でマルチターン広告を開始（<time datetime="2026-10-28">2026年10月28日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>10月28日、Google は対話型検索体験である AI Mode の広告を、さらに10市場に拡大すると発表しました。シンガポールもその一つです。マレーシアとフィリピンも含まれます。東南アジアのマーケターにとって、AIの回答の中にどう現れるかという問いは、もはや理論上の話ではなくなりました。</p>
+<h2>何が起きたのか</h2>
+<p>The Keyword への投稿で、Google の検索広告を統括する Shashi Thakur は、Google がオーストラリア、カナダ、インド、ケニア、マレーシア、ニュージーランド、ナイジェリア、パキスタン、フィリピン、シンガポールで <a href="https://blog.google/products/ads-commerce/ads-in-ai-mode-global/" target="_blank" rel="noopener">AI Mode の広告を拡大している</a>と述べました。ブラジル、メキシコ、英国は2026年第4四半期に予定されています。米国では、ユーザーが AI Mode 内で行うフォローアップの質問に表示されうるマルチターン広告も開始します。広告には「スポンサー」のラベルが付きます。</p>
+<p>Google はこの動きを、2つの社内データで裏づけました。AI Mode のクエリは従来の検索より平均で3倍長いとしています（同社の AI Mode レポート、米国、2026年5月）。また、AI Mode 内のスポンサー付き商品リストとオーガニック商品リストのクリック率は、すでに同程度であるとしています（社内データ、米国、2026年8月20日〜9月3日）。</p>
+<p>同じ日、Alphabet は第3四半期の決算を発表しました。<a href="https://www.relevantaudience.com/google-ads-en/alphabet-q3-2026-search-revenue-ai-mode-monetization/" target="_blank" rel="noopener">Relevant Audience による決算の読み解き</a>によると、Google 検索およびその他の収益は前年比12%増の633.5億米ドルで、前四半期からはほぼ横ばいでした。Sundar Pichai はクエリの伸びを過去5年で最高と表現しました。レポートは、経営陣のコメントに基づき、収益の伸びの鈍化の一因を AI Mode のクエリの収益化の低さにあるとしています。</p>
+<h2>なぜ重要なのか</h2>
+<p>これらの事実を合わせると、シンプルな構図が見えてきます。人々はより長く、より具体的な質問をしています。Google はそれに対話で答えています。そして Google は今、AI Mode の収益力を高める商業的な理由があるこのタイミングで、私たちの地域において、その対話の中の枠を販売しているのです。</p>
+<p>広告主にとって、3倍長いクエリは贈り物です。「ランニングシューズ」からはほとんど何もわかりません。「湿度の高い気候向けの軽量ランニングシューズ、幅広の足、200シンガポールドル以下、初めてのハーフマラソン用」からは、気候、体、予算、目標がわかります。それはキーワードではなく、プロファイルです。</p>
+<p>マルチターン広告はさらに重要です。対話では、意図は一往復ごとに積み上がっていきます。3つ目のフォローアップ質問に表示される広告は、一続きの語句ではなく、その人がそれまでに話したことすべてにマッチングされます。</p>
+<h2>私の研究が示すこと</h2>
+<p>私はキャリアの大半を一つの考えに費やしてきました。人は、一つの信号を見るよりも多くの信号を組み合わせたほうがよく理解できるということです。<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a>（ICMR 2015）では、マルチソースのソーシャルメディアデータセットと、ユーザーの人口統計的属性と移動に関するプロファイルを学習するアンサンブルモデルを構築しました。その後、<a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a>（AAAI 2020）では、データソースの選択によってAIのユーザーモデルの精度が変わることを示しました。</p>
+<p>マルチターンの対話は、数分間に圧縮されたマルチソースの信号です。一往復ごとに、同じ人物についての新たな視点が加わります。何を必要としているのか、何を除外するのか、何を大切にしているのか。プロファイリング研究の教訓はそのまま当てはまります。価値は組み合わせにあり、順序が重要です。対話全体を読む広告システムは、単一のクエリに反応するシステムに勝ち、対話全体に向けて書く広告主は、キーワードに向けて書く広告主に勝つでしょう。</p>
+<p>2つ目の教訓はラベルに関するものです。Google によると、AI Mode 内では、スポンサー付きとオーガニックの商品リストのクリック率はすでに同程度です。これは短期的には広告主にとって良いニュースです。そしてそれこそが、「スポンサー」のラベルが明確であり続けなければならない理由でもあります。私は長年、<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">贖いのマーケティング（redemptive marketing）</a>に関する Forbes のコラムなどで、透明性とパフォーマンスは対立するものではないと論じてきました。アンサーエンジンでは、信頼こそが製品です。人々が回答と広告を見分けられなくなれば、どちらも価値を失います。</p>
+<h2>東南アジアのマーケターが今すべきこと</h2>
+<ul><li>ブリーフをキーワードではなく状況を軸に書き直しましょう。顧客が実際に尋ねる長く具体的な質問を、顧客自身の言葉で書き出し、ランディングページがそれに平易に答えているか確認してください。</li><li>対話を単位として扱いましょう。最初の質問の後に続きそうな2つ目、3つ目の質問を整理してください。マルチターン広告が表示されるのはそこだからです。</li><li>機械にきれいな商品データを与えましょう。アンサーエンジンは解析できるものを引用します。価格、サイズ、在庫状況、ポリシーはページ上に明示してください。</li><li>クリックではなく、増分効果を測りましょう。クリック率が同程度でも、AI Mode の広告が、それがなくても発生した売上ではない売上を生んだかどうかはわかりません。予算を移す前にホールドアウトテストを実施してください。</li><li>オーガニックの足元も固めておきましょう。スポンサー付きとオーガニックのリストが並んで表示されるなら、オーガニックの回答で引用される情報源になることは、依然として最も安価に得られる可視性です。</li></ul>
+<p>10市場は始まりであって、最終形ではありません。アンサーエンジンがシンガポール、クアラルンプール、マニラで同時に枠の販売を始めるなら、地域チームはそれを10の別々の実験としてではなく、現地ごとのニュアンスを持つ一つのチャネルとして計画すべきです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>Google の AI Mode で広告が表示される市場はどこですか？</summary><p>Google によると、オーストラリア、カナダ、インド、ケニア、マレーシア、ニュージーランド、ナイジェリア、パキスタン、フィリピン、シンガポールで AI Mode の広告を拡大しており、ブラジル、メキシコ、英国は2026年第4四半期に予定されています。マルチターン広告は米国で開始されます。</p></details><details><summary>AI Mode のマルチターン広告とは何ですか？</summary><p>最初のクエリだけでなく、AI Mode の対話の中のフォローアップの質問にも表示されうる広告です。Google によると、まず米国で開始され、「スポンサー」のラベルが付きます。</p></details><details><summary>広告主は、AI検索の広告にどう備えるべきですか？</summary><p>長く状況に即した質問に向けて書き、顧客が尋ねそうなフォローアップの質問を整理し、明確で解析しやすい商品情報を公開し、クリック率だけでなくホールドアウトテストで成果を判断することです。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://blog.google/products/ads-commerce/ads-in-ai-mode-global/" target="_blank" rel="noopener">Ads in AI Mode expand to new markets</a> — Google (The Keyword), 28 October 2026</li><li translate="no"><a href="https://www.relevantaudience.com/google-ads-en/alphabet-q3-2026-search-revenue-ai-mode-monetization/" target="_blank" rel="noopener">Alphabet Q3 2026: Google Search revenue up 12% to $63.35 billion, flat on Q2</a> — Relevant Audience, 29 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI検索 · 2026年10月29日</span><h3>Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い</h3><p>Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI検索 · 2026年10月21日</span><h3>ChatGPT 広告が対話に：Sponsored Agents</h3><p>OpenAI は ChatGPT 内で Sponsored Agents をテストし、ChatGPT 広告を89か国に拡大しました。広告が言葉を返すとき、表示と誠実さそのものが製品になります。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI検索 · 2026年10月1日</span><h3>Penske 対 Google の訴え棄却：AIでの可視性にとっての意味</h3><p>米国の裁判官は、Google の AI Overviews をめぐる Penske Media の独占禁止法訴訟を、トラフィックに関する「正式な取引」はなかったとして棄却しました。ブランドが GEO について取るべき対応を解説します。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

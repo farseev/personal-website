@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5 とマーケティングにおける小型モデルの意義 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5 とマーケティングにおける小型モデルの意義 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="モデル" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5 とマーケティングにおける小型モデルの意義 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5 とマーケティングにおける小型モデルの意義","description":"Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"モデル","about":{"@type":"Thing","name":"Anthropic が大量処理・コスト重視の作業向け小型モデル Claude Haiku 5.5 をリリース"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"Claude Haiku 5.5 は何のために設計されていますか？","acceptedAnswer":{"@type":"Answer","text":"Anthropic は、要約、分類、データベースクエリ、ライブのカスタマーサポート、ブラウザ操作、サブエージェントのタスクなど、大量処理でコスト重視の作業向けに位置づけており、複雑なエージェント型コーディングには Sonnet 5.5 と Opus 5.5 を推奨しています。"}},{"@type":"Question","name":"Claude Haiku 5.5 の料金はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"Anthropic は、10万トークンまでのプロンプトについて、入力100万トークンあたり0.10米ドル、出力100万トークンあたり0.50米ドルとしており、平均で Haiku 4.5 より約75%安いとしています。"}},{"@type":"Question","name":"小型の言語モデルは、マーケティングのタスクに十分ですか？","acceptedAnswer":{"@type":"Answer","text":"タグ付け、要約、振り分けなど、大量処理の多くのタスクでは、適切に選んだ小型モデルで十分であり、はるかに安価です。自社のラベル付きの例でテストし、クリエイティブ評価のような仕事には専門的な予測モデルを使い続け、その出力の説明にLLMを使いましょう。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5 とマーケティングにおける小型モデルの意義","item":"https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/claude-haiku-5-5-small-models-marketing/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">Claude Haiku 5.5 とマーケティングにおける小型モデルの意義</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · モデル</p>
+      <h1 class="h-display">Claude Haiku 5.5 とマーケティングにおける小型モデルの意義</h1>
+      <p class="lead">Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Anthropic が大量処理・コスト重視の作業向け小型モデル Claude Haiku 5.5 をリリース（<time datetime="2026-10-07">2026年10月7日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>モデルが発表されるたびに、その場で最大のモデルと比較されます。私は、ほとんどのマーケティング業務にとってそれは間違った見方だと考えています。10月7日、Anthropic は Claude Haiku 5.5 をリリースしましたが、興味深いのはフロンティアにどれだけ近づいたかではありません。100万回実行したらいくらかかるかです。</p>
+<h2>何が起きたのか</h2>
+<p>Anthropic は Haiku 5.5 を<a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">同社がこれまでにリリースした中で最も安価で、最も高速で、最も高性能な小型モデル</a>と呼んでいます。対象は大量処理でコスト重視の作業です。要約、分類、データベースクエリ、ライブのカスタマーサポート、ブラウザ操作、そしてより大きな Opus 5.5 や Sonnet 5.5 と並んで動くサブエージェントの作業です。Haiku クラスで初めて調整可能な effort 設定を備え、ユーザーはコストと知能のバランスを取ることができます。Anthropic は、複雑なエージェント型コーディングには Sonnet 5.5 と Opus 5.5 のほうが引き続き優れていると明言しています。</p>
+<p>最大の話題は価格です。Anthropic は、10万トークンまでのプロンプトについて、入力100万トークンあたり0.10米ドル、出力100万トークンあたり0.50米ドルとしており、Haiku 5.5 のコストは平均で Haiku 4.5 より約75%低いとしています。発表ページには顧客の報告も掲載されています。たとえば HubSpot は、自社の CRM 評価スイートで92.8%のスコアを記録したとしています。これらは同社とその顧客による数値であり、独立したテストではありません。</p>
+<h2>なぜ重要なのか</h2>
+<p>マーケティングAIは量のビジネスです。一つのキャンペーンで、何千ものクリエイティブのバリエーション、分類すべき何万ものコメント、何十万行もの商品フィード、何十もの市場にわたる日次レポートが発生しえます。そのほとんどは、利用可能な最も強力なモデルを必要としません。必要なのは、十分に優秀で、高速で、予測可能で、すべてに使えるほど安価なモデルです。</p>
+<p>小型モデルが大幅に良くなり、同時に大幅に安くなると、何を自動化するかの経済性が変わります。すべての競合広告にタグを付けたり、すべての顧客レビューを要約したりといった、項目ごとに実行するには高すぎたタスクが日常業務になります。そしてアーキテクチャも変わります。大きなモデルが計画し判断し、その下で小さなモデルが反復作業をこなすのです。Haiku をサブエージェントとする Anthropic 自身の説明は、まさにそのパターンです。</p>
+<h2>私の研究が示すこと</h2>
+<p>私は長い間これを主張してきました。Forbes では<a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">大きいほど良いのか</a>と問い、その後<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">マーケティングにおけるLLMと小規模ニューラルネットワーク</a>を比較しました。私の答えは変わっていません。モデルの大きさは、手法やタスクへの適合性に比べてはるかに重要度が低いのです。</p>
+<p>私たちの研究は常に、どちらか一方を選ぶのではなく、2種類のモデルを組み合わせてきました。<a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>（WSDM 2023）では、テキスト、画像、ターゲティング、設定を用いて、広告主の Meta 広告クリエイティブを配信前に評価するマルチモーダルモデルを実演しました。<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>（ACM Transactions on Information Systems、2025年）では、広告パフォーマンス予測モデルとLLMを組み合わせ、クリエイティブのスコアをマーケターが実行できる推奨に変えました。</p>
+<p>その研究から得られた教訓は、専門的で効率的なモデルが測定を担い、大規模言語モデルが説明を担うということです。より安価で高性能な小型LLMは、専門的な予測モデルを置き換えるものではありません。マーケティングが実際に行われる規模で、説明とオーケストレーションのレイヤーを手頃なものにするのです。</p>
+<h2>私ならこのようなモデルをこう使う</h2>
+<ul><li>全件を対象にした分類。サンプリングするのではなく、自社カテゴリーのすべての競合投稿、すべてのレビュー、すべての広告に、テーマ、オファー、フォーマット別のタグを付けます。</li><li>一次要約。長いレポート、文字起こし、コメントスレッドを短いダイジェストにし、それを人間、またはより大きなモデルが確認します。</li><li>パイプライン内のサブエージェント。より大きなモデルに競合分析を計画させ、反復的な抽出ステップは小型モデルに任せます。</li><li>顧客対応のスピード。ライブチャットなど遅延が重要な場面では高速なモデルを使い、難しいケースはより強力なモデルか人間に回します。</li></ul>
+<h2>切り替える前にマーケターが確認すべきこと</h2>
+<ul><li>独自の評価を実施しましょう。ベンダーのベンチマークはあなたのタスクではありません。自分の業務から実例を200件取り出してラベルを付け、そのセットでモデルを比較してください。</li><li>トークンあたりのコストではなく、タスクあたりのコストを見ましょう。Anthropic によると、Haiku 5.5 は新しいトークナイザーを使用しており、タスクあたりのトークン数がやや多くなります。請求額はワークフロー全体で決まります。</li><li>effort 設定は意図的に使いましょう。単純なタグ付けには低い effort をデフォルトとし、評価で品質向上が確認できた場合にのみ引き上げてください。</li><li>専門的なモデルが優れている場面では、そのまま使い続けましょう。自社のパフォーマンスデータで訓練したモデルがすでにあるなら、LLMはその出力を置き換えるのではなく、説明すべきです。</li></ul>
+<p>見出しを飾るのはフロンティアです。しかし、作業の大半、そして節約の大半があるのは小型モデルです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>Claude Haiku 5.5 は何のために設計されていますか？</summary><p>Anthropic は、要約、分類、データベースクエリ、ライブのカスタマーサポート、ブラウザ操作、サブエージェントのタスクなど、大量処理でコスト重視の作業向けに位置づけており、複雑なエージェント型コーディングには Sonnet 5.5 と Opus 5.5 を推奨しています。</p></details><details><summary>Claude Haiku 5.5 の料金はいくらですか？</summary><p>Anthropic は、10万トークンまでのプロンプトについて、入力100万トークンあたり0.10米ドル、出力100万トークンあたり0.50米ドルとしており、平均で Haiku 4.5 より約75%安いとしています。</p></details><details><summary>小型の言語モデルは、マーケティングのタスクに十分ですか？</summary><p>タグ付け、要約、振り分けなど、大量処理の多くのタスクでは、適切に選んだ小型モデルで十分であり、はるかに安価です。自社のラベル付きの例でテストし、クリエイティブ評価のような仕事には専門的な予測モデルを使い続け、その出力の説明にLLMを使いましょう。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">モデル · 2026年9月30日</span><h3>Gemini 4 Argon：100万トークンの出力、その先は？</h3><p>Google DeepMind の Gemini 4 Argon は、100万トークンの出力上限とサイバー分野優先の提供開始を打ち出しました。長期タスク型AIがマーケティング業務の何を変え、何を変えないのかを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">モデル · 2026年9月29日</span><h3>OpenAI が GPT-6.1 Astra を棚上げした理由と、その重要性</h3><p>OpenAI は、テストで範囲、権限、報告の仕方に問題が見つかったことを受け、GPT-6.1 Astra のリリースを中止しました。同じテストはあなたのエージェントにも当てはまります。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">モデル · 2026年9月22日</span><h3>Claude Opus 5.5：透かし、監査、AIコンテンツ表示</h3><p>Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

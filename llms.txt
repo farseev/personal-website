@@ -64,6 +64,7 @@ Aleks earned his Ph.D. in Computer Science from the National University of Singa
 ## Other languages
 
 - [简体中文](https://farseev.com/zh-hans/) · [AI news blog](https://farseev.com/zh-hans/blog/) (30 articles)
+- [日本語](https://farseev.com/ja/) · [AI news blog](https://farseev.com/ja/blog/) (30 articles)
 
 ## Ventures
 - [SOMIN.ai](https://somin.ai/): generative-AI marketing platform. Capabilities span audience targeting, competitor analytics, generative content and influencer discovery, with predictions anchored in industry-verified data on Meta and Google. Certified Google ISV; Meta Llama Incubator (APAC).

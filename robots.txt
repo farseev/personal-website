@@ -59,3 +59,4 @@ Allow: /
 Sitemap: https://farseev.com/sitemap.xml
 Sitemap: https://farseev.com/sitemap-en.xml
 Sitemap: https://farseev.com/sitemap-zh-hans.xml
+Sitemap: https://farseev.com/sitemap-ja.xml

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alibaba の Apsara 2026：巨大モデルと小型モデルの現実 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Apsara 2026 で Alibaba は、オープンな27Bモデルを高く評価しつつ、5兆〜10兆パラメータのモデルを計画していると述べました。アジアのマーケターが両極に注目すべき理由を解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Alibaba の Apsara 2026：巨大モデルと小型モデルの現実 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Apsara 2026 で Alibaba は、オープンな27Bモデルを高く評価しつつ、5兆〜10兆パラメータのモデルを計画していると述べました。アジアのマーケターが両極に注目すべき理由を解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="アジア・シンガポール" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Alibaba の Apsara 2026：巨大モデルと小型モデルの現実 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Apsara 2026 で Alibaba は、オープンな27Bモデルを高く評価しつつ、5兆〜10兆パラメータのモデルを計画していると述べました。アジアのマーケターが両極に注目すべき理由を解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/#article","mainEntityOfPage":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/","url":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/","headline":"Alibaba の Apsara 2026：巨大モデルと小型モデルの現実","description":"Apsara 2026 で Alibaba は、オープンな27Bモデルを高く評価しつつ、5兆〜10兆パラメータのモデルを計画していると述べました。アジアのマーケターが両極に注目すべき理由を解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"アジア・シンガポール","about":{"@type":"Thing","name":"Alibaba の Eddie Wu CEO が Apsara Conference で5兆〜10兆パラメータのモデルと Zhenwu V900 チップの計画を説明"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip","url":"https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip","publisher":"The Standard (Reuters)","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference","url":"https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/","publisher":"Alizila (Alibaba)","datePublished":"2026-09-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/#faq","mainEntity":[{"@type":"Question","name":"Alibaba は Apsara Conference 2026 で何を発表しましたか？","acceptedAnswer":{"@type":"Answer","text":"Reuters によると、Eddie Wu CEO は、Alibaba が5兆〜10兆パラメータのモデルの訓練を計画していると述べ、前世代の3倍の性能を持つAIチップ Zhenwu V900 を発表し、Alibaba Cloud のデータセンター容量を2032年までに20ギガワット超にするという目標を掲げました。"}},{"@type":"Question","name":"Alibaba の現在の主力 Qwen モデルの規模はどのくらいですか？","acceptedAnswer":{"@type":"Answer","text":"Reuters によると、Alibaba の現在の主力モデル Qwen 3.8 Max のパラメータ数は2.4兆で、計画中のモデルはおよそ2〜4倍の規模になります。"}},{"@type":"Question","name":"オープンでローカルに展開できるモデルが、アジアのマーケターにとって重要なのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"選んだ法域で運用でき、現地の言語やデータに適応させられ、大規模に運用しても低コストだからです。これは、データ所在地、文化的な適合性、常時稼働のエージェント業務に役立ちます。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"Alibaba の Apsara 2026：巨大モデルと小型モデルの現実","item":"https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/alibaba-apsara-2026-qwen-roadmap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">Alibaba の Apsara 2026：巨大モデルと小型モデルの現実</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · アジア・シンガポール</p>
+      <h1 class="h-display">Alibaba の Apsara 2026：巨大モデルと小型モデルの現実</h1>
+      <p class="lead">Apsara 2026 で Alibaba は、オープンな27Bモデルを高く評価しつつ、5兆〜10兆パラメータのモデルを計画していると述べました。アジアのマーケターが両極に注目すべき理由を解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Alibaba の Eddie Wu CEO が Apsara Conference で5兆〜10兆パラメータのモデルと Zhenwu V900 チップの計画を説明（<time datetime="2026-09-22">2026年9月22日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>毎年9月に開かれる中国最大のAIカンファレンスは、杭州で開催される Alibaba Cloud の Apsara Conference です。今年の基調講演には2つの話がありました。一つは規模の話、つまり Alibaba がこれまでに訓練したどのモデルよりも数倍大きいモデルです。もう一つは、ほとんどついでのように触れられた、開発者が実際に使っている小さなオープンモデルの話でした。アジアのマーケターにとっては、2つ目の話のほうが重要かもしれません。</p>
+<h2>何が起きたのか</h2>
+<p><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">The Standard 経由の Reuters の報道</a>によると、Alibaba の Eddie Wu CEO は9月22日、Qwen チームが、より複雑で長期的なタスクを目指した5兆〜10兆パラメータの新モデルの訓練を計画していると述べました。Alibaba の現在の主力モデル Qwen 3.8 Max のパラメータ数は2.4兆です。Wu 氏はまた、チームが再帰的自己改善で「意味のある進展」を遂げたと述べ、Alibaba の T-Head 部門による前世代の3倍の性能を持つAIチップ Zhenwu V900 を発表し、Alibaba Cloud の世界のデータセンター容量を2032年までに20ギガワット超にするという目標を掲げました。同氏は「業界の中長期的な需要は、当社の供給能力をはるかに上回っている」と述べました。</p>
+<p><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">Alizila</a> で公開された基調講演の原稿で、Wu 氏はオープンソースの Qwen-27B を「世界中の開発者の間で最も人気のあるモデル」と呼び、Alibaba はローカル展開向けのモデルの改良を続けると述べました。また、エージェントがクラウドの長期的な「住人」となり、長期タスクを実行し、計算資源を継続的に消費するようになると予想していると述べました。</p>
+<h2>なぜ重要なのか</h2>
+<p>地域のマーケターにとって、兆単位のパラメータ競争はほとんど観戦するだけのスポーツです。そうしたモデルを使うとしても、API経由になるでしょう。オープンでローカルに展開できるモデルは違います。それは、自社やベンダーが自らのインフラ上で、自ら選んだ法域で、自らのデータでファインチューニングして運用できるものです。</p>
+<p>これがアジアで重要なのには実務的な理由があります。データ所在地に関するルールは地域によって異なります。多くの企業は顧客データを海外のAPIに送ることに抵抗があります。そして、東南アジアや東アジアの言語や文化的な文脈は、主に英語で調整されたモデルでは十分に扱われていません。現地で適応させられる高性能な中規模オープンモデルは、この3つすべてに対応できます。</p>
+<p>エージェントをクラウドの「住人」とする Wu 氏の発言は、もう一つのシグナルです。エージェントが継続的に稼働するなら、タスクあたりのコストは戦略的な変数になります。その作業の大半は効率的なモデルが担うことになるでしょう。</p>
+<h2>私の研究が示すこと</h2>
+<p>私は Forbes で、マーケティングでは<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">モデルの大きさよりも手法が重要</a>だと論じてきました。オーディエンス、言語、タスクにうまく適応した小さなモデルは、たいてい、不用意に使われる巨大な汎用モデルに勝ります。</p>
+<p>私の研究も、現地への適応がなぜ重要かを示しています。<a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a>（AAAI 2020）では、モデルがどのソーシャルネットワークから学習するかによって精度が変わることを明らかにしました。<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Do we behave differently on Twitter and Facebook?</a>（Frontiers in Big Data、2022年）では、人はプラットフォームによってパーソナリティの表れ方が異なることを示しました。より広い論点はこうです。行動は文脈に依存し、モデルがそれを正しく読み取るには文脈固有のデータが必要です。アジアのプラットフォーム、言語、文化は、他の場所で訓練されたモデルが自動的に持っているわけではない文脈なのです。</p>
+<p>また、効率的なモデルは、説明可能性を大規模に手頃なものにします。<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）では、パフォーマンス予測とLLMによる説明を組み合わせました。すべてのクリエイティブに毎日説明レイヤーを適用することは、言語モデルがすべてに使えるほど安価であって初めて現実的になります。</p>
+<h2>アジアのマーケティングチームが今すべきこと</h2>
+<ul><li>インドネシア語やタイ語のソーシャル投稿の分類など、地域固有のタスクでオープンな中規模モデルを試し、現在のAPIモデルと精度とコストを比較しましょう。</li><li>データの行き先を決めましょう。どの顧客データを外部APIに送ってよく、どのデータを現地で処理する必要があるかを整理してください。</li><li>自社の文脈でファインチューニングしましょう。少量でもラベル付きの現地データがあれば、トーンと精度を大きく改善できます。</li><li>常時稼働のエージェントを想定して計画しましょう。継続的なモニタリングとレポーティングの計算コストを見積もり、それに応じてモデルを選んでください。</li><li>フロンティアに依存せず、動向には目を配りましょう。最大級のモデルは明らかに価値を生む場面で使い、それ以外では効率的なモデルを使いましょう。</li></ul>
+<p>杭州からの見出しは、ゼロが12個並ぶ数字でした。マーケターにとっての実務的なニュースは、優れた小型モデルが進化し続けており、顧客のより近くで動かせるということです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>Alibaba は Apsara Conference 2026 で何を発表しましたか？</summary><p>Reuters によると、Eddie Wu CEO は、Alibaba が5兆〜10兆パラメータのモデルの訓練を計画していると述べ、前世代の3倍の性能を持つAIチップ Zhenwu V900 を発表し、Alibaba Cloud のデータセンター容量を2032年までに20ギガワット超にするという目標を掲げました。</p></details><details><summary>Alibaba の現在の主力 Qwen モデルの規模はどのくらいですか？</summary><p>Reuters によると、Alibaba の現在の主力モデル Qwen 3.8 Max のパラメータ数は2.4兆で、計画中のモデルはおよそ2〜4倍の規模になります。</p></details><details><summary>オープンでローカルに展開できるモデルが、アジアのマーケターにとって重要なのはなぜですか？</summary><p>選んだ法域で運用でき、現地の言語やデータに適応させられ、大規模に運用しても低コストだからです。これは、データ所在地、文化的な適合性、常時稼働のエージェント業務に役立ちます。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip</a> — The Standard (Reuters), 22 September 2026</li><li translate="no"><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference</a> — Alizila (Alibaba), 22 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/malaysia-ai-governance-bill/"><span class="meta">アジア・シンガポール · 2026年10月29日</span><h3>マレーシアの AI Governance Bill：役割に応じた責任</h3><p>2027年初頭までに提出予定のマレーシアの AI Governance Bill 草案は、AIを開発・提供・利用する者に義務を課します。役割別のルールがマーケターに意味することを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/anthropic-singapore-office-mou/"><span class="meta">アジア・シンガポール · 2026年10月14日</span><h3>Anthropic がシンガポールに進出：MOU が本当に示すもの</h3><p>Anthropic はシンガポールにオフィスを開設し、AIの安全性と評価に関して MDDI と MOU を締結しました。現地言語でのテストこそが本当の話題である理由を解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">アジア・シンガポール · 2026年10月1日</span><h3>日本のAI行動計画：成長政策が導入政策に</h3><p>Sanae Takaichi 首相は、日本の成長戦略と連動したAI推進の行動計画を年末までにまとめるよう閣僚に指示しました。導入優先の政策がマーケターに意味することを解説します。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ホワイトハウスのAI合意と独立評価機関 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="ホワイトハウスのAI合意と独立評価機関 | Prof. Aleks Farseev" />
+<meta property="og:description" content="テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="規制とセキュリティ" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ホワイトハウスのAI合意と独立評価機関 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/","headline":"ホワイトハウスのAI合意と独立評価機関","description":"テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"規制とセキュリティ","about":{"@type":"Thing","name":"テック業界のリーダーが White House Accord on Super Intelligence に署名、Anthropic は METR の評価担当者に社員と同等のアクセス権を付与"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"White House Accord on Super Intelligence とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"「Joint Commitment on Frontier Responsibilities」と題された自主的な文書で、2026年9月29日に Trump 大統領と、Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai、Greg Brockman らのリーダーが署名しました。企業に対し、内部統制、社内チーム、独立した外部の評価者、取締役会レベルの監督を約束させるものです。"}},{"@type":"Question","name":"ホワイトハウスのAI合意に拘束力はありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Trump 大統領は「道義的な拘束力がある」と表現しましたが、MercoPress によると違反時の罰則は定められておらず、一部の学者は内容が弱いと批判しました。"}},{"@type":"Question","name":"Anthropic は独立した評価者にどのようなアクセス権を与えましたか？","acceptedAnswer":{"@type":"Answer","text":"Anthropic によると、METR のスタッフ6人が、会社の機器、ツール、システムへの社員と同等のアクセス権を付与されてオンボーディングを受けました。METR はリスク評価を公表し、Anthropic はその公表を拒否できませんが、機密のIPなど、あらかじめ定められたカテゴリーについては墨消しを求めることができます。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"ホワイトハウスのAI合意と独立評価機関","item":"https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/white-house-ai-accord-independent-evaluators/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">ホワイトハウスのAI合意と独立評価機関</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · 規制とセキュリティ</p>
+      <h1 class="h-display">ホワイトハウスのAI合意と独立評価機関</h1>
+      <p class="lead">テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：テック業界のリーダーが White House Accord on Super Intelligence に署名、Anthropic は METR の評価担当者に社員と同等のアクセス権を付与（<time datetime="2026-09-29">2026年9月29日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI企業による自主的な約束の実績はまちまちです。1年もしないうちに忘れられるものもあります。最新の約束が興味深いのは、ホワイトハウスでの式典ではなく、その中にある一つの具体的なアイデア、つまり独立した評価機関です。2週間後、ある研究所が、それが実際にどのような形になりうるかを示しました。</p>
+<h2>何が起きたのか</h2>
+<p><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a> によると、9月29日、Trump 大統領と複数のテクノロジー企業のトップが、300語あまりの文書「White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities」に署名しました。大統領とともに署名者として挙げられているのは、Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai、そして OpenAI のプレジデント Greg Brockman です。</p>
+<p>Forbes は、フロンティアモデルを訓練・展開する企業に対する4つの約束をまとめています。モデルが意図しない形で技術システムにアクセスしないようにすることを含め、モデルの能力とアラインメントを監視する内部統制を維持すること。社内チームがそれらの統制が機能し、問題が修正されるようにすること。「独立した外部の監査人または評価者」と提携すること。そして、統制と監査人を監督する「取締役会の独立した委員会」を指定することです。Trump 大統領はこの合意を「道義的な拘束力がある」とし、「ある意味ではほとんど憲法のようなもの」と呼びました。<a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a> は、合意には違反時の罰則が定められていないことを指摘し、シドニー大学の Kimberlee Weatherall 教授がこれを「まったく感心できない」と評したことを伝えています。</p>
+<p>10月15日、Anthropic は <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> を公開しました。同社によると、フロンティアモデルを評価する非営利団体 METR のチームに、社員と同等のアクセス権を与えたとのことです。METR のスタッフ6人が会社の機器と社内ツールを支給されてオンボーディングを受け、Anthropic 自身のリスクチームとおおむね同等の立場にあります。METR はリスク評価を公表し、Anthropic はその公表を拒否できませんが、機密のIPなど、あらかじめ定められたカテゴリーについては墨消しを求めることができます。Anthropic はこの仕組みを、銀行監督当局が大手銀行の内部に検査官を配置することになぞらえ、すべてのフロンティアAI企業が同じことをすべきだとしています。</p>
+<h2>なぜ重要なのか</h2>
+<p>合意の中身は薄く、罰則のない自主的な文書は何も保証しないという批判者の指摘は正しいでしょう。しかし、独立した評価機関に関する約束は、検証できるという点で有用な足がかりです。企業が、実質的なアクセス権と公表の自由を持つ外部の評価者を置いているか、いないか、どちらかなのです。</p>
+<p>Anthropic の取り組みは、目に見える基準を設けました。深いアクセス、公表の権利、墨消しに関する明確な制限です。他の企業は今後、これと比較されることになります。自主的な約束が規範になるのは、こうしてです。</p>
+<h2>私の研究が示すこと</h2>
+<p>私の研究分野であるマーケティングのための説明可能なAIは、より小さな規模で同じ原則に立っています。モデルが何をするかについての主張は、モデルの所有者以外の誰かが検証できるべきだということです。<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）と <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）では、マーケターが予測をうのみにするのではなく、なぜその予測がなされたのかを確認できるように説明レイヤーを設けています。</p>
+<p>私は Forbes で、<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">マーケティング主導の企業にとって透明性が重要であること</a>を論じてきました。フロンティア研究所は今、安全性について、その一つの形に収束しつつあります。内部統制、社内チーム、外部の評価者、取締役会による監督です。マーケティングAIには同じような壊滅的リスクはありませんが、現実のリスクはあります。偏ったターゲティング、誤解を招く訴求、プライバシーの侵害、誤ったシグナルに費やされる予算です。同じ4層構造は、規模を小さくしてもうまく機能します。</p>
+<h2>マーケティングAIガバナンスの4層モデル</h2>
+<ul><li>内部統制。AIシステムが何をしているかを監視しましょう。どのオーディエンスをターゲットにし、どの訴求を生成し、どのデータを使っているかです。</li><li>社内の責任者。それらの統制を確認し、問題を修正する責任を負う人またはチームを指名しましょう。</li><li>外部の目。監査人、研究パートナー、別のベンダーなどの独立した第三者に、主要なモデルと訴求を定期的にテストしてもらいましょう。</li><li>上級レベルの監督。財務リスクを報告するのと同じように、AIリスクを経営陣に報告し、システムを一時停止する権限を持たせましょう。</li></ul>
+<p>マーケティングAIを購入するときは、この合意が提起するのと同じ質問をベンダーに投げかけましょう。誰が外部からモデルを評価しているのか。その評価者はどんなアクセス権を持っているのか。見つけたことを公表できるのか。その答えは、機能一覧よりも多くのことを教えてくれるでしょう。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>White House Accord on Super Intelligence とは何ですか？</summary><p>「Joint Commitment on Frontier Responsibilities」と題された自主的な文書で、2026年9月29日に Trump 大統領と、Elon Musk、Mark Zuckerberg、Jensen Huang、Dario Amodei、Sundar Pichai、Greg Brockman らのリーダーが署名しました。企業に対し、内部統制、社内チーム、独立した外部の評価者、取締役会レベルの監督を約束させるものです。</p></details><details><summary>ホワイトハウスのAI合意に拘束力はありますか？</summary><p>いいえ。Trump 大統領は「道義的な拘束力がある」と表現しましたが、MercoPress によると違反時の罰則は定められておらず、一部の学者は内容が弱いと批判しました。</p></details><details><summary>Anthropic は独立した評価者にどのようなアクセス権を与えましたか？</summary><p>Anthropic によると、METR のスタッフ6人が、会社の機器、ツール、システムへの社員と同等のアクセス権を付与されてオンボーディングを受けました。METR はリスク評価を公表し、Anthropic はその公表を拒否できませんが、機密のIPなど、あらかじめ定められたカテゴリーについては墨消しを求めることができます。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">規制とセキュリティ · 2026年10月12日</span><h3>蒸留攻撃：AIモデルの複製があなたに意味すること</h3><p>米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/mas-ai-risk-management-guidelines/"><span class="meta">規制とセキュリティ · 2026年10月7日</span><h3>MAS のAIリスクガイドライン：銀行以外にも役立つひな形</h3><p>MAS は金融機関向けのAIリスク管理ガイドラインを公表しました。その棚卸しと第三者に関するルールは、マーケティングチームにとって良いひな形になります。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/wpp-q3-2026-agentic-agency/"><span class="meta">広告・マーケティングAI · 2026年10月29日</span><h3>WPP の2026年第3四半期：AIの圧力にさらされる代理店モデル</h3><p>WPP は既存事業ベースの純収益の減少を報告し、CEO は WPP Open を通じたAI活用サービスへの需要を強調しました。代理店にとっての意味を考えます。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

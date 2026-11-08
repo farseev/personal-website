@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い | Prof. Aleks Farseev" />
+<meta property="og:description" content="Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI検索" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/#article","mainEntityOfPage":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/","url":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/","headline":"Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い","description":"Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"AI検索","about":{"@type":"Thing","name":"Adobe が、AI経由のトラフィックは非AIトラフィックよりコンバージョン率が高いと報告し、年末商戦のAIトラフィック増加を予測"},"wordCount":857,"citation":[{"@type":"CreativeWork","name":"Adobe report: AI traffic now generates 83% higher revenue per visit for U.S. retailers heading into the holiday shopping season","url":"https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday","publisher":"Adobe","datePublished":"2026-10-29"},{"@type":"CreativeWork","name":"Adobe projection: 2026 online holiday sales to reach $275.1 billion","url":"https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion","publisher":"Digital Commerce 360","datePublished":"2026-09-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/#faq","mainEntity":[{"@type":"Question","name":"小売企業にとって、AIトラフィックのコンバージョン率はどのくらいですか？","acceptedAnswer":{"@type":"Answer","text":"Adobe の報告によると、2026年9月、米国の小売サイトへのAI経由のトラフィックは、非AIトラフィックより90%高くコンバージョンし、訪問あたり収益は83%高く、同社が観測した中で最も高い成果となりました。"}},{"@type":"Question","name":"今年の年末商戦でAIトラフィックはどのくらい伸びますか？","acceptedAnswer":{"@type":"Answer","text":"Digital Commerce 360 によると、Adobe は、2026年11月1日から12月31日までの期間に、米国の小売サイトへのAIトラフィックが前年比130%増加すると予測しました。"}},{"@type":"Question","name":"小売企業は、どうすれば自社サイトをAIアシスタントから見えやすくできますか？","acceptedAnswer":{"@type":"Answer","text":"主要な製品情報やポリシー情報をクロール可能な平易なテキストで記載し、買い物客がアシスタントに尋ねる質問に答え、AIトラフィックを独立したチャネルとして測定し、アシスタントが自社ブランドをどのように説明しているかを定期的に確認することです。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い","item":"https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/adobe-ai-traffic-retail-conversion-2026/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · AI検索</p>
+      <h1 class="h-display">Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い</h1>
+      <p class="lead">Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Adobe が、AI経由のトラフィックは非AIトラフィックよりコンバージョン率が高いと報告し、年末商戦のAIトラフィック増加を予測（<time datetime="2026-10-29">2026年10月29日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>1年前、AIアシスタントからのトラフィックについて言える無難な表現は「規模は小さいが有望」というものでした。Adobe の最新の数字は、それがもはや小さくないこと、そしてある重要な点ではすでに他のトラフィックより優れていることを示唆しています。AIの回答から訪れた人は、より多く購入するのです。</p>
+<h2>何が起きたのか</h2>
+<p>10月29日に公開されたレポートで、<a href="https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday" target="_blank" rel="noopener">Adobe によると</a>、2026年9月にAIソースから米国の小売サイトへのトラフィックは前年比71%増加し、非AIトラフィックより90%高くコンバージョンしました。これは同社がこれまでに観測した最高水準です。対照的に、2025年8月にはAIトラフィックのコンバージョン率は9%低いものでした。AI経由の訪問者はサイト滞在時間が73%長く、1回の訪問あたりの閲覧ページ数が25%多く、商品をカートに追加する割合が53%高くなっていました。AIトラフィックの訪問あたり収益は、非AIトラフィックより83%高くなっています。Adobe はこうまとめています。「わずか12か月で、AIトラフィックの価値は、一般的な訪問の半分未満から、ほぼ2倍にまでなった。」</p>
+<p>Adobe はまた、サイトがAIシステムにとってどれだけ読み取りやすいかを示す指標も導入しました。米国の小売サイトのホームページの平均スコアは63%で、Adobe はこれを「ホームページのコンテンツの3分の1以上がAIシステムやエージェントから見えていない」ことを意味するとしています。総合小売のホームページのスコアは40%でした。データは米国の小売サイトへの1兆件を超える訪問と、5,000人以上の米国の回答者を対象とした調査に基づいています。</p>
+<p>その1か月前、<a href="https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion" target="_blank" rel="noopener">Digital Commerce 360</a> によると、Adobe は11月1日から12月31日までの米国のオンライン年末商戦の売上を前年比6.7%増の2,751億米ドルと予測し、米国の小売サイトへのAIトラフィックは前年比130%増、最も急な伸びは感謝祭になるとしていました。</p>
+<h2>なぜ重要なのか</h2>
+<p>議論に決着をつけるのはコンバージョンという数字です。トラフィックの伸びは物珍しさとして片づけられるかもしれません。しかし、より長く滞在し、より多くをカートに入れ、訪問あたりより多くの収益を生む訪問者は、一つのチャネルです。</p>
+<p>考えられる理由は直感的です。製品についてすでにアシスタントに詳しく質問した人は、意思決定のより先の段階で訪れます。ファネルの初期段階はAIとの対話が担ったのです。これにより、AIの回答は、引用されるブランドにとって、強力でほぼ無償のファネル上部・中部になります。</p>
+<p>実際に行動に移せるのは読み取りやすさのスコアです。一般的なホームページの3分の1がAIシステムから見えていないなら、多くの小売企業はAIの回答の中で自社の一部しか表現されていないか、まったく表現されていないことになります。</p>
+<h2>私の研究が示すこと</h2>
+<p>AIとの対話から訪れる訪問者は、すでにプロファイリングされた訪問者です。<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">複数のソースからのユーザープロファイル学習</a>に関する私の研究（ICMR 2015）と、<a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">データソースがAIのユーザーモデルにどう影響するか</a>に関する研究（AAAI 2020）は、同じ結論を示しています。意図に関する信号が豊かで関連性が高いほど、マッチングは良くなるということです。アシスタントとの長く具体的な対話は、買い物客が生み出す意図の信号としてはこれ以上ないほど豊かなものです。その対話が買い物客をあなたのもとへ送るとき、マッチングはすでに良好であり、だからコンバージョン率が高くなるのです。</p>
+<p>その裏返しが効果測定です。e27 のコラム<a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">Every dashboard is green. So why can't anyone say what worked?</a>で、私は報告される成功と本当の理解との間のギャップについて書きました。AIトラフィックはその格好の例です。コンバージョン率を喜ぶのは簡単ですが、どのページ、どの主張、どのレビューが訪問者を送り込んだ引用を勝ち取ったのかを知るのは難しいのです。<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>から<a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>に至るまで私の研究の中心にあった説明可能性は、モデルと同様にチャネルにも当てはまります。</p>
+<h2>小売企業とブランドが今すべきこと</h2>
+<ul><li>AIトラフィックを個別に測定する。AIからの参照を独立したチャネルとしてタグ付けし、コンバージョン、訪問あたり収益、返品とともに報告しましょう。</li><li>主要ページを読み取りやすくする。価格、仕様、在庫状況、配送、返品ポリシーを、画像やスクリプトだけでなく、クロール可能な平易なテキストで記載しましょう。</li><li>人々がアシスタントに尋ねる質問に答える。比較ポイント、サイズ、互換性、お手入れなど、実際の疑問を解決するコンテンツこそが引用されます。</li><li>自社の見え方を確認する。主要なアシスタントに自社のカテゴリーについて定期的に質問し、自社が紹介されているか、どのように説明されているかを確認しましょう。不正確な点は情報源で修正します。</li><li>年末商戦に備える。Adobe の予測どおりにAIトラフィックが伸びるなら、AIシステムが読み取るページは、繁忙期の最中ではなく、その前に仕上げておくべきです。</li></ul>
+<p>AIの回答は、検索よりも見込みの高い訪問者を送るチャネルになりました。そこから最も大きな成果を得るのは、機械にとって読み取りやすく、人にとって信頼できる誠実さを備えたブランドでしょう。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>小売企業にとって、AIトラフィックのコンバージョン率はどのくらいですか？</summary><p>Adobe の報告によると、2026年9月、米国の小売サイトへのAI経由のトラフィックは、非AIトラフィックより90%高くコンバージョンし、訪問あたり収益は83%高く、同社が観測した中で最も高い成果となりました。</p></details><details><summary>今年の年末商戦でAIトラフィックはどのくらい伸びますか？</summary><p>Digital Commerce 360 によると、Adobe は、2026年11月1日から12月31日までの期間に、米国の小売サイトへのAIトラフィックが前年比130%増加すると予測しました。</p></details><details><summary>小売企業は、どうすれば自社サイトをAIアシスタントから見えやすくできますか？</summary><p>主要な製品情報やポリシー情報をクロール可能な平易なテキストで記載し、買い物客がアシスタントに尋ねる質問に答え、AIトラフィックを独立したチャネルとして測定し、アシスタントが自社ブランドをどのように説明しているかを定期的に確認することです。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday" target="_blank" rel="noopener">Adobe report: AI traffic now generates 83% higher revenue per visit for U.S. retailers heading into the holiday shopping season</a> — Adobe, 29 October 2026</li><li translate="no"><a href="https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion" target="_blank" rel="noopener">Adobe projection: 2026 online holiday sales to reach $275.1 billion</a> — Digital Commerce 360, 29 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI検索 · 2026年10月28日</span><h3>Google AI Mode の広告がシンガポールなどに上陸</h3><p>Google は AI Mode の広告をシンガポール、マレーシア、フィリピンを含む10市場に拡大しています。広告が回答の中に置かれると何が変わるのかを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI検索 · 2026年10月21日</span><h3>ChatGPT 広告が対話に：Sponsored Agents</h3><p>OpenAI は ChatGPT 内で Sponsored Agents をテストし、ChatGPT 広告を89か国に拡大しました。広告が言葉を返すとき、表示と誠実さそのものが製品になります。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI検索 · 2026年10月1日</span><h3>Penske 対 Google の訴え棄却：AIでの可視性にとっての意味</h3><p>米国の裁判官は、Google の AI Overviews をめぐる Penske Media の独占禁止法訴訟を、トラフィックに関する「正式な取引」はなかったとして棄却しました。ブランドが GEO について取るべき対応を解説します。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

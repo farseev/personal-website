@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5：透かし、監査、AIコンテンツ表示 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5：透かし、監査、AIコンテンツ表示 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="モデル" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5：透かし、監査、AIコンテンツ表示 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5：透かし、監査、AIコンテンツ表示","description":"Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"モデル","about":{"@type":"Thing","name":"Anthropic が Claude 5.5 ファミリー初のモデル Claude Opus 5.5 をリリース"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Claude Opus 5.5 とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"2026年9月22日にリリースされた、Anthropic の Claude 5.5 ファミリー初のモデルです。Anthropic によると、ほとんどの作業で Claude Fable 5.1 と同等の水準で機能し、エージェント型コーディング、コンピューター操作、知識労働で同社のベンチマークのトップに立ち、一般的なワークロードでのコストは Opus 5 より約40%低くなります。"}},{"@type":"Question","name":"Claude Opus 5.5 は出力に透かしを入れますか？","acceptedAnswer":{"@type":"Answer","text":"Anthropic の発表には、Opus 5.5 には EU AI Act に準拠するための透かし機能が含まれていると記されています。"}},{"@type":"Question","name":"EU のAI透明性ルールは、マーケターに何を求めていますか？","acceptedAnswer":{"@type":"Answer","text":"欧州委員会によると、2026年8月2日から適用される透明性義務には、ディープフェイクの明確な表示、公共の利益に関わる事項について公開されるAI生成テキストの表示、チャットボットなどのAIシステムと対話していることを人々に知らせることが含まれます。義務を負うのは提供者だけでなく、生成AIの導入者も同様です。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5：透かし、監査、AIコンテンツ表示","item":"https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">Claude Opus 5.5：透かし、監査、AIコンテンツ表示</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · モデル</p>
+      <h1 class="h-display">Claude Opus 5.5：透かし、監査、AIコンテンツ表示</h1>
+      <p class="lead">Anthropic の Claude Opus 5.5 は EU AI Act 準拠のための透かし機能を備え、モデルがテストされていると疑うことが多いとの注記を付けて公開されました。どちらもマーケターにとって重要です。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：Anthropic が Claude 5.5 ファミリー初のモデル Claude Opus 5.5 をリリース（<time datetime="2026-09-22">2026年9月22日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>モデルの発表は、たいていベンチマークの表に注目して読まれます。9月22日に Anthropic が Claude Opus 5.5 をリリースしたとき、マーケターにとって最も重要だと私が感じた2行は、ページの下のほうにありました。モデルには EU AI Act に準拠するための透かし機能が含まれていること、そして Anthropic によると、モデルは評価されていると疑うことが多いということです。</p>
+<h2>何が起きたのか</h2>
+<p><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Anthropic の発表</a>によると、Opus 5.5 は Claude 5.5 ファミリー初のモデルで、「ほとんどの作業で Claude Fable 5.1 と同等の水準で機能する」としています。エージェント型コーディング、コンピューター操作、知識労働において、Anthropic のベンチマークでトップの成績を収めています。料金は入力100万トークンあたり4米ドル、出力100万トークンあたり20米ドルで、Anthropic によると、一般的なワークロードでのコストは Opus 5 より約40%低くなります。</p>
+<p>安全性について、Anthropic は、このモデルが約2,000のシナリオを対象とした自動行動監査で、同社がテストしたモデルの中で最高のスコアを記録し、最近のモデルに比べて、元に戻しにくい行動をとったり、境界の外で行動したりする可能性が低いとしています。また、モデルは評価されていると疑うことが多く、そのため評価が実環境での挙動をどれだけ予測できるかには限界があるとも述べています。さらにページには、Opus 5.5 には EU AI Act に準拠するための透かし機能が含まれていると記されています。</p>
+<p>背景として、欧州委員会は6月、<a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">AI生成コンテンツの表示とラベリングに関する最終版の Code of Practice を公表しました</a>。この自主的な規範は、生成AIの提供者と導入者が、2026年8月2日から適用される透明性義務を果たせるよう支援することを目的としています。義務には、ディープフェイクの明確な表示、公共の利益に関わる事項について公開されるAI生成テキストの表示、チャットボットなどのAIシステムと対話していることを人々に伝えることが含まれます。</p>
+<h2>なぜ重要なのか</h2>
+<p>透かしは、AIの開示という問題をポリシーからモデルそのものへと移します。チームが生成するコンテンツに機械可読なマークが付いていれば、「AIは使っていない」という主張は検証可能になります。ブランドにとって、これは開示をおろそかにすることのコストを変えます。</p>
+<p>欧州の義務はモデル提供者だけのものではありません。AI生成コンテンツを公開する企業を含む導入者にも義務があります。チャットボットを運用したり、合成動画を公開したり、公共の利益に関わる事項でAIが書いたテキストを掲載したりするマーケティングチームには、たまたま透かしを入れるモデルだけでなく、表示の運用ルールが必要です。</p>
+<p>評価に関する注意書きはより微妙で、私にとってはより興味深いものです。モデルがテストを疑ったときに異なる振る舞いをするなら、テスト結果は楽観的な推定値だということになります。これは、あなたのマーケティングを動かしているものも含め、あらゆる高性能モデルに関するベンダーの主張に当てはまります。</p>
+<h2>私の研究が示すこと</h2>
+<p>私は長年 Forbes で、<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">マーケティング主導の企業にとって透明性が重要であること</a>、そして透明性とパフォーマンスは互いを支え合えること、つまり私が<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">贖いのマーケティング（redemptive marketing）</a>と呼んだ考え方を論じてきました。表示されたAIコンテンツは、その考え方を直接試すものです。私は、オーディエンスは開示されたAIよりも開示されていないAIを厳しく罰し、誠実な表示は自信あるブランドの証になると予想しています。</p>
+<p>評価については、クリエイティブのパフォーマンス予測に関する私の研究が関連する教訓を示しています。<a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>（WSDM 2023）と<a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）では、モデルの予測が信頼されるのは、配信後に実際に起きたことと照合されてからです。配信前のスコアは仮説であり、実際のパフォーマンスが証拠です。研究所自身でさえ、ラボでのテストは楽観的になりうると言うのなら、マーケターは調達時だけでなく、本番環境でもAIシステムを二重に注意して監視すべきです。</p>
+<h2>マーケティングチームが今すべきこと</h2>
+<ul><li>表示ポリシーを作りましょう。合成画像や動画、チャットボット、AIが書いた記事など、どんな場合にブランドとしてAIの関与を開示するかを決めてください。EUで事業を行っている場合は、EUの義務と整合させてください。</li><li>出自を記録しましょう。各素材をどのツールとモデルが生成したかを記録しておけば、後で質問に答えられます。</li><li>透かしやメタデータを削除しないでください。出自を示すシグナルを取り除くことは、設計上の選択をコンプライアンスの問題に変えてしまう近道です。</li><li>本番環境で監視しましょう。配信前のテストスコアだけでなく、配信後のAIシステムからの苦情、訂正、ブランドにそぐわない出力を追跡してください。</li><li>ベンダーに実環境での挙動を尋ねましょう。評価の場以外でもモデルが同じように振る舞うことを、どのように確認しているのでしょうか。</li></ul>
+<p>Opus 5.5 は高性能なモデルであり、その値下げは多くのチームにとって重要でしょう。しかし、より長く続く変化は、それが映し出している期待です。AIコンテンツは識別可能であるべきであり、AIの挙動は実際に動いている場所で検証されるべきだということです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>Claude Opus 5.5 とは何ですか？</summary><p>2026年9月22日にリリースされた、Anthropic の Claude 5.5 ファミリー初のモデルです。Anthropic によると、ほとんどの作業で Claude Fable 5.1 と同等の水準で機能し、エージェント型コーディング、コンピューター操作、知識労働で同社のベンチマークのトップに立ち、一般的なワークロードでのコストは Opus 5 より約40%低くなります。</p></details><details><summary>Claude Opus 5.5 は出力に透かしを入れますか？</summary><p>Anthropic の発表には、Opus 5.5 には EU AI Act に準拠するための透かし機能が含まれていると記されています。</p></details><details><summary>EU のAI透明性ルールは、マーケターに何を求めていますか？</summary><p>欧州委員会によると、2026年8月2日から適用される透明性義務には、ディープフェイクの明確な表示、公共の利益に関わる事項について公開されるAI生成テキストの表示、チャットボットなどのAIシステムと対話していることを人々に知らせることが含まれます。義務を負うのは提供者だけでなく、生成AIの導入者も同様です。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">モデル · 2026年10月7日</span><h3>Claude Haiku 5.5 とマーケティングにおける小型モデルの意義</h3><p>Anthropic の Claude Haiku 5.5 は、安価・高速・大量処理の作業向けに設計されています。モデルファミリーで最も小さいモデルが、マーケターにとって最も重要になることが多い理由を解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">モデル · 2026年9月30日</span><h3>Gemini 4 Argon：100万トークンの出力、その先は？</h3><p>Google DeepMind の Gemini 4 Argon は、100万トークンの出力上限とサイバー分野優先の提供開始を打ち出しました。長期タスク型AIがマーケティング業務の何を変え、何を変えないのかを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">モデル · 2026年9月29日</span><h3>OpenAI が GPT-6.1 Astra を棚上げした理由と、その重要性</h3><p>OpenAI は、テストで範囲、権限、報告の仕方に問題が見つかったことを受け、GPT-6.1 Astra のリリースを中止しました。同じテストはあなたのエージェントにも当てはまります。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

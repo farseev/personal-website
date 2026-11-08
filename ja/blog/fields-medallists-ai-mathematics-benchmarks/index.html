@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="25人のフィールズ賞受賞者は、未解決問題にAIを競わせることは代理指標と目標を取り違えることだと警告しました。マーケティングにも同じベンチマークの問題があります。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓 | Prof. Aleks Farseev" />
+<meta property="og:description" content="25人のフィールズ賞受賞者は、未解決問題にAIを競わせることは代理指標と目標を取り違えることだと警告しました。マーケティングにも同じベンチマークの問題があります。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="研究" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="25人のフィールズ賞受賞者は、未解決問題にAIを競わせることは代理指標と目標を取り違えることだと警告しました。マーケティングにも同じベンチマークの問題があります。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓","description":"25人のフィールズ賞受賞者は、未解決問題にAIを競わせることは代理指標と目標を取り違えることだと警告しました。マーケティングにも同じベンチマークの問題があります。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"研究","about":{"@type":"Thing","name":"フィールズ賞受賞者が「A Severe Misalignment of AI in Mathematics」を発表、OpenAI は Caltech のAI数学イベントから撤退"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"「A Severe Misalignment of AI in Mathematics」とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"The Next Web によると、2026年9月11日に公開され、25人のフィールズ賞受賞者が署名した宣言です。問題を解くことは数学の本当の目標である概念的な理解の代理指標にすぎないと主張し、命題を高速で大量生産することはこの分野を損ないかねないと警告しています。"}},{"@type":"Question","name":"OpenAI は Caltech の Mathathon から撤退したのですか？","acceptedAnswer":{"@type":"Answer","text":"The Next Web によると、OpenAI は2026年9月10日、学生が運営する Caltech の Mathathon への100万米ドル分のクレジット提供を撤回しました。一方、Anthropic は拠出を継続し、イベントは予定どおり開催されました。"}},{"@type":"Question","name":"AIと数学をめぐる議論は、マーケティングにとって何を意味しますか？","acceptedAnswer":{"@type":"Answer","text":"代理指標に最適化することへの警告です。マーケティングチームは、AIの指標を実際の成果に結びつけ、人間による検証のコストを数え、AIの支援を受けた仕事が独自性を保っているかを測定すべきです。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓","item":"https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · 研究</p>
+      <h1 class="h-display">フィールズ賞受賞者対AIベンチマーク：マーケターへの教訓</h1>
+      <p class="lead">25人のフィールズ賞受賞者は、未解決問題にAIを競わせることは代理指標と目標を取り違えることだと警告しました。マーケティングにも同じベンチマークの問題があります。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：フィールズ賞受賞者が「A Severe Misalignment of AI in Mathematics」を発表、OpenAI は Caltech のAI数学イベントから撤退（<time datetime="2026-09-11">2026年9月11日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>数学者がマーケティングについて公開書簡を書くことは普通ありません。しかし、9月にフィールズ賞受賞者のグループが示した主張は、私たちの業界がAIをどう測っているかにほぼそのまま当てはまります。彼らの論点はこうです。問題を解くことは代理指標であり、本当の目標は理解である。この2つを混同すれば、改善しようとしていたものそのものを損ないかねない。</p>
+<h2>何が起きたのか</h2>
+<p><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a> によると、9月11日、<em>A Severe Misalignment of AI in Mathematics</em> と題する宣言が mathandai.org で公開されました。サイトには、Terence Tao、Peter Scholze、Maryna Viazovska、Cédric Villani、Pierre Deligne、Manjul Bhargava、Martin Hairer を含む25人の署名者が掲載されています。宣言は、問題を解くことは道具であり代理指標である一方、数学の第一の目標は概念的な理解と洞察であると主張しています。そして、真偽を問わず命題をますます速いペースで大量生産することは「肥沃な土壌を破壊しかねない」と警告しています。TNW はこれをベンチマークに関する声明と位置づけており、宣言は特定の出来事を名指ししていません。</p>
+<p>同じ週、別の公開書簡が、Caltech で学生が運営するAI「Mathathon」を批判し、その形式を「スロップ数学」と呼び、AIの結果を検証し修正する労力が「報酬も、クレジットも、認知もされない」と主張しました。TNW によると、OpenAI は9月10日にこのイベントへの100万米ドル分のクレジット提供を撤回した一方、Anthropic は拠出を継続し、主催者は要件を追加したものの、イベントを中止しませんでした。</p>
+<h2>なぜ重要なのか</h2>
+<p>数学者たちの不満は、よく知られた落とし穴に関するものです。難しく有名な問題がベンチマークになると、研究所はその答えを生み出すことに最適化します。答えは測定できます。理解は測定できません。時間とともに、測定できるものが価値あるものを押しのけ、出力の確認は他の誰かに委ねられることになります。</p>
+<p>マーケティングAIにもまさにこの問題があります。私たちはツールを、数えやすいもので評価しています。生成された素材の数、削減された時間、クリック率、ブランドに言及するAI回答の割合などです。これらの数字は重要です。しかし、マーケティングの目標はアウトプットではありません。顧客に応えられるほど顧客を深く理解し、人々が信頼するブランドを築くことです。チャネルをコンテンツであふれさせ、代理指標で勝つシステムは、その両方を静かに損ないかねません。</p>
+<p>無報酬の検証という論点も的を射ています。生成コンテンツは作るのは安く、確認するのは高くつきます。その確認作業が指標に表れないなら、あなたの「生産性向上」の一部は会計上のトリックにすぎません。</p>
+<h2>私の研究が示すこと</h2>
+<p>私の最近の研究は、この区別を軸にしています。SIGIR 2026 の論文 <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> で私たちが取り組んだ問題は、まさにAIが書いたコンテンツが収束していくこと、つまり誰のアシスタントも同じように手堅く、ありきたりな投稿を生み出すことです。私たちのアプローチは、書く前に実際の文脈データを取得し、出力の独自性を保つことです。独自性のない量は、マーケティング版の「スロップ」です。</p>
+<p>効果測定について、私は e27 で<a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">どのダッシュボードも緑色なのに、何が効いたのか誰も言えない</a>と論じました。すべてが右肩上がりの代理指標は、何が結果をもたらしたのかを知ることと同じではありません。そして、<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> から <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> に至る私たちの説明可能なAIの研究では、目的はより良い予測だけでなく、マーケターが学べる説明です。それが、数学者たちの言う「概念的な理解」のマーケティング版です。</p>
+<h2>マーケティングチームがここから学べること</h2>
+<ul><li>各指標の背後にある目標を明確にしましょう。AIのKPIごとに、それがどんな実際の成果を表すはずなのかを一文で書き、そのつながりが今も成り立っているかを定期的に確認してください。</li><li>検証のコストを数えましょう。AIの出力の確認と修正に費やした人間の時間を記録し、ROI に含めてください。</li><li>独自性を測りましょう。AIの支援を受けたコンテンツを競合のものと比較してください。見分けがつかなくなっているなら、代理指標では勝っていても、ブランドでは負けています。</li><li>スコアよりも説明を重視しましょう。なぜ効いたのかを教えてくれるツールはチームの知識を育てます。効いたことしか教えてくれないツールは依存を生みます。</li><li>人間の貢献を認めましょう。人がAIの出力を手直ししているなら、その仕事を当然のものとみなさず、可視化して評価してください。</li></ul>
+<p>数学者たちは、答えを理解と取り違えるベンチマーク文化から自分たちの分野を守ろうとしています。マーケティングも同じ過ちから自らを守るべきです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>「A Severe Misalignment of AI in Mathematics」とは何ですか？</summary><p>The Next Web によると、2026年9月11日に公開され、25人のフィールズ賞受賞者が署名した宣言です。問題を解くことは数学の本当の目標である概念的な理解の代理指標にすぎないと主張し、命題を高速で大量生産することはこの分野を損ないかねないと警告しています。</p></details><details><summary>OpenAI は Caltech の Mathathon から撤退したのですか？</summary><p>The Next Web によると、OpenAI は2026年9月10日、学生が運営する Caltech の Mathathon への100万米ドル分のクレジット提供を撤回しました。一方、Anthropic は拠出を継続し、イベントは予定どおり開催されました。</p></details><details><summary>AIと数学をめぐる議論は、マーケティングにとって何を意味しますか？</summary><p>代理指標に最適化することへの警告です。マーケティングチームは、AIの指標を実際の成果に結びつけ、人間による検証のコストを数え、AIの支援を受けた仕事が独自性を保っているかを測定すべきです。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/wpp-q3-2026-agentic-agency/"><span class="meta">広告・マーケティングAI · 2026年10月29日</span><h3>WPP の2026年第3四半期：AIの圧力にさらされる代理店モデル</h3><p>WPP は既存事業ベースの純収益の減少を報告し、CEO は WPP Open を通じたAI活用サービスへの需要を強調しました。代理店にとっての意味を考えます。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/malaysia-ai-governance-bill/"><span class="meta">アジア・シンガポール · 2026年10月29日</span><h3>マレーシアの AI Governance Bill：役割に応じた責任</h3><p>2027年初頭までに提出予定のマレーシアの AI Governance Bill 草案は、AIを開発・提供・利用する者に義務を課します。役割別のルールがマーケターに意味することを解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI検索 · 2026年10月29日</span><h3>Adobe：AI経由のトラフィックは他の訪問よりもコンバージョン率が高い</h3><p>Adobe によると、9月に米国の小売サイトへのAI経由の訪問は、他のトラフィックより90%高くコンバージョンしました。AIの回答がなぜチャネルになったのか、そして何をすべきかを解説します。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>蒸留攻撃：AIモデルの複製があなたに意味すること | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="蒸留攻撃：AIモデルの複製があなたに意味すること | Prof. Aleks Farseev" />
+<meta property="og:description" content="米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。" />
+<meta property="og:url" content="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev —— AIニュース解説" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="規制とセキュリティ" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="蒸留攻撃：AIモデルの複製があなたに意味すること | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/","headline":"蒸留攻撃：AIモデルの複製があなたに意味すること","description":"米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。","image":"https://farseev.com/og-image.png","inLanguage":"ja","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ja/blog/#blog"},"articleSection":"規制とセキュリティ","about":{"@type":"Thing","name":"CISA、NSA、FBI が米国AIモデルの産業規模の蒸留に関する勧告を発出、Anthropic は新たな蒸留対策を報告"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"AIの蒸留攻撃とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"モデルに大量の問い合わせを行い、多くの場合は不正なアカウントのネットワークを通じてその能力を密かに大規模に抽出し、その出力を使って、元の開発者の許可なく別のモデルを訓練するキャンペーンです。"}},{"@type":"Question","name":"米国の勧告はどの企業を名指ししましたか？","acceptedAnswer":{"@type":"Answer","text":"Help Net Security の報道によると、CISA、NSA、FBI の勧告は DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun、Z.AI を名指ししました。報道には各社からの回答は含まれていませんでした。"}},{"@type":"Question","name":"モデルの蒸留は常に悪いことですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。蒸留は、大きなモデルからより小さく安価なモデルを訓練するための標準的な手法です。問題は他者のモデルからの無許可の抽出であり、それは同意、安全対策、出自に関する問題を提起します。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://farseev.com/ja/"},{"@type":"ListItem","position":2,"name":"AIニュース","item":"https://farseev.com/ja/blog/"},{"@type":"ListItem","position":3,"name":"蒸留攻撃：AIモデルの複製があなたに意味すること","item":"https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ja/","jobTitle":"SOMIN.ai 創業者兼CEO、AI客員教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ja/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="メイン"><a href="/ja/#about">概要</a><a href="/ja/#research">研究</a><a href="/ja/blog/" aria-current="page">AIニュース</a><a href="/ja/#talks">講演</a><a href="/ja/#connect">連絡</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="言語" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="ja" lang="ja" selected>日本語</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li><a href="/ja/blog/">AIニュース</a></li><li aria-current="page">蒸留攻撃：AIモデルの複製があなたに意味すること</li></ol></nav>
+      <p class="eyebrow">AIニュース解説 · 規制とセキュリティ</p>
+      <h1 class="h-display">蒸留攻撃：AIモデルの複製があなたに意味すること</h1>
+      <p class="lead">米国の政府機関は蒸留に関する勧告で中国のAI企業6社を名指しし、Anthropic は自社の防御策で収集されるデータを90〜99%削減したとしています。AIを導入する企業にとっての意味を解説します。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ニュース：CISA、NSA、FBI が米国AIモデルの産業規模の蒸留に関する勧告を発出、Anthropic は新たな蒸留対策を報告（<time datetime="2026-10-12">2026年10月12日</time>）</span></p>
+      <p class="byline"><span>著者：<b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">2026年11月8日</time><span class="dot"></span><span>4分で読めます</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>「蒸留」は、かつて機械学習では穏やかな言葉でした。大きなモデルを模倣するように小さなモデルを訓練すること、つまり標準的で有用な手法を指していたのです。2026年9月から10月にかけて、それはセキュリティと貿易の話題になりました。マーケティング用のAIを購入または構築するなら、両方の意味を理解しておくべきです。</p>
+<h2>何が起きたのか</h2>
+<p>9月上旬、CISA、NSA、FBI は、中国を拠点とするAI企業による産業規模の知識蒸留とされるものについて、共同勧告を公表しました。<a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Help Net Security による勧告の報道</a>によると、各機関は DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun、Z.AI を名指しし、これらの企業が少なくとも2024年後半以降、米国のフロンティアモデルへの数百万件のリクエストを通じて数十億トークンを抽出したと述べました。勧告は、人間の休止時間がない24時間体制の利用や、連携して動くアカウント群などの検知シグナルを挙げ、より強力な本人確認、監視、AIプロバイダー間の情報共有を推奨しています。報道では、名指しされた企業からの声明は含まれていなかったとしています。</p>
+<p>10月12日、Anthropic は自社の対応を説明しました。<a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> で、同社は初期の証拠から、自社の手法により蒸留者が収集するデータが約90〜99%減少したことが示唆されると述べました。対策には、新しいAPIアカウントによる Claude の過去の推論の編集を防ぐこと、抽出の試みで訓練された誤検知率0.1%未満の2段階分類器、繰り返しの試みに対するより厳しい制限と利用停止、安全対策によってブロックされたリクエストへの課金が含まれます。Anthropic は、蒸留に関連する数万件のアカウントを利用停止にしたと述べ、「いたちごっこ」が続くと予想しています。</p>
+<h2>なぜ重要なのか</h2>
+<p>AI研究所同士の争いをマーケターが気にかけるべき理由は2つあります。</p>
+<p>1つ目はサプライチェーンのリスクです。あるモデルが別のモデルの挙動を無断でコピーして作られたものなら、どの安全対策が備わっているのかはわかりません。Anthropic の投稿は、蒸留されたモデルはフロンティア級の能力に近づきながら、より弱い保護のまま提供されうると論じています。カスタマーサービスの運用や広告の生成に使うモデルを選ぶとき、出自は品質の一部です。</p>
+<p>2つ目は、正当な利用者にとっての摩擦です。防御にはコストが伴います。Anthropic は、一部の開発者が連携を更新する必要があったこと、無害なリクエストのごく一部がブロックされうること、ブロックされたリクエストにも課金されうるようになったことを認めています。あなたのマーケティングスタックがフロンティアAPIを自動で大量に呼び出しているなら、そのトラフィックの一部は抽出キャンペーンのように見えるかもしれません。パイプラインが止まってからではなく、今のうちにプロバイダーのポリシーを読んでおきましょう。</p>
+<h2>私の研究が示すこと</h2>
+<p>ここでの悪役は蒸留そのものではありません。正当に行われれば、蒸留はAIを手頃な価格にする方法です。大きなモデルが小さなモデルに教え、小さなモデルが大規模に安く動きます。私は Forbes で、マーケティングでは<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">モデルの大きさよりも手法が重要</a>だと論じてきましたが、蒸留はそうした手法の一つです。</p>
+<p>状況を変えるのは、同意と透明性です。説明可能なAIに関する私の研究は、シンプルな原則から始まります。マーケターは、システムがなぜそれを推奨するのかを見られるべきだということです。<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）では、クリック率の予測に、その要因を説明するLLMアシスタントを組み合わせました。<a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a>（2024年のプレプリント）では、説明可能なパフォーマンスモデルとLLMを組み合わせた競合分析について述べました。説明に意味があるのは、そのモデルが何であり、どこから来たのかがわかっている場合だけです。</p>
+<p>注目すべき皮肉もあります。Anthropic が説明する防御策、つまりモデルの完全な推論を要約したりアクセスを制限したりすることは、システムを誰にとっても少し不透明にします。推論こそがコピーする側の欲しいものだからです。このトレードオフは、AIベンダーがどこまで説明を開示するかを左右するでしょう。購入者は、生の推論の痕跡ではなく、自社のデータと自社の意思決定について、自分たちのために設計された説明を求めるべきです。</p>
+<h2>マーケティングAIの購入者が今すべきこと</h2>
+<ul><li>すべてのベンダーに、製品の基盤にどのモデルがあり、そのモデルがどこから来たのかを尋ねましょう。</li><li>呼び出しているAPIの利用規約を確認しましょう。自動化された大量の利用はマーケティングでは普通のことです。自社の利用が明らかに正当で、識別可能で、制限内にあることを確認してください。</li><li>モデルの切り替えに備えましょう。ポリシー、価格、アクセスはすぐに変わりえます。プロンプト、手順、評価セットは持ち運び可能にしておきましょう。</li><li>自社のモデルは正当に蒸留しましょう。限定的なタスク向けに安価なモデルが必要なら、自社のデータか、使用許諾を得た出力で訓練してください。</li><li>内部の開示よりも、意思決定の説明を優先しましょう。監査すべきは、自社のキャンペーンについて、なぜその推奨がなされたのかです。</li></ul>
+<p>蒸留をめぐる争いは、誰が誰をコピーしてよいのかという問題です。マーケターにとっては、「どのモデルか」がもはや技術的な問題だけでなく、ガバナンスの問題であることを思い出させるものです。</p>
+<h2 id="faq">よくある質問</h2>
+<div class="faq"><details><summary>AIの蒸留攻撃とは何ですか？</summary><p>モデルに大量の問い合わせを行い、多くの場合は不正なアカウントのネットワークを通じてその能力を密かに大規模に抽出し、その出力を使って、元の開発者の許可なく別のモデルを訓練するキャンペーンです。</p></details><details><summary>米国の勧告はどの企業を名指ししましたか？</summary><p>Help Net Security の報道によると、CISA、NSA、FBI の勧告は DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun、Z.AI を名指ししました。報道には各社からの回答は含まれていませんでした。</p></details><details><summary>モデルの蒸留は常に悪いことですか？</summary><p>いいえ。蒸留は、大きなモデルからより小さく安価なモデルを訓練するための標準的な手法です。問題は他者のモデルからの無許可の抽出であり、それは同意、安全対策、出自に関する問題を提起します。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">出典</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> は SOMIN.ai の創業者兼CEOであり、NUS および INSEAD のAI客員教授です。査読付きの研究は、マルチソースのユーザープロファイリング、パーソナリティを考慮した推薦、マーケティングのための説明可能なAIを対象としています。</p>
+<p class="links"><a href="/ja/">Aleks について</a><a href="/ja/#publications">論文発表</a><a href="/ja/blog/">その他のAIニュース</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">続けて読む</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">その他のAIニュース解説</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ja/blog/mas-ai-risk-management-guidelines/"><span class="meta">規制とセキュリティ · 2026年10月7日</span><h3>MAS のAIリスクガイドライン：銀行以外にも役立つひな形</h3><p>MAS は金融機関向けのAIリスク管理ガイドラインを公表しました。その棚卸しと第三者に関するルールは、マーケティングチームにとって良いひな形になります。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">規制とセキュリティ · 2026年9月29日</span><h3>ホワイトハウスのAI合意と独立評価機関</h3><p>テック業界のリーダーたちは外部評価機関の導入を約束する自主的なホワイトハウス合意に署名し、Anthropic は METR に深いアクセス権を与えました。マーケティングAIにとって監査が重要な理由を解説します。</p><span class="go">読む →</span></a><a class="pcard" href="/ja/blog/wpp-q3-2026-agentic-agency/"><span class="meta">広告・マーケティングAI · 2026年10月29日</span><h3>WPP の2026年第3四半期：AIの圧力にさらされる代理店モデル</h3><p>WPP は既存事業ベースの純収益の減少を報告し、CEO は WPP Open を通じたAI活用サービスへの需要を強調しました。代理店にとっての意味を考えます。</p><span class="go">読む →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成AI CEO、AI教授、基調講演者、そしてアコーディオン奏者。シンガポールから世界へ、深い研究と実世界のマーケティングをつなぐ。</p>
+      </div>
+      <div>
+        <h6>探す</h6>
+        <ul>
+          <li><a href="/ja/">ホーム</a></li>
+          <li><a href="/ja/blog/">AIニュースブログ</a></li>
+          <li><a href="/ja/#research">研究</a></li>
+          <li><a href="/ja/#publications">論文発表</a></li>
+          <li><a href="/ja/#connect">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>その他のリンク</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>意見は私個人のものです。ニュースの事実は出典にリンクしています。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
