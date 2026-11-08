@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Новая политика использования Anthropic запрещает обманные кампании, «политические или коммерческие», и компания нашла фейковые новости ради рекламных денег. Черта для маркетологов." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов | Prof. Aleks Farseev" />
+<meta property="og:description" content="Новая политика использования Anthropic запрещает обманные кампании, «политические или коммерческие», и компания нашла фейковые новости ради рекламных денег. Черта для маркетологов." />
+<meta property="og:url" content="https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Проф. Алекс Фарсеев — новости ИИ с объяснениями" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Ответственный маркетинг" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Новая политика использования Anthropic запрещает обманные кампании, «политические или коммерческие», и компания нашла фейковые новости ради рекламных денег. Черта для маркетологов." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов","description":"Новая политика использования Anthropic запрещает обманные кампании, «политические или коммерческие», и компания нашла фейковые новости ради рекламных денег. Черта для маркетологов.","image":"https://farseev.com/og-image.png","inLanguage":"ru","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ru/blog/#blog"},"articleSection":"Ответственный маркетинг","about":{"@type":"Thing","name":"Anthropic дополняет свою политику использования разделом об обманных кампаниях и публикует отчёт о злоупотреблениях, связанных с выборами, накануне промежуточных выборов в США"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"Что политика использования Anthropic 2026 года говорит о коммерческом обмане?","acceptedAnswer":{"@type":"Answer","text":"Её новый раздел «Do Not Engage in Deceptive Campaigns or Artificial Activity» применяется к обманной деятельности, «политической или коммерческой», включая сокрытие того, кто стоит за сообщением, продвижение контента через фейковые аккаунты или посты и создание инфраструктуры для операций влияния. По словам Anthropic, обновление вступает в силу 12 ноября."}},{"@type":"Question","name":"Обнаружила ли Anthropic использование ИИ для создания фейковых новостей ради рекламных денег?","acceptedAnswer":{"@type":"Answer","text":"Да. В отчёте о промежуточных выборах Anthropic сообщает, что некоторые участники использовали Claude для производства фейковых новостей ради рекламной выручки и что она заблокировала причастные аккаунты."}},{"@type":"Question","name":"Запрещён ли персонализированный таргетинг по новой политике?","acceptedAnswer":{"@type":"Answer","text":"Anthropic сняла общий запрет на персонализированный таргетинг избирателей и кампаний. Таргетинг, основанный на обмане или злоупотреблении персональными данными, по-прежнему запрещён другими разделами политики."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://farseev.com/ru/"},{"@type":"ListItem","position":2,"name":"Новости ИИ","item":"https://farseev.com/ru/blog/"},{"@type":"ListItem","position":3,"name":"Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов","item":"https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ru/","jobTitle":"Основатель и CEO SOMIN.ai; приглашённый профессор ИИ","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Основное"><a href="/ru/#about">О себе</a><a href="/ru/#research">Исследования</a><a href="/ru/blog/" aria-current="page">Новости ИИ</a><a href="/ru/#talks">Доклады</a><a href="/ru/#connect">Контакты</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Язык" translate="no"><option value="en" lang="en" data-href="/blog/ai-usage-policy-deceptive-commercial-campaigns/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/ai-usage-policy-deceptive-commercial-campaigns/">हिन्दी</option><option value="ru" lang="ru" selected>Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/ru/">Главная</a></li><li><a href="/ru/blog/">Новости ИИ</a></li><li aria-current="page">Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов</li></ol></nav>
+      <p class="eyebrow">Новости ИИ с объяснениями · Ответственный маркетинг</p>
+      <h1 class="h-display">Правила ИИ теперь приравнивают фейковый коммерческий хайп к фальсификации выборов</h1>
+      <p class="lead">Новая политика использования Anthropic запрещает обманные кампании, «политические или коммерческие», и компания нашла фейковые новости ради рекламных денег. Черта для маркетологов.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Новость: Anthropic дополняет свою политику использования разделом об обманных кампаниях и публикует отчёт о злоупотреблениях, связанных с выборами, накануне промежуточных выборов в США (<time datetime="2026-10-14">14 октября 2026</time>)</span></p>
+      <p class="byline"><span>Автор: <b>проф. Алекс Фарсеев</b></span><span class="dot"></span><time datetime="2026-11-08">8 ноября 2026</time><span class="dot"></span><span>4 мин чтения</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Годами разговор об ИИ и манипуляциях шёл вокруг выборов. Этот фокус понятен. Но те же приёмы, которыми имитируют политическое движение, позволяют имитировать популярность продукта. В октябре Anthropic явно закрепила эту связь в своих правилах, и маркетологам стоит прочитать это как черту, проведённую и в их сторону.</p>
+<h2>Что произошло</h2>
+<p>8 октября Anthropic опубликовала <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">обновление политики использования 2026 года</a>, вступающее в силу 12 ноября. В нём появился раздел «Do Not Engage in Deceptive Campaigns or Artificial Activity» («Не участвуйте в обманных кампаниях и искусственной активности»), объединивший правила, прежде разбросанные по разделам о выборах, мошенничестве, приватности и дезинформации. Новый раздел «применяется к обманной деятельности любого рода (политической или коммерческой)». Он охватывает сокрытие того, кто стоит за сообщением, продвижение контента через фейковые аккаунты или посты и создание инструментов или инфраструктуры для операций влияния.</p>
+<p>Обновление также снимает общий запрет на персонализированный таргетинг избирателей и кампаний. Таргетинг, основанный на обмане или злоупотреблении персональными данными избирателей, остаётся запрещённым в разделах об обманных кампаниях, слежке и приватности.</p>
+<p>Неделю спустя в публикации <a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> Anthropic описала, что видит на практике. Среди прочего компания сообщает, что некоторые участники использовали Claude для производства фейковых новостей ради рекламной выручки и что она заблокировала причастные аккаунты. Также сообщается, что партнёры, тестировавшие её защиту, обнаружили: Claude надёжно отклонял отдельные вредные запросы, но мог пропускать кампании, разбитые на по отдельности безобидные задачи, — и компания добавила классификаторы для многошаговых злоупотреблений, таких как фейковые аккаунты в соцсетях и новостные сайты.</p>
+<h2>Почему это важно</h2>
+<p>Две детали заслуживают внимания всех, кто работает в маркетинге.</p>
+<p>Слова «или коммерческой» ставят фейковые отзывы, подставные аккаунты, запуски, раздутые ботами, и искусственный «народный» хайп в одну категорию с политическими операциями влияния. Использовать для этого Claude нельзя, но направление движения всей отрасли очевидно: ИИ-провайдеры следят за скоординированной неаутентичной активностью и не делают различий между продвижением кандидата и продвижением продукта.</p>
+<p>Вторая деталь — бизнес-модель, стоящая за частью злоупотреблений: фейковые новости ради рекламной выручки. Это проблема не только контента. Это проблема финансирования через рекламу. Когда бюджеты брендов через автоматическую программатик-закупку утекают на фейковые сайты, за обман платят рекламодатели — обычно не зная об этом.</p>
+<p>Изменение в таргетинге тоже стоит отметить. Вредом считается не персонализация как таковая, а обман и злоупотребление персональными данными. Думаю, это верное разграничение.</p>
+<h2>Что говорят мои исследования</h2>
+<p>Значительную часть карьеры я создавал системы, профилирующие аудитории: <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">обучение профилей пользователей по нескольким соцсетям</a>, <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">определение личности по данным разных сетей</a> и <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">рекомендации контента с учётом личности</a>. Я знаю, насколько мощны эти методы, — именно поэтому на WSDM 2023 я выступил с докладом об <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">ответственном использовании ИИ для рекламного таргетинга и оценки креативов</a>.</p>
+<p>Моя позиция, которую я изложил в Forbes как <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">искупительный маркетинг</a>, состоит в том, что прозрачность и эффективность не обязательно противопоставлять. Понимать аудиторию, чтобы лучше ей служить, — легитимно. Притворяться аудиторией с помощью фейковых аккаунтов и фейковых голосов — нет. Новая политика проводит черту примерно там же.</p>
+<p>Есть и аспект измерений. Фейковая вовлечённость загрязняет те самые данные, на которых учится современный маркетинговый ИИ. Если хайп вокруг конкурента частично синтетический, любая модель, изучающая «что работает в категории», усвоит неверный урок. Очистка социальных данных от неаутентичных сигналов стала частью хорошей аналитики.</p>
+<h2>Что маркетологам делать сейчас</h2>
+<ul><li>Пропишите это в договорах с агентствами и инфлюенсерами. Никаких фейковых аккаунтов, купленной вовлечённости или нераскрытого спонсорского контента — в том числе созданного с помощью ИИ.</li><li>Раскрывайте, кто говорит. Если ИИ пишет от имени вашего бренда или человека, убедитесь, что аккаунт и спонсорство очевидны.</li><li>Проверяйте, куда уходят программатик-бюджеты. Запрашивайте отчётность на уровне сайтов и блокируйте размещения на сайтах без идентифицируемого издателя.</li><li>Разделяйте персонализацию и обман в собственных политиках. Использовать собственные данные с согласия, чтобы адаптировать сообщение, — одно; скрывать, кто за ним стоит, — другое.</li><li>Рассчитывайте на мониторинг. Если ваши процессы автоматизируют массовый постинг, документируйте их, чтобы легитимность использования было легко подтвердить.</li></ul>
+<p>Выборы сделали проблему заметной. Но больше всего денег — в коммерции. ИИ-провайдеры это заметили; маркетологам стоит опередить события.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq"><details><summary>Что политика использования Anthropic 2026 года говорит о коммерческом обмане?</summary><p>Её новый раздел «Do Not Engage in Deceptive Campaigns or Artificial Activity» применяется к обманной деятельности, «политической или коммерческой», включая сокрытие того, кто стоит за сообщением, продвижение контента через фейковые аккаунты или посты и создание инфраструктуры для операций влияния. По словам Anthropic, обновление вступает в силу 12 ноября.</p></details><details><summary>Обнаружила ли Anthropic использование ИИ для создания фейковых новостей ради рекламных денег?</summary><p>Да. В отчёте о промежуточных выборах Anthropic сообщает, что некоторые участники использовали Claude для производства фейковых новостей ради рекламной выручки и что она заблокировала причастные аккаунты.</p></details><details><summary>Запрещён ли персонализированный таргетинг по новой политике?</summary><p>Anthropic сняла общий запрет на персонализированный таргетинг избирателей и кампаний. Таргетинг, основанный на обмане или злоупотреблении персональными данными, по-прежнему запрещён другими разделами политики.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Источники</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Проф. Алекс Фарсеев</b> — основатель и CEO SOMIN.ai, приглашённый профессор ИИ в NUS и INSEAD. Его рецензируемые исследования посвящены профилированию пользователей по нескольким источникам, рекомендациям с учётом личности и объяснимому ИИ для маркетинга.</p>
+<p class="links"><a href="/ru/">Об Алексе</a><a href="/ru/#publications">Публикации</a><a href="/ru/blog/">Другие новости ИИ</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Читайте также</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Другие новости ИИ с объяснениями</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ru/blog/character-ai-chapter-11-ai-personas/"><span class="meta">Ответственный маркетинг · 12 октября 2026</span><h3>Chapter 11 у Character.AI: уроки для продуктов с ИИ-персонажами</h3><p>Character.AI подала заявление по Chapter 11, чтобы провести продажу; Disney готовит заявку на $20 млн. Чему стоит научиться брендам, создающим ИИ-персонажей и компаньонов.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Реклама и маркетинговый ИИ · 29 октября 2026</span><h3>WPP в III квартале 2026: агентская модель под давлением ИИ</h3><p>Сопоставимая чистая выручка WPP снизилась, а CEO указал на спрос на ИИ-услуги через WPP Open. Что это говорит об агентствах.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/malaysia-ai-governance-bill/"><span class="meta">Азия и Сингапур · 29 октября 2026</span><h3>Законопроект Малайзии об управлении ИИ: ответственность по ролям</h3><p>Проект AI Governance Bill Малайзии, ожидаемый к началу 2027 года, возлагает обязанности на разработчиков, поставщиков и пользователей ИИ. Что ролевые правила значат для маркетологов.</p><span class="go">Читать →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO в сфере генеративного ИИ, профессор ИИ, спикер и аккордеонист. Соединяет глубокие исследования и реальный маркетинг — от Сингапура до всего мира.</p>
+      </div>
+      <div>
+        <h6>Разделы</h6>
+        <ul>
+          <li><a href="/ru/">Главная</a></li>
+          <li><a href="/ru/blog/">Блог новостей ИИ</a></li>
+          <li><a href="/ru/#research">Исследования</a></li>
+          <li><a href="/ru/#publications">Публикации</a></li>
+          <li><a href="/ru/#connect">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>В сети</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Алекс Фарсеев · <span translate="no">法信夫</span></span>
+      <span>Мнения — мои собственные. Факты из новостей снабжены ссылками на источники.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

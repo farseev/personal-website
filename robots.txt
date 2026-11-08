@@ -62,3 +62,4 @@ Sitemap: https://farseev.com/sitemap-zh-hans.xml
 Sitemap: https://farseev.com/sitemap-ja.xml
 Sitemap: https://farseev.com/sitemap-ko.xml
 Sitemap: https://farseev.com/sitemap-hi.xml
+Sitemap: https://farseev.com/sitemap-ru.xml

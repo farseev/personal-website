@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Руководство MAS по рискам ИИ: полезный шаблон не только для банков | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="MAS выпустило руководство по управлению рисками ИИ для финансовых организаций. Его правила об инвентаризации и третьих сторонах — хороший шаблон для маркетинговых команд." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Руководство MAS по рискам ИИ: полезный шаблон не только для банков | Prof. Aleks Farseev" />
+<meta property="og:description" content="MAS выпустило руководство по управлению рисками ИИ для финансовых организаций. Его правила об инвентаризации и третьих сторонах — хороший шаблон для маркетинговых команд." />
+<meta property="og:url" content="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Проф. Алекс Фарсеев — новости ИИ с объяснениями" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Регулирование и безопасность" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Руководство MAS по рискам ИИ: полезный шаблон не только для банков | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="MAS выпустило руководство по управлению рисками ИИ для финансовых организаций. Его правила об инвентаризации и третьих сторонах — хороший шаблон для маркетинговых команд." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/","headline":"Руководство MAS по рискам ИИ: полезный шаблон не только для банков","description":"MAS выпустило руководство по управлению рисками ИИ для финансовых организаций. Его правила об инвентаризации и третьих сторонах — хороший шаблон для маркетинговых команд.","image":"https://farseev.com/og-image.png","inLanguage":"ru","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ru/blog/#blog"},"articleSection":"Регулирование и безопасность","about":{"@type":"Thing","name":"MAS выпускает Guidelines on Artificial Intelligence Risk Management для финансовых организаций"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"Когда вступает в силу руководство MAS по управлению рисками ИИ?","acceptedAnswer":{"@type":"Answer","text":"По словам MAS, руководство вступает в силу 7 октября 2027 года; организации могут внедрять его поэтапно, а некоторые более поздние разделы применяются к 7 октября 2028 года."}},{"@type":"Question","name":"Распространяется ли руководство MAS на ИИ от вендоров?","acceptedAnswer":{"@type":"Answer","text":"Да. MAS говорит, что финансовые организации остаются ответственными за ИИ в своих услугах, в том числе за ИИ от третьих сторон, и должны получать подтверждения надёжности, оценивать пригодность и применять компенсирующие меры контроля — либо ограничивать, приостанавливать или заменять услугу, если риски выходят за пределы их риск-аппетита."}},{"@type":"Question","name":"Распространяется ли руководство MAS на агентный ИИ?","acceptedAnswer":{"@type":"Answer","text":"MAS отметило растущее использование агентных ИИ-систем, способных действовать автономно и получать доступ к инструментам, и сообщило, что намерено в 2027 году провести консультации с отраслью о том, какие дополнительные рекомендации по агентному ИИ были бы полезны."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://farseev.com/ru/"},{"@type":"ListItem","position":2,"name":"Новости ИИ","item":"https://farseev.com/ru/blog/"},{"@type":"ListItem","position":3,"name":"Руководство MAS по рискам ИИ: полезный шаблон не только для банков","item":"https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ru/","jobTitle":"Основатель и CEO SOMIN.ai; приглашённый профессор ИИ","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Основное"><a href="/ru/#about">О себе</a><a href="/ru/#research">Исследования</a><a href="/ru/blog/" aria-current="page">Новости ИИ</a><a href="/ru/#talks">Доклады</a><a href="/ru/#connect">Контакты</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Язык" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/mas-ai-risk-management-guidelines/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/mas-ai-risk-management-guidelines/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/mas-ai-risk-management-guidelines/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/mas-ai-risk-management-guidelines/">हिन्दी</option><option value="ru" lang="ru" selected>Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/ru/">Главная</a></li><li><a href="/ru/blog/">Новости ИИ</a></li><li aria-current="page">Руководство MAS по рискам ИИ: полезный шаблон не только для банков</li></ol></nav>
+      <p class="eyebrow">Новости ИИ с объяснениями · Регулирование и безопасность</p>
+      <h1 class="h-display">Руководство MAS по рискам ИИ: полезный шаблон не только для банков</h1>
+      <p class="lead">MAS выпустило руководство по управлению рисками ИИ для финансовых организаций. Его правила об инвентаризации и третьих сторонах — хороший шаблон для маркетинговых команд.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Новость: MAS выпускает Guidelines on Artificial Intelligence Risk Management для финансовых организаций (<time datetime="2026-10-07">7 октября 2026</time>)</span></p>
+      <p class="byline"><span>Автор: <b>проф. Алекс Фарсеев</b></span><span class="dot"></span><time datetime="2026-11-08">8 ноября 2026</time><span class="dot"></span><span>4 мин чтения</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Регулирование, написанное для банков, редко вдохновляет маркетологов. Но это стоит хотя бы законспектировать. 7 октября Денежно-кредитное управление Сингапура (MAS) опубликовало Guidelines on Artificial Intelligence Risk Management. Прямая аудитория — банки, страховщики и другие финансовые организации. Но логика руководства — готовый шаблон для любой команды, которая использует ИИ для решений о клиентах, включая маркетинг.</p>
+<h2>Что произошло</h2>
+<p>Согласно <a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">пресс-релизу MAS</a>, руководство распространяется на все финансовые организации и все формы ИИ-технологий и основано на «принципах и соразмерности рискам». MAS проводило консультации по нему в ноябре 2025 года.</p>
+<p>Ожидания делятся на несколько групп. Советы директоров и высшее руководство должны контролировать риски ИИ и определять чёткие роли, риск-аппетит и рамки; отдельный комитет по ИИ не обязателен, если существующие структуры обеспечивают надлежащий надзор. Организации должны выявлять случаи использования ИИ, вести их реестры, оценивать существенность каждого и применять соразмерные меры контроля на всём жизненном цикле — управление данными, тестирование, надзор человека, кибербезопасность, мониторинг и управление изменениями. Они остаются ответственными за ИИ в своих услугах, даже если он поступает от третьих сторон, и должны получать подтверждения надёжности и применять компенсирующие меры контроля — либо ограничивать, приостанавливать или заменять услугу, риски которой выходят за пределы их риск-аппетита.</p>
+<p>Руководство вступает в силу 7 октября 2027 года, а некоторые разделы применяются к 7 октября 2028 года. MAS также отметило растущее использование агентных ИИ-систем, способных действовать автономно и использовать инструменты, и сообщило, что намерено в 2027 году провести консультации с отраслью о том, какие дополнительные рекомендации были бы полезны.</p>
+<h2>Почему это важно</h2>
+<p>Посмотрите, где сегодня ИИ соприкасается с клиентами банка: рекомендации продуктов, движки «следующего лучшего предложения», чат-боты, кредитный маркетинг, проверка на мошенничество, сгенерированный контент в кампаниях. Многое из этого ведёт или заказывает маркетинг. По этому руководству значительная часть должна попасть в реестр, пройти оценку существенности и управляться на всём жизненном цикле.</p>
+<p>Для маркетинга важнее всего пункт о третьих сторонах. Маркетинговые команды покупают много ИИ: у рекламных платформ, мартех-вендоров, агентств и фрилансеров с собственными инструментами. MAS ясно говорит, что ответственность остаётся за организацией. «Это сделал вендор» — не мера контроля.</p>
+<p>Сроки щедрые, но не длинные. Года до вступления в силу основных разделов достаточно, чтобы как следует составить реестр, и недостаточно, чтобы сделать это в последнем квартале.</p>
+<h2>Что говорят мои исследования</h2>
+<p>На WSDM 2023 я выступил с докладом <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a>. Главный аргумент: этические вопросы и вопросы приватности вокруг автоматизированного профилирования, таргетинга и оценки креативов не абстрактны. Они вытекают из конкретных проектных решений, которые можно документировать и контролировать.</p>
+<p>Именно это и заставляет делать реестр ИИ. Для каждого случая использования запишите, какие данные поступают на вход, какое решение получается на выходе, кто его проверяет и что происходит, если что-то идёт не так. Мои исследования объяснимого ИИ для маркетинга, от <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) до <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), построены на том же инстинкте: если рекомендация модели влияет на деньги или клиентов, ответственные люди должны видеть, почему она дана.</p>
+<p>Я также доказывал в Forbes, что <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">прозрачность важна для компаний, движимых маркетингом</a>. Теперь регуляторы превращают этот принцип в надзорные ожидания. Командам, которые уже практикуют объяснимость, соответствие требованиям обойдётся гораздо дешевле.</p>
+<h2>Практический чек-лист для маркетинговых команд (в финансах и не только)</h2>
+<ul><li>Составьте реестр. Перечислите все ИИ-системы, которые маркетинг использует или заказывает: таргетинг, рекомендации, чат-боты, генерация контента, оценка креативов, аналитика.</li><li>Честно оценивайте существенность. Инструмент, который пишет черновики внутренних заметок, — низкий риск. Модель, решающая, какие клиенты увидят кредитное предложение, — нет.</li><li>Составьте карту третьих сторон. Для каждого вендора и агентства фиксируйте, какой ИИ они используют от вашего имени и какие подтверждения надёжности вы получили.</li><li>Ставьте людей там, где это важно. Определите, где обязательна проверка человеком перед публикацией материалов для клиентов.</li><li>Отслеживайте после запуска. Модели дрейфуют, кампании меняются. Планируйте проверки, особенно после обновлений моделей у вендоров.</li><li>Следите за консультациями по агентному ИИ. Если вы тестируете агентов, работающих с данными клиентов, ожидайте конкретных рекомендаций и уже сейчас проектируйте с расчётом на аудит.</li></ul>
+<p>У сингапурских регуляторов есть привычка писать рекомендации, которые позже становятся стандартом для всего региона. Если ваша компания работает по всей Юго-Восточной Азии, разумно воспринимать это руководство как предварительный обзор, даже если вы не банк.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq"><details><summary>Когда вступает в силу руководство MAS по управлению рисками ИИ?</summary><p>По словам MAS, руководство вступает в силу 7 октября 2027 года; организации могут внедрять его поэтапно, а некоторые более поздние разделы применяются к 7 октября 2028 года.</p></details><details><summary>Распространяется ли руководство MAS на ИИ от вендоров?</summary><p>Да. MAS говорит, что финансовые организации остаются ответственными за ИИ в своих услугах, в том числе за ИИ от третьих сторон, и должны получать подтверждения надёжности, оценивать пригодность и применять компенсирующие меры контроля — либо ограничивать, приостанавливать или заменять услугу, если риски выходят за пределы их риск-аппетита.</p></details><details><summary>Распространяется ли руководство MAS на агентный ИИ?</summary><p>MAS отметило растущее использование агентных ИИ-систем, способных действовать автономно и получать доступ к инструментам, и сообщило, что намерено в 2027 году провести консультации с отраслью о том, какие дополнительные рекомендации по агентному ИИ были бы полезны.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Источники</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Проф. Алекс Фарсеев</b> — основатель и CEO SOMIN.ai, приглашённый профессор ИИ в NUS и INSEAD. Его рецензируемые исследования посвящены профилированию пользователей по нескольким источникам, рекомендациям с учётом личности и объяснимому ИИ для маркетинга.</p>
+<p class="links"><a href="/ru/">Об Алексе</a><a href="/ru/#publications">Публикации</a><a href="/ru/blog/">Другие новости ИИ</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Читайте также</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Другие новости ИИ с объяснениями</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ru/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Регулирование и безопасность · 12 октября 2026</span><h3>Атаки дистилляции: что скопированные ИИ-модели значат для вас</h3><p>Ведомства США назвали шесть китайских ИИ-компаний в предупреждении о дистилляции, а Anthropic говорит, что её защита сократила объём собранных данных на 90–99%. Что это значит для покупателей ИИ.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Регулирование и безопасность · 29 сентября 2026</span><h3>Соглашение Белого дома по ИИ и независимые оценщики</h3><p>Лидеры техиндустрии подписали добровольное соглашение Белого дома с обещанием внешних оценщиков, а Anthropic дала METR глубокий доступ. Почему аудит важен для маркетингового ИИ.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Реклама и маркетинговый ИИ · 29 октября 2026</span><h3>WPP в III квартале 2026: агентская модель под давлением ИИ</h3><p>Сопоставимая чистая выручка WPP снизилась, а CEO указал на спрос на ИИ-услуги через WPP Open. Что это говорит об агентствах.</p><span class="go">Читать →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO в сфере генеративного ИИ, профессор ИИ, спикер и аккордеонист. Соединяет глубокие исследования и реальный маркетинг — от Сингапура до всего мира.</p>
+      </div>
+      <div>
+        <h6>Разделы</h6>
+        <ul>
+          <li><a href="/ru/">Главная</a></li>
+          <li><a href="/ru/blog/">Блог новостей ИИ</a></li>
+          <li><a href="/ru/#research">Исследования</a></li>
+          <li><a href="/ru/#publications">Публикации</a></li>
+          <li><a href="/ru/#connect">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>В сети</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Алекс Фарсеев · <span translate="no">法信夫</span></span>
+      <span>Мнения — мои собственные. Факты из новостей снабжены ссылками на источники.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

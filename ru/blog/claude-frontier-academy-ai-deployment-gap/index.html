@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Разрыв во внедрении ИИ — это проблема людей | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic выделила $100 млн на подготовку 10 000 Frontier Deployed Engineers к 2027 году вместе с консалтингом и банками. Почему маркетингу нужна своя версия этой роли." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Разрыв во внедрении ИИ — это проблема людей | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic выделила $100 млн на подготовку 10 000 Frontier Deployed Engineers к 2027 году вместе с консалтингом и банками. Почему маркетингу нужна своя версия этой роли." />
+<meta property="og:url" content="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Проф. Алекс Фарсеев — новости ИИ с объяснениями" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Работа и навыки" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Разрыв во внедрении ИИ — это проблема людей | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic выделила $100 млн на подготовку 10 000 Frontier Deployed Engineers к 2027 году вместе с консалтингом и банками. Почему маркетингу нужна своя версия этой роли." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/","headline":"Разрыв во внедрении ИИ — это проблема людей","description":"Anthropic выделила $100 млн на подготовку 10 000 Frontier Deployed Engineers к 2027 году вместе с консалтингом и банками. Почему маркетингу нужна своя версия этой роли.","image":"https://farseev.com/og-image.png","inLanguage":"ru","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ru/blog/#blog"},"articleSection":"Работа и навыки","about":{"@type":"Thing","name":"Anthropic запускает Claude Frontier Academy и выделяет $100 млн на подготовку 10 000 инженеров"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"Что такое Claude Frontier Academy?","acceptedAnswer":{"@type":"Answer","text":"Это образовательная программа, запущенная Anthropic 2 октября 2026 года с финансированием в US$100 млн, чтобы к концу 2027 года подготовить 10 000 Frontier Deployed Engineers через очную программу и последующую 12-недельную резидентуру на реальном проекте."}},{"@type":"Question","name":"Какие компании входят в первые потоки Claude Frontier Academy?","acceptedAnswer":{"@type":"Answer","text":"Anthropic называет, среди прочих, Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley и Novo Nordisk; потоки проходят в Сан-Франциско, Нью-Йорке и Лондоне."}},{"@type":"Question","name":"Зачем маркетингу специалисты по внедрению ИИ?","acceptedAnswer":{"@type":"Answer","text":"Потому что доступ к моделям больше не узкое место. Ценность возникает при перестройке реальных маркетинговых процессов вокруг ИИ с измерениями и ограничителями, а для этого нужны люди, понимающие и технологию, и маркетинговое решение."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://farseev.com/ru/"},{"@type":"ListItem","position":2,"name":"Новости ИИ","item":"https://farseev.com/ru/blog/"},{"@type":"ListItem","position":3,"name":"Разрыв во внедрении ИИ — это проблема людей","item":"https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ru/","jobTitle":"Основатель и CEO SOMIN.ai; приглашённый профессор ИИ","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ru/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Основное"><a href="/ru/#about">О себе</a><a href="/ru/#research">Исследования</a><a href="/ru/blog/" aria-current="page">Новости ИИ</a><a href="/ru/#talks">Доклады</a><a href="/ru/#connect">Контакты</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Язык" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="ru" lang="ru" selected>Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/ru/">Главная</a></li><li><a href="/ru/blog/">Новости ИИ</a></li><li aria-current="page">Разрыв во внедрении ИИ — это проблема людей</li></ol></nav>
+      <p class="eyebrow">Новости ИИ с объяснениями · Работа и навыки</p>
+      <h1 class="h-display">Разрыв во внедрении ИИ — это проблема людей</h1>
+      <p class="lead">Anthropic выделила $100 млн на подготовку 10 000 Frontier Deployed Engineers к 2027 году вместе с консалтингом и банками. Почему маркетингу нужна своя версия этой роли.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Новость: Anthropic запускает Claude Frontier Academy и выделяет $100 млн на подготовку 10 000 инженеров (<time datetime="2026-10-02">2 октября 2026</time>)</span></p>
+      <p class="byline"><span>Автор: <b>проф. Алекс Фарсеев</b></span><span class="dot"></span><time datetime="2026-11-08">8 ноября 2026</time><span class="dot"></span><span>4 мин чтения</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Чаще всего ИИ-проекты разочаровывают не из-за модели. А из-за того, что никто в организации не умеет превратить способную модель в работающий процесс. 2 октября Anthropic назвала цену этой проблемы: US$100 млн на подготовку 10 000 человек, чья работа — именно это.</p>
+<h2>Что произошло</h2>
+<p>Согласно <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">анонсу Anthropic</a>, новая Claude Frontier Academy должна подготовить 10 000 «Frontier Deployed Engineers» к концу 2027 года при финансировании в US$100 млн. Первая программа — резидентура, которая, по словам Anthropic, «следует медицинской модели формирования экспертизы». Организации выдвигают сильных инженеров, каждый приходит с конкретным проектом на Claude. Сначала они проходят многодневную очную программу с симуляцией корпоративного внедрения и оцениваемым практическим заданием, затем 12 недель ведут реальный кейс в своей организации при поддержке инженеров Anthropic, после чего сдают итоговую аттестацию.</p>
+<p>Потоки проходят в Сан-Франциско, Нью-Йорке и Лондоне. Среди компаний первых потоков названы Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley и Novo Nordisk. По словам Anthropic, академия опирается на её партнёрскую сеть, где специалисты из 46 000 компаний получили более 175 000 сертификатов.</p>
+<p>Представитель Accenture, цитируемый в анонсе, говорит, что резидентура оценивает «суждение, проверенное на симуляции корпоративного внедрения, а не технические навыки в отрыве от контекста».</p>
+<h2>Почему это важно</h2>
+<p>Посмотрите на список первых участников: консалтинговые компании, банки, фармацевтическая компания. Именно эти организации будут внедрять ИИ в других компаниях, в том числе в отделах маркетинга. Сама модель не нова: полевые инженеры и архитекторы решений есть в любой категории корпоративного ПО. Новы масштаб и акцент на суждении в реальных внедрениях.</p>
+<p>В маркетинге тот же разрыв — и меньше людей, которые над ним работают. У многих команд теперь есть доступ к отличным моделям и инструментам. Гораздо меньше тех, у кого есть человек, чья работа — взять запутанный маркетинговый процесс, будь то мониторинг конкурентов, тестирование креативов или отчётность, и перестроить его вокруг ИИ со встроенными измерениями, ограничителями и внедрением.</p>
+<p>Стоит отметить и города потоков. Ни одного в Азии. Для нашего региона это либо пробел, который нужно заполнять на месте, либо знак того, что первая волна сертифицированных специалистов по внедрению сосредоточится в других местах.</p>
+<h2>Что говорят мои исследования</h2>
+<p>На мой взгляд, самый трудный шаг в прикладном ИИ — между работающей моделью и работающим процессом. Наши исследования это отражают. В <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) и в <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">отраслевой демонстрации SOMIN на ACM Multimedia 2025</a> вклад состоит не только в моделях, но и в том, как они встраиваются в стратегическую работу маркетолога: прогнозирование эффективности плюс LLM, которая объясняет и рекомендует.</p>
+<p>Я писал в Forbes о <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">сокращении разрыва между маркетингом и ИИ-системами</a> и о <a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">применении LLM в бизнесе за пределами чат-ботов</a>. Общая мысль: ценность появляется, когда кто-то понимает обе стороны — что модель умеет делать надёжно и что на самом деле нужно бизнесу. В маркетинге такой человек — редкость.</p>
+<p>Я также преподаю — в том числе в NUS и INSEAD, — и сравнение с медицинской резидентурой мне близко. Внедрению не научишься по слайдам. Ему учатся, отвечая за реальный кейс под руководством наставника и проходя оценку суждения.</p>
+<h2>Как маркетинговым командам создать эту роль уже сейчас</h2>
+<ul><li>Назначьте ответственного. Дайте одному человеку явную ответственность за превращение возможностей ИИ в маркетинговые процессы — и время на это.</li><li>Учитесь на реальном кейсе. Выберите один действующий процесс, например еженедельный отчёт по конкурентам, и перестройте его от начала до конца, с исходным уровнем и целью.</li><li>Объединяйте маркетинг и инженерию. Лучшие внедрения получаются, когда вместе работают маркетолог, понимающий решение, и технолог, понимающий систему.</li><li>Оценивайте суждение, а не владение инструментами. Может ли человек объяснить, когда ИИ нельзя доверять и что происходит тогда?</li><li>Делитесь тем, что работает. Описывайте каждое внедрение как короткий кейс: проблема, решение, результат, сценарии сбоев.</li></ul>
+<p>Сто миллионов долларов — большая сумма для обучения. И небольшая по сравнению с тем, что организации теряют на ИИ-проектах, которые так и не становятся частью повседневной работы. Маркетингу не стоит ждать, пока кто-то другой подготовит его специалистов по внедрению.</p>
+<h2 id="faq">Частые вопросы</h2>
+<div class="faq"><details><summary>Что такое Claude Frontier Academy?</summary><p>Это образовательная программа, запущенная Anthropic 2 октября 2026 года с финансированием в US$100 млн, чтобы к концу 2027 года подготовить 10 000 Frontier Deployed Engineers через очную программу и последующую 12-недельную резидентуру на реальном проекте.</p></details><details><summary>Какие компании входят в первые потоки Claude Frontier Academy?</summary><p>Anthropic называет, среди прочих, Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley и Novo Nordisk; потоки проходят в Сан-Франциско, Нью-Йорке и Лондоне.</p></details><details><summary>Зачем маркетингу специалисты по внедрению ИИ?</summary><p>Потому что доступ к моделям больше не узкое место. Ценность возникает при перестройке реальных маркетинговых процессов вокруг ИИ с измерениями и ограничителями, а для этого нужны люди, понимающие и технологию, и маркетинговое решение.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Источники</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Проф. Алекс Фарсеев</b> — основатель и CEO SOMIN.ai, приглашённый профессор ИИ в NUS и INSEAD. Его рецензируемые исследования посвящены профилированию пользователей по нескольким источникам, рекомендациям с учётом личности и объяснимому ИИ для маркетинга.</p>
+<p class="links"><a href="/ru/">Об Алексе</a><a href="/ru/#publications">Публикации</a><a href="/ru/blog/">Другие новости ИИ</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Читайте также</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Другие новости ИИ с объяснениями</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ru/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">Работа и навыки · 9 сентября 2026</span><h3>Три экономических сценария ИИ и будущее профессий в маркетинге</h3><p>Anthropic опубликовала три сценария влияния ИИ на экономику США до 2030 года — от умеренного до экстремального. Что выводы об интеллектуальном труде значат для карьер в маркетинге.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Реклама и маркетинговый ИИ · 29 октября 2026</span><h3>WPP в III квартале 2026: агентская модель под давлением ИИ</h3><p>Сопоставимая чистая выручка WPP снизилась, а CEO указал на спрос на ИИ-услуги через WPP Open. Что это говорит об агентствах.</p><span class="go">Читать →</span></a><a class="pcard" href="/ru/blog/malaysia-ai-governance-bill/"><span class="meta">Азия и Сингапур · 29 октября 2026</span><h3>Законопроект Малайзии об управлении ИИ: ответственность по ролям</h3><p>Проект AI Governance Bill Малайзии, ожидаемый к началу 2027 года, возлагает обязанности на разработчиков, поставщиков и пользователей ИИ. Что ролевые правила значат для маркетологов.</p><span class="go">Читать →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO в сфере генеративного ИИ, профессор ИИ, спикер и аккордеонист. Соединяет глубокие исследования и реальный маркетинг — от Сингапура до всего мира.</p>
+      </div>
+      <div>
+        <h6>Разделы</h6>
+        <ul>
+          <li><a href="/ru/">Главная</a></li>
+          <li><a href="/ru/blog/">Блог новостей ИИ</a></li>
+          <li><a href="/ru/#research">Исследования</a></li>
+          <li><a href="/ru/#publications">Публикации</a></li>
+          <li><a href="/ru/#connect">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>В сети</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Алекс Фарсеев · <span translate="no">法信夫</span></span>
+      <span>Мнения — мои собственные. Факты из новостей снабжены ссылками на источники.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
