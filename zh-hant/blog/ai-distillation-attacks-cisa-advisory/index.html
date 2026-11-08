@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>蒸餾攻擊：被複製的 AI 模型對你意味著什麼 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="美國機構在一份蒸餾攻擊公告中點名六家中國 AI 企業，Anthropic 則表示其防禦措施讓被擷取的資料減少 90% 至 99%。這對 AI 採購者意味著什麼。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="蒸餾攻擊：被複製的 AI 模型對你意味著什麼 | Prof. Aleks Farseev" />
+<meta property="og:description" content="美國機構在一份蒸餾攻擊公告中點名六家中國 AI 企業，Anthropic 則表示其防禦措施讓被擷取的資料減少 90% 至 99%。這對 AI 採購者意味著什麼。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="監管與資安" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="蒸餾攻擊：被複製的 AI 模型對你意味著什麼 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="美國機構在一份蒸餾攻擊公告中點名六家中國 AI 企業，Anthropic 則表示其防禦措施讓被擷取的資料減少 90% 至 99%。這對 AI 採購者意味著什麼。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/","headline":"蒸餾攻擊：被複製的 AI 模型對你意味著什麼","description":"美國機構在一份蒸餾攻擊公告中點名六家中國 AI 企業，Anthropic 則表示其防禦措施讓被擷取的資料減少 90% 至 99%。這對 AI 採購者意味著什麼。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"監管與資安","about":{"@type":"Thing","name":"CISA、NSA 與 FBI 針對美國 AI 模型遭工業規模蒸餾發布公告；Anthropic 公布新的反蒸餾防禦措施"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"什麼是 AI 蒸餾攻擊？","acceptedAnswer":{"@type":"Answer","text":"這是一種隱密的大規模行動，透過查詢模型來擷取其能力——往往經由詐騙帳號網路進行——並在未經原開發者許可的情況下，用這些產出訓練另一個模型。"}},{"@type":"Question","name":"美國的公告點名了哪些公司？","acceptedAnswer":{"@type":"Answer","text":"根據 Help Net Security 的報導，CISA、NSA 與 FBI 的公告點名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 與 Z.AI。報導中並未收錄這些公司的回應。"}},{"@type":"Question","name":"模型蒸餾一定是壞事嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。蒸餾是從大模型訓練出較小、較便宜模型的標準技術。問題在於未經授權從他人模型擷取能力，這會引發關於同意、防護措施與來源的疑問。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"蒸餾攻擊：被複製的 AI 模型對你意味著什麼","item":"https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">蒸餾攻擊：被複製的 AI 模型對你意味著什麼</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 監管與資安</p>
+      <h1 class="h-display">蒸餾攻擊：被複製的 AI 模型對你意味著什麼</h1>
+      <p class="lead">美國機構在一份蒸餾攻擊公告中點名六家中國 AI 企業，Anthropic 則表示其防禦措施讓被擷取的資料減少 90% 至 99%。這對 AI 採購者意味著什麼。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：CISA、NSA 與 FBI 針對美國 AI 模型遭工業規模蒸餾發布公告；Anthropic 公布新的反蒸餾防禦措施（<time datetime="2026-10-12">2026 年 10 月 12 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>「蒸餾」在機器學習中原本是個客氣的字眼，指的是訓練小模型模仿大模型，一種標準且實用的技術。2026 年 9 月與 10 月，它成了一則資安與貿易新聞。如果你為行銷採購或打造 AI，兩種含義都應該了解。</p>
+<h2>發生了什麼事</h2>
+<p>9 月初，CISA、NSA 與 FBI 發布聯合公告，針對他們所稱由中國 AI 公司進行的工業規模知識蒸餾。根據 <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Help Net Security 對該公告的報導</a>，這些機構點名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 與 Z.AI，稱其至少自 2024 年底起，透過對美國前沿模型發出數百萬次請求，擷取了數十億個 token。公告列出了偵測訊號，例如全天候、沒有人類閒置時間的使用模式，以及協同行動的帳號群，並建議加強身分驗證、監控以及 AI 供應商之間的資訊分享。報導指出，其中並未收錄被點名公司的回應。</p>
+<p>10 月 12 日，Anthropic 說明了自己的應對措施。在 <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> 一文中，它表示初步證據顯示，其方法已讓蒸餾者擷取的資料減少約 90% 至 99%。這些措施包括：禁止較新的 API 帳號編輯 Claude 先前的推理內容；一個以擷取嘗試訓練、誤判率低於 0.1% 的兩階段分類器；對重複嘗試施加更嚴格的限制與停權；以及對被防護機制攔截的請求收費。Anthropic 表示已停用數萬個與蒸餾相關的帳號，並預期這將是一場持續的「貓捉老鼠遊戲」。</p>
+<h2>為何重要</h2>
+<p>行銷人應該關心 AI 實驗室之間的這場角力，原因有二。</p>
+<p>第一是供應鏈風險。如果一個模型是在未經許可下複製另一個模型的行為而建成，你無從得知它附帶了哪些防護措施。Anthropic 的文章主張，蒸餾而來的模型可能接近前沿能力，但防護卻較薄弱。當你選擇模型來處理客服或產生廣告時，來源本身就是品質的一部分。</p>
+<p>第二是對正當使用者造成的摩擦。防禦是有代價的。Anthropic 承認，部分開發者必須更新整合，一小部分無害的請求可能被攔截，而被攔截的請求如今也可能被收費。如果你的行銷技術堆疊大量自動呼叫前沿 API，部分流量可能看起來就像一場擷取行動。現在就去讀供應商的政策，別等到流程斷掉才讀。</p>
+<h2>我的研究怎麼說</h2>
+<p>蒸餾在這裡並不是反派。以正當方式進行時，它正是讓 AI 變得負擔得起的方法：大模型教小模型，小模型以低成本大規模運行。我曾在 Forbes 主張，在行銷中<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">技術比模型大小更重要</a>，而蒸餾正是其中一項技術。</p>
+<p>改變局面的是同意與透明。我在可解釋 AI 上的研究，始於一個簡單的原則：行銷人應該能看出系統為何做出某項建議。在 <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）中，我們將點擊率預測與一個解釋驅動因素的大型語言模型助理結合。在 <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a>（2024 年預印本）中，我們描述了如何將可解釋的成效模型與大型語言模型結合，用於競品分析。唯有當你知道模型是什麼、從何而來，解釋才有意義。</p>
+<p>這裡還有一個值得留意的諷刺。Anthropic 所描述的防禦——對模型完整推理內容加以摘要或限制存取——會讓系統對所有人都變得稍微不透明，因為推理正是複製者想要的東西。這項取捨將影響 AI 廠商願意揭露多少解釋。採購者應要求為他們設計、關於他們的資料與決策的解釋，而不是原始的推理軌跡。</p>
+<h2>行銷 AI 的採購者現在該做什麼</h2>
+<ul><li>詢問每一家廠商，其產品底層使用哪些模型，以及這些模型從何而來。</li><li>檢查你所呼叫 API 的使用條款。自動化、大量使用在行銷中很常見；確保你的使用明確正當、可識別且在限制之內。</li><li>為更換模型預作規劃。政策、價格與存取權限可能迅速改變。讓提示、流程與評估資料集保持可攜。</li><li>以正當方式蒸餾自己的模型。如果你需要一個用於狹窄任務的低成本模型，請用自己的資料或你獲授權使用的產出來訓練。</li><li>比起揭露內部機制，更應要求對決策的解釋。你需要稽核的，是某項建議為何會針對你的廣告活動提出。</li></ul>
+<p>蒸餾之爭關乎誰能複製誰。對行銷人來說，這提醒我們：「用哪個模型？」如今是治理問題，而不只是技術問題。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>什麼是 AI 蒸餾攻擊？</summary><p>這是一種隱密的大規模行動，透過查詢模型來擷取其能力——往往經由詐騙帳號網路進行——並在未經原開發者許可的情況下，用這些產出訓練另一個模型。</p></details><details><summary>美國的公告點名了哪些公司？</summary><p>根據 Help Net Security 的報導，CISA、NSA 與 FBI 的公告點名了 DeepSeek、Moonshot AI、Alibaba Group、MiniMax、StepFun 與 Z.AI。報導中並未收錄這些公司的回應。</p></details><details><summary>模型蒸餾一定是壞事嗎？</summary><p>不是。蒸餾是從大模型訓練出較小、較便宜模型的標準技術。問題在於未經授權從他人模型擷取能力，這會引發關於同意、防護措施與來源的疑問。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/mas-ai-risk-management-guidelines/"><span class="meta">監管與資安 · 2026 年 10 月 7 日</span><h3>MAS AI 風險指引：銀行業以外也適用的範本</h3><p>MAS 發布了金融機構 AI 風險管理指引。其中關於盤點與第三方的規則，是行銷團隊的好範本。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">監管與資安 · 2026 年 9 月 29 日</span><h3>白宮 AI 協議與獨立評估機構</h3><p>科技領袖簽署一份自願性的白宮協議，承諾引入外部評估機構，Anthropic 也給予 METR 深度存取權限。為何稽核對行銷 AI 很重要。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/wpp-q3-2026-agentic-agency/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季：AI 壓力下的代理商模式</h3><p>WPP 公布同比淨營收下滑，執行長則指出客戶對透過 WPP Open 提供的 AI 服務有需求。這對代理商意味著什麼。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

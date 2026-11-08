@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Skills 走向廠商中立：行銷人為何該關注 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Agent Skills 走向廠商中立：行銷人為何該關注 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 代理" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Agent Skills 走向廠商中立：行銷人為何該關注 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/","url":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/","headline":"Agent Skills 走向廠商中立：行銷人為何該關注","description":"Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"AI 代理","about":{"@type":"Thing","name":"Anthropic 將 Agent Skills 開放標準捐贈給 Linux Foundation 旗下的 Agentic AI Foundation"},"wordCount":873,"citation":[{"@type":"CreativeWork","name":"Donating Agent Skills to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","publisher":"Anthropic","datePublished":"2026-10-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/#faq","mainEntity":[{"@type":"Question","name":"Agent Skill 是什麼？","acceptedAnswer":{"@type":"Answer","text":"根據 Anthropic 的說法，skill 是一個包含 SKILL.md 檔案的資料夾，用來教導 AI 代理執行特定任務或領域的工作，並附上該任務所需的任何腳本或參考資料。"}},{"@type":"Question","name":"現在由誰維護 Agent Skills 標準？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 已將該標準、其名稱、標誌、GitHub 組織及 agentskills.io 網域捐贈給 Linux Foundation 旗下的 Agentic AI Foundation。來自 Anthropic、Google、OpenAI 及其他公司的工程師以個人身分維護它。"}},{"@type":"Question","name":"行銷人可以如何運用 Agent Skills？","acceptedAnswer":{"@type":"Answer","text":"把可重複的流程寫下來，例如 brief、競品檢視或廣告活動報告，並附上品牌規則與範例，讓不同工具中的 AI 代理都遵循團隊自己的方法，而不是通用的預設做法。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Agent Skills 走向廠商中立：行銷人為何該關注","item":"https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/agent-skills-agentic-ai-foundation/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/agent-skills-agentic-ai-foundation/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/agent-skills-agentic-ai-foundation/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/agent-skills-agentic-ai-foundation/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/agent-skills-agentic-ai-foundation/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/agent-skills-agentic-ai-foundation/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Agent Skills 走向廠商中立：行銷人為何該關注</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · AI 代理</p>
+      <h1 class="h-display">Agent Skills 走向廠商中立：行銷人為何該關注</h1>
+      <p class="lead">Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Anthropic 將 Agent Skills 開放標準捐贈給 Linux Foundation 旗下的 Agentic AI Foundation（<time datetime="2026-10-22">2026 年 10 月 22 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>有些最重要的 AI 新聞，表面上看起來很無聊。10 月 22 日，Anthropic 表示將把 Agent Skills 標準移交給 Linux Foundation 旗下的 Agentic AI Foundation。沒有新模型，也沒有基準測試。但如果你用 AI 代理經營行銷，正是這類底層管線，決定了你的專業知識是否仍然屬於你。</p>
+<h2>發生了什麼事</h2>
+<p>根據 <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Anthropic 的文章</a>，skill 是「一個包含 SKILL.md 檔案的資料夾，用來教導代理執行特定任務或領域的工作，並附上它所需的任何腳本或參考資料」。Anthropic 在打造 Claude Code 時開發了這個格式，因為通用型代理往往缺乏真實商業任務所需的程序性知識。它於 2025 年 10 月推出 skills，並於 2025 年 12 月將 Agent Skills 發布為開放標準。</p>
+<p>採用數字相當可觀。Anthropic 表示，已有超過 70 個代理平台整合了 Agent Skills，包括 ChatGPT、Cursor、GitHub Copilot 與 VS Code，且已有 100 萬個 skills 發布、近 2.8 億次安裝。</p>
+<p>如今，標準本身、其名稱與標誌、GitHub 組織以及 agentskills.io 網域，都將移交給 Agentic AI Foundation（AAIF）；Anthropic 與 Block 及 OpenAI 共同創立了該基金會，先前也已將 Model Context Protocol 捐贈給它。來自 Anthropic、Google、OpenAI 及其他公司的工程師將以個人身分維護這項標準。擬議的路線圖包括版本化發布、正式的提案流程，以及針對撰寫與安裝 skills 者的安全指引。</p>
+<h2>為何重要</h2>
+<p>我認識的每個行銷團隊，都有同一項隱形資產：他們做事的方式。如何撰寫 brief。先檢查哪些競爭對手。對這個市場的這位客戶而言，「符合品牌」是什麼意思。如今這些大多存在於人們的腦袋裡，以及沒人看的簡報檔中。</p>
+<p>skill 是一種把流程寫下來、讓代理得以遵循的方式。而廠商中立的標準，代表你只需寫一次，就能期待它在團隊使用的各種工具中運作。這就是建立在平台上與建立在格式上的差別。格式的壽命比平台長。</p>
+<p>還有第二個較不顯眼的好處：skill 是可讀的。你可以打開資料夾，看到代理被要求做什麼。在「是 AI 決定的」逐漸成為常見藉口的領域裡，一份純文字的流程，是雖小但真實的問責。</p>
+<h2>我的研究怎麼說</h2>
+<p>我曾在 Forbes 撰文，談行銷中從<a href="https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/" target="_blank" rel="noopener">提示與微調到 RAG 與 AI 代理</a>的進階路徑，以及<a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">AI 代理在行銷中的 18 種應用</a>。我一再回到的規律是：代理之所以失敗，與其說是缺乏智慧，不如說是缺乏脈絡——也就是這項工作所需的具體資料與具體流程。</p>
+<p>我們最新的論文把這一點具體化。在 <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a>（SIGIR 2026）中，我們描述了協助專業人士撰寫獨特 LinkedIn 內容的檢索增強代理。核心概念是：代理應在撰寫之前先檢索真實的脈絡資料，讓產出保持獨特，而不是趨同於其他人的代理所產出的同一種制式文字。</p>
+<p>skills 是檢索在程序面的孿生兄弟。檢索給代理事實，skill 給它方法。兩者都在對抗同質化，因為兩者都把專屬於你的東西注入一個原本會預設為網路平均值的系統。如果每個品牌都以相同的預設行為執行相同的代理，每個品牌聽起來都會一樣。你的 skills，正是你的差異所在。</p>
+<h2>行銷團隊現在該做什麼</h2>
+<ul><li>把每週重複的三個流程寫下來，例如競品檢查、廣告活動檢討或創意 brief，寫成簡單的逐步指示，並附上優良產出的範例。</li><li>將品牌專屬的部分分開管理：語氣、禁用的宣稱、法律免責聲明、市場差異。正是這些部分讓你的產出屬於你。</li><li>為它們做版本控管。流程改變，代理的行為就會改變。像對待程式碼一樣對待 skills，設定負責人並保留變更紀錄。</li><li>安裝第三方 skills 前先審查安全性。skill 可能包含腳本。新的治理路線圖正因如此而提及安全指引；在它出現之前，請先讀過你要安裝的內容。</li><li>衡量獨特性，而不只是速度。如果代理撰寫的內容開始看起來和競爭對手的一樣，代表你的脈絡太單薄了。</li></ul>
+<p>開放標準在你需要更換工具之前，並不令人興奮。當那一天到來，把專業知識寫成可攜格式的團隊，一週內就能遷移。其他團隊則得從頭開始。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Agent Skill 是什麼？</summary><p>根據 Anthropic 的說法，skill 是一個包含 SKILL.md 檔案的資料夾，用來教導 AI 代理執行特定任務或領域的工作，並附上該任務所需的任何腳本或參考資料。</p></details><details><summary>現在由誰維護 Agent Skills 標準？</summary><p>Anthropic 已將該標準、其名稱、標誌、GitHub 組織及 agentskills.io 網域捐贈給 Linux Foundation 旗下的 Agentic AI Foundation。來自 Anthropic、Google、OpenAI 及其他公司的工程師以個人身分維護它。</p></details><details><summary>行銷人可以如何運用 Agent Skills？</summary><p>把可重複的流程寫下來，例如 brief、競品檢視或廣告活動報告，並附上品牌規則與範例，讓不同工具中的 AI 代理都遵循團隊自己的方法，而不是通用的預設做法。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a> — Anthropic, 22 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/workday-c1-ai-agent-identity/"><span class="meta">AI 代理 · 2026 年 10 月 13 日</span><h3>Workday 收購 C1.ai：你的行銷代理也需要身分</h3><p>Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/openai-agent-medicare-portal-australia/"><span class="meta">AI 代理 · 2026 年 9 月 24 日</span><h3>不肯接受拒絕的 AI 代理</h3><p>澳洲總理表示，一個 OpenAI 研究代理繞過了 Medicare 統計入口網站的封鎖。行銷代理該學到的教訓在於範圍。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/meta-muse-personal-ai-agent/"><span class="meta">AI 代理 · 2026 年 9 月 8 日</span><h3>Meta Muse：當你的顧客派出一個代理</h3><p>Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

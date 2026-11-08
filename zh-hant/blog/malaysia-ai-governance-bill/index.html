@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>馬來西亞 AI Governance Bill：依角色劃分責任 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/malaysia-ai-governance-bill/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/malaysia-ai-governance-bill/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="馬來西亞 AI Governance Bill：依角色劃分責任 | Prof. Aleks Farseev" />
+<meta property="og:description" content="馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="亞洲與新加坡" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="馬來西亞 AI Governance Bill：依角色劃分責任 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/","url":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/","headline":"馬來西亞 AI Governance Bill：依角色劃分責任","description":"馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"亞洲與新加坡","about":{"@type":"Thing","name":"馬來西亞完成 AI Governance Bill 草案，計畫於 2027 年初前提交國會"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"AI Governance Bill expected by early 2027, says Gobind","url":"https://www.thestar.com.my/news/nation/2026/09/11/ai-governance-bill-expected-by-early-2027-says-gobind","publisher":"The Star","datePublished":"2026-09-11"},{"@type":"CreativeWork","name":"Gobind: Artificial Intelligence Governance Bill to be tabled in Parliament early next year","url":"https://theedgemalaysia.com/node/823773","publisher":"The Edge Malaysia","datePublished":"2026-10-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/#faq","mainEntity":[{"@type":"Question","name":"馬來西亞的 AI Governance Bill 何時提交？","acceptedAnswer":{"@type":"Answer","text":"根據 The Edge Malaysia，數位部長 Gobind Singh Deo 於 2026 年 10 月 29 日告訴國會，政府計畫於 2027 年初前將法案提交下議院。"}},{"@type":"Question","name":"馬來西亞的 AI Governance Bill 適用於哪些對象？","acceptedAnswer":{"@type":"Answer","text":"根據部長的說明，它將要求開發、提供或使用 AI 系統者辨識、評估與管理潛在風險，責任則依各方的角色而定。"}},{"@type":"Question","name":"在新法上路前，馬來西亞如何處理深偽？","acceptedAnswer":{"@type":"Answer","text":"The Edge Malaysia 報導，在法案通過之前，詐騙、深偽、內容操縱與不實資訊依現行法律處理，包括刑法典（Penal Code）、Communications and Multimedia Act 1998、Online Safety Act 2025 與 Cybersecurity Act 2024。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"馬來西亞 AI Governance Bill：依角色劃分責任","item":"https://farseev.com/zh-hant/blog/malaysia-ai-governance-bill/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/malaysia-ai-governance-bill/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/malaysia-ai-governance-bill/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/malaysia-ai-governance-bill/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/malaysia-ai-governance-bill/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/malaysia-ai-governance-bill/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/malaysia-ai-governance-bill/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">馬來西亞 AI Governance Bill：依角色劃分責任</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 亞洲與新加坡</p>
+      <h1 class="h-display">馬來西亞 AI Governance Bill：依角色劃分責任</h1>
+      <p class="lead">馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：馬來西亞完成 AI Governance Bill 草案，計畫於 2027 年初前提交國會（<time datetime="2026-10-29">2026 年 10 月 29 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>東南亞不會照抄歐洲的 AI Act，但也沒有原地踏步。馬來西亞是最新一個從指引走向立法的國家。其 AI Governance Bill 草案已經完成，政府計畫於 2027 年初前提交。對行銷人而言，有意思的是它如何分配責任。</p>
+<h2>發生了什麼事</h2>
+<p>據 The Star 報導，數位部長 Gobind Singh Deo 於 9 月表示，<a href="https://www.thestar.com.my/news/nation/2026/09/11/ai-governance-bill-expected-by-early-2027-says-gobind" target="_blank" rel="noopener">草案已經完成</a>，正提交內閣。他將 AI 治理描述為三個層次：標準、法規與法律，有些事項會先透過標準處理。MY-AI Standards 已與 Sirim Berhad 共同建立，而成立 AI Malaysia 則是在法案之外建立執法能力的一環。</p>
+<p>10 月 29 日，他在下議院（Dewan Rakyat）答詢時提供了更多細節。根據 <a href="https://theedgemalaysia.com/node/823773" target="_blank" rel="noopener">The Edge Malaysia</a>，該法案將建立一個法律框架，要求開發、提供或使用 AI 系統者辨識、評估與管理潛在風險，涵蓋 AI 風險管理、各方之間的當責，以及事件通報與處理程序。政府計畫於 2027 年初前提交法案。在此之前，詐騙、深偽、內容操縱與不實資訊依現行法律處理，包括刑法典（Penal Code）、Communications and Multimedia Act 1998、Online Safety Act 2025 與 Cybersecurity Act 2024。馬來西亞也正與其他東協成員國合作，追求更一致的區域做法。Gobind 表示，這種做法「符合責任應依各方角色而定的原則」。</p>
+<h2>為何重要</h2>
+<p>「依角色而定的責任」是值得記住的一句話。它意味著，使用 AI 工具的品牌，不會因為模型是別人打造的就能置身事外。開發者、提供者與使用者，各自依其所做之事承擔相應的義務。就行銷而言，企業最常處於「使用者」或「部署者」的角色：模型不是你訓練的，但你選擇將它用在你的顧客身上。</p>
+<p>事件通報是另一個實務要素。如果你使用的 AI 系統造成傷害，例如深偽廣告、具歧視性的鎖定結果，或聊天機器人提供危險建議，很可能會有一套通報與處理的程序。</p>
+<p>區域一致性也很重要。許多品牌同時在馬來西亞、新加坡、印尼、泰國與越南投放廣告活動。更一致的東協做法，將讓跨市場合規變得簡單許多。</p>
+<h2>我的研究怎麼說</h2>
+<p>依角色劃分責任，與我對行銷 AI 的思考方式相符。在我 WSDM 2023 的演講 <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a> 中，我探討了自動化建模、廣告鎖定與創意評分所引發的倫理與隱私問題。其中許多問題與模型本身無關，而在於企業選擇如何運用它：哪些受眾、哪些資料、哪些宣稱。</p>
+<p>這就是我重視可解釋性的原因。在 <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a>（ACM Multimedia 2023）中，我們解釋了預測廣告成效的驅動因素；在 <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> 中，我們描述了如何將可解釋模型與大型語言模型結合，用於行銷分析。如果你身為 AI 的使用者須負起責任，你就必須能解釋它代表你做了什麼。無法解釋自身的系統，會讓這種當責變得非常難以達成。</p>
+<h2>在馬來西亞營運的行銷人現在該做什麼</h2>
+<ul><li>釐清你在每個 AI 系統中的角色：你是在開發、提供，還是使用它？大多數行銷團隊會是使用者；部分代理商與平台則會是提供者。</li><li>建立一份簡單的風險登錄表。針對每一項 AI 用途，記下可能的傷害、防護措施與負責人。</li><li>準備事件處理流程。決定你將如何偵測、停止並通報有害的 AI 產出，例如深偽或誤導性宣稱。</li><li>現在就檢視現行法律。深偽與不實資訊已受現行法規規範；不要等待新法案。</li><li>以區域視角思考。為你的東協廣告活動建立一套能吸收各國特性的治理做法。</li></ul>
+<p>馬來西亞的法案仍是草案，細節將會很重要。但方向很明確，也與整個區域監管機關所釋出的訊號一致：如果你把 AI 用在顧客身上，後果就由你承擔。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>馬來西亞的 AI Governance Bill 何時提交？</summary><p>根據 The Edge Malaysia，數位部長 Gobind Singh Deo 於 2026 年 10 月 29 日告訴國會，政府計畫於 2027 年初前將法案提交下議院。</p></details><details><summary>馬來西亞的 AI Governance Bill 適用於哪些對象？</summary><p>根據部長的說明，它將要求開發、提供或使用 AI 系統者辨識、評估與管理潛在風險，責任則依各方的角色而定。</p></details><details><summary>在新法上路前，馬來西亞如何處理深偽？</summary><p>The Edge Malaysia 報導，在法案通過之前，詐騙、深偽、內容操縱與不實資訊依現行法律處理，包括刑法典（Penal Code）、Communications and Multimedia Act 1998、Online Safety Act 2025 與 Cybersecurity Act 2024。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.thestar.com.my/news/nation/2026/09/11/ai-governance-bill-expected-by-early-2027-says-gobind" target="_blank" rel="noopener">AI Governance Bill expected by early 2027, says Gobind</a> — The Star, 11 September 2026</li><li translate="no"><a href="https://theedgemalaysia.com/node/823773" target="_blank" rel="noopener">Gobind: Artificial Intelligence Governance Bill to be tabled in Parliament early next year</a> — The Edge Malaysia, 29 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/anthropic-singapore-office-mou/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 14 日</span><h3>Anthropic 進駐新加坡：MOU 真正透露的訊號</h3><p>Anthropic 在新加坡設立辦公室，並與 MDDI 簽署 AI 安全與評估 MOU。為何以在地語言進行測試才是真正的重點。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 1 日</span><h3>日本 AI 行動計畫：成長政策轉為導入政策</h3><p>首相 Sanae Takaichi 要求各部會在年底前提出 AI 推廣行動計畫，並與日本成長戰略掛鉤。以導入為先的政策對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">亞洲與新加坡 · 2026 年 9 月 22 日</span><h3>阿里巴巴 Apsara 2026：巨型模型，小模型現實</h3><p>在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

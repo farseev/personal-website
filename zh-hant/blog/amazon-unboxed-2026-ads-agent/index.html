@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="在 unBoxed 2026 上，Amazon 將旗下購買工具整合為 Amazon Ads Agent，並加入對話式成效衡量與 AI 創意。哪些仍應留在人的手中。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/amazon-unboxed-2026-ads-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/amazon-unboxed-2026-ads-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化 | Prof. Aleks Farseev" />
+<meta property="og:description" content="在 unBoxed 2026 上，Amazon 將旗下購買工具整合為 Amazon Ads Agent，並加入對話式成效衡量與 AI 創意。哪些仍應留在人的手中。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="廣告與行銷 AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="在 unBoxed 2026 上，Amazon 將旗下購買工具整合為 Amazon Ads Agent，並加入對話式成效衡量與 AI 創意。哪些仍應留在人的手中。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/","url":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/","headline":"Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化","description":"在 unBoxed 2026 上，Amazon 將旗下購買工具整合為 Amazon Ads Agent，並加入對話式成效衡量與 AI 創意。哪些仍應留在人的手中。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"廣告與行銷 AI","about":{"@type":"Thing","name":"Amazon Ads 在 unBoxed 2026 宣布推出 Amazon Ads Agent、Full-Funnel Campaigns、AI 創意工具與 Ads MCP server"},"wordCount":860,"citation":[{"@type":"CreativeWork","name":"The 11 biggest takeaways from unBoxed 2026","url":"https://advertising.amazon.com/library/news/unboxed-2026-news-announcements","publisher":"Amazon Ads","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/#faq","mainEntity":[{"@type":"Question","name":"Amazon Ads Agent 是什麼？","acceptedAnswer":{"@type":"Answer","text":"它於 unBoxed 2026 發表，是一個整合 Amazon 原本 DSP 與 Ads Console 的統一購買體驗，涵蓋 Sponsored ads、Full-Funnel Campaigns 與 DVA+，其對話式 AI 體驗正在擴大封閉測試。"}},{"@type":"Question","name":"Amazon 公布的 Full-Funnel Campaigns 成效如何？","acceptedAnswer":{"@type":"Answer","text":"Amazon 表示，測試者的長期廣告投資報酬率提高 67%，取得品牌新顧客的成本降低 29%。這些是 Amazon 自行提供的數字。"}},{"@type":"Question","name":"廣告主應如何在 Amazon 上運用 AI 產生的廣告創意？","acceptedAnswer":{"@type":"Answer","text":"用它涵蓋比人類團隊所能處理更多的產品與受眾，但要定期檢視成效、淘汰表現不佳的版本，並保留自己的紀錄，記下哪些創意有效以及原因。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化","item":"https://farseev.com/zh-hant/blog/amazon-unboxed-2026-ads-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/amazon-unboxed-2026-ads-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/amazon-unboxed-2026-ads-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/amazon-unboxed-2026-ads-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/amazon-unboxed-2026-ads-agent/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/amazon-unboxed-2026-ads-agent/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/amazon-unboxed-2026-ads-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 廣告與行銷 AI</p>
+      <h1 class="h-display">Amazon Ads Agent：零售媒體在 unBoxed 2026 走向代理化</h1>
+      <p class="lead">在 unBoxed 2026 上，Amazon 將旗下購買工具整合為 Amazon Ads Agent，並加入對話式成效衡量與 AI 創意。哪些仍應留在人的手中。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Amazon Ads 在 unBoxed 2026 宣布推出 Amazon Ads Agent、Full-Funnel Campaigns、AI 創意工具與 Ads MCP server（<time datetime="2026-09-30">2026 年 9 月 30 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>零售媒體相較於其他數位廣告，一向有一項優勢：它就在購買行為旁邊。在 unBoxed 2026 上，Amazon 增加了第二項優勢：它在廣告主於其平台上所做的幾乎每件事之前，都放上了一個 AI 代理，從購買、創意到成效衡量。</p>
+<h2>發生了什麼事</h2>
+<p>Amazon 自己的整理 <a href="https://advertising.amazon.com/library/news/unboxed-2026-news-announcements" target="_blank" rel="noopener">The 11 biggest takeaways from unBoxed 2026</a> 列出了各項發表。重頭戲是 Amazon Ads Agent，一個整合了原本 DSP 與 Ads Console 的統一購買體驗，涵蓋 Sponsored ads、Full-Funnel Campaigns 與 DVA+，其對話式 AI 體驗正在擴大封閉測試。</p>
+<p>Full-Funnel Campaigns 讓 AI 管理影音、展示與音訊廣告的管道組合、創意、受眾與最佳化。Amazon 表示，測試者的長期廣告投資報酬率提高 67%，取得品牌新顧客的成本降低 29%。Ads Agent 內的 AI 創意工具可從既有的產品素材產生展示廣告與影片；Amazon 表示，使用這些工具的廣告主，相較於先前的成果，產品涵蓋率最多增加 71%，銷售最多成長 15%。</p>
+<p>在成效衡量方面，Ads Agent 可透過對話式查詢存取近 1,000 項指標，產出附有視覺化圖表與同業基準的業務檢討報告。AMC Expert Tool 可將自然語言請求轉換為 Amazon Marketing Cloud SQL。Amazon 也宣布推出 Ads MCP Server（Lite），讓外部代理能與 Amazon Ads 協作；推出 Branded Conversations，用於在 Alexa for Shopping 中呈現品牌差異化特點；以及 Sponsored Services，並以 Yelp 作為在地服務的主要合作夥伴。所有成效數字皆為 Amazon 自行提供。</p>
+<h2>為何重要</h2>
+<p>有兩項轉變特別突出。</p>
+<p>第一，廣告平台的介面正在變成一段對話。用白話要求一份涵蓋近千項指標的業務檢討，省去了大量苦工。但這也代表你提出的問題會形塑你得到的答案。分析師過去要花好幾個小時判斷哪一種資料切分才公允；聊天框讓人很容易跳過這一步。</p>
+<p>第二，平台正在接管整個漏斗。當 AI 選擇管道組合、創意與受眾，而由同一個平台衡量結果時，廣告主必須清楚自己委託出去的是哪些決策，以及將如何驗證成果。</p>
+<h2>我的研究怎麼說</h2>
+<p>我曾在 e27 的 <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">Every dashboard is green. So why can't anyone say what worked?</a> 一文中，談到成效衡量中的這種張力。更好的報表工具不會自動帶來更好的理解。自然語言分析會讓儀表板變得更容易產出。「和什麼相比？」這個提問的紀律，會變得更加重要，而不是更不重要。</p>
+<p>在創意方面，我們的研究聚焦於預測成效並加以解釋。在 <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>（ACM TOIS 2025）中，我們將成效預測與大型語言模型結合，讓創意分數變成可據以行動的建議。從產品素材大規模產生展示廣告與影片固然強大，但生成只是循環的一半。另一半是知道該押注哪個版本、以及為什麼，而這份知識應該屬於品牌，而不只屬於平台的最佳化器。</p>
+<p>還有一個長尾面向。Amazon 表示，使用其 AI 創意工具的廣告主達到了更高的產品涵蓋率。在我看來，長尾涵蓋正是 AI 物有所值之處：成千上萬個 SKU 與小眾受眾，沒有任何人類團隊會為它們逐一撰寫廣告。我曾在 Forbes 的 <a href="https://www.forbes.com/councils/forbestechcouncil/2024/01/12/low-funnel-ad-optimization-on-social-media-platforms/" target="_blank" rel="noopener">Low-Funnel Ad Optimization On Social Media Platforms</a> 中討論長尾與漏斗下層最佳化。機會是真實的，前提是品質控管能隨之擴展。</p>
+<h2>零售媒體團隊現在該做什麼</h2>
+<ul><li>決定你的授權地圖。寫下 Ads Agent 可以控制哪些槓桿（出價、管道組合、創意版本），以及哪些需要人工核准。</li><li>向對話式分析提出更好的問題。一律要求比較基準：與上一期相比、與保留組相比、與同業基準相比，並記下你用的是哪一種。</li><li>用 AI 創意擴大涵蓋，再加以修剪。為長尾產品產生素材，但要定期檢視成效並淘汰表現不佳的版本。</li><li>保留自己的成果紀錄。將重要結果匯出到自己的分析中，以便在相同基礎上比較 Amazon 與其他管道。</li><li>審慎探索 MCP。將自己的代理連接到 Amazon Ads 很有效率，但只給它們能運作的最小權限。</li></ul>
+<p>Amazon 讓廣告平台會回話了。能從中獲益最多的團隊，會是那些不斷向它提出尖銳問題的團隊。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Amazon Ads Agent 是什麼？</summary><p>它於 unBoxed 2026 發表，是一個整合 Amazon 原本 DSP 與 Ads Console 的統一購買體驗，涵蓋 Sponsored ads、Full-Funnel Campaigns 與 DVA+，其對話式 AI 體驗正在擴大封閉測試。</p></details><details><summary>Amazon 公布的 Full-Funnel Campaigns 成效如何？</summary><p>Amazon 表示，測試者的長期廣告投資報酬率提高 67%，取得品牌新顧客的成本降低 29%。這些是 Amazon 自行提供的數字。</p></details><details><summary>廣告主應如何在 Amazon 上運用 AI 產生的廣告創意？</summary><p>用它涵蓋比人類團隊所能處理更多的產品與受眾，但要定期檢視成效、淘汰表現不佳的版本，並保留自己的紀錄，記下哪些創意有效以及原因。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://advertising.amazon.com/library/news/unboxed-2026-news-announcements" target="_blank" rel="noopener">The 11 biggest takeaways from unBoxed 2026</a> — Amazon Ads, 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/wpp-q3-2026-agentic-agency/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季：AI 壓力下的代理商模式</h3><p>WPP 公布同比淨營收下滑，執行長則指出客戶對透過 WPP Open 提供的 AI 服務有需求。這對代理商意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 21 日</span><h3>Meta 2026 年第三季：AI 推升廣告價格，創作者成為管道</h3><p>Meta 2026 年第三季：廣告營收成長 26%，每則廣告價格上升 14%，合作夥伴廣告年化營收突破 US$150 億，亞太區情勢大不相同。這代表什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 6 日</span><h3>Meta 的新 AI 廣告工具：自動化仍需要解釋</h3><p>在紐約廣告週上，Meta 擴充了 AI 影片、廣告助理、白話受眾設定與 Ads MCP server。哪些仍該由行銷人自己掌握。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

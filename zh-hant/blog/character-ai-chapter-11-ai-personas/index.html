@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Character.AI 申請 Chapter 11：給 AI 角色產品的教訓 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Character.AI 申請 Chapter 11 破產保護以尋求出售，Disney 正準備出價 US$2,000 萬。打造 AI 角色與陪伴產品的品牌該學到什麼。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Character.AI 申請 Chapter 11：給 AI 角色產品的教訓 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Character.AI 申請 Chapter 11 破產保護以尋求出售，Disney 正準備出價 US$2,000 萬。打造 AI 角色與陪伴產品的品牌該學到什麼。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="負責任的行銷" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Character.AI 申請 Chapter 11：給 AI 角色產品的教訓 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Character.AI 申請 Chapter 11 破產保護以尋求出售，Disney 正準備出價 US$2,000 萬。打造 AI 角色與陪伴產品的品牌該學到什麼。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/","url":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/","headline":"Character.AI 申請 Chapter 11：給 AI 角色產品的教訓","description":"Character.AI 申請 Chapter 11 破產保護以尋求出售，Disney 正準備出價 US$2,000 萬。打造 AI 角色與陪伴產品的品牌該學到什麼。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"負責任的行銷","about":{"@type":"Thing","name":"Character.AI 申請 Chapter 11 破產保護；Disney 準備以 US$2,000 萬作為假馬競標，爭取一項 IP 授權"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy","url":"https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal","publisher":"TheWrap","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/#faq","mainEntity":[{"@type":"Question","name":"Character.AI 申請破產了嗎？","acceptedAnswer":{"@type":"Answer","text":"是的。根據 TheWrap，Character.AI 於 2026 年 10 月 12 日申請 Chapter 11 破產保護，以促成其資產出售，服務在程序進行期間仍持續運作。"}},{"@type":"Question","name":"Disney 在 Character.AI 出售案中扮演什麼角色？","acceptedAnswer":{"@type":"Answer","text":"TheWrap 報導，Disney 正準備出價 US$2,000 萬，取得某些智慧財產的非獨家永久授權，並將擔任假馬競標者，其出價將作為預計於 11 月底或 12 月初舉行之拍賣的底價。"}},{"@type":"Question","name":"品牌應從 Character.AI 的困境中學到什麼？","acceptedAnswer":{"@type":"Answer","text":"AI 角色伴隨著智慧財產、安全與信任方面的風險。品牌應以自己擁有的 IP 為基礎，嚴格限制角色可以宣稱的內容，以弱勢使用者為設計前提，揭露使用者正在與 AI 對話，並在衡量互動的同時衡量身心福祉。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Character.AI 申請 Chapter 11：給 AI 角色產品的教訓","item":"https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/character-ai-chapter-11-ai-personas/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/character-ai-chapter-11-ai-personas/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/character-ai-chapter-11-ai-personas/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/character-ai-chapter-11-ai-personas/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/character-ai-chapter-11-ai-personas/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/character-ai-chapter-11-ai-personas/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Character.AI 申請 Chapter 11：給 AI 角色產品的教訓</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 負責任的行銷</p>
+      <h1 class="h-display">Character.AI 申請 Chapter 11：給 AI 角色產品的教訓</h1>
+      <p class="lead">Character.AI 申請 Chapter 11 破產保護以尋求出售，Disney 正準備出價 US$2,000 萬。打造 AI 角色與陪伴產品的品牌該學到什麼。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Character.AI 申請 Chapter 11 破產保護；Disney 準備以 US$2,000 萬作為假馬競標（stalking-horse bid），爭取一項 IP 授權（<time datetime="2026-10-12">2026 年 10 月 12 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>幾年前，AI 角色看起來是大型語言模型最自然的消費應用：一個有個性、全天候在線的聊天機器人。10 月 12 日，這個領域最知名的公司之一 Character.AI 申請了 Chapter 11 破產保護。如今品牌正在打造自己的 AI 角色、吉祥物與陪伴者。這個故事值得仔細閱讀。</p>
+<h2>發生了什麼事</h2>
+<p>根據 <a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">TheWrap</a>，Character.AI 於 10 月 12 日（週一）深夜申請 Chapter 11，以「促成價值最大化的出售」其資產。Disney 正準備出價 US$2,000 萬，取得某些智慧財產的非獨家永久授權，並擔任「假馬」（stalking horse）競標者，其出價將作為拍賣的底價；拍賣預計於 11 月底或 12 月初舉行。其他競標者仍可提出更好的條件。</p>
+<p>TheWrap 指出，Disney 曾於 2025 年 9 月因角色遭未經授權使用，向 Character.AI 發出存證信函（cease-and-desist）；該平台在和解多起指控其 AI 代理誘導青少年自我傷害的訴訟後，轉向微短劇；賓夕法尼亞州也因其生成偽造的醫療專業執照而提起訴訟。執行長 Colin Adams 表示，法院監督下的出售「為公司提供了最佳機會」實現價值最大化，而安全且引人入勝的使用者體驗「仍是首要任務」。服務仍持續運作。</p>
+<h2>為何重要</h2>
+<p>對於該公司的財務狀況，我不會在報導內容之外多作揣測。但公開的事實已勾勒出任何 AI 角色產品都會面臨的三種風險。</p>
+<p>第一是智慧財產。人們喜愛的角色通常都有所屬。一個建立在使用者模仿知名角色之上的產品，恰恰會招來 TheWrap 所描述的那類爭議。</p>
+<p>第二是安全。一個被設計得引人入勝、能在情感上回應的角色，在設計上就具有影響力。當使用者包括青少年時，一旦防護機制失靈，這種影響力就會變成責任風險。</p>
+<p>第三是信任與權威。一個能產出以假亂真的證照的聊天機器人，顯示了角色多麼容易宣稱自己並不具備的專業。</p>
+<p>對品牌而言，教訓不是「避開 AI 角色」，而是：角色就是一種承諾，部署它的公司要為它說的每一句話負責。</p>
+<h2>我的研究怎麼說</h2>
+<p>人格特質是我的核心研究主題之一。我與同事研究過<a href="https://doi.org/10.1609/aaai.v31i1.11105" target="_blank" rel="noopener">從多個社群網路上的活動推斷人格特質</a>（AAAI 2017）、<a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">人格驅動的內容生成</a>（WSDM 2021），以及<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">人格驅動的社群多媒體內容推薦</a>（ACM Multimedia 2022）。研究結果很明確：讓內容與人格特質相匹配，能讓內容更具吸引力。</p>
+<p>正因如此，責任才格外沉重。一個能針對每位使用者調整個性的系統，建立依附感的速度比任何靜態廣告都快。善加運用，這代表更相關、更有幫助的品牌體驗；草率運用，則意味著操縱，尤其是對弱勢使用者。我在 WSDM 2023 的演講 <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a> 中討論了自動化建模與鎖定在倫理和隱私方面的問題，也曾在 Forbes 倡議<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">救贖式行銷</a>，主張透明是成效的一部分，而非一項成本。</p>
+<p>品牌角色應該像品牌代言人一樣被審慎設計，差別在於它同時與數百萬人對話，而且永遠不會累。</p>
+<h2>品牌打造 AI 角色的檢查清單</h2>
+<ul><li>掌握自己的 IP。以你擁有或已獲授權的角色與聲音打造角色，並阻止模仿他人的角色。</li><li>界定角色絕不能宣稱的事項。不得宣稱擁有證照，不得提供超出既定範圍的專業建議，不得做出公司不會兌現的承諾。</li><li>以最脆弱的使用者為設計前提。假設未成年人與身處困境的人可能會使用它，即使他們不是你的目標族群，並建立轉介真人協助的機制。</li><li>清楚揭露。使用者應始終知道自己正在與 AI 對話，以及背後是誰。</li><li>衡量身心福祉，而不只是互動。對陪伴型產品來說，使用時間不是成功指標。也要追蹤客訴、轉介真人的次數與有害內容標記。</li><li>為結束預作規劃。決定產品關閉或出售時，使用者的對話與資料將如何處理。</li></ul>
+<p>AI 角色將成為品牌體驗的一部分。把它們視為責任、而不只是互動引擎的公司，五年後仍會繼續經營它們。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Character.AI 申請破產了嗎？</summary><p>是的。根據 TheWrap，Character.AI 於 2026 年 10 月 12 日申請 Chapter 11 破產保護，以促成其資產出售，服務在程序進行期間仍持續運作。</p></details><details><summary>Disney 在 Character.AI 出售案中扮演什麼角色？</summary><p>TheWrap 報導，Disney 正準備出價 US$2,000 萬，取得某些智慧財產的非獨家永久授權，並將擔任假馬競標者，其出價將作為預計於 11 月底或 12 月初舉行之拍賣的底價。</p></details><details><summary>品牌應從 Character.AI 的困境中學到什麼？</summary><p>AI 角色伴隨著智慧財產、安全與信任方面的風險。品牌應以自己擁有的 IP 為基礎，嚴格限制角色可以宣稱的內容，以弱勢使用者為設計前提，揭露使用者正在與 AI 對話，並在衡量互動的同時衡量身心福祉。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy</a> — TheWrap, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">負責任的行銷 · 2026 年 10 月 14 日</span><h3>AI 規範如今把造假商業聲量視同選舉舞弊</h3><p>Anthropic 新的使用政策禁止「無論政治或商業」的欺騙性活動，並揭露了為賺廣告費而製作的假新聞。這是行銷人的一條界線。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/wpp-q3-2026-agentic-agency/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季：AI 壓力下的代理商模式</h3><p>WPP 公布同比淨營收下滑，執行長則指出客戶對透過 WPP Open 提供的 AI 服務有需求。這對代理商意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/malaysia-ai-governance-bill/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 29 日</span><h3>馬來西亞 AI Governance Bill：依角色劃分責任</h3><p>馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

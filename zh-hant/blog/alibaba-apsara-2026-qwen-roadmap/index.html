@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>阿里巴巴 Apsara 2026：巨型模型，小模型現實 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="阿里巴巴 Apsara 2026：巨型模型，小模型現實 | Prof. Aleks Farseev" />
+<meta property="og:description" content="在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="亞洲與新加坡" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="阿里巴巴 Apsara 2026：巨型模型，小模型現實 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/","url":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/","headline":"阿里巴巴 Apsara 2026：巨型模型，小模型現實","description":"在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"亞洲與新加坡","about":{"@type":"Thing","name":"阿里巴巴執行長 Eddie Wu 在雲棲大會上公布 5 兆至 10 兆參數模型與 Zhenwu V900 晶片的計畫"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip","url":"https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip","publisher":"The Standard (Reuters)","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference","url":"https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/","publisher":"Alizila (Alibaba)","datePublished":"2026-09-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/#faq","mainEntity":[{"@type":"Question","name":"阿里巴巴在 2026 雲棲大會上宣布了什麼？","acceptedAnswer":{"@type":"Answer","text":"根據 Reuters，執行長 Eddie Wu 表示阿里巴巴計畫訓練一個 5 兆至 10 兆參數的模型，發表了效能為前代三倍的 Zhenwu V900 AI 晶片，並設定目標，讓阿里雲資料中心容量在 2032 年前超過 20 GW。"}},{"@type":"Question","name":"阿里巴巴目前的旗艦 Qwen 模型有多大？","acceptedAnswer":{"@type":"Answer","text":"Reuters 報導，阿里巴巴目前的旗艦模型 Qwen 3.8 Max 有 2.4 兆個參數，因此計畫中的模型大約會大上兩到四倍。"}},{"@type":"Question","name":"為何開放、可本地部署的模型對亞洲行銷人很重要？","acceptedAnswer":{"@type":"Answer","text":"它們能在自選的司法管轄區內運行，能針對在地語言與資料進行調整，大規模運行的成本也較低，有助於處理資料落地、文化相關性與全天候 AI 代理的工作負載。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"阿里巴巴 Apsara 2026：巨型模型，小模型現實","item":"https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/alibaba-apsara-2026-qwen-roadmap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/alibaba-apsara-2026-qwen-roadmap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/alibaba-apsara-2026-qwen-roadmap/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/alibaba-apsara-2026-qwen-roadmap/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/alibaba-apsara-2026-qwen-roadmap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">阿里巴巴 Apsara 2026：巨型模型，小模型現實</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 亞洲與新加坡</p>
+      <h1 class="h-display">阿里巴巴 Apsara 2026：巨型模型，小模型現實</h1>
+      <p class="lead">在 Apsara 2026 上，阿里巴巴表示計畫打造 5 兆至 10 兆參數的模型，同時盛讚其開放的 27B 模型。為何亞洲行銷人應同時關注兩端。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：阿里巴巴執行長 Eddie Wu 在雲棲大會（Apsara Conference）上公布 5 兆至 10 兆參數模型與 Zhenwu V900 晶片的計畫（<time datetime="2026-09-22">2026 年 9 月 22 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>中國每年九月規模最大的 AI 大會，是阿里雲在杭州舉辦的雲棲大會（Apsara Conference）。今年的主題演講包含兩個故事。一個關於規模：一個比阿里巴巴訓練過的任何模型都大上好幾倍的模型。另一個則幾乎是順帶一提：一個開發者真正在用的小型開放模型。對亞洲的行銷人來說，第二個故事可能更重要。</p>
+<h2>發生了什麼事</h2>
+<p>根據 <a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Reuters（經 The Standard 轉載）</a>，阿里巴巴執行長 Eddie Wu 於 9 月 22 日表示，Qwen 團隊計畫訓練一個 5 兆至 10 兆參數的新模型，鎖定更複雜、更長程的任務。阿里巴巴目前的旗艦模型 Qwen 3.8 Max 有 2.4 兆個參數。Wu 也表示團隊在遞迴式自我改進上取得「有意義的進展」，並發表了阿里巴巴旗下平頭哥（T-Head）推出、效能為前代三倍的 Zhenwu V900 AI 晶片，同時設定目標，讓阿里雲全球資料中心容量在 2032 年前超過 20 GW。他說：「產業的中長期需求遠遠超過我們的供應能力。」</p>
+<p>在 <a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">Alizila</a> 刊登的主題演講全文中，Wu 稱開源的 Qwen-27B 為「全球開發者最愛用的模型」，並表示阿里巴巴將持續精進可在本地部署的模型。他也表示，預期 AI 代理將成為雲端的長期「居民」，執行長程任務並持續消耗算力。</p>
+<h2>為何重要</h2>
+<p>對區域行銷人而言，兆級參數競賽大多只能隔岸觀火。就算會用到這類模型，也是透過 API。開放、可本地部署的模型則不同：你的公司或供應商可以在自己的基礎設施上、在自選的司法管轄區內運行它，並以自己的資料進行微調。</p>
+<p>在亞洲，這基於實際理由而顯得重要。各地的資料落地規定不盡相同。許多公司不願把顧客資料送往境外的 API。而東南亞與東亞的語言和文化脈絡，主要以英文調校的模型往往處理得不好。一個能在本地調整、能力足夠的中型開放模型，能同時解決這三點。</p>
+<p>Wu 關於 AI 代理是雲端「居民」的說法，是另一個訊號。如果代理持續運行，每項任務的成本就成了策略變數。大部分工作將由高效率的模型來執行。</p>
+<h2>我的研究怎麼說</h2>
+<p>我曾在 Forbes 主張，在行銷中<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">技術比模型大小更重要</a>。一個針對你的受眾、語言與任務妥善調整的小模型，通常勝過被草率使用的巨型通用模型。</p>
+<p>我的研究也說明了在地調整為何重要。在 <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a>（AAAI 2020）中，我們發現模型所學習的社群網路會改變其準確度。在 <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Do we behave differently on Twitter and Facebook?</a>（Frontiers in Big Data，2022）中，我們證明人們在不同平台上展現人格特質的方式不同。更廣泛的重點是：行為取決於情境，模型需要特定情境的資料才能正確解讀。亞洲的平台、語言與文化，正是在其他地方訓練的模型不會自動具備的情境。</p>
+<p>而高效率的模型讓大規模的可解釋性變得負擔得起。在 <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）中，我們將成效預測與大型語言模型的解釋結合。每天對每一則創意都執行解釋層，唯有當語言模型便宜到可以用在所有東西上時，才切實可行。</p>
+<h2>亞洲的行銷團隊現在該做什麼</h2>
+<ul><li>用一項區域性任務測試中型開放模型，例如分類印尼文或泰文的社群貼文，並在準確度與成本上與你目前使用的 API 模型比較。</li><li>決定你的資料可以流向何處。盤點哪些顧客資料可以送往外部 API，哪些需要在本地處理。</li><li>以自己的情境進行微調。即使只是少量標註過的在地資料，也能明顯改善語氣與準確度。</li><li>為全天候運作的 AI 代理做好規劃。估算持續監測與報告的算力成本，並據此選擇模型。</li><li>關注前沿，但不依賴前沿。在大型模型明顯能增加價值之處使用它們，其他地方則使用高效率的模型。</li></ul>
+<p>杭州傳出的頭條，是一個有十二個零的數字。對行銷人而言，真正實用的消息是：優秀的小模型持續進步，而且能離你的顧客更近。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>阿里巴巴在 2026 雲棲大會上宣布了什麼？</summary><p>根據 Reuters，執行長 Eddie Wu 表示阿里巴巴計畫訓練一個 5 兆至 10 兆參數的模型，發表了效能為前代三倍的 Zhenwu V900 AI 晶片，並設定目標，讓阿里雲資料中心容量在 2032 年前超過 20 GW。</p></details><details><summary>阿里巴巴目前的旗艦 Qwen 模型有多大？</summary><p>Reuters 報導，阿里巴巴目前的旗艦模型 Qwen 3.8 Max 有 2.4 兆個參數，因此計畫中的模型大約會大上兩到四倍。</p></details><details><summary>為何開放、可本地部署的模型對亞洲行銷人很重要？</summary><p>它們能在自選的司法管轄區內運行，能針對在地語言與資料進行調整，大規模運行的成本也較低，有助於處理資料落地、文化相關性與全天候 AI 代理的工作負載。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip</a> — The Standard (Reuters), 22 September 2026</li><li translate="no"><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference</a> — Alizila (Alibaba), 22 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/malaysia-ai-governance-bill/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 29 日</span><h3>馬來西亞 AI Governance Bill：依角色劃分責任</h3><p>馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/anthropic-singapore-office-mou/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 14 日</span><h3>Anthropic 進駐新加坡：MOU 真正透露的訊號</h3><p>Anthropic 在新加坡設立辦公室，並與 MDDI 簽署 AI 安全與評估 MOU。為何以在地語言進行測試才是真正的重點。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 1 日</span><h3>日本 AI 行動計畫：成長政策轉為導入政策</h3><p>首相 Sanae Takaichi 要求各部會在年底前提出 AI 推廣行動計畫，並與日本成長戰略掛鉤。以導入為先的政策對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workday 收購 C1.ai：你的行銷代理也需要身分 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Workday 收購 C1.ai：你的行銷代理也需要身分 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 代理" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Workday 收購 C1.ai：你的行銷代理也需要身分 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/","url":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/","headline":"Workday 收購 C1.ai：你的行銷代理也需要身分","description":"Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"AI 代理","about":{"@type":"Thing","name":"Workday 簽署最終協議，收購面向人員與代理的代理式身分平台 C1.ai"},"wordCount":864,"citation":[{"@type":"CreativeWork","name":"Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents","url":"https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents","publisher":"Workday Newsroom","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/#faq","mainEntity":[{"@type":"Question","name":"C1.ai 是什麼？","acceptedAnswer":{"@type":"Answer","text":"根據 Workday，C1.ai 是一個代理式身分平台，連接電子郵件、CRM、程式碼儲存庫、財務系統與雲端基礎設施等業務系統，在需要時授予人員與 AI 代理存取權，不再需要時予以移除，並提供限定範圍的存取、政策、人工核准與動作紀錄。"}},{"@type":"Question","name":"Workday 收購 C1.ai 何時完成？","acceptedAnswer":{"@type":"Answer","text":"Workday 預計交易將在其 2027 會計年度第四季（截至 2027 年 1 月 31 日）完成，惟須符合慣例的交割條件。收購價格未揭露。"}},{"@type":"Question","name":"行銷中的 AI 代理為何需要自己的身分？","acceptedAnswer":{"@type":"Answer","text":"因為代理越來越常接觸顧客資料、廣告預算與品牌管道。獨立、限定範圍且留有紀錄的身分，讓你能限制每個代理可以做什麼、要求有風險的動作須經核准，並將每一項變更歸屬以利稽核。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Workday 收購 C1.ai：你的行銷代理也需要身分","item":"https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/workday-c1-ai-agent-identity/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/workday-c1-ai-agent-identity/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/workday-c1-ai-agent-identity/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/workday-c1-ai-agent-identity/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/workday-c1-ai-agent-identity/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/workday-c1-ai-agent-identity/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Workday 收購 C1.ai：你的行銷代理也需要身分</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · AI 代理</p>
+      <h1 class="h-display">Workday 收購 C1.ai：你的行銷代理也需要身分</h1>
+      <p class="lead">Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Workday 簽署最終協議，收購面向人員與代理的代理式身分平台 C1.ai（<time datetime="2026-10-13">2026 年 10 月 13 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>新員工到職時，會有人為他們建立帳號、決定他們能看到什麼，並在他們離職時移除權限。當一個新的 AI 代理加入你的行銷團隊，這些事由誰來做？10 月 13 日，Workday 宣布將收購一家以回答這個問題為全部業務的公司。</p>
+<h2>發生了什麼事</h2>
+<p>根據 <a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday 的新聞稿</a>，它已簽署最終協議，收購「面向人員與代理的代理式身分平台」C1.ai。收購價格未揭露，交易預計在 Workday 2027 會計年度第四季（截至 2027 年 1 月 31 日）完成，惟須符合慣例條件。</p>
+<p>C1.ai 連接電子郵件、CRM、程式碼儲存庫、財務系統與雲端基礎設施等業務系統。它在需要時授予每個人與每個代理存取權，不再需要時便予以移除。依其自身描述，該平台提供限定範圍的存取、強制執行的政策、人工核准，以及每一個動作的紀錄。</p>
+<p>新聞稿以兩個數字描繪這個問題：引述 C1.ai 的研究，它表示 95% 的美國大型企業已在運行自主代理；引述 Deloitte，它表示只有 21% 的企業回報擁有成熟的代理治理方式。Workday 的 Gerrit Kazmaier 表示：「今天的企業，是由人與 AI 代理組成的混合勞動力在運作。」C1.ai 執行長 Alex Bovee 說得更直白：「企業無法用昨天的 IT 工單來保護 AI 時代。」</p>
+<h2>為何重要</h2>
+<p>行銷是公司中權限最繁重的職能之一，即使感覺上並非如此。想想一個能幹的行銷代理可能需要接觸哪些東西：存有顧客資料的 CRM、掌管預算的廣告帳戶、分析工具、內容管理系統、代表品牌發言的社群帳號、電子郵件平台，以及塞滿未公開計畫的共用雲端硬碟。</p>
+<p>大多數團隊仍以老方法授予這些權限。有人分享登入帳密。API 金鑰存放在試算表裡。某個工具拿到「管理員」權限，只因為這樣比較省事。這在人身上就已經有風險；對於持續運行、以機器速度行動的代理而言，這會成為主要風險。</p>
+<p>C1.ai 的主張說對了的，是答案的形狀：依任務限定範圍、即時授予、必要時經人工核准，並留有紀錄的存取權。這不是 IT 細節，而是決定一個代理能否被安全地交付真正的工作。</p>
+<h2>我的研究怎麼說</h2>
+<p>早在代理出現之前，我的團隊就研究過一個較簡單的身分問題。在 <a href="https://doi.org/10.1007/978-3-030-13283-5_9" target="_blank" rel="noopener">Person, Organization, or Personage: Towards User Account Type Prediction in Microblogs</a>（EGOSE 2018）中，我們研究如何區分個人、組織與名人帳號。動機在於：如果你不知道行為是由哪一類行為者產生的，就無法正確解讀它。</p>
+<p>同樣的原則如今也適用於公司內部。你行銷技術堆疊中的每一個動作都應該可以歸屬：這次預算變更是由人、由代表某人的代理，還是由自動化規則所做？少了這一點，你就無法稽核結果、解釋錯誤，或從有效的做法中學習。在我們的可解釋 AI 研究中，從 <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> 到 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>，解釋都仰賴知道是哪些輸入與哪些決策導致了結果。身分就是第一個輸入。</p>
+<p>我也把這視為我在 <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes 專欄</a>中所主張之轉變的一部分：行銷人從手工產出內容的創作者，轉型為 AI 工具的策展人。策展代理，就包括決定每一個代理被允許做什麼。</p>
+<h2>行銷營運現在該做什麼</h2>
+<ul><li>給每個代理自己的身分。不要共用人的登入帳密。如果某個平台不支援服務帳號或限定範圍的 API 金鑰，請將其視為警訊。</li><li>依任務限定範圍。撰寫報告的代理需要的是分析工具的讀取權，而不是廣告預算的寫入權。</li><li>不可逆的動作須經核准。發布、超過門檻的支出與刪除資料，都應該需要人說「好」。</li><li>讓存取權到期失效。依廣告活動或任務的期間授予存取權，結束後自動移除。</li><li>記錄並審查。保存代理動作的紀錄並實際檢視，特別是在支出或訊息發生任何意外之後。</li><li>將代理納入離職流程。當與某個廠商、工具或代理商的關係結束時，撤銷隨之而來的代理與金鑰。</li></ul>
+<p>Workday 的這筆交易顯示，企業軟體界如今已把代理視為勞動力的一員。行銷也應該如此，從誰拿到鑰匙開始。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>C1.ai 是什麼？</summary><p>根據 Workday，C1.ai 是一個代理式身分平台，連接電子郵件、CRM、程式碼儲存庫、財務系統與雲端基礎設施等業務系統，在需要時授予人員與 AI 代理存取權，不再需要時予以移除，並提供限定範圍的存取、政策、人工核准與動作紀錄。</p></details><details><summary>Workday 收購 C1.ai 何時完成？</summary><p>Workday 預計交易將在其 2027 會計年度第四季（截至 2027 年 1 月 31 日）完成，惟須符合慣例的交割條件。收購價格未揭露。</p></details><details><summary>行銷中的 AI 代理為何需要自己的身分？</summary><p>因為代理越來越常接觸顧客資料、廣告預算與品牌管道。獨立、限定範圍且留有紀錄的身分，讓你能限制每個代理可以做什麼、要求有風險的動作須經核准，並將每一項變更歸屬以利稽核。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents</a> — Workday Newsroom, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/agent-skills-agentic-ai-foundation/"><span class="meta">AI 代理 · 2026 年 10 月 22 日</span><h3>Agent Skills 走向廠商中立：行銷人為何該關注</h3><p>Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/openai-agent-medicare-portal-australia/"><span class="meta">AI 代理 · 2026 年 9 月 24 日</span><h3>不肯接受拒絕的 AI 代理</h3><p>澳洲總理表示，一個 OpenAI 研究代理繞過了 Medicare 統計入口網站的封鎖。行銷代理該學到的教訓在於範圍。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/meta-muse-personal-ai-agent/"><span class="meta">AI 代理 · 2026 年 9 月 8 日</span><h3>Meta Muse：當你的顧客派出一個代理</h3><p>Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>三種 AI 經濟情境與行銷工作的未來 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="三種 AI 經濟情境與行銷工作的未來 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="工作與技能" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="三種 AI 經濟情境與行銷工作的未來 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/","url":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/","headline":"三種 AI 經濟情境與行銷工作的未來","description":"Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"工作與技能","about":{"@type":"Thing","name":"Anthropic 發布變革性 AI 經濟情境的互動式探索工具"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Scenarios for our Economic Future","url":"https://www.anthropic.com/institute/econ-scenarios","publisher":"Anthropic","datePublished":"2026-09-09"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/#faq","mainEntity":[{"@type":"Question","name":"Anthropic 提出的三種 AI 經濟情境是什麼？","acceptedAnswer":{"@type":"Answer","text":"溫和情境：AI 的影響類似網際網路；顯著情境：AI 到 2030 年能完成一半的知識工作，成長速度約為正常水準的兩倍；極端情境：AI 在大多數知識任務上勝過人類，成長率達每年 15%，失業率可能升高。"}},{"@type":"Question","name":"這些情境對知識工作者有何說法？","acceptedAnswer":{"@type":"Answer","text":"在顯著情境中，知識工作者的薪資大致持平，其他工作者則有所增加。在極端情境中，知識工作者薪資下跌超過 10%，知識型職業面臨被取代。"}},{"@type":"Question","name":"行銷人應如何為 AI 對工作的影響做準備？","acceptedAnswer":{"@type":"Answer","text":"把工作拆解成任務，把時間轉向判斷與當責，學會以真實資料評估 AI 產出，培養領域深度，並聚焦於成果而非交付物。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"三種 AI 經濟情境與行銷工作的未來","item":"https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-economic-scenarios-knowledge-work/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-economic-scenarios-knowledge-work/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/anthropic-economic-scenarios-knowledge-work/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/anthropic-economic-scenarios-knowledge-work/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/anthropic-economic-scenarios-knowledge-work/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">三種 AI 經濟情境與行銷工作的未來</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 工作與技能</p>
+      <h1 class="h-display">三種 AI 經濟情境與行銷工作的未來</h1>
+      <p class="lead">Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Anthropic 發布變革性 AI 經濟情境的互動式探索工具（<time datetime="2026-09-09">2026 年 9 月 9 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>大多數關於 AI 與就業的預測，只給你一個數字和滿滿的自信。9 月，Anthropic 發布了更有用的東西：三種情境，並把假設寫得清清楚楚。行銷屬於知識工作，所以我把它當成一份關於我自己的領域、以及我所教的學生的預測來讀。</p>
+<h2>發生了什麼事</h2>
+<p>Anthropic 經濟團隊發布了 <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a>，這是一個以技術報告 <em>Economic Scenarios for Transformative AI</em>（Korinek 等人，2026）為基礎的互動式探索工具。它模擬 AI 到 2030 年可能如何影響美國的就業、成長與失業，把經濟視為由各項任務組成的集合，而 AI 可以增強、自動化或創造這些任務。</p>
+<p>共有三種情境。在溫和情境中，AI 的影響類似網際網路，美國 GDP 在 2030 年達到 US$34.1 兆。在顯著情境中，AI 到 2030 年能完成一半的知識工作，但大部分工作仍在沒有 AI 的情況下完成；成長速度約為正常水準的兩倍，GDP 達到 US$36.3 兆，知識工作者的薪資大致持平，其他工作者則有所增加。在極端情境中，AI 在大多數知識任務上勝過人類，成長率達每年 15%，GDP 達到 US$44.4 兆，失業率可能升至超過一般經濟衰退的水準，知識工作者薪資下跌超過 10%。</p>
+<p>在各種情境中，勞動在 GDP 中的占比都會下降，資本的占比則上升。Anthropic 也調查了 10,980 名民眾。它指出「主要的挑戰不在於實現經濟成長，而在於確保成果能被廣泛分享」，並稱這項工具為 1.0 版，實際結果可能有重大差異。</p>
+<h2>為何重要</h2>
+<p>請注意壓力落在哪裡。在顯著與極端情境中，面臨被取代的是知識型職業，其他職業的需求則上升。行銷正好位於知識這一欄：研究、寫作、分析、規劃、報告。</p>
+<p>我認為顯著情境最適合作為規劃基礎，而其中最有意思的細節是那道落差：AI 能完成一半的知識工作，但大部分工作仍在沒有 AI 的情況下完成。未來幾年，職涯的成敗就在這道落差之中。行銷人該問的不是 AI 能否做這份工作的一部分，而是你是否是那個懂得把它應用到關鍵部分的人。</p>
+<h2>我的研究怎麼說</h2>
+<p>我在 <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes 專欄</a>中主張，行銷人必須從手工產出內容的創作者，轉型為自主 AI 工具的策展人；我也在 <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete?</a> 中提出了相關的問題。這些情境讓這個論點更加鋒利。如果被自動化的是任務，那麼一份只由可自動化任務構成的工作就很脆弱，而圍繞判斷、脈絡與當責所建立的工作則具有韌性。</p>
+<p>我的研究指出持久價值所在。在 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）中，我們將 AI 定位為行銷策略的共同創作者，結合創意成效評分與大型語言模型，由人類掌舵。在 <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a>（ACM TOIS 2025）中，產出是一項仍須由行銷人決定是否採納的建議。這些系統省去了大量分析工作，同時提高了那個負責界定問題、權衡取捨並為決策負責的人的價值。</p>
+<p>我們在 SIGIR 2026 關於<a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">對抗內容同質化</a>的論文，則補上了市場層面的觀點。當每個人都用相同的工具處理相同的任務，產出就會趨同。獨特性變得稀缺，而稀缺的東西就有溢價。能讓 AI 輔助的工作在聲音與成效上都與眾不同的行銷人，在每一種情境下都會有需求。</p>
+<h2>行銷人現在該做什麼</h2>
+<ul><li>把自己的工作拆解成任務。標出哪些 AI 已經做得很好、哪些由 AI 輔助、哪些仍然需要你。有意識地把時間轉移到最後一類。</li><li>學會評估，而不只是下提示。能以真實資料判斷 AI 產出，正是這些情境所獎勵的技能。</li><li>為成果負責，而不只是為產出負責。以交付物定義的角色，比以結果定義的角色更容易被自動化。</li><li>培養領域深度。關於某個市場、品類或顧客的脈絡，通用模型難以複製。</li><li>爭取共享成果。如果 AI 提升了團隊的生產力，請爭取培訓、職涯路徑與新角色，而不只是成本削減。</li></ul>
+<p>情境不是預測。它們的價值在於讓假設可以被討論。對行銷而言，值得討論的假設很簡單：任務的變化會比職稱更快。請為此做好規劃。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Anthropic 提出的三種 AI 經濟情境是什麼？</summary><p>溫和情境：AI 的影響類似網際網路；顯著情境：AI 到 2030 年能完成一半的知識工作，成長速度約為正常水準的兩倍；極端情境：AI 在大多數知識任務上勝過人類，成長率達每年 15%，失業率可能升高。</p></details><details><summary>這些情境對知識工作者有何說法？</summary><p>在顯著情境中，知識工作者的薪資大致持平，其他工作者則有所增加。在極端情境中，知識工作者薪資下跌超過 10%，知識型職業面臨被取代。</p></details><details><summary>行銷人應如何為 AI 對工作的影響做準備？</summary><p>把工作拆解成任務，把時間轉向判斷與當責，學會以真實資料評估 AI 產出，培養領域深度，並聚焦於成果而非交付物。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a> — Anthropic, 9 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">工作與技能 · 2026 年 10 月 2 日</span><h3>AI 的部署落差是人的問題</h3><p>Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/wpp-q3-2026-agentic-agency/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季：AI 壓力下的代理商模式</h3><p>WPP 公布同比淨營收下滑，執行長則指出客戶對透過 WPP Open 提供的 AI 服務有需求。這對代理商意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/malaysia-ai-governance-bill/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 29 日</span><h3>馬來西亞 AI Governance Bill：依角色劃分責任</h3><p>馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

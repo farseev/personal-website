@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 的部署落差是人的問題 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI 的部署落差是人的問題 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="工作與技能" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI 的部署落差是人的問題 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/","headline":"AI 的部署落差是人的問題","description":"Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"工作與技能","about":{"@type":"Thing","name":"Anthropic 推出 Claude Frontier Academy，承諾投入 US$1 億培訓 10,000 名工程師"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"什麼是 Claude Frontier Academy？","acceptedAnswer":{"@type":"Answer","text":"這是 Anthropic 於 2026 年 10 月 2 日推出的培訓計畫，以 US$1 億的承諾為後盾，目標在 2027 年底前培訓 10,000 名 Frontier Deployed Engineer，形式為實體課程加上 12 週真實專案的駐點培訓。"}},{"@type":"Question","name":"哪些公司參與了 Claude Frontier Academy 的首批梯次？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 列出的公司包括 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 與 Novo Nordisk 等，梯次分別在舊金山、紐約與倫敦進行。"}},{"@type":"Question","name":"行銷為何需要 AI 部署專家？","acceptedAnswer":{"@type":"Answer","text":"因為模型的取得已不再是瓶頸。價值來自圍繞 AI 重新設計真實的行銷工作流程，並納入衡量與防護機制，而這需要同時理解技術與行銷決策的人。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"AI 的部署落差是人的問題","item":"https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-frontier-academy-ai-deployment-gap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">AI 的部署落差是人的問題</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 工作與技能</p>
+      <h1 class="h-display">AI 的部署落差是人的問題</h1>
+      <p class="lead">Anthropic 承諾投入 US$1 億，與顧問公司及銀行合作，在 2027 年前培訓 10,000 名 Frontier Deployed Engineer。為何行銷也需要自己版本的這個角色。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Anthropic 推出 Claude Frontier Academy，承諾投入 US$1 億培訓 10,000 名工程師（<time datetime="2026-10-02">2026 年 10 月 2 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>AI 專案令人失望最常見的原因，不在於模型，而在於組織裡沒有人知道如何把一個能力強大的模型變成可運作的流程。10 月 2 日，Anthropic 為這個問題標上了價格：US$1 億，培訓 10,000 名正是以此為業的人。</p>
+<h2>發生了什麼事</h2>
+<p>根據 <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic 的公告</a>，新成立的 Claude Frontier Academy 目標是在 2027 年底前培訓 10,000 名「Frontier Deployed Engineer」，並以 US$1 億的承諾作為後盾。第一個計畫是駐點培訓（residency），用 Anthropic 的話說，它「沿用醫學培養專業的模式」。各組織提名優秀的工程師，每人帶著一個指定的 Claude 專案前來。他們先參加為期數天的實體課程，其中包括模擬企業部署與計分的實作測驗，接著在 Anthropic 工程師的支援下，花 12 週在自己的組織中主導一個真實的使用案例，最後接受總評量。</p>
+<p>培訓梯次在舊金山、紐約與倫敦進行。首批梯次中提及的公司包括 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 與 Novo Nordisk。Anthropic 表示，這所學院建立在其合作夥伴網路之上，該網路中有來自 46,000 家公司的專業人士已取得超過 175,000 張認證。</p>
+<p>公告中引述一位 Accenture 主管的話表示，駐點培訓評量的是「在模擬企業部署中受檢驗的判斷力，而非單獨的技術技能」。</p>
+<h2>為何重要</h2>
+<p>看看首批參與者名單：顧問公司、銀行、一家製藥公司。這些組織將在其他公司內部部署 AI，包括在行銷部門內。這種模式並不新；每一類企業軟體都有現場工程師與解決方案架構師。新的是規模，以及對真實部署中判斷力的重視。</p>
+<p>行銷也有同樣的落差，而且投入解決的人更少。許多團隊如今都能取得優秀的模型與工具，但很少有團隊設有這樣一個人：專門把凌亂的行銷流程——例如競品監測、創意測試或報告——圍繞 AI 重新設計，並內建衡量、防護與導入機制。</p>
+<p>培訓梯次的地點也值得注意：沒有一個在亞洲。對我們這個區域而言，這要不是一個需要在地填補的缺口，就是一個訊號，代表第一波經認證的部署人才將集中在其他地方。</p>
+<h2>我的研究怎麼說</h2>
+<p>在我看來，應用 AI 最困難的一步，是從可運作的模型到可運作的流程之間那一步。我們的研究反映了這一點。在 <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>（ACM Multimedia 2025）與 <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">ACM Multimedia 2025 的 SOMIN 產業展示</a>中，貢獻不只在於模型，也在於它們如何融入行銷人的策略工作：成效預測，加上一個負責解釋與建議的大型語言模型。</p>
+<p>我曾在 Forbes 撰文，談<a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">縮小行銷與 AI 系統之間的落差</a>，以及<a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">在聊天機器人之外於商業中善用大型語言模型</a>。一貫的主題是：當有人同時理解兩端——模型能可靠地做到什麼，以及業務真正需要什麼——價值才會出現。在行銷領域，這樣的人很少見。</p>
+<p>我也在 NUS 與 INSEAD 等學校任教，醫學駐院訓練的比喻讓我很有共鳴。部署不是從簡報中學來的，而是透過在督導下負責一個真實案例、並以判斷力接受評量學會的。</p>
+<h2>行銷團隊現在可以如何建立這個角色</h2>
+<ul><li>指定負責人。讓一個人明確負責把 AI 能力轉化為行銷流程，並給予足夠的時間。</li><li>在真實案例中學習。挑選一個正在運作的工作流程，例如每週競品報告，從頭到尾重新設計，並設定基準與目標。</li><li>讓行銷與工程搭檔。最好的部署，來自了解決策的行銷人與了解系統的技術人員攜手合作。</li><li>評量判斷力，而不是工具熟練度。這個人能否說明何時不該信任 AI，以及那時會發生什麼事？</li><li>分享有效的做法。把每一次部署寫成一個簡短案例：問題、設計、結果、失敗模式。</li></ul>
+<p>一億美元對培訓而言是個大數字。但比起組織在始終無法融入日常工作的 AI 專案上所損失的，這只是個小數字。行銷不應等待別人來培訓它的部署人才。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>什麼是 Claude Frontier Academy？</summary><p>這是 Anthropic 於 2026 年 10 月 2 日推出的培訓計畫，以 US$1 億的承諾為後盾，目標在 2027 年底前培訓 10,000 名 Frontier Deployed Engineer，形式為實體課程加上 12 週真實專案的駐點培訓。</p></details><details><summary>哪些公司參與了 Claude Frontier Academy 的首批梯次？</summary><p>Anthropic 列出的公司包括 Accenture、Bain、Capgemini、Commonwealth Bank of Australia、Deloitte、McKinsey、Morgan Stanley 與 Novo Nordisk 等，梯次分別在舊金山、紐約與倫敦進行。</p></details><details><summary>行銷為何需要 AI 部署專家？</summary><p>因為模型的取得已不再是瓶頸。價值來自圍繞 AI 重新設計真實的行銷工作流程，並納入衡量與防護機制，而這需要同時理解技術與行銷決策的人。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">工作與技能 · 2026 年 9 月 9 日</span><h3>三種 AI 經濟情境與行銷工作的未來</h3><p>Anthropic 發布了 AI 對美國經濟影響至 2030 年的三種情境，從溫和到極端。知識工作的研究發現對行銷職涯意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/wpp-q3-2026-agentic-agency/"><span class="meta">廣告與行銷 AI · 2026 年 10 月 29 日</span><h3>WPP 2026 年第三季：AI 壓力下的代理商模式</h3><p>WPP 公布同比淨營收下滑，執行長則指出客戶對透過 WPP Open 提供的 AI 服務有需求。這對代理商意味著什麼。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/malaysia-ai-governance-bill/"><span class="meta">亞洲與新加坡 · 2026 年 10 月 29 日</span><h3>馬來西亞 AI Governance Bill：依角色劃分責任</h3><p>馬來西亞的 AI Governance Bill 草案預計於 2027 年初前提出，將義務加諸於開發、提供或使用 AI 的各方。依角色而定的規範對行銷人意味著什麼。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

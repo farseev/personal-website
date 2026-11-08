@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5 與小模型在行銷中的價值 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic 的 Claude Haiku 5.5 專為低成本、高速、大量的工作而打造。為何一個模型家族中最小的模型，往往對行銷人最重要。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5 與小模型在行銷中的價值 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic 的 Claude Haiku 5.5 專為低成本、高速、大量的工作而打造。為何一個模型家族中最小的模型，往往對行銷人最重要。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="模型" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5 與小模型在行銷中的價值 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic 的 Claude Haiku 5.5 專為低成本、高速、大量的工作而打造。為何一個模型家族中最小的模型，往往對行銷人最重要。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5 與小模型在行銷中的價值","description":"Anthropic 的 Claude Haiku 5.5 專為低成本、高速、大量的工作而打造。為何一個模型家族中最小的模型，往往對行銷人最重要。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"模型","about":{"@type":"Thing","name":"Anthropic 發布 Claude Haiku 5.5，一款針對大量、成本敏感工作的小模型"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"Claude Haiku 5.5 是為什麼而設計的？","acceptedAnswer":{"@type":"Answer","text":"Anthropic 將其定位於大量、成本敏感的工作，例如摘要、分類、資料庫查詢、即時客服、瀏覽器操作與子代理任務，並建議以 Sonnet 5.5 與 Opus 5.5 處理複雜的代理式程式開發。"}},{"@type":"Question","name":"Claude Haiku 5.5 的價格是多少？","acceptedAnswer":{"@type":"Answer","text":"對於最多 100,000 token 的提示，Anthropic 列出的價格為每百萬輸入 token US$0.10、每百萬輸出 token US$0.50，並表示其成本平均比 Haiku 4.5 低約 75%。"}},{"@type":"Question","name":"小型語言模型足以應付行銷任務嗎？","acceptedAnswer":{"@type":"Answer","text":"對許多大量的任務，例如標記、摘要與分流，一個選擇得當的小模型就已足夠，而且便宜得多。請用自己標註的範例進行測試，並在創意評分等工作上保留專門化的預測模型，用大型語言模型來解釋其產出。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5 與小模型在行銷中的價值","item":"https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/claude-haiku-5-5-small-models-marketing/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-haiku-5-5-small-models-marketing/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-haiku-5-5-small-models-marketing/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/claude-haiku-5-5-small-models-marketing/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-haiku-5-5-small-models-marketing/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Claude Haiku 5.5 與小模型在行銷中的價值</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · 模型</p>
+      <h1 class="h-display">Claude Haiku 5.5 與小模型在行銷中的價值</h1>
+      <p class="lead">Anthropic 的 Claude Haiku 5.5 專為低成本、高速、大量的工作而打造。為何一個模型家族中最小的模型，往往對行銷人最重要。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Anthropic 發布 Claude Haiku 5.5，一款針對大量、成本敏感工作的小模型（<time datetime="2026-10-07">2026 年 10 月 7 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>每一次模型發表，都會被拿來與現場最大的模型比較。我認為對大多數行銷工作而言，這是錯誤的視角。10 月 7 日，Anthropic 發布了 Claude Haiku 5.5，有趣之處不在於它多接近前沿，而在於執行一百萬次要花多少錢。</p>
+<h2>發生了什麼事</h2>
+<p>Anthropic 稱 Haiku 5.5 是<a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">其迄今發布最便宜、最快速、能力最強的小模型</a>。它針對大量、成本敏感的工作：摘要、分類、資料庫查詢、即時客服、瀏覽器操作，以及搭配較大的 Opus 5.5 與 Sonnet 5.5 模型執行子代理工作。它是第一個具有可調整投入程度設定的 Haiku 級模型，讓使用者能在成本與智慧之間取捨。Anthropic 明確表示，複雜的代理式程式開發仍以 Sonnet 5.5 與 Opus 5.5 較佳。</p>
+<p>價格是最大亮點。對於最多 100,000 token 的提示，Anthropic 列出的價格為每百萬輸入 token US$0.10、每百萬輸出 token US$0.50，並表示 Haiku 5.5 的成本平均比 Haiku 4.5 低約 75%。發表頁面也收錄了客戶回報；例如 HubSpot 表示，它在其 CRM 評估套件中取得 92.8% 的分數。這些是該公司及其客戶提供的數字，並非獨立測試。</p>
+<h2>為何重要</h2>
+<p>行銷 AI 是一門講究量的生意。單一廣告活動就可能涉及數千個創意版本、數萬則需要分類的留言、數十萬列的產品資料饋送，以及橫跨數十個市場的每日報告。這些工作幾乎都不需要最強大的模型，而是需要一個夠好、快速、可預期、而且便宜到能用在所有東西上的模型。</p>
+<p>當小模型同時變得更好、更便宜，自動化的經濟學就會改變。原本因太昂貴而無法對每一項執行的任務，例如標記每一則競品廣告或摘要每一則顧客評論，都會變成例行工作。架構也會改變：大模型負責規劃與判斷，小模型在底層執行重複性工作。Anthropic 自己將 Haiku 描述為子代理，正是這種模式。</p>
+<h2>我的研究怎麼說</h2>
+<p>這是我長期以來的主張。我曾在 Forbes 探問<a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">越大是否越好</a>，之後又比較了<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">行銷中的大型語言模型與小型神經網路</a>。我的答案始終不變：模型大小遠不如技術與任務適配度重要。</p>
+<p>我們的研究一直結合兩類模型，而不是二選一。在 <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a>（WSDM 2023）中，我們展示了一個多模態模型，能在上線前運用文字、圖片、鎖定條件與設定，為廣告主的 Meta 廣告創意評分。在 <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a>（ACM Transactions on Information Systems，2025）中，我們將廣告成效預測模型與大型語言模型結合，讓創意分數變成行銷人可據以行動的建議。</p>
+<p>這些研究的教訓是：專門化、高效率的模型負責衡量，大型語言模型負責解釋。一個更便宜、能力更強的小型大型語言模型，並不會取代專門化的預測器，而是讓解釋與協調層在行銷實際發生的規模上變得負擔得起。</p>
+<h2>我會如何運用這樣的模型</h2>
+<ul><li>全面涵蓋的分類。依主題、優惠與格式，標記你所在品類的每一則競品貼文、每一則評論、每一則廣告，而不是抽樣。</li><li>初步摘要。把冗長的報告、逐字稿與留言串轉為簡短摘要，再由人或更大的模型審閱。</li><li>流程中的子代理。讓較大的模型規劃競品分析，再把重複性的擷取步驟交給小模型。</li><li>面向顧客的速度。在延遲至關重要之處使用快速模型，例如即時聊天，並將困難案例轉給更強的模型或真人處理。</li></ul>
+<h2>行銷人在轉換之前該檢查什麼</h2>
+<ul><li>自己進行評估。廠商的基準測試不等於你的任務。從工作中取 200 個真實範例，加上標註，並在這組資料上比較模型。</li><li>關注每項任務的成本，而不是每個 token 的成本。Anthropic 指出，Haiku 5.5 採用新的 tokenizer，每項任務使用的 token 略多。帳單取決於整個工作流程。</li><li>審慎使用投入程度設定。簡單的標記預設使用低投入，只有在評估顯示品質確實提升之處才調高。</li><li>在專門化模型表現更好之處保留它們。如果你已經有以自身成效資料訓練的模型，大型語言模型應該負責解釋其產出，而不是取代它。</li></ul>
+<p>前沿模型搶走頭條，但大部分的工作與大部分的節省，都會發生在小模型上。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Claude Haiku 5.5 是為什麼而設計的？</summary><p>Anthropic 將其定位於大量、成本敏感的工作，例如摘要、分類、資料庫查詢、即時客服、瀏覽器操作與子代理任務，並建議以 Sonnet 5.5 與 Opus 5.5 處理複雜的代理式程式開發。</p></details><details><summary>Claude Haiku 5.5 的價格是多少？</summary><p>對於最多 100,000 token 的提示，Anthropic 列出的價格為每百萬輸入 token US$0.10、每百萬輸出 token US$0.50，並表示其成本平均比 Haiku 4.5 低約 75%。</p></details><details><summary>小型語言模型足以應付行銷任務嗎？</summary><p>對許多大量的任務，例如標記、摘要與分流，一個選擇得當的小模型就已足夠，而且便宜得多。請用自己標註的範例進行測試，並在創意評分等工作上保留專門化的預測模型，用大型語言模型來解釋其產出。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">模型 · 2026 年 9 月 30 日</span><h3>Gemini 4 Argon：百萬輸出 token，然後呢？</h3><p>Google DeepMind 的 Gemini 4 Argon 帶來 1M token 的輸出上限，並以資安優先的方式推出。長程 AI 會改變行銷工作的哪些部分，又不會改變哪些。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">模型 · 2026 年 9 月 29 日</span><h3>OpenAI 為何擱置 GPT-6.1 Astra，以及這為何重要</h3><p>OpenAI 在測試發現範圍、授權與回報方式等問題後，取消了 GPT-6.1 Astra 的發布。同樣的測試也適用於你的 AI 代理。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">模型 · 2026 年 9 月 22 日</span><h3>Claude Opus 5.5：浮水印、稽核與 AI 內容標示</h3><p>Anthropic 的 Claude Opus 5.5 內建浮水印以符合 EU AI Act，並附註說明模型經常懷疑自己正在受測。兩者對行銷人都很重要。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

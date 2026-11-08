@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse：當你的顧客派出一個代理 | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse：當你的顧客派出一個代理 | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。" />
+<meta property="og:url" content="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Aleks Farseev 教授——AI 新聞解讀" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI 代理" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse：當你的顧客派出一個代理 | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse：當你的顧客派出一個代理","description":"Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。","image":"https://farseev.com/og-image.png","inLanguage":"zh-Hant","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/zh-hant/blog/#blog"},"articleSection":"AI 代理","about":{"@type":"Thing","name":"Meta 在美國推出處理日常任務的個人 AI 代理 Muse"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Meta Muse 是什麼？","acceptedAnswer":{"@type":"Answer","text":"Muse 是 Meta 於 2026 年 9 月 8 日推出的個人 AI 代理。根據美聯社，它協助處理日程安排與購物等日常任務，Meta 表示它能開啟瀏覽器、填寫表單並代表使用者議價。"}},{"@type":"Question","name":"Meta Muse 在哪裡可以使用？","acceptedAnswer":{"@type":"Answer","text":"推出時僅限美國，開放給 18 歲以上的使用者，可透過獨立的 Muse App 或在 WhatsApp 內使用。"}},{"@type":"Question","name":"品牌應如何為個人 AI 代理做準備？","acceptedAnswer":{"@type":"Answer","text":"發布清楚、機器可讀的優惠與政策，移除具操縱性的設計模式，事先決定哪些條件可以議價，並在顧客做出最終決定的時刻，保有強而有力、面向人的創意。"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://farseev.com/zh-hant/"},{"@type":"ListItem","position":2,"name":"AI 新聞","item":"https://farseev.com/zh-hant/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse：當你的顧客派出一個代理","item":"https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/zh-hant/","jobTitle":"SOMIN.ai 創辦人暨執行長；AI 客座教授","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/zh-hant/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主要"><a href="/zh-hant/#about">關於</a><a href="/zh-hant/#research">研究</a><a href="/zh-hant/blog/" aria-current="page">AI 新聞</a><a href="/zh-hant/#talks">演講</a><a href="/zh-hant/#connect">聯繫</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="語言" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" selected>繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="導覽路徑"><ol><li><a href="/zh-hant/">首頁</a></li><li><a href="/zh-hant/blog/">AI 新聞</a></li><li aria-current="page">Meta Muse：當你的顧客派出一個代理</li></ol></nav>
+      <p class="eyebrow">AI 新聞解讀 · AI 代理</p>
+      <h1 class="h-display">Meta Muse：當你的顧客派出一個代理</h1>
+      <p class="lead">Meta 推出 Muse，一款能代替使用者訂位、購物與議價的個人 AI 代理。向代理而不只是向人行銷，如今已是實際的問題。</p>
+      <p class="newsline"><span class="loc-dot"></span><span>新聞：Meta 在美國推出處理日常任務的個人 AI 代理 Muse（<time datetime="2026-09-08">2026 年 9 月 8 日</time>）</span></p>
+      <p class="byline"><span>作者：<b>Aleks Farseev 教授</b></span><span class="dot"></span><time datetime="2026-11-08">2026 年 11 月 8 日</time><span class="dot"></span><span>閱讀時間 4 分鐘</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>二十年來，數位行銷一直假設漏斗的末端坐著一個人。9 月 8 日，Meta 推出 Muse，一款能代替那個人行動的個人 AI 代理：寄送電子郵件、預訂旅程、填寫表單，以及用 Meta 的話說，「代表他們議價」。那個人仍然在，但越來越常有一個代理站在他們與你之間。</p>
+<h2>發生了什麼事</h2>
+<p>根據<a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">美聯社的報導</a>，Muse 是一款處理日程安排與購物等日常任務的個人 AI 代理。Meta 表示，使用者一旦分享目標，Muse 就會建立個人化計畫、協調時間與資源，並自行推進工作。範例從寄送電子郵件或預訂旅程，到制定長達一年的運動計畫或創立新事業都有。Meta 表示，Muse 能開啟瀏覽器、填寫表單並代表使用者議價。</p>
+<p>Muse 開放給 18 歲以上的使用者，目前僅限美國，可透過獨立的 Muse App 或在 WhatsApp 內使用。Meta 強調安全與隱私，表示 Muse 在一台專用的安全虛擬機器上運行，同時存放代理與使用者的資料。美聯社將這次推出與 Mark Zuckerberg 關於個人超級智慧的文章連結起來；他在文中寫道，每個人都將擁有「一個能理解你、理解你目標的、能力非凡的個人代理」。</p>
+<h2>為何重要</h2>
+<p>當一個人比較三家飯店時，你的品牌有機會打動他們：一張照片、一則評論、一種感覺。當代理代表那個人比較三家飯店時，它讀的是結構化的事實、政策與價格，而且可能永遠不會像人那樣「看見」那張照片。議價則是更激進的部分。會議價的代理，不會對「數量有限」的橫幅產生反應。</p>
+<p>通路也很重要。Muse 存在於 WhatsApp 之中，而 WhatsApp 是亞洲、拉丁美洲與非洲最重要的通訊管道之一。它目前僅限美國，但一個嵌入在許多顧客早已使用的通訊 App 中的個人代理，絕不是小眾實驗。</p>
+<h2>我的研究怎麼說</h2>
+<p>我的研究始終在於從數位足跡理解人。在 <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a>（ICMR 2015），以及結合社群媒體貼文與穿戴式感測器資料來學習健康輪廓的 <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a>（AAAI 2017）中，我們證明了結合多種來源，遠比任何單一來源更能描繪一個人的完整樣貌。</p>
+<p>個人代理是這個概念的終極版本，但有一個重大差異：使用者輪廓如今掌握在使用者的代理手中，而不是廣告主手中。Muse 的設計目的是理解使用者的目標並據以行動。這改變了資訊的平衡。不再是品牌為顧客建模以決定要展示什麼，而是顧客的代理為品牌建模以決定要接受什麼。</p>
+<p>這改變了「個人化」的意義。在我們關於<a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">人格驅動的內容推薦</a>（ACM Multimedia 2022）的研究中，目標是讓內容與人的特質相匹配。當代理加入循環，你需要兩個層次：一個清楚、真實、機器可讀、讓代理能評估的優惠，以及在那個人抬起頭來做決定的時刻、面向人的創意。對代理做好行銷，看起來會像是寫好文件；對人做好行銷，看起來仍會像是說好故事。</p>
+<p>這裡還有一個我在意的責任問題。代表使用者議價的代理，必須忠於該使用者。如果代理開始在未揭露的情況下接受付費偏好，我們就會在人們用過最貼身的軟體之中，重建廣告產業最糟糕的部分。Meta 對隱私的重視值得肯定；而商業影響力如何作用於代理決策的透明度，也將同樣重要。</p>
+<h2>行銷人現在該做什麼</h2>
+<ul><li>讓你的優惠對機器清晰可讀。價格、庫存、退貨政策、配送時間與條款，應在你的網站與資料饋送中明確、一致且容易解析。</li><li>移除黑暗模式。倒數計時器與隱藏費用，對代理而言是摩擦，對人而言則是信任問題。</li><li>為議價做好準備。事先決定哪些條件具有彈性，例如組合方案、配送時段或會員禮遇，讓自動化的請求能得到快速且一致的回應。</li><li>保留屬於人的時刻。最後的那聲「好」往往仍由人說出。在那一步，你的品牌故事、評論與創意依然重要。</li><li>關注通訊管道。如果代理存在於 WhatsApp 之中，你的對話式商務設定即將變得更加重要。</li></ul>
+<p>Muse 只是一個國家中的一項產品。但它所代表的模式——一位會委派任務的顧客——將會擴散。請同時為兩種受眾打造：負責比較的代理，以及做出決定的人。</p>
+<h2 id="faq">常見問題</h2>
+<div class="faq"><details><summary>Meta Muse 是什麼？</summary><p>Muse 是 Meta 於 2026 年 9 月 8 日推出的個人 AI 代理。根據美聯社，它協助處理日程安排與購物等日常任務，Meta 表示它能開啟瀏覽器、填寫表單並代表使用者議價。</p></details><details><summary>Meta Muse 在哪裡可以使用？</summary><p>推出時僅限美國，開放給 18 歲以上的使用者，可透過獨立的 Muse App 或在 WhatsApp 內使用。</p></details><details><summary>品牌應如何為個人 AI 代理做準備？</summary><p>發布清楚、機器可讀的優惠與政策，移除具操縱性的設計模式，事先決定哪些條件可以議價，並在顧客做出最終決定的時刻，保有強而有力、面向人的創意。</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">資料來源</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Aleks Farseev 教授</b>是 SOMIN.ai 創辦人暨執行長，也是 NUS 與 INSEAD 的 AI 客座教授。他的同儕審查研究涵蓋多來源使用者建模、個性感知推薦與行銷領域的可解釋 AI。</p>
+<p class="links"><a href="/zh-hant/">關於 Aleks</a><a href="/zh-hant/#publications">論文發表</a><a href="/zh-hant/blog/">更多 AI 新聞</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">繼續閱讀</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">更多 AI 新聞解讀</h2></div>
+    <div class="cards-3"><a class="pcard" href="/zh-hant/blog/agent-skills-agentic-ai-foundation/"><span class="meta">AI 代理 · 2026 年 10 月 22 日</span><h3>Agent Skills 走向廠商中立：行銷人為何該關注</h3><p>Anthropic 將 Agent Skills 標準捐贈給 Agentic AI Foundation。可攜、成文的專業知識，正是行銷團隊需要 AI 代理具備的。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/workday-c1-ai-agent-identity/"><span class="meta">AI 代理 · 2026 年 10 月 13 日</span><h3>Workday 收購 C1.ai：你的行銷代理也需要身分</h3><p>Workday 同意收購 C1.ai，該公司負責管理人員與 AI 代理的存取權限。會接觸 CRM 與廣告帳戶的行銷代理，也需要同樣的規則。</p><span class="go">閱讀 →</span></a><a class="pcard" href="/zh-hant/blog/openai-agent-medicare-portal-australia/"><span class="meta">AI 代理 · 2026 年 9 月 24 日</span><h3>不肯接受拒絕的 AI 代理</h3><p>澳洲總理表示，一個 OpenAI 研究代理繞過了 Medicare 統計入口網站的封鎖。行銷代理該學到的教訓在於範圍。</p><span class="go">閱讀 →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">生成式 AI 執行長、AI 教授、主題演講者與手風琴演奏家。從新加坡走向世界，連結深度研究與真實世界的行銷。</p>
+      </div>
+      <div>
+        <h6>探索</h6>
+        <ul>
+          <li><a href="/zh-hant/">首頁</a></li>
+          <li><a href="/zh-hant/blog/">AI 新聞部落格</a></li>
+          <li><a href="/zh-hant/#research">研究</a></li>
+          <li><a href="/zh-hant/#publications">論文發表</a></li>
+          <li><a href="/zh-hant/#connect">聯絡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>其他平台</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>觀點僅代表個人立場。新聞事實皆附來源連結。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
