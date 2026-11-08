@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="سمّت وكالات أمريكية ست شركات صينية للذكاء الاصطناعي في تحذير بشأن التقطير، وتقول Anthropic إن دفاعاتها خفّضت البيانات المجموعة بنسبة 90 إلى 99%. ماذا يعني ذلك لمشتري الذكاء الاصطناعي." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك | Prof. Aleks Farseev" />
+<meta property="og:description" content="سمّت وكالات أمريكية ست شركات صينية للذكاء الاصطناعي في تحذير بشأن التقطير، وتقول Anthropic إن دفاعاتها خفّضت البيانات المجموعة بنسبة 90 إلى 99%. ماذا يعني ذلك لمشتري الذكاء الاصطناعي." />
+<meta property="og:url" content="https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="التنظيم والأمن" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="سمّت وكالات أمريكية ست شركات صينية للذكاء الاصطناعي في تحذير بشأن التقطير، وتقول Anthropic إن دفاعاتها خفّضت البيانات المجموعة بنسبة 90 إلى 99%. ماذا يعني ذلك لمشتري الذكاء الاصطناعي." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/","headline":"هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك","description":"سمّت وكالات أمريكية ست شركات صينية للذكاء الاصطناعي في تحذير بشأن التقطير، وتقول Anthropic إن دفاعاتها خفّضت البيانات المجموعة بنسبة 90 إلى 99%. ماذا يعني ذلك لمشتري الذكاء الاصطناعي.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"التنظيم والأمن","about":{"@type":"Thing","name":"CISA وNSA وFBI تصدر تحذيرًا بشأن التقطير على نطاق صناعي لنماذج الذكاء الاصطناعي الأمريكية؛ وAnthropic تعلن دفاعات جديدة ضد التقطير"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"ما هو هجوم التقطير في الذكاء الاصطناعي؟","acceptedAnswer":{"@type":"Answer","text":"هو حملة خفية واسعة النطاق تستخرج قدرات نموذج ما عبر استعلامه، غالبًا من خلال شبكات من الحسابات الاحتيالية، وتستخدم المخرجات لتدريب نموذج آخر دون إذن المطوّر الأصلي."}},{"@type":"Question","name":"ما الشركات التي سمّاها التحذير الأمريكي؟","acceptedAnswer":{"@type":"Answer","text":"بحسب تقرير Help Net Security، سمّى تحذير CISA وNSA وFBI كلًّا من DeepSeek وMoonshot AI وAlibaba Group وMiniMax وStepFun وZ.AI. ولم يتضمن التقرير ردًّا من الشركات."}},{"@type":"Question","name":"هل تقطير النماذج سيئ دائمًا؟","acceptedAnswer":{"@type":"Answer","text":"لا. التقطير تقنية معيارية لتدريب نموذج أصغر وأرخص انطلاقًا من نموذج أكبر. المشكلة هي الاستخراج غير المصرّح به من نموذج يملكه طرف آخر، وهو ما يثير أسئلة حول الموافقة والضمانات والمنشأ."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك","item":"https://farseev.com/ar/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-distillation-attacks-cisa-advisory/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-distillation-attacks-cisa-advisory/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/ai-distillation-attacks-cisa-advisory/">Filipino</option><option value="es" lang="es" data-href="/es/blog/ai-distillation-attacks-cisa-advisory/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/ai-distillation-attacks-cisa-advisory/">Français</option><option value="de" lang="de" data-href="/de/blog/ai-distillation-attacks-cisa-advisory/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/ai-distillation-attacks-cisa-advisory/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · التنظيم والأمن</p>
+      <h1 class="h-display">هجمات التقطير: ماذا تعني نماذج الذكاء الاصطناعي المنسوخة لك</h1>
+      <p class="lead">سمّت وكالات أمريكية ست شركات صينية للذكاء الاصطناعي في تحذير بشأن التقطير، وتقول Anthropic إن دفاعاتها خفّضت البيانات المجموعة بنسبة 90 إلى 99%. ماذا يعني ذلك لمشتري الذكاء الاصطناعي.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: CISA وNSA وFBI تصدر تحذيرًا بشأن التقطير على نطاق صناعي لنماذج الذكاء الاصطناعي الأمريكية؛ وAnthropic تعلن دفاعات جديدة ضد التقطير (<time datetime="2026-10-12">12 أكتوبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>كان «التقطير» كلمة مهذبة في التعلم الآلي. كانت تصف تدريب نموذج صغير على محاكاة نموذج كبير، وهي تقنية معيارية ومفيدة. وفي سبتمبر وأكتوبر 2026 أصبحت قصة أمنية وتجارية. إذا كنت تشتري الذكاء الاصطناعي للتسويق أو تبنيه، فعليك أن تفهم المعنيين كليهما.</p>
+<h2>ما الذي حدث</h2>
+<p>في أوائل سبتمبر، نشرت CISA وNSA وFBI تحذيرًا مشتركًا بشأن ما تصفه بتقطير المعرفة على نطاق صناعي من قبل شركات ذكاء اصطناعي مقرها الصين. وبحسب <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">تقرير Help Net Security عن التحذير</a>، سمّت الوكالات DeepSeek وMoonshot AI وAlibaba Group وMiniMax وStepFun وZ.AI، وقالت إنها استخرجت مليارات الرموز عبر ملايين الطلبات إلى النماذج الأمريكية الرائدة منذ أواخر 2024 على الأقل. ويسرد التحذير مؤشرات للكشف، مثل الاستخدام على مدار الساعة دون فترات خمول بشرية ومجموعات من الحسابات تتصرف بتنسيق، ويوصي بتشديد التحقق من الهوية والمراقبة وتبادل المعلومات بين مزوّدي الذكاء الاصطناعي. ويشير التقرير إلى أنه لم يتضمن بيانًا من الشركات المذكورة.</p>
+<p>في 12 أكتوبر وصفت Anthropic استجابتها الخاصة. ففي <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>، قالت إن الأدلة الأولية تشير إلى أن أساليبها خفّضت البيانات التي يجمعها المقطّرون بنحو 90 إلى 99%. وتشمل الإجراءات منع حسابات API الأحدث من تعديل الاستدلال السابق لـ Claude، ومصنّفًا على مرحلتين دُرّب على محاولات الاستخراج بمعدل إيجابيات كاذبة أقل من 0.1%، وحدودًا أكثر صرامة وحظرًا للمحاولات المتكررة، وفرض رسوم على الطلبات التي تحجبها ضماناتها. وتقول Anthropic إنها حظرت عشرات الآلاف من الحسابات المرتبطة بالتقطير، وتتوقع «لعبة قط وفأر» مستمرة.</p>
+<h2>لماذا يهم ذلك</h2>
+<p>هناك سببان يدعوان المسوّق إلى الاهتمام بصراع بين مختبرات الذكاء الاصطناعي.</p>
+<p>الأول هو مخاطر سلسلة التوريد. إذا بُني نموذج بنسخ سلوك نموذج آخر دون إذن، فأنت لا تعرف أي ضمانات جاءت معه. ويرى منشور Anthropic أن النماذج المقطّرة قد تقترب من قدرات النماذج الرائدة بينما تأتي بحمايات أضعف. وحين تختار نموذجًا لتشغيل خدمة العملاء لديك أو لتوليد الإعلانات، يكون المنشأ جزءًا من الجودة.</p>
+<p>الثاني هو الاحتكاك الذي يواجهه المستخدمون المشروعون. للدفاعات تكاليف. وتقر Anthropic بأن بعض المطوّرين اضطروا إلى تحديث تكاملاتهم، وأن نسبة صغيرة من الطلبات السليمة قد تُحجب، وأن الطلبات المحجوبة قد تُفرض عليها رسوم الآن. وإذا كانت منظومتك التسويقية تُجري استدعاءات آلية كثيفة إلى API لنموذج رائد، فقد يبدو جزء من تلك الحركة كحملة استخراج. اقرأ سياسات مزوّديك الآن، لا بعد أن يتعطل خط عملك.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>التقطير ليس الشرير هنا. فحين يُمارَس بشكل مشروع، يكون هو الطريقة التي نجعل بها الذكاء الاصطناعي ميسور التكلفة. نموذج كبير يعلّم نموذجًا صغيرًا؛ ويعمل الصغير بتكلفة منخفضة على نطاق واسع. وقد جادلت في Forbes بأن <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">الأسلوب أهم من حجم النموذج</a> في التسويق، والتقطير أحد تلك الأساليب.</p>
+<p>ما يغيّر الصورة هو الموافقة والشفافية. ينطلق عملي في الذكاء الاصطناعي القابل للتفسير من مبدأ بسيط: ينبغي أن يتمكن المسوّق من رؤية سبب توصية النظام بشيء ما. في <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> ‏(ACM Multimedia 2023) قرنّا التنبؤ بمعدل النقر إلى الظهور بمساعد قائم على نموذج لغوي كبير يشرح العوامل المحرّكة. وفي <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (نسخة أولية في 2024) وصفنا الجمع بين نماذج أداء قابلة للتفسير ونماذج لغوية كبيرة لتحليلات المنافسين. والتفسيرات لا تعني شيئًا إلا إذا عرفت ما هو النموذج ومن أين جاء.</p>
+<p>وهناك أيضًا مفارقة تستحق الانتباه. فالدفاع الذي تصفه Anthropic، أي تلخيص الاستدلال الكامل للنموذج أو تقييد الوصول إليه، يجعل الأنظمة أقل شفافية قليلًا للجميع، لأن الاستدلال هو ما يريده الناسخون. وستشكّل هذه المقايضة مقدار التفسير الذي يرغب مزوّدو الذكاء الاصطناعي في كشفه. وعلى المشترين أن يطلبوا تفسيرات مصممة لهم، عن بياناتهم وقراراتهم، بدلًا من مسارات الاستدلال الخام.</p>
+<h2>ما الذي ينبغي أن يفعله مشترو الذكاء الاصطناعي التسويقي الآن</h2>
+<ul><li>اسأل كل مزوّد عن النماذج التي يقوم عليها منتجه ومن أين جاءت.</li><li>راجع شروط واجهات API التي تستدعيها. الاستخدام الآلي عالي الحجم أمر طبيعي في التسويق؛ تأكد من أن استخدامك مشروع بوضوح، ومعرّف، وضمن الحدود.</li><li>خطط لتغيير النموذج. قد تتغير السياسات والأسعار وإمكانية الوصول بسرعة. أبقِ الأوامر والإجراءات ومجموعات التقييم قابلة للنقل.</li><li>قطّر نماذجك الخاصة بشكل مشروع. إذا احتجت إلى نموذج رخيص لمهمة محدودة، فدرّبه على بياناتك أو على مخرجات مرخّص لك باستخدامها.</li><li>فضّل تفسير القرارات على كشف البنية الداخلية. ما تحتاج إلى تدقيقه هو سبب تقديم توصية ما لحملتك.</li></ul>
+<p>صراع التقطير يدور حول من يحق له أن ينسخ من. وبالنسبة للمسوّقين، فهو تذكير بأن سؤال «أي نموذج؟» أصبح الآن مسألة حوكمة، لا مسألة تقنية فحسب.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما هو هجوم التقطير في الذكاء الاصطناعي؟</summary><p>هو حملة خفية واسعة النطاق تستخرج قدرات نموذج ما عبر استعلامه، غالبًا من خلال شبكات من الحسابات الاحتيالية، وتستخدم المخرجات لتدريب نموذج آخر دون إذن المطوّر الأصلي.</p></details><details><summary>ما الشركات التي سمّاها التحذير الأمريكي؟</summary><p>بحسب تقرير Help Net Security، سمّى تحذير CISA وNSA وFBI كلًّا من DeepSeek وMoonshot AI وAlibaba Group وMiniMax وStepFun وZ.AI. ولم يتضمن التقرير ردًّا من الشركات.</p></details><details><summary>هل تقطير النماذج سيئ دائمًا؟</summary><p>لا. التقطير تقنية معيارية لتدريب نموذج أصغر وأرخص انطلاقًا من نموذج أكبر. المشكلة هي الاستخراج غير المصرّح به من نموذج يملكه طرف آخر، وهو ما يثير أسئلة حول الموافقة والضمانات والمنشأ.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/mas-ai-risk-management-guidelines/"><span class="meta">التنظيم والأمن · 7 أكتوبر 2026</span><h3>إرشادات MAS لمخاطر الذكاء الاصطناعي: نموذج مفيد خارج القطاع المصرفي</h3><p>أصدرت MAS إرشادات لإدارة مخاطر الذكاء الاصطناعي للمؤسسات المالية. وتشكّل قواعدها الخاصة بالجرد والأطراف الثالثة نموذجًا جيدًا لفرق التسويق.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">التنظيم والأمن · 29 سبتمبر 2026</span><h3>اتفاق البيت الأبيض للذكاء الاصطناعي والمقيّمون المستقلون</h3><p>وقّع قادة التكنولوجيا اتفاقًا طوعيًا مع البيت الأبيض يَعِد بمقيّمين خارجيين، ومنحت Anthropic منظمة METR وصولًا عميقًا. لماذا تهم عمليات التدقيق في الذكاء الاصطناعي التسويقي.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/wpp-q3-2026-agentic-agency/"><span class="meta">الإعلانات والذكاء الاصطناعي في التسويق · 29 أكتوبر 2026</span><h3>WPP في الربع الثالث 2026: نموذج الوكالات تحت ضغط الذكاء الاصطناعي</h3><p>أعلنت WPP عن تراجع صافي إيراداتها على أساس المقارنة المماثلة، فيما أشار رئيسها التنفيذي إلى الطلب على الخدمات المدعومة بالذكاء الاصطناعي عبر WPP Open. ماذا يعني ذلك للوكالات.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

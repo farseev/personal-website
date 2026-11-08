@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا | Prof. Aleks Farseev" />
+<meta property="og:description" content="أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية." />
+<meta property="og:url" content="https://farseev.com/ar/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="الوكلاء" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا","description":"أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"الوكلاء","about":{"@type":"Thing","name":"Meta تطلق Muse، وكيل ذكاء اصطناعي شخصيًا للمهام اليومية، في الولايات المتحدة"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"ما هو Meta Muse؟","acceptedAnswer":{"@type":"Answer","text":"Muse وكيل ذكاء اصطناعي شخصي أطلقته Meta في 8 سبتمبر 2026. وبحسب Associated Press، يساعد في المهام اليومية مثل الجدولة والتسوق، وتقول Meta إنه يستطيع فتح متصفح وتعبئة النماذج والتفاوض نيابة عن المستخدم."}},{"@type":"Question","name":"أين يتوفر Meta Muse؟","acceptedAnswer":{"@type":"Answer","text":"عند الإطلاق، كان متاحًا في الولايات المتحدة فقط، لمن هم في سن 18 عامًا فأكثر، عبر تطبيق Muse مستقل أو داخل WhatsApp."}},{"@type":"Question","name":"كيف ينبغي للعلامات التجارية الاستعداد لوكلاء الذكاء الاصطناعي الشخصيين؟","acceptedAnswer":{"@type":"Answer","text":"بنشر عروض وسياسات واضحة وقابلة للقراءة آليًا، وإزالة أنماط التصميم التلاعبية، وتحديد الشروط القابلة للتفاوض مسبقًا، والحفاظ على محتوى إبداعي قوي موجّه للإنسان في اللحظة التي يتخذ فيها العميل القرار النهائي."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا","item":"https://farseev.com/ar/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-muse-personal-ai-agent/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-muse-personal-ai-agent/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-muse-personal-ai-agent/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/meta-muse-personal-ai-agent/">Filipino</option><option value="es" lang="es" data-href="/es/blog/meta-muse-personal-ai-agent/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/meta-muse-personal-ai-agent/">Français</option><option value="de" lang="de" data-href="/de/blog/meta-muse-personal-ai-agent/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/meta-muse-personal-ai-agent/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · الوكلاء</p>
+      <h1 class="h-display">Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا</h1>
+      <p class="lead">أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: Meta تطلق Muse، وكيل ذكاء اصطناعي شخصيًا للمهام اليومية، في الولايات المتحدة (<time datetime="2026-09-08">8 سبتمبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>لعشرين عامًا، افترض التسويق الرقمي أن شخصًا يجلس في نهاية مسار التحويل. وفي 8 سبتمبر أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع التصرف نيابة عن ذلك الشخص: إرسال بريد إلكتروني، وحجز رحلة، وتعبئة النماذج، و«التفاوض نيابة عنه» بحسب تعبير Meta. الشخص لا يزال موجودًا. لكن وكيلًا يقف بينه وبينك بشكل متزايد.</p>
+<h2>ما الذي حدث</h2>
+<p>بحسب <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">تقرير Associated Press</a>، فإن Muse وكيل ذكاء اصطناعي شخصي للمهام اليومية مثل الجداول الزمنية والتسوق. وتقول Meta إنه بمجرد أن يشارك المستخدم هدفًا ما، يبني Muse خطة مخصصة، وينسّق الوقت والموارد، ويدفع العمل قدمًا بنفسه. وتتراوح الأمثلة من إرسال بريد إلكتروني أو حجز رحلة إلى بناء خطة تمارين لعام كامل أو تأسيس نشاط تجاري جديد. وتقول Meta إن Muse يستطيع فتح متصفح وتعبئة النماذج والتفاوض نيابة عن المستخدم.</p>
+<p>Muse متاح لمن هم في سن 18 عامًا فأكثر، وحاليًا في الولايات المتحدة فقط، عبر تطبيق Muse مستقل أو داخل WhatsApp. وشدّدت Meta على السلامة والخصوصية، وتقول إن Muse يعمل على آلة افتراضية آمنة ومخصصة تحتضن الوكيل وبيانات المستخدم معًا. وتربط AP الإطلاق بمقالة Mark Zuckerberg عن الذكاء الفائق الشخصي، التي كتب فيها أن كل شخص سيكون لديه «وكيل شخصي قادر بشكل استثنائي يفهمك ويفهم أهدافك».</p>
+<h2>لماذا يهم ذلك</h2>
+<p>حين يقارن شخص بين ثلاثة فنادق، تحصل علامتك التجارية على فرصة لجذبه: صورة، أو مراجعة، أو شعور. أما حين يقارن وكيل بين ثلاثة فنادق نيابة عن الشخص، فإنه يقرأ حقائق وسياسات وأسعارًا منظمة، وقد لا «يرى» الصورة أبدًا كما يراها الإنسان. والتفاوض هو الجزء الأكثر جذرية. فالوكيل الذي يفاوض لا يتأثر بلافتات الندرة.</p>
+<p>والتوزيع مهم أيضًا. فـ Muse يعيش داخل WhatsApp، أحد أهم قنوات المراسلة في آسيا وأمريكا اللاتينية وأفريقيا. وهو مقتصر على الولايات المتحدة حاليًا، لكن الوكيل الشخصي المدمج في تطبيق المراسلة الذي يستخدمه كثير من عملائنا بالفعل ليس تجربة هامشية.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>لطالما دارت أبحاثي حول فهم الناس من آثارهم الرقمية. ففي <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> ‏(ICMR 2015) وفي <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> ‏(AAAI 2017)، الذي جمع بين منشورات وسائل التواصل الاجتماعي وبيانات المستشعرات القابلة للارتداء لتعلّم ملفات الصحة، بيّنّا أن الجمع بين المصادر يعطي صورة عن الشخص أغنى بكثير من أي مصدر منفرد.</p>
+<p>والوكيل الشخصي هو النسخة القصوى من هذه الفكرة، مع فارق كبير واحد: الملف التعريفي بات الآن لدى وكيل المستخدم، لا لدى المعلن. فـ Muse مصمم لفهم أهداف المستخدم والعمل وفقها. وهذا يغيّر ميزان المعلومات. فالعلامة التجارية لم تعد تنمّط العميل لتقرر ما تعرضه. بل وكيل العميل هو من ينمّط العلامة ليقرر ما يقبله.</p>
+<p>وهذا يغيّر معنى «التخصيص». ففي عملنا على <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">التوصية بالمحتوى المدفوعة بالشخصية</a> ‏(ACM Multimedia 2022)، كان الهدف مواءمة المحتوى مع سمات الشخص. ومع وجود الوكلاء في الحلقة، تحتاج إلى طبقتين: عرض واضح وواقعي وقابل للقراءة آليًا يستطيع الوكيل تقييمه، ومحتوى إبداعي موجّه للإنسان في اللحظة التي يرفع فيها الشخص رأسه ويقرر. التسويق الجيد للوكلاء سيبدو كالتوثيق الجيد. والتسويق الجيد للناس سيظل يبدو كسرد القصص الجيد.</p>
+<p>وهناك أيضًا مسألة مسؤولية تهمني. فالوكيل الذي يفاوض نيابة عن مستخدم يجب أن يكون مخلصًا لذلك المستخدم. وإذا بدأ الوكلاء بقبول تفضيلات مدفوعة دون إفصاح، فسنكون قد أعدنا بناء أسوأ ما في صناعة الإعلان داخل أكثر البرمجيات حميمية استخدمها الناس على الإطلاق. وتأكيد Meta على الخصوصية موضع ترحيب؛ لكن الشفافية بشأن التأثير التجاري في قرارات الوكلاء ستكون بالقدر نفسه من الأهمية.</p>
+<h2>ما الذي ينبغي أن يفعله المسوّقون الآن</h2>
+<ul><li>اجعل عرضك مقروءًا للآلات. ينبغي أن تكون الأسعار والتوافر وسياسات الإرجاع ومواعيد التوصيل والشروط صريحة ومتسقة وسهلة التحليل على موقعك وفي خلاصاتك.</li><li>أزل الأنماط المضللة. مؤقتات العد التنازلي والرسوم الخفية عائق أمام الوكلاء ومشكلة ثقة لدى الناس.</li><li>استعد للتفاوض. حدّد مسبقًا الشروط المرنة، مثل الحزم أو نوافذ التوصيل أو مزايا الولاء، كي يحصل الطلب الآلي على إجابة سريعة ومتسقة.</li><li>حافظ على اللحظة الإنسانية. «نعم» الأخيرة لا تزال بشرية في الغالب. وقصة علامتك التجارية ومراجعاتها ومحتواها الإبداعي لا تزال مهمة في تلك الخطوة.</li><li>راقب قنوات المراسلة. إذا كان الوكلاء يعيشون داخل WhatsApp، فإن منظومة التجارة الحوارية لديك على وشك أن تصبح أكثر أهمية.</li></ul>
+<p>Muse منتج واحد في دولة واحدة. لكن النمط الذي يمثله، أي العميل الذي يفوّض، سينتشر. ابنِ للجمهورين كليهما: الوكيل الذي يقارن، والشخص الذي يقرر.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما هو Meta Muse؟</summary><p>Muse وكيل ذكاء اصطناعي شخصي أطلقته Meta في 8 سبتمبر 2026. وبحسب Associated Press، يساعد في المهام اليومية مثل الجدولة والتسوق، وتقول Meta إنه يستطيع فتح متصفح وتعبئة النماذج والتفاوض نيابة عن المستخدم.</p></details><details><summary>أين يتوفر Meta Muse؟</summary><p>عند الإطلاق، كان متاحًا في الولايات المتحدة فقط، لمن هم في سن 18 عامًا فأكثر، عبر تطبيق Muse مستقل أو داخل WhatsApp.</p></details><details><summary>كيف ينبغي للعلامات التجارية الاستعداد لوكلاء الذكاء الاصطناعي الشخصيين؟</summary><p>بنشر عروض وسياسات واضحة وقابلة للقراءة آليًا، وإزالة أنماط التصميم التلاعبية، وتحديد الشروط القابلة للتفاوض مسبقًا، والحفاظ على محتوى إبداعي قوي موجّه للإنسان في اللحظة التي يتخذ فيها العميل القرار النهائي.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/agent-skills-agentic-ai-foundation/"><span class="meta">الوكلاء · 22 أكتوبر 2026</span><h3>Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين</h3><p>تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/workday-c1-ai-agent-identity/"><span class="meta">الوكلاء · 13 أكتوبر 2026</span><h3>Workday تشتري C1.ai: وكلاء التسويق لديك يحتاجون هويات أيضًا</h3><p>وافقت Workday على شراء C1.ai التي تدير صلاحيات الوصول للأشخاص ووكلاء الذكاء الاصطناعي. ووكلاء التسويق الذين يتعاملون مع CRM والحسابات الإعلانية يحتاجون إلى القواعد نفسها.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/openai-agent-medicare-portal-australia/"><span class="meta">الوكلاء · 24 سبتمبر 2026</span><h3>وكيل الذكاء الاصطناعي الذي لم يقبل الرفض</h3><p>قال رئيس وزراء أستراليا إن وكيلًا بحثيًا من OpenAI تحايل على قيود في بوابة إحصاءات Medicare. والدرس لوكلاء التسويق يتعلق بالنطاق.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

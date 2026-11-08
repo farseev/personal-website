@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين | Prof. Aleks Farseev" />
+<meta property="og:description" content="تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي." />
+<meta property="og:url" content="https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="الوكلاء" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/#article","mainEntityOfPage":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/","url":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/","headline":"Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين","description":"تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"الوكلاء","about":{"@type":"Thing","name":"Anthropic تتبرع بمعيار Agent Skills المفتوح إلى Agentic AI Foundation التابعة لـ Linux Foundation"},"wordCount":873,"citation":[{"@type":"CreativeWork","name":"Donating Agent Skills to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","publisher":"Anthropic","datePublished":"2026-10-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/#faq","mainEntity":[{"@type":"Question","name":"ما هي Agent Skill؟","acceptedAnswer":{"@type":"Answer","text":"بحسب Anthropic، المهارة مجلد يحتوي على ملف SKILL.md يعلّم وكيل الذكاء الاصطناعي مهمة أو مجالًا محددًا، مع أي برمجيات نصية أو مواد مرجعية تحتاجها المهمة."}},{"@type":"Question","name":"من يتولى صيانة معيار Agent Skills الآن؟","acceptedAnswer":{"@type":"Answer","text":"تبرعت Anthropic بالمعيار واسمه وشعاره ومنظمة GitHub ونطاق agentskills.io إلى Agentic AI Foundation التابعة لـ Linux Foundation. ويتولى صيانته مهندسون من Anthropic وGoogle وOpenAI وشركات أخرى بصفتهم الفردية."}},{"@type":"Question","name":"كيف يمكن للمسوّقين استخدام Agent Skills؟","acceptedAnswer":{"@type":"Answer","text":"بتدوين الإجراءات المتكررة، مثل الموجزات أو مراجعات المنافسين أو تقارير الحملات، مع قواعد العلامة التجارية والأمثلة، بحيث يتبع وكلاء الذكاء الاصطناعي عبر الأدوات المختلفة منهج الفريق الخاص بدلًا من الإعدادات الافتراضية العامة."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين","item":"https://farseev.com/ar/blog/agent-skills-agentic-ai-foundation/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/agent-skills-agentic-ai-foundation/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/agent-skills-agentic-ai-foundation/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/agent-skills-agentic-ai-foundation/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/agent-skills-agentic-ai-foundation/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/agent-skills-agentic-ai-foundation/">한국어</option><option value="th" lang="th" data-href="/th/blog/agent-skills-agentic-ai-foundation/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/agent-skills-agentic-ai-foundation/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/agent-skills-agentic-ai-foundation/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/agent-skills-agentic-ai-foundation/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/agent-skills-agentic-ai-foundation/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/agent-skills-agentic-ai-foundation/">Filipino</option><option value="es" lang="es" data-href="/es/blog/agent-skills-agentic-ai-foundation/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/agent-skills-agentic-ai-foundation/">Français</option><option value="de" lang="de" data-href="/de/blog/agent-skills-agentic-ai-foundation/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/agent-skills-agentic-ai-foundation/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/agent-skills-agentic-ai-foundation/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · الوكلاء</p>
+      <h1 class="h-display">Agent Skills يصبح محايدًا تجاه المزوّدين: لماذا يهم المسوّقين</h1>
+      <p class="lead">تبرّعت Anthropic بمعيار Agent Skills إلى Agentic AI Foundation. المعرفة العملية المكتوبة والقابلة للنقل هي تمامًا ما تحتاجه فرق التسويق من وكلاء الذكاء الاصطناعي.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: Anthropic تتبرع بمعيار Agent Skills المفتوح إلى Agentic AI Foundation التابعة لـ Linux Foundation (<time datetime="2026-10-22">22 أكتوبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>بعض أهم أخبار الذكاء الاصطناعي تبدو مملة في ظاهرها. في 22 أكتوبر قالت Anthropic إنها تسلّم معيار Agent Skills إلى Agentic AI Foundation، وهي هيئة تابعة لـ Linux Foundation. لا نموذج جديد، ولا معيار أداء. لكن إذا كنت تدير التسويق بوكلاء الذكاء الاصطناعي، فهذا هو نوع البنية التحتية الذي يحدد ما إذا كانت معرفتك العملية ستبقى ملكك.</p>
+<h2>ما الذي حدث</h2>
+<p>بحسب <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">منشور Anthropic</a>، المهارة هي «مجلد يحتوي على ملف SKILL.md يعلّم الوكيل مهمة أو مجالًا محددًا، إلى جانب أي برمجيات نصية أو مواد مرجعية يحتاجها». طوّرت Anthropic هذه الصيغة أثناء بناء Claude Code، لأن الوكلاء متعددي الأغراض كثيرًا ما افتقروا إلى المعرفة الإجرائية التي تتطلبها مهام الأعمال الحقيقية. وأطلقت المهارات في أكتوبر 2025، ونشرت Agent Skills معيارًا مفتوحًا في ديسمبر 2025.</p>
+<p>أرقام التبني كبيرة. تقول Anthropic إن أكثر من 70 منصة وكلاء دمجت Agent Skills، منها ChatGPT وCursor وGitHub Copilot وVS Code، وإن مليون مهارة نُشرت وجرى تثبيتها نحو 280 مليون مرة.</p>
+<p>والآن ينتقل المعيار نفسه، واسمه وشعاره، ومنظمة GitHub ونطاق agentskills.io إلى Agentic AI Foundation ‏(AAIF)، التي شاركت Anthropic في تأسيسها مع Block وOpenAI، والتي سبق أن تبرعت لها بـ Model Context Protocol. وسيتولى مهندسون من Anthropic وGoogle وOpenAI وشركات أخرى صيانته بصفتهم الفردية. وتتضمن خارطة الطريق المقترحة إصدارات مرقّمة، وآلية رسمية لتقديم المقترحات، وإرشادات أمنية لمن يكتبون المهارات ويثبّتونها.</p>
+<h2>لماذا يهم ذلك</h2>
+<p>لكل فريق تسويق أعرفه الأصل الخفي نفسه: طريقته في إنجاز الأمور. كيف يكتب الموجز. أيّ المنافسين يتفقدهم أولًا. ما الذي يعنيه «الالتزام بهوية العلامة» لهذا العميل في هذه السوق. واليوم يعيش معظم ذلك في رؤوس الناس وفي عروض تقديمية لا يقرؤها أحد.</p>
+<p>المهارة طريقة لتدوين هذا الإجراء كي يتمكن الوكيل من اتباعه. والمعيار المحايد تجاه المزوّدين يعني أنك تكتبه مرة واحدة وتتوقع أن يعمل عبر الأدوات التي يستخدمها فريقك. هذا هو الفرق بين البناء على منصة والبناء على صيغة. الصيغ تعيش أطول من المنصات.</p>
+<p>وهناك فائدة ثانية أهدأ. المهارة قابلة للقراءة. يمكنك فتح المجلد ورؤية ما طُلب من الوكيل فعله. وفي مجال أصبحت فيه عبارة «الذكاء الاصطناعي هو من قرر» عذرًا شائعًا، يُعد الإجراء المكتوب بنص واضح جزءًا صغيرًا لكنه حقيقي من المساءلة.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>كتبت في Forbes عن السلّم الممتد <a href="https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/" target="_blank" rel="noopener">من كتابة الأوامر والضبط الدقيق إلى RAG ووكلاء الذكاء الاصطناعي في التسويق</a>، وعن <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">18 تطبيقًا لوكلاء الذكاء الاصطناعي في التسويق</a>. والنمط الذي أعود إليه دائمًا هو أن الوكلاء يفشلون لا لافتقارهم إلى الذكاء بقدر افتقارهم إلى السياق: البيانات المحددة والإجراء المحدد للمهمة.</p>
+<p>وأحدث أوراقنا البحثية تجعل ذلك ملموسًا. في <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> ‏(SIGIR 2026) نصف وكلاء معززين بالاسترجاع يساعدون المهنيين على كتابة محتوى مميز على LinkedIn. والفكرة الأساسية أن على الوكيل أن يسترجع بيانات سياق حقيقية قبل أن يكتب، كي تبقى مخرجاته مميزة بدلًا من أن تتقارب مع النص العام نفسه الذي ينتجه وكيل كل شخص آخر.</p>
+<p>المهارات هي التوأم الإجرائي للاسترجاع. الاسترجاع يمنح الوكيل الحقائق. والمهارة تمنحه المنهج. وكلاهما يقاوم التجانس، لأن كليهما يُدخل ما هو خاص بك في نظام يميل افتراضيًا إلى متوسط الإنترنت. إذا شغّلت كل علامة تجارية الوكيل نفسه بالسلوك الافتراضي نفسه، فستبدو كل العلامات متشابهة. مهاراتك هي حيث يكمن اختلافك.</p>
+<h2>ما الذي ينبغي أن تفعله فرق التسويق الآن</h2>
+<ul><li>دوّن ثلاثة إجراءات تكررها كل أسبوع، مثل فحص المنافسين أو مراجعات ما بعد الحملات أو الموجزات الإبداعية، في صورة تعليمات واضحة خطوة بخطوة مع أمثلة لمخرجات جيدة.</li><li>افصل الأجزاء الخاصة بالعلامة التجارية: نبرة الصوت، والادعاءات المحظورة، وإخلاءات المسؤولية القانونية، والفروق بين الأسواق. هذه هي الأجزاء التي تجعل مخرجاتك خاصة بك.</li><li>ضع لها أرقام إصدارات. حين يتغير الإجراء، يتغير سلوك الوكيل. تعامل مع المهارات كما تتعامل مع الشيفرة البرمجية، مع مالك وسجل للتغييرات.</li><li>راجع الجوانب الأمنية قبل تثبيت مهارات من أطراف ثالثة. فالمهارة قد تتضمن برمجيات نصية. ولهذا السبب تذكر خارطة طريق الحوكمة الجديدة إرشادات أمنية؛ وإلى أن تصدر، اقرأ ما تثبّته.</li><li>قِس التميّز، لا السرعة فقط. إذا بدأ المحتوى الذي يكتبه وكيلك يشبه محتوى منافسيك، فسياقك أضعف من اللازم.</li></ul>
+<p>المعايير المفتوحة لا تثير الحماس إلى أن تحتاج إلى تغيير أدواتك. وحين يأتي ذلك اليوم، ستنتقل الفرق التي دوّنت معرفتها العملية بصيغة قابلة للنقل خلال أسبوع. أما الآخرون فسيبدؤون من جديد.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما هي Agent Skill؟</summary><p>بحسب Anthropic، المهارة مجلد يحتوي على ملف SKILL.md يعلّم وكيل الذكاء الاصطناعي مهمة أو مجالًا محددًا، مع أي برمجيات نصية أو مواد مرجعية تحتاجها المهمة.</p></details><details><summary>من يتولى صيانة معيار Agent Skills الآن؟</summary><p>تبرعت Anthropic بالمعيار واسمه وشعاره ومنظمة GitHub ونطاق agentskills.io إلى Agentic AI Foundation التابعة لـ Linux Foundation. ويتولى صيانته مهندسون من Anthropic وGoogle وOpenAI وشركات أخرى بصفتهم الفردية.</p></details><details><summary>كيف يمكن للمسوّقين استخدام Agent Skills؟</summary><p>بتدوين الإجراءات المتكررة، مثل الموجزات أو مراجعات المنافسين أو تقارير الحملات، مع قواعد العلامة التجارية والأمثلة، بحيث يتبع وكلاء الذكاء الاصطناعي عبر الأدوات المختلفة منهج الفريق الخاص بدلًا من الإعدادات الافتراضية العامة.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a> — Anthropic, 22 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/workday-c1-ai-agent-identity/"><span class="meta">الوكلاء · 13 أكتوبر 2026</span><h3>Workday تشتري C1.ai: وكلاء التسويق لديك يحتاجون هويات أيضًا</h3><p>وافقت Workday على شراء C1.ai التي تدير صلاحيات الوصول للأشخاص ووكلاء الذكاء الاصطناعي. ووكلاء التسويق الذين يتعاملون مع CRM والحسابات الإعلانية يحتاجون إلى القواعد نفسها.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/openai-agent-medicare-portal-australia/"><span class="meta">الوكلاء · 24 سبتمبر 2026</span><h3>وكيل الذكاء الاصطناعي الذي لم يقبل الرفض</h3><p>قال رئيس وزراء أستراليا إن وكيلًا بحثيًا من OpenAI تحايل على قيود في بوابة إحصاءات Medicare. والدرس لوكلاء التسويق يتعلق بالنطاق.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/meta-muse-personal-ai-agent/"><span class="meta">الوكلاء · 8 سبتمبر 2026</span><h3>Meta Muse: ماذا يحدث حين يرسل عميلك وكيلًا</h3><p>أطلقت Meta ‏Muse، وهو وكيل ذكاء اصطناعي شخصي يستطيع الحجز والتسوق والتفاوض نيابة عن المستخدم. والتسويق للوكلاء، لا للأشخاص فقط، أصبح الآن مسألة عملية.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

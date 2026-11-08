@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>فجوة نشر الذكاء الاصطناعي مشكلة بشرية | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="التزمت Anthropic بمبلغ 100 مليون دولار لتدريب 10,000 من Frontier Deployed Engineers بحلول 2027 بالتعاون مع شركات استشارية ومصارف. لماذا يحتاج التسويق إلى نسخته الخاصة من هذا الدور." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="فجوة نشر الذكاء الاصطناعي مشكلة بشرية | Prof. Aleks Farseev" />
+<meta property="og:description" content="التزمت Anthropic بمبلغ 100 مليون دولار لتدريب 10,000 من Frontier Deployed Engineers بحلول 2027 بالتعاون مع شركات استشارية ومصارف. لماذا يحتاج التسويق إلى نسخته الخاصة من هذا الدور." />
+<meta property="og:url" content="https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="العمل والمهارات" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="فجوة نشر الذكاء الاصطناعي مشكلة بشرية | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="التزمت Anthropic بمبلغ 100 مليون دولار لتدريب 10,000 من Frontier Deployed Engineers بحلول 2027 بالتعاون مع شركات استشارية ومصارف. لماذا يحتاج التسويق إلى نسخته الخاصة من هذا الدور." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/","headline":"فجوة نشر الذكاء الاصطناعي مشكلة بشرية","description":"التزمت Anthropic بمبلغ 100 مليون دولار لتدريب 10,000 من Frontier Deployed Engineers بحلول 2027 بالتعاون مع شركات استشارية ومصارف. لماذا يحتاج التسويق إلى نسخته الخاصة من هذا الدور.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"العمل والمهارات","about":{"@type":"Thing","name":"Anthropic تطلق Claude Frontier Academy بالتزام قدره 100 مليون دولار لتدريب 10,000 مهندس"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"ما هي Claude Frontier Academy؟","acceptedAnswer":{"@type":"Answer","text":"هي برنامج تدريبي أطلقته Anthropic في 2 أكتوبر 2026، بدعم من التزام قدره 100 مليون دولار أمريكي، لتدريب 10,000 من Frontier Deployed Engineers بحلول نهاية 2027 عبر برنامج حضوري تليه إقامة تدريبية لمدة 12 أسبوعًا على مشروع حقيقي."}},{"@type":"Question","name":"ما الشركات المشاركة في الدفعات الأولى من Claude Frontier Academy؟","acceptedAnswer":{"@type":"Answer","text":"تذكر Anthropic من بينها Accenture وBain وCapgemini وCommonwealth Bank of Australia وDeloitte وMcKinsey وMorgan Stanley وNovo Nordisk، مع دفعات في سان فرانسيسكو ونيويورك ولندن."}},{"@type":"Question","name":"لماذا يحتاج التسويق إلى متخصصين في نشر الذكاء الاصطناعي؟","acceptedAnswer":{"@type":"Answer","text":"لأن الوصول إلى النماذج لم يعد عنق الزجاجة. فالقيمة تأتي من إعادة تصميم سير العمل التسويقي الحقيقي حول الذكاء الاصطناعي مع القياس والضوابط، وهو ما يتطلب أشخاصًا يفهمون التقنية والقرار التسويقي معًا."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"فجوة نشر الذكاء الاصطناعي مشكلة بشرية","item":"https://farseev.com/ar/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-frontier-academy-ai-deployment-gap/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-frontier-academy-ai-deployment-gap/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/claude-frontier-academy-ai-deployment-gap/">Filipino</option><option value="es" lang="es" data-href="/es/blog/claude-frontier-academy-ai-deployment-gap/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/claude-frontier-academy-ai-deployment-gap/">Français</option><option value="de" lang="de" data-href="/de/blog/claude-frontier-academy-ai-deployment-gap/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/claude-frontier-academy-ai-deployment-gap/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/claude-frontier-academy-ai-deployment-gap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">فجوة نشر الذكاء الاصطناعي مشكلة بشرية</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · العمل والمهارات</p>
+      <h1 class="h-display">فجوة نشر الذكاء الاصطناعي مشكلة بشرية</h1>
+      <p class="lead">التزمت Anthropic بمبلغ 100 مليون دولار لتدريب 10,000 من Frontier Deployed Engineers بحلول 2027 بالتعاون مع شركات استشارية ومصارف. لماذا يحتاج التسويق إلى نسخته الخاصة من هذا الدور.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: Anthropic تطلق Claude Frontier Academy بالتزام قدره 100 مليون دولار لتدريب 10,000 مهندس (<time datetime="2026-10-02">2 أكتوبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>السبب الأكثر شيوعًا لإخفاق مشاريع الذكاء الاصطناعي ليس النموذج، بل أن لا أحد في المؤسسة يعرف كيف يحوّل نموذجًا قادرًا إلى عملية تعمل فعلًا. وفي 2 أكتوبر وضعت Anthropic سعرًا لهذه المشكلة: 100 مليون دولار أمريكي لتدريب 10,000 شخص وظيفتهم هي ذلك تحديدًا.</p>
+<h2>ما الذي حدث</h2>
+<p>بحسب <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">إعلان Anthropic</a>، تهدف Claude Frontier Academy الجديدة إلى تدريب 10,000 من «Frontier Deployed Engineers» بحلول نهاية 2027، بدعم من التزام قدره 100 مليون دولار أمريكي. والبرنامج الأول إقامة تدريبية «تتبع النموذج الطبي في بناء الخبرة» بحسب تعبير Anthropic. ترشّح المؤسسات مهندسين أقوياء، يأتي كلٌّ منهم بمشروع Claude محدد. يحضرون أولًا برنامجًا حضوريًا لعدة أيام يتضمن محاكاة لنشر مؤسسي واختبارًا عمليًا مقيَّمًا، ثم يمضون 12 أسبوعًا في قيادة حالة استخدام حقيقية في مؤسساتهم بدعم من مهندسي Anthropic، يليها تقييم نهائي.</p>
+<p>تُعقد الدفعات في سان فرانسيسكو ونيويورك ولندن. ومن الشركات المذكورة في الدفعات الأولى Accenture وBain وCapgemini وCommonwealth Bank of Australia وDeloitte وMcKinsey وMorgan Stanley وNovo Nordisk. وتقول Anthropic إن الأكاديمية تبني على شبكة شركائها، حيث حصل مهنيون في 46,000 شركة على أكثر من 175,000 شهادة.</p>
+<p>ويقول مسؤول في Accenture نُقل عنه في الإعلان إن الإقامة التدريبية تقيّم «التقدير المختبَر في محاكاة لنشر مؤسسي، لا المهارات التقنية بمعزل عن غيرها».</p>
+<h2>لماذا يهم ذلك</h2>
+<p>اقرأ قائمة المشاركين الأوائل: شركات استشارية، ومصارف، وشركة أدوية. هذه هي المؤسسات التي ستنشر الذكاء الاصطناعي داخل شركات أخرى، بما في ذلك داخل أقسام التسويق. النموذج ليس جديدًا؛ فمهندسو الميدان ومهندسو الحلول موجودون في كل فئة من برمجيات المؤسسات. الجديد هو الحجم والتركيز على التقدير في عمليات النشر الحقيقية.</p>
+<p>والتسويق يعاني الفجوة نفسها، مع عدد أقل من الأشخاص العاملين على سدّها. فكثير من الفرق لديها الآن إمكانية الوصول إلى نماذج وأدوات ممتازة. لكن عددًا أقل بكثير لديه شخص وظيفته أن يأخذ عملية تسويقية فوضوية، مثل مراقبة المنافسين أو اختبار المحتوى الإبداعي أو إعداد التقارير، ويعيد تصميمها حول الذكاء الاصطناعي مع دمج القياس والضوابط والتبنّي فيها.</p>
+<p>ومواقع الدفعات تستحق الملاحظة أيضًا. فلا شيء منها في آسيا. وبالنسبة لمنطقتنا، فهذه إما فجوة ينبغي سدّها محليًا، أو إشارة إلى أن الموجة الأولى من الكفاءات المعتمدة في النشر ستتركز في أماكن أخرى.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>في رأيي، أصعب خطوة في الذكاء الاصطناعي التطبيقي هي تلك الواقعة بين نموذج يعمل وعملية تعمل. وأبحاثنا تعكس ذلك. ففي <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> ‏(ACM Multimedia 2025) وفي <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">العرض الصناعي لـ SOMIN في ACM Multimedia 2025</a>، لا تقتصر المساهمة على النماذج، بل تشمل كيفية اندماجها في العمل الاستراتيجي للمسوّق: التنبؤ بالأداء إلى جانب نموذج لغوي كبير يفسّر ويوصي.</p>
+<p>كتبت في Forbes عن <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">سدّ الفجوة بين التسويق وأنظمة الذكاء الاصطناعي</a> وعن <a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">تسخير النماذج اللغوية الكبيرة في الأعمال بما يتجاوز روبوتات الدردشة</a>. والفكرة الثابتة هي أن القيمة تظهر حين يفهم أحدهم الجانبين: ما يستطيع النموذج فعله بشكل موثوق، وما تحتاجه الأعمال فعلًا. وهذا الشخص نادر في التسويق.</p>
+<p>أنا أيضًا أدرّس، في NUS وINSEAD وغيرهما، وأجد صدى لدي في تأطير الأمر على غرار الإقامة الطبية. فأنت لا تتعلم النشر من الشرائح. تتعلمه بتولّي حالة حقيقية، تحت الإشراف، وبأن تُقيَّم على تقديرك.</p>
+<h2>كيف يمكن لفرق التسويق بناء هذا الدور الآن</h2>
+<ul><li>عيّن مسؤولًا. امنح شخصًا واحدًا مسؤولية صريحة عن تحويل قدرات الذكاء الاصطناعي إلى عمليات تسويقية، مع الوقت الكافي لذلك.</li><li>تعلّم على حالة حقيقية. اختر سير عمل قائمًا واحدًا، مثل التقرير الأسبوعي عن المنافسين، وأعد تصميمه من البداية إلى النهاية، مع خط أساس وهدف.</li><li>اجمع بين التسويق والهندسة. أفضل عمليات النشر تأتي من مسوّق يعرف القرار وتقني يعرف النظام، يعملان معًا.</li><li>قيّم التقدير، لا إتقان الأدوات. هل يستطيع الشخص أن يشرح متى لا ينبغي الوثوق بالذكاء الاصطناعي وماذا يحدث حينها؟</li><li>شارك ما ينجح. دوّن كل عملية نشر في صورة حالة قصيرة: المشكلة، والتصميم، والنتيجة، وأنماط الإخفاق.</li></ul>
+<p>مئة مليون دولار رقم كبير للتدريب. لكنه رقم صغير مقارنة بما تخسره المؤسسات على مشاريع ذكاء اصطناعي لا تصل أبدًا إلى العمل اليومي. ولا ينبغي للتسويق أن ينتظر أحدًا آخر ليدرّب من يتولون النشر لديه.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما هي Claude Frontier Academy؟</summary><p>هي برنامج تدريبي أطلقته Anthropic في 2 أكتوبر 2026، بدعم من التزام قدره 100 مليون دولار أمريكي، لتدريب 10,000 من Frontier Deployed Engineers بحلول نهاية 2027 عبر برنامج حضوري تليه إقامة تدريبية لمدة 12 أسبوعًا على مشروع حقيقي.</p></details><details><summary>ما الشركات المشاركة في الدفعات الأولى من Claude Frontier Academy؟</summary><p>تذكر Anthropic من بينها Accenture وBain وCapgemini وCommonwealth Bank of Australia وDeloitte وMcKinsey وMorgan Stanley وNovo Nordisk، مع دفعات في سان فرانسيسكو ونيويورك ولندن.</p></details><details><summary>لماذا يحتاج التسويق إلى متخصصين في نشر الذكاء الاصطناعي؟</summary><p>لأن الوصول إلى النماذج لم يعد عنق الزجاجة. فالقيمة تأتي من إعادة تصميم سير العمل التسويقي الحقيقي حول الذكاء الاصطناعي مع القياس والضوابط، وهو ما يتطلب أشخاصًا يفهمون التقنية والقرار التسويقي معًا.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">العمل والمهارات · 9 سبتمبر 2026</span><h3>ثلاثة سيناريوهات اقتصادية للذكاء الاصطناعي ومستقبل وظائف التسويق</h3><p>نشرت Anthropic ثلاثة سيناريوهات لأثر الذكاء الاصطناعي في الاقتصاد الأمريكي حتى 2030، من المعتدل إلى المتطرف. ماذا تعني نتائج العمل المعرفي للمسارات المهنية في التسويق.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/wpp-q3-2026-agentic-agency/"><span class="meta">الإعلانات والذكاء الاصطناعي في التسويق · 29 أكتوبر 2026</span><h3>WPP في الربع الثالث 2026: نموذج الوكالات تحت ضغط الذكاء الاصطناعي</h3><p>أعلنت WPP عن تراجع صافي إيراداتها على أساس المقارنة المماثلة، فيما أشار رئيسها التنفيذي إلى الطلب على الخدمات المدعومة بالذكاء الاصطناعي عبر WPP Open. ماذا يعني ذلك للوكالات.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/malaysia-ai-governance-bill/"><span class="meta">آسيا وسنغافورة · 29 أكتوبر 2026</span><h3>مشروع قانون حوكمة الذكاء الاصطناعي في ماليزيا: المسؤولية بحسب الدور</h3><p>يفرض مشروع AI Governance Bill الماليزي، المتوقع بحلول أوائل 2027، واجبات على من يطوّر الذكاء الاصطناعي أو يقدّمه أو يستخدمه. ماذا تعني القواعد القائمة على الأدوار للمسوّقين.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="في Apsara 2026 قالت Alibaba إنها تخطط لنموذج بحجم 5 إلى 10 تريليونات معامل، مع إشادتها بنموذجها المفتوح بحجم 27B. لماذا ينبغي لمسوّقي آسيا مراقبة الطرفين." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة | Prof. Aleks Farseev" />
+<meta property="og:description" content="في Apsara 2026 قالت Alibaba إنها تخطط لنموذج بحجم 5 إلى 10 تريليونات معامل، مع إشادتها بنموذجها المفتوح بحجم 27B. لماذا ينبغي لمسوّقي آسيا مراقبة الطرفين." />
+<meta property="og:url" content="https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="آسيا وسنغافورة" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="في Apsara 2026 قالت Alibaba إنها تخطط لنموذج بحجم 5 إلى 10 تريليونات معامل، مع إشادتها بنموذجها المفتوح بحجم 27B. لماذا ينبغي لمسوّقي آسيا مراقبة الطرفين." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/#article","mainEntityOfPage":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/","url":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/","headline":"Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة","description":"في Apsara 2026 قالت Alibaba إنها تخطط لنموذج بحجم 5 إلى 10 تريليونات معامل، مع إشادتها بنموذجها المفتوح بحجم 27B. لماذا ينبغي لمسوّقي آسيا مراقبة الطرفين.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"آسيا وسنغافورة","about":{"@type":"Thing","name":"الرئيس التنفيذي لـ Alibaba ‏Eddie Wu يعرض خططًا لنموذج بحجم 5 إلى 10 تريليونات معامل وشريحة Zhenwu V900 في مؤتمر Apsara"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip","url":"https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip","publisher":"The Standard (Reuters)","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference","url":"https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/","publisher":"Alizila (Alibaba)","datePublished":"2026-09-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/#faq","mainEntity":[{"@type":"Question","name":"ما الذي أعلنته Alibaba في مؤتمر Apsara 2026؟","acceptedAnswer":{"@type":"Answer","text":"بحسب Reuters، قال الرئيس التنفيذي Eddie Wu إن Alibaba تخطط لتدريب نموذج بحجم 5 إلى 10 تريليونات معامل، وكشف عن شريحة الذكاء الاصطناعي Zhenwu V900 بأداء يعادل ثلاثة أضعاف سابقتها، وحدّد هدفًا بأن تتجاوز سعة مراكز بيانات Alibaba Cloud ‏20 غيغاواط بحلول 2032."}},{"@type":"Question","name":"ما حجم نموذج Qwen الرائد الحالي لدى Alibaba؟","acceptedAnswer":{"@type":"Answer","text":"تفيد Reuters بأن النموذج الرائد الحالي لـ Alibaba، ‏Qwen 3.8 Max، يضم 2.4 تريليون معامل، ما يعني أن النموذج المخطط له سيكون أكبر بنحو مرتين إلى أربع مرات."}},{"@type":"Question","name":"لماذا تهم النماذج المفتوحة القابلة للنشر محليًا المسوّقين في آسيا؟","acceptedAnswer":{"@type":"Answer","text":"لأنها يمكن أن تعمل في نطاق قضائي مختار، وأن تُكيَّف مع اللغات والبيانات المحلية، وأن تكون أقل تكلفة في التشغيل على نطاق واسع، وهو ما يساعد في إقامة البيانات والملاءمة الثقافية وأعباء عمل الوكلاء العاملين على مدار الساعة."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة","item":"https://farseev.com/ar/blog/alibaba-apsara-2026-qwen-roadmap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/alibaba-apsara-2026-qwen-roadmap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/alibaba-apsara-2026-qwen-roadmap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/alibaba-apsara-2026-qwen-roadmap/">한국어</option><option value="th" lang="th" data-href="/th/blog/alibaba-apsara-2026-qwen-roadmap/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/alibaba-apsara-2026-qwen-roadmap/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/alibaba-apsara-2026-qwen-roadmap/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/alibaba-apsara-2026-qwen-roadmap/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/alibaba-apsara-2026-qwen-roadmap/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/alibaba-apsara-2026-qwen-roadmap/">Filipino</option><option value="es" lang="es" data-href="/es/blog/alibaba-apsara-2026-qwen-roadmap/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/alibaba-apsara-2026-qwen-roadmap/">Français</option><option value="de" lang="de" data-href="/de/blog/alibaba-apsara-2026-qwen-roadmap/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/alibaba-apsara-2026-qwen-roadmap/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/alibaba-apsara-2026-qwen-roadmap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · آسيا وسنغافورة</p>
+      <h1 class="h-display">Apsara 2026 من Alibaba: نماذج عملاقة وواقع النماذج الصغيرة</h1>
+      <p class="lead">في Apsara 2026 قالت Alibaba إنها تخطط لنموذج بحجم 5 إلى 10 تريليونات معامل، مع إشادتها بنموذجها المفتوح بحجم 27B. لماذا ينبغي لمسوّقي آسيا مراقبة الطرفين.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: الرئيس التنفيذي لـ Alibaba ‏Eddie Wu يعرض خططًا لنموذج بحجم 5 إلى 10 تريليونات معامل وشريحة Zhenwu V900 في مؤتمر Apsara (<time datetime="2026-09-22">22 سبتمبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>أكبر مؤتمر للذكاء الاصطناعي في الصين كل سبتمبر هو مؤتمر Apsara الذي تنظمه Alibaba Cloud في هانغتشو. وحملت الكلمة الرئيسية هذا العام قصتين. الأولى عن الحجم: نموذج أكبر بعدة مرات من أي نموذج درّبته Alibaba. والثانية، التي جاءت عرضًا تقريبًا، عن نموذج مفتوح صغير يستخدمه المطوّرون فعلًا. وبالنسبة للمسوّقين في آسيا، قد تكون القصة الثانية هي الأهم.</p>
+<h2>ما الذي حدث</h2>
+<p>بحسب <a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Reuters عبر The Standard</a>، قال الرئيس التنفيذي لـ Alibaba ‏Eddie Wu في 22 سبتمبر إن فريق Qwen يخطط لتدريب نموذج جديد بحجم 5 إلى 10 تريليونات معامل، موجّه إلى مهام أكثر تعقيدًا وأطول مدى. ويبلغ حجم النموذج الرائد الحالي لـ Alibaba، ‏Qwen 3.8 Max، ‏2.4 تريليون معامل. وقال Wu أيضًا إن الفريق أحرز «تقدمًا ملموسًا» في التحسين الذاتي التكراري، وقدّم شريحة الذكاء الاصطناعي Zhenwu V900 من وحدة T-Head التابعة لـ Alibaba بأداء يعادل ثلاثة أضعاف سابقتها، وحدّد هدفًا بأن تتجاوز السعة العالمية لمراكز بيانات Alibaba Cloud ‏20 غيغاواط بحلول 2032. وقال: «الطلب في الصناعة على المديين المتوسط والطويل يفوق قدراتنا على التوريد بكثير.»</p>
+<p>في نص الكلمة الرئيسية المنشور على <a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">Alizila</a>، وصف Wu النموذج مفتوح المصدر Qwen-27B بأنه «النموذج الأكثر شعبية بين المطوّرين في العالم»، وقال إن Alibaba ستواصل تحسين النماذج للنشر المحلي. وقال أيضًا إنه يتوقع أن يصبح الوكلاء «مقيمين» طويلي الأمد في السحابة، ينفّذون مهام طويلة المدى ويستهلكون موارد الحوسبة باستمرار.</p>
+<h2>لماذا يهم ذلك</h2>
+<p>بالنسبة للمسوّق الإقليمي، يظل سباق النماذج ذات التريليونات من المعاملات رياضةً للمتفرجين في معظمه. ستستخدم هذه النماذج عبر API، إن استخدمتها أصلًا. أما النموذج المفتوح القابل للنشر محليًا فمختلف. إنه شيء تستطيع شركتك أو مزوّدك تشغيله على بنيته التحتية الخاصة، في نطاق قضائي يختاره، مع ضبطه الدقيق على بياناته.</p>
+<p>وهذا مهم في آسيا لأسباب عملية. فقواعد إقامة البيانات تختلف عبر المنطقة. وكثير من الشركات لا ترتاح لإرسال بيانات العملاء إلى API أجنبي. كما أن اللغات والمرجعيات الثقافية في جنوب شرق آسيا وشرقها لا تخدمها جيدًا النماذج المضبوطة أساسًا على الإنجليزية. والنموذج المفتوح متوسط الحجم القادر، الذي يمكن تكييفه محليًا، يعالج الأمور الثلاثة كلها.</p>
+<p>وتعليق Wu عن الوكلاء بوصفهم «مقيمين» في السحابة هو الإشارة الأخرى. فإذا كان الوكلاء يعملون باستمرار، تصبح التكلفة لكل مهمة متغيرًا استراتيجيًا. وستتولى النماذج الكفؤة معظم ذلك العمل.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>لقد طرحت في Forbes أن <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">الأسلوب أهم من حجم النموذج</a> في التسويق. فالنموذج الأصغر المكيّف جيدًا مع جمهورك ولغتك ومهمتك يتفوق عادة على نموذج عام عملاق يُستخدم دون عناية.</p>
+<p>وتُظهر أبحاثي أيضًا سبب أهمية التكييف المحلي. ففي <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a> ‏(AAAI 2020) وجدنا أن الشبكة الاجتماعية التي يتعلم منها النموذج تغيّر مدى دقته. وفي <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Do we behave differently on Twitter and Facebook?</a> ‏(Frontiers in Big Data، ‏2022) بيّنّا أن الناس يعبّرون عن شخصياتهم بشكل مختلف عبر المنصات. والفكرة الأوسع: السلوك مرتبط بالسياق، والنماذج تحتاج إلى بيانات خاصة بالسياق لقراءته بشكل صحيح. ومنصات آسيا ولغاتها وثقافاتها سياق لا يمتلكه تلقائيًا نموذج دُرّب في مكان آخر.</p>
+<p>والنماذج الكفؤة تجعل قابلية التفسير ميسورة التكلفة على نطاق واسع. ففي <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> ‏(ACM TOIS 2025) قرنّا التنبؤ بالأداء بتفسيرات من النماذج اللغوية الكبيرة. وتشغيل طبقة التفسير على كل محتوى إبداعي، كل يوم، لا يكون واقعيًا إلا حين يكون النموذج اللغوي رخيصًا بما يكفي لتشغيله على كل شيء.</p>
+<h2>ما الذي ينبغي أن تفعله فرق التسويق في آسيا الآن</h2>
+<ul><li>اختبر نموذجًا مفتوحًا متوسط الحجم على مهمة إقليمية، مثل تصنيف منشورات التواصل الاجتماعي باللغة الإندونيسية أو التايلاندية، وقارنه بنموذج API الحالي لديك من حيث الدقة والتكلفة.</li><li>حدّد أين يمكن أن تذهب بياناتك. ارسم خريطة لبيانات العملاء التي يمكن إرسالها إلى واجهات API خارجية وتلك التي تحتاج إلى معالجة محلية.</li><li>اضبط النموذج على سياقك الخاص. حتى كمية صغيرة من البيانات المحلية المصنّفة يمكن أن تحسّن النبرة والدقة بشكل ملحوظ.</li><li>خطط لوكلاء يعملون على مدار الساعة. قدّر تكلفة الحوسبة للمراقبة وإعداد التقارير المستمرين، واختر النماذج وفقًا لذلك.</li><li>راقب النماذج الرائدة دون أن تعتمد عليها. استخدم أكبر النماذج حيث تضيف قيمة واضحة، والنماذج الكفؤة في كل ما عدا ذلك.</li></ul>
+<p>كان العنوان الرئيسي القادم من هانغتشو رقمًا باثني عشر صفرًا. أما الخبر العملي للمسوّقين فهو أن النماذج الصغيرة الجيدة تزداد تحسنًا باستمرار، ويمكنها أن تعمل أقرب إلى عملائك.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما الذي أعلنته Alibaba في مؤتمر Apsara 2026؟</summary><p>بحسب Reuters، قال الرئيس التنفيذي Eddie Wu إن Alibaba تخطط لتدريب نموذج بحجم 5 إلى 10 تريليونات معامل، وكشف عن شريحة الذكاء الاصطناعي Zhenwu V900 بأداء يعادل ثلاثة أضعاف سابقتها، وحدّد هدفًا بأن تتجاوز سعة مراكز بيانات Alibaba Cloud ‏20 غيغاواط بحلول 2032.</p></details><details><summary>ما حجم نموذج Qwen الرائد الحالي لدى Alibaba؟</summary><p>تفيد Reuters بأن النموذج الرائد الحالي لـ Alibaba، ‏Qwen 3.8 Max، يضم 2.4 تريليون معامل، ما يعني أن النموذج المخطط له سيكون أكبر بنحو مرتين إلى أربع مرات.</p></details><details><summary>لماذا تهم النماذج المفتوحة القابلة للنشر محليًا المسوّقين في آسيا؟</summary><p>لأنها يمكن أن تعمل في نطاق قضائي مختار، وأن تُكيَّف مع اللغات والبيانات المحلية، وأن تكون أقل تكلفة في التشغيل على نطاق واسع، وهو ما يساعد في إقامة البيانات والملاءمة الثقافية وأعباء عمل الوكلاء العاملين على مدار الساعة.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip</a> — The Standard (Reuters), 22 September 2026</li><li translate="no"><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference</a> — Alizila (Alibaba), 22 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/malaysia-ai-governance-bill/"><span class="meta">آسيا وسنغافورة · 29 أكتوبر 2026</span><h3>مشروع قانون حوكمة الذكاء الاصطناعي في ماليزيا: المسؤولية بحسب الدور</h3><p>يفرض مشروع AI Governance Bill الماليزي، المتوقع بحلول أوائل 2027، واجبات على من يطوّر الذكاء الاصطناعي أو يقدّمه أو يستخدمه. ماذا تعني القواعد القائمة على الأدوار للمسوّقين.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/anthropic-singapore-office-mou/"><span class="meta">آسيا وسنغافورة · 14 أكتوبر 2026</span><h3>Anthropic تفتتح مكتبًا في سنغافورة: ما الذي تعنيه مذكرة التفاهم فعلًا</h3><p>افتتحت Anthropic مكتبًا في سنغافورة ووقّعت مذكرة تفاهم مع MDDI بشأن سلامة الذكاء الاصطناعي وتقييمه. لماذا يُعد الاختبار باللغات المحلية القصة الحقيقية.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">آسيا وسنغافورة · 1 أكتوبر 2026</span><h3>خطة عمل اليابان للذكاء الاصطناعي: سياسة النمو تصبح سياسة تبنٍّ</h3><p>طلبت رئيسة الوزراء Sanae Takaichi من الوزراء خطة عمل لتعزيز الذكاء الاصطناعي بحلول نهاية العام، مرتبطة باستراتيجية النمو في اليابان. ماذا تعني سياسة «التبنّي أولًا» للمسوّقين.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

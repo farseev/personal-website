@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟ | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="يأتي Gemini 4 Argon من Google DeepMind بحد مخرجات يبلغ مليون رمز وطرح يبدأ بالأمن السيبراني. ما الذي يغيّره الذكاء الاصطناعي طويل المدى في العمل التسويقي، وما الذي لا يغيّره." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ar" href="https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟ | Prof. Aleks Farseev" />
+<meta property="og:description" content="يأتي Gemini 4 Argon من Google DeepMind بحد مخرجات يبلغ مليون رمز وطرح يبدأ بالأمن السيبراني. ما الذي يغيّره الذكاء الاصطناعي طويل المدى في العمل التسويقي، وما الذي لا يغيّره." />
+<meta property="og:url" content="https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="البروفيسور Aleks Farseev — أخبار الذكاء الاصطناعي بشرح مبسّط" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="النماذج" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟ | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="يأتي Gemini 4 Argon من Google DeepMind بحد مخرجات يبلغ مليون رمز وطرح يبدأ بالأمن السيبراني. ما الذي يغيّره الذكاء الاصطناعي طويل المدى في العمل التسويقي، وما الذي لا يغيّره." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟","description":"يأتي Gemini 4 Argon من Google DeepMind بحد مخرجات يبلغ مليون رمز وطرح يبدأ بالأمن السيبراني. ما الذي يغيّره الذكاء الاصطناعي طويل المدى في العمل التسويقي، وما الذي لا يغيّره.","image":"https://farseev.com/og-image.png","inLanguage":"ar","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ar/blog/#blog"},"articleSection":"النماذج","about":{"@type":"Thing","name":"Google DeepMind تقدّم Gemini 4 Argon، نموذجها الرائد للمهام الطويلة متعددة الخطوات"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"ما هو Gemini 4 Argon؟","acceptedAnswer":{"@type":"Answer","text":"هو النموذج الرائد من Google DeepMind الذي قُدّم في 30 سبتمبر 2026 للبرمجة في العالم الحقيقي والعمل المعرفي المؤسسي والدفاع السيبراني، بحد مخرجات يبلغ مليون رمز، ارتفاعًا من 64,000."}},{"@type":"Question","name":"من يستطيع استخدام Gemini 4 Argon أولًا؟","acceptedAnswer":{"@type":"Answer","text":"تقول Google إنها تطرحه أولًا للمدافعين السيبرانيين الموثوقين عبر Fairwind Program، مع خطط لإتاحة أوسع للمطوّرين والمؤسسات والمستهلكين، بدءًا بعملاء API المدفوعين ومشتركي Google AI Ultra."}},{"@type":"Question","name":"كم يكلّف Gemini 4 Argon؟","acceptedAnswer":{"@type":"Answer","text":"تحدد Google سعرًا تمهيديًا قدره دولاران أمريكيان لكل مليون رمز إدخال و10 دولارات أمريكية لكل مليون رمز إخراج، يرتفع إلى 4 و20 دولارًا بعد الفترة التمهيدية، مع خصم 95% على رموز الإدخال المخزّنة مؤقتًا."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://farseev.com/ar/"},{"@type":"ListItem","position":2,"name":"أخبار الذكاء الاصطناعي","item":"https://farseev.com/ar/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟","item":"https://farseev.com/ar/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ar/","jobTitle":"المؤسس والرئيس التنفيذي لـ SOMIN.ai؛ أستاذ زائر في الذكاء الاصطناعي","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ar/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="المحتوى الرئيسي"><a href="/ar/#about">نبذة</a><a href="/ar/#research">الأبحاث</a><a href="/ar/blog/" aria-current="page">أخبار الذكاء الاصطناعي</a><a href="/ar/#talks">المحاضرات</a><a href="/ar/#connect">تواصل</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="اللغة" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="th" lang="th" data-href="/th/blog/gemini-4-argon-long-horizon-ai/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/gemini-4-argon-long-horizon-ai/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/gemini-4-argon-long-horizon-ai/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/gemini-4-argon-long-horizon-ai/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/gemini-4-argon-long-horizon-ai/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/gemini-4-argon-long-horizon-ai/">Filipino</option><option value="es" lang="es" data-href="/es/blog/gemini-4-argon-long-horizon-ai/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/gemini-4-argon-long-horizon-ai/">Français</option><option value="de" lang="de" data-href="/de/blog/gemini-4-argon-long-horizon-ai/">Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/gemini-4-argon-long-horizon-ai/">Português</option><option value="ar" lang="ar" selected>العربية</option><option value="ru" lang="ru" data-href="/ru/blog/gemini-4-argon-long-horizon-ai/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">الرئيسية</a></li><li><a href="/ar/blog/">أخبار الذكاء الاصطناعي</a></li><li aria-current="page">Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟</li></ol></nav>
+      <p class="eyebrow">أخبار الذكاء الاصطناعي بشرح مبسّط · النماذج</p>
+      <h1 class="h-display">Gemini 4 Argon: مليون رمز في المخرجات، وماذا بعد؟</h1>
+      <p class="lead">يأتي Gemini 4 Argon من Google DeepMind بحد مخرجات يبلغ مليون رمز وطرح يبدأ بالأمن السيبراني. ما الذي يغيّره الذكاء الاصطناعي طويل المدى في العمل التسويقي، وما الذي لا يغيّره.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>الخبر: Google DeepMind تقدّم Gemini 4 Argon، نموذجها الرائد للمهام الطويلة متعددة الخطوات (<time datetime="2026-09-30">30 سبتمبر 2026</time>)</span></p>
+      <p class="byline"><span>بقلم <b>البروفيسور Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 نوفمبر 2026</time><span class="dot"></span><span>4 دقائق قراءة</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>كانت نوافذ السياق هي ساحة السباق. أما Gemini 4 Argon فيحوّل الانتباه إلى الطرف الآخر من النموذج: كم يستطيع أن ينتج دفعة واحدة. ففي 30 سبتمبر قدّمت Google DeepMind ‏Argon بحد مخرجات يبلغ مليون رمز، ارتفاعًا من 64,000. هذه إجابة بطول كتاب. والسؤال الأكثر إثارة للاهتمام للمسوّقين هو: أي نوع من العمل يحتاج إلى ذلك؟</p>
+<h2>ما الذي حدث</h2>
+<p>في <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">إعلان Google</a>، يصف Koray Kavukcuoglu ‏Argon بأنه النموذج الرائد لدى Google «للبرمجة في العالم الحقيقي، والعمل المعرفي المؤسسي، والدفاع السيبراني». ويتوسع حد رموز المخرجات إلى مليون، والنموذج مصمم للمهام الطويلة متعددة الخطوات في هندسة البرمجيات والعمل القانوني والمالي والأمن السيبراني، مع فهم بصري قوي مثل تحليل الرسوم البيانية وفهم مقاطع الفيديو الطويلة.</p>
+<p>والطرح غير معتاد. إذ يذهب Argon أولًا إلى مجموعة من المدافعين السيبرانيين الموثوقين عبر Fairwind Program من Google، مع خطط لإتاحة أوسع للمطوّرين والمؤسسات والمستهلكين، بدءًا بعملاء API المدفوعين ومشتركي Google AI Ultra. ويبلغ السعر التمهيدي دولارين أمريكيين لكل مليون رمز إدخال و10 دولارات أمريكية لكل مليون رمز إخراج، يرتفع إلى 4 و20 دولارًا بعد الفترة التمهيدية، مع خصم 95% على الإدخال المخزّن مؤقتًا.</p>
+<p>تسرد Google نتائج معايير الأداء، ومنها 77.9% في DeepSWE v1.1 و91.7% في معيار الفيديو الطويل LVBench، وتصف استخدامات داخلية مثل عمليات ترحيل الشيفرة البرمجية الكبيرة. كما تصف إجراءات السلامة، ومنها مراقبة إساءة الاستخدام وعدم المواءمة، والصمود أمام حقن الأوامر غير المباشر. وهذه نتائج Google نفسها.</p>
+<h2>لماذا يهم ذلك</h2>
+<p>مليون رمز من المخرجات لا يتعلق بكتابة تدوينات أطول. فالمخرجات الطويلة تهم حين تكون المهمة إنتاج عمل مكتمل في مرور واحد متماسك: ترحيل كامل لقاعدة شيفرة، أو مجموعة عقود، أو مجموعة بيانات منظمة كبيرة. وفي التسويق، أقرب ما يعادل ذلك أشياء مثل إعادة كتابة كاملة لخلاصة المنتجات، أو توطين كامل لموقع إلكتروني، أو مكتبة حملة تضم مئات النسخ المنسّقة.</p>
+<p>أما فهم الفيديو الطويل فهو في رأيي القدرة الأكثر فائدة على المدى القريب. فالفيديو يهيمن على منصات التواصل الاجتماعي، ومعظم العلامات التجارية لا تزال تحلله بمشاهدة عينات وتدوين الملاحظات. والنموذج القادر على قراءة الفيديو الطويل بشكل موثوق، وعلى نطاق واسع، يفتح الباب أمام تحليل للمنافسين والفئات كان من المستحيل إجراؤه بشكل شامل.</p>
+<p>والطرح الذي يبدأ بالأمن السيبراني إشارة إلى المكان الذي ترى المختبرات الرائدة أن الخطر يكمن فيه. فحين يمنح مختبر المدافعين وصولًا قبل الجميع، فإنه يخبرك بأن النموذج قادر بما يكفي ليكون مهمًا للمهاجمين أيضًا.</p>
+<h2>ماذا تقول أبحاثي</h2>
+<p>تناول كثير من أبحاثي الوسائط الاجتماعية المتعددة، لا النص وحده. ففي البداية بنينا <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> ‏(ACM Multimedia 2016)، وهي منصة بيانات ضخمة لتحليل الوسائط الاجتماعية المتعددة عبر الشبكات. ومؤخرًا، في <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> ‏(WWW 2025 Companion)، ركّزنا على تفسير ما يتواصل به المنافسون ولماذا ينجح.</p>
+<p>والدرس من هذا العمل أن حجم التحليل ليس سوى نصف المشكلة. فالنموذج القادر على مشاهدة ألف فيديو للمنافسين لا يزال عليه أن يجيب عن الأسئلة التي تهم الاستراتيجي: أي الرسائل تتكرر، وأيها يحقق أداءً جيدًا، وأي جمهور تستهدف، وأي فجوة تُركت مفتوحة. نماذج السياق الطويل والمخرجات الطويلة تجعل القراءة والكتابة أرخص. أما التأطير والتحقق فيبقيان مساهمة الإنسان، مدعومة ببيانات الأداء.</p>
+<p>وأضيف تحذيرًا واحدًا. المخرجات الطويلة جدًا يصعب التحقق منها. فوثيقة مولّدة من 200 صفحة قد تكون صحيحة بنسبة 98% ومع ذلك تتضمن الادعاء الوحيد الذي يوقعك في المتاعب. وكلما طالت المخرجات، زادت حاجتك إلى البنية وأخذ العينات والفحوص الآلية.</p>
+<h2>كيف سأستخدم نموذجًا طويل المدى في التسويق</h2>
+<ul><li>تدقيق فيديوهات الفئة. اطلب نتائج منظمة عبر مجموعة كاملة من فيديوهات المنافسين: الافتتاحيات الجاذبة، والادعاءات، والصيغ، ودعوات اتخاذ الإجراء. ثم تحقّق من عينة يدويًا.</li><li>مكتبات أصول منسّقة. ولّد مجموعة كاملة من النسخ لحملة ما في مرور واحد كي تبقى النبرة والادعاءات متسقة، وراجعها وفق قائمة تحقق.</li><li>مسودات توطين الموقع بالكامل. أنتج مسودات كاملة للأسواق الجديدة، ثم اجعل مراجعين من أهل اللغة يتحققون أولًا من الصفحات الأعلى زيارة.</li><li>وثائق طويلة مع فهرس. اشترط على النموذج أن ينتج جدولًا بالادعاءات مع مصادرها، كي يتمكن البشر من التحقق من الأجزاء الخطرة بسرعة.</li></ul>
+<p>الرقم الرئيسي لـ Argon مثير للإعجاب. لكن القيمة للمسوّقين ستأتي من الجمع بين هذه القدرة والانضباط في التحقق مما يخرج منها.</p>
+<h2 id="faq">الأسئلة الشائعة</h2>
+<div class="faq"><details><summary>ما هو Gemini 4 Argon؟</summary><p>هو النموذج الرائد من Google DeepMind الذي قُدّم في 30 سبتمبر 2026 للبرمجة في العالم الحقيقي والعمل المعرفي المؤسسي والدفاع السيبراني، بحد مخرجات يبلغ مليون رمز، ارتفاعًا من 64,000.</p></details><details><summary>من يستطيع استخدام Gemini 4 Argon أولًا؟</summary><p>تقول Google إنها تطرحه أولًا للمدافعين السيبرانيين الموثوقين عبر Fairwind Program، مع خطط لإتاحة أوسع للمطوّرين والمؤسسات والمستهلكين، بدءًا بعملاء API المدفوعين ومشتركي Google AI Ultra.</p></details><details><summary>كم يكلّف Gemini 4 Argon؟</summary><p>تحدد Google سعرًا تمهيديًا قدره دولاران أمريكيان لكل مليون رمز إدخال و10 دولارات أمريكية لكل مليون رمز إخراج، يرتفع إلى 4 و20 دولارًا بعد الفترة التمهيدية، مع خصم 95% على رموز الإدخال المخزّنة مؤقتًا.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">المصادر</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>البروفيسور Aleks Farseev</b> هو المؤسس والرئيس التنفيذي لـ SOMIN.ai وأستاذ زائر في الذكاء الاصطناعي في NUS وINSEAD. تغطي أبحاثه المحكّمة تنميط المستخدمين من مصادر متعددة، والتوصية المراعية للشخصية، والذكاء الاصطناعي القابل للتفسير في التسويق.</p>
+<p class="links"><a href="/ar/">عن Aleks</a><a href="/ar/#publications">المنشورات</a><a href="/ar/blog/">المزيد من أخبار الذكاء الاصطناعي</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">تابع القراءة</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">المزيد من أخبار الذكاء الاصطناعي بشرح مبسّط</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ar/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">النماذج · 7 أكتوبر 2026</span><h3>Claude Haiku 5.5 وحجة النماذج الصغيرة في التسويق</h3><p>صُمّم Claude Haiku 5.5 من Anthropic للعمل الرخيص والسريع وعالي الحجم. لماذا يكون أصغر نموذج في العائلة غالبًا الأهم للمسوّقين.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">النماذج · 29 سبتمبر 2026</span><h3>لماذا جمّدت OpenAI إطلاق GPT-6.1 Astra، ولماذا يهم ذلك</h3><p>ألغت OpenAI إطلاق GPT-6.1 Astra بعد أن كشفت الاختبارات مشكلات في النطاق والتفويض وطريقة رفعه للتقارير. والاختبارات نفسها تنطبق على وكلائك.</p><span class="go">اقرأ ←</span></a><a class="pcard" href="/ar/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">النماذج · 22 سبتمبر 2026</span><h3>Claude Opus 5.5: العلامات المائية والتدقيق ووسوم المحتوى المولّد بالذكاء الاصطناعي</h3><p>يأتي Claude Opus 5.5 من Anthropic مع علامات مائية للامتثال لـ EU AI Act، وملاحظة بأن النموذج كثيرًا ما يشتبه في أنه يخضع للاختبار. وكلا الأمرين يهم المسوّقين.</p><span class="go">اقرأ ←</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">رئيس تنفيذي في الذكاء الاصطناعي التوليدي، وأستاذ في الذكاء الاصطناعي، ومتحدث رئيسي، وعازف أكورديون. يصل بين البحث العميق والتسويق في الواقع العملي، من سنغافورة إلى العالم.</p>
+      </div>
+      <div>
+        <h6>استكشف</h6>
+        <ul>
+          <li><a href="/ar/">الرئيسية</a></li>
+          <li><a href="/ar/blog/">مدونة أخبار الذكاء الاصطناعي</a></li>
+          <li><a href="/ar/#research">الأبحاث</a></li>
+          <li><a href="/ar/#publications">المنشورات</a></li>
+          <li><a href="/ar/#connect">تواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>في أماكن أخرى</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>الآراء الواردة تعبّر عني شخصيًا. والحقائق الإخبارية مرتبطة بمصادرها.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

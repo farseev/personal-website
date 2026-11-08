@@ -72,4 +72,5 @@ Sitemap: https://farseev.com/sitemap-es.xml
 Sitemap: https://farseev.com/sitemap-fr.xml
 Sitemap: https://farseev.com/sitemap-de.xml
 Sitemap: https://farseev.com/sitemap-pt.xml
+Sitemap: https://farseev.com/sitemap-ar.xml
 Sitemap: https://farseev.com/sitemap-ru.xml

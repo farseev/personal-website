@@ -77,6 +77,7 @@ Aleks earned his Ph.D. in Computer Science from the National University of Singa
 - [Français](https://farseev.com/fr/) · [AI news blog](https://farseev.com/fr/blog/) (30 articles)
 - [Deutsch](https://farseev.com/de/) · [AI news blog](https://farseev.com/de/blog/) (30 articles)
 - [Português](https://farseev.com/pt/) · [AI news blog](https://farseev.com/pt/blog/) (30 articles)
+- [العربية](https://farseev.com/ar/) · [AI news blog](https://farseev.com/ar/blog/) (30 articles)
 - [Русский](https://farseev.com/ru/) · [AI news blog](https://farseev.com/ru/blog/) (30 articles)
 
 ## Ventures
