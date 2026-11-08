@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Problema sa Tao ang Deployment Gap ng AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Naglaan ang Anthropic ng $100m upang sanayin ang 10,000 Frontier Deployed Engineer pagsapit ng 2027 kasama ang mga consultancy at bangko. Bakit kailangan ng marketing ang sarili nitong bersyon ng tungkuling ito." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Problema sa Tao ang Deployment Gap ng AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="Naglaan ang Anthropic ng $100m upang sanayin ang 10,000 Frontier Deployed Engineer pagsapit ng 2027 kasama ang mga consultancy at bangko. Bakit kailangan ng marketing ang sarili nitong bersyon ng tungkuling ito." />
+<meta property="og:url" content="https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Trabaho at kasanayan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Problema sa Tao ang Deployment Gap ng AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Naglaan ang Anthropic ng $100m upang sanayin ang 10,000 Frontier Deployed Engineer pagsapit ng 2027 kasama ang mga consultancy at bangko. Bakit kailangan ng marketing ang sarili nitong bersyon ng tungkuling ito." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/","headline":"Problema sa Tao ang Deployment Gap ng AI","description":"Naglaan ang Anthropic ng $100m upang sanayin ang 10,000 Frontier Deployed Engineer pagsapit ng 2027 kasama ang mga consultancy at bangko. Bakit kailangan ng marketing ang sarili nitong bersyon ng tungkuling ito.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Trabaho at kasanayan","about":{"@type":"Thing","name":"Inilunsad ng Anthropic ang Claude Frontier Academy na may $100 milyong pangako upang sanayin ang 10,000 engineer"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"Ano ang Claude Frontier Academy?","acceptedAnswer":{"@type":"Answer","text":"Isa itong training programme na inilunsad ng Anthropic noong 2 Oktubre 2026, na sinusuportahan ng US$100 milyong pangako, upang sanayin ang 10,000 Frontier Deployed Engineer bago matapos ang 2027 sa pamamagitan ng isang in-person na programa na sinusundan ng 12-linggong residency sa isang totoong project."}},{"@type":"Question","name":"Aling mga kumpanya ang nasa mga unang cohort ng Claude Frontier Academy?","acceptedAnswer":{"@type":"Answer","text":"Pinangalanan ng Anthropic ang Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley at Novo Nordisk, bukod sa iba pa, na may mga cohort sa San Francisco, New York at London."}},{"@type":"Question","name":"Bakit kailangan ng marketing ng mga espesyalista sa AI deployment?","acceptedAnswer":{"@type":"Answer","text":"Dahil hindi na ang access sa mga modelo ang bottleneck. Nagmumula ang halaga sa muling pagdidisenyo ng mga totoong marketing workflow sa paligid ng AI na may pagsukat at guardrail, na nangangailangan ng mga taong nakauunawa kapwa sa teknolohiya at sa desisyon sa marketing."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Problema sa Tao ang Deployment Gap ng AI","item":"https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-frontier-academy-ai-deployment-gap/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-frontier-academy-ai-deployment-gap/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/claude-frontier-academy-ai-deployment-gap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Problema sa Tao ang Deployment Gap ng AI</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Trabaho at kasanayan</p>
+      <h1 class="h-display">Problema sa Tao ang Deployment Gap ng AI</h1>
+      <p class="lead">Naglaan ang Anthropic ng $100m upang sanayin ang 10,000 Frontier Deployed Engineer pagsapit ng 2027 kasama ang mga consultancy at bangko. Bakit kailangan ng marketing ang sarili nitong bersyon ng tungkuling ito.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Inilunsad ng Anthropic ang Claude Frontier Academy na may $100 milyong pangako upang sanayin ang 10,000 engineer (<time datetime="2026-10-02">2 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Ang pinakakaraniwang dahilan kung bakit nakadidismaya ang mga AI project ay hindi ang modelo. Ito ay walang sinuman sa organisasyon ang marunong gawing gumaganang proseso ang isang may-kakayahang modelo. Noong 2 Oktubre, nilagyan ng Anthropic ng presyo ang problemang iyon: US$100 milyon upang sanayin ang 10,000 tao na iyon mismo ang trabaho.</p>
+<h2>Ano ang nangyari</h2>
+<p>Ayon sa <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">anunsyo ng Anthropic</a>, layunin ng bagong Claude Frontier Academy na sanayin ang 10,000 "Frontier Deployed Engineer" bago matapos ang 2027, na sinusuportahan ng US$100 milyong pangako. Ang unang programa ay isang residency na, sa mga salita ng Anthropic, "sumusunod sa medical model sa pagbuo ng kadalubhasaan". Nagno-nominate ang mga organisasyon ng mahuhusay na engineer, na bawat isa ay dumarating na may nakapangalang Claude project. Dumadalo muna sila sa isang ilang-araw na in-person na programa na may simulated na enterprise deployment at isang graded practical, pagkatapos ay gumugugol ng 12 linggo sa pamumuno sa isang totoong use case sa sarili nilang organisasyon na may suporta mula sa mga engineer ng Anthropic, na sinusundan ng isang huling assessment.</p>
+<p>Tumatakbo ang mga cohort sa San Francisco, New York at London. Kabilang sa mga kumpanyang pinangalanan sa mga unang cohort ang Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley at Novo Nordisk. Sinasabi ng Anthropic na nakabatay ang academy sa partner network nito, kung saan nakakuha na ang mga propesyonal sa 46,000 firm ng mahigit 175,000 certification.</p>
+<p>Sinasabi ng isang lead ng Accenture na sinipi sa anunsyo na sinusuri ng residency ang "paghuhusgang sinubok laban sa isang simulated na enterprise deployment, hindi mga teknikal na kasanayan nang hiwalay."</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Basahin ang listahan ng mga unang kalahok: mga consultancy, bangko, isang pharmaceutical company. Ito ang mga organisasyong magde-deploy ng AI sa loob ng ibang mga kumpanya, kabilang sa loob ng mga marketing department. Hindi bago ang modelo; may mga field engineer at solution architect sa bawat kategorya ng enterprise software. Ang bago ay ang laki at ang diin sa paghuhusga sa mga totoong deployment.</p>
+<p>May parehong agwat ang marketing, at mas kaunti ang taong tumutugon dito. Maraming team ang may access na ngayon sa mahuhusay na modelo at tool. Mas kaunti ang may taong ang trabaho ay kumuha ng magulong proseso sa marketing, gaya ng competitor monitoring, creative testing o pag-uulat, at idisenyo itong muli sa paligid ng AI na may kasamang pagsukat, guardrail at adoption.</p>
+<p>Dapat ding pansinin ang mga lokasyon ng cohort. Wala ni isa sa Asya. Para sa ating rehiyon, ito ay alinman sa isang agwat na dapat punan nang lokal o senyales na ang unang alon ng sertipikadong deployment talent ay mapupunta sa ibang lugar.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Sa aking pananaw, ang pinakamahirap na hakbang sa applied AI ay ang nasa pagitan ng gumaganang modelo at gumaganang proseso. Sinasalamin iyan ng aming pananaliksik. Sa <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) at sa <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">SOMIN industry demonstration sa ACM Multimedia 2025</a>, ang kontribusyon ay hindi lamang ang mga modelo kundi kung paano sila umaangkop sa strategy work ng isang marketer: performance prediction kasama ang isang LLM na nagpapaliwanag at nagrerekomenda.</p>
+<p>Sumulat ako sa Forbes tungkol sa <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">pagsasara ng agwat sa pagitan ng marketing at mga AI system</a> at tungkol sa <a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">paggamit ng mga LLM sa negosyo nang lampas sa mga chatbot</a>. Ang pare-parehong tema ay lumilitaw ang halaga kapag may nakauunawa sa magkabilang panig: kung ano ang maaasahang magagawa ng modelo, at kung ano talaga ang kailangan ng negosyo. Bihira ang ganoong tao sa marketing.</p>
+<p>Nagtuturo rin ako, sa NUS at INSEAD bukod sa iba pa, at tumutugma sa akin ang balangkas ng medical residency. Hindi ka natututo ng deployment mula sa mga slide. Natututunan mo ito sa pag-ako ng isang totoong kaso, sa ilalim ng superbisyon, at sa pagsusuri sa iyong paghuhusga.</p>
+<h2>Paano mabubuo ngayon ng mga marketing team ang tungkuling ito</h2>
+<ul><li>Magtalaga ng may-ari. Bigyan ang isang tao ng tahasang pananagutan sa paggawang marketing process ng kakayahan ng AI, na may oras para gawin ito.</li><li>Matuto sa isang totoong kaso. Pumili ng isang live na workflow, gaya ng lingguhang competitor reporting, at idisenyo itong muli mula simula hanggang dulo, na may baseline at target.</li><li>Pagsamahin ang marketing at engineering. Ang pinakamahuhusay na deployment ay nagmumula sa isang marketer na alam ang desisyon at isang technologist na alam ang system, na nagtutulungan.</li><li>Suriin ang paghuhusga, hindi ang husay sa tool. Kaya bang ipaliwanag ng tao kung kailan hindi dapat pagkatiwalaan ang AI at ano ang mangyayari pagkatapos?</li><li>Ibahagi ang gumagana. Isulat ang bawat deployment bilang isang maikling kaso: ang problema, ang disenyo, ang resulta, ang mga failure mode.</li></ul>
+<p>Malaking halaga ang isandaang milyong dolyar para sa training. Maliit itong halaga kumpara sa nawawala sa mga organisasyon sa mga AI project na hindi kailanman nakararating sa araw-araw na trabaho. Hindi dapat hintayin ng marketing na iba ang magsanay sa mga deployer nito.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Ano ang Claude Frontier Academy?</summary><p>Isa itong training programme na inilunsad ng Anthropic noong 2 Oktubre 2026, na sinusuportahan ng US$100 milyong pangako, upang sanayin ang 10,000 Frontier Deployed Engineer bago matapos ang 2027 sa pamamagitan ng isang in-person na programa na sinusundan ng 12-linggong residency sa isang totoong project.</p></details><details><summary>Aling mga kumpanya ang nasa mga unang cohort ng Claude Frontier Academy?</summary><p>Pinangalanan ng Anthropic ang Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley at Novo Nordisk, bukod sa iba pa, na may mga cohort sa San Francisco, New York at London.</p></details><details><summary>Bakit kailangan ng marketing ng mga espesyalista sa AI deployment?</summary><p>Dahil hindi na ang access sa mga modelo ang bottleneck. Nagmumula ang halaga sa muling pagdidisenyo ng mga totoong marketing workflow sa paligid ng AI na may pagsukat at guardrail, na nangangailangan ng mga taong nakauunawa kapwa sa teknolohiya at sa desisyon sa marketing.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">Trabaho at kasanayan · 9 Setyembre 2026</span><h3>Tatlong Economic Scenario ng AI at ang Kinabukasan ng Trabaho sa Marketing</h3><p>Naglathala ang Anthropic ng tatlong scenario para sa epekto ng AI sa ekonomiya ng US hanggang 2030, mula katamtaman hanggang matindi. Ano ang kahulugan ng mga natuklasan sa knowledge work para sa mga karera sa marketing.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads at marketing AI · 29 Oktubre 2026</span><h3>Q3 2026 ng WPP: Ang Agency Model sa Ilalim ng Presyon ng AI</h3><p>Nag-ulat ang WPP ng bumababang like-for-like net revenue habang itinuro ng CEO nito ang demand para sa mga AI-enabled na serbisyo sa pamamagitan ng WPP Open. Ano ang sinasabi nito tungkol sa mga ahensya.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/malaysia-ai-governance-bill/"><span class="meta">Asya at Singapore · 29 Oktubre 2026</span><h3>AI Governance Bill ng Malaysia: Pananagutan Ayon sa Papel</h3><p>Ang draft na AI Governance Bill ng Malaysia, inaasahan bago mag-unang bahagi ng 2027, ay nagtatakda ng tungkulin sa mga bumubuo, nagbibigay o gumagamit ng AI. Ano ang kahulugan ng role-based na patakaran para sa mga marketer.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

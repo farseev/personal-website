@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Sinusubukan ng OpenAI ang Sponsored Agents sa loob ng ChatGPT at pinalawak ang ChatGPT ads sa 89 na bansa. Kapag kaya nang sumagot ng ad, ang labelling at katapatan na ang mismong produkto." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="Sinusubukan ng OpenAI ang Sponsored Agents sa loob ng ChatGPT at pinalawak ang ChatGPT ads sa 89 na bansa. Kapag kaya nang sumagot ng ad, ang labelling at katapatan na ang mismong produkto." />
+<meta property="og:url" content="https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI search" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Sinusubukan ng OpenAI ang Sponsored Agents sa loob ng ChatGPT at pinalawak ang ChatGPT ads sa 89 na bansa. Kapag kaya nang sumagot ng ad, ang labelling at katapatan na ang mismong produkto." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents","description":"Sinusubukan ng OpenAI ang Sponsored Agents sa loob ng ChatGPT at pinalawak ang ChatGPT ads sa 89 na bansa. Kapag kaya nang sumagot ng ad, ang labelling at katapatan na ang mismong produkto.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"AI search","about":{"@type":"Thing","name":"Sinusubukan ng OpenAI ang Sponsored Agents sa ChatGPT at pinalawak ang ChatGPT ads sa 26 pang bansa"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"Ano ang ChatGPT Sponsored Agents?","acceptedAnswer":{"@type":"Answer","text":"Ito ay mga business-sponsored agent na maaaring piliing kausapin ng user matapos mag-click ng ad sa ChatGPT. Inilalarawan ng OpenAI ang karanasan bilang isang malinaw na may label na pag-uusap na hiwalay sa mga independiyenteng sagot ng ChatGPT. Nagsimula ang test sa mga piling advertiser sa US."}},{"@type":"Question","name":"Sa ilang bansa available ang ChatGPT ads?","acceptedAnswer":{"@type":"Answer","text":"Iniulat ng Reuters noong 21 Oktubre 2026 na pinalalawak ng OpenAI ang ChatGPT ads sa 26 pang bansa, kaya umabot sa 89 ang kabuuan."}},{"@type":"Question","name":"Nakakakita ba ng ads ang mga nagbabayad na user ng ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Ayon sa Reuters, lumalabas lamang ang ads sa mga Free at Go plan ng ChatGPT; nananatiling walang ads ang mga subscription na Plus, Pro at Enterprise."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents","item":"https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/">한국어</option><option value="th" lang="th" data-href="/th/blog/chatgpt-sponsored-agents-ads-expansion/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/chatgpt-sponsored-agents-ads-expansion/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/chatgpt-sponsored-agents-ads-expansion/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/chatgpt-sponsored-agents-ads-expansion/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/chatgpt-sponsored-agents-ads-expansion/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/chatgpt-sponsored-agents-ads-expansion/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · AI search</p>
+      <h1 class="h-display">Nagiging Pag-uusap ang ChatGPT Ads: Sponsored Agents</h1>
+      <p class="lead">Sinusubukan ng OpenAI ang Sponsored Agents sa loob ng ChatGPT at pinalawak ang ChatGPT ads sa 89 na bansa. Kapag kaya nang sumagot ng ad, ang labelling at katapatan na ang mismong produkto.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Sinusubukan ng OpenAI ang Sponsored Agents sa ChatGPT at pinalawak ang ChatGPT ads sa 26 pang bansa (<time datetime="2026-10-21">21 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Ang isang search ad ay isang pangungusap at isang link. Ang isang ChatGPT Sponsored Agent ay isang pag-uusap. Sa pagitan ng Setyembre at Oktubre, nagsimulang subukan ng OpenAI ang mga ad na sumasagot at itinulak ang ChatGPT advertising sa 89 na bansa. Magkasama, binabago ng dalawang hakbang na iyon kung ano ang isang ad.</p>
+<h2>Ano ang nangyari</h2>
+<p>Noong 16 Setyembre, ayon sa <a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a>, nagsimulang subukan ng OpenAI ang Sponsored Agents kasama ang mga piling advertiser sa US. Matapos mag-click ng ad, maaaring piliin ng user na simulan ang tinatawag ng OpenAI na "isang malinaw na may label na pag-uusap" sa "isang business-sponsored agent sa ChatGPT", halimbawa upang itanong kung kasya ang isang dining table sa isang kuwarto o kung paano alagaan ang finish nito, bago sundan ang link patungo sa site ng negosyo. Sinasabi ng OpenAI na ang sponsored na pag-uusap ay "hiwalay sa mga independiyenteng sagot ng ChatGPT".</p>
+<p>Nagdala rin ang parehong anunsyo ng mga tool para sa mga advertiser: isang Ads Manager plugin para lumikha at magsuri ng mga campaign sa simpleng wika sa loob ng ChatGPT, mungkahing ad copy at mga larawan batay sa isang landing page, at isang opt-in na feature na iniaangkop ang mga headline sa konteksto ng pag-uusap at isinasalin ang ad copy sa wika ng user. Pinangalanan ang HubSpot at Shopify bilang mga unang CRM at ecommerce partner.</p>
+<p>Noong 21 Oktubre, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">iniulat ng Reuters</a> na pinalalawak ng OpenAI ang ChatGPT advertising sa 26 pang bansa, kaya umabot sa 89 ang kabuuan, kabilang ang mga market sa Latin America, Europe, Africa at Asya gaya ng Cambodia, Bangladesh at Pakistan. Sinabi ng kumpanya na mahigit 100,000 advertiser na ang nagpatakbo ng mga campaign at na umabot ang ads business nito sa US$1 bilyong annualised revenue run rate noong Agosto. Lumalabas lamang ang ads sa mga Free at Go plan; nananatiling walang ads ang Plus, Pro at Enterprise.</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Tatlong bagay ang nagbabago kapag naging agent ang isang ad.</p>
+<p>Una, kaya na ngayong sumagot ng ad sa mga tanong. Mas mabuti iyan para sa mga user kaysa sa isang static na banner, kung tumpak ang mga sagot. Isa rin itong bagong pananagutan: ang sponsored agent na nagpapalaki sa mga feature ng produkto ay isang mapanlinlang na ad na nagsasalita.</p>
+<p>Ikalawa, kailangang nakikita sa bawat palitan ang linya sa pagitan ng assistant at ng advertiser. Ang pananalita ng OpenAI, isang malinaw na may label na pag-uusap na hiwalay sa mga independiyenteng sagot ng ChatGPT, ang tamang prinsipyo. Ganap na nakasalalay ang halaga nito sa kung gaano kalinaw ang paghihiwalay na iyon para sa isang ordinaryong user sa gitna ng chat.</p>
+<p>Ikatlo, mayroon na ngayong two-tier na attention market. Walang nakikitang ads ang mga nagbabayad na user; mayroon ang mga libreng user. Sa mabilis na lumalaking mga market, kung saan karamihan ng tao ay nasa libreng tier, nagiging malawakang ad channel ang ChatGPT. Sa mga market na mas maraming nagbabayad na subscriber, maaabot lamang ang isang mahalagang audience sa pamamagitan ng mga organic na sagot.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Ang isang sponsored agent ay real-time na personalisation. Ang pag-uusap mismo ang profile. Sinaliksik ng aking pananaliksik sa <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">personality-driven na rekomendasyon ng content</a> (ACM Multimedia 2022) at sa <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">personality-driven na paglikha ng content</a> (WSDM 2021) kung paano mahinuha kung ano ang tinutugunan ng isang tao at iangkop ang content dito. Gumagana ang mga teknik na iyon. Iyan mismo ang dahilan kung bakit mahalaga ang mga guardrail: ang agent na iniaangkop ang panghihikayat nito sa personalidad ng bawat user ay napakaepektibo at, kung walang transparency, napakadaling abusuhin.</p>
+<p>Iginiit ko sa Forbes ang <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">redemptive marketing</a>, ang ideya na kayang palakasin ng transparency at performance ang isa't isa. Sa mga conversational ad masusubok ang ideyang iyon. Ang mga brand na mananalo sa pangmatagalan ay ang mga may sponsored agent na tapat tungkol sa mga limitasyon, nagsasabing "hindi angkop sa iyo ang produktong ito" kapag hindi nga, at ipinapasa sa tao kapag lampas na sa kanila ang tanong.</p>
+<p>Nangangailangan din ng ingat ang feature ng awtomatikong pagsasalin. Kapaki-pakinabang ang pagsasalin ng ad copy sa wika ng user, at mapanganib para sa mga pahayag na iba-iba ang regulasyon sa bawat market.</p>
+<h2>Ang dapat gawin ngayon ng mga advertiser</h2>
+<ul><li>Isulat ang mga patakaran ng iyong sponsored agent bago ang script nito. Aling mga pahayag ang pinapayagan, aling mga tanong ang dapat nitong tanggihan, kailan nito ipapasa sa isang tao.</li><li>Iangkla ito sa sarili mong mga katotohanan. Ang mga product spec, presyo, polisiya at tagubilin sa pangangalaga ay dapat magmula sa isang pinapanatiling source, hindi sa pangkalahatang kaalaman ng modelo.</li><li>Suriin ang isinaling copy para sa mga reguladong pahayag, lalo na sa kalusugan, pananalapi at mga produkto para sa bata.</li><li>Magplano para sa parehong tier. Gumamit ng bayad na placement kung saan ang mga libreng user ang iyong audience, at mamuhunan sa organic na visibility para sa mga user sa mga ad-free plan.</li><li>Sukatin nang lampas sa click. Subaybayan kung humahantong ang mga pag-uusap sa pagbili, return o reklamo, hindi lamang kung gaano katagal ang mga ito.</li></ul>
+<p>Tinuruan tayo ng search ads na sumulat para sa isang query. Tuturuan tayo ng conversational ads na sumagot tulad ng isang mapagkakatiwalaang salesperson, sa malawakang saklaw, sa bawat wika. Mas mahirap iyan, at mas kawili-wili.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Ano ang ChatGPT Sponsored Agents?</summary><p>Ito ay mga business-sponsored agent na maaaring piliing kausapin ng user matapos mag-click ng ad sa ChatGPT. Inilalarawan ng OpenAI ang karanasan bilang isang malinaw na may label na pag-uusap na hiwalay sa mga independiyenteng sagot ng ChatGPT. Nagsimula ang test sa mga piling advertiser sa US.</p></details><details><summary>Sa ilang bansa available ang ChatGPT ads?</summary><p>Iniulat ng Reuters noong 21 Oktubre 2026 na pinalalawak ng OpenAI ang ChatGPT ads sa 26 pang bansa, kaya umabot sa 89 ang kabuuan.</p></details><details><summary>Nakakakita ba ng ads ang mga nagbabayad na user ng ChatGPT?</summary><p>Ayon sa Reuters, lumalabas lamang ang ads sa mga Free at Go plan ng ChatGPT; nananatiling walang ads ang mga subscription na Plus, Pro at Enterprise.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI search · 29 Oktubre 2026</span><h3>Adobe: Mas Mahusay Nang Mag-convert ang AI Traffic Kaysa Ibang Pagbisita</h3><p>Ayon sa Adobe, ang mga pagbisitang galing sa AI sa mga US retailer ay nag-convert nang 90% na mas mahusay kaysa sa ibang traffic noong Setyembre. Bakit naging channel ang mga sagot ng AI, at ano ang dapat gawin.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI search · 28 Oktubre 2026</span><h3>Dumating na ang Ads ng Google AI Mode sa Singapore at Iba Pa</h3><p>Pinalalawak ng Google ang ads sa AI Mode sa sampung market, kabilang ang Singapore, Malaysia at Pilipinas. Ito ang nagbabago kapag nasa loob na ng sagot ang ad.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">AI search · 1 Oktubre 2026</span><h3>Na-dismiss ang Penske v. Google: Ano ang Kahulugan Nito sa AI Visibility</h3><p>Ibinasura ng isang hukom sa US ang antitrust suit ng Penske Media laban sa AI Overviews ng Google, at walang nakitang 'formal bargain' para sa traffic. Ano ang dapat gawin ng mga brand tungkol sa GEO.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo | Prof. Aleks Farseev" />
+<meta property="og:description" content="Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI." />
+<meta property="og:url" content="https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulasyon at seguridad" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/","headline":"Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo","description":"Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Regulasyon at seguridad","about":{"@type":"Thing","name":"Naglabas ang CISA, NSA at FBI ng advisory tungkol sa industrial-scale na distillation ng mga US AI model; iniulat ng Anthropic ang mga bagong depensa laban sa distillation"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"Ano ang AI distillation attack?","acceptedAnswer":{"@type":"Answer","text":"Isa itong patago at malawakang campaign na kumukuha ng mga kakayahan ng isang modelo sa pamamagitan ng pagtatanong dito, kadalasan sa pamamagitan ng mga network ng mapanlinlang na account, at ginagamit ang mga output upang sanayin ang ibang modelo nang walang pahintulot ng orihinal na developer."}},{"@type":"Question","name":"Aling mga kumpanya ang pinangalanan sa US advisory?","acceptedAnswer":{"@type":"Answer","text":"Ayon sa ulat ng Help Net Security, pinangalanan ng advisory ng CISA, NSA at FBI ang DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun at Z.AI. Hindi naglaman ang ulat ng tugon mula sa mga kumpanya."}},{"@type":"Question","name":"Palagi bang masama ang model distillation?","acceptedAnswer":{"@type":"Answer","text":"Hindi. Ang distillation ay karaniwang teknik para sanayin ang isang mas maliit at mas murang modelo mula sa mas malaki. Ang problema ay ang hindi awtorisadong pagkuha mula sa modelo ng iba, na nagbubunsod ng mga tanong tungkol sa pahintulot, safeguard at pinagmulan."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo","item":"https://farseev.com/fil/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-distillation-attacks-cisa-advisory/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-distillation-attacks-cisa-advisory/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Regulasyon at seguridad</p>
+      <h1 class="h-display">Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo</h1>
+      <p class="lead">Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Naglabas ang CISA, NSA at FBI ng advisory tungkol sa industrial-scale na distillation ng mga US AI model; iniulat ng Anthropic ang mga bagong depensa laban sa distillation (<time datetime="2026-10-12">12 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Dati, magalang na salita ang "distillation" sa machine learning. Inilalarawan nito ang pagsasanay sa isang maliit na modelo upang gayahin ang isang malaki, isang karaniwan at kapaki-pakinabang na teknik. Noong Setyembre at Oktubre 2026, naging balita ito tungkol sa seguridad at kalakalan. Kung bumibili o bumubuo ka ng AI para sa marketing, dapat mong maunawaan ang dalawang kahulugan.</p>
+<h2>Ano ang nangyari</h2>
+<p>Noong unang bahagi ng Setyembre, naglathala ang CISA, NSA at FBI ng isang joint advisory tungkol sa tinatawag nilang industrial-scale knowledge distillation ng mga AI company na nakabase sa China. Ayon sa <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">ulat ng Help Net Security tungkol sa advisory</a>, pinangalanan ng mga ahensya ang DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun at Z.AI, at sinabing nakakuha ang mga ito ng bilyun-bilyong token sa pamamagitan ng milyun-milyong request sa mga US frontier model mula pa noong hindi bababa sa huling bahagi ng 2024. Naglilista ang advisory ng mga signal para sa pagtukoy, gaya ng tuloy-tuloy na paggamit nang walang idle time ng tao at mga grupo ng account na kumikilos nang koordinado, at nagrerekomenda ng mas mahigpit na identity check, monitoring at pagbabahagi ng impormasyon sa pagitan ng mga AI provider. Binanggit ng ulat na hindi ito naglaman ng pahayag mula sa mga pinangalanang kumpanya.</p>
+<p>Noong 12 Oktubre, inilarawan ng Anthropic ang sarili nitong tugon. Sa <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>, sinabi nitong ipinahihiwatig ng maagang ebidensya na nabawasan ng mga pamamaraan nito ang data na na-harvest ng mga distiller nang humigit-kumulang 90 hanggang 99%. Kabilang sa mga hakbang ang pagpigil sa mga mas bagong API account na i-edit ang naunang reasoning ni Claude, isang two-stage classifier na sinanay sa mga pagtatangkang mag-extract na may false positive rate na mas mababa sa 0.1%, mas mahigpit na limitasyon at ban para sa paulit-ulit na pagtatangka, at paniningil para sa mga request na hinarang ng mga safeguard nito. Sinasabi ng Anthropic na nag-ban na ito ng sampu-sampung libong account na naka-link sa distillation at inaasahan ang tuloy-tuloy na "cat-and-mouse game".</p>
+<h2>Bakit ito mahalaga</h2>
+<p>May dalawang dahilan kung bakit dapat pakialaman ng isang marketer ang labanan sa pagitan ng mga AI lab.</p>
+<p>Ang una ay supply-chain risk. Kung binuo ang isang modelo sa pamamagitan ng pagkopya sa pag-uugali ng ibang modelo nang walang pahintulot, hindi mo alam kung aling mga safeguard ang kasama nito. Iginigiit ng post ng Anthropic na ang mga distilled model ay maaaring lumapit sa frontier capability habang may mas mahihinang proteksyon. Kapag pumipili ka ng modelo para patakbuhin ang iyong customer service o gumawa ng ads, bahagi ng kalidad ang pinagmulan.</p>
+<p>Ang ikalawa ay abala para sa mga lehitimong user. May gastos ang mga depensa. Inaamin ng Anthropic na kinailangang i-update ng ilang developer ang kanilang mga integration, na maaaring maharang ang maliit na bahagi ng mga hindi nakapipinsalang request, at na maaari na ngayong singilin ang mga naharang na request. Kung gumagawa ang iyong marketing stack ng maraming automated na tawag sa isang frontier API, maaaring magmukhang extraction campaign ang ilan sa traffic na iyon. Basahin na ngayon ang mga polisiya ng iyong mga provider, hindi pagkatapos masira ang iyong pipeline.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Hindi kontrabida rito ang distillation. Kung ginagawa nang lehitimo, ito ang paraan upang maging abot-kaya ang AI. Tinuturuan ng malaking modelo ang maliit; tumatakbo nang mura ang maliit sa malawakang saklaw. Iginiit ko sa Forbes na sa marketing, <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">mas mahalaga ang teknik kaysa sa laki ng modelo</a>, at isa ang distillation sa mga teknik na iyon.</p>
+<p>Ang nagpapabago sa larawan ay pahintulot at transparency. Nagsisimula ang aking gawain sa explainable AI sa isang simpleng prinsipyo: dapat makita ng marketer kung bakit nagrerekomenda ng isang bagay ang system. Sa <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), pinagsama namin ang click-through-rate prediction sa isang LLM assistant na nagpapaliwanag ng mga driver. Sa <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (isang preprint noong 2024), inilarawan namin ang pagsasama ng mga explainable performance model at mga LLM para sa competitor analytics. May kahulugan lamang ang mga paliwanag kung alam mo kung ano ang modelo at saan ito nagmula.</p>
+<p>May irony din na dapat pansinin. Ang depensang inilalarawan ng Anthropic, ang pagbubuod o paglilimita ng access sa buong reasoning ng modelo, ay ginagawang medyo hindi gaanong transparent ang mga system para sa lahat, dahil ang reasoning ang gusto ng mga nangongopya. Huhubugin ng trade-off na iyon kung gaano karaming paliwanag ang handang ilantad ng mga AI vendor. Dapat humingi ang mga mamimili ng mga paliwanag na idinisenyo para sa kanila, tungkol sa kanilang data at kanilang mga desisyon, sa halip na raw reasoning trace.</p>
+<h2>Ang dapat gawin ngayon ng mga bumibili ng marketing AI</h2>
+<ul><li>Tanungin ang bawat vendor kung aling mga modelo ang nasa ilalim ng kanilang produkto at saan nagmula ang mga modelong iyon.</li><li>Suriin ang mga tuntunin ng mga API na tinatawagan mo. Karaniwan sa marketing ang automated at high-volume na paggamit; tiyaking malinaw na lehitimo, kilala at nasa loob ng limitasyon ang sa iyo.</li><li>Magplano para sa pagpapalit ng modelo. Maaaring mabilis magbago ang mga polisiya, presyo at access. Panatilihing portable ang mga prompt, proseso at evaluation set.</li><li>Mag-distill ng sarili mong mga modelo nang lehitimo. Kung kailangan mo ng murang modelo para sa isang makitid na gawain, sanayin ito sa sarili mong data o sa mga output na may lisensya kang gamitin.</li><li>Mas piliin ang paliwanag ng mga desisyon kaysa sa paglalantad ng mga panloob na detalye. Ang kailangan mong i-audit ay kung bakit ginawa ang isang rekomendasyon para sa iyong campaign.</li></ul>
+<p>Ang labanan sa distillation ay tungkol sa kung sino ang may karapatang kumopya kanino. Para sa mga marketer, paalala ito na ang "aling modelo?" ay isa nang tanong ng governance, hindi lamang teknikal.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Ano ang AI distillation attack?</summary><p>Isa itong patago at malawakang campaign na kumukuha ng mga kakayahan ng isang modelo sa pamamagitan ng pagtatanong dito, kadalasan sa pamamagitan ng mga network ng mapanlinlang na account, at ginagamit ang mga output upang sanayin ang ibang modelo nang walang pahintulot ng orihinal na developer.</p></details><details><summary>Aling mga kumpanya ang pinangalanan sa US advisory?</summary><p>Ayon sa ulat ng Help Net Security, pinangalanan ng advisory ng CISA, NSA at FBI ang DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun at Z.AI. Hindi naglaman ang ulat ng tugon mula sa mga kumpanya.</p></details><details><summary>Palagi bang masama ang model distillation?</summary><p>Hindi. Ang distillation ay karaniwang teknik para sanayin ang isang mas maliit at mas murang modelo mula sa mas malaki. Ang problema ay ang hindi awtorisadong pagkuha mula sa modelo ng iba, na nagbubunsod ng mga tanong tungkol sa pahintulot, safeguard at pinagmulan.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/mas-ai-risk-management-guidelines/"><span class="meta">Regulasyon at seguridad · 7 Oktubre 2026</span><h3>MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking</h3><p>Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulasyon at seguridad · 29 Setyembre 2026</span><h3>Ang White House AI Accord at mga Independent Evaluator</h3><p>Pumirma ang mga tech leader sa isang boluntaryong kasunduan ng White House na nangangako ng mga panlabas na evaluator, at binigyan ng Anthropic ang METR ng malalim na access. Bakit mahalaga ang mga audit para sa marketing AI.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads at marketing AI · 29 Oktubre 2026</span><h3>Q3 2026 ng WPP: Ang Agency Model sa Ilalim ng Presyon ng AI</h3><p>Nag-ulat ang WPP ng bumababang like-for-like net revenue habang itinuro ng CEO nito ang demand para sa mga AI-enabled na serbisyo sa pamamagitan ng WPP Open. Ano ang sinasabi nito tungkol sa mga ahensya.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

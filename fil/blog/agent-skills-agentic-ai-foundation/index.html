@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer | Prof. Aleks Farseev" />
+<meta property="og:description" content="Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent." />
+<meta property="og:url" content="https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mga Agent" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/#article","mainEntityOfPage":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/","url":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/","headline":"Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer","description":"Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Mga Agent","about":{"@type":"Thing","name":"Ibinigay ng Anthropic ang Agent Skills open standard sa Agentic AI Foundation sa ilalim ng Linux Foundation"},"wordCount":873,"citation":[{"@type":"CreativeWork","name":"Donating Agent Skills to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","publisher":"Anthropic","datePublished":"2026-10-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/#faq","mainEntity":[{"@type":"Question","name":"Ano ang Agent Skill?","acceptedAnswer":{"@type":"Answer","text":"Ayon sa Anthropic, ang skill ay isang folder na naglalaman ng SKILL.md file na nagtuturo sa isang AI agent ng partikular na gawain o domain, kasama ang anumang script o reference material na kailangan ng gawain."}},{"@type":"Question","name":"Sino na ngayon ang nagpapanatili ng Agent Skills standard?","acceptedAnswer":{"@type":"Answer","text":"Ibinigay ng Anthropic ang standard, ang pangalan, logo, GitHub organisation at ang domain na agentskills.io nito sa Agentic AI Foundation sa ilalim ng Linux Foundation. Pinapanatili ito ng mga engineer mula sa Anthropic, Google, OpenAI at iba pang kumpanya bilang mga indibidwal."}},{"@type":"Question","name":"Paano magagamit ng mga marketer ang Agent Skills?","acceptedAnswer":{"@type":"Answer","text":"Sa pagsulat ng mga prosesong paulit-ulit, gaya ng brief, competitor review o campaign report, kasama ang mga patakaran ng brand at mga halimbawa, upang sundin ng mga AI agent sa iba't ibang tool ang sariling pamamaraan ng team sa halip na mga generic na default."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer","item":"https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/agent-skills-agentic-ai-foundation/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/agent-skills-agentic-ai-foundation/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/agent-skills-agentic-ai-foundation/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/agent-skills-agentic-ai-foundation/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/agent-skills-agentic-ai-foundation/">한국어</option><option value="th" lang="th" data-href="/th/blog/agent-skills-agentic-ai-foundation/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/agent-skills-agentic-ai-foundation/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/agent-skills-agentic-ai-foundation/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/agent-skills-agentic-ai-foundation/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/agent-skills-agentic-ai-foundation/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/agent-skills-agentic-ai-foundation/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Mga Agent</p>
+      <h1 class="h-display">Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer</h1>
+      <p class="lead">Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Ibinigay ng Anthropic ang Agent Skills open standard sa Agentic AI Foundation sa ilalim ng Linux Foundation (<time datetime="2026-10-22">22 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Ang ilan sa pinakamahalagang balita sa AI ay mukhang nakakabagot sa unang tingin. Noong 22 Oktubre, sinabi ng Anthropic na ipapasa nito ang Agent Skills standard sa Agentic AI Foundation, isang katawan sa ilalim ng Linux Foundation. Walang bagong modelo, walang benchmark. Pero kung nagpapatakbo ka ng marketing gamit ang mga AI agent, ito ang uri ng pundasyong imprastraktura na nagpapasya kung mananatiling iyo ang iyong know-how.</p>
+<h2>Ano ang nangyari</h2>
+<p>Ayon sa <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">post ng Anthropic</a>, ang isang skill ay "isang folder na naglalaman ng SKILL.md file na nagtuturo sa isang agent ng isang partikular na gawain o domain, kasama ang anumang script o reference material na kailangan nito." Binuo ng Anthropic ang format habang ginagawa ang Claude Code, dahil madalas na kulang ang mga general-purpose agent sa procedural knowledge na kailangan ng mga totoong gawain sa negosyo. Inilunsad nito ang skills noong Oktubre 2025 at inilathala ang Agent Skills bilang open standard noong Disyembre 2025.</p>
+<p>Malalaki ang mga numero ng adoption. Sinasabi ng Anthropic na mahigit 70 agent platform na ang nag-integrate ng Agent Skills, kabilang ang ChatGPT, Cursor, GitHub Copilot at VS Code, at na 1 milyong skill na ang nailathala at halos 280 milyon na ang na-install.</p>
+<p>Ngayon, ang standard mismo, ang pangalan at logo nito, ang GitHub organisation at ang domain na agentskills.io ay mapupunta sa Agentic AI Foundation (AAIF), na co-founded ng Anthropic kasama ang Block at OpenAI at kung saan dati na nitong ibinigay ang Model Context Protocol. Pananatilihin ito ng mga engineer mula sa Anthropic, Google, OpenAI at iba pang kumpanya bilang mga indibidwal. Kasama sa iminungkahing roadmap ang mga versioned release, isang pormal na proseso ng panukala at security guidance para sa mga taong sumusulat at nag-i-install ng skills.</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Bawat marketing team na kilala ko ay may parehong nakatagong asset: ang paraan nila ng paggawa ng mga bagay. Kung paano sila sumusulat ng brief. Kung aling mga kakumpitensya ang una nilang sinusuri. Kung ano ang ibig sabihin ng "on brand" para sa kliyenteng ito sa market na ito. Sa ngayon, karamihan dito ay nasa isip ng mga tao at sa mga slide deck na walang bumabasa.</p>
+<p>Ang skill ay isang paraan upang isulat ang prosesong iyon para masundan ito ng isang agent. At ang isang vendor-neutral na standard ay nangangahulugang maaari mo itong isulat nang isang beses at asahang gagana ito sa mga tool na ginagamit ng iyong team. Iyan ang pagkakaiba ng pagbuo sa isang platform at pagbuo sa isang format. Mas tumatagal ang mga format kaysa sa mga platform.</p>
+<p>May pangalawa at mas tahimik na benepisyo. Nababasa ang isang skill. Maaari mong buksan ang folder at makita kung ano ang iniutos sa agent. Sa larangang nagiging karaniwang dahilan na ang "ang AI ang nagpasya", ang isang plain-text na proseso ay maliit ngunit tunay na bahagi ng pananagutan.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Sumulat ako sa Forbes tungkol sa hagdan mula <a href="https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/" target="_blank" rel="noopener">prompting at fine-tuning hanggang RAG at mga AI agent sa marketing</a>, at tungkol sa <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">18 aplikasyon ng mga AI agent sa marketing</a>. Ang paulit-ulit kong binabalikan: mas madalas pumalya ang mga agent hindi dahil kulang sila sa talino kundi dahil kulang sila sa konteksto: ang partikular na data at ang partikular na proseso para sa trabaho.</p>
+<p>Ginagawa itong kongkreto ng aming pinakabagong papel. Sa <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> (SIGIR 2026), inilalarawan namin ang mga retrieval-augmented agent na tumutulong sa mga propesyonal na sumulat ng natatanging LinkedIn content. Ang pangunahing ideya ay dapat kumuha ang agent ng totoong context data bago ito sumulat, upang manatiling natatangi ang output nito sa halip na mauwi sa parehong generic na text na nililikha ng agent ng iba.</p>
+<p>Ang skills ay ang procedural na kakambal ng retrieval. Ibinibigay ng retrieval sa agent ang mga katotohanan. Ibinibigay ng skill ang pamamaraan. Parehong lumalaban ang mga ito sa homogenisation, dahil pareho silang nagpapasok ng kung ano ang partikular sa iyo sa isang system na kung hindi ay babalik sa karaniwan ng internet. Kung ang bawat brand ay nagpapatakbo ng parehong agent na may parehong default na pag-uugali, magkakatunog ang bawat brand. Ang iyong skills ang kinaroroonan ng iyong pagkakaiba.</p>
+<h2>Ang dapat gawin ngayon ng mga marketing team</h2>
+<ul><li>Isulat ang tatlong prosesong inuulit mo bawat linggo, gaya ng competitor check, campaign post-mortem o creative brief, bilang simpleng step-by-step na tagubilin na may mga halimbawa ng mahusay na output.</li><li>Ihiwalay ang mga bahaging partikular sa brand: tone of voice, mga ipinagbabawal na pahayag, legal disclaimer, pagkakaiba ng mga market. Ito ang mga bahaging nagpapaging iyo sa iyong output.</li><li>Lagyan ng version ang mga ito. Kapag nagbago ang isang proseso, nagbabago ang pag-uugali ng agent. Ituring ang skills na parang code, na may may-ari at change log.</li><li>Suriin ang seguridad bago mag-install ng third-party na skills. Maaaring may kasamang script ang isang skill. Binabanggit ng bagong governance roadmap ang security guidance dahil dito; hangga't wala pa ito, basahin ang iyong ini-install.</li><li>Sukatin ang pagiging natatangi, hindi lamang ang bilis. Kung nagsisimulang magmukhang katulad ng sa mga kakumpitensya mo ang content na isinulat ng iyong agent, masyadong manipis ang iyong konteksto.</li></ul>
+<p>Hindi kapana-panabik ang mga open standard hangga't hindi mo kailangang magpalit ng tool. Pagdating ng araw na iyon, ang mga team na nagsulat ng kanilang know-how sa isang portable na format ay makakalipat sa loob ng isang linggo. Ang iba ay magsisimula ulit.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Ano ang Agent Skill?</summary><p>Ayon sa Anthropic, ang skill ay isang folder na naglalaman ng SKILL.md file na nagtuturo sa isang AI agent ng partikular na gawain o domain, kasama ang anumang script o reference material na kailangan ng gawain.</p></details><details><summary>Sino na ngayon ang nagpapanatili ng Agent Skills standard?</summary><p>Ibinigay ng Anthropic ang standard, ang pangalan, logo, GitHub organisation at ang domain na agentskills.io nito sa Agentic AI Foundation sa ilalim ng Linux Foundation. Pinapanatili ito ng mga engineer mula sa Anthropic, Google, OpenAI at iba pang kumpanya bilang mga indibidwal.</p></details><details><summary>Paano magagamit ng mga marketer ang Agent Skills?</summary><p>Sa pagsulat ng mga prosesong paulit-ulit, gaya ng brief, competitor review o campaign report, kasama ang mga patakaran ng brand at mga halimbawa, upang sundin ng mga AI agent sa iba't ibang tool ang sariling pamamaraan ng team sa halip na mga generic na default.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a> — Anthropic, 22 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/workday-c1-ai-agent-identity/"><span class="meta">Mga Agent · 13 Oktubre 2026</span><h3>Binili ng Workday ang C1.ai: Kailangan din ng Identity ng Iyong mga Marketing Agent</h3><p>Pumayag ang Workday na bilhin ang C1.ai, na namamahala ng access para sa mga tao at AI agent. Kailangan ng parehong patakaran ang mga marketing agent na humahawak ng CRM at ad account.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/openai-agent-medicare-portal-australia/"><span class="meta">Mga Agent · 24 Setyembre 2026</span><h3>Ang AI Agent na Ayaw Tumanggap ng Hindi</h3><p>Sinabi ng punong ministro ng Australia na nakalusot ang isang OpenAI research agent sa mga harang sa isang Medicare statistics portal. Ang aral para sa mga marketing agent ay tungkol sa scope.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/meta-muse-personal-ai-agent/"><span class="meta">Mga Agent · 8 Setyembre 2026</span><h3>Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer</h3><p>Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

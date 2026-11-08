@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking | Prof. Aleks Farseev" />
+<meta property="og:description" content="Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team." />
+<meta property="og:url" content="https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulasyon at seguridad" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/","headline":"MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking","description":"Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Regulasyon at seguridad","about":{"@type":"Thing","name":"Naglabas ang MAS ng Guidelines on Artificial Intelligence Risk Management para sa mga institusyong pinansyal"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"Kailan magkakabisa ang mga alituntunin ng MAS sa AI risk management?","acceptedAnswer":{"@type":"Answer","text":"Sinasabi ng MAS na magkakabisa ang mga alituntunin sa 7 Oktubre 2027, na maaaring unti-unting ipatupad ng mga institusyon at ang ilang huling seksyon ay naaangkop pagsapit ng 7 Oktubre 2028."}},{"@type":"Question","name":"Sakop ba ng mga alituntunin ng MAS ang AI mula sa mga vendor?","acceptedAnswer":{"@type":"Answer","text":"Oo. Sinasabi ng MAS na nananatiling may pananagutan ang mga institusyong pinansyal sa AI na ginagamit sa kanilang mga serbisyo, kabilang ang AI mula sa mga third party, at dapat silang kumuha ng assurance, suriin ang pagiging angkop at maglapat ng mga compensating control, o limitahan, suspindihin o palitan ang isang serbisyo kung lampas sa kanilang risk appetite ang mga panganib."}},{"@type":"Question","name":"Sakop ba ng mga alituntunin ng MAS ang agentic AI?","acceptedAnswer":{"@type":"Answer","text":"Binanggit ng MAS ang lumalaking paggamit ng mga agentic AI system na kayang kumilos nang autonomous at mag-access ng mga tool, at sinabing balak nitong konsultahin ang sektor sa 2027 tungkol sa kung anong karagdagang guidance sa agentic AI ang magiging kapaki-pakinabang."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking","item":"https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/mas-ai-risk-management-guidelines/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/mas-ai-risk-management-guidelines/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/mas-ai-risk-management-guidelines/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/mas-ai-risk-management-guidelines/">한국어</option><option value="th" lang="th" data-href="/th/blog/mas-ai-risk-management-guidelines/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/mas-ai-risk-management-guidelines/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/mas-ai-risk-management-guidelines/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/mas-ai-risk-management-guidelines/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/mas-ai-risk-management-guidelines/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/mas-ai-risk-management-guidelines/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Regulasyon at seguridad</p>
+      <h1 class="h-display">MAS AI Risk Guidelines: Isang Kapaki-pakinabang na Template Lampas sa Banking</h1>
+      <p class="lead">Naglabas ang MAS ng mga alituntunin sa AI risk management para sa mga institusyong pinansyal. Ang mga patakaran nito sa inventory at third party ay mahusay na template para sa mga marketing team.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Naglabas ang MAS ng Guidelines on Artificial Intelligence Risk Management para sa mga institusyong pinansyal (<time datetime="2026-10-07">7 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Bihirang ikasabik ng mga marketer ang regulasyong isinulat para sa mga bangko. Ang isang ito ay dapat man lang magpatala sa kanila. Noong 7 Oktubre, inilathala ng Monetary Authority of Singapore ang Guidelines on Artificial Intelligence Risk Management nito. Ang mga bangko, insurer at iba pang institusyong pinansyal ang direktang audience. Ngunit ang lohika ng mga alituntunin ay malinis na template para sa anumang team na gumagamit ng AI upang gumawa ng mga desisyon tungkol sa mga customer, kabilang ang marketing.</p>
+<h2>Ano ang nangyari</h2>
+<p>Ayon sa <a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">media release ng MAS</a>, naaangkop ang mga alituntunin sa lahat ng institusyong pinansyal at sa lahat ng anyo ng teknolohiyang AI, na may "principles-based at risk-proportionate na pamamaraan". Kinonsulta ng MAS ang sektor tungkol dito noong Nobyembre 2025.</p>
+<p>Nahahati sa ilang grupo ang mga inaasahan. Dapat pangasiwaan ng mga board at senior management ang mga panganib ng AI at magtakda ng malinaw na mga tungkulin, risk appetite at balangkas; hindi kinakailangan ang isang nakatalagang AI committee kung sapat ang pangangasiwang ibinibigay ng mga umiiral na istruktura. Dapat tukuyin ng mga institusyon ang kanilang paggamit ng AI, magpanatili ng mga inventory, suriin kung gaano kahalaga ang bawat paggamit, at maglapat ng proporsyonal na kontrol sa buong life cycle, na sumasaklaw sa data governance, testing, pangangasiwa ng tao, cybersecurity, monitoring at change management. Nananatili silang may pananagutan sa AI na ginagamit sa kanilang mga serbisyo kahit nagmula ito sa mga third party, at dapat silang kumuha ng assurance at maglapat ng mga compensating control, o limitahan, suspindihin o palitan ang isang serbisyong ang mga panganib ay lampas sa kanilang appetite.</p>
+<p>Magkakabisa ang mga alituntunin sa 7 Oktubre 2027, at ang ilang seksyon ay naaangkop pagsapit ng 7 Oktubre 2028. Binanggit din ng MAS ang lumalaking paggamit ng mga agentic AI system na kayang kumilos nang autonomous at gumamit ng mga tool, at sinabing balak nitong konsultahin ang sektor sa 2027 tungkol sa kung anong karagdagang guidance ang magiging kapaki-pakinabang.</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Tingnan kung saan dumadampi ang AI sa mga customer sa isang bangko ngayon: mga rekomendasyon ng produkto, next-best-offer engine, chatbot, credit marketing, fraud screening, nalikhang content sa mga campaign. Marami rito ay pinapatakbo o ipinagagawa ng marketing. Sa ilalim ng mga alituntuning ito, marami rito ang kailangang nasa isang inventory, nasuri para sa materiality at pinamamahalaan sa buong life cycle nito.</p>
+<p>Ang clause tungkol sa third party ang pinakamahalaga para sa marketing. Maraming AI ang binibili ng mga marketing team: mula sa mga ad platform, martech vendor, ahensya at freelancer na gumagamit ng sarili nilang mga tool. Malinaw ang MAS na nananatiling may pananagutan ang institusyon. Hindi kontrol ang "ang vendor ang gumawa".</p>
+<p>At maluwag ang timeline ngunit hindi mahaba. Sapat ang isang taon hanggang magkabisa ang mga pangunahing seksyon upang bumuo nang maayos ng inventory, at hindi sapat upang gawin ito sa huling quarter.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Nagbigay ako ng talk sa WSDM 2023 na pinamagatang <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a>. Ang pangunahing argumento ay hindi abstrakto ang mga tanong sa etika at privacy tungkol sa automated profiling, targeting at creative scoring. Nagmumula ang mga ito sa mga partikular na design choice na maaaring idokumento at kontrolin.</p>
+<p>Iyan mismo ang pinipilit kang gawin ng isang AI inventory. Para sa bawat paggamit, isulat kung anong data ang pumapasok, anong desisyon ang lumalabas, sino ang sumusuri nito at ano ang mangyayari kapag nagkamali ito. Ang aking pananaliksik sa explainable AI para sa marketing, mula <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) hanggang <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), ay binuo sa parehong instinct: kung nakaaapekto sa pera o sa mga customer ang rekomendasyon ng isang modelo, dapat makita ng mga taong responsable kung bakit nito ginawa ang rekomendasyong iyon.</p>
+<p>Iginiit ko rin sa Forbes na <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">mahalaga ang transparency para sa mga marketing-driven na kumpanya</a>. Ginagawa na ngayon ng mga regulator ang prinsipyong iyon bilang mga inaasahan sa superbisyon. Mas mura ang compliance para sa mga team na nagsasagawa na ng explainability.</p>
+<h2>Isang praktikal na checklist para sa mga marketing team (sa pananalapi at higit pa)</h2>
+<ul><li>Buuin ang inventory. Ilista ang bawat AI system na ginagamit o ipinagagawa ng marketing: targeting, rekomendasyon, chatbot, paglikha ng content, creative scoring, analytics.</li><li>Tapat na i-rate ang materiality. Mababa ang panganib ng tool na gumagawa ng draft ng mga panloob na tala. Hindi mababa ang panganib ng modelong nagpapasya kung aling mga customer ang makakakita ng credit offer.</li><li>I-mapa ang mga third party. Para sa bawat vendor at ahensya, itala kung anong AI ang ginagamit nila para sa iyo at anong assurance ang natanggap mo.</li><li>Ilagay ang tao kung saan ito mahalaga. Tukuyin kung saan kailangan ang pagsusuri ng tao bago maging live ang output na nakaharap sa customer.</li><li>Mag-monitor pagkatapos ng launch. Lumilihis ang mga modelo at nagbabago ang mga campaign. Mag-iskedyul ng mga pagsusuri, lalo na pagkatapos ng mga update sa modelo ng vendor.</li><li>Bantayan ang konsultasyon tungkol sa agentic AI. Kung nagpa-pilot ka ng mga agent na kumikilos sa customer data, asahan ang partikular na guidance at magdisenyo na ngayon para sa auditability.</li></ul>
+<p>May ugali ang mga regulator ng Singapore na sumulat ng guidance na kalaunan ay nagiging default sa rehiyon. Kung nag-o-operate ang iyong kumpanya sa buong Southeast Asia, makatwirang ituring ang mga alituntuning ito bilang preview, kahit hindi ka bangko.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Kailan magkakabisa ang mga alituntunin ng MAS sa AI risk management?</summary><p>Sinasabi ng MAS na magkakabisa ang mga alituntunin sa 7 Oktubre 2027, na maaaring unti-unting ipatupad ng mga institusyon at ang ilang huling seksyon ay naaangkop pagsapit ng 7 Oktubre 2028.</p></details><details><summary>Sakop ba ng mga alituntunin ng MAS ang AI mula sa mga vendor?</summary><p>Oo. Sinasabi ng MAS na nananatiling may pananagutan ang mga institusyong pinansyal sa AI na ginagamit sa kanilang mga serbisyo, kabilang ang AI mula sa mga third party, at dapat silang kumuha ng assurance, suriin ang pagiging angkop at maglapat ng mga compensating control, o limitahan, suspindihin o palitan ang isang serbisyo kung lampas sa kanilang risk appetite ang mga panganib.</p></details><details><summary>Sakop ba ng mga alituntunin ng MAS ang agentic AI?</summary><p>Binanggit ng MAS ang lumalaking paggamit ng mga agentic AI system na kayang kumilos nang autonomous at mag-access ng mga tool, at sinabing balak nitong konsultahin ang sektor sa 2027 tungkol sa kung anong karagdagang guidance sa agentic AI ang magiging kapaki-pakinabang.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Regulasyon at seguridad · 12 Oktubre 2026</span><h3>Distillation Attacks: Ano ang Kahulugan ng mga Kinopyang AI Model para sa Iyo</h3><p>Pinangalanan ng mga ahensya ng US ang anim na Chinese AI firm sa isang distillation advisory, at sinasabi ng Anthropic na binawasan ng mga depensa nito ang na-harvest na data nang 90 hanggang 99%. Ano ang kahulugan nito para sa mga bumibili ng AI.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulasyon at seguridad · 29 Setyembre 2026</span><h3>Ang White House AI Accord at mga Independent Evaluator</h3><p>Pumirma ang mga tech leader sa isang boluntaryong kasunduan ng White House na nangangako ng mga panlabas na evaluator, at binigyan ng Anthropic ang METR ng malalim na access. Bakit mahalaga ang mga audit para sa marketing AI.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads at marketing AI · 29 Oktubre 2026</span><h3>Q3 2026 ng WPP: Ang Agency Model sa Ilalim ng Presyon ng AI</h3><p>Nag-ulat ang WPP ng bumababang like-for-like net revenue habang itinuro ng CEO nito ang demand para sa mga AI-enabled na serbisyo sa pamamagitan ng WPP Open. Ano ang sinasabi nito tungkol sa mga ahensya.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

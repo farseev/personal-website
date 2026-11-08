@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer | Prof. Aleks Farseev" />
+<meta property="og:description" content="Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon." />
+<meta property="og:url" content="https://farseev.com/fil/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Mga Agent" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer","description":"Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Mga Agent","about":{"@type":"Thing","name":"Inilunsad ng Meta ang Muse, isang personal na AI agent para sa pang-araw-araw na gawain, sa US"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Ano ang Meta Muse?","acceptedAnswer":{"@type":"Answer","text":"Ang Muse ay isang personal na AI agent na inilunsad ng Meta noong 8 Setyembre 2026. Ayon sa Associated Press, tumutulong ito sa mga pang-araw-araw na gawain gaya ng pag-iskedyul at pamimili, at sinasabi ng Meta na kaya nitong magbukas ng browser, sumagot sa mga form at makipagnegosasyon para sa user."}},{"@type":"Question","name":"Saan available ang Meta Muse?","acceptedAnswer":{"@type":"Answer","text":"Sa paglulunsad, available lamang ito sa US, sa mga taong 18 taong gulang pataas, sa pamamagitan ng hiwalay na Muse app o sa loob ng WhatsApp."}},{"@type":"Question","name":"Paano dapat maghanda ang mga brand para sa mga personal na AI agent?","acceptedAnswer":{"@type":"Answer","text":"Sa paglalathala ng malinaw at machine-readable na mga alok at polisiya, pag-aalis ng mga manipulatibong design pattern, pagpapasya nang maaga kung aling mga tuntunin ang maaaring pag-usapan, at pagpapanatili ng malakas na creative na nakaharap sa tao para sa sandaling gumawa ang customer ng huling desisyon."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer","item":"https://farseev.com/fil/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-muse-personal-ai-agent/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-muse-personal-ai-agent/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-muse-personal-ai-agent/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Mga Agent</p>
+      <h1 class="h-display">Meta Muse: Ano ang Mangyayari Kapag Nagpadala ng Agent ang Iyong Customer</h1>
+      <p class="lead">Inilunsad ng Meta ang Muse, isang personal na AI agent na kayang mag-book, mamili at makipagnegosasyon para sa user. Ang pag-market sa mga agent, hindi lamang sa mga tao, ay praktikal nang tanong ngayon.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Inilunsad ng Meta ang Muse, isang personal na AI agent para sa pang-araw-araw na gawain, sa US (<time datetime="2026-09-08">8 Setyembre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Sa loob ng dalawampung taon, ipinagpalagay ng digital marketing na may isang tao sa dulo ng funnel. Noong 8 Setyembre, inilunsad ng Meta ang Muse, isang personal na AI agent na kayang kumilos para sa taong iyon: magpadala ng email, mag-book ng biyahe, sumagot sa mga form at, sa mga salita ng Meta, "makipagnegosasyon para sa kanila". Naroon pa rin ang tao. Ngunit lalong may agent na nakatayo sa pagitan nila at mo.</p>
+<h2>Ano ang nangyari</h2>
+<p>Ayon sa <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">ulat ng Associated Press</a>, ang Muse ay isang personal na AI agent para sa mga pang-araw-araw na gawain gaya ng iskedyul at pamimili. Sinasabi ng Meta na kapag ibinahagi ng user ang isang layunin, bumubuo ang Muse ng personalised na plano, inaayos ang oras at mga mapagkukunan at isinusulong ang trabaho nang mag-isa. Ang mga halimbawa ay mula sa pagpapadala ng email o pag-book ng biyahe hanggang sa pagbuo ng isang taong exercise plan o pagsisimula ng bagong negosyo. Sinasabi ng Meta na kayang magbukas ng Muse ng browser, sumagot sa mga form at makipagnegosasyon para sa user.</p>
+<p>Available ang Muse sa mga taong 18 taong gulang pataas, sa kasalukuyan ay sa US lamang, sa pamamagitan ng hiwalay na Muse app o sa loob ng WhatsApp. Binigyang-diin ng Meta ang kaligtasan at privacy at sinasabing tumatakbo ang Muse sa isang nakalaan at ligtas na virtual machine na naglalaman ng agent at ng data ng user. Iniuugnay ng AP ang launch sa sanaysay ni Mark Zuckerberg tungkol sa personal superintelligence, kung saan isinulat niya na magkakaroon ang lahat ng "isang pambihirang may-kakayahang personal na agent na nakauunawa sa iyo, sa iyong mga layunin".</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Kapag naghahambing ang isang tao ng tatlong hotel, may pagkakataon ang iyong brand na akitin sila: isang larawan, isang review, isang pakiramdam. Kapag naghahambing ang isang agent ng tatlong hotel para sa tao, nagbabasa ito ng mga structured na katotohanan, polisiya at presyo, at maaaring hindi nito kailanman "makita" ang larawan sa paraang nakikita ito ng tao. Ang negosasyon ang mas radikal na bahagi. Hindi tumutugon sa mga scarcity banner ang agent na nakikipagnegosasyon.</p>
+<p>Mahalaga rin ang distribusyon. Nasa loob ng WhatsApp ang Muse, isa sa pinakamahalagang messaging channel sa Asya, Latin America at Africa. Sa US lamang ito sa ngayon, ngunit ang personal na agent na nakapaloob sa messaging app na ginagamit na ng marami sa ating mga customer ay hindi isang niche na eksperimento.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Ang aking pananaliksik ay palaging tungkol sa pag-unawa sa mga tao mula sa kanilang mga digital na bakas. Sa <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) at sa <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017), na pinagsama ang mga social media post at wearable-sensor data upang matutunan ang mga wellness profile, ipinakita namin na ang pagsasama ng mga source ay nagbibigay ng mas mayamang larawan ng isang tao kaysa sa alinmang iisang source.</p>
+<p>Ang personal na agent ang pinakasukdulang bersyon ng ideyang iyon, na may isang malaking pagkakaiba: nasa agent na ng user ang profile, hindi sa advertiser. Idinisenyo ang Muse upang maunawaan ang mga layunin ng user at kumilos batay sa mga ito. Binabago nito ang balanse ng impormasyon. Hindi na pino-profile ng brand ang customer upang magpasya kung ano ang ipapakita. Pino-profile ng agent ng customer ang brand upang magpasya kung ano ang tatanggapin.</p>
+<p>Binabago nito ang kahulugan ng "personalisation". Sa aming gawain sa <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">personality-driven na rekomendasyon ng content</a> (ACM Multimedia 2022), ang layunin ay itugma ang content sa mga katangian ng tao. Kapag may mga agent sa loop, kailangan mo ng dalawang layer: isang malinaw, makatotohanan at machine-readable na alok na kayang i-evaluate ng agent, at creative na nakaharap sa tao para sa sandaling tumingala ang tao at magpasya. Ang mahusay na marketing sa mga agent ay magmumukhang mahusay na dokumentasyon. Ang mahusay na marketing sa mga tao ay magmumukha pa ring mahusay na storytelling.</p>
+<p>May tanong din sa pananagutan na mahalaga sa akin. Ang agent na nakikipagnegosasyon para sa isang user ay dapat tapat sa user na iyon. Kung magsisimulang tumanggap ang mga agent ng bayad na preferensya nang walang disclosure, muli nating naitayo ang pinakamasasamang bahagi ng ad industry sa loob ng pinakapersonal na software na nagamit ng mga tao. Malugod na tinatanggap ang diin ng Meta sa privacy; kasinghalaga nito ang transparency tungkol sa komersyal na impluwensiya sa mga desisyon ng agent.</p>
+<h2>Ang dapat gawin ngayon ng mga marketer</h2>
+<ul><li>Gawing nababasa ng mga makina ang iyong alok. Dapat tahasan, pare-pareho at madaling i-parse ang mga presyo, availability, return policy, oras ng delivery at mga tuntunin sa iyong site at sa iyong mga feed.</li><li>Alisin ang mga dark pattern. Ang mga countdown timer at nakatagong bayarin ay abala para sa mga agent at problema sa tiwala para sa mga tao.</li><li>Maghandang makipagnegosasyon. Pagpasyahan nang maaga kung aling mga tuntunin ang flexible, gaya ng mga bundle, delivery window o loyalty perk, upang makakuha ng mabilis at pare-parehong sagot ang isang automated na request.</li><li>Panatilihin ang sandali ng tao. Madalas na tao pa rin ang huling "oo". Mahalaga pa rin sa hakbang na iyon ang kuwento ng iyong brand, mga review at creative.</li><li>Bantayan ang mga messaging channel. Kung nasa loob ng WhatsApp ang mga agent, magiging mas mahalaga ang iyong conversational commerce setup.</li></ul>
+<p>Ang Muse ay isang produkto sa isang bansa. Ang pattern na kinakatawan nito, isang customer na nagpapasa ng gawain, ay lalaganap. Bumuo para sa parehong audience: ang agent na naghahambing at ang taong nagpapasya.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Ano ang Meta Muse?</summary><p>Ang Muse ay isang personal na AI agent na inilunsad ng Meta noong 8 Setyembre 2026. Ayon sa Associated Press, tumutulong ito sa mga pang-araw-araw na gawain gaya ng pag-iskedyul at pamimili, at sinasabi ng Meta na kaya nitong magbukas ng browser, sumagot sa mga form at makipagnegosasyon para sa user.</p></details><details><summary>Saan available ang Meta Muse?</summary><p>Sa paglulunsad, available lamang ito sa US, sa mga taong 18 taong gulang pataas, sa pamamagitan ng hiwalay na Muse app o sa loob ng WhatsApp.</p></details><details><summary>Paano dapat maghanda ang mga brand para sa mga personal na AI agent?</summary><p>Sa paglalathala ng malinaw at machine-readable na mga alok at polisiya, pag-aalis ng mga manipulatibong design pattern, pagpapasya nang maaga kung aling mga tuntunin ang maaaring pag-usapan, at pagpapanatili ng malakas na creative na nakaharap sa tao para sa sandaling gumawa ang customer ng huling desisyon.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Mga Agent · 22 Oktubre 2026</span><h3>Naging Vendor-Neutral ang Agent Skills: Bakit Dapat Itong Pansinin ng mga Marketer</h3><p>Ibinigay ng Anthropic ang Agent Skills standard sa Agentic AI Foundation. Ang portable at nakasulat na know-how ang mismong kailangan ng mga marketing team mula sa mga AI agent.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/workday-c1-ai-agent-identity/"><span class="meta">Mga Agent · 13 Oktubre 2026</span><h3>Binili ng Workday ang C1.ai: Kailangan din ng Identity ng Iyong mga Marketing Agent</h3><p>Pumayag ang Workday na bilhin ang C1.ai, na namamahala ng access para sa mga tao at AI agent. Kailangan ng parehong patakaran ang mga marketing agent na humahawak ng CRM at ad account.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/openai-agent-medicare-portal-australia/"><span class="meta">Mga Agent · 24 Setyembre 2026</span><h3>Ang AI Agent na Ayaw Tumanggap ng Hindi</h3><p>Sinabi ng punong ministro ng Australia na nakalusot ang isang OpenAI research agent sa mga harang sa isang Medicare statistics portal. Ang aral para sa mga marketing agent ay tungkol sa scope.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

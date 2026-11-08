@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Sa Advertising Week New York, pinalawak ng Meta ang AI video, ang ads assistant nito, ang plain-language audiences at isang Ads MCP server. Ano ang dapat manatiling hawak ng mga marketer." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation | Prof. Aleks Farseev" />
+<meta property="og:description" content="Sa Advertising Week New York, pinalawak ng Meta ang AI video, ang ads assistant nito, ang plain-language audiences at isang Ads MCP server. Ano ang dapat manatiling hawak ng mga marketer." />
+<meta property="og:url" content="https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — Balitang AI, ipinaliwanag" />
+<meta property="og:locale" content="tl_PH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Ads at marketing AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Sa Advertising Week New York, pinalawak ng Meta ang AI video, ang ads assistant nito, ang plain-language audiences at isang Ads MCP server. Ano ang dapat manatiling hawak ng mga marketer." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation","description":"Sa Advertising Week New York, pinalawak ng Meta ang AI video, ang ads assistant nito, ang plain-language audiences at isang Ads MCP server. Ano ang dapat manatiling hawak ng mga marketer.","image":"https://farseev.com/og-image.png","inLanguage":"fil","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fil/blog/#blog"},"articleSection":"Ads at marketing AI","about":{"@type":"Thing","name":"Inanunsyo ng Meta ang mga bagong AI advertising tool sa Advertising Week New York 2026"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Anong mga AI ad tool ang inanunsyo ng Meta sa Advertising Week 2026?","acceptedAnswer":{"@type":"Answer","text":"Ayon sa Relevant Audience at TechJuice, inanunsyo ng Meta ang pangkalahatang available na Advantage+ creative video mula sa mga static na larawan, mas malawak na rollout ng Ads Creative Studio, isang assistant na may memory at mga test ng agentic na aksyon, plain-language na audience discovery sa Detailed Targeting, isang pinalawak na Ads MCP server at mga test ng in-chat checkout."}},{"@type":"Question","name":"Ano ang Ads MCP server ng Meta?","acceptedAnswer":{"@type":"Answer","text":"Isa itong interface batay sa Model Context Protocol na nagpapahintulot sa mga third-party na AI tool na kumonekta sa advertising system ng Meta para sa mga gawain gaya ng pag-upload ng creative, preview, pag-uulat at paggawa ng draft ng campaign. Naglilista ang Relevant Audience ng sampung partner, kabilang ang Databricks, Perplexity at Snowflake."}},{"@type":"Question","name":"Dapat bang hayaan ng mga advertiser ang mga AI assistant na baguhin ang budget at targeting?","acceptedAnswer":{"@type":"Answer","text":"Kung may mga patakaran lamang. Gumamit ng mga preview at pag-apruba, tukuyin kung aling mga pagbabago ang maaaring awtomatikong mangyari, at suriin ang mga resulta gamit ang independiyenteng pagsukat gaya ng mga holdout test sa halip na umasa lamang sa mga conversion na iniulat ng platform."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/fil/"},{"@type":"ListItem","position":2,"name":"Balitang AI","item":"https://farseev.com/fil/blog/"},{"@type":"ListItem","position":3,"name":"Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation","item":"https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fil/","jobTitle":"Founder at CEO ng SOMIN.ai; Guest Professor sa AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fil/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Pangunahin"><a href="/fil/#about">Tungkol</a><a href="/fil/#research">Pananaliksik</a><a href="/fil/blog/" aria-current="page">Balitang AI</a><a href="/fil/#talks">Mga Talk</a><a href="/fil/#connect">Kumonekta</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Wika" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-advertising-week-2026-ai-ad-tools/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-advertising-week-2026-ai-ad-tools/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-advertising-week-2026-ai-ad-tools/">हिन्दी</option><option value="fil" lang="fil" selected>Filipino</option><option value="ru" lang="ru" data-href="/ru/blog/meta-advertising-week-2026-ai-ad-tools/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/fil/">Home</a></li><li><a href="/fil/blog/">Balitang AI</a></li><li aria-current="page">Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation</li></ol></nav>
+      <p class="eyebrow">Balitang AI, ipinaliwanag · Ads at marketing AI</p>
+      <h1 class="h-display">Mga Bagong AI Ad Tool ng Meta: Kailangan Pa Rin ng Paliwanag ang Automation</h1>
+      <p class="lead">Sa Advertising Week New York, pinalawak ng Meta ang AI video, ang ads assistant nito, ang plain-language audiences at isang Ads MCP server. Ano ang dapat manatiling hawak ng mga marketer.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Ang balita: Inanunsyo ng Meta ang mga bagong AI advertising tool sa Advertising Week New York 2026 (<time datetime="2026-10-06">6 Oktubre 2026</time>)</span></p>
+      <p class="byline"><span>Ni <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 Nobyembre 2026</time><span class="dot"></span><span>4 na minutong basa</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Taun-taon, isa pang hakbang ang ginagawa ng malalaking platform patungo sa pagpapatakbo ng buong campaign para sa iyo. Sa Advertising Week New York noong 6 Oktubre, ilang hakbang ang sabay-sabay na ginawa ng Meta: isang advertising assistant na may memory, video na nalilikha mula sa mga static na larawan, plain-language na audience discovery at isang pinalawak na server na nagpapahintulot sa mga panlabas na AI tool na patakbuhin ang ads system nito. Mga kapaki-pakinabang na tool. Ngunit ang automation nang walang paliwanag ay panganib na ikaw ang umaako, hindi ang Meta para sa iyo.</p>
+<h2>Ano ang nangyari</h2>
+<p>Hindi ko mabuksan ang sariling announcement page ng Meta, kaya umaasa ako sa dalawang detalyadong write-up. Ayon sa <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">breakdown ng Relevant Audience</a> at sa <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">ulat ng TechJuice</a>, inanunsyo ng Meta ang:</p>
+<ul><li>Advantage+ creative video mula sa mga static na larawan, na pangkalahatang available na ngayon, at catalog product video sa beta para sa mga kwalipikadong advertiser.</li><li>Ads Creative Studio, isang creative workspace na dating limitado sa mga piling partner, na nagsisimulang ilunsad sa mas maraming advertiser.</li><li>Isang business AI assistant na may memory sa iba't ibang pag-uusap, na may mga test ng pag-import ng mga strategy document at brand guideline, nakaiskedyul na mga ulat at alerto, at mga agentic na aksyon gaya ng campaign setup at pagbabago ng budget na may mga preview at pag-apruba.</li><li>Isang customer lifecycle strategy tool, na available na ngayon sa lahat ng advertiser, kasama ang AI-enabled na audience discovery sa Detailed Targeting, kung saan inilalarawan ng mga advertiser ang isang ideal na customer sa simpleng wika. Iniulat ng Relevant Audience na ang timing ng Meta para dito ay "bago matapos ang taon".</li><li>Isang pinalawak na Ads MCP server, na may sampung pinangalanang partner kabilang ang Databricks, Perplexity, Snowflake at Triple Whale, upang makapagtrabaho ang mga third-party na AI tool sa advertising system ng Meta.</li><li>Mga commerce feature, kabilang ang mga test ng direktang checkout sa pamamagitan ng Business Agent ng Meta sa Messenger kasama ang Shopify, at direktang checkout sa Meta AI kasama ang mga partner gaya ng Adyen, PayPal, Shopify at Stripe.</li></ul>
+<p>Inangkin din ng Meta na ang mga advertiser na tumatanggap sa mga rekomendasyon ng assistant nito ay "karaniwang" nakakakita ng 5% na mas maraming conversion sa parehong gastos bawat conversion, at na mahigit 60% ng oras sa Facebook at Instagram ay ginugugol sa video. Binanggit ng Relevant Audience na hindi naglathala ang Meta ng pamamaraan para sa mga numerong ito.</p>
+<h2>Bakit ito mahalaga</h2>
+<p>Dalawa sa mga launch na ito ang nagbabago kung sino ang nag-iisip.</p>
+<p>Ang plain-language na audience discovery ay nangangahulugang isinasalin ng platform ang iyong paglalarawan ng customer bilang targeting. Isa iyong desisyon sa profiling. Ang mga pagbabago sa budget at targeting na pinapatakbo ng assistant ay nangangahulugang ang platform din ang nagpapasya kung ano ang gagawin sa resulta. At ang MCP server ay nangangahulugang ang AI na ginagamit mo sa labas ng Meta ay maaari nang kumilos sa loob ng Meta.</p>
+<p>Nakatitipid ng oras ang bawat hakbang. Magkakasama, pinagtitipon nila ang mga desisyon sa loob ng mga system na naka-optimise para sa mga layunin ng platform at sinusukat gamit ang sariling data ng platform. Kapag iisang kumpanya ang nagbebenta ng ad, pumipili ng audience, lumilikha ng creative at nag-uulat ng resulta, nagiging mas mahalaga, hindi mas kaunti, ang isang independiyenteng pananaw.</p>
+<h2>Ang sinasabi ng aking pananaliksik</h2>
+<p>Ang paglalarawan ng audience sa mga salita at pagkuha ng target segment pabalik ay problemang matagal ko nang pinag-aaralan. Ipinakita ng aming gawain sa <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">multi-view user personality profiling sa Twitter, Facebook at PersonalityCafe</a> (Frontiers in Big Data, 2022) na ang nahihinuha mo tungkol sa mga tao ay lubos na nakasalalay sa kung aling mga signal ang ginagamit mo. Ang isang plain-language na paglalarawan ay isang hypothesis tungkol sa iyong customer. Nararapat itong subukan, hindi lamang ipatupad.</p>
+<p>Sa creative, nagtrabaho ang aking team sa pag-score bago ang launch. Sa <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023), nagpakita kami ng isang multimodal model na nagbibigay ng score sa mga Meta ad creative ng isang advertiser, gamit ang text, larawan, targeting at settings, bago maging live ang mga ito. Sa <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), nagdagdag kami ng LLM assistant na nagpapaliwanag kung ano ang nagtutulak sa isang hinulaang click-through rate. Ang prinsipyo ay pareho sa inilalapat ko sa mga platform tool: ang score na hindi mo maipaliwanag ay score na hindi mo mapag-aaralan.</p>
+<p>Pararamihin ng video na nalilikha mula sa mga static na larawan ang bilang ng mga variant na kayang patakbuhin ng isang brand. Mabuti iyan, basta't may nagpapasya pa rin kung aling mga variant ang karapat-dapat sa budget at nauunawaan kung bakit nanalo ang mga nanalo. Kung hindi, mas maraming creative ang makukuha mo at mas kaunting kaalaman.</p>
+<h2>Ang dapat gawin ngayon ng mga advertiser</h2>
+<ul><li>Gamitin ang mga bagong video at creative tool, ngunit panatilihin ang isang pre-launch filter. Suriin at i-score ang mga variant bago sila gumastos ng pera, at magtala kung bakit inilabas ang bawat isa.</li><li>Ituring na eksperimento ang mga plain-language na audience. Isulat ang paglalarawan, patakbuhin ito laban sa iyong kasalukuyang pinakamahusay na audience, at ihambing ang gastos bawat tunay na resulta, hindi lamang ang mga conversion ng platform.</li><li>Sadyang aprubahan ang mga agentic na pagbabago. Gamitin ang mga preview at pag-apruba na inilalarawan ng Meta, at magtakda ng mga patakaran kung aling mga pagbabago ang maaaring gawin ng assistant nang walang tao.</li><li>Mag-ingat sa ini-import mo. Sensitibo ang mga strategy document at brand guideline. Pagpasyahan kung ano talaga ang kailangan ng assistant.</li><li>Panatilihin ang isang independiyenteng pananaw sa pagsukat. Ang mga holdout, incrementality test at sarili mong analytics ang panimbang sa mga resultang iniulat ng platform.</li></ul>
+<p>Nagiging sapat na ang husay ng mga tool ng Meta kaya lumilipat ang bottleneck mula sa pagpapatupad patungo sa paghuhusga. Tiyaking ang iyong team pa rin ang gumagamit nito.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Anong mga AI ad tool ang inanunsyo ng Meta sa Advertising Week 2026?</summary><p>Ayon sa Relevant Audience at TechJuice, inanunsyo ng Meta ang pangkalahatang available na Advantage+ creative video mula sa mga static na larawan, mas malawak na rollout ng Ads Creative Studio, isang assistant na may memory at mga test ng agentic na aksyon, plain-language na audience discovery sa Detailed Targeting, isang pinalawak na Ads MCP server at mga test ng in-chat checkout.</p></details><details><summary>Ano ang Ads MCP server ng Meta?</summary><p>Isa itong interface batay sa Model Context Protocol na nagpapahintulot sa mga third-party na AI tool na kumonekta sa advertising system ng Meta para sa mga gawain gaya ng pag-upload ng creative, preview, pag-uulat at paggawa ng draft ng campaign. Naglilista ang Relevant Audience ng sampung partner, kabilang ang Databricks, Perplexity at Snowflake.</p></details><details><summary>Dapat bang hayaan ng mga advertiser ang mga AI assistant na baguhin ang budget at targeting?</summary><p>Kung may mga patakaran lamang. Gumamit ng mga preview at pag-apruba, tukuyin kung aling mga pagbabago ang maaaring awtomatikong mangyari, at suriin ang mga resulta gamit ang independiyenteng pagsukat gaya ng mga holdout test sa halip na umasa lamang sa mga conversion na iniulat ng platform.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Mga Source</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Si <b>Prof. Aleks Farseev</b> ang founder at CEO ng SOMIN.ai at Guest Professor sa AI sa NUS at INSEAD. Sakop ng kanyang peer-reviewed na pananaliksik ang multi-source user profiling, personality-aware recommendation at explainable AI para sa marketing.</p>
+<p class="links"><a href="/fil/">Tungkol kay Aleks</a><a href="/fil/#publications">Mga Publikasyon</a><a href="/fil/blog/">Iba pang balitang AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Magpatuloy sa pagbasa</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Iba pang balitang AI, ipinaliwanag</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fil/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads at marketing AI · 29 Oktubre 2026</span><h3>Q3 2026 ng WPP: Ang Agency Model sa Ilalim ng Presyon ng AI</h3><p>Nag-ulat ang WPP ng bumababang like-for-like net revenue habang itinuro ng CEO nito ang demand para sa mga AI-enabled na serbisyo sa pamamagitan ng WPP Open. Ano ang sinasabi nito tungkol sa mga ahensya.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Ads at marketing AI · 21 Oktubre 2026</span><h3>Meta Q3 2026: Itinaas ng AI ang Presyo ng Ad, Naging Channel ang mga Creator</h3><p>Q3 2026 ng Meta: tumaas nang 26% ang ad revenue, tumaas nang 14% ang presyo bawat ad, lumampas sa $15bn run rate ang partnership ads, at ibang-iba na ang Asia-Pacific. Ano ang kahulugan nito.</p><span class="go">Basahin →</span></a><a class="pcard" href="/fil/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Ads at marketing AI · 30 Setyembre 2026</span><h3>Amazon Ads Agent: Nagiging Agentic ang Retail Media sa unBoxed 2026</h3><p>Sa unBoxed 2026, pinagsama ng Amazon ang mga buying tool nito sa Amazon Ads Agent, na may conversational measurement at AI creative. Ano ang dapat manatili sa kamay ng tao.</p><span class="go">Basahin →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Propesor sa AI, keynote speaker at akordyonista. Pinag-uugnay ang malalim na pananaliksik at ang tunay na marketing mula Singapore patungo sa buong mundo.</p>
+      </div>
+      <div>
+        <h6>Tuklasin</h6>
+        <ul>
+          <li><a href="/fil/">Home</a></li>
+          <li><a href="/fil/blog/">Blog ng balitang AI</a></li>
+          <li><a href="/fil/#research">Pananaliksik</a></li>
+          <li><a href="/fil/#publications">Mga Publikasyon</a></li>
+          <li><a href="/fil/#connect">Makipag-ugnayan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Sa ibang lugar</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Sariling opinyon ko ang mga ito. Naka-link sa kanilang source ang mga katotohanan sa balita.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
