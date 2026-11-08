@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropics Claude Opus 5.5 kommt mit Wasserzeichen für die Konformität mit dem EU AI Act und dem Hinweis, dass das Modell oft vermutet, getestet zu werden. Beides ist für Marketer relevant." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropics Claude Opus 5.5 kommt mit Wasserzeichen für die Konformität mit dem EU AI Act und dem Hinweis, dass das Modell oft vermutet, getestet zu werden. Beides ist für Marketer relevant." />
+<meta property="og:url" content="https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Modelle" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropics Claude Opus 5.5 kommt mit Wasserzeichen für die Konformität mit dem EU AI Act und dem Hinweis, dass das Modell oft vermutet, getestet zu werden. Beides ist für Marketer relevant." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung","description":"Anthropics Claude Opus 5.5 kommt mit Wasserzeichen für die Konformität mit dem EU AI Act und dem Hinweis, dass das Modell oft vermutet, getestet zu werden. Beides ist für Marketer relevant.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Modelle","about":{"@type":"Thing","name":"Anthropic veröffentlicht Claude Opus 5.5, das erste Modell der Claude-5.5-Familie"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Was ist Claude Opus 5.5?","acceptedAnswer":{"@type":"Answer","text":"Es ist das erste Modell der Claude-5.5-Familie von Anthropic, veröffentlicht am 22. September 2026. Laut Anthropic erreicht es bei den meisten Arbeiten das Niveau von Claude Fable 5.1, führt seine Benchmarks bei agentischem Programmieren, Computernutzung und Wissensarbeit an und kostet bei typischen Workloads etwa 40 % weniger als Opus 5."}},{"@type":"Question","name":"Versieht Claude Opus 5.5 seine Ausgaben mit Wasserzeichen?","acceptedAnswer":{"@type":"Answer","text":"Anthropics Ankündigung hält fest, dass Opus 5.5 Wasserzeichen zur Einhaltung des EU AI Act enthält."}},{"@type":"Question","name":"Was verlangen die EU-Transparenzregeln für KI von Marketern?","acceptedAnswer":{"@type":"Answer","text":"Laut der Europäischen Kommission umfassen die ab dem 2. August 2026 geltenden Transparenzpflichten die klare Kennzeichnung von Deepfakes, die Kennzeichnung KI-generierter Texte zu Angelegenheiten von öffentlichem Interesse und die Information von Menschen, wenn sie mit einem KI-System wie einem Chatbot interagieren. Nicht nur Anbieter, sondern auch Betreiber generativer KI haben Pflichten."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung","item":"https://farseev.com/de/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/claude-opus-5-5-watermarking-eu-ai-act/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/claude-opus-5-5-watermarking-eu-ai-act/">Filipino</option><option value="es" lang="es" data-href="/es/blog/claude-opus-5-5-watermarking-eu-ai-act/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/claude-opus-5-5-watermarking-eu-ai-act/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Modelle</p>
+      <h1 class="h-display">Claude Opus 5.5: Wasserzeichen, Audits und KI-Inhaltskennzeichnung</h1>
+      <p class="lead">Anthropics Claude Opus 5.5 kommt mit Wasserzeichen für die Konformität mit dem EU AI Act und dem Hinweis, dass das Modell oft vermutet, getestet zu werden. Beides ist für Marketer relevant.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Anthropic veröffentlicht Claude Opus 5.5, das erste Modell der Claude-5.5-Familie (<time datetime="2026-09-22">22. September 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Modellveröffentlichungen werden meist wegen ihrer Benchmark-Tabellen gelesen. Als Anthropic am 22. September Claude Opus 5.5 veröffentlichte, standen die beiden für Marketer wichtigsten Zeilen weit unten auf der Seite: Das Modell enthält Wasserzeichen zur Einhaltung des EU AI Act, und laut Anthropic vermutet das Modell oft, dass es evaluiert wird.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Anthropics Ankündigung</a> ist Opus 5.5 das erste Modell der Claude-5.5-Familie und „erreicht bei den meisten Arbeiten das Niveau von Claude Fable 5.1“. Es führt Anthropics Benchmarks bei agentischem Programmieren, Computernutzung und Wissensarbeit an. Der Preis liegt bei 4 US$ pro Million Input-Tokens und 20 US$ pro Million Output-Tokens, und laut Anthropic liegen die Kosten bei typischen Workloads etwa 40 % unter denen von Opus 5.</p>
+<p>Zur Sicherheit gibt Anthropic an, das Modell habe in einem automatisierten Verhaltensaudit mit fast 2.000 Szenarien besser abgeschnitten als jedes andere getestete Modell und neige seltener als neuere Modelle dazu, schwer umkehrbare Handlungen vorzunehmen oder außerhalb seiner Grenzen zu agieren. Zudem vermute das Modell oft, dass es evaluiert wird, was einschränkt, wie gut Evaluierungen das reale Verhalten vorhersagen. Und die Seite hält fest, dass Opus 5.5 Wasserzeichen zur Einhaltung des EU AI Act enthält.</p>
+<p>Zur Einordnung: Die Europäische Kommission <a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">veröffentlichte im Juni ihren endgültigen Code of Practice zur Markierung und Kennzeichnung KI-generierter Inhalte</a>. Der freiwillige Kodex soll Anbietern und Betreibern generativer KI helfen, die ab dem 2. August 2026 geltenden Transparenzpflichten zu erfüllen, darunter die klare Kennzeichnung von Deepfakes, die Kennzeichnung KI-generierter Texte zu Angelegenheiten von öffentlichem Interesse und der Hinweis an Menschen, wenn sie mit einem KI-System wie einem Chatbot interagieren.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Wasserzeichen verlagern die Frage der KI-Offenlegung von der Richtlinie in das Modell selbst. Wenn die Inhalte, die Ihr Team erzeugt, eine maschinenlesbare Markierung tragen, ist „wir haben keine KI verwendet“ eine überprüfbare Aussage. Für Marken verändert das die Kosten eines nachlässigen Umgangs mit Offenlegung.</p>
+<p>Die Pflichten in Europa gelten nicht nur für Modellanbieter. Auch Betreiber, also auch Unternehmen, die KI-generierte Inhalte veröffentlichen, haben Pflichten. Ein Marketingteam, das einen Chatbot betreibt, synthetische Videos veröffentlicht oder KI-geschriebene Texte zu Angelegenheiten von öffentlichem Interesse publiziert, braucht eine Kennzeichnungspraxis — nicht nur ein Modell, das zufällig Wasserzeichen setzt.</p>
+<p>Der Vorbehalt zur Evaluierung ist subtiler und für mich interessanter. Wenn sich ein Modell anders verhält, sobald es einen Test vermutet, sind Testergebnisse eine optimistische Schätzung. Das gilt für Anbieterversprechen zu jedem leistungsfähigen Modell, auch zu denen, die Ihr Marketing betreiben.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Ich vertrete in Forbes seit Langem, dass <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">Transparenz für marketinggetriebene Unternehmen wichtig ist</a> und dass Transparenz und Leistung einander stützen können — die Idee, die ich <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">Redemptive Marketing</a> genannt habe. Gekennzeichnete KI-Inhalte sind ein direkter Test dieser Idee. Ich erwarte, dass das Publikum nicht offengelegte KI stärker bestraft als offengelegte und dass ehrliche Kennzeichnung zum Merkmal einer selbstbewussten Marke wird.</p>
+<p>Zur Evaluierung lehrt meine Forschung zur Vorhersage der Creative-Leistung eine verwandte Lektion. In <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) und <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025) gelten die Vorhersagen eines Modells erst dann als vertrauenswürdig, wenn sie mit dem abgeglichen wurden, was nach dem Start tatsächlich passiert. Scores vor dem Start sind Hypothesen; die Live-Leistung ist der Beleg. Wenn selbst die Labore sagen, dass Labortests optimistisch sein können, sollten Marketer KI-Systeme doppelt sorgfältig im Produktivbetrieb überwachen, nicht nur bei der Beschaffung.</p>
+<h2>Was Marketingteams jetzt tun sollten</h2>
+<ul><li>Schreiben Sie eine Kennzeichnungsrichtlinie. Legen Sie fest, wann Ihre Marke KI-Beteiligung offenlegt: synthetische Bilder und Videos, Chatbots, KI-geschriebene Artikel. Stimmen Sie sie mit den EU-Pflichten ab, wenn Sie dort tätig sind.</li><li>Dokumentieren Sie die Herkunft. Halten Sie fest, welches Tool und welches Modell jedes Asset erzeugt hat, damit Sie später Fragen beantworten können.</li><li>Entfernen Sie keine Wasserzeichen oder Metadaten. Herkunftssignale zu entfernen ist genau die Art von Abkürzung, die aus einer Gestaltungsentscheidung ein Compliance-Problem macht.</li><li>Überwachen Sie im Produktivbetrieb. Erfassen Sie Beschwerden, Korrekturen und markenfremde Ausgaben von KI-Systemen nach dem Start, nicht nur Testergebnisse davor.</li><li>Fragen Sie Anbieter nach dem Verhalten in der Praxis. Wie prüfen sie, dass sich das Modell außerhalb von Evaluierungen genauso verhält?</li></ul>
+<p>Opus 5.5 ist ein leistungsfähiges Modell, und seine Preissenkung wird für viele Teams relevant sein. Die nachhaltigere Veränderung ist jedoch die Erwartung, die es widerspiegelt: KI-Inhalte sollten identifizierbar sein, und KI-Verhalten sollte dort überprüft werden, wo es tatsächlich läuft.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was ist Claude Opus 5.5?</summary><p>Es ist das erste Modell der Claude-5.5-Familie von Anthropic, veröffentlicht am 22. September 2026. Laut Anthropic erreicht es bei den meisten Arbeiten das Niveau von Claude Fable 5.1, führt seine Benchmarks bei agentischem Programmieren, Computernutzung und Wissensarbeit an und kostet bei typischen Workloads etwa 40 % weniger als Opus 5.</p></details><details><summary>Versieht Claude Opus 5.5 seine Ausgaben mit Wasserzeichen?</summary><p>Anthropics Ankündigung hält fest, dass Opus 5.5 Wasserzeichen zur Einhaltung des EU AI Act enthält.</p></details><details><summary>Was verlangen die EU-Transparenzregeln für KI von Marketern?</summary><p>Laut der Europäischen Kommission umfassen die ab dem 2. August 2026 geltenden Transparenzpflichten die klare Kennzeichnung von Deepfakes, die Kennzeichnung KI-generierter Texte zu Angelegenheiten von öffentlichem Interesse und die Information von Menschen, wenn sie mit einem KI-System wie einem Chatbot interagieren. Nicht nur Anbieter, sondern auch Betreiber generativer KI haben Pflichten.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Modelle · 7. Oktober 2026</span><h3>Claude Haiku 5.5 und das Plädoyer für kleine Modelle im Marketing</h3><p>Anthropics Claude Haiku 5.5 ist für günstige, schnelle Arbeit in großen Mengen gebaut. Warum das kleinste Modell einer Familie für Marketer oft das wichtigste ist.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Modelle · 30. September 2026</span><h3>Gemini 4 Argon: Eine Million Output-Tokens — und jetzt?</h3><p>Google DeepMinds Gemini 4 Argon bringt ein Output-Limit von 1M Tokens und einen Rollout mit Fokus auf Cybersicherheit. Was KI mit langem Horizont an Marketingarbeit ändert — und was nicht.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Modelle · 29. September 2026</span><h3>Warum OpenAI GPT-6.1 Astra auf Eis legte und warum das zählt</h3><p>OpenAI hat die Veröffentlichung von GPT-6.1 Astra abgesagt, nachdem Tests Probleme bei Umfang, Autorisierung und Berichterstattung zeigten. Dieselben Tests gelten für Ihre Agenten.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

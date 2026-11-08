@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus | Prof. Aleks Farseev" />
+<meta property="og:description" content="Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams." />
+<meta property="og:url" content="https://farseev.com/de/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulierung und Sicherheit" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/","headline":"MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus","description":"Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Regulierung und Sicherheit","about":{"@type":"Thing","name":"Die MAS veröffentlicht Guidelines on Artificial Intelligence Risk Management für Finanzinstitute"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"Wann treten die KI-Risikomanagement-Leitlinien der MAS in Kraft?","acceptedAnswer":{"@type":"Answer","text":"Laut MAS treten die Leitlinien am 7. Oktober 2027 in Kraft; Institute können die Umsetzung stufenweise vornehmen, und bestimmte spätere Abschnitte gelten bis zum 7. Oktober 2028."}},{"@type":"Question","name":"Gelten die MAS-Leitlinien auch für KI von Anbietern?","acceptedAnswer":{"@type":"Answer","text":"Ja. Laut MAS bleiben Finanzinstitute für die in ihren Dienstleistungen eingesetzte KI verantwortlich, auch für KI von Dritten, und sollen Zusicherungen einholen, die Eignung prüfen und ausgleichende Kontrollen anwenden oder einen Dienst einschränken, aussetzen oder ersetzen, wenn die Risiken außerhalb ihres Risikoappetits liegen."}},{"@type":"Question","name":"Gelten die MAS-Leitlinien auch für agentische KI?","acceptedAnswer":{"@type":"Answer","text":"Die MAS wies auf die zunehmende Nutzung agentischer KI-Systeme hin, die autonom handeln und auf Tools zugreifen können, und kündigte an, 2027 den Sektor dazu zu konsultieren, welche zusätzlichen Leitlinien zu agentischer KI hilfreich wären."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus","item":"https://farseev.com/de/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/mas-ai-risk-management-guidelines/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/mas-ai-risk-management-guidelines/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/mas-ai-risk-management-guidelines/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/mas-ai-risk-management-guidelines/">한국어</option><option value="th" lang="th" data-href="/th/blog/mas-ai-risk-management-guidelines/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/mas-ai-risk-management-guidelines/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/mas-ai-risk-management-guidelines/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/mas-ai-risk-management-guidelines/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/mas-ai-risk-management-guidelines/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/mas-ai-risk-management-guidelines/">Filipino</option><option value="es" lang="es" data-href="/es/blog/mas-ai-risk-management-guidelines/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/mas-ai-risk-management-guidelines/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/mas-ai-risk-management-guidelines/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/mas-ai-risk-management-guidelines/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Regulierung und Sicherheit</p>
+      <h1 class="h-display">MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus</h1>
+      <p class="lead">Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Die MAS veröffentlicht Guidelines on Artificial Intelligence Risk Management für Finanzinstitute (<time datetime="2026-10-07">7. Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Für Banken geschriebene Regulierung begeistert Marketer selten. Diese sollte sie zumindest zum Mitschreiben bringen. Am 7. Oktober veröffentlichte die Monetary Authority of Singapore ihre Guidelines on Artificial Intelligence Risk Management. Banken, Versicherer und andere Finanzinstitute sind die direkte Zielgruppe. Doch die Logik der Leitlinien ist eine saubere Vorlage für jedes Team, das KI für Entscheidungen über Kunden einsetzt, auch im Marketing.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">der Pressemitteilung der MAS</a> gelten die Leitlinien für alle Finanzinstitute und alle Formen von KI-Technologie, mit einem „prinzipienbasierten und risikoproportionalen Ansatz“. Die MAS hatte sie im November 2025 zur Konsultation gestellt.</p>
+<p>Die Erwartungen lassen sich in einige Gruppen gliedern. Vorstand und Geschäftsleitung sollen KI-Risiken beaufsichtigen und klare Rollen, Risikoappetit und Rahmenwerke festlegen; ein eigenes KI-Komitee ist nicht erforderlich, wenn bestehende Strukturen eine angemessene Aufsicht gewährleisten. Institute sollen ihre KI-Nutzung identifizieren, Inventare führen, die Wesentlichkeit jeder Nutzung bewerten und über den gesamten Lebenszyklus angemessene Kontrollen anwenden — von Data Governance, Tests, menschlicher Aufsicht und Cybersicherheit bis zu Monitoring und Change Management. Sie bleiben für die in ihren Dienstleistungen eingesetzte KI verantwortlich, auch wenn sie von Dritten stammt, und sollen Zusicherungen einholen und ausgleichende Kontrollen anwenden oder einen Dienst einschränken, aussetzen oder ersetzen, dessen Risiken außerhalb ihres Risikoappetits liegen.</p>
+<p>Die Leitlinien treten am 7. Oktober 2027 in Kraft, einige Abschnitte gelten bis zum 7. Oktober 2028. Die MAS wies zudem auf die zunehmende Nutzung agentischer KI-Systeme hin, die autonom handeln und Tools nutzen können, und kündigte an, 2027 den Sektor dazu zu konsultieren, welche zusätzlichen Leitlinien hilfreich wären.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Schauen Sie, wo KI heute in einer Bank mit Kunden in Berührung kommt: Produktempfehlungen, Next-Best-Offer-Engines, Chatbots, Kreditmarketing, Betrugsprüfung, generierte Inhalte in Kampagnen. Vieles davon wird vom Marketing betrieben oder beauftragt. Nach diesen Leitlinien muss ein Großteil davon in ein Inventar aufgenommen, auf Wesentlichkeit bewertet und über den gesamten Lebenszyklus gesteuert werden.</p>
+<p>Die Klausel zu Drittanbietern ist für das Marketing am wichtigsten. Marketingteams kaufen viel KI ein: von Werbeplattformen, Martech-Anbietern, Agenturen und Freelancern mit eigenen Tools. Die MAS stellt klar, dass das Institut verantwortlich bleibt. „Der Anbieter war's“ ist keine Kontrolle.</p>
+<p>Und der Zeitplan ist großzügig, aber nicht lang. Ein Jahr bis zum Inkrafttreten der Hauptabschnitte reicht, um ein Inventar sauber aufzubauen — aber nicht, um es im letzten Quartal zu erledigen.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Ich habe auf der WSDM 2023 einen Vortrag mit dem Titel <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a> gehalten. Das Kernargument war, dass die ethischen und datenschutzrechtlichen Fragen rund um automatisiertes Profiling, Targeting und Creative-Scoring nicht abstrakt sind. Sie ergeben sich aus konkreten Designentscheidungen, die sich dokumentieren und kontrollieren lassen.</p>
+<p>Genau dazu zwingt ein KI-Inventar. Halten Sie für jeden Einsatz fest, welche Daten hineingehen, welche Entscheidung herauskommt, wer sie prüft und was passiert, wenn etwas schiefgeht. Meine Forschung zu erklärbarer KI für das Marketing, von <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) bis <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), beruhte auf demselben Instinkt: Wenn die Empfehlung eines Modells Geld oder Kunden betrifft, sollten die Verantwortlichen sehen können, warum es diese Empfehlung gegeben hat.</p>
+<p>Ich habe in Forbes auch dargelegt, dass <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">Transparenz für marketinggetriebene Unternehmen wichtig ist</a>. Regulierer machen aus diesem Prinzip nun aufsichtsrechtliche Erwartungen. Teams, die Erklärbarkeit bereits praktizieren, werden Compliance deutlich günstiger finden.</p>
+<h2>Eine praktische Checkliste für Marketingteams (in der Finanzbranche und darüber hinaus)</h2>
+<ul><li>Erstellen Sie das Inventar. Listen Sie jedes KI-System auf, das das Marketing nutzt oder beauftragt: Targeting, Empfehlungen, Chatbots, Content-Generierung, Creative-Scoring, Analytik.</li><li>Bewerten Sie die Wesentlichkeit ehrlich. Ein Tool, das interne Notizen entwirft, ist risikoarm. Ein Modell, das entscheidet, welche Kunden ein Kreditangebot sehen, ist es nicht.</li><li>Erfassen Sie Drittanbieter. Halten Sie für jeden Anbieter und jede Agentur fest, welche KI sie in Ihrem Namen einsetzen und welche Zusicherungen Sie erhalten haben.</li><li>Setzen Sie Menschen dort ein, wo es zählt. Legen Sie fest, wo eine menschliche Prüfung erforderlich ist, bevor kundenwirksame Ausgaben live gehen.</li><li>Überwachen Sie nach dem Start. Modelle driften, und Kampagnen ändern sich. Planen Sie Überprüfungen ein, besonders nach Modell-Updates von Anbietern.</li><li>Beobachten Sie die Konsultation zu agentischer KI. Wenn Sie Agenten erproben, die mit Kundendaten arbeiten, rechnen Sie mit spezifischen Leitlinien und gestalten Sie schon jetzt auf Prüfbarkeit hin.</li></ul>
+<p>Singapurs Regulierer haben die Angewohnheit, Leitlinien zu schreiben, die später zum regionalen Standard werden. Wenn Ihr Unternehmen in ganz Südostasien tätig ist, ist es sinnvoll, diese Leitlinien als Vorschau zu betrachten, auch wenn Sie keine Bank sind.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Wann treten die KI-Risikomanagement-Leitlinien der MAS in Kraft?</summary><p>Laut MAS treten die Leitlinien am 7. Oktober 2027 in Kraft; Institute können die Umsetzung stufenweise vornehmen, und bestimmte spätere Abschnitte gelten bis zum 7. Oktober 2028.</p></details><details><summary>Gelten die MAS-Leitlinien auch für KI von Anbietern?</summary><p>Ja. Laut MAS bleiben Finanzinstitute für die in ihren Dienstleistungen eingesetzte KI verantwortlich, auch für KI von Dritten, und sollen Zusicherungen einholen, die Eignung prüfen und ausgleichende Kontrollen anwenden oder einen Dienst einschränken, aussetzen oder ersetzen, wenn die Risiken außerhalb ihres Risikoappetits liegen.</p></details><details><summary>Gelten die MAS-Leitlinien auch für agentische KI?</summary><p>Die MAS wies auf die zunehmende Nutzung agentischer KI-Systeme hin, die autonom handeln und auf Tools zugreifen können, und kündigte an, 2027 den Sektor dazu zu konsultieren, welche zusätzlichen Leitlinien zu agentischer KI hilfreich wären.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Regulierung und Sicherheit · 12. Oktober 2026</span><h3>Distillation-Angriffe: Was kopierte KI-Modelle für Sie bedeuten</h3><p>US-Behörden nannten in einer Warnung zu Distillation sechs chinesische KI-Firmen, und Anthropic sagt, seine Abwehr reduziere abgeschöpfte Daten um 90 bis 99 %. Was das für KI-Käufer bedeutet.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulierung und Sicherheit · 29. September 2026</span><h3>Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer</h3><p>Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Werbung und Marketing-KI · 29. Oktober 2026</span><h3>WPP im dritten Quartal 2026: Das Agenturmodell unter KI-Druck</h3><p>WPP meldete einen Rückgang des organischen Nettoumsatzes, während der CEO auf die Nachfrage nach KI-gestützten Leistungen über WPP Open verwies. Was das über Agenturen aussagt.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

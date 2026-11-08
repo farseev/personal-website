@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta hat Muse vorgestellt, einen persönlichen KI-Agenten, der im Auftrag von Nutzern buchen, einkaufen und verhandeln kann. Marketing für Agenten, nicht nur für Menschen, ist jetzt eine praktische Frage." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta hat Muse vorgestellt, einen persönlichen KI-Agenten, der im Auftrag von Nutzern buchen, einkaufen und verhandeln kann. Marketing für Agenten, nicht nur für Menschen, ist jetzt eine praktische Frage." />
+<meta property="og:url" content="https://farseev.com/de/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agenten" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta hat Muse vorgestellt, einen persönlichen KI-Agenten, der im Auftrag von Nutzern buchen, einkaufen und verhandeln kann. Marketing für Agenten, nicht nur für Menschen, ist jetzt eine praktische Frage." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt","description":"Meta hat Muse vorgestellt, einen persönlichen KI-Agenten, der im Auftrag von Nutzern buchen, einkaufen und verhandeln kann. Marketing für Agenten, nicht nur für Menschen, ist jetzt eine praktische Frage.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Agenten","about":{"@type":"Thing","name":"Meta startet Muse, einen persönlichen KI-Agenten für alltägliche Aufgaben, in den USA"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Was ist Meta Muse?","acceptedAnswer":{"@type":"Answer","text":"Muse ist ein persönlicher KI-Agent, den Meta am 8. September 2026 gestartet hat. Laut Associated Press hilft er bei alltäglichen Aufgaben wie Terminplanung und Einkäufen, und laut Meta kann er einen Browser öffnen, Formulare ausfüllen und im Namen eines Nutzers verhandeln."}},{"@type":"Question","name":"Wo ist Meta Muse verfügbar?","acceptedAnswer":{"@type":"Answer","text":"Zum Start war es nur in den USA verfügbar, für Personen ab 18 Jahren, über eine eigene Muse-App oder innerhalb von WhatsApp."}},{"@type":"Question","name":"Wie sollten sich Marken auf persönliche KI-Agenten vorbereiten?","acceptedAnswer":{"@type":"Answer","text":"Indem sie klare, maschinenlesbare Angebote und Richtlinien veröffentlichen, manipulative Designmuster entfernen, im Voraus festlegen, welche Konditionen verhandelbar sind, und starke, auf Menschen ausgerichtete Creatives für den Moment bereithalten, in dem der Kunde die endgültige Entscheidung trifft."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt","item":"https://farseev.com/de/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-muse-personal-ai-agent/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-muse-personal-ai-agent/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-muse-personal-ai-agent/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/meta-muse-personal-ai-agent/">Filipino</option><option value="es" lang="es" data-href="/es/blog/meta-muse-personal-ai-agent/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/meta-muse-personal-ai-agent/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/meta-muse-personal-ai-agent/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Agenten</p>
+      <h1 class="h-display">Meta Muse: Was passiert, wenn Ihr Kunde einen Agenten schickt</h1>
+      <p class="lead">Meta hat Muse vorgestellt, einen persönlichen KI-Agenten, der im Auftrag von Nutzern buchen, einkaufen und verhandeln kann. Marketing für Agenten, nicht nur für Menschen, ist jetzt eine praktische Frage.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Meta startet Muse, einen persönlichen KI-Agenten für alltägliche Aufgaben, in den USA (<time datetime="2026-09-08">8. September 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Zwanzig Jahre lang ging digitales Marketing davon aus, dass am Ende des Funnels ein Mensch sitzt. Am 8. September startete Meta Muse, einen persönlichen KI-Agenten, der für diesen Menschen handeln kann: eine E-Mail senden, Reisen buchen, Formulare ausfüllen und, in Metas Worten, „in ihrem Namen verhandeln“. Der Mensch ist noch da. Doch zunehmend steht ein Agent zwischen ihm und Ihnen.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">dem Bericht der Associated Press</a> ist Muse ein persönlicher KI-Agent für alltägliche Aufgaben wie Terminplanung und Einkäufe. Laut Meta erstellt Muse, sobald ein Nutzer ein Ziel nennt, einen personalisierten Plan, koordiniert Zeit und Ressourcen und treibt die Arbeit selbstständig voran. Die Beispiele reichen vom Versenden einer E-Mail oder dem Buchen einer Reise bis zum Erstellen eines einjährigen Trainingsplans oder dem Aufbau eines neuen Unternehmens. Laut Meta kann Muse einen Browser öffnen, Formulare ausfüllen und für den Nutzer verhandeln.</p>
+<p>Muse steht Personen ab 18 Jahren zur Verfügung, derzeit nur in den USA, über eine eigene Muse-App oder innerhalb von WhatsApp. Meta betonte Sicherheit und Datenschutz und gibt an, dass Muse auf einer dedizierten, sicheren virtuellen Maschine läuft, die sowohl den Agenten als auch die Daten des Nutzers enthält. Die AP verknüpft den Start mit Mark Zuckerbergs Essay über persönliche Superintelligenz, in dem er schrieb, dass jeder „einen außergewöhnlich fähigen persönlichen Agenten haben wird, der Sie und Ihre Ziele versteht“.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Wenn ein Mensch drei Hotels vergleicht, hat Ihre Marke die Chance, ihn zu bezaubern: ein Foto, eine Bewertung, ein Gefühl. Wenn ein Agent im Auftrag des Menschen drei Hotels vergleicht, liest er strukturierte Fakten, Richtlinien und Preise, und er „sieht“ das Foto womöglich nie so, wie ein Mensch es tut. Das Verhandeln ist der radikalere Teil. Ein Agent, der verhandelt, reagiert nicht auf Knappheits-Banner.</p>
+<p>Auch die Verbreitung ist wichtig. Muse lebt in WhatsApp, einem der wichtigsten Messaging-Kanäle in Asien, Lateinamerika und Afrika. Vorerst gibt es ihn nur in den USA, doch ein persönlicher Agent, eingebettet in die Messaging-App, die viele unserer Kunden bereits nutzen, ist kein Nischenexperiment.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>In meiner Forschung ging es immer darum, Menschen anhand ihrer digitalen Spuren zu verstehen. In <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) und in <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017), das Social-Media-Beiträge mit Daten von Wearable-Sensoren kombinierte, um Wellness-Profile zu lernen, haben wir gezeigt, dass die Kombination von Quellen ein viel reichhaltigeres Bild eines Menschen liefert als jede einzelne Quelle.</p>
+<p>Ein persönlicher Agent ist die ultimative Version dieser Idee — mit einem großen Unterschied: Das Profil liegt jetzt beim Agenten des Nutzers, nicht beim Werbetreibenden. Muse ist darauf ausgelegt, die Ziele des Nutzers zu verstehen und danach zu handeln. Das verschiebt das Informationsgleichgewicht. Nicht mehr die Marke profiliert den Kunden, um zu entscheiden, was sie zeigt. Der Agent des Kunden profiliert die Marke, um zu entscheiden, was er akzeptiert.</p>
+<p>Das verändert, was „Personalisierung“ bedeutet. In unserer Arbeit zu <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">persönlichkeitsgesteuerter Content-Empfehlung</a> (ACM Multimedia 2022) war das Ziel, Inhalte auf die Eigenschaften eines Menschen abzustimmen. Mit Agenten im Prozess brauchen Sie zwei Ebenen: ein klares, sachliches, maschinenlesbares Angebot, das ein Agent bewerten kann, und auf Menschen ausgerichtete Creatives für den Moment, in dem die Person aufschaut und entscheidet. Gutes Marketing für Agenten wird wie gute Dokumentation aussehen. Gutes Marketing für Menschen wird weiterhin wie gutes Storytelling aussehen.</p>
+<p>Es gibt auch eine Verantwortungsfrage, die mir wichtig ist. Ein Agent, der im Auftrag eines Nutzers verhandelt, muss diesem Nutzer gegenüber loyal sein. Wenn Agenten anfangen, bezahlte Präferenzen ohne Offenlegung zu akzeptieren, haben wir die schlimmsten Seiten der Werbebranche in der intimsten Software nachgebaut, die Menschen je genutzt haben. Metas Betonung des Datenschutzes ist zu begrüßen; Transparenz über kommerziellen Einfluss auf Entscheidungen von Agenten wird ebenso wichtig sein.</p>
+<h2>Was Marketer jetzt tun sollten</h2>
+<ul><li>Machen Sie Ihr Angebot für Maschinen lesbar. Preise, Verfügbarkeit, Rückgaberegeln, Lieferzeiten und Konditionen sollten auf Ihrer Website und in Ihren Feeds ausdrücklich, konsistent und leicht auslesbar sein.</li><li>Entfernen Sie Dark Patterns. Countdown-Timer und versteckte Gebühren sind Reibung für Agenten und ein Vertrauensproblem für Menschen.</li><li>Bereiten Sie sich auf Verhandlungen vor. Legen Sie im Voraus fest, welche Konditionen flexibel sind, etwa Bundles, Lieferfenster oder Treuevorteile, damit eine automatisierte Anfrage eine schnelle, konsistente Antwort erhält.</li><li>Bewahren Sie den menschlichen Moment. Das letzte „Ja“ ist oft noch menschlich. Ihre Markengeschichte, Bewertungen und Creatives zählen in diesem Schritt weiterhin.</li><li>Beobachten Sie Messaging-Kanäle. Wenn Agenten in WhatsApp leben, wird Ihr Setup für Conversational Commerce bald wichtiger.</li></ul>
+<p>Muse ist ein Produkt in einem Land. Das Muster, für das es steht — ein Kunde, der delegiert —, wird sich ausbreiten. Bauen Sie für beide Zielgruppen: den Agenten, der vergleicht, und den Menschen, der entscheidet.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was ist Meta Muse?</summary><p>Muse ist ein persönlicher KI-Agent, den Meta am 8. September 2026 gestartet hat. Laut Associated Press hilft er bei alltäglichen Aufgaben wie Terminplanung und Einkäufen, und laut Meta kann er einen Browser öffnen, Formulare ausfüllen und im Namen eines Nutzers verhandeln.</p></details><details><summary>Wo ist Meta Muse verfügbar?</summary><p>Zum Start war es nur in den USA verfügbar, für Personen ab 18 Jahren, über eine eigene Muse-App oder innerhalb von WhatsApp.</p></details><details><summary>Wie sollten sich Marken auf persönliche KI-Agenten vorbereiten?</summary><p>Indem sie klare, maschinenlesbare Angebote und Richtlinien veröffentlichen, manipulative Designmuster entfernen, im Voraus festlegen, welche Konditionen verhandelbar sind, und starke, auf Menschen ausgerichtete Creatives für den Moment bereithalten, in dem der Kunde die endgültige Entscheidung trifft.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Agenten · 22. Oktober 2026</span><h3>Agent Skills wird herstellerneutral: Warum das Marketer betrifft</h3><p>Anthropic hat den Standard Agent Skills an die Agentic AI Foundation übergeben. Portables, schriftlich festgehaltenes Know-how ist genau das, was Marketingteams von KI-Agenten brauchen.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/workday-c1-ai-agent-identity/"><span class="meta">Agenten · 13. Oktober 2026</span><h3>Workday kauft C1.ai: Auch Ihre Marketing-Agenten brauchen Identitäten</h3><p>Workday hat der Übernahme von C1.ai zugestimmt, das Zugriffe für Menschen und KI-Agenten steuert. Marketing-Agenten mit Zugriff auf CRM und Werbekonten brauchen dieselben Regeln.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/openai-agent-medicare-portal-australia/"><span class="meta">Agenten · 24. September 2026</span><h3>Der KI-Agent, der kein Nein akzeptierte</h3><p>Australiens Premierminister sagte, ein Research-Agent von OpenAI habe Sperren eines Medicare-Statistikportals umgangen. Die Lehre für Marketing-Agenten betrifft den Handlungsrahmen.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

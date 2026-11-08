@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="25 Fields-Medaillenträger warnten, dass ein Wettlauf der KI an ungelösten Problemen einen Stellvertreterwert mit dem Ziel verwechselt. Das Marketing hat dasselbe Benchmark-Problem." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer | Prof. Aleks Farseev" />
+<meta property="og:description" content="25 Fields-Medaillenträger warnten, dass ein Wettlauf der KI an ungelösten Problemen einen Stellvertreterwert mit dem Ziel verwechselt. Das Marketing hat dasselbe Benchmark-Problem." />
+<meta property="og:url" content="https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Forschung" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="25 Fields-Medaillenträger warnten, dass ein Wettlauf der KI an ungelösten Problemen einen Stellvertreterwert mit dem Ziel verwechselt. Das Marketing hat dasselbe Benchmark-Problem." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer","description":"25 Fields-Medaillenträger warnten, dass ein Wettlauf der KI an ungelösten Problemen einen Stellvertreterwert mit dem Ziel verwechselt. Das Marketing hat dasselbe Benchmark-Problem.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Forschung","about":{"@type":"Thing","name":"Fields-Medaillenträger veröffentlichen „A Severe Misalignment of AI in Mathematics“; OpenAI zieht sich aus einem KI-Mathathon am Caltech zurück"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"Was ist „A Severe Misalignment of AI in Mathematics“?","acceptedAnswer":{"@type":"Answer","text":"Laut The Next Web ist es eine am 11. September 2026 veröffentlichte und von 25 Fields-Medaillenträgern unterzeichnete Erklärung. Sie argumentiert, dass das Lösen von Problemen ein Stellvertreter für das eigentliche Ziel der Mathematik, das konzeptionelle Verständnis, sei, und warnt, dass die schnelle Massenproduktion von Aussagen dem Fach schaden könnte."}},{"@type":"Question","name":"Hat sich OpenAI aus dem Caltech-Mathathon zurückgezogen?","acceptedAnswer":{"@type":"Answer","text":"The Next Web berichtet, dass OpenAI am 10. September 2026 seine Credits im Wert von 1 Mio. US$ für den von Studierenden organisierten Caltech-Mathathon zurückzog, während Anthropic seinen Beitrag beibehielt und die Veranstaltung stattfand."}},{"@type":"Question","name":"Was bedeutet die Debatte über KI in der Mathematik für das Marketing?","acceptedAnswer":{"@type":"Answer","text":"Sie ist eine Warnung davor, auf Stellvertreterkennzahlen zu optimieren. Marketingteams sollten KI-Kennzahlen an reale Ergebnisse knüpfen, die Kosten der menschlichen Prüfung erfassen und messen, ob KI-gestützte Arbeit unverwechselbar bleibt."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer","item":"https://farseev.com/de/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/fields-medallists-ai-mathematics-benchmarks/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/fields-medallists-ai-mathematics-benchmarks/">한국어</option><option value="th" lang="th" data-href="/th/blog/fields-medallists-ai-mathematics-benchmarks/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/fields-medallists-ai-mathematics-benchmarks/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/fields-medallists-ai-mathematics-benchmarks/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/fields-medallists-ai-mathematics-benchmarks/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/fields-medallists-ai-mathematics-benchmarks/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/fields-medallists-ai-mathematics-benchmarks/">Filipino</option><option value="es" lang="es" data-href="/es/blog/fields-medallists-ai-mathematics-benchmarks/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/fields-medallists-ai-mathematics-benchmarks/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/fields-medallists-ai-mathematics-benchmarks/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/fields-medallists-ai-mathematics-benchmarks/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Forschung</p>
+      <h1 class="h-display">Fields-Medaillenträger vs. KI-Benchmarks: Eine Lehre für Marketer</h1>
+      <p class="lead">25 Fields-Medaillenträger warnten, dass ein Wettlauf der KI an ungelösten Problemen einen Stellvertreterwert mit dem Ziel verwechselt. Das Marketing hat dasselbe Benchmark-Problem.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Fields-Medaillenträger veröffentlichen „A Severe Misalignment of AI in Mathematics“; OpenAI zieht sich aus einem KI-Mathathon am Caltech zurück (<time datetime="2026-09-11">11. September 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Mathematiker schreiben normalerweise keine offenen Briefe über Marketing. Doch das Argument, das eine Gruppe von Fields-Medaillenträgern im September vorbrachte, lässt sich fast wörtlich darauf übertragen, wie unsere Branche KI misst. Ihr Punkt: Probleme zu lösen ist ein Stellvertreter, das eigentliche Ziel ist Verständnis. Wer beides verwechselt, kann genau das beschädigen, was er verbessern wollte.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a> wurde am 11. September auf mathandai.org eine Erklärung mit dem Titel <em>A Severe Misalignment of AI in Mathematics</em> veröffentlicht. Die Website nennt 25 Unterzeichner, darunter Terence Tao, Peter Scholze, Maryna Viazovska, Cédric Villani, Pierre Deligne, Manjul Bhargava und Martin Hairer. Die Erklärung argumentiert, dass das Lösen von Problemen ein Werkzeug und ein Stellvertreter sei, während das primäre Ziel der Mathematik konzeptionelles Verständnis und Einsicht sei. Sie warnt, dass die Massenproduktion wahrer oder falscher Aussagen in steigendem Tempo „fruchtbaren Boden zerstören könnte“. TNW beschreibt sie als Stellungnahme zu Benchmarks; sie nennt kein bestimmtes Ereignis.</p>
+<p>In derselben Woche kritisierte ein separater offener Brief einen von Studierenden organisierten KI-„Mathathon“ am Caltech, nannte das Format „slop mathematics“ und argumentierte, dass die Arbeit des Überprüfens und Korrigierens von KI-Ergebnissen „unbezahlt, ungenannt und ungewürdigt“ bleibe. TNW berichtet, dass OpenAI am 10. September seine Credits im Wert von 1 Mio. US$ für die Veranstaltung zurückzog, während Anthropic seinen Beitrag beibehielt, und dass die Organisatoren Auflagen ergänzten, die Veranstaltung aber nicht absagten.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Die Beschwerde der Mathematiker betrifft eine bekannte Falle. Wenn ein schwieriges, berühmtes Problem zum Benchmark wird, optimieren Labore darauf, Antworten darauf zu produzieren. Antworten sind messbar. Verständnis nicht. Mit der Zeit verdrängt das Messbare das Wertvolle, und jemand anderes muss die Ergebnisse prüfen.</p>
+<p>Marketing-KI hat genau dieses Problem. Wir messen Tools an dem, was sich leicht zählen lässt: Zahl der generierten Assets, eingesparte Zeit, Klickrate, Anteil der KI-Antworten, die die Marke erwähnen. Diese Zahlen sind wichtig. Doch das Ziel des Marketings ist nicht Output; es ist, Kunden gut genug zu verstehen, um ihnen zu dienen, und eine Marke aufzubauen, der Menschen vertrauen. Ein System, das Kanäle mit Inhalten flutet und bei Stellvertreterkennzahlen gewinnt, kann beides schleichend aushöhlen.</p>
+<p>Auch der Punkt der unbezahlten Überprüfung trifft. Generierte Inhalte sind billig in der Herstellung und teuer in der Prüfung. Wenn die Prüfung in Ihren Kennzahlen unsichtbar ist, sind Ihre „Produktivitätsgewinne“ zum Teil ein Buchhaltungstrick.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Meine jüngste Forschung baut auf dieser Unterscheidung auf. In unserem SIGIR-2026-Paper <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> gehen wir genau das Problem an, dass KI-geschriebene Inhalte sich angleichen: Jeder Assistent produziert dieselben kompetenten, generischen Beiträge. Unser Ansatz ist, vor dem Schreiben echte Kontextdaten abzurufen, damit das Ergebnis unverwechselbar bleibt. Menge ohne Unverwechselbarkeit ist die Marketing-Version von „Slop“.</p>
+<p>Zur Messung habe ich auf e27 argumentiert, dass <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">jedes Dashboard grün ist, aber niemand sagen kann, was funktioniert hat</a>. Stellvertreterkennzahlen, die alle nach oben zeigen, sind nicht dasselbe wie das Wissen, was Ergebnisse verursacht hat. Und in unserer Arbeit zu erklärbarer KI, von <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> bis <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>, ist das Ziel nicht nur eine bessere Vorhersage, sondern eine Erklärung, aus der ein Marketer lernen kann. Das ist das Marketing-Pendant zum „konzeptionellen Verständnis“ der Mathematiker.</p>
+<h2>Was Marketingteams daraus mitnehmen können</h2>
+<ul><li>Benennen Sie das Ziel hinter jeder Kennzahl. Schreiben Sie für jeden KI-KPI einen Satz dazu, für welches reale Ergebnis er stehen soll, und prüfen Sie regelmäßig, ob dieser Zusammenhang noch besteht.</li><li>Erfassen Sie die Prüfkosten. Messen Sie die menschliche Zeit, die für die Prüfung und Korrektur von KI-Ausgaben aufgewendet wird, und beziehen Sie sie in Ihren ROI ein.</li><li>Messen Sie Unverwechselbarkeit. Vergleichen Sie Ihre KI-gestützten Inhalte mit denen der Wettbewerber. Wenn sie ununterscheidbar werden, gewinnen Sie bei einem Stellvertreter und verlieren die Marke.</li><li>Ziehen Sie Erklärungen Scores vor. Ein Tool, das Ihnen sagt, warum etwas funktioniert hat, baut Wissen im Team auf; eines, das Ihnen nur sagt, dass es funktioniert hat, schafft Abhängigkeit.</li><li>Würdigen Sie die Menschen. Wenn Menschen KI-Ausgaben nachbessern, machen Sie diese Arbeit sichtbar und wertgeschätzt, statt sie vorauszusetzen.</li></ul>
+<p>Die Mathematiker schützen ihr Fach vor einer Benchmark-Kultur, die Antworten mit Verständnis verwechselt. Das Marketing sollte sich vor demselben Fehler schützen.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was ist „A Severe Misalignment of AI in Mathematics“?</summary><p>Laut The Next Web ist es eine am 11. September 2026 veröffentlichte und von 25 Fields-Medaillenträgern unterzeichnete Erklärung. Sie argumentiert, dass das Lösen von Problemen ein Stellvertreter für das eigentliche Ziel der Mathematik, das konzeptionelle Verständnis, sei, und warnt, dass die schnelle Massenproduktion von Aussagen dem Fach schaden könnte.</p></details><details><summary>Hat sich OpenAI aus dem Caltech-Mathathon zurückgezogen?</summary><p>The Next Web berichtet, dass OpenAI am 10. September 2026 seine Credits im Wert von 1 Mio. US$ für den von Studierenden organisierten Caltech-Mathathon zurückzog, während Anthropic seinen Beitrag beibehielt und die Veranstaltung stattfand.</p></details><details><summary>Was bedeutet die Debatte über KI in der Mathematik für das Marketing?</summary><p>Sie ist eine Warnung davor, auf Stellvertreterkennzahlen zu optimieren. Marketingteams sollten KI-Kennzahlen an reale Ergebnisse knüpfen, die Kosten der menschlichen Prüfung erfassen und messen, ob KI-gestützte Arbeit unverwechselbar bleibt.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Werbung und Marketing-KI · 29. Oktober 2026</span><h3>WPP im dritten Quartal 2026: Das Agenturmodell unter KI-Druck</h3><p>WPP meldete einen Rückgang des organischen Nettoumsatzes, während der CEO auf die Nachfrage nach KI-gestützten Leistungen über WPP Open verwies. Was das über Agenturen aussagt.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/malaysia-ai-governance-bill/"><span class="meta">Asien und Singapur · 29. Oktober 2026</span><h3>Malaysias AI Governance Bill: Verantwortung nach Rolle</h3><p>Malaysias Entwurf der AI Governance Bill, fällig bis Anfang 2027, legt Pflichten auf alle, die KI entwickeln, anbieten oder nutzen. Was rollenbasierte Regeln für Marketer bedeuten.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">KI-Suche · 29. Oktober 2026</span><h3>Adobe: KI-Traffic konvertiert jetzt besser als andere Besuche</h3><p>Laut Adobe konvertierten KI-vermittelte Besuche bei US-Händlern im September 90 % besser als anderer Traffic. Warum KI-Antworten zum Kanal wurden und was zu tun ist.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

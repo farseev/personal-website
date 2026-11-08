@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Ein US-Richter wies die Kartellklage von Penske Media wegen Googles AI Overviews ab, da es keinen „formellen Handel“ um Traffic gebe. Was Marken in Sachen GEO tun sollten." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet | Prof. Aleks Farseev" />
+<meta property="og:description" content="Ein US-Richter wies die Kartellklage von Penske Media wegen Googles AI Overviews ab, da es keinen „formellen Handel“ um Traffic gebe. Was Marken in Sachen GEO tun sollten." />
+<meta property="og:url" content="https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="KI-Suche" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Ein US-Richter wies die Kartellklage von Penske Media wegen Googles AI Overviews ab, da es keinen „formellen Handel“ um Traffic gebe. Was Marken in Sachen GEO tun sollten." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","mainEntityOfPage":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/","url":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/","headline":"Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet","description":"Ein US-Richter wies die Kartellklage von Penske Media wegen Googles AI Overviews ab, da es keinen „formellen Handel“ um Traffic gebe. Was Marken in Sachen GEO tun sollten.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"KI-Suche","about":{"@type":"Thing","name":"US-Bezirksrichter Amit Mehta weist die Kartellklagen von Penske Media und Chegg wegen Googles AI Overviews ab"},"wordCount":856,"citation":[{"@type":"CreativeWork","name":"Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google","url":"https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/","publisher":"Press Gazette","datePublished":"2026-10-01"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/#faq","mainEntity":[{"@type":"Question","name":"Warum wurde die Klage von Penske Media gegen Google abgewiesen?","acceptedAnswer":{"@type":"Answer","text":"Laut Press Gazette stellte Richter Amit Mehta fest, dass es keinen „formellen Handel“ zwischen Verlagen und Google über den Tausch von Crawling gegen Traffic gab, schrieb, dass eine Erwartung von Traffic „keine Vereinbarung ist“, und wies die Behauptung zurück, Suche und AI Overviews seien getrennte, rechtswidrig gekoppelte Produkte."}},{"@type":"Question","name":"Ist das Penske-Urteil endgültig?","acceptedAnswer":{"@type":"Answer","text":"Nein. Press Gazette berichtete am 30. Oktober 2026, dass Penske und Chegg gegen die Abweisung Berufung einlegen."}},{"@type":"Question","name":"Was sollten Marken nach dem Urteil in Sachen Sichtbarkeit in der KI-Suche tun?","acceptedAnswer":{"@type":"Answer","text":"Mit weniger Klicks bei Informationsanfragen planen, spezifische und zuordenbare Inhalte veröffentlichen, die KI-Systeme zitieren können, Produktfakten über Websites hinweg konsistent halten, jede Opt-out-Entscheidung sorgfältig abwägen und direkte Kanäle zu Kunden aufbauen."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet","item":"https://farseev.com/de/blog/penske-google-ai-overviews-lawsuit-dismissed/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/penske-google-ai-overviews-lawsuit-dismissed/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/">한국어</option><option value="th" lang="th" data-href="/th/blog/penske-google-ai-overviews-lawsuit-dismissed/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/penske-google-ai-overviews-lawsuit-dismissed/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/penske-google-ai-overviews-lawsuit-dismissed/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/penske-google-ai-overviews-lawsuit-dismissed/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/penske-google-ai-overviews-lawsuit-dismissed/">Filipino</option><option value="es" lang="es" data-href="/es/blog/penske-google-ai-overviews-lawsuit-dismissed/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/penske-google-ai-overviews-lawsuit-dismissed/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · KI-Suche</p>
+      <h1 class="h-display">Penske gegen Google abgewiesen: Was das für KI-Sichtbarkeit bedeutet</h1>
+      <p class="lead">Ein US-Richter wies die Kartellklage von Penske Media wegen Googles AI Overviews ab, da es keinen „formellen Handel“ um Traffic gebe. Was Marken in Sachen GEO tun sollten.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: US-Bezirksrichter Amit Mehta weist die Kartellklagen von Penske Media und Chegg wegen Googles AI Overviews ab (<time datetime="2026-10-01">1. Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Zwei Jahrzehnte lang lief das Web auf Grundlage eines ungeschriebenen Deals: Lass Google deine Seiten crawlen, und Google schickt dir Besucher. In einem am 1. Oktober bekannt gewordenen Urteil sagte ein US-Bundesrichter im Grunde, dass dieser Deal nie einer war. Für alle, die von Suchtraffic abhängen, ist das Urteil ein Grund, Sichtbarkeit von Grund auf neu zu denken.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Press Gazette</a> wies US-Bezirksrichter Amit Mehta die Kartellklage der Penske Media Corporation gegen Google wegen AI Overviews ab und verwarf ähnliche Argumente von Chegg. Penske hatte geltend gemacht, nach dem Start von AI Overviews Suchtraffic sowie Affiliate-, Werbe- und Abonnementerlöse verloren zu haben.</p>
+<p>Der Richter stellte fest, dass es keinen „formellen Handel“ zwischen Verlagen und Google gebe. Die Verlage, schrieb er, „haben lediglich vorgetragen, dass sie eine ‚Erwartung‘ haben, dass Google ihnen Suchtraffic schickt“, und „eine Erwartung ist keine Vereinbarung. Es ist schlicht die Art, wie eine allgemeine Suchmaschine funktioniert.“ Er wies auch das Argument zurück, Suche und AI Overviews seien getrennte Produkte, die Google rechtswidrig gekoppelt habe. Er merkte an, dass „das Gericht die geltend gemachten Schäden der Kläger nicht auf die leichte Schulter nimmt“.</p>
+<p>Das Update von Press Gazette vom 30. Oktober ergänzt, dass Penske und Chegg Berufung einlegen, dass Google nach einer Anordnung der britischen Competition and Markets Authority eine Option in der Search Console einführt, mit der Verlage AI Overviews ausschließen können, und dass Google Berichten zufolge Zahlungen an Verlage testet, deren Inhalte wesentlich zu seinen KI-Funktionen beitragen.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Was auch immer in der Berufung geschieht, das Urteil klärt die Lage: Es gibt keinen Rechtsanspruch auf Traffic. Die Suchmaschine kann entscheiden, die Frage selbst zu beantworten. Wenn Ihr Geschäftsmodell oder Ihr Marketingplan davon ausgeht, dass Ranking gleich Besuche bedeutet, bauen Sie auf einer Erwartung, nicht auf einer Vereinbarung.</p>
+<p>Das ist nicht nur ein Problem der Verlage. Auch Marken veröffentlichen: Ratgeber, Produktseiten, Vergleichsinhalte, Studien. All das ist nun Rohmaterial für KI-Antworten, die den Nutzer womöglich ohne Klick zufriedenstellen. Die Frage verschiebt sich von „Wie ranke ich?“ zu „Wie werde ich in der Antwort zitiert, ausgewählt und in Erinnerung behalten?“ Das nennt man heute Generative Engine Optimisation, kurz GEO.</p>
+<p>Die Opt-out-Option und die Zahlungstests machen den Zielkonflikt deutlich. Ein Opt-out kann Ihre Inhalte schützen, entfernt Sie aber auch aus den Antworten, die Ihre Kunden lesen. Für die meisten Marken ist das ein zu hoher Preis. Für manche Verlage könnte es das einzige Druckmittel sein, das sie haben.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Von einer KI-Antwort zitiert zu werden ist im Kern ein Retrieval-Problem. Meine frühe Arbeit zu <a href="https://doi.org/10.1145/3077136.3080774" target="_blank" rel="noopener">domänenübergreifenden Empfehlungen durch Clustering auf mehrschichtigen Graphen</a> (SIGIR 2017) befasste sich damit, Signale aus verschiedenen Quellen zu bündeln, um zu entscheiden, was empfohlen wird. Moderne Antwortmaschinen sind entfernte Nachfahren dieser Idee: Sie rufen ab, clustern und wählen Quellen aus, bevor sie generieren. Inhalte, die spezifisch, über Quellen hinweg konsistent und leicht zuzuordnen sind, werden eher abgerufen und ausgewählt.</p>
+<p>Meine Arbeit zu erklärbarer KI weist auf die andere Hälfte hin. In <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion) haben wir uns darauf konzentriert, die Kommunikation von Wettbewerbern zu erklären: was sie sagen und warum es funktioniert. GEO braucht dieselbe Disziplin. Es reicht nicht zu wissen, dass ein Wettbewerber in KI-Antworten erscheint; Sie müssen verstehen, welche Aussagen, Formate und Quellen das bewirken.</p>
+<p>Und auch hier ist die Messung eine Falle. Ich habe auf e27 geschrieben, dass <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">jedes Dashboard grün ist, aber niemand sagen kann, was funktioniert hat</a>. Tools für KI-Sichtbarkeit werden eine weitere Reihe grüner Zahlen hinzufügen. Behandeln Sie sie als Signale, testen Sie sie an Ergebnissen und verwechseln Sie eine Erwähnung nicht mit einem Kunden.</p>
+<h2>Was Verlage und Marken jetzt tun sollten</h2>
+<ul><li>Hören Sie auf, Traffic als Anspruch einzuplanen. Modellieren Sie Szenarien, in denen Informationsanfragen ohne Klick beantwortet werden, und entscheiden Sie, welche Inhalte ihre Kosten noch einspielen.</li><li>Schreiben Sie, um zitiert zu werden. Klare Aussagen, eigene Daten, namentlich genannte Autoren, Daten und Quellen machen Inhalte für KI-Systeme leichter abrufbar und zuordenbar.</li><li>Seien Sie im ganzen Web konsistent. Antwortmaschinen gleichen ab. Ihre Produktfakten sollten auf Ihrer Website, auf Marktplätzen und auf Partnerseiten übereinstimmen.</li><li>Entscheiden Sie bewusst über ein Opt-out. Wägen Sie die verlorene Sichtbarkeit gegen das gewonnene Druckmittel ab, Seitentyp für Seitentyp, nicht reflexhaft für die ganze Website.</li><li>Bauen Sie direkte Beziehungen auf. Newsletter, Communities und Apps sind die Kanäle, die Ihnen kein Urteil nehmen kann.</li></ul>
+<p>Das Gericht hat die größere Frage nicht entschieden, was die KI-Suche den Menschen schuldet, deren Arbeit sie liest. Aber es hat vorerst einen praktischen Punkt geklärt: Niemandem steht ein Klick zu.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Warum wurde die Klage von Penske Media gegen Google abgewiesen?</summary><p>Laut Press Gazette stellte Richter Amit Mehta fest, dass es keinen „formellen Handel“ zwischen Verlagen und Google über den Tausch von Crawling gegen Traffic gab, schrieb, dass eine Erwartung von Traffic „keine Vereinbarung ist“, und wies die Behauptung zurück, Suche und AI Overviews seien getrennte, rechtswidrig gekoppelte Produkte.</p></details><details><summary>Ist das Penske-Urteil endgültig?</summary><p>Nein. Press Gazette berichtete am 30. Oktober 2026, dass Penske und Chegg gegen die Abweisung Berufung einlegen.</p></details><details><summary>Was sollten Marken nach dem Urteil in Sachen Sichtbarkeit in der KI-Suche tun?</summary><p>Mit weniger Klicks bei Informationsanfragen planen, spezifische und zuordenbare Inhalte veröffentlichen, die KI-Systeme zitieren können, Produktfakten über Websites hinweg konsistent halten, jede Opt-out-Entscheidung sorgfältig abwägen und direkte Kanäle zu Kunden aufbauen.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google</a> — Press Gazette, 1 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">KI-Suche · 29. Oktober 2026</span><h3>Adobe: KI-Traffic konvertiert jetzt besser als andere Besuche</h3><p>Laut Adobe konvertierten KI-vermittelte Besuche bei US-Händlern im September 90 % besser als anderer Traffic. Warum KI-Antworten zum Kanal wurden und was zu tun ist.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">KI-Suche · 28. Oktober 2026</span><h3>Googles Anzeigen im AI Mode kommen nach Singapur und darüber hinaus</h3><p>Google weitet Anzeigen im AI Mode auf zehn Märkte aus, darunter Singapur, Malaysia und die Philippinen. Was sich ändert, wenn die Anzeige in der Antwort steht.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">KI-Suche · 21. Oktober 2026</span><h3>ChatGPT-Anzeigen werden zu Gesprächen: Sponsored Agents</h3><p>OpenAI testet Sponsored Agents in ChatGPT und hat ChatGPT-Anzeigen auf 89 Länder ausgeweitet. Wenn eine Anzeige antworten kann, werden Kennzeichnung und Ehrlichkeit zum Produkt.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

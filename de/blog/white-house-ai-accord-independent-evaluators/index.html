@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer | Prof. Aleks Farseev" />
+<meta property="og:description" content="Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind." />
+<meta property="og:url" content="https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulierung und Sicherheit" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/","headline":"Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer","description":"Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Regulierung und Sicherheit","about":{"@type":"Thing","name":"Tech-Führungskräfte unterzeichnen das White House Accord on Super Intelligence; Anthropic bindet Evaluatoren von METR mit mitarbeiterähnlichem Zugang ein"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"Was ist das White House Accord on Super Intelligence?","acceptedAnswer":{"@type":"Answer","text":"Es ist ein freiwilliges Dokument mit dem Titel „Joint Commitment on Frontier Responsibilities“, das am 29. September 2026 von Präsident Trump und Führungspersönlichkeiten wie Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai und Greg Brockman unterzeichnet wurde. Es verpflichtet Unternehmen zu internen Kontrollen, internen Teams, unabhängigen externen Prüfern und Aufsicht auf Board-Ebene."}},{"@type":"Question","name":"Ist das KI-Abkommen des Weißen Hauses verbindlich?","acceptedAnswer":{"@type":"Answer","text":"Nein. Trump bezeichnete es als „moralisch bindend“, doch laut MercoPress sieht es keine Konsequenzen für Verstöße vor, und einige Wissenschaftler kritisierten es als schwach."}},{"@type":"Question","name":"Welchen Zugang hat Anthropic unabhängigen Prüfern gewährt?","acceptedAnswer":{"@type":"Answer","text":"Laut Anthropic wurden sechs METR-Mitarbeitende mit mitarbeiterähnlichem Zugang zu Firmenhardware, Tools und Systemen eingearbeitet; METR wird seine Risikobewertungen veröffentlichen, und Anthropic kann diese Veröffentlichungen nicht verhindern, wohl aber die Schwärzung vorab definierter Kategorien wie vertraulichen geistigen Eigentums verlangen."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer","item":"https://farseev.com/de/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/white-house-ai-accord-independent-evaluators/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/white-house-ai-accord-independent-evaluators/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/white-house-ai-accord-independent-evaluators/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/white-house-ai-accord-independent-evaluators/">한국어</option><option value="th" lang="th" data-href="/th/blog/white-house-ai-accord-independent-evaluators/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/white-house-ai-accord-independent-evaluators/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/white-house-ai-accord-independent-evaluators/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/white-house-ai-accord-independent-evaluators/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/white-house-ai-accord-independent-evaluators/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/white-house-ai-accord-independent-evaluators/">Filipino</option><option value="es" lang="es" data-href="/es/blog/white-house-ai-accord-independent-evaluators/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/white-house-ai-accord-independent-evaluators/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/white-house-ai-accord-independent-evaluators/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/white-house-ai-accord-independent-evaluators/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Regulierung und Sicherheit</p>
+      <h1 class="h-display">Das KI-Abkommen des Weißen Hauses und unabhängige Prüfer</h1>
+      <p class="lead">Tech-Führungskräfte unterzeichneten ein freiwilliges Abkommen des Weißen Hauses, das externe Prüfer verspricht, und Anthropic gewährte METR tiefen Zugang. Warum Audits für Marketing-KI wichtig sind.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Tech-Führungskräfte unterzeichnen das White House Accord on Super Intelligence; Anthropic bindet Evaluatoren von METR mit mitarbeiterähnlichem Zugang ein (<time datetime="2026-09-29">29. September 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Freiwillige Verpflichtungen von KI-Unternehmen haben eine gemischte Bilanz. Manche sind nach einem Jahr vergessen. Interessant an der jüngsten ist nicht die Zeremonie im Weißen Haus, sondern eine konkrete Idee darin: unabhängige Prüfer. Zwei Wochen später zeigte ein Labor, wie das in der Praxis aussehen kann.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a> unterzeichneten Präsident Trump und die Chefs mehrerer Technologieunternehmen am 29. September das „White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities“, ein Dokument von gut 300 Wörtern. Als Unterzeichner werden neben dem Präsidenten Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai und OpenAI-Präsident Greg Brockman genannt.</p>
+<p>Forbes fasst vier Verpflichtungen für Unternehmen zusammen, die Frontier-Modelle trainieren und einsetzen: interne Kontrollen unterhalten, die die Fähigkeiten und das Alignment der Modelle überwachen, einschließlich der Sicherstellung, dass Modelle nicht auf unbeabsichtigte Weise auf technische Systeme zugreifen; ein internes Team sicherstellen lassen, dass diese Kontrollen funktionieren und Probleme behoben werden; mit einem „unabhängigen externen Auditor oder Evaluator“ zusammenarbeiten; und einen „unabhängigen Ausschuss des Board of Directors“ benennen, der die Kontrollen und Auditoren beaufsichtigt. Trump nannte das Abkommen „moralisch bindend“ und „in gewisser Weise fast wie eine Verfassung“. <a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a> merkt an, dass es keine Konsequenzen für Verstöße vorsieht, und zitiert Kimberlee Weatherall, Professorin an der University of Sydney, die es als „zutiefst wenig beeindruckend“ bezeichnete.</p>
+<p>Am 15. Oktober veröffentlichte Anthropic <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a>. Darin heißt es, man habe einem Team von METR, einer gemeinnützigen Organisation, die Frontier-Modelle evaluiert, mitarbeiterähnlichen Zugang gewährt: Sechs METR-Mitarbeitende wurden mit Firmenhardware und internen Tools eingearbeitet, weitgehend gleichgestellt mit Anthropics eigenen Risikoteams. METR wird seine Risikobewertungen veröffentlichen; Anthropic gibt an, diese Veröffentlichungen nicht verhindern zu können, wohl aber die Schwärzung vorab definierter Kategorien wie vertraulichen geistigen Eigentums verlangen zu können. Anthropic vergleicht das Modell mit Bankenaufsehern, die Prüfer in großen Banken platzieren, und sagt, alle Frontier-KI-Unternehmen sollten dasselbe tun.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Das Abkommen ist dünn, und Kritiker haben recht, dass ein freiwilliger Text ohne Konsequenzen nichts garantiert. Doch die Verpflichtung zu unabhängigen Prüfern ist ein nützlicher Ansatzpunkt, weil sie sich überprüfen lässt. Entweder hat ein Unternehmen einen externen Prüfer mit echtem Zugang und der Freiheit zu veröffentlichen — oder nicht.</p>
+<p>Anthropics Vereinbarung setzt eine sichtbare Messlatte: tiefer Zugang, Veröffentlichungsrechte und klare Grenzen für Schwärzungen. Andere Unternehmen können nun daran gemessen werden. So werden aus freiwilligen Verpflichtungen Normen.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Mein Forschungsfeld, erklärbare KI für das Marketing, beruht im kleineren Maßstab auf demselben Prinzip: Aussagen darüber, was ein Modell tut, sollten von jemand anderem als dem Eigentümer des Modells überprüfbar sein. In <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) und <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) existiert die Erklärungsebene, damit ein Marketer prüfen kann, warum eine Vorhersage getroffen wurde, statt sie auf Treu und Glauben hinzunehmen.</p>
+<p>Ich habe in Forbes dargelegt, dass <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">Transparenz für marketinggetriebene Unternehmen wichtig ist</a>. Die Frontier-Labore bewegen sich nun bei der Sicherheit auf eine Version davon zu: interne Kontrollen, interne Teams, externe Prüfer, Aufsicht durch das Board. Marketing-KI birgt nicht dieselben katastrophalen Risiken, aber reale: verzerrtes Targeting, irreführende Aussagen, Datenschutzverletzungen, Budgets, die auf das falsche Signal gesetzt werden. Dieselbe vierstufige Struktur lässt sich gut herunterskalieren.</p>
+<h2>Ein Vier-Ebenen-Modell für die Governance von Marketing-KI</h2>
+<ul><li>Interne Kontrollen. Überwachen Sie, was Ihre KI-Systeme tun: welche Zielgruppen sie ansprechen, welche Aussagen sie erzeugen, welche Daten sie nutzen.</li><li>Ein interner Verantwortlicher. Benennen Sie eine Person oder ein Team, die bzw. das für die Prüfung dieser Kontrollen und die Behebung von Problemen zuständig ist.</li><li>Ein Blick von außen. Lassen Sie eine unabhängige Partei, etwa einen Auditor, einen Forschungspartner oder einen zweiten Anbieter, Ihre wichtigsten Modelle und Aussagen regelmäßig testen.</li><li>Aufsicht durch die Führungsebene. Berichten Sie KI-Risiken an die Geschäftsleitung wie finanzielle Risiken, mit der Befugnis, ein System anzuhalten.</li></ul>
+<p>Wenn Sie Marketing-KI einkaufen, stellen Sie Anbietern dieselben Fragen, die das Abkommen aufwirft. Wer evaluiert Ihre Modelle von außen? Welchen Zugang hat diese Stelle? Darf sie veröffentlichen, was sie findet? Die Antworten sagen Ihnen mehr als eine Funktionsliste.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was ist das White House Accord on Super Intelligence?</summary><p>Es ist ein freiwilliges Dokument mit dem Titel „Joint Commitment on Frontier Responsibilities“, das am 29. September 2026 von Präsident Trump und Führungspersönlichkeiten wie Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai und Greg Brockman unterzeichnet wurde. Es verpflichtet Unternehmen zu internen Kontrollen, internen Teams, unabhängigen externen Prüfern und Aufsicht auf Board-Ebene.</p></details><details><summary>Ist das KI-Abkommen des Weißen Hauses verbindlich?</summary><p>Nein. Trump bezeichnete es als „moralisch bindend“, doch laut MercoPress sieht es keine Konsequenzen für Verstöße vor, und einige Wissenschaftler kritisierten es als schwach.</p></details><details><summary>Welchen Zugang hat Anthropic unabhängigen Prüfern gewährt?</summary><p>Laut Anthropic wurden sechs METR-Mitarbeitende mit mitarbeiterähnlichem Zugang zu Firmenhardware, Tools und Systemen eingearbeitet; METR wird seine Risikobewertungen veröffentlichen, und Anthropic kann diese Veröffentlichungen nicht verhindern, wohl aber die Schwärzung vorab definierter Kategorien wie vertraulichen geistigen Eigentums verlangen.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Regulierung und Sicherheit · 12. Oktober 2026</span><h3>Distillation-Angriffe: Was kopierte KI-Modelle für Sie bedeuten</h3><p>US-Behörden nannten in einer Warnung zu Distillation sechs chinesische KI-Firmen, und Anthropic sagt, seine Abwehr reduziere abgeschöpfte Daten um 90 bis 99 %. Was das für KI-Käufer bedeutet.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/mas-ai-risk-management-guidelines/"><span class="meta">Regulierung und Sicherheit · 7. Oktober 2026</span><h3>MAS-Leitlinien zu KI-Risiken: Eine nützliche Vorlage über Banken hinaus</h3><p>Die MAS hat Leitlinien zum KI-Risikomanagement für Finanzinstitute veröffentlicht. Ihre Regeln zu Inventar und Drittanbietern sind eine gute Vorlage für Marketingteams.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Werbung und Marketing-KI · 29. Oktober 2026</span><h3>WPP im dritten Quartal 2026: Das Agenturmodell unter KI-Druck</h3><p>WPP meldete einen Rückgang des organischen Nettoumsatzes, während der CEO auf die Nachfrage nach KI-gestützten Leistungen über WPP Open verwies. Was das über Agenturen aussagt.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

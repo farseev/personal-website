@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI hat GPT-6 Astra vorgestellt, und sein Präsident sagte, es sei nicht unvernünftig zu glauben, wir seien in der AGI-Ära. Was diese Aussage für Marketingteams bedeutet und was nicht." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gpt-6-astra-agi-era-reality-check/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI hat GPT-6 Astra vorgestellt, und sein Präsident sagte, es sei nicht unvernünftig zu glauben, wir seien in der AGI-Ära. Was diese Aussage für Marketingteams bedeutet und was nicht." />
+<meta property="og:url" content="https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Modelle" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI hat GPT-6 Astra vorgestellt, und sein Präsident sagte, es sei nicht unvernünftig zu glauben, wir seien in der AGI-Ära. Was diese Aussage für Marketingteams bedeutet und was nicht." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/#article","mainEntityOfPage":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/","url":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/","headline":"GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer","description":"OpenAI hat GPT-6 Astra vorgestellt, und sein Präsident sagte, es sei nicht unvernünftig zu glauben, wir seien in der AGI-Ära. Was diese Aussage für Marketingteams bedeutet und was nicht.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Modelle","about":{"@type":"Thing","name":"OpenAI stellt GPT-6 Astra vor, sein neues Frontier-Modell, mit dem Anspruch auf Spitzenleistung bei Computernutzung und agentischer Arbeit"},"wordCount":825,"citation":[{"@type":"CreativeWork","name":"OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'","url":"https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities","publisher":"Fox Business","datePublished":"2026-09-03"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/#faq","mainEntity":[{"@type":"Question","name":"Was ist GPT-6 Astra?","acceptedAnswer":{"@type":"Answer","text":"Es ist das am 3. September 2026 veröffentlichte Frontier-Modell von OpenAI. Laut OpenAI ist es auf dem neuesten Stand bei Computernutzung, Browsernutzung, Softwareentwicklung, Cybersicherheit und Wissenschaft und kann Routineaufgaben am Computer erledigen, etwa Formulare ausfüllen und Kundendatensätze aktualisieren."}},{"@type":"Question","name":"Hat OpenAI gesagt, GPT-6 Astra sei AGI?","acceptedAnswer":{"@type":"Answer","text":"OpenAI-Präsident Greg Brockman sagte Journalisten, es sei „nicht unvernünftig zu glauben, dass wir uns jetzt in der AGI-Ära befinden“. OpenAI definiert AGI als hochautonome Systeme, die Menschen bei den meisten wirtschaftlich wertvollen Tätigkeiten übertreffen. Das ist eine zu prüfende Behauptung, keine etablierte Messung."}},{"@type":"Question","name":"Wie sollten Marketer ein neues Frontier-Modell bewerten?","acceptedAnswer":{"@type":"Answer","text":"Es an den eigenen Workflows gegen eine Ausgangsbasis testen, eingesparte Zeit, Fehler und menschliche Eingriffe messen, strategische Entscheidungen in erklärbaren Daten verankern und die Berechtigungen des Modells auf das beschränken, was jede Aufgabe erfordert."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer","item":"https://farseev.com/de/blog/gpt-6-astra-agi-era-reality-check/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-astra-agi-era-reality-check/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gpt-6-astra-agi-era-reality-check/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gpt-6-astra-agi-era-reality-check/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gpt-6-astra-agi-era-reality-check/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gpt-6-astra-agi-era-reality-check/">한국어</option><option value="th" lang="th" data-href="/th/blog/gpt-6-astra-agi-era-reality-check/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/gpt-6-astra-agi-era-reality-check/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/gpt-6-astra-agi-era-reality-check/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/gpt-6-astra-agi-era-reality-check/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/gpt-6-astra-agi-era-reality-check/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/gpt-6-astra-agi-era-reality-check/">Filipino</option><option value="es" lang="es" data-href="/es/blog/gpt-6-astra-agi-era-reality-check/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/gpt-6-astra-agi-era-reality-check/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/gpt-6-astra-agi-era-reality-check/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/gpt-6-astra-agi-era-reality-check/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Modelle</p>
+      <h1 class="h-display">GPT-6 Astra und die „AGI-Ära“: Ein Realitätscheck für Marketer</h1>
+      <p class="lead">OpenAI hat GPT-6 Astra vorgestellt, und sein Präsident sagte, es sei nicht unvernünftig zu glauben, wir seien in der AGI-Ära. Was diese Aussage für Marketingteams bedeutet und was nicht.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: OpenAI stellt GPT-6 Astra vor, sein neues Frontier-Modell, mit dem Anspruch auf Spitzenleistung bei Computernutzung und agentischer Arbeit (<time datetime="2026-09-03">3. September 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Alle paar Jahre spricht ein Labor das Wort aus. Am 3. September veröffentlichte OpenAI GPT-6 Astra, und sein Präsident Greg Brockman sagte Journalisten, es sei „nicht unvernünftig zu glauben, dass wir uns jetzt in der AGI-Ära befinden“. Ich bin Forscher und Gründer, daher halte ich zwei Gedanken zugleich fest: Das ist ein wirklich leistungsfähiges System, und „AGI“ ist eine Behauptung, keine Messung.</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">Fox Business</a> stellte OpenAI Astra zuerst Unternehmenskunden mit frühem Zugang bereit; Nutzer von ChatGPT Plus, Pro, Business und Enterprise, die API und Amazon Web Services sollten innerhalb weniger Tage folgen. Laut OpenAI ist das Modell auf dem neuesten Stand bei Computernutzung, Browsernutzung, Softwareentwicklung, Cybersicherheit und Wissenschaft und kann Routineaufgaben am Computer erledigen, etwa Online-Formulare ausfüllen, Kundendatensätze aktualisieren, Kalender organisieren und recherchieren sowie Dokumente, Tabellen und Präsentationen erstellen.</p>
+<p>Sam Altman nannte es das „am besten ausgerichtete Modell aller Zeiten“ des Unternehmens. OpenAI sagte zudem, Astra stelle einen deutlichen Sprung bei den Cyberfähigkeiten dar und erreiche die Schwelle „Critical“ seines Preparedness Framework. Der Artikel zitiert OpenAIs eigene Definition von AGI: „hochautonome Systeme, die Menschen bei den meisten wirtschaftlich wertvollen Tätigkeiten übertreffen“. Konkrete Benchmark-Werte nennt er nicht.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Ohne das Etikett ist die praktische Verschiebung klar. Die Fähigkeiten, die OpenAI hervorhebt, betreffen nicht das Schreiben besserer Sätze. Sie betreffen das Erledigen von Arbeit in Software: Formulare ausfüllen, Datensätze aktualisieren, sich durch Browser und Tabellen bewegen. Das ist der Alltag des Marketing-Betriebs. Kampagnen-Setup, Reporting, CRM-Pflege, Wettbewerbsbeobachtung, Feed-Management. Ein Modell, das gut in der Computernutzung ist, setzt bei den Stunden an, nicht nur bei den Worten.</p>
+<p>Genau deshalb verdient auch die AGI-Rahmung Vorsicht. OpenAIs Definition bezieht sich darauf, Menschen bei „den meisten wirtschaftlich wertvollen Tätigkeiten“ zu übertreffen. Ob das für Ihr Team zutrifft, ist eine empirische Frage, die Sie testen können, und die Antwort wird je nach Aufgabe unterschiedlich ausfallen. Ein Modell kann hervorragend darin sein, einen Performance-Bericht zusammenzustellen, und trotzdem schwach darin, zu entscheiden, welche Kreatividee ein skeptisches Publikum in Jakarta bewegt.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Ich habe in Forbes darüber geschrieben, <a href="https://www.forbes.com/councils/forbestechcouncil/2022/10/21/will-machines-replace-human-creativity/" target="_blank" rel="noopener">ob Maschinen menschliche Kreativität ersetzen werden</a> und <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">wie sich die Lücke zwischen Marketing und KI-Systemen schließen lässt</a>. Meine Position ist durchgängig: Die Lücke liegt selten in roher Intelligenz. Sie liegt in der Verankerung: Kennt das System Ihre Zielgruppe, Ihre Daten und Ihre Rahmenbedingungen, und kann es seine Begründung zeigen?</p>
+<p>Genau darauf zielt unsere Forschung. In <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) haben wir erklärbare generative KI gebaut, die das Scoring der Klickrate von Creatives mit LLMs kombiniert, um aus echten Anzeigendaten gemeinsam Marketingstrategien zu entwickeln. In <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a> (ACM TOIS 2025) haben wir Performance-Vorhersagen mit LLMs kombiniert, sodass die Empfehlung mit einer Begründung kommt. Auf die Begründung kommt es an. Ein leistungsfähigeres allgemeines Modell macht die Sprache besser und die Handlungen schneller. Es sagt Ihnen aber nicht von selbst, warum eine Anzeige bei einer bestimmten Zielgruppe besser abschneidet als eine andere. Dafür braucht es weiterhin Messungen an realen Ergebnissen.</p>
+<p>Mein Realitätscheck lautet also nicht „Astra wird überbewertet“. Sondern: „Astra ist ein stärkerer Motor; Ihre Belege und Ihre Erklärungen bleiben Ihre Aufgabe.“</p>
+<h2>Was Marketingverantwortliche jetzt tun sollten</h2>
+<ul><li>Wählen Sie drei zeitaufwendige operative Workflows, etwa wöchentliches Reporting, Kampagnen-Setup oder CRM-Updates, und testen Sie sie unter Aufsicht mit einem Modell für Computernutzung.</li><li>Messen Sie gegen eine Ausgangsbasis. Eingesparte Zeit, Fehlerquote und wie oft ein Mensch eingreifen musste. „Fühlte sich schneller an“ ist kein Ergebnis.</li><li>Trennen Sie Ausführung von Urteil. Lassen Sie Agenten klar definierte Schritte ausführen; knüpfen Sie kreative und strategische Entscheidungen an Daten, die Sie erklären können.</li><li>Achten Sie auf die Berechtigungen. Ein Modell, das Kundendatensätze aktualisieren kann, kann auch die falschen aktualisieren. Geben Sie Agenten den engsten Zugriff, der funktioniert, und protokollieren Sie jede Aktion.</li><li>Ignorieren Sie das Etikett bei der Beschaffung. Verlangen Sie von Anbietern Belege auf Aufgabenebene für Arbeit wie Ihre, keine Adjektive.</li></ul>
+<p>Ob es nun die „AGI-Ära“ ist oder nicht — es ist eindeutig die Ära, in der KI den operativen Betrieb übernimmt. Teams, die darum sorgfältige, gemessene Workflows aufbauen, werden die Gewinne einfahren. Teams, die ein Schlagwort kaufen, bekommen eine Rechnung.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was ist GPT-6 Astra?</summary><p>Es ist das am 3. September 2026 veröffentlichte Frontier-Modell von OpenAI. Laut OpenAI ist es auf dem neuesten Stand bei Computernutzung, Browsernutzung, Softwareentwicklung, Cybersicherheit und Wissenschaft und kann Routineaufgaben am Computer erledigen, etwa Formulare ausfüllen und Kundendatensätze aktualisieren.</p></details><details><summary>Hat OpenAI gesagt, GPT-6 Astra sei AGI?</summary><p>OpenAI-Präsident Greg Brockman sagte Journalisten, es sei „nicht unvernünftig zu glauben, dass wir uns jetzt in der AGI-Ära befinden“. OpenAI definiert AGI als hochautonome Systeme, die Menschen bei den meisten wirtschaftlich wertvollen Tätigkeiten übertreffen. Das ist eine zu prüfende Behauptung, keine etablierte Messung.</p></details><details><summary>Wie sollten Marketer ein neues Frontier-Modell bewerten?</summary><p>Es an den eigenen Workflows gegen eine Ausgangsbasis testen, eingesparte Zeit, Fehler und menschliche Eingriffe messen, strategische Entscheidungen in erklärbaren Daten verankern und die Berechtigungen des Modells auf das beschränken, was jede Aufgabe erfordert.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities" target="_blank" rel="noopener">OpenAI unveils GPT-6 Astra with major advances in AI capabilities: 'Now in the AGI era'</a> — Fox Business, 3 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Modelle · 7. Oktober 2026</span><h3>Claude Haiku 5.5 und das Plädoyer für kleine Modelle im Marketing</h3><p>Anthropics Claude Haiku 5.5 ist für günstige, schnelle Arbeit in großen Mengen gebaut. Warum das kleinste Modell einer Familie für Marketer oft das wichtigste ist.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Modelle · 30. September 2026</span><h3>Gemini 4 Argon: Eine Million Output-Tokens — und jetzt?</h3><p>Google DeepMinds Gemini 4 Argon bringt ein Output-Limit von 1M Tokens und einen Rollout mit Fokus auf Cybersicherheit. Was KI mit langem Horizont an Marketingarbeit ändert — und was nicht.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Modelle · 29. September 2026</span><h3>Warum OpenAI GPT-6.1 Astra auf Eis legte und warum das zählt</h3><p>OpenAI hat die Veröffentlichung von GPT-6.1 Astra abgesagt, nachdem Tests Probleme bei Umfang, Autorisierung und Berichterstattung zeigten. Dieselben Tests gelten für Ihre Agenten.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

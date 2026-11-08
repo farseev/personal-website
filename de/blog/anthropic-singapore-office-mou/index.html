@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic hat ein Büro in Singapur eröffnet und mit dem MDDI ein MOU zu KI-Sicherheit und -Evaluierung unterzeichnet. Warum Tests in lokalen Sprachen die eigentliche Nachricht sind." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic hat ein Büro in Singapur eröffnet und mit dem MDDI ein MOU zu KI-Sicherheit und -Evaluierung unterzeichnet. Warum Tests in lokalen Sprachen die eigentliche Nachricht sind." />
+<meta property="og:url" content="https://farseev.com/de/blog/anthropic-singapore-office-mou/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Asien und Singapur" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic hat ein Büro in Singapur eröffnet und mit dem MDDI ein MOU zu KI-Sicherheit und -Evaluierung unterzeichnet. Warum Tests in lokalen Sprachen die eigentliche Nachricht sind." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/anthropic-singapore-office-mou/#article","mainEntityOfPage":"https://farseev.com/de/blog/anthropic-singapore-office-mou/","url":"https://farseev.com/de/blog/anthropic-singapore-office-mou/","headline":"Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert","description":"Anthropic hat ein Büro in Singapur eröffnet und mit dem MDDI ein MOU zu KI-Sicherheit und -Evaluierung unterzeichnet. Warum Tests in lokalen Sprachen die eigentliche Nachricht sind.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Asien und Singapur","about":{"@type":"Thing","name":"Anthropic eröffnet ein Büro in Singapur und unterzeichnet ein MOU mit Singapurs Ministry of Digital Development and Information"},"wordCount":970,"citation":[{"@type":"CreativeWork","name":"Anthropic opens Singapore office and signs MOU with the Government of Singapore","url":"https://www.anthropic.com/news/singapore-office-opening","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/anthropic-singapore-office-mou/#faq","mainEntity":[{"@type":"Question","name":"Was umfasst Anthropics MOU mit Singapur?","acceptedAnswer":{"@type":"Answer","text":"Laut Anthropic umfasst es die Zusammenarbeit bei KI-Sicherheit, IT-Sicherheit und Modellevaluierung, Forschung zur KI-Einführung und ihren Auswirkungen sowie die verantwortungsvolle KI-Einführung im öffentlichen und privaten Sektor, einschließlich Unterstützung für KMU und Beschäftigte im öffentlichen Dienst."}},{"@type":"Question","name":"Wer hat das MOU unterzeichnet?","acceptedAnswer":{"@type":"Answer","text":"MDDI-Staatssekretär Kai Fong Chng und Anthropic-Mitgründer Ben Mann unterzeichneten es am Rande der Singapore International Cyber Week, im Beisein von Josephine Teo, Ministerin für Digital Development and Information, und Michael Sellitto, Head of APAC Policy bei Anthropic."}},{"@type":"Question","name":"Warum ist mehrsprachige KI-Evaluierung für Marketer in Asien wichtig?","acceptedAnswer":{"@type":"Answer","text":"Weil Kunden in Südostasien viele Sprachen nutzen und die Qualität und Sicherheit eines Modells auf Englisch nicht dasselbe Verhalten auf Malaiisch, Tamil oder Mandarin garantiert. Tests in jeder Kundensprache verringern das Risiko markenfremder oder unsicherer Ausgaben."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/anthropic-singapore-office-mou/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert","item":"https://farseev.com/de/blog/anthropic-singapore-office-mou/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-singapore-office-mou/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-singapore-office-mou/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/anthropic-singapore-office-mou/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-singapore-office-mou/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/anthropic-singapore-office-mou/">한국어</option><option value="th" lang="th" data-href="/th/blog/anthropic-singapore-office-mou/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/anthropic-singapore-office-mou/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/anthropic-singapore-office-mou/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/anthropic-singapore-office-mou/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/anthropic-singapore-office-mou/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/anthropic-singapore-office-mou/">Filipino</option><option value="es" lang="es" data-href="/es/blog/anthropic-singapore-office-mou/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/anthropic-singapore-office-mou/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/anthropic-singapore-office-mou/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/anthropic-singapore-office-mou/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Asien und Singapur</p>
+      <h1 class="h-display">Anthropic eröffnet in Singapur: Was das MOU wirklich signalisiert</h1>
+      <p class="lead">Anthropic hat ein Büro in Singapur eröffnet und mit dem MDDI ein MOU zu KI-Sicherheit und -Evaluierung unterzeichnet. Warum Tests in lokalen Sprachen die eigentliche Nachricht sind.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Anthropic eröffnet ein Büro in Singapur und unterzeichnet ein MOU mit Singapurs Ministry of Digital Development and Information (<time datetime="2026-10-14">14. Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Ein weiteres KI-Labor hat in Singapur Flagge gezeigt. Am 14. Oktober eröffnete Anthropic hier ein Büro und unterzeichnete eine Absichtserklärung mit der Regierung. Ich lebe und baue in dieser Stadt, daher habe ich die Ankündigung mit zwei Fragen gelesen: Wozu verpflichtet sie tatsächlich, und was ändert sie für Unternehmen, die mit KI in Asien mit Kunden kommunizieren?</p>
+<h2>Was passiert ist</h2>
+<p>Laut <a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropics Ankündigung</a> ist Singapur sein fünftes Büro im asiatisch-pazifischen Raum. Das MOU wurde mit dem Ministry of Digital Development and Information (MDDI) geschlossen. Unterzeichnet wurde es von MDDI-Staatssekretär Kai Fong Chng und Anthropic-Mitgründer Ben Mann am Rande der Singapore International Cyber Week, im Beisein von Ministerin Josephine Teo.</p>
+<p>Das MOU umfasst drei Bereiche: Zusammenarbeit bei KI-Sicherheit, IT-Sicherheit und Modellevaluierung; Forschung zur KI-Einführung und ihren Auswirkungen; und verantwortungsvolle Einführung im öffentlichen und privaten Sektor. Geplant sind unter anderem technische Austausche mit Singapurs Institutionen für KI-Sicherheit und -Prüfung zu Evaluierung, Teststandards und Incident Response, Unterstützung kleiner und mittlerer Unternehmen sowie die Weitergabe von Forschung wie Anthropics Economic Index.</p>
+<p>Einige Zahlen im Beitrag fielen auf. Laut Anthropic liegt Singapur bei der Nutzung von Claude.ai im Verhältnis zur Bevölkerung auf Platz zwei von 121 Ländern, fast sechsmal so hoch, wie seine Größe erwarten ließe. Mehr als 1.500 Ingenieure und technische Mitarbeitende bei GovTech Singapore hätten Claude Code eingeführt, und Grabs auf Claude basierender Vertriebsassistent BriX spare den Vertriebsteams rund 40.000 Stunden pro Quartal. Es handelt sich um die eigenen Zahlen des Unternehmens.</p>
+<p>Das Detail, das ich am interessantesten fand, ist historisch. Anthropic gibt an, 2023 der Generative AI Evaluation Sandbox von IMDA und AI Verify Foundation beigetreten zu sein und später mit ihnen bei einem Red-Teaming-Projekt auf Englisch, Mandarin, Malaiisch und Tamil zusammengearbeitet zu haben.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Büroeröffnungen werden leicht überinterpretiert. Ein MOU ist eine Absichtserklärung, kein Produkt. Einen verwandten Punkt habe ich kürzlich auf e27 gemacht: <a href="https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/" target="_blank" rel="noopener">Singapore and Romania don't need another MOU, they need first customers</a>. Vereinbarungen zählen, wenn daraus Arbeit wird, die jemand nutzen kann.</p>
+<p>Beobachtenswert macht diese Vereinbarung die Klausel zur Evaluierung. Singapur behandelt KI-Evaluierung ungewöhnlich konsequent als Infrastruktur: Sandboxes, Test-Toolkits und nun Austausche zur Modellevaluierung mit einem Frontier-Labor. Für Unternehmen ist das der Teil, der sich aufsummiert. Klare Teststandards machen es für eine Bank, einen Telekommunikationsanbieter oder einen Händler günstiger, Ja zu einem KI-Einsatz zu sagen, weil die Beweislast geteilt und dokumentiert ist.</p>
+<p>Das mehrsprachige Red-Teaming ist aus einem anderen Grund wichtig. Die meisten veröffentlichten Sicherheits- und Qualitätstests finden noch immer auf Englisch statt. Südostasien kauft, beschwert sich und sucht nicht nur auf Englisch. Ein Modell, das sich auf Englisch gut verhält und auf Malaiisch oder Tamil abdriftet, ist für diesen Markt kein sicheres Modell.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>In meiner Promotion an der NUS ging es darum, aus vielen Quellen gleichzeitig zu lernen, wer Menschen sind: Beiträge, Bilder, Check-ins und Sensordaten über verschiedene Netzwerke hinweg. Ein Ergebnis, das mich begleitet hat, kam später, in <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a> (AAAI 2020): Die gewählte Datenquelle verändert, wie genau Ihr KI-Nutzermodell ist. Auch Sprache ist eine Quelle. Ein Modell, das in einer Sprache evaluiert wurde, ist nicht für die Bevölkerung evaluiert, der Sie dienen.</p>
+<p>Dieselbe Logik treibt meine Arbeit zu erklärbarer KI für das Marketing an. In <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) haben wir Klickraten für neue Anzeigen-Creatives vorhergesagt und einen LLM-Assistenten genutzt, um zu erklären, was die Vorhersage bestimmte. In <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) haben wir Creative-Scoring mit LLMs kombiniert, um aus echten Anzeigendaten gemeinsam Strategie zu entwickeln. In beiden Fällen ist es die Erklärung, die es einem Marketer erlaubt, dem Ergebnis zu vertrauen und danach zu handeln. Evaluierung und Erklärung sind zwei Hälften desselben Versprechens: Zeig mir, dass es funktioniert, und zeig mir, warum.</p>
+<p>Wenn also eine Regierung und ein Labor vereinbaren, an Evaluierungsstandards zu arbeiten, lese ich das als gute Nachricht für Marketer, nicht nur für Regulierer. Es ist der Anfang einer gemeinsamen Sprache für „diese KI eignet sich für diese Aufgabe in diesem Markt“.</p>
+<h2>Was Unternehmen in Singapur jetzt tun sollten</h2>
+<ul><li>Testen Sie in den Sprachen Ihrer Kunden. Wenn Ihr Chatbot oder Content-Tool Menschen bedient, die Malaiisch, Tamil oder Mandarin sprechen, evaluieren Sie es vor dem Start in diesen Sprachen, nicht nur auf Englisch.</li><li>Dokumentieren Sie Ihre Evaluierung, auch wenn noch niemand danach fragt. Eine kurze Aufzeichnung darüber, was Sie wie und mit welchem Ergebnis getestet haben, ist der günstigste Compliance-Baustein, den Sie je schaffen werden.</li><li>Fragen Sie Anbieter nach der Evaluierung, nicht nur nach Funktionen. Welche Tests haben sie durchgeführt, in welchen Sprachen, und was ist fehlgeschlagen?</li><li>Nutzen Sie die öffentlichen Programme. Insbesondere KMU sollten prüfen, was die Regierung und ihre Partner im Rahmen dieses MOU und ähnlicher Programme anbieten, bevor sie teure Beratung einkaufen.</li><li>Lassen Sie Menschen das letzte Wort bei allem, was in einer neuen Sprache für Ihre Marke spricht.</li></ul>
+<p>Singapur ist gut darin, Vereinbarungen in Standards zu verwandeln. Wenn dieses MOU praktische Evaluierungsleitlinien für mehrsprachige KI hervorbringt, wird das weit über das Büro eines einzelnen Unternehmens hinaus von Bedeutung sein.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Was umfasst Anthropics MOU mit Singapur?</summary><p>Laut Anthropic umfasst es die Zusammenarbeit bei KI-Sicherheit, IT-Sicherheit und Modellevaluierung, Forschung zur KI-Einführung und ihren Auswirkungen sowie die verantwortungsvolle KI-Einführung im öffentlichen und privaten Sektor, einschließlich Unterstützung für KMU und Beschäftigte im öffentlichen Dienst.</p></details><details><summary>Wer hat das MOU unterzeichnet?</summary><p>MDDI-Staatssekretär Kai Fong Chng und Anthropic-Mitgründer Ben Mann unterzeichneten es am Rande der Singapore International Cyber Week, im Beisein von Josephine Teo, Ministerin für Digital Development and Information, und Michael Sellitto, Head of APAC Policy bei Anthropic.</p></details><details><summary>Warum ist mehrsprachige KI-Evaluierung für Marketer in Asien wichtig?</summary><p>Weil Kunden in Südostasien viele Sprachen nutzen und die Qualität und Sicherheit eines Modells auf Englisch nicht dasselbe Verhalten auf Malaiisch, Tamil oder Mandarin garantiert. Tests in jeder Kundensprache verringern das Risiko markenfremder oder unsicherer Ausgaben.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropic opens Singapore office and signs MOU with the Government of Singapore</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/malaysia-ai-governance-bill/"><span class="meta">Asien und Singapur · 29. Oktober 2026</span><h3>Malaysias AI Governance Bill: Verantwortung nach Rolle</h3><p>Malaysias Entwurf der AI Governance Bill, fällig bis Anfang 2027, legt Pflichten auf alle, die KI entwickeln, anbieten oder nutzen. Was rollenbasierte Regeln für Marketer bedeuten.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">Asien und Singapur · 1. Oktober 2026</span><h3>Japans KI-Aktionsplan: Wachstumspolitik wird Einführungspolitik</h3><p>Premierministerin Sanae Takaichi bat ihre Minister bis Jahresende um einen Aktionsplan zur KI-Förderung, verknüpft mit Japans Wachstumsstrategie. Was eine Politik, die Einführung vorrangig behandelt, für Marketer bedeutet.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">Asien und Singapur · 22. September 2026</span><h3>Alibabas Apsara 2026: Riesige Modelle, Realität der kleinen Modelle</h3><p>Auf der Apsara 2026 kündigte Alibaba ein Modell mit 5 bis 10 Billionen Parametern an und lobte zugleich sein offenes 27B-Modell. Warum Marketer in Asien beide Enden im Blick behalten sollten.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

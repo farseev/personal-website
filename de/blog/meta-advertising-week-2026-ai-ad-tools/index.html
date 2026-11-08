@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Auf der Advertising Week New York erweiterte Meta KI-Video, seinen Werbeassistenten, Zielgruppen in natürlicher Sprache und einen Ads MCP server. Was Marketer weiterhin selbst verantworten sollten." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="de" href="https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung | Prof. Aleks Farseev" />
+<meta property="og:description" content="Auf der Advertising Week New York erweiterte Meta KI-Video, seinen Werbeassistenten, Zielgruppen in natürlicher Sprache und einen Ads MCP server. Was Marketer weiterhin selbst verantworten sollten." />
+<meta property="og:url" content="https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — KI-News, erklärt" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Werbung und Marketing-KI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Auf der Advertising Week New York erweiterte Meta KI-Video, seinen Werbeassistenten, Zielgruppen in natürlicher Sprache und einen Ads MCP server. Was Marketer weiterhin selbst verantworten sollten." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung","description":"Auf der Advertising Week New York erweiterte Meta KI-Video, seinen Werbeassistenten, Zielgruppen in natürlicher Sprache und einen Ads MCP server. Was Marketer weiterhin selbst verantworten sollten.","image":"https://farseev.com/og-image.png","inLanguage":"de","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/de/blog/#blog"},"articleSection":"Werbung und Marketing-KI","about":{"@type":"Thing","name":"Meta kündigt auf der Advertising Week New York 2026 neue KI-Werbetools an"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Welche KI-Werbetools hat Meta auf der Advertising Week 2026 angekündigt?","acceptedAnswer":{"@type":"Answer","text":"Laut Relevant Audience und TechJuice kündigte Meta allgemein verfügbares Advantage+ Creative-Video aus Standbildern an, einen breiteren Rollout von Ads Creative Studio, einen Assistenten mit Gedächtnis und Tests agentischer Aktionen, Zielgruppenfindung in natürlicher Sprache im Detailed Targeting, einen erweiterten Ads MCP server und Tests eines Checkouts im Chat."}},{"@type":"Question","name":"Was ist Metas Ads MCP server?","acceptedAnswer":{"@type":"Answer","text":"Es ist eine auf dem Model Context Protocol basierende Schnittstelle, über die KI-Tools von Drittanbietern sich mit Metas Werbesystem verbinden können, etwa für Creative-Uploads, Vorschauen, Reporting und Kampagnenentwürfe. Relevant Audience nennt zehn Partner, darunter Databricks, Perplexity und Snowflake."}},{"@type":"Question","name":"Sollten Werbetreibende KI-Assistenten Budgets und Targeting ändern lassen?","acceptedAnswer":{"@type":"Answer","text":"Nur mit Regeln. Nutzen Sie Vorschauen und Freigaben, legen Sie fest, welche Änderungen automatisch erfolgen dürfen, und prüfen Sie die Ergebnisse mit unabhängiger Messung wie Holdout-Tests, statt sich nur auf die von der Plattform gemeldeten Conversions zu verlassen."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://farseev.com/de/"},{"@type":"ListItem","position":2,"name":"KI-News","item":"https://farseev.com/de/blog/"},{"@type":"ListItem","position":3,"name":"Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung","item":"https://farseev.com/de/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/de/","jobTitle":"Gründer & CEO von SOMIN.ai; Gastprofessor für KI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/de/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptinhalt"><a href="/de/#about">Über mich</a><a href="/de/#research">Forschung</a><a href="/de/blog/" aria-current="page">KI-News</a><a href="/de/#talks">Vorträge</a><a href="/de/#connect">Kontakt</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Sprache" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-advertising-week-2026-ai-ad-tools/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-advertising-week-2026-ai-ad-tools/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/meta-advertising-week-2026-ai-ad-tools/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-advertising-week-2026-ai-ad-tools/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/meta-advertising-week-2026-ai-ad-tools/">Filipino</option><option value="es" lang="es" data-href="/es/blog/meta-advertising-week-2026-ai-ad-tools/">Español</option><option value="fr" lang="fr" data-href="/fr/blog/meta-advertising-week-2026-ai-ad-tools/">Français</option><option value="de" lang="de" selected>Deutsch</option><option value="pt" lang="pt" data-href="/pt/blog/meta-advertising-week-2026-ai-ad-tools/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/meta-advertising-week-2026-ai-ad-tools/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Brotkrumen-Navigation"><ol><li><a href="/de/">Startseite</a></li><li><a href="/de/blog/">KI-News</a></li><li aria-current="page">Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung</li></ol></nav>
+      <p class="eyebrow">KI-News, erklärt · Werbung und Marketing-KI</p>
+      <h1 class="h-display">Metas neue KI-Werbetools: Automatisierung braucht weiter Erklärung</h1>
+      <p class="lead">Auf der Advertising Week New York erweiterte Meta KI-Video, seinen Werbeassistenten, Zielgruppen in natürlicher Sprache und einen Ads MCP server. Was Marketer weiterhin selbst verantworten sollten.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Die Nachricht: Meta kündigt auf der Advertising Week New York 2026 neue KI-Werbetools an (<time datetime="2026-10-06">6. Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Von <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8. November 2026</time><span class="dot"></span><span>4 Min. Lesezeit</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Jedes Jahr gehen die großen Plattformen einen weiteren Schritt darauf zu, die ganze Kampagne für Sie zu steuern. Auf der Advertising Week New York am 6. Oktober ging Meta gleich mehrere: ein Werbeassistent mit Gedächtnis, aus Standbildern generierte Videos, Zielgruppenfindung in natürlicher Sprache und ein erweiterter Server, über den externe KI-Tools sein Werbesystem bedienen können. Nützliche Tools. Doch Automatisierung ohne Erklärung ist ein Risiko, das Sie übernehmen — nicht eines, das Meta Ihnen abnimmt.</p>
+<h2>Was passiert ist</h2>
+<p>Metas eigene Ankündigungsseite konnte ich nicht öffnen, daher stütze ich mich auf zwei ausführliche Berichte. Laut <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">der Analyse von Relevant Audience</a> und <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">dem Bericht von TechJuice</a> kündigte Meta Folgendes an:</p>
+<ul><li>Advantage+ Creative-Video aus Standbildern, jetzt allgemein verfügbar, und Katalog-Produktvideos in der Beta für berechtigte Werbetreibende.</li><li>Ads Creative Studio, ein Kreativ-Arbeitsbereich, der bisher ausgewählten Partnern vorbehalten war und nun für weitere Werbetreibende ausgerollt wird.</li><li>Ein KI-Assistent für Unternehmen mit gesprächsübergreifendem Gedächtnis, mit Tests zum Import von Strategiedokumenten und Markenrichtlinien, geplanten Berichten und Warnmeldungen sowie agentischen Aktionen wie Kampagnen-Setup und Budgetänderungen mit Vorschau und Freigabe.</li><li>Ein Tool für Customer-Lifecycle-Strategien, jetzt für alle Werbetreibenden verfügbar, sowie KI-gestützte Zielgruppenfindung im Detailed Targeting, bei der Werbetreibende einen idealen Kunden in natürlicher Sprache beschreiben. Relevant Audience gibt Metas Zeitplan dafür mit „bis Ende des Jahres“ an.</li><li>Ein erweiterter Ads MCP server mit zehn namentlich genannten Partnern, darunter Databricks, Perplexity, Snowflake und Triple Whale, damit KI-Tools von Drittanbietern mit Metas Werbesystem arbeiten können.</li><li>Commerce-Funktionen, darunter Tests eines direkten Checkouts über Metas Business Agent im Messenger mit Shopify und eines direkten Checkouts in Meta AI mit Partnern wie Adyen, PayPal, Shopify und Stripe.</li></ul>
+<p>Meta gab außerdem an, dass Werbetreibende, die die Empfehlungen seines Assistenten übernehmen, „typischerweise“ 5 % mehr Conversions bei gleichen Kosten pro Conversion erzielen und dass mehr als 60 % der Zeit auf Facebook und Instagram mit Video verbracht werden. Relevant Audience merkt an, dass Meta keine Methodik für diese Zahlen veröffentlicht hat.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Zwei dieser Neuerungen verändern, wer das Denken übernimmt.</p>
+<p>Zielgruppenfindung in natürlicher Sprache bedeutet, dass die Plattform Ihre Beschreibung eines Kunden in Targeting übersetzt. Das ist eine Profiling-Entscheidung. Vom Assistenten gesteuerte Budget- und Targeting-Änderungen bedeuten, dass die Plattform auch entscheidet, was mit dem Ergebnis geschieht. Und der MCP-Server bedeutet, dass die KI, die Sie außerhalb von Meta nutzen, nun innerhalb von Meta handeln kann.</p>
+<p>Jeder Schritt spart Zeit. Zusammen bündeln sie Entscheidungen in Systemen, die auf die Ziele der Plattform optimiert sind und mit den eigenen Daten der Plattform gemessen werden. Wenn dasselbe Unternehmen die Anzeige verkauft, die Zielgruppe wählt, das Creative generiert und das Ergebnis berichtet, wird eine unabhängige Sicht wertvoller, nicht weniger wertvoll.</p>
+<h2>Was meine Forschung sagt</h2>
+<p>Eine Zielgruppe in Worten zu beschreiben und ein Zielsegment zurückzubekommen, ist ein Problem, mit dem ich mich lange beschäftigt habe. Unsere Arbeit zum <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Multi-View-Persönlichkeitsprofiling über Twitter, Facebook und PersonalityCafe</a> (Frontiers in Big Data, 2022) hat gezeigt, dass das, was man über Menschen ableitet, stark davon abhängt, welche Signale man nutzt. Eine Beschreibung in natürlicher Sprache ist eine Hypothese über Ihren Kunden. Sie verdient es, getestet und nicht nur ausgeführt zu werden.</p>
+<p>Bei Creatives hat mein Team an der Bewertung vor dem Start gearbeitet. In <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) haben wir ein multimodales Modell demonstriert, das die Meta-Anzeigen-Creatives eines Werbetreibenden anhand von Text, Bild, Targeting und Einstellungen bewertet, bevor sie live gehen. In <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) haben wir einen LLM-Assistenten ergänzt, der erklärt, was eine vorhergesagte Klickrate bestimmt. Das Prinzip ist dasselbe, das ich auf Plattform-Tools anwende: Aus einem Score, den man nicht erklären kann, kann man nichts lernen.</p>
+<p>Aus Standbildern generierte Videos werden die Zahl der Varianten vervielfachen, die eine Marke schalten kann. Das ist gut — sofern noch jemand entscheidet, welche Varianten Budget verdienen, und versteht, warum die Gewinner gewonnen haben. Sonst bekommen Sie mehr Creatives und weniger Wissen.</p>
+<h2>Was Werbetreibende jetzt tun sollten</h2>
+<ul><li>Nutzen Sie die neuen Video- und Kreativtools, aber behalten Sie einen Filter vor dem Start. Prüfen und bewerten Sie Varianten, bevor sie Geld ausgeben, und halten Sie fest, warum jede einzelne live ging.</li><li>Behandeln Sie Zielgruppen in natürlicher Sprache als Experimente. Schreiben Sie die Beschreibung, testen Sie sie gegen Ihre bisher beste Zielgruppe und vergleichen Sie die Kosten pro realem Ergebnis, nicht nur Plattform-Conversions.</li><li>Genehmigen Sie agentische Änderungen bewusst. Nutzen Sie die von Meta beschriebenen Vorschauen und Freigaben und legen Sie Regeln fest, welche Änderungen ein Assistent ohne Menschen vornehmen darf.</li><li>Achten Sie darauf, was Sie importieren. Strategiedokumente und Markenrichtlinien sind sensibel. Entscheiden Sie, was der Assistent wirklich braucht.</li><li>Behalten Sie eine unabhängige Messsicht. Holdouts, Inkrementalitätstests und Ihre eigene Analytik sind das Gegengewicht zu den von der Plattform gemeldeten Ergebnissen.</li></ul>
+<p>Metas Tools werden so gut, dass sich der Engpass von der Ausführung zum Urteil verlagert. Sorgen Sie dafür, dass Ihr Team dieses Urteil weiterhin fällt.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Welche KI-Werbetools hat Meta auf der Advertising Week 2026 angekündigt?</summary><p>Laut Relevant Audience und TechJuice kündigte Meta allgemein verfügbares Advantage+ Creative-Video aus Standbildern an, einen breiteren Rollout von Ads Creative Studio, einen Assistenten mit Gedächtnis und Tests agentischer Aktionen, Zielgruppenfindung in natürlicher Sprache im Detailed Targeting, einen erweiterten Ads MCP server und Tests eines Checkouts im Chat.</p></details><details><summary>Was ist Metas Ads MCP server?</summary><p>Es ist eine auf dem Model Context Protocol basierende Schnittstelle, über die KI-Tools von Drittanbietern sich mit Metas Werbesystem verbinden können, etwa für Creative-Uploads, Vorschauen, Reporting und Kampagnenentwürfe. Relevant Audience nennt zehn Partner, darunter Databricks, Perplexity und Snowflake.</p></details><details><summary>Sollten Werbetreibende KI-Assistenten Budgets und Targeting ändern lassen?</summary><p>Nur mit Regeln. Nutzen Sie Vorschauen und Freigaben, legen Sie fest, welche Änderungen automatisch erfolgen dürfen, und prüfen Sie die Ergebnisse mit unabhängiger Messung wie Holdout-Tests, statt sich nur auf die von der Plattform gemeldeten Conversions zu verlassen.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Quellen</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ist Gründer und CEO von SOMIN.ai und Gastprofessor für KI an der NUS und am INSEAD. Seine begutachtete Forschung umfasst User-Profiling aus mehreren Quellen, persönlichkeitsbewusste Empfehlungen und erklärbare KI für das Marketing.</p>
+<p class="links"><a href="/de/">Über Aleks</a><a href="/de/#publications">Publikationen</a><a href="/de/blog/">Weitere KI-News</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Weiterlesen</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Weitere KI-News, erklärt</h2></div>
+    <div class="cards-3"><a class="pcard" href="/de/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Werbung und Marketing-KI · 29. Oktober 2026</span><h3>WPP im dritten Quartal 2026: Das Agenturmodell unter KI-Druck</h3><p>WPP meldete einen Rückgang des organischen Nettoumsatzes, während der CEO auf die Nachfrage nach KI-gestützten Leistungen über WPP Open verwies. Was das über Agenturen aussagt.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Werbung und Marketing-KI · 21. Oktober 2026</span><h3>Meta Q3 2026: KI hebt Anzeigenpreise, Creator werden zum Kanal</h3><p>Metas drittes Quartal 2026: Werbeumsatz plus 26 %, Preis pro Anzeige plus 14 %, Partnership Ads über einer Jahresrate von 15 Mrd. $ und ein ganz anderes Asien-Pazifik. Was das bedeutet.</p><span class="go">Lesen →</span></a><a class="pcard" href="/de/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Werbung und Marketing-KI · 30. September 2026</span><h3>Amazon Ads Agent: Retail Media wird agentisch auf der unBoxed 2026</h3><p>Auf der unBoxed 2026 bündelte Amazon seine Einkaufstools im Amazon Ads Agent, mit dialogbasierter Messung und KI-Kreation. Was in menschlicher Hand bleiben sollte.</p><span class="go">Lesen →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI-CEO, Professor für KI, Keynote-Speaker und Akkordeonist. Verbindet tiefgehende Forschung mit realem Marketing — von Singapur in die Welt.</p>
+      </div>
+      <div>
+        <h6>Entdecken</h6>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/blog/">KI-News-Blog</a></li>
+          <li><a href="/de/#research">Forschung</a></li>
+          <li><a href="/de/#publications">Publikationen</a></li>
+          <li><a href="/de/#connect">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Anderswo</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Die Meinungen sind meine eigenen. Nachrichtenfakten verlinken auf ihre Quellen.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
