@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apsara 2026 d'Alibaba&nbsp;: des modèles géants, une réalité de petits modèles | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="À Apsara 2026, Alibaba a annoncé prévoir un modèle de 5 à 10 billions de paramètres tout en vantant son modèle ouvert de 27B. Pourquoi les marketeurs asiatiques doivent surveiller les deux extrêmes." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Apsara 2026 d&#x27;Alibaba : des modèles géants, une réalité de petits modèles | Prof. Aleks Farseev" />
+<meta property="og:description" content="À Apsara 2026, Alibaba a annoncé prévoir un modèle de 5 à 10 billions de paramètres tout en vantant son modèle ouvert de 27B. Pourquoi les marketeurs asiatiques doivent surveiller les deux extrêmes." />
+<meta property="og:url" content="https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Asie et Singapour" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Apsara 2026 d&#x27;Alibaba : des modèles géants, une réalité de petits modèles | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="À Apsara 2026, Alibaba a annoncé prévoir un modèle de 5 à 10 billions de paramètres tout en vantant son modèle ouvert de 27B. Pourquoi les marketeurs asiatiques doivent surveiller les deux extrêmes." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/#article","mainEntityOfPage":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/","url":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/","headline":"Apsara 2026 d'Alibaba : des modèles géants, une réalité de petits modèles","description":"À Apsara 2026, Alibaba a annoncé prévoir un modèle de 5 à 10 billions de paramètres tout en vantant son modèle ouvert de 27B. Pourquoi les marketeurs asiatiques doivent surveiller les deux extrêmes.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Asie et Singapour","about":{"@type":"Thing","name":"Le CEO d'Alibaba, Eddie Wu, présente ses projets d'un modèle de 5 à 10 billions de paramètres et la puce Zhenwu V900 lors de l'Apsara Conference"},"wordCount":828,"citation":[{"@type":"CreativeWork","name":"Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip","url":"https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip","publisher":"The Standard (Reuters)","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference","url":"https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/","publisher":"Alizila (Alibaba)","datePublished":"2026-09-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/#faq","mainEntity":[{"@type":"Question","name":"Qu'a annoncé Alibaba lors de l'Apsara Conference 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Selon Reuters, le CEO Eddie Wu a déclaré qu'Alibaba prévoit d'entraîner un modèle de 5 à 10 billions de paramètres, a présenté la puce IA Zhenwu V900, trois fois plus performante que la précédente, et a fixé l'objectif de porter la capacité des centres de données d'Alibaba Cloud au-delà de 20 gigawatts d'ici 2032."}},{"@type":"Question","name":"Quelle est la taille de l'actuel modèle Qwen phare d'Alibaba ?","acceptedAnswer":{"@type":"Answer","text":"Selon Reuters, le modèle phare actuel d'Alibaba, Qwen 3.8 Max, compte 2,4 billions de paramètres ; le modèle prévu serait donc environ deux à quatre fois plus grand."}},{"@type":"Question","name":"Pourquoi les modèles ouverts et déployables localement comptent-ils pour les marketeurs en Asie ?","acceptedAnswer":{"@type":"Answer","text":"Ils peuvent fonctionner dans une juridiction choisie, être adaptés aux langues et aux données locales et coûter moins cher à grande échelle, ce qui aide en matière de localisation des données, de pertinence culturelle et de charges de travail d'agents toujours actifs."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Apsara 2026 d'Alibaba : des modèles géants, une réalité de petits modèles","item":"https://farseev.com/fr/blog/alibaba-apsara-2026-qwen-roadmap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/alibaba-apsara-2026-qwen-roadmap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/alibaba-apsara-2026-qwen-roadmap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/alibaba-apsara-2026-qwen-roadmap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/alibaba-apsara-2026-qwen-roadmap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/alibaba-apsara-2026-qwen-roadmap/">한국어</option><option value="th" lang="th" data-href="/th/blog/alibaba-apsara-2026-qwen-roadmap/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/alibaba-apsara-2026-qwen-roadmap/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/alibaba-apsara-2026-qwen-roadmap/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/alibaba-apsara-2026-qwen-roadmap/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/alibaba-apsara-2026-qwen-roadmap/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/alibaba-apsara-2026-qwen-roadmap/">Filipino</option><option value="es" lang="es" data-href="/es/blog/alibaba-apsara-2026-qwen-roadmap/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/alibaba-apsara-2026-qwen-roadmap/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/alibaba-apsara-2026-qwen-roadmap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Apsara 2026 d'Alibaba&nbsp;: des modèles géants, une réalité de petits modèles</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Asie et Singapour</p>
+      <h1 class="h-display">Apsara 2026 d'Alibaba&nbsp;: des modèles géants, une réalité de petits modèles</h1>
+      <p class="lead">À Apsara 2026, Alibaba a annoncé prévoir un modèle de 5 à 10 billions de paramètres tout en vantant son modèle ouvert de 27B. Pourquoi les marketeurs asiatiques doivent surveiller les deux extrêmes.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: le CEO d'Alibaba, Eddie Wu, présente ses projets d'un modèle de 5 à 10 billions de paramètres et la puce Zhenwu V900 lors de l'Apsara Conference (<time datetime="2026-09-22">22 septembre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La plus grande conférence IA de Chine, chaque mois de septembre, est l'Apsara Conference d'Alibaba Cloud à Hangzhou. Le keynote de cette année contenait deux histoires. L'une portait sur l'échelle&nbsp;: un modèle plusieurs fois plus grand que tout ce qu'Alibaba a jamais entraîné. L'autre, presque en passant, portait sur un petit modèle ouvert que les développeurs utilisent réellement. Pour les marketeurs en Asie, la seconde histoire compte peut-être davantage.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Reuters, via The Standard</a>, le CEO d'Alibaba, Eddie Wu, a déclaré le 22 septembre que l'équipe Qwen prévoit d'entraîner un nouveau modèle de 5 à 10 billions de paramètres, destiné à des tâches plus complexes et à plus long horizon. Le modèle phare actuel d'Alibaba, Qwen 3.8 Max, compte 2,4 billions de paramètres. Eddie Wu a également indiqué que l'équipe a réalisé des «&nbsp;progrès significatifs&nbsp;» en matière d'auto-amélioration récursive, présenté la puce IA Zhenwu V900 de T-Head, l'unité d'Alibaba, trois fois plus performante que la précédente, et fixé l'objectif de porter la capacité mondiale des centres de données d'Alibaba Cloud au-delà de 20 gigawatts d'ici 2032. Il a déclaré&nbsp;: «&nbsp;La demande à moyen et long terme du secteur dépasse de loin nos capacités d'approvisionnement.&nbsp;»</p>
+<p>Dans le texte du keynote publié sur <a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">Alizila</a>, Eddie Wu a qualifié le modèle open source Qwen-27B de «&nbsp;modèle le plus populaire auprès des développeurs dans le monde&nbsp;» et a déclaré qu'Alibaba continuera d'affiner des modèles pour un déploiement local. Il a aussi dit s'attendre à ce que les agents deviennent des «&nbsp;résidents&nbsp;» durables du cloud, exécutant des tâches à long horizon et consommant de la puissance de calcul en continu.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Pour un marketeur régional, la course aux billions de paramètres relève surtout du spectacle. Vous utiliserez ces modèles via une API, si tant est que vous les utilisiez. Le modèle ouvert et déployable localement est différent. C'est quelque chose que votre entreprise ou votre prestataire peut faire tourner sur sa propre infrastructure, dans la juridiction de son choix, affiné sur ses propres données.</p>
+<p>Cela compte en Asie pour des raisons pratiques. Les règles de localisation des données varient d'un pays à l'autre de la région. De nombreuses entreprises sont réticentes à envoyer des données clients vers une API étrangère. Et les langues et références culturelles d'Asie du Sud-Est et de l'Est sont mal servies par des modèles entraînés principalement sur l'anglais. Un modèle ouvert de taille moyenne, performant et adaptable localement, répond à ces trois problèmes.</p>
+<p>La remarque d'Eddie Wu sur les agents «&nbsp;résidents&nbsp;» du cloud est l'autre signal. Si les agents tournent en continu, le coût par tâche devient une variable stratégique. Ce sont des modèles efficients qui exécuteront l'essentiel de ce travail.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>J'ai soutenu dans Forbes qu'en marketing, <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">la technique compte plus que la taille du modèle</a>. Un modèle plus petit, bien adapté à votre audience, à votre langue et à votre tâche, l'emporte généralement sur un modèle généraliste géant utilisé sans discernement.</p>
+<p>Mes recherches montrent aussi pourquoi l'adaptation locale compte. Dans <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a> (AAAI 2020), nous avons constaté que le réseau social à partir duquel un modèle apprend modifie sa précision. Dans <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Do we behave differently on Twitter and Facebook?</a> (Frontiers in Big Data, 2022), nous avons montré que les personnes expriment leur personnalité différemment selon les plateformes. Le constat général&nbsp;: le comportement dépend du contexte, et les modèles ont besoin de données propres à ce contexte pour bien le lire. Les plateformes, les langues et les cultures d'Asie constituent un contexte qu'un modèle entraîné ailleurs ne possède pas automatiquement.</p>
+<p>Et les modèles efficients rendent l'explicabilité abordable à grande échelle. Dans <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), nous avons associé la prédiction de performance à des explications produites par des LLM. Faire tourner la couche d'explication sur chaque création, chaque jour, n'est réaliste que si le modèle de langage est assez bon marché pour être appliqué à tout.</p>
+<h2>Ce que les équipes marketing en Asie doivent faire dès maintenant</h2>
+<ul><li>Testez un modèle ouvert de taille moyenne sur une tâche régionale, comme la classification de publications sociales en indonésien ou en thaï, et comparez-le à votre modèle API actuel en matière de précision et de coût.</li><li>Décidez où vos données peuvent aller. Identifiez quelles données clients peuvent être envoyées à des API externes et lesquelles nécessitent un traitement local.</li><li>Affinez sur votre propre contexte. Même une petite quantité de données locales annotées peut nettement améliorer le ton et la précision.</li><li>Préparez-vous à des agents toujours actifs. Estimez le coût de calcul d'une veille et d'un reporting continus, et choisissez vos modèles en conséquence.</li><li>Suivez la frontière technologique sans en dépendre. Utilisez les plus grands modèles là où ils apportent clairement de la valeur, et les modèles efficients partout ailleurs.</li></ul>
+<p>Le gros titre venu de Hangzhou était un nombre à douze zéros. La nouvelle concrète pour les marketeurs, c'est que les bons petits modèles ne cessent de s'améliorer, et qu'ils peuvent être hébergés plus près de vos clients.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'a annoncé Alibaba lors de l'Apsara Conference 2026&nbsp;?</summary><p>Selon Reuters, le CEO Eddie Wu a déclaré qu'Alibaba prévoit d'entraîner un modèle de 5 à 10 billions de paramètres, a présenté la puce IA Zhenwu V900, trois fois plus performante que la précédente, et a fixé l'objectif de porter la capacité des centres de données d'Alibaba Cloud au-delà de 20 gigawatts d'ici 2032.</p></details><details><summary>Quelle est la taille de l'actuel modèle Qwen phare d'Alibaba&nbsp;?</summary><p>Selon Reuters, le modèle phare actuel d'Alibaba, Qwen 3.8 Max, compte 2,4 billions de paramètres&nbsp;; le modèle prévu serait donc environ deux à quatre fois plus grand.</p></details><details><summary>Pourquoi les modèles ouverts et déployables localement comptent-ils pour les marketeurs en Asie&nbsp;?</summary><p>Ils peuvent fonctionner dans une juridiction choisie, être adaptés aux langues et aux données locales et coûter moins cher à grande échelle, ce qui aide en matière de localisation des données, de pertinence culturelle et de charges de travail d'agents toujours actifs.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip" target="_blank" rel="noopener">Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip</a> — The Standard (Reuters), 22 September 2026</li><li translate="no"><a href="https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/" target="_blank" rel="noopener">AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference</a> — Alizila (Alibaba), 22 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/anthropic-singapore-office-mou/"><span class="meta">Asie et Singapour · 14 octobre 2026</span><h3>Anthropic s'installe à Singapour&nbsp;: ce que le protocole d'accord signale vraiment</h3><p>Anthropic a ouvert un bureau à Singapour et signé un protocole d'accord avec le MDDI sur la sécurité et l'évaluation de l'IA. Pourquoi les tests en langues locales sont le vrai sujet.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">Asie et Singapour · 1er octobre 2026</span><h3>Le plan d'action IA du Japon&nbsp;: la politique de croissance devient politique d'adoption</h3><p>La Première ministre Sanae Takaichi a demandé aux ministres un plan d'action pour la promotion de l'IA d'ici la fin de l'année, lié à la stratégie de croissance du Japon. Ce qu'une politique axée sur l'adoption signifie pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trois scénarios économiques de l'IA et l'avenir des métiers du marketing | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic a publié trois scénarios sur l&#x27;effet de l&#x27;IA sur l&#x27;économie américaine d&#x27;ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/anthropic-economic-scenarios-knowledge-work/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Trois scénarios économiques de l&#x27;IA et l&#x27;avenir des métiers du marketing | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic a publié trois scénarios sur l&#x27;effet de l&#x27;IA sur l&#x27;économie américaine d&#x27;ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing." />
+<meta property="og:url" content="https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Travail et compétences" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Trois scénarios économiques de l&#x27;IA et l&#x27;avenir des métiers du marketing | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic a publié trois scénarios sur l&#x27;effet de l&#x27;IA sur l&#x27;économie américaine d&#x27;ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/#article","mainEntityOfPage":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/","url":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/","headline":"Trois scénarios économiques de l'IA et l'avenir des métiers du marketing","description":"Anthropic a publié trois scénarios sur l'effet de l'IA sur l'économie américaine d'ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Travail et compétences","about":{"@type":"Thing","name":"Anthropic publie un outil interactif d'exploration de scénarios économiques pour l'IA transformatrice"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Scenarios for our Economic Future","url":"https://www.anthropic.com/institute/econ-scenarios","publisher":"Anthropic","datePublished":"2026-09-09"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/#faq","mainEntity":[{"@type":"Question","name":"Quels sont les trois scénarios économiques d'Anthropic pour l'IA ?","acceptedAnswer":{"@type":"Answer","text":"Le scénario modéré, où l'impact de l'IA ressemble à celui d'Internet ; le scénario substantiel, où l'IA peut accomplir la moitié du travail intellectuel d'ici 2030 et où la croissance est environ deux fois supérieure à la normale ; et le scénario extrême, où l'IA surpasse les humains dans la plupart des tâches intellectuelles et où la croissance atteint 15 % par an, avec une possible hausse du chômage."}},{"@type":"Question","name":"Que disent les scénarios sur les travailleurs du savoir ?","acceptedAnswer":{"@type":"Answer","text":"Dans le scénario substantiel, les salaires des travailleurs du savoir sont à peu près stables tandis que les autres travailleurs voient les leurs progresser. Dans le scénario extrême, les salaires des travailleurs du savoir baissent de plus de 10 % et les métiers du savoir risquent d'être supplantés."}},{"@type":"Question","name":"Comment les marketeurs doivent-ils se préparer à l'impact de l'IA sur l'emploi ?","acceptedAnswer":{"@type":"Answer","text":"En décomposant leur poste en tâches, en réorientant leur temps vers le jugement et la responsabilité, en apprenant à évaluer les résultats de l'IA à l'aune de données réelles, en développant une expertise métier et en se concentrant sur les résultats plutôt que sur les livrables."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Trois scénarios économiques de l'IA et l'avenir des métiers du marketing","item":"https://farseev.com/fr/blog/anthropic-economic-scenarios-knowledge-work/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-economic-scenarios-knowledge-work/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-economic-scenarios-knowledge-work/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/anthropic-economic-scenarios-knowledge-work/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-economic-scenarios-knowledge-work/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/anthropic-economic-scenarios-knowledge-work/">한국어</option><option value="th" lang="th" data-href="/th/blog/anthropic-economic-scenarios-knowledge-work/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/anthropic-economic-scenarios-knowledge-work/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/anthropic-economic-scenarios-knowledge-work/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/anthropic-economic-scenarios-knowledge-work/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/anthropic-economic-scenarios-knowledge-work/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/anthropic-economic-scenarios-knowledge-work/">Filipino</option><option value="es" lang="es" data-href="/es/blog/anthropic-economic-scenarios-knowledge-work/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/anthropic-economic-scenarios-knowledge-work/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/anthropic-economic-scenarios-knowledge-work/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Trois scénarios économiques de l'IA et l'avenir des métiers du marketing</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Travail et compétences</p>
+      <h1 class="h-display">Trois scénarios économiques de l'IA et l'avenir des métiers du marketing</h1>
+      <p class="lead">Anthropic a publié trois scénarios sur l'effet de l'IA sur l'économie américaine d'ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Anthropic publie un outil interactif d'exploration de scénarios économiques pour l'IA transformatrice (<time datetime="2026-09-09">9 septembre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La plupart des prévisions sur l'IA et l'emploi vous donnent un chiffre unique et beaucoup d'assurance. En septembre, Anthropic a publié quelque chose de plus utile&nbsp;: trois scénarios, avec leurs hypothèses explicitées. Le marketing est un travail intellectuel, je l'ai donc lu comme une prévision sur mon propre domaine et sur les personnes à qui j'enseigne.</p>
+<h2>Ce qui s'est passé</h2>
+<p>L'équipe Economics d'Anthropic a publié <a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a>, un outil d'exploration interactif fondé sur un rapport technique, <em>Economic Scenarios for Transformative AI</em> (Korinek et al., 2026). Il modélise la manière dont l'IA pourrait affecter l'emploi, la croissance et le chômage aux États-Unis jusqu'en 2030, en traitant l'économie comme des ensembles de tâches que l'IA peut augmenter, automatiser ou créer.</p>
+<p>Il y a trois scénarios. Dans le scénario modéré, l'impact de l'IA ressemble à celui d'Internet, le PIB américain atteignant 34 100 milliards US$ en 2030. Dans le scénario substantiel, l'IA peut accomplir la moitié du travail intellectuel d'ici 2030, mais l'essentiel est encore réalisé sans IA&nbsp;; la croissance est environ deux fois supérieure à la normale, le PIB atteint 36 300 milliards US$, et les salaires des travailleurs du savoir sont à peu près stables tandis que les autres travailleurs voient les leurs progresser. Dans le scénario extrême, l'IA surpasse les humains dans la plupart des tâches intellectuelles, la croissance atteint 15 % par an, le PIB atteint 44 400 milliards US$, le chômage pourrait dépasser les niveaux typiques d'une récession et les salaires des travailleurs du savoir baissent de plus de 10 %.</p>
+<p>Dans tous les scénarios, la part du travail dans le PIB diminue tandis que celle du capital augmente. Anthropic a également interrogé 10 980 personnes du grand public. L'entreprise affirme que «&nbsp;le principal défi n'est pas d'obtenir de la croissance économique, mais de veiller à ce que les bénéfices soient largement partagés&nbsp;», et présente l'outil comme une version 1.0 dont les résultats réels pourraient différer sensiblement.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Observez où s'exerce la pression. Dans les scénarios substantiel et extrême, ce sont les métiers du savoir qui risquent d'être supplantés, tandis que la demande augmente dans d'autres métiers. Le marketing se situe pleinement dans la colonne du savoir&nbsp;: recherche, rédaction, analyse, planification, reporting.</p>
+<p>Le scénario substantiel est celui que je trouve le plus réaliste comme base de planification, et son détail le plus intéressant est l'écart&nbsp;: l'IA peut accomplir la moitié du travail intellectuel, et pourtant l'essentiel est encore fait sans IA. C'est dans cet écart que des carrières se feront ou se déferont au cours des prochaines années. La question pour un marketeur n'est pas de savoir si l'IA peut accomplir certaines parties du travail. C'est de savoir si vous êtes la personne qui sait l'appliquer aux parties qui comptent.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>J'ai soutenu dans mes <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">chroniques Forbes</a> que les marketeurs doivent passer du statut de créateurs de contenu manuels à celui de curateurs d'outils d'IA autonomes, et j'ai posé une question voisine dans <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete?</a> Les scénarios donnent à cet argument plus de tranchant. Si ce sont les tâches qui sont automatisées, alors un emploi constitué uniquement de tâches automatisables est fragile, et un emploi construit autour du jugement, du contexte et de la responsabilité est résilient.</p>
+<p>Mes recherches indiquent où se trouve la valeur durable. Dans <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), nous avons présenté l'IA comme co-créatrice de la stratégie marketing, en combinant le scoring de performance créative et les LLM, l'humain gardant la main. Dans <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), le résultat est une recommandation sur laquelle un marketeur doit encore décider d'agir. Ces systèmes suppriment une grande partie du travail d'analyse. Ils augmentent la valeur de la personne qui formule la question, arbitre les compromis et assume la décision.</p>
+<p>Notre article SIGIR 2026 sur <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">la lutte contre l'homogénéisation des contenus</a> ajoute un point à l'échelle du marché. Quand tout le monde utilise les mêmes outils pour les mêmes tâches, les résultats convergent. La singularité devient rare, et ce qui est rare se paie plus cher. Les marketeurs capables de rendre un travail assisté par l'IA unique dans sa forme comme dans ses résultats seront recherchés dans tous les scénarios.</p>
+<h2>Ce que les marketeurs doivent faire dès maintenant</h2>
+<ul><li>Décomposez votre propre poste en tâches. Indiquez celles que l'IA fait déjà bien, celles qu'elle assiste et celles qui ont encore besoin de vous. Réorientez délibérément votre temps vers ce dernier groupe.</li><li>Apprenez à évaluer, pas seulement à rédiger des prompts. Savoir juger les résultats de l'IA à l'aune de données réelles est la compétence que récompensent les scénarios.</li><li>Soyez responsable des résultats, pas des livrables. Les postes définis par des livrables sont plus faciles à automatiser que ceux définis par des résultats.</li><li>Développez une expertise métier approfondie. La connaissance d'un marché, d'une catégorie ou d'un client est difficile à reproduire pour des modèles généralistes.</li><li>Plaidez pour un partage des gains. Si l'IA augmente la productivité de votre équipe, défendez la formation, les parcours de carrière et de nouveaux rôles, et pas seulement la réduction des coûts.</li></ul>
+<p>Les scénarios ne sont pas des prédictions. Leur valeur tient à ce qu'ils rendent les hypothèses discutables. Pour le marketing, l'hypothèse qui mérite d'être discutée est simple&nbsp;: les tâches changeront plus vite que les intitulés de poste. Préparez-vous en conséquence.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Quels sont les trois scénarios économiques d'Anthropic pour l'IA&nbsp;?</summary><p>Le scénario modéré, où l'impact de l'IA ressemble à celui d'Internet&nbsp;; le scénario substantiel, où l'IA peut accomplir la moitié du travail intellectuel d'ici 2030 et où la croissance est environ deux fois supérieure à la normale&nbsp;; et le scénario extrême, où l'IA surpasse les humains dans la plupart des tâches intellectuelles et où la croissance atteint 15 % par an, avec une possible hausse du chômage.</p></details><details><summary>Que disent les scénarios sur les travailleurs du savoir&nbsp;?</summary><p>Dans le scénario substantiel, les salaires des travailleurs du savoir sont à peu près stables tandis que les autres travailleurs voient les leurs progresser. Dans le scénario extrême, les salaires des travailleurs du savoir baissent de plus de 10 % et les métiers du savoir risquent d'être supplantés.</p></details><details><summary>Comment les marketeurs doivent-ils se préparer à l'impact de l'IA sur l'emploi&nbsp;?</summary><p>En décomposant leur poste en tâches, en réorientant leur temps vers le jugement et la responsabilité, en apprenant à évaluer les résultats de l'IA à l'aune de données réelles, en développant une expertise métier et en se concentrant sur les résultats plutôt que sur les livrables.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/institute/econ-scenarios" target="_blank" rel="noopener">Scenarios for our Economic Future</a> — Anthropic, 9 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/claude-frontier-academy-ai-deployment-gap/"><span class="meta">Travail et compétences · 2 octobre 2026</span><h3>Le déficit de déploiement de l'IA est un problème humain</h3><p>Anthropic s'est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d'ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Publicité et IA marketing · 29 octobre 2026</span><h3>T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</h3><p>WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

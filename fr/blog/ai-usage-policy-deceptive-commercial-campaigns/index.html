@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="La nouvelle politique d&#x27;utilisation d&#x27;Anthropic interdit les campagnes trompeuses « qu&#x27;elles soient politiques ou commerciales », et elle a détecté de fausses infos produites pour l&#x27;argent publicitaire. Une limite pour les marketeurs." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Les règles de l&#x27;IA traitent désormais le faux buzz commercial comme la fraude électorale | Prof. Aleks Farseev" />
+<meta property="og:description" content="La nouvelle politique d&#x27;utilisation d&#x27;Anthropic interdit les campagnes trompeuses « qu&#x27;elles soient politiques ou commerciales », et elle a détecté de fausses infos produites pour l&#x27;argent publicitaire. Une limite pour les marketeurs." />
+<meta property="og:url" content="https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Marketing responsable" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Les règles de l&#x27;IA traitent désormais le faux buzz commercial comme la fraude électorale | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="La nouvelle politique d&#x27;utilisation d&#x27;Anthropic interdit les campagnes trompeuses « qu&#x27;elles soient politiques ou commerciales », et elle a détecté de fausses infos produites pour l&#x27;argent publicitaire. Une limite pour les marketeurs." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale","description":"La nouvelle politique d'utilisation d'Anthropic interdit les campagnes trompeuses « qu'elles soient politiques ou commerciales », et elle a détecté de fausses infos produites pour l'argent publicitaire. Une limite pour les marketeurs.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Marketing responsable","about":{"@type":"Thing","name":"Anthropic met à jour sa Usage Policy avec une section sur les campagnes trompeuses et fait état d'abus liés aux élections avant les midterms américaines"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"Que dit la politique d'utilisation 2026 d'Anthropic sur la tromperie commerciale ?","acceptedAnswer":{"@type":"Answer","text":"Sa nouvelle section « Do Not Engage in Deceptive Campaigns or Artificial Activity » s'applique aux activités trompeuses « qu'elles soient politiques ou commerciales », notamment le fait de dissimuler qui se trouve derrière un message, d'amplifier des contenus au moyen de faux comptes ou de fausses publications et de créer des infrastructures pour des opérations d'influence. Anthropic indique que la mise à jour prend effet le 12 novembre."}},{"@type":"Question","name":"Anthropic a-t-elle constaté que l'IA servait à produire de fausses informations pour l'argent publicitaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Dans son rapport sur les midterms, Anthropic indique que certains acteurs ont utilisé Claude pour produire de fausses informations destinées à générer des revenus publicitaires et qu'elle a banni les comptes concernés."}},{"@type":"Question","name":"Le ciblage personnalisé est-il interdit par la nouvelle politique ?","acceptedAnswer":{"@type":"Answer","text":"Anthropic a supprimé une interdiction générale du ciblage personnalisé des électeurs et des campagnes. Le ciblage qui repose sur la tromperie ou sur l'usage abusif de données personnelles reste interdit au titre d'autres sections de la politique."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale","item":"https://farseev.com/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/ai-usage-policy-deceptive-commercial-campaigns/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-usage-policy-deceptive-commercial-campaigns/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-usage-policy-deceptive-commercial-campaigns/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-usage-policy-deceptive-commercial-campaigns/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-usage-policy-deceptive-commercial-campaigns/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-usage-policy-deceptive-commercial-campaigns/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-usage-policy-deceptive-commercial-campaigns/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/ai-usage-policy-deceptive-commercial-campaigns/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/ai-usage-policy-deceptive-commercial-campaigns/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/ai-usage-policy-deceptive-commercial-campaigns/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/ai-usage-policy-deceptive-commercial-campaigns/">Filipino</option><option value="es" lang="es" data-href="/es/blog/ai-usage-policy-deceptive-commercial-campaigns/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/ai-usage-policy-deceptive-commercial-campaigns/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/ai-usage-policy-deceptive-commercial-campaigns/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Marketing responsable</p>
+      <h1 class="h-display">Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale</h1>
+      <p class="lead">La nouvelle politique d'utilisation d'Anthropic interdit les campagnes trompeuses «&nbsp;qu'elles soient politiques ou commerciales&nbsp;», et elle a détecté de fausses infos produites pour l'argent publicitaire. Une limite pour les marketeurs.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Anthropic met à jour sa Usage Policy avec une section sur les campagnes trompeuses et fait état d'abus liés aux élections avant les midterms américaines (<time datetime="2026-10-14">14 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Depuis des années, le débat sur l'IA et la manipulation porte sur les élections. Cette focalisation se comprend. Mais les mêmes techniques qui simulent un mouvement politique peuvent simuler la popularité d'un produit. En octobre, Anthropic a rendu ce lien explicite dans ses règles, et les marketeurs devraient y voir une limite tracée dans leur direction également.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Le 8 octobre, Anthropic a publié sa <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">mise à jour 2026 de la Usage Policy</a>, applicable à compter du 12 novembre. Elle ajoute une section intitulée «&nbsp;Do Not Engage in Deceptive Campaigns or Artificial Activity&nbsp;» (Ne pas mener de campagnes trompeuses ni d'activité artificielle), qui regroupe des règles auparavant réparties entre les sections sur les élections, la fraude, la vie privée et la désinformation. La nouvelle section «&nbsp;s'applique aux activités trompeuses de toute nature (qu'elles soient politiques ou commerciales)&nbsp;». Elle couvre le fait de dissimuler qui se trouve derrière un message, d'amplifier des contenus au moyen de faux comptes ou de fausses publications, et de créer des outils ou des infrastructures pour des opérations d'influence.</p>
+<p>La mise à jour supprime également une interdiction générale du ciblage personnalisé des électeurs et des campagnes. Le ciblage qui repose sur la tromperie ou sur l'usage abusif des données personnelles des électeurs reste interdit au titre des sections sur les campagnes trompeuses, la surveillance et la vie privée.</p>
+<p>Une semaine plus tard, dans <a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a>, Anthropic a décrit ce qu'elle observe en pratique. Entre autres cas, elle rapporte que certains acteurs ont utilisé Claude pour produire de fausses informations destinées à générer des revenus publicitaires, et qu'elle a banni les comptes concernés. Elle indique aussi que des partenaires testant ses garde-fous ont constaté que Claude refusait de manière fiable les demandes nuisibles isolées, mais pouvait passer à côté de campagnes découpées en tâches individuellement anodines, et qu'elle a ajouté des classifieurs pour les abus en plusieurs étapes, comme les faux comptes de réseaux sociaux et les faux sites d'information.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Deux détails méritent l'attention de tous ceux qui travaillent dans le marketing.</p>
+<p>Les mots «&nbsp;ou commerciales&nbsp;» placent les faux avis, les comptes fantoches, les lancements amplifiés par des bots et le faux buzz «&nbsp;citoyen&nbsp;» dans la même catégorie que les opérations d'influence politique. Vous ne pouvez utiliser Claude pour rien de tout cela, mais la tendance dans l'ensemble du secteur est claire&nbsp;: les fournisseurs d'IA surveillent les activités inauthentiques coordonnées, et ils ne font pas de distinction entre vendre un candidat et vendre un produit.</p>
+<p>Le second détail concerne le modèle économique derrière certains de ces abus&nbsp;: de fausses informations fabriquées pour générer des revenus publicitaires. Ce n'est pas seulement un problème de contenu. C'est un problème de financement publicitaire. Quand les budgets des marques passent par l'achat programmatique automatisé vers des sites fabriqués, ce sont les annonceurs qui finissent par payer la tromperie, généralement sans le savoir.</p>
+<p>Le changement concernant le ciblage mérite aussi d'être noté. La personnalisation en tant que telle n'est pas considérée comme le préjudice. Ce sont la tromperie et l'usage abusif des données personnelles qui le sont. Je pense que c'est la bonne distinction.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>J'ai consacré une grande partie de ma carrière à concevoir des systèmes de profilage d'audiences&nbsp;: <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">apprendre des profils utilisateurs à partir de plusieurs réseaux sociaux</a>, <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">inférer la personnalité d'un réseau à l'autre</a> et <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">utiliser la personnalité pour recommander des contenus</a>. Je sais à quel point ces techniques sont puissantes, et c'est précisément pourquoi j'ai donné à WSDM 2023 une conférence sur <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">l'usage responsable de l'IA pour le ciblage publicitaire et l'évaluation créative</a>.</p>
+<p>Mon point de vue, que j'ai exposé dans Forbes sous le nom de <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing rédempteur</a>, est que transparence et performance ne doivent pas nécessairement s'opposer. Comprendre une audience pour mieux la servir est légitime. Se faire passer pour l'audience, avec de faux comptes et de fausses voix, ne l'est pas. La nouvelle politique trace la limite à peu près au même endroit.</p>
+<p>Il y a aussi un enjeu de mesure. Le faux engagement pollue les données mêmes dont se nourrit l'IA marketing moderne. Si le buzz de votre concurrent est en partie synthétique, tout modèle qui apprend «&nbsp;ce qui fonctionne dans la catégorie&nbsp;» en tirera la mauvaise leçon. Éliminer les signaux inauthentiques des données sociales fait désormais partie d'une bonne analytique.</p>
+<h2>Ce que les marketeurs doivent faire dès maintenant</h2>
+<ul><li>Inscrivez-le dans vos contrats avec les agences et les influenceurs. Pas de faux comptes, d'engagement acheté ni de contenu sponsorisé non déclaré, y compris lorsqu'il est produit avec l'IA.</li><li>Indiquez qui s'exprime. Si une IA écrit au nom de votre marque ou d'une personne, assurez-vous que le compte et le parrainage sont clairement identifiés.</li><li>Vérifiez où va votre argent programmatique. Demandez un reporting au niveau des sites et bloquez les emplacements sur des sites sans éditeur identifiable.</li><li>Distinguez personnalisation et tromperie dans vos propres politiques. Utiliser des données first-party avec consentement pour adapter un message est une chose&nbsp;; dissimuler qui se trouve derrière en est une autre.</li><li>Attendez-vous à une surveillance. Si vos workflows automatisent la publication à grande échelle, documentez-les pour qu'un usage légitime soit facile à démontrer.</li></ul>
+<p>Les élections ont rendu le problème visible. C'est dans le commerce que se trouve l'essentiel de l'argent. Les fournisseurs d'IA l'ont remarqué&nbsp;; les marketeurs devraient prendre les devants.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Que dit la politique d'utilisation 2026 d'Anthropic sur la tromperie commerciale&nbsp;?</summary><p>Sa nouvelle section «&nbsp;Do Not Engage in Deceptive Campaigns or Artificial Activity&nbsp;» s'applique aux activités trompeuses «&nbsp;qu'elles soient politiques ou commerciales&nbsp;», notamment le fait de dissimuler qui se trouve derrière un message, d'amplifier des contenus au moyen de faux comptes ou de fausses publications et de créer des infrastructures pour des opérations d'influence. Anthropic indique que la mise à jour prend effet le 12 novembre.</p></details><details><summary>Anthropic a-t-elle constaté que l'IA servait à produire de fausses informations pour l'argent publicitaire&nbsp;?</summary><p>Oui. Dans son rapport sur les midterms, Anthropic indique que certains acteurs ont utilisé Claude pour produire de fausses informations destinées à générer des revenus publicitaires et qu'elle a banni les comptes concernés.</p></details><details><summary>Le ciblage personnalisé est-il interdit par la nouvelle politique&nbsp;?</summary><p>Anthropic a supprimé une interdiction générale du ciblage personnalisé des électeurs et des campagnes. Le ciblage qui repose sur la tromperie ou sur l'usage abusif de données personnelles reste interdit au titre d'autres sections de la politique.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/character-ai-chapter-11-ai-personas/"><span class="meta">Marketing responsable · 12 octobre 2026</span><h3>Le Chapter 11 de Character.AI&nbsp;: leçons pour les produits de personas IA</h3><p>Character.AI s'est placé sous Chapter 11 en vue d'une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Publicité et IA marketing · 29 octobre 2026</span><h3>T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</h3><p>WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

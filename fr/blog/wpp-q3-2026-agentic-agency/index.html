@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/wpp-q3-2026-agentic-agency/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/wpp-q3-2026-agentic-agency/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="T3 2026 de WPP : le modèle d&#x27;agence sous la pression de l&#x27;IA | Prof. Aleks Farseev" />
+<meta property="og:description" content="WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences." />
+<meta property="og:url" content="https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Publicité et IA marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="T3 2026 de WPP : le modèle d&#x27;agence sous la pression de l&#x27;IA | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/#article","mainEntityOfPage":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/","url":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/","headline":"T3 2026 de WPP : le modèle d'agence sous la pression de l'IA","description":"WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Publicité et IA marketing","about":{"@type":"Thing","name":"WPP publie son point d'activité du T3 2026 et met en avant la demande de services IA via WPP Open"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"WPP Third Quarter Trading Update 2026","url":"https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf","publisher":"WPP plc","datePublished":"2026-10-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/#faq","mainEntity":[{"@type":"Question","name":"Quelle a été la performance de WPP au T3 2026 ?","acceptedAnswer":{"@type":"Answer","text":"WPP a publié un revenu net des coûts refacturés de 2 411 millions de £ au T3, en baisse de 2,1 % à périmètre comparable, et un chiffre d'affaires global en hausse de 0,5 %. Le groupe prévoit une baisse à périmètre comparable de l'ordre de quelques points (bas à moyen d'un chiffre) au second semestre 2026."}},{"@type":"Question","name":"Qu'est-ce que WPP Open ?","acceptedAnswer":{"@type":"Answer","text":"WPP présente WPP Open comme sa plateforme de marketing agentique. Dans le point d'activité du T3 2026, la CEO Cindy Rose a indiqué qu'elle propulse les solutions média, créatives, de production et d'entreprise de WPP fondées sur l'IA."}},{"@type":"Question","name":"L'IA rendra-t-elle les agences de publicité obsolètes ?","acceptedAnswer":{"@type":"Answer","text":"Pas nécessairement, mais elle met sous pression les modèles d'agence fondés sur les heures facturables. Les agences capables d'expliquer et de prédire ce qui fonctionne, grâce à des données propriétaires et à leur expertise, sont mieux placées que celles qui se contentent surtout de produire davantage de contenus."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"T3 2026 de WPP : le modèle d'agence sous la pression de l'IA","item":"https://farseev.com/fr/blog/wpp-q3-2026-agentic-agency/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/wpp-q3-2026-agentic-agency/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/wpp-q3-2026-agentic-agency/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/wpp-q3-2026-agentic-agency/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/wpp-q3-2026-agentic-agency/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/wpp-q3-2026-agentic-agency/">한국어</option><option value="th" lang="th" data-href="/th/blog/wpp-q3-2026-agentic-agency/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/wpp-q3-2026-agentic-agency/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/wpp-q3-2026-agentic-agency/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/wpp-q3-2026-agentic-agency/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/wpp-q3-2026-agentic-agency/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/wpp-q3-2026-agentic-agency/">Filipino</option><option value="es" lang="es" data-href="/es/blog/wpp-q3-2026-agentic-agency/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/wpp-q3-2026-agentic-agency/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/wpp-q3-2026-agentic-agency/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Publicité et IA marketing</p>
+      <h1 class="h-display">T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</h1>
+      <p class="lead">WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: WPP publie son point d'activité du T3 2026 et met en avant la demande de services IA via WPP Open (<time datetime="2026-10-29">29 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>En 2025, je me demandais dans Forbes si l'IA rendrait les agences obsolètes. Un an et demi plus tard, le plus grand groupe publicitaire du monde apporte une réponse partielle à travers ses propres chiffres&nbsp;: l'activité historique se contracte, et l'entreprise mise son avenir sur des services fondés sur l'IA. Les deux moitiés de cette phrase comptent.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Le <a href="https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf" target="_blank" rel="noopener">point d'activité du T3 2026</a> de WPP, publié le 29 octobre, fait état d'un revenu net des coûts refacturés de 2 411 millions de £ pour le trimestre, en baisse de 2,0 % en données publiées et de 2,1 % à périmètre comparable. Depuis le début de l'année, ce chiffre s'établit à 7 156 millions de £, en baisse de 3,9 % à périmètre comparable. Le chiffre d'affaires global du trimestre a progressé de 0,5 %. WPP prévoit une baisse à périmètre comparable de son revenu net des coûts refacturés de l'ordre de quelques points (bas à moyen d'un chiffre) au second semestre 2026, et une marge opérationnelle ajustée annuelle de 12 % à 13 %.</p>
+<p>Concernant l'IA, la directrice générale Cindy Rose a déclaré que «&nbsp;la demande des clients reste soutenue pour nos solutions média, créatives, de production et d'entreprise fondées sur l'IA&nbsp;», qui sont «&nbsp;propulsées par notre plateforme de marketing agentique WPP Open&nbsp;». Le point d'activité décrit également la production virtuelle assistée par IA dans un nouveau pôle de production dans l'est de Londres, l'acquisition par Burson de Limbik, une entreprise d'IA cognitive à l'origine de sa plateforme d'intelligence prédictive Decipher, ainsi qu'un plan à plus long terme de déploiement mondial de workflows agentiques. Il cite aussi l'usage de l'IA et de l'IA générative parmi les facteurs de risque.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Pendant des années, l'économie des agences reposait sur le temps des personnes. L'IA attaque ce modèle sur deux fronts. Les clients peuvent faire davantage en interne avec des outils d'IA, et le travail que les agences réalisent encore demande moins d'heures. Si vous facturez à l'heure, l'efficacité devient un problème de chiffre d'affaires.</p>
+<p>La réponse de WPP, comme celle d'autres holdings, consiste à devenir une plateforme&nbsp;: un système d'exploitation agentique qui pilote le marketing des clients, avec des humains en supervision et des spécialistes qui apportent leur jugement. Stratégiquement, c'est logique. La question ouverte, qu'aucun trimestre ne peut à lui seul trancher, est de savoir si les clients paieront des marges de plateforme pour cela, ou s'ils développeront ou achèteront directement des capacités similaires.</p>
+<p>L'acquisition d'une entreprise d'intelligence prédictive par Burson est un petit détail porteur d'un signal fort. La prédiction, et pas seulement la production, devient partie intégrante de l'offre des agences.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Quand j'ai écrit <a href="https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/" target="_blank" rel="noopener">Will AI Make Agencies Obsolete? The Future Of Advertising</a> pour Forbes, puis abordé le sujet lors de mon intervention industrielle à ACM Multimedia 2025, j'ai comparé trois façons dont l'IA entre dans la publicité&nbsp;: remplacer le travail créatif, l'assister et l'expliquer. À mon sens, «&nbsp;expliquer&nbsp;» est la plus sous-estimée des trois, et celle où les agences peuvent créer une valeur durable.</p>
+<p>Mes recherches s'appuient sur cette troisième voie. Dans <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023), nous avons prédit les taux de clics de nouvelles créations et expliqué leurs facteurs à l'aide d'un LLM. Dans <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion), nous avons appliqué l'IA explicable aux communications des concurrents. Dans <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), nous avons utilisé l'IA générative explicable pour co-construire une stratégie à partir de données publicitaires réelles. Une agence capable de dire à un client pourquoi quelque chose fonctionnera, preuves à l'appui, vend du jugement. Une agence qui se contente de produire plus de contenus plus vite vend des heures, et ce sont précisément les heures que l'IA comprime.</p>
+<p>Il existe aussi un risque d'homogénéisation. Si toutes les holdings utilisent des plateformes agentiques similaires sur des modèles de fondation similaires, le travail pour les clients pourrait commencer à converger. Notre article SIGIR 2026 sur <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">la lutte contre l'homogénéisation des contenus</a> soutient que les agents ont besoin de données de contexte distinctives pour éviter de produire la même chose que tout le monde. Pour les agences, les données propriétaires et l'expertise constituent ce contexte.</p>
+<h2>Ce que les marques et les agences doivent faire dès maintenant</h2>
+<ul><li>Marques&nbsp;: renégociez sur la base des résultats. Si l'IA rend la production moins chère, une tarification fondée sur les heures ou les livrables ne reflète plus la valeur. Mettez-vous d'accord sur les résultats et sur ce que fait réellement l'IA de l'agence.</li><li>Marques&nbsp;: interrogez l'agence sur la plateforme. Quels modèles, quelles données, à qui appartiennent les productions et les enseignements, et qu'en advient-il si vous partez&nbsp;?</li><li>Agences&nbsp;: vendez de l'explication. Construisez des services qui expliquent aux clients pourquoi le travail performe, appuyés sur la mesure, et pas seulement des services qui en produisent davantage.</li><li>Agences&nbsp;: protégez votre singularité. Alimentez vos agents avec des insights propriétaires, une connaissance culturelle et un jugement créatif, afin que la production ne converge pas.</li><li>Les deux&nbsp;: investissez dans des personnes capables de superviser l'IA. La compétence rare consiste à juger et à orienter le travail automatisé, pas à manier des outils.</li></ul>
+<p>Le trimestre de WPP ne prouve pas que les agences sont obsolètes. Il montre que le modèle d'agence fondé sur les heures facturables subit une réelle pression, et que le modèle fondé sur un jugement assisté par l'IA doit encore faire ses preuves.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Quelle a été la performance de WPP au T3 2026&nbsp;?</summary><p>WPP a publié un revenu net des coûts refacturés de 2 411 millions de £ au T3, en baisse de 2,1 % à périmètre comparable, et un chiffre d'affaires global en hausse de 0,5 %. Le groupe prévoit une baisse à périmètre comparable de l'ordre de quelques points (bas à moyen d'un chiffre) au second semestre 2026.</p></details><details><summary>Qu'est-ce que WPP Open&nbsp;?</summary><p>WPP présente WPP Open comme sa plateforme de marketing agentique. Dans le point d'activité du T3 2026, la CEO Cindy Rose a indiqué qu'elle propulse les solutions média, créatives, de production et d'entreprise de WPP fondées sur l'IA.</p></details><details><summary>L'IA rendra-t-elle les agences de publicité obsolètes&nbsp;?</summary><p>Pas nécessairement, mais elle met sous pression les modèles d'agence fondés sur les heures facturables. Les agences capables d'expliquer et de prédire ce qui fonctionne, grâce à des données propriétaires et à leur expertise, sont mieux placées que celles qui se contentent surtout de produire davantage de contenus.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf" target="_blank" rel="noopener">WPP Third Quarter Trading Update 2026</a> — WPP plc, 29 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Publicité et IA marketing · 21 octobre 2026</span><h3>Meta T3 2026&nbsp;: l'IA fait monter le prix des annonces, les créateurs deviennent un canal</h3><p>T3 2026 de Meta&nbsp;: revenus publicitaires +26 %, prix par annonce +14 %, partnership ads au-delà de 15 Md$ en rythme annuel, et une Asie-Pacifique très différente. Ce que cela signifie.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/meta-advertising-week-2026-ai-ad-tools/"><span class="meta">Publicité et IA marketing · 6 octobre 2026</span><h3>Les nouveaux outils publicitaires IA de Meta&nbsp;: l'automatisation exige toujours des explications</h3><p>À l'Advertising Week New York, Meta a étendu la vidéo IA, son assistant publicitaire, les audiences en langage naturel et un Ads MCP server. Ce que les marketeurs doivent continuer à maîtriser.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Publicité et IA marketing · 30 septembre 2026</span><h3>Amazon Ads Agent&nbsp;: le retail media devient agentique à unBoxed 2026</h3><p>À unBoxed 2026, Amazon a fusionné ses outils d'achat dans Amazon Ads Agent, avec une mesure conversationnelle et de la création par IA. Ce qu'il faut garder entre des mains humaines.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

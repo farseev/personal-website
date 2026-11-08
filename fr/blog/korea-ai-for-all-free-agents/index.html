@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Des agents IA gratuits pour chaque citoyen coréen&nbsp;: une nouvelle porte d'entrée | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="La Corée du Sud prévoit des agents IA gratuits pour chaque citoyen via KakaoTalk, les appels et les SMS, opérés par SKT, KT et Kakao. Ce qu&#x27;une couche d&#x27;agents publics signifie pour les marques." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/korea-ai-for-all-free-agents/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/korea-ai-for-all-free-agents/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Des agents IA gratuits pour chaque citoyen coréen : une nouvelle porte d&#x27;entrée | Prof. Aleks Farseev" />
+<meta property="og:description" content="La Corée du Sud prévoit des agents IA gratuits pour chaque citoyen via KakaoTalk, les appels et les SMS, opérés par SKT, KT et Kakao. Ce qu&#x27;une couche d&#x27;agents publics signifie pour les marques." />
+<meta property="og:url" content="https://farseev.com/fr/blog/korea-ai-for-all-free-agents/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Asie et Singapour" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Des agents IA gratuits pour chaque citoyen coréen : une nouvelle porte d&#x27;entrée | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="La Corée du Sud prévoit des agents IA gratuits pour chaque citoyen via KakaoTalk, les appels et les SMS, opérés par SKT, KT et Kakao. Ce qu&#x27;une couche d&#x27;agents publics signifie pour les marques." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/#article","mainEntityOfPage":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/","url":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/","headline":"Des agents IA gratuits pour chaque citoyen coréen : une nouvelle porte d'entrée","description":"La Corée du Sud prévoit des agents IA gratuits pour chaque citoyen via KakaoTalk, les appels et les SMS, opérés par SKT, KT et Kakao. Ce qu'une couche d'agents publics signifie pour les marques.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Asie et Singapour","about":{"@type":"Thing","name":"Les opérateurs du programme coréen « AI for All » présentent des services d'IA agentique gratuits pour tous les citoyens via les messageries, les appels et les SMS"},"wordCount":892,"citation":[{"@type":"CreativeWork","name":"Korea to provide free AI agents for all citizens through messenger, texts","url":"https://www.koreatimes.co.kr/business/tech-science/20260904/korea-to-provide-free-ai-agents-for-all-citizens-through-messenger-texts","publisher":"The Korea Times","datePublished":"2026-09-04"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce que le projet coréen « AI for All » ?","acceptedAnswer":{"@type":"Answer","text":"C'est un programme gouvernemental visant à fournir des services d'IA agentique gratuits à tous les citoyens. Selon The Korea Times, les agents prendront en charge des tâches comme les réservations et les paiements via les messageries, les appels téléphoniques et les SMS, avec une phase bêta à partir d'octobre et un lancement prévu d'ici fin 2026."}},{"@type":"Question","name":"Quelles entreprises exploitent les agents IA gratuits de la Corée ?","acceptedAnswer":{"@type":"Answer","text":"Trois consortiums menés par SK Telecom, KT et Kakao. Kakao travaille avec LG et utilise KakaoTalk, KT propose un agent appelé Ieum, et SK Telecom se concentre sur des agents par téléphone et par SMS."}},{"@type":"Question","name":"Comment les marques peuvent-elles se préparer aux agents IA publics ?","acceptedAnswer":{"@type":"Answer","text":"En tenant à jour des informations commerciales exactes et lisibles par machine, en prenant en charge des parcours de réservation et de paiement que les agents peuvent mener à bien, en rendant les informations exploitables par la voix et le texte, et en limitant au minimum les données personnelles collectées via toute intégration."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Des agents IA gratuits pour chaque citoyen coréen : une nouvelle porte d'entrée","item":"https://farseev.com/fr/blog/korea-ai-for-all-free-agents/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/korea-ai-for-all-free-agents/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/korea-ai-for-all-free-agents/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/korea-ai-for-all-free-agents/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/korea-ai-for-all-free-agents/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/korea-ai-for-all-free-agents/">한국어</option><option value="th" lang="th" data-href="/th/blog/korea-ai-for-all-free-agents/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/korea-ai-for-all-free-agents/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/korea-ai-for-all-free-agents/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/korea-ai-for-all-free-agents/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/korea-ai-for-all-free-agents/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/korea-ai-for-all-free-agents/">Filipino</option><option value="es" lang="es" data-href="/es/blog/korea-ai-for-all-free-agents/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/korea-ai-for-all-free-agents/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/korea-ai-for-all-free-agents/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Des agents IA gratuits pour chaque citoyen coréen&nbsp;: une nouvelle porte d'entrée</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Asie et Singapour</p>
+      <h1 class="h-display">Des agents IA gratuits pour chaque citoyen coréen&nbsp;: une nouvelle porte d'entrée</h1>
+      <p class="lead">La Corée du Sud prévoit des agents IA gratuits pour chaque citoyen via KakaoTalk, les appels et les SMS, opérés par SKT, KT et Kakao. Ce qu'une couche d'agents publics signifie pour les marques.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: les opérateurs du programme coréen «&nbsp;AI for All&nbsp;» présentent des services d'IA agentique gratuits pour tous les citoyens via les messageries, les appels et les SMS (<time datetime="2026-09-04">4 septembre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La plupart des pays débattent de la manière de réguler les agents IA. La Corée du Sud prévoit d'en donner un à tout le monde. En septembre, le gouvernement et trois groupes d'opérateurs ont présenté le fonctionnement d'«&nbsp;AI for All&nbsp;»&nbsp;: des agents gratuits capables d'effectuer des réservations et des paiements pour les citoyens, accessibles via une messagerie, un appel téléphonique ou un SMS. Pour les marques, cela pourrait devenir une nouvelle porte d'entrée vers les clients.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.koreatimes.co.kr/business/tech-science/20260904/korea-to-provide-free-ai-agents-for-all-citizens-through-messenger-texts" target="_blank" rel="noopener">The Korea Times</a>, le ministère de la Science et des TIC et les opérateurs du projet ont tenu un point presse le 4 septembre. La Corée prévoit de lancer des services d'IA agentique gratuits pour tous les citoyens d'ici fin 2026, avec une phase bêta à partir d'octobre. Les agents sont conçus pour accomplir des tâches concrètes comme des réservations et des paiements via les messageries mobiles, les appels téléphoniques et les SMS.</p>
+<p>Trois consortiums, menés par SK Telecom, KT et Kakao, exploiteront les services. Kakao, associé à LG, utilisera KakaoTalk comme point d'entrée et s'appuiera sur ses modèles Kanana et sur EXAONE de LG&nbsp;; il vise 5 millions d'utilisateurs actifs mensuels d'ici décembre et 10 millions d'ici fin 2027. KT a dévoilé Ieum, un agent polyvalent doté d'une recherche en temps réel et de services dans l'administration publique, l'éducation, la finance et le shopping, fonctionnant sur des modèles et une infrastructure développés en interne. SK Telecom proposera des agents par téléphone et par SMS pour les personnes qui ont du mal avec les applications, prenant en charge l'authentification, les demandes de services publics et les paiements.</p>
+<p>Le vice-Premier ministre et ministre de la Science Bae Kyung-hoon a déclaré&nbsp;: «&nbsp;Notre objectif ultime est que de nouveaux services d'IA développés dans le pays s'intègrent naturellement à la vie quotidienne des gens.&nbsp;» L'article ne donne aucun chiffre budgétaire et n'aborde pas les mesures de protection de la vie privée.</p>
+<h2>Pourquoi c'est important</h2>
+<p>C'est la première fois que je vois un gouvernement prévoir de placer un agent transactionnel devant toute une population, en s'appuyant sur des modèles nationaux et sur l'application de messagerie dominante du pays. S'il atteint ses objectifs, une grande partie des consommateurs coréens disposera d'un assistant par défaut qui recherche, réserve et paie pour eux.</p>
+<p>Cela change le parcours d'achat. Aujourd'hui, un consommateur coréen qui cherche un restaurant, une clinique ou un produit passe par la recherche, les cartes, des applications et des plateformes où les marques achètent de la visibilité. Avec un agent public au milieu, la première question devient&nbsp;: que sait l'agent de vous, et vous choisira-t-il&nbsp;? Un agent gratuit soutenu par l'État a aussi peu de chances d'être un support publicitaire au sens habituel, si bien que la visibilité payante pourrait tout simplement ne pas être une option.</p>
+<p>La dimension d'inclusion est également importante. Les agents par téléphone et SMS de SK Telecom s'adressent explicitement aux personnes qui ont du mal avec les applications. Cela ouvre le commerce numérique à des clients difficiles à atteindre en ligne, en particulier les personnes âgées.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Mes recherches ont toujours porté sur la compréhension des personnes à travers les nombreux canaux qu'elles utilisent. Dans <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) et dans notre synthèse sur le <a href="https://doi.org/10.1145/2956573.2956577" target="_blank" rel="noopener">profilage des utilisateurs à 360°</a>, l'idée était que chaque canal montre une facette différente de la même personne. Le plan coréen ajoute de nouveaux canaux, comme un appel vocal à un agent, et les concentre entre les mains de quelques opérateurs d'agents. Ceux qui exploiteront ces agents disposeront d'une image remarquablement complète des intentions quotidiennes. Cela fait de la protection de la vie privée dès la conception, que le point presse n'a pas abordée, une question centrale.</p>
+<p>Côté marques, j'ai écrit dans Forbes sur les nombreuses <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">applications des agents IA en marketing</a>. Le revers, c'est le marketing auprès des agents. Un agent qui choisit un restaurant ou un produit pour un citoyen s'appuiera sur des informations structurées et fiables&nbsp;: disponibilité, prix, adresses, conditions. Les marques qui les publient clairement, dans les formats qu'utilisent les plateformes coréennes, seront plus faciles à sélectionner pour les agents.</p>
+<h2>Ce que les marques présentes en Corée, ou qui observent la Corée, doivent faire dès maintenant</h2>
+<ul><li>Rendez votre activité lisible par les agents. Tenez à jour vos horaires, prix, disponibilités et options de réservation sur les plateformes auxquelles ces agents sont susceptibles de puiser.</li><li>Prenez en charge des parcours de réservation et de paiement qu'un agent peut mener à bien sans qu'un humain remplisse de formulaires.</li><li>Concevez pour la voix et le texte. Si certains clients vous joignent via un agent téléphonique, vos informations doivent être compréhensibles sans visuels.</li><li>Suivez la bêta. Les tests d'octobre montreront sur quelles sources et quels partenaires s'appuient les agents.</li><li>Prenez la vie privée au sérieux dans vos propres intégrations. Si vous vous connectez à des agents publics, ne collectez que ce dont la tâche a besoin.</li><li>Pensez à l'échelle régionale. D'autres gouvernements asiatiques observent. Une couche d'agents publics pourrait apparaître ailleurs.</li></ul>
+<p>La Corée mène une expérience à grande échelle sur ce qui se passe quand les agents IA deviennent une infrastructure publique. Les marques devraient y voir un aperçu d'un avenir où c'est l'agent, et non le champ de recherche, qui constitue la porte d'entrée.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce que le projet coréen «&nbsp;AI for All&nbsp;»&nbsp;?</summary><p>C'est un programme gouvernemental visant à fournir des services d'IA agentique gratuits à tous les citoyens. Selon The Korea Times, les agents prendront en charge des tâches comme les réservations et les paiements via les messageries, les appels téléphoniques et les SMS, avec une phase bêta à partir d'octobre et un lancement prévu d'ici fin 2026.</p></details><details><summary>Quelles entreprises exploitent les agents IA gratuits de la Corée&nbsp;?</summary><p>Trois consortiums menés par SK Telecom, KT et Kakao. Kakao travaille avec LG et utilise KakaoTalk, KT propose un agent appelé Ieum, et SK Telecom se concentre sur des agents par téléphone et par SMS.</p></details><details><summary>Comment les marques peuvent-elles se préparer aux agents IA publics&nbsp;?</summary><p>En tenant à jour des informations commerciales exactes et lisibles par machine, en prenant en charge des parcours de réservation et de paiement que les agents peuvent mener à bien, en rendant les informations exploitables par la voix et le texte, et en limitant au minimum les données personnelles collectées via toute intégration.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.koreatimes.co.kr/business/tech-science/20260904/korea-to-provide-free-ai-agents-for-all-citizens-through-messenger-texts" target="_blank" rel="noopener">Korea to provide free AI agents for all citizens through messenger, texts</a> — The Korea Times, 4 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/anthropic-singapore-office-mou/"><span class="meta">Asie et Singapour · 14 octobre 2026</span><h3>Anthropic s'installe à Singapour&nbsp;: ce que le protocole d'accord signale vraiment</h3><p>Anthropic a ouvert un bureau à Singapour et signé un protocole d'accord avec le MDDI sur la sécurité et l'évaluation de l'IA. Pourquoi les tests en langues locales sont le vrai sujet.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">Asie et Singapour · 1er octobre 2026</span><h3>Le plan d'action IA du Japon&nbsp;: la politique de croissance devient politique d'adoption</h3><p>La Première ministre Sanae Takaichi a demandé aux ministres un plan d'action pour la promotion de l'IA d'ici la fin de l'année, lié à la stratégie de croissance du Japon. Ce qu'une politique axée sur l'adoption signifie pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

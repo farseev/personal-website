@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adobe&nbsp;: le trafic issu de l'IA convertit mieux que les autres visites | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Selon Adobe, les visites de détaillants américains issues de l&#x27;IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Adobe : le trafic issu de l&#x27;IA convertit mieux que les autres visites | Prof. Aleks Farseev" />
+<meta property="og:description" content="Selon Adobe, les visites de détaillants américains issues de l&#x27;IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire." />
+<meta property="og:url" content="https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Recherche IA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Adobe : le trafic issu de l&#x27;IA convertit mieux que les autres visites | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Selon Adobe, les visites de détaillants américains issues de l&#x27;IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/#article","mainEntityOfPage":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/","url":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/","headline":"Adobe : le trafic issu de l'IA convertit mieux que les autres visites","description":"Selon Adobe, les visites de détaillants américains issues de l'IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Recherche IA","about":{"@type":"Thing","name":"Adobe indique que le trafic issu de l'IA convertit mieux que le trafic non IA et prévoit une croissance du trafic IA pendant les fêtes"},"wordCount":857,"citation":[{"@type":"CreativeWork","name":"Adobe report: AI traffic now generates 83% higher revenue per visit for U.S. retailers heading into the holiday shopping season","url":"https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday","publisher":"Adobe","datePublished":"2026-10-29"},{"@type":"CreativeWork","name":"Adobe projection: 2026 online holiday sales to reach $275.1 billion","url":"https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion","publisher":"Digital Commerce 360","datePublished":"2026-09-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/#faq","mainEntity":[{"@type":"Question","name":"Le trafic issu de l'IA convertit-il bien pour les distributeurs ?","acceptedAnswer":{"@type":"Answer","text":"Adobe indique qu'en septembre 2026, le trafic issu de l'IA vers les sites de commerce de détail américains a converti 90 % mieux que le trafic non IA et généré un revenu par visite supérieur de 83 %, la meilleure performance qu'il ait observée."}},{"@type":"Question","name":"De combien le trafic IA va-t-il croître pendant cette saison des fêtes ?","acceptedAnswer":{"@type":"Answer","text":"Selon Digital Commerce 360, Adobe prévoyait une croissance de 130 % sur un an du trafic IA vers les sites de commerce de détail américains sur la période du 1er novembre au 31 décembre 2026."}},{"@type":"Question","name":"Comment les distributeurs peuvent-ils rendre leurs sites plus visibles pour les assistants IA ?","acceptedAnswer":{"@type":"Answer","text":"En publiant les informations clés sur les produits et les conditions en texte simple et explorable, en répondant aux questions que les acheteurs posent aux assistants, en mesurant le trafic IA comme un canal à part entière et en vérifiant régulièrement comment les assistants décrivent leur marque."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Adobe : le trafic issu de l'IA convertit mieux que les autres visites","item":"https://farseev.com/fr/blog/adobe-ai-traffic-retail-conversion-2026/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/adobe-ai-traffic-retail-conversion-2026/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/adobe-ai-traffic-retail-conversion-2026/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/adobe-ai-traffic-retail-conversion-2026/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/adobe-ai-traffic-retail-conversion-2026/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/adobe-ai-traffic-retail-conversion-2026/">한국어</option><option value="th" lang="th" data-href="/th/blog/adobe-ai-traffic-retail-conversion-2026/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/adobe-ai-traffic-retail-conversion-2026/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/adobe-ai-traffic-retail-conversion-2026/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/adobe-ai-traffic-retail-conversion-2026/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/adobe-ai-traffic-retail-conversion-2026/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/adobe-ai-traffic-retail-conversion-2026/">Filipino</option><option value="es" lang="es" data-href="/es/blog/adobe-ai-traffic-retail-conversion-2026/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/adobe-ai-traffic-retail-conversion-2026/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/adobe-ai-traffic-retail-conversion-2026/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Adobe&nbsp;: le trafic issu de l'IA convertit mieux que les autres visites</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Recherche IA</p>
+      <h1 class="h-display">Adobe&nbsp;: le trafic issu de l'IA convertit mieux que les autres visites</h1>
+      <p class="lead">Selon Adobe, les visites de détaillants américains issues de l'IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Adobe indique que le trafic issu de l'IA convertit mieux que le trafic non IA et prévoit une croissance du trafic IA pendant les fêtes (<time datetime="2026-10-29">29 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Il y a un an, la formule de politesse au sujet du trafic venant des assistants IA était qu'il restait modeste mais prometteur. Les derniers chiffres d'Adobe suggèrent qu'il n'est plus modeste, et qu'il est déjà meilleur que le reste sur un point important&nbsp;: les personnes qui arrivent depuis des réponses IA achètent davantage.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Dans un rapport publié le 29 octobre, <a href="https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday" target="_blank" rel="noopener">Adobe indique</a> qu'en septembre 2026, le trafic vers les sites de commerce de détail américains issu de sources IA a progressé de 71 % sur un an et a converti 90 % mieux que le trafic non IA, le niveau le plus élevé qu'il ait observé. En août 2025, à l'inverse, le trafic IA convertissait 9 % moins bien. Les visiteurs venus de l'IA ont passé 73 % de temps en plus sur le site, consulté 25 % de pages en plus par visite et ajouté des produits au panier à un taux supérieur de 53 %. Le revenu par visite issu du trafic IA était supérieur de 83 % à celui du trafic non IA. Le résumé d'Adobe&nbsp;: «&nbsp;En seulement 12 mois, le trafic IA est passé d'une valeur inférieure à la moitié d'une visite typique à près du double.&nbsp;»</p>
+<p>Adobe a également introduit une mesure de la lisibilité des sites pour les systèmes d'IA. La page d'accueil moyenne d'un site de commerce de détail américain obtient 63 %, ce qui, selon Adobe, signifie que «&nbsp;plus d'un tiers du contenu de la page d'accueil n'est pas visible pour les systèmes et agents d'IA&nbsp;»&nbsp;; les pages d'accueil des généralistes obtiennent 40 %. Les données couvrent plus de 1 000 milliards de visites sur des sites de commerce de détail américains, ainsi qu'une enquête auprès de plus de 5 000 répondants américains.</p>
+<p>Un mois plus tôt, selon <a href="https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion" target="_blank" rel="noopener">Digital Commerce 360</a>, Adobe prévoyait des ventes en ligne de fin d'année de 275,1 milliards US$ aux États-Unis du 1er novembre au 31 décembre, en hausse de 6,7 %, avec un trafic IA vers les sites de commerce de détail américains en hausse de 130 % sur un an et la croissance la plus forte le jour de Thanksgiving.</p>
+<h2>Pourquoi c'est important</h2>
+<p>La conversion est le chiffre qui tranche les débats. La croissance du trafic peut être balayée comme de la simple curiosité. Des visiteurs qui restent plus longtemps, remplissent davantage leur panier et génèrent plus de revenu par visite, c'est un canal.</p>
+<p>La raison probable est intuitive. Une personne qui a déjà posé des questions détaillées sur un produit à un assistant arrive plus avancée dans sa décision. La conversation avec l'IA a fait la première partie du tunnel. Cela fait des réponses IA un haut et un milieu de tunnel puissants, et en grande partie non payants, pour les marques qui sont citées.</p>
+<p>Le score de lisibilité est la partie actionnable. Si un tiers d'une page d'accueil typique est invisible pour les systèmes d'IA, alors de nombreux distributeurs sont représentés dans les réponses IA par une image partielle d'eux-mêmes, voire pas du tout.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Un visiteur qui arrive d'une conversation avec une IA est un visiteur déjà profilé. Mes recherches sur <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">l'apprentissage de profils utilisateurs à partir de sources multiples</a> (ICMR 2015) et sur <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">l'influence de la source de données sur les modèles d'utilisateurs de l'IA</a> (AAAI 2020) mènent à la même conclusion&nbsp;: plus le signal sur l'intention est riche et pertinent, meilleure est la correspondance. Une conversation longue et précise avec un assistant est à peu près le signal d'intention le plus riche qu'un acheteur puisse produire. Quand cette conversation envoie l'acheteur vers vous, la correspondance est déjà bonne, et la conversion est donc plus élevée.</p>
+<p>Le revers de la médaille, c'est la mesure. Dans ma chronique e27 <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">Every dashboard is green. So why can't anyone say what worked?</a>, j'ai écrit sur l'écart entre le succès affiché et la compréhension réelle. Le trafic IA en est un parfait exemple. Il est facile de célébrer un taux de conversion&nbsp;; il est plus difficile de savoir laquelle de vos pages, de vos affirmations ou de vos avis a valu la citation qui a envoyé le visiteur. L'explicabilité, au cœur de mes recherches de <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> à <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>, s'applique aux canaux autant qu'aux modèles.</p>
+<h2>Ce que les distributeurs et les marques doivent faire dès maintenant</h2>
+<ul><li>Mesurer le trafic IA séparément. Balisez les renvois provenant de l'IA et suivez-les comme un canal à part entière, avec conversion, revenu par visite et retours.</li><li>Rendre les pages clés lisibles. Indiquez les prix, les caractéristiques, la disponibilité, la livraison et les conditions de retour en texte simple et explorable, pas seulement dans des images ou des scripts.</li><li>Répondre aux questions que les gens posent aux assistants. Points de comparaison, tailles, compatibilité, entretien&nbsp;: c'est le contenu qui résout de vraies questions qui est cité.</li><li>Vérifier comment vous apparaissez. Interrogez régulièrement les principaux assistants sur votre catégorie et voyez si et comment vous êtes décrit. Corrigez les inexactitudes à la source.</li><li>Se préparer pour les fêtes. Si le trafic IA croît comme le prévoit Adobe, les pages que lisent les systèmes d'IA doivent être finalisées avant la haute saison, pas pendant.</li></ul>
+<p>Les réponses IA sont devenues un canal qui envoie des visiteurs plus qualifiés que ne le faisait la recherche. Les marques qui en tireront le plus seront celles qui se rendent faciles à lire pour les machines et dignes de confiance pour les personnes.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Le trafic issu de l'IA convertit-il bien pour les distributeurs&nbsp;?</summary><p>Adobe indique qu'en septembre 2026, le trafic issu de l'IA vers les sites de commerce de détail américains a converti 90 % mieux que le trafic non IA et généré un revenu par visite supérieur de 83 %, la meilleure performance qu'il ait observée.</p></details><details><summary>De combien le trafic IA va-t-il croître pendant cette saison des fêtes&nbsp;?</summary><p>Selon Digital Commerce 360, Adobe prévoyait une croissance de 130 % sur un an du trafic IA vers les sites de commerce de détail américains sur la période du 1er novembre au 31 décembre 2026.</p></details><details><summary>Comment les distributeurs peuvent-ils rendre leurs sites plus visibles pour les assistants IA&nbsp;?</summary><p>En publiant les informations clés sur les produits et les conditions en texte simple et explorable, en répondant aux questions que les acheteurs posent aux assistants, en mesurant le trafic IA comme un canal à part entière et en vérifiant régulièrement comment les assistants décrivent leur marque.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday" target="_blank" rel="noopener">Adobe report: AI traffic now generates 83% higher revenue per visit for U.S. retailers heading into the holiday shopping season</a> — Adobe, 29 October 2026</li><li translate="no"><a href="https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion" target="_blank" rel="noopener">Adobe projection: 2026 online holiday sales to reach $275.1 billion</a> — Digital Commerce 360, 29 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">Recherche IA · 28 octobre 2026</span><h3>Les annonces dans Google AI Mode arrivent à Singapour et ailleurs</h3><p>Google étend les annonces dans AI Mode à dix marchés, dont Singapour, la Malaisie et les Philippines. Ce qui change quand l'annonce se trouve dans la réponse.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">Recherche IA · 21 octobre 2026</span><h3>Les annonces ChatGPT deviennent des conversations&nbsp;: Sponsored Agents</h3><p>OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l'étiquetage et l'honnêteté deviennent le produit.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">Recherche IA · 1er octobre 2026</span><h3>Penske contre Google rejeté&nbsp;: ce que cela signifie pour la visibilité dans l'IA</h3><p>Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun «&nbsp;marché formel&nbsp;» sur le trafic. Ce que les marques doivent faire en matière de GEO.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

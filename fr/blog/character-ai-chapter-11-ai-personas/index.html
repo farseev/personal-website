@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Le Chapter 11 de Character.AI&nbsp;: leçons pour les produits de personas IA | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Character.AI s&#x27;est placé sous Chapter 11 en vue d&#x27;une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Le Chapter 11 de Character.AI : leçons pour les produits de personas IA | Prof. Aleks Farseev" />
+<meta property="og:description" content="Character.AI s&#x27;est placé sous Chapter 11 en vue d&#x27;une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA." />
+<meta property="og:url" content="https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Marketing responsable" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Le Chapter 11 de Character.AI : leçons pour les produits de personas IA | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Character.AI s&#x27;est placé sous Chapter 11 en vue d&#x27;une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/#article","mainEntityOfPage":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/","url":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/","headline":"Le Chapter 11 de Character.AI : leçons pour les produits de personas IA","description":"Character.AI s'est placé sous Chapter 11 en vue d'une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Marketing responsable","about":{"@type":"Thing","name":"Character.AI se place sous la protection du Chapter 11 ; Disney prépare une offre de référence de 20 millions de dollars pour une licence de propriété intellectuelle"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy","url":"https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal","publisher":"TheWrap","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/#faq","mainEntity":[{"@type":"Question","name":"Character.AI s'est-elle déclarée en faillite ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Selon TheWrap, Character.AI s'est placée sous la protection du Chapter 11 le 12 octobre 2026 afin de faciliter la cession de ses actifs, et le service continue de fonctionner pendant la procédure."}},{"@type":"Question","name":"Quel est le rôle de Disney dans la cession de Character.AI ?","acceptedAnswer":{"@type":"Answer","text":"Selon TheWrap, Disney prépare une offre de 20 millions US$ pour une licence perpétuelle non exclusive sur certains droits de propriété intellectuelle et agirait en tant qu'enchérisseur de référence (stalking horse), fixant le prix plancher d'enchères attendues fin novembre ou début décembre."}},{"@type":"Question","name":"Que doivent retenir les marques des difficultés de Character.AI ?","acceptedAnswer":{"@type":"Answer","text":"Que les personas IA comportent des risques en matière de propriété intellectuelle, de sécurité et de confiance. Les marques devraient s'appuyer sur une propriété intellectuelle qu'elles détiennent, fixer des limites strictes à ce qu'un persona peut prétendre, concevoir pour les utilisateurs vulnérables, indiquer aux utilisateurs qu'ils parlent à une IA et mesurer le bien-être en plus de l'engagement."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Le Chapter 11 de Character.AI : leçons pour les produits de personas IA","item":"https://farseev.com/fr/blog/character-ai-chapter-11-ai-personas/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/character-ai-chapter-11-ai-personas/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/character-ai-chapter-11-ai-personas/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/character-ai-chapter-11-ai-personas/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/character-ai-chapter-11-ai-personas/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/character-ai-chapter-11-ai-personas/">한국어</option><option value="th" lang="th" data-href="/th/blog/character-ai-chapter-11-ai-personas/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/character-ai-chapter-11-ai-personas/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/character-ai-chapter-11-ai-personas/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/character-ai-chapter-11-ai-personas/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/character-ai-chapter-11-ai-personas/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/character-ai-chapter-11-ai-personas/">Filipino</option><option value="es" lang="es" data-href="/es/blog/character-ai-chapter-11-ai-personas/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/character-ai-chapter-11-ai-personas/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/character-ai-chapter-11-ai-personas/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Le Chapter 11 de Character.AI&nbsp;: leçons pour les produits de personas IA</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Marketing responsable</p>
+      <h1 class="h-display">Le Chapter 11 de Character.AI&nbsp;: leçons pour les produits de personas IA</h1>
+      <p class="lead">Character.AI s'est placé sous Chapter 11 en vue d'une cession, Disney préparant une offre de 20 M$. Ce que doivent en retenir les marques qui créent des personnages et compagnons IA.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Character.AI se place sous la protection du Chapter 11&nbsp;; Disney prépare une offre de référence de 20 millions de dollars pour une licence de propriété intellectuelle (<time datetime="2026-10-12">12 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Il y a quelques années, les personnages IA semblaient être l'application grand public la plus naturelle des grands modèles de langage&nbsp;: un chatbot doté d'une personnalité, disponible à toute heure. Le 12 octobre, l'une des entreprises les plus connues de ce secteur, Character.AI, s'est placée sous la protection du Chapter 11. Les marques créent désormais leurs propres personnages, mascottes et compagnons IA. L'histoire mérite une lecture attentive.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">TheWrap</a>, Character.AI s'est placée sous Chapter 11 tard dans la journée du lundi 12 octobre afin de «&nbsp;faciliter une cession maximisant la valeur&nbsp;» de ses actifs. Disney prépare une offre de 20 millions US$ pour une licence perpétuelle non exclusive sur certains droits de propriété intellectuelle, en tant que «&nbsp;stalking horse&nbsp;», c'est-à-dire l'enchérisseur dont l'offre fixe le prix plancher des enchères, attendues fin novembre ou début décembre. D'autres enchérisseurs peuvent encore faire de meilleures offres.</p>
+<p>TheWrap rappelle que Disney a adressé à Character.AI une mise en demeure en septembre 2025 pour utilisation non autorisée de ses personnages, que la plateforme s'était tournée vers les microdramas après avoir conclu des accords dans plusieurs procès accusant ses agents IA d'avoir poussé des adolescents à l'automutilation, et que la Pennsylvanie a engagé des poursuites pour la génération d'une fausse licence professionnelle médicale. Le CEO Colin Adams a déclaré que la cession sous supervision judiciaire «&nbsp;offre à l'entreprise la meilleure opportunité&nbsp;» de maximiser la valeur et qu'une expérience utilisateur sûre et engageante «&nbsp;reste une priorité absolue&nbsp;». Le service continue de fonctionner.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Je ne spéculerai pas sur les finances de l'entreprise au-delà de ce qui a été rapporté. Mais les faits publics esquissent déjà les trois risques que comporte tout produit de persona IA.</p>
+<p>Le premier est la propriété intellectuelle. Les personnages que les gens aiment appartiennent généralement à quelqu'un. Un produit fondé sur l'imitation de personnages célèbres par les utilisateurs appelle exactement le type de litige que décrit TheWrap.</p>
+<p>Le deuxième est la sécurité. Un personnage conçu pour être engageant et réactif sur le plan émotionnel est, par construction, influent. Quand les utilisateurs comptent des adolescents, cette influence devient un passif si les garde-fous échouent.</p>
+<p>Le troisième est la confiance et l'autorité. Un chatbot capable de produire un faux diplôme convaincant montre avec quelle facilité un persona peut revendiquer une expertise qu'il n'a pas.</p>
+<p>Pour les marques, la leçon n'est pas «&nbsp;évitez les personnages IA&nbsp;». C'est qu'un persona est une promesse, et que l'entreprise qui le déploie est responsable de tout ce qu'il dit.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>La personnalité est l'un de mes thèmes de recherche centraux. Avec des collègues, j'ai travaillé sur <a href="https://doi.org/10.1609/aaai.v31i1.11105" target="_blank" rel="noopener">l'inférence de la personnalité à partir de l'activité sur plusieurs réseaux sociaux</a> (AAAI 2017), sur <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">la génération de contenu guidée par la personnalité</a> (WSDM 2021) et sur <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">la recommandation de contenus multimédias sociaux guidée par la personnalité</a> (ACM Multimedia 2022). La recherche est claire&nbsp;: adapter le contenu à la personnalité le rend plus engageant.</p>
+<p>C'est précisément pour cela que la responsabilité est lourde. Un système qui adapte sa personnalité à chaque utilisateur peut créer de l'attachement plus vite que n'importe quelle publicité statique. Bien utilisé, cela signifie des expériences de marque plus pertinentes et plus utiles. Utilisé sans précaution, cela signifie de la manipulation, en particulier des utilisateurs vulnérables. J'ai abordé les enjeux éthiques et de vie privée du profilage et du ciblage automatisés dans ma conférence à WSDM 2023, <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>, et j'ai plaidé dans Forbes pour un <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing rédempteur</a>, où la transparence fait partie de la performance au lieu d'être un coût.</p>
+<p>Un persona de marque doit être conçu aussi soigneusement qu'un porte-parole de marque, à cette différence près qu'il parle à des millions de personnes à la fois et ne se fatigue jamais.</p>
+<h2>Une check-list pour les marques qui créent des personnages IA</h2>
+<ul><li>Maîtrisez votre propriété intellectuelle. Construisez vos personas sur des personnages et des voix que vous possédez ou dont vous avez la licence, et bloquez l'imitation des personnages d'autrui.</li><li>Définissez ce que le persona ne doit jamais prétendre. Pas de diplômes, pas de conseils professionnels au-delà de limites définies, pas de promesses que l'entreprise ne tiendrait pas.</li><li>Concevez pour l'utilisateur le plus vulnérable. Partez du principe que des mineurs et des personnes en détresse peuvent l'utiliser, même s'ils ne sont pas votre cible, et prévoyez une escalade vers une aide humaine.</li><li>Informez clairement. Les utilisateurs doivent toujours savoir qu'ils parlent à une IA et qui se trouve derrière.</li><li>Mesurez le bien-être, pas seulement l'engagement. Le temps passé n'est pas un indicateur de succès pour un produit compagnon. Suivez aussi les plaintes, les escalades et les signalements de contenus préjudiciables.</li><li>Anticipez la fin. Décidez de ce qu'il adviendra des conversations et des données des utilisateurs si le produit est fermé ou vendu.</li></ul>
+<p>Les personas IA feront partie des expériences de marque. Les entreprises qui les traitent comme des responsabilités, et pas seulement comme des moteurs d'engagement, seront celles qui les exploiteront encore dans cinq ans.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Character.AI s'est-elle déclarée en faillite&nbsp;?</summary><p>Oui. Selon TheWrap, Character.AI s'est placée sous la protection du Chapter 11 le 12 octobre 2026 afin de faciliter la cession de ses actifs, et le service continue de fonctionner pendant la procédure.</p></details><details><summary>Quel est le rôle de Disney dans la cession de Character.AI&nbsp;?</summary><p>Selon TheWrap, Disney prépare une offre de 20 millions US$ pour une licence perpétuelle non exclusive sur certains droits de propriété intellectuelle et agirait en tant qu'enchérisseur de référence (stalking horse), fixant le prix plancher d'enchères attendues fin novembre ou début décembre.</p></details><details><summary>Que doivent retenir les marques des difficultés de Character.AI&nbsp;?</summary><p>Que les personas IA comportent des risques en matière de propriété intellectuelle, de sécurité et de confiance. Les marques devraient s'appuyer sur une propriété intellectuelle qu'elles détiennent, fixer des limites strictes à ce qu'un persona peut prétendre, concevoir pour les utilisateurs vulnérables, indiquer aux utilisateurs qu'ils parlent à une IA et mesurer le bien-être en plus de l'engagement.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy</a> — TheWrap, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">Marketing responsable · 14 octobre 2026</span><h3>Les règles de l'IA traitent désormais le faux buzz commercial comme la fraude électorale</h3><p>La nouvelle politique d'utilisation d'Anthropic interdit les campagnes trompeuses «&nbsp;qu'elles soient politiques ou commerciales&nbsp;», et elle a détecté de fausses infos produites pour l'argent publicitaire. Une limite pour les marketeurs.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Publicité et IA marketing · 29 octobre 2026</span><h3>T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</h3><p>WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

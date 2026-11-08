@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Les annonces ChatGPT deviennent des conversations&nbsp;: Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l&#x27;étiquetage et l&#x27;honnêteté deviennent le produit." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Les annonces ChatGPT deviennent des conversations : Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l&#x27;étiquetage et l&#x27;honnêteté deviennent le produit." />
+<meta property="og:url" content="https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Recherche IA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Les annonces ChatGPT deviennent des conversations : Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l&#x27;étiquetage et l&#x27;honnêteté deviennent le produit." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"Les annonces ChatGPT deviennent des conversations : Sponsored Agents","description":"OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l'étiquetage et l'honnêteté deviennent le produit.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Recherche IA","about":{"@type":"Thing","name":"OpenAI teste Sponsored Agents dans ChatGPT et étend les annonces ChatGPT à 26 pays supplémentaires"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"Que sont les Sponsored Agents de ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"Ce sont des agents sponsorisés par des entreprises avec lesquels un utilisateur peut choisir de converser après avoir cliqué sur une annonce dans ChatGPT. OpenAI décrit l'expérience comme une conversation clairement identifiée, distincte des réponses indépendantes de ChatGPT. Le test a débuté avec une sélection d'annonceurs américains."}},{"@type":"Question","name":"Dans combien de pays les annonces ChatGPT sont-elles disponibles ?","acceptedAnswer":{"@type":"Answer","text":"Reuters a rapporté le 21 octobre 2026 qu'OpenAI étend les annonces ChatGPT à 26 pays supplémentaires, portant le total à 89."}},{"@type":"Question","name":"Les utilisateurs payants de ChatGPT voient-ils des annonces ?","acceptedAnswer":{"@type":"Answer","text":"Selon Reuters, les annonces n'apparaissent que sur les offres Free et Go de ChatGPT ; les abonnements Plus, Pro et Enterprise restent sans publicité."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Les annonces ChatGPT deviennent des conversations : Sponsored Agents","item":"https://farseev.com/fr/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/">한국어</option><option value="th" lang="th" data-href="/th/blog/chatgpt-sponsored-agents-ads-expansion/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/chatgpt-sponsored-agents-ads-expansion/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/chatgpt-sponsored-agents-ads-expansion/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/chatgpt-sponsored-agents-ads-expansion/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/chatgpt-sponsored-agents-ads-expansion/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/chatgpt-sponsored-agents-ads-expansion/">Filipino</option><option value="es" lang="es" data-href="/es/blog/chatgpt-sponsored-agents-ads-expansion/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/chatgpt-sponsored-agents-ads-expansion/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/chatgpt-sponsored-agents-ads-expansion/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Les annonces ChatGPT deviennent des conversations&nbsp;: Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Recherche IA</p>
+      <h1 class="h-display">Les annonces ChatGPT deviennent des conversations&nbsp;: Sponsored Agents</h1>
+      <p class="lead">OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l'étiquetage et l'honnêteté deviennent le produit.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: OpenAI teste Sponsored Agents dans ChatGPT et étend les annonces ChatGPT à 26 pays supplémentaires (<time datetime="2026-10-21">21 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Une annonce sur un moteur de recherche, c'est une phrase et un lien. Un Sponsored Agent de ChatGPT, c'est une conversation. Entre septembre et octobre, OpenAI a commencé à tester des annonces qui répondent et a étendu la publicité ChatGPT à 89 pays. Ensemble, ces deux mouvements changent ce qu'est une annonce.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Le 16 septembre, selon <a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a>, OpenAI a commencé à tester Sponsored Agents avec une sélection d'annonceurs américains. Après avoir cliqué sur une annonce, un utilisateur peut choisir d'engager ce qu'OpenAI appelle «&nbsp;une conversation clairement identifiée&nbsp;» avec «&nbsp;un agent sponsorisé par une entreprise dans ChatGPT&nbsp;», par exemple pour demander si une table de salle à manger convient à une pièce ou comment entretenir sa finition, avant de suivre un lien vers le site de l'entreprise. OpenAI précise que la conversation sponsorisée est «&nbsp;distincte des réponses indépendantes de ChatGPT&nbsp;».</p>
+<p>La même annonce a apporté des outils pour les annonceurs&nbsp;: un plugin Ads Manager pour créer et analyser des campagnes en langage naturel dans ChatGPT, des suggestions de textes et d'images publicitaires fondées sur une page de destination, et une fonctionnalité optionnelle qui adapte les titres au contexte de la conversation et traduit les textes publicitaires dans la langue de l'utilisateur. HubSpot et Shopify ont été cités comme premiers partenaires CRM et e-commerce.</p>
+<p>Le 21 octobre, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">Reuters a rapporté</a> qu'OpenAI étend la publicité ChatGPT à 26 pays supplémentaires, portant le total à 89, dont des marchés d'Amérique latine, d'Europe, d'Afrique et d'Asie comme le Cambodge, le Bangladesh et le Pakistan. L'entreprise a indiqué que plus de 100 000 annonceurs ont mené des campagnes et que son activité publicitaire a atteint un chiffre d'affaires annualisé de 1 milliard US$ en août. Les annonces n'apparaissent que sur les offres Free et Go&nbsp;; Plus, Pro et Enterprise restent sans publicité.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Trois choses changent quand une annonce devient un agent.</p>
+<p>D'abord, l'annonce peut désormais répondre à des questions. C'est mieux pour les utilisateurs qu'une bannière statique, si les réponses sont exactes. C'est aussi un nouveau risque juridique&nbsp;: un agent sponsorisé qui exagère les caractéristiques d'un produit est une publicité trompeuse qui parle.</p>
+<p>Ensuite, la frontière entre l'assistant et l'annonceur doit être visible à chaque échange. La formulation d'OpenAI, une conversation clairement identifiée et distincte des réponses indépendantes de ChatGPT, est le bon principe. Sa valeur dépend entièrement de la clarté de cette séparation pour un utilisateur ordinaire au milieu d'une conversation.</p>
+<p>Enfin, il existe désormais un marché de l'attention à deux niveaux. Les utilisateurs payants ne voient pas de publicités&nbsp;; les utilisateurs gratuits, si. Sur les marchés à forte croissance, où la plupart des gens utilisent les offres gratuites, ChatGPT devient un canal publicitaire à grande échelle. Sur les marchés comptant davantage d'abonnés payants, une audience de valeur ne sera accessible que par les réponses organiques.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Un agent sponsorisé, c'est de la personnalisation en temps réel. La conversation elle-même constitue le profil. Mes recherches sur <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">la recommandation de contenus guidée par la personnalité</a> (ACM Multimedia 2022) et sur <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">la génération de contenu guidée par la personnalité</a> (WSDM 2021) ont exploré comment inférer ce à quoi une personne réagit et adapter le contenu en conséquence. Ces techniques fonctionnent. C'est précisément pourquoi les garde-fous comptent&nbsp;: un agent qui adapte sa persuasion à la personnalité de chaque utilisateur est très efficace et, sans transparence, très facile à détourner.</p>
+<p>J'ai plaidé dans Forbes pour un <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing rédempteur</a>, l'idée que transparence et performance peuvent se renforcer mutuellement. Les annonces conversationnelles sont le terrain où cette idée est mise à l'épreuve. Les marques qui gagneront sur le long terme seront celles dont les agents sponsorisés sont honnêtes sur leurs limites, disent «&nbsp;ce produit n'est pas fait pour vous&nbsp;» quand c'est le cas et passent la main à un humain quand la question les dépasse.</p>
+<p>La fonctionnalité de traduction automatique mérite aussi de la prudence. Traduire un texte publicitaire dans la langue de l'utilisateur est utile, mais risqué pour les allégations réglementées différemment sur chaque marché.</p>
+<h2>Ce que les annonceurs doivent faire dès maintenant</h2>
+<ul><li>Écrivez les règles de votre agent sponsorisé avant son script. Quelles allégations sont autorisées, quelles questions il doit décliner, quand il passe la main à une personne.</li><li>Ancrez-le dans vos propres faits. Les caractéristiques, prix, conditions et instructions d'entretien des produits doivent provenir d'une source tenue à jour, et non des connaissances générales du modèle.</li><li>Vérifiez les textes traduits pour les allégations réglementées, en particulier dans la santé, la finance et les produits pour enfants.</li><li>Prévoyez les deux niveaux. Utilisez le placement payant là où les utilisateurs gratuits sont votre audience, et investissez dans la visibilité organique pour les utilisateurs des offres sans publicité.</li><li>Mesurez au-delà du clic. Suivez si les conversations débouchent sur des achats, des retours ou des réclamations, et pas seulement leur durée.</li></ul>
+<p>Les annonces sur les moteurs de recherche nous ont appris à écrire pour une requête. Les annonces conversationnelles nous apprendront à répondre comme un vendeur digne de confiance, à grande échelle, dans toutes les langues. C'est plus difficile, et plus intéressant.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Que sont les Sponsored Agents de ChatGPT&nbsp;?</summary><p>Ce sont des agents sponsorisés par des entreprises avec lesquels un utilisateur peut choisir de converser après avoir cliqué sur une annonce dans ChatGPT. OpenAI décrit l'expérience comme une conversation clairement identifiée, distincte des réponses indépendantes de ChatGPT. Le test a débuté avec une sélection d'annonceurs américains.</p></details><details><summary>Dans combien de pays les annonces ChatGPT sont-elles disponibles&nbsp;?</summary><p>Reuters a rapporté le 21 octobre 2026 qu'OpenAI étend les annonces ChatGPT à 26 pays supplémentaires, portant le total à 89.</p></details><details><summary>Les utilisateurs payants de ChatGPT voient-ils des annonces&nbsp;?</summary><p>Selon Reuters, les annonces n'apparaissent que sur les offres Free et Go de ChatGPT&nbsp;; les abonnements Plus, Pro et Enterprise restent sans publicité.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Recherche IA · 29 octobre 2026</span><h3>Adobe&nbsp;: le trafic issu de l'IA convertit mieux que les autres visites</h3><p>Selon Adobe, les visites de détaillants américains issues de l'IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">Recherche IA · 28 octobre 2026</span><h3>Les annonces dans Google AI Mode arrivent à Singapour et ailleurs</h3><p>Google étend les annonces dans AI Mode à dix marchés, dont Singapour, la Malaisie et les Philippines. Ce qui change quand l'annonce se trouve dans la réponse.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">Recherche IA · 1er octobre 2026</span><h3>Penske contre Google rejeté&nbsp;: ce que cela signifie pour la visibilité dans l'IA</h3><p>Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun «&nbsp;marché formel&nbsp;» sur le trafic. Ce que les marques doivent faire en matière de GEO.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

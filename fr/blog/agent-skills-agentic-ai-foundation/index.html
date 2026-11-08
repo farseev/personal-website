@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Skills devient neutre vis-à-vis des fournisseurs&nbsp;: pourquoi c'est important pour les marketeurs | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic a fait don du standard Agent Skills à l&#x27;Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c&#x27;est exactement ce dont les équipes marketing ont besoin de la part des agents IA." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Agent Skills devient neutre vis-à-vis des fournisseurs : pourquoi c&#x27;est important pour les marketeurs | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic a fait don du standard Agent Skills à l&#x27;Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c&#x27;est exactement ce dont les équipes marketing ont besoin de la part des agents IA." />
+<meta property="og:url" content="https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agents" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Agent Skills devient neutre vis-à-vis des fournisseurs : pourquoi c&#x27;est important pour les marketeurs | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic a fait don du standard Agent Skills à l&#x27;Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c&#x27;est exactement ce dont les équipes marketing ont besoin de la part des agents IA." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/#article","mainEntityOfPage":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/","url":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/","headline":"Agent Skills devient neutre vis-à-vis des fournisseurs : pourquoi c'est important pour les marketeurs","description":"Anthropic a fait don du standard Agent Skills à l'Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c'est exactement ce dont les équipes marketing ont besoin de la part des agents IA.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Agents","about":{"@type":"Thing","name":"Anthropic fait don du standard ouvert Agent Skills à l'Agentic AI Foundation, sous l'égide de la Linux Foundation"},"wordCount":873,"citation":[{"@type":"CreativeWork","name":"Donating Agent Skills to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","publisher":"Anthropic","datePublished":"2026-10-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une Agent Skill ?","acceptedAnswer":{"@type":"Answer","text":"Selon Anthropic, une skill est un dossier contenant un fichier SKILL.md qui enseigne à un agent IA une tâche ou un domaine spécifique, avec les scripts ou documents de référence dont la tâche a besoin."}},{"@type":"Question","name":"Qui maintient désormais le standard Agent Skills ?","acceptedAnswer":{"@type":"Answer","text":"Anthropic a fait don du standard, de son nom, de son logo, de l'organisation GitHub et du domaine agentskills.io à l'Agentic AI Foundation, rattachée à la Linux Foundation. Des ingénieurs d'Anthropic, de Google, d'OpenAI et d'autres entreprises le maintiennent à titre individuel."}},{"@type":"Question","name":"Comment les marketeurs peuvent-ils utiliser Agent Skills ?","acceptedAnswer":{"@type":"Answer","text":"En consignant des procédures répétables, comme les briefs, les revues concurrentielles ou les rapports de campagne, avec les règles et des exemples propres à la marque, afin que les agents IA de différents outils suivent la méthode de l'équipe plutôt que des comportements génériques par défaut."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Agent Skills devient neutre vis-à-vis des fournisseurs : pourquoi c'est important pour les marketeurs","item":"https://farseev.com/fr/blog/agent-skills-agentic-ai-foundation/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/agent-skills-agentic-ai-foundation/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/agent-skills-agentic-ai-foundation/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/agent-skills-agentic-ai-foundation/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/agent-skills-agentic-ai-foundation/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/agent-skills-agentic-ai-foundation/">한국어</option><option value="th" lang="th" data-href="/th/blog/agent-skills-agentic-ai-foundation/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/agent-skills-agentic-ai-foundation/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/agent-skills-agentic-ai-foundation/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/agent-skills-agentic-ai-foundation/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/agent-skills-agentic-ai-foundation/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/agent-skills-agentic-ai-foundation/">Filipino</option><option value="es" lang="es" data-href="/es/blog/agent-skills-agentic-ai-foundation/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/agent-skills-agentic-ai-foundation/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/agent-skills-agentic-ai-foundation/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Agent Skills devient neutre vis-à-vis des fournisseurs&nbsp;: pourquoi c'est important pour les marketeurs</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Agents</p>
+      <h1 class="h-display">Agent Skills devient neutre vis-à-vis des fournisseurs&nbsp;: pourquoi c'est important pour les marketeurs</h1>
+      <p class="lead">Anthropic a fait don du standard Agent Skills à l'Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c'est exactement ce dont les équipes marketing ont besoin de la part des agents IA.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Anthropic fait don du standard ouvert Agent Skills à l'Agentic AI Foundation, sous l'égide de la Linux Foundation (<time datetime="2026-10-22">22 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Certaines des actualités IA les plus importantes sont ennuyeuses en apparence. Le 22 octobre, Anthropic a annoncé confier le standard Agent Skills à l'Agentic AI Foundation, une organisation rattachée à la Linux Foundation. Pas de nouveau modèle, pas de benchmark. Mais si vous pilotez votre marketing avec des agents IA, c'est le genre de tuyauterie qui détermine si votre savoir-faire reste le vôtre.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">le billet d'Anthropic</a>, une skill est «&nbsp;un dossier contenant un fichier SKILL.md qui enseigne à un agent une tâche ou un domaine spécifique, ainsi que les scripts ou documents de référence dont il a besoin&nbsp;». Anthropic a mis au point ce format en développant Claude Code, car les agents généralistes manquaient souvent des connaissances procédurales qu'exigent les vraies tâches métier. L'entreprise a lancé les skills en octobre 2025 et publié Agent Skills comme standard ouvert en décembre 2025.</p>
+<p>Les chiffres d'adoption sont importants. Anthropic indique que plus de 70 plateformes d'agents ont intégré Agent Skills, dont ChatGPT, Cursor, GitHub Copilot et VS Code, et qu'un million de skills ont été publiées et près de 280 millions installées.</p>
+<p>Désormais, le standard lui-même, son nom et son logo, l'organisation GitHub et le domaine agentskills.io sont confiés à l'Agentic AI Foundation (AAIF), qu'Anthropic a cofondée avec Block et OpenAI et à laquelle elle avait déjà fait don du Model Context Protocol. Des ingénieurs d'Anthropic, de Google, d'OpenAI et d'autres entreprises le maintiendront à titre individuel. La feuille de route proposée prévoit des versions numérotées, un processus formel de propositions et des recommandations de sécurité pour ceux qui écrivent et installent des skills.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Toutes les équipes marketing que je connais possèdent le même actif caché&nbsp;: leur façon de faire. Comment elles rédigent un brief. Quels concurrents elles examinent en premier. Ce que «&nbsp;conforme à la marque&nbsp;» signifie pour ce client sur ce marché. Aujourd'hui, l'essentiel de ce savoir se trouve dans la tête des gens et dans des présentations que personne ne lit.</p>
+<p>Une skill permet de consigner cette procédure pour qu'un agent puisse la suivre. Et un standard neutre vis-à-vis des fournisseurs signifie que vous pouvez l'écrire une fois et vous attendre à ce qu'elle fonctionne dans les outils qu'utilise votre équipe. C'est toute la différence entre bâtir sur une plateforme et bâtir sur un format. Les formats survivent aux plateformes.</p>
+<p>Il y a un second avantage, plus discret. Une skill est lisible. Vous pouvez ouvrir le dossier et voir ce qu'on a demandé à l'agent de faire. Dans un domaine où «&nbsp;c'est l'IA qui a décidé&nbsp;» devient une excuse courante, une procédure en texte clair est une forme modeste mais réelle de redevabilité.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>J'ai écrit dans Forbes sur l'échelle qui va <a href="https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/" target="_blank" rel="noopener">du prompting et du fine-tuning au RAG et aux agents IA en marketing</a>, ainsi que sur <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">18 applications des agents IA en marketing</a>. Le constat auquel je reviens sans cesse est que les agents échouent moins par manque d'intelligence que par manque de contexte&nbsp;: les données précises et la procédure précise propres à la tâche.</p>
+<p>Notre article le plus récent rend cela concret. Dans <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> (SIGIR 2026), nous décrivons des agents à génération augmentée par récupération qui aident des professionnels à rédiger des contenus LinkedIn distinctifs. L'idée centrale est qu'un agent doit récupérer de vraies données de contexte avant d'écrire, afin que sa production reste distinctive au lieu de converger vers le même texte générique que produit l'agent de tout le monde.</p>
+<p>Les skills sont le pendant procédural de la récupération. La récupération donne à l'agent les faits. Une skill lui donne la méthode. Toutes deux luttent contre l'homogénéisation, car toutes deux injectent ce qui vous est propre dans un système qui, sinon, se rabat par défaut sur la moyenne d'Internet. Si chaque marque fait tourner le même agent avec le même comportement par défaut, toutes les marques se ressembleront. Vos skills sont l'endroit où se loge votre différence.</p>
+<h2>Ce que les équipes marketing doivent faire dès maintenant</h2>
+<ul><li>Consignez trois procédures que vous répétez chaque semaine, comme les veilles concurrentielles, les bilans de campagne ou les briefs créatifs, sous forme d'instructions simples, étape par étape, avec des exemples de bons résultats.</li><li>Séparez les éléments propres à la marque&nbsp;: ton, allégations interdites, mentions légales, différences entre marchés. Ce sont eux qui font que votre production est la vôtre.</li><li>Versionnez-les. Quand une procédure change, le comportement de l'agent change. Traitez les skills comme du code, avec un responsable et un journal des modifications.</li><li>Vérifiez la sécurité avant d'installer des skills tierces. Une skill peut contenir des scripts. La nouvelle feuille de route de gouvernance prévoit des recommandations de sécurité pour cette raison&nbsp;; en attendant, lisez ce que vous installez.</li><li>Mesurez la singularité, pas seulement la vitesse. Si le contenu rédigé par votre agent commence à ressembler à celui de vos concurrents, votre contexte est trop mince.</li></ul>
+<p>Les standards ouverts ne sont pas passionnants jusqu'au jour où vous devez changer d'outil. Ce jour-là, les équipes qui auront consigné leur savoir-faire dans un format portable migreront en une semaine. Les autres repartiront de zéro.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce qu'une Agent Skill&nbsp;?</summary><p>Selon Anthropic, une skill est un dossier contenant un fichier SKILL.md qui enseigne à un agent IA une tâche ou un domaine spécifique, avec les scripts ou documents de référence dont la tâche a besoin.</p></details><details><summary>Qui maintient désormais le standard Agent Skills&nbsp;?</summary><p>Anthropic a fait don du standard, de son nom, de son logo, de l'organisation GitHub et du domaine agentskills.io à l'Agentic AI Foundation, rattachée à la Linux Foundation. Des ingénieurs d'Anthropic, de Google, d'OpenAI et d'autres entreprises le maintiennent à titre individuel.</p></details><details><summary>Comment les marketeurs peuvent-ils utiliser Agent Skills&nbsp;?</summary><p>En consignant des procédures répétables, comme les briefs, les revues concurrentielles ou les rapports de campagne, avec les règles et des exemples propres à la marque, afin que les agents IA de différents outils suivent la méthode de l'équipe plutôt que des comportements génériques par défaut.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a> — Anthropic, 22 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/workday-c1-ai-agent-identity/"><span class="meta">Agents · 13 octobre 2026</span><h3>Workday rachète C1.ai&nbsp;: vos agents marketing ont aussi besoin d'identités</h3><p>Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/openai-agent-medicare-portal-australia/"><span class="meta">Agents · 24 septembre 2026</span><h3>L'agent IA qui ne voulait pas accepter un refus</h3><p>Le Premier ministre australien a déclaré qu'un agent de recherche d'OpenAI avait contourné des blocages sur un portail de statistiques de Medicare. La leçon pour les agents marketing porte sur le périmètre.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/meta-muse-personal-ai-agent/"><span class="meta">Agents · 8 septembre 2026</span><h3>Meta Muse&nbsp;: que se passe-t-il quand votre client envoie un agent&nbsp;?</h3><p>Meta a lancé Muse, un agent IA personnel capable de réserver, d'acheter et de négocier au nom d'un utilisateur. Faire du marketing auprès d'agents, et pas seulement de personnes, est désormais une question concrète.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

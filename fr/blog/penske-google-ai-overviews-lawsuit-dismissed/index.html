@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Penske contre Google rejeté&nbsp;: ce que cela signifie pour la visibilité dans l'IA | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun « marché formel » sur le trafic. Ce que les marques doivent faire en matière de GEO." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Penske contre Google rejeté : ce que cela signifie pour la visibilité dans l&#x27;IA | Prof. Aleks Farseev" />
+<meta property="og:description" content="Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun « marché formel » sur le trafic. Ce que les marques doivent faire en matière de GEO." />
+<meta property="og:url" content="https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Recherche IA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Penske contre Google rejeté : ce que cela signifie pour la visibilité dans l&#x27;IA | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun « marché formel » sur le trafic. Ce que les marques doivent faire en matière de GEO." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","mainEntityOfPage":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/","url":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/","headline":"Penske contre Google rejeté : ce que cela signifie pour la visibilité dans l'IA","description":"Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun « marché formel » sur le trafic. Ce que les marques doivent faire en matière de GEO.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Recherche IA","about":{"@type":"Thing","name":"Le juge fédéral américain Amit Mehta rejette les plaintes antitrust de Penske Media et de Chegg contre les AI Overviews de Google"},"wordCount":856,"citation":[{"@type":"CreativeWork","name":"Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google","url":"https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/","publisher":"Press Gazette","datePublished":"2026-10-01"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/#faq","mainEntity":[{"@type":"Question","name":"Pourquoi la plainte de Penske Media contre Google a-t-elle été rejetée ?","acceptedAnswer":{"@type":"Answer","text":"Selon Press Gazette, le juge Amit Mehta a estimé qu'il n'existait aucun « marché formel » entre les éditeurs et Google consistant à échanger l'exploration contre du trafic, écrivant qu'une attente de trafic « n'est pas un accord », et il a rejeté l'affirmation selon laquelle la recherche et les AI Overviews sont des produits distincts illégalement liés."}},{"@type":"Question","name":"La décision dans l'affaire Penske est-elle définitive ?","acceptedAnswer":{"@type":"Answer","text":"Non. Press Gazette a rapporté le 30 octobre 2026 que Penske et Chegg font appel du rejet."}},{"@type":"Question","name":"Que doivent faire les marques pour leur visibilité dans la recherche IA après cette décision ?","acceptedAnswer":{"@type":"Answer","text":"Prévoir moins de clics sur les requêtes informationnelles, publier des contenus précis et attribuables que les systèmes d'IA peuvent citer, maintenir la cohérence des informations produits d'un site à l'autre, peser soigneusement toute décision de retrait et construire des canaux directs vers les clients."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Penske contre Google rejeté : ce que cela signifie pour la visibilité dans l'IA","item":"https://farseev.com/fr/blog/penske-google-ai-overviews-lawsuit-dismissed/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/penske-google-ai-overviews-lawsuit-dismissed/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/">한국어</option><option value="th" lang="th" data-href="/th/blog/penske-google-ai-overviews-lawsuit-dismissed/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/penske-google-ai-overviews-lawsuit-dismissed/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/penske-google-ai-overviews-lawsuit-dismissed/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/penske-google-ai-overviews-lawsuit-dismissed/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/penske-google-ai-overviews-lawsuit-dismissed/">Filipino</option><option value="es" lang="es" data-href="/es/blog/penske-google-ai-overviews-lawsuit-dismissed/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/penske-google-ai-overviews-lawsuit-dismissed/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Penske contre Google rejeté&nbsp;: ce que cela signifie pour la visibilité dans l'IA</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Recherche IA</p>
+      <h1 class="h-display">Penske contre Google rejeté&nbsp;: ce que cela signifie pour la visibilité dans l'IA</h1>
+      <p class="lead">Un juge américain a rejeté la plainte antitrust de Penske Media contre les AI Overviews de Google, ne trouvant aucun «&nbsp;marché formel&nbsp;» sur le trafic. Ce que les marques doivent faire en matière de GEO.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: le juge fédéral américain Amit Mehta rejette les plaintes antitrust de Penske Media et de Chegg contre les AI Overviews de Google (<time datetime="2026-10-01">1er octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Pendant deux décennies, le web a fonctionné sur un accord tacite&nbsp;: laissez Google explorer vos pages, et Google vous envoie des visiteurs. Dans une décision rapportée le 1er octobre, un juge fédéral américain a en substance déclaré que cet accord n'en a jamais été un. Pour quiconque dépend du trafic issu de la recherche, cette décision est une raison de repenser la visibilité de fond en comble.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Press Gazette</a>, le juge fédéral Amit Mehta a rejeté la plainte antitrust de Penske Media Corporation contre Google au sujet des AI Overviews, et a écarté les arguments similaires de Chegg. Penske invoquait une perte de trafic issu de la recherche ainsi qu'une perte de revenus d'affiliation, de publicité et d'abonnements après le lancement des AI Overviews.</p>
+<p>Le juge n'a constaté aucun «&nbsp;marché formel&nbsp;» entre les éditeurs et Google. Les éditeurs, a-t-il écrit, «&nbsp;ont uniquement fait valoir qu'ils ont une "attente" que Google leur envoie du trafic de recherche&nbsp;», et «&nbsp;une attente n'est pas un accord. C'est simplement ainsi que fonctionne un moteur de recherche généraliste&nbsp;». Il a également rejeté l'argument selon lequel la recherche et les AI Overviews sont des produits distincts que Google aurait illégalement liés. Il a souligné que «&nbsp;le tribunal ne prend pas à la légère les préjudices allégués par les plaignants&nbsp;».</p>
+<p>La mise à jour de Press Gazette du 30 octobre ajoute que Penske et Chegg font appel, que Google déploie dans Search Console une option permettant aux éditeurs de se retirer des AI Overviews à la suite d'une injonction de la Competition and Markets Authority britannique, et que Google testerait des paiements aux éditeurs dont les contenus contribuent de manière significative à ses fonctionnalités d'IA.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Quelle que soit l'issue de l'appel, la décision clarifie la situation&nbsp;: il n'existe aucun droit légal au trafic. Le moteur de recherche peut décider de répondre lui-même à la question. Si votre modèle économique ou votre plan marketing suppose que le classement équivaut à des visites, vous bâtissez sur une attente, pas sur un accord.</p>
+<p>Ce n'est pas seulement un problème d'éditeurs. Les marques publient aussi&nbsp;: guides, pages produits, contenus comparatifs, études. Tout cela constitue désormais la matière première de réponses IA susceptibles de satisfaire l'utilisateur sans clic. La question passe de «&nbsp;comment me classer&nbsp;?&nbsp;» à «&nbsp;comment être cité, choisi et retenu dans la réponse&nbsp;?&nbsp;». C'est ce que l'on appelle désormais l'optimisation pour les moteurs génératifs, ou GEO.</p>
+<p>L'option de retrait et les tests de paiement rendent l'arbitrage explicite. Se retirer peut protéger vos contenus, mais cela vous fait aussi disparaître des réponses que lisent vos clients. Pour la plupart des marques, le prix est trop élevé. Pour certains éditeurs, c'est peut-être le seul levier dont ils disposent.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Être cité dans une réponse IA est, fondamentalement, un problème de récupération d'information. Mes premiers travaux sur <a href="https://doi.org/10.1145/3077136.3080774" target="_blank" rel="noopener">la recommandation inter-domaines par clustering sur des graphes multicouches</a> (SIGIR 2017) portaient sur la mise en commun de signaux issus de différentes sources pour décider quoi recommander. Les moteurs de réponses modernes sont de lointains descendants de cette idée&nbsp;: ils récupèrent, regroupent et choisissent des sources avant de générer. Les contenus précis, cohérents d'une source à l'autre et faciles à attribuer ont plus de chances d'être récupérés et choisis.</p>
+<p>Mes travaux sur l'IA explicable éclairent l'autre moitié. Dans <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion), nous nous sommes attachés à expliquer les communications des concurrents&nbsp;: ce qu'ils disent et pourquoi cela fonctionne. Le GEO exige la même discipline. Il ne suffit pas de savoir qu'un concurrent apparaît dans les réponses IA&nbsp;; il faut comprendre quelles affirmations, quels formats et quelles sources le permettent.</p>
+<p>Et la mesure est là aussi un piège. J'ai écrit sur e27 que <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">tous les tableaux de bord sont au vert, mais que personne ne sait dire ce qui a fonctionné</a>. Les outils de visibilité dans l'IA vont ajouter une nouvelle série de chiffres au vert. Traitez-les comme des signaux, confrontez-les aux résultats et ne confondez pas une mention avec un client.</p>
+<h2>Ce que les éditeurs et les marques doivent faire dès maintenant</h2>
+<ul><li>Cessez de considérer le trafic comme un droit. Modélisez des scénarios où les requêtes informationnelles obtiennent une réponse sans clic, et déterminez quels contenus justifient encore leur coût.</li><li>Écrivez pour être cité. Des affirmations claires, des données originales, des auteurs nommés, des dates et des sources rendent les contenus plus faciles à récupérer et à attribuer pour les systèmes d'IA.</li><li>Soyez cohérent sur tout le web. Les moteurs de réponses recoupent les informations. Les données sur vos produits doivent concorder sur votre site, les places de marché et les pages partenaires.</li><li>Décidez du retrait en connaissance de cause. Mettez en balance la visibilité perdue et le levier gagné, type de page par type de page, et non sur l'ensemble du site par réflexe.</li><li>Construisez des relations directes. Newsletters, communautés et applications sont les canaux qu'aucune décision de justice ne peut vous retirer.</li></ul>
+<p>Le tribunal n'a pas tranché la grande question de ce que la recherche IA doit aux personnes dont elle lit le travail. Mais il a réglé un point pratique pour l'instant&nbsp;: personne n'a droit à un clic.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Pourquoi la plainte de Penske Media contre Google a-t-elle été rejetée&nbsp;?</summary><p>Selon Press Gazette, le juge Amit Mehta a estimé qu'il n'existait aucun «&nbsp;marché formel&nbsp;» entre les éditeurs et Google consistant à échanger l'exploration contre du trafic, écrivant qu'une attente de trafic «&nbsp;n'est pas un accord&nbsp;», et il a rejeté l'affirmation selon laquelle la recherche et les AI Overviews sont des produits distincts illégalement liés.</p></details><details><summary>La décision dans l'affaire Penske est-elle définitive&nbsp;?</summary><p>Non. Press Gazette a rapporté le 30 octobre 2026 que Penske et Chegg font appel du rejet.</p></details><details><summary>Que doivent faire les marques pour leur visibilité dans la recherche IA après cette décision&nbsp;?</summary><p>Prévoir moins de clics sur les requêtes informationnelles, publier des contenus précis et attribuables que les systèmes d'IA peuvent citer, maintenir la cohérence des informations produits d'un site à l'autre, peser soigneusement toute décision de retrait et construire des canaux directs vers les clients.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google</a> — Press Gazette, 1 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Recherche IA · 29 octobre 2026</span><h3>Adobe&nbsp;: le trafic issu de l'IA convertit mieux que les autres visites</h3><p>Selon Adobe, les visites de détaillants américains issues de l'IA ont converti 90 % mieux que le reste du trafic en septembre. Pourquoi les réponses IA sont devenues un canal, et que faire.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">Recherche IA · 28 octobre 2026</span><h3>Les annonces dans Google AI Mode arrivent à Singapour et ailleurs</h3><p>Google étend les annonces dans AI Mode à dix marchés, dont Singapour, la Malaisie et les Philippines. Ce qui change quand l'annonce se trouve dans la réponse.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">Recherche IA · 21 octobre 2026</span><h3>Les annonces ChatGPT deviennent des conversations&nbsp;: Sponsored Agents</h3><p>OpenAI teste Sponsored Agents dans ChatGPT et a étendu les annonces ChatGPT à 89 pays. Quand une annonce peut répondre, l'étiquetage et l'honnêteté deviennent le produit.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

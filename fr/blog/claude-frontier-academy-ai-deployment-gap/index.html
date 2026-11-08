@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Le déficit de déploiement de l'IA est un problème humain | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic s&#x27;est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d&#x27;ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-frontier-academy-ai-deployment-gap/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Le déficit de déploiement de l&#x27;IA est un problème humain | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic s&#x27;est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d&#x27;ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle." />
+<meta property="og:url" content="https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Travail et compétences" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Le déficit de déploiement de l&#x27;IA est un problème humain | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic s&#x27;est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d&#x27;ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/#article","mainEntityOfPage":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/","url":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/","headline":"Le déficit de déploiement de l'IA est un problème humain","description":"Anthropic s'est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d'ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Travail et compétences","about":{"@type":"Thing","name":"Anthropic lance la Claude Frontier Academy avec un engagement de 100 millions de dollars pour former 10 000 ingénieurs"},"wordCount":818,"citation":[{"@type":"CreativeWork","name":"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap","url":"https://www.anthropic.com/news/claude-frontier-academy","publisher":"Anthropic","datePublished":"2026-10-02"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce que la Claude Frontier Academy ?","acceptedAnswer":{"@type":"Answer","text":"C'est un programme de formation lancé par Anthropic le 2 octobre 2026, doté d'un engagement de 100 millions US$, pour former 10 000 Frontier Deployed Engineers d'ici fin 2027 au moyen d'un programme présentiel suivi d'une résidence de 12 semaines sur un projet réel."}},{"@type":"Question","name":"Quelles entreprises font partie des premières cohortes de la Claude Frontier Academy ?","acceptedAnswer":{"@type":"Answer","text":"Anthropic cite notamment Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley et Novo Nordisk, avec des cohortes à San Francisco, New York et Londres."}},{"@type":"Question","name":"Pourquoi le marketing a-t-il besoin de spécialistes du déploiement de l'IA ?","acceptedAnswer":{"@type":"Answer","text":"Parce que l'accès aux modèles n'est plus le goulot d'étranglement. La valeur vient de la refonte de vrais workflows marketing autour de l'IA, avec mesure et garde-fous, ce qui exige des personnes qui comprennent à la fois la technologie et la décision marketing."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Le déficit de déploiement de l'IA est un problème humain","item":"https://farseev.com/fr/blog/claude-frontier-academy-ai-deployment-gap/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/claude-frontier-academy-ai-deployment-gap/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-frontier-academy-ai-deployment-gap/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-frontier-academy-ai-deployment-gap/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-frontier-academy-ai-deployment-gap/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-frontier-academy-ai-deployment-gap/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-frontier-academy-ai-deployment-gap/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-frontier-academy-ai-deployment-gap/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/claude-frontier-academy-ai-deployment-gap/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/claude-frontier-academy-ai-deployment-gap/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/claude-frontier-academy-ai-deployment-gap/">Filipino</option><option value="es" lang="es" data-href="/es/blog/claude-frontier-academy-ai-deployment-gap/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/claude-frontier-academy-ai-deployment-gap/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/claude-frontier-academy-ai-deployment-gap/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Le déficit de déploiement de l'IA est un problème humain</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Travail et compétences</p>
+      <h1 class="h-display">Le déficit de déploiement de l'IA est un problème humain</h1>
+      <p class="lead">Anthropic s'est engagé à consacrer 100 M$ à la formation de 10 000 Frontier Deployed Engineers d'ici 2027, avec des cabinets de conseil et des banques. Pourquoi le marketing a besoin de sa propre version de ce rôle.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Anthropic lance la Claude Frontier Academy avec un engagement de 100 millions de dollars pour former 10 000 ingénieurs (<time datetime="2026-10-02">2 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La raison la plus fréquente pour laquelle les projets d'IA déçoivent n'est pas le modèle. C'est que personne dans l'organisation ne sait transformer un modèle performant en processus opérationnel. Le 2 octobre, Anthropic a mis un prix sur ce problème&nbsp;: 100 millions US$ pour former 10 000 personnes dont c'est précisément le métier.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">l'annonce d'Anthropic</a>, la nouvelle Claude Frontier Academy vise à former 10 000 «&nbsp;Frontier Deployed Engineers&nbsp;» d'ici fin 2027, grâce à un engagement de 100 millions US$. Le premier programme est une résidence qui, selon les termes d'Anthropic, «&nbsp;suit le modèle médical de construction de l'expertise&nbsp;». Les organisations proposent des ingénieurs confirmés, chacun arrivant avec un projet Claude défini. Ils suivent d'abord un programme présentiel de plusieurs jours comprenant un déploiement simulé en entreprise et une épreuve pratique notée, puis passent 12 semaines à piloter un cas d'usage réel dans leur propre organisation avec le soutien d'ingénieurs d'Anthropic, avant une évaluation finale.</p>
+<p>Des cohortes ont lieu à San Francisco, New York et Londres. Parmi les entreprises citées dans les premières cohortes figurent Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley et Novo Nordisk. Anthropic indique que l'académie s'appuie sur son réseau de partenaires, où des professionnels de 46 000 entreprises ont obtenu plus de 175 000 certifications.</p>
+<p>Un responsable d'Accenture cité dans l'annonce affirme que la résidence évalue «&nbsp;le jugement mis à l'épreuve d'un déploiement simulé en entreprise, et non des compétences techniques isolées&nbsp;».</p>
+<h2>Pourquoi c'est important</h2>
+<p>Lisez la liste des premiers participants&nbsp;: des cabinets de conseil, des banques, un laboratoire pharmaceutique. Ce sont les organisations qui déploieront l'IA au sein d'autres entreprises, y compris dans les directions marketing. Le modèle n'est pas nouveau&nbsp;; des ingénieurs terrain et des architectes de solutions existent dans toutes les catégories de logiciels d'entreprise. Ce qui est nouveau, c'est l'échelle et l'accent mis sur le jugement dans des déploiements réels.</p>
+<p>Le marketing présente le même déficit, avec moins de personnes qui s'y attaquent. De nombreuses équipes ont désormais accès à d'excellents modèles et outils. Bien moins nombreuses sont celles qui disposent de quelqu'un dont le travail consiste à prendre un processus marketing désordonné, comme la veille concurrentielle, les tests créatifs ou le reporting, et à le repenser autour de l'IA en y intégrant mesure, garde-fous et adoption.</p>
+<p>Les lieux des cohortes méritent aussi d'être notés. Aucun ne se trouve en Asie. Pour notre région, c'est soit un manque à combler localement, soit le signe que la première vague de talents certifiés en déploiement sera concentrée ailleurs.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Selon moi, l'étape la plus difficile de l'IA appliquée est celle qui sépare un modèle qui fonctionne d'un processus qui fonctionne. Nos recherches le reflètent. Dans <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) et dans la <a href="https://doi.org/10.1145/3746027.3761835" target="_blank" rel="noopener">démonstration industrielle de SOMIN à ACM Multimedia 2025</a>, la contribution ne tient pas seulement aux modèles, mais à la manière dont ils s'intègrent au travail stratégique d'un marketeur&nbsp;: la prédiction de performance associée à un LLM qui explique et recommande.</p>
+<p>J'ai écrit dans Forbes sur <a href="https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/" target="_blank" rel="noopener">la manière de combler l'écart entre le marketing et les systèmes d'IA</a> et sur <a href="https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/" target="_blank" rel="noopener">l'exploitation des LLM en entreprise au-delà des chatbots</a>. Le fil conducteur est que la valeur apparaît quand quelqu'un comprend les deux côtés&nbsp;: ce que le modèle peut faire de manière fiable, et ce dont l'entreprise a réellement besoin. Ce profil est rare dans le marketing.</p>
+<p>J'enseigne aussi, notamment à NUS et à l'INSEAD, et le cadrage inspiré de l'internat médical me parle. On n'apprend pas le déploiement avec des slides. On l'apprend en prenant en charge un cas réel, sous supervision, et en étant évalué sur son jugement.</p>
+<h2>Comment les équipes marketing peuvent créer ce rôle dès maintenant</h2>
+<ul><li>Désignez un responsable. Confiez à une personne la responsabilité explicite de transformer les capacités de l'IA en processus marketing, avec le temps nécessaire pour le faire.</li><li>Apprenez sur un cas réel. Choisissez un workflow en production, comme le reporting concurrentiel hebdomadaire, et repensez-le de bout en bout, avec une référence de départ et un objectif.</li><li>Associez marketing et ingénierie. Les meilleurs déploiements naissent d'un marketeur qui connaît la décision et d'un technicien qui connaît le système, travaillant ensemble.</li><li>Évaluez le jugement, pas l'aisance avec les outils. La personne sait-elle expliquer quand il ne faut pas se fier à l'IA et ce qui se passe alors&nbsp;?</li><li>Partagez ce qui fonctionne. Consignez chaque déploiement sous forme de cas court&nbsp;: le problème, la conception, le résultat, les modes de défaillance.</li></ul>
+<p>Cent millions de dollars, c'est beaucoup pour de la formation. C'est peu au regard de ce que perdent les organisations sur des projets d'IA qui n'entrent jamais dans le travail quotidien. Le marketing ne devrait pas attendre que quelqu'un d'autre forme ses spécialistes du déploiement.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce que la Claude Frontier Academy&nbsp;?</summary><p>C'est un programme de formation lancé par Anthropic le 2 octobre 2026, doté d'un engagement de 100 millions US$, pour former 10 000 Frontier Deployed Engineers d'ici fin 2027 au moyen d'un programme présentiel suivi d'une résidence de 12 semaines sur un projet réel.</p></details><details><summary>Quelles entreprises font partie des premières cohortes de la Claude Frontier Academy&nbsp;?</summary><p>Anthropic cite notamment Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley et Novo Nordisk, avec des cohortes à San Francisco, New York et Londres.</p></details><details><summary>Pourquoi le marketing a-t-il besoin de spécialistes du déploiement de l'IA&nbsp;?</summary><p>Parce que l'accès aux modèles n'est plus le goulot d'étranglement. La valeur vient de la refonte de vrais workflows marketing autour de l'IA, avec mesure et garde-fous, ce qui exige des personnes qui comprennent à la fois la technologie et la décision marketing.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</a> — Anthropic, 2 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/anthropic-economic-scenarios-knowledge-work/"><span class="meta">Travail et compétences · 9 septembre 2026</span><h3>Trois scénarios économiques de l'IA et l'avenir des métiers du marketing</h3><p>Anthropic a publié trois scénarios sur l'effet de l'IA sur l'économie américaine d'ici 2030, de modéré à extrême. Ce que les conclusions sur le travail intellectuel signifient pour les carrières marketing.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Publicité et IA marketing · 29 octobre 2026</span><h3>T3 2026 de WPP&nbsp;: le modèle d'agence sous la pression de l'IA</h3><p>WPP a annoncé un recul de son revenu net à périmètre comparable, tandis que son CEO mettait en avant la demande de services IA via WPP Open. Ce que cela dit des agences.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/malaysia-ai-governance-bill/"><span class="meta">Asie et Singapour · 29 octobre 2026</span><h3>L'AI Governance Bill de la Malaisie&nbsp;: la responsabilité selon le rôle</h3><p>Le projet d'AI Governance Bill malaisien, attendu d'ici début 2027, impose des obligations à ceux qui développent, fournissent ou utilisent l'IA. Ce que des règles par rôle impliquent pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

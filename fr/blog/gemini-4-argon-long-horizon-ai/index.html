@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon&nbsp;: un million de tokens en sortie, et maintenant&nbsp;? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d&#x27;abord sur la cybersécurité. Ce que l&#x27;IA à long horizon change pour le travail marketing, et ce qu&#x27;elle ne change pas." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon : un million de tokens en sortie, et maintenant ? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d&#x27;abord sur la cybersécurité. Ce que l&#x27;IA à long horizon change pour le travail marketing, et ce qu&#x27;elle ne change pas." />
+<meta property="og:url" content="https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Modèles" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon : un million de tokens en sortie, et maintenant ? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d&#x27;abord sur la cybersécurité. Ce que l&#x27;IA à long horizon change pour le travail marketing, et ce qu&#x27;elle ne change pas." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon : un million de tokens en sortie, et maintenant ?","description":"Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d'abord sur la cybersécurité. Ce que l'IA à long horizon change pour le travail marketing, et ce qu'elle ne change pas.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Modèles","about":{"@type":"Thing","name":"Google DeepMind présente Gemini 4 Argon, son modèle de pointe pour les tâches longues en plusieurs étapes"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce que Gemini 4 Argon ?","acceptedAnswer":{"@type":"Answer","text":"C'est le modèle de pointe de Google DeepMind présenté le 30 septembre 2026 pour le codage en conditions réelles, le travail intellectuel en entreprise et la cyberdéfense, avec une limite de sortie d'un million de tokens, contre 64 000 auparavant."}},{"@type":"Question","name":"Qui peut utiliser Gemini 4 Argon en premier ?","acceptedAnswer":{"@type":"Answer","text":"Google indique que le déploiement commence auprès de cyberdéfenseurs de confiance via son Fairwind Program, une diffusion plus large étant prévue pour les développeurs, les entreprises et le grand public, en commençant par les clients API payants et les abonnés Google AI Ultra."}},{"@type":"Question","name":"Combien coûte Gemini 4 Argon ?","acceptedAnswer":{"@type":"Answer","text":"Google affiche un tarif de lancement de 2 US$ par million de tokens en entrée et de 10 US$ par million de tokens en sortie, puis de 4 US$ et 20 US$ après la période de lancement, avec une remise de 95 % sur les tokens d'entrée en cache."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon : un million de tokens en sortie, et maintenant ?","item":"https://farseev.com/fr/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="th" lang="th" data-href="/th/blog/gemini-4-argon-long-horizon-ai/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/gemini-4-argon-long-horizon-ai/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/gemini-4-argon-long-horizon-ai/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/gemini-4-argon-long-horizon-ai/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/gemini-4-argon-long-horizon-ai/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/gemini-4-argon-long-horizon-ai/">Filipino</option><option value="es" lang="es" data-href="/es/blog/gemini-4-argon-long-horizon-ai/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/gemini-4-argon-long-horizon-ai/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/gemini-4-argon-long-horizon-ai/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Gemini 4 Argon&nbsp;: un million de tokens en sortie, et maintenant&nbsp;?</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Modèles</p>
+      <h1 class="h-display">Gemini 4 Argon&nbsp;: un million de tokens en sortie, et maintenant&nbsp;?</h1>
+      <p class="lead">Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d'abord sur la cybersécurité. Ce que l'IA à long horizon change pour le travail marketing, et ce qu'elle ne change pas.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Google DeepMind présente Gemini 4 Argon, son modèle de pointe pour les tâches longues en plusieurs étapes (<time datetime="2026-09-30">30 septembre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La course portait autrefois sur les fenêtres de contexte. Gemini 4 Argon déplace l'attention vers l'autre extrémité du modèle&nbsp;: ce qu'il peut produire d'une traite. Le 30 septembre, Google DeepMind a présenté Argon avec une limite de sortie d'un million de tokens, contre 64 000 auparavant. C'est une réponse de la longueur d'un livre. La question la plus intéressante pour les marketeurs est de savoir quel type de travail en a besoin.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Dans <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">l'annonce de Google</a>, Koray Kavukcuoglu décrit Argon comme le modèle de pointe de Google «&nbsp;pour le codage en conditions réelles, le travail intellectuel en entreprise et la cyberdéfense&nbsp;». La limite de tokens en sortie passe à 1M, et le modèle est conçu pour des tâches longues en plusieurs étapes en génie logiciel, en droit, en finance et en cybersécurité, avec une solide compréhension visuelle, comme l'analyse de graphiques et la compréhension de longues vidéos.</p>
+<p>Le déploiement est inhabituel. Argon est d'abord proposé à un groupe de cyberdéfenseurs de confiance via le Fairwind Program de Google, un accès plus large étant prévu pour les développeurs, les entreprises et le grand public, en commençant par les clients API payants et les abonnés Google AI Ultra. Le tarif de lancement est de 2 US$ par million de tokens en entrée et de 10 US$ par million de tokens en sortie, puis passe à 4 US$ et 20 US$ après la période de lancement, avec une remise de 95 % sur les entrées en cache.</p>
+<p>Google publie des résultats de benchmarks, dont 77,9 % sur DeepSWE v1.1 et 91,7 % sur le benchmark de vidéos longues LVBench, et décrit des usages internes comme de grandes migrations de code. L'entreprise décrit aussi des mesures de sécurité, notamment la surveillance des usages abusifs et des défauts d'alignement, ainsi que la résistance à l'injection de prompt indirecte. Ce sont les résultats de Google.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Un million de tokens en sortie, ce n'est pas pour écrire des articles de blog plus longs. Les sorties longues comptent quand il s'agit de produire un livrable complet en une seule passe cohérente&nbsp;: une migration complète de base de code, un ensemble de contrats, un vaste jeu de données structurées. En marketing, les équivalents les plus proches seraient la réécriture complète d'un flux produits, la localisation intégrale d'un site web ou une bibliothèque de campagne comptant des centaines de variantes coordonnées.</p>
+<p>La compréhension de longues vidéos est, à mes yeux, la capacité la plus immédiatement utile. La vidéo domine les plateformes sociales, et la plupart des marques l'analysent encore en visionnant des échantillons et en prenant des notes. Un modèle capable de lire de longues vidéos de manière fiable, à grande échelle, ouvre la voie à des analyses concurrentielles et sectorielles qu'il était auparavant impossible de mener de façon exhaustive.</p>
+<p>Et le déploiement axé d'abord sur la cybersécurité en dit long sur l'endroit où les laboratoires de pointe situent le risque. Quand un laboratoire donne accès aux défenseurs avant tout le monde, il vous dit que le modèle est suffisamment performant pour intéresser aussi les attaquants.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Une grande partie de mes recherches a porté sur le multimédia social, et pas uniquement sur le texte. Très tôt, nous avons construit <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> (ACM Multimedia 2016), une plateforme big data d'analyse du multimédia social à travers les réseaux. Plus récemment, dans <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> (WWW 2025 Companion), nous nous sommes attachés à expliquer ce que communiquent les concurrents et pourquoi cela fonctionne.</p>
+<p>La leçon de ces travaux est que l'échelle de l'analyse ne représente que la moitié du problème. Un modèle capable de regarder mille vidéos concurrentes doit encore répondre aux questions qui intéressent un stratège&nbsp;: quels messages se répètent, lesquels performent, quelle audience ils ciblent et quel espace reste libre. Les modèles à long contexte et à sortie longue rendent la lecture et l'écriture moins coûteuses. Le cadrage et la validation restent la contribution humaine, appuyée par les données de performance.</p>
+<p>J'ajouterais une mise en garde. Les sorties très longues sont difficiles à vérifier. Un document généré de 200 pages peut être juste à 98 % et contenir quand même l'affirmation qui vous attirera des ennuis. Plus la sortie est longue, plus vous avez besoin de structure, d'échantillonnage et de contrôles automatisés.</p>
+<h2>Comment j'utiliserais un modèle à long horizon en marketing</h2>
+<ul><li>Audits vidéo sectoriels. Demandez des conclusions structurées sur l'ensemble des vidéos concurrentes&nbsp;: accroches, allégations, formats, appels à l'action. Puis validez un échantillon à la main.</li><li>Bibliothèques de contenus coordonnés. Générez en une passe l'ensemble des variantes d'une campagne pour que le ton et les allégations restent cohérents, et vérifiez-les à l'aide d'une check-list.</li><li>Brouillons de localisation de site complet. Produisez des brouillons complets pour de nouveaux marchés, puis faites d'abord vérifier les pages à fort trafic par des relecteurs natifs.</li><li>Documents longs avec index. Exigez du modèle qu'il produise un tableau des allégations avec leurs sources, afin que des humains puissent vérifier rapidement les parties à risque.</li></ul>
+<p>Le chiffre phare d'Argon est impressionnant. La valeur pour les marketeurs viendra de l'association de cette capacité avec la discipline de vérifier ce qui en sort.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce que Gemini 4 Argon&nbsp;?</summary><p>C'est le modèle de pointe de Google DeepMind présenté le 30 septembre 2026 pour le codage en conditions réelles, le travail intellectuel en entreprise et la cyberdéfense, avec une limite de sortie d'un million de tokens, contre 64 000 auparavant.</p></details><details><summary>Qui peut utiliser Gemini 4 Argon en premier&nbsp;?</summary><p>Google indique que le déploiement commence auprès de cyberdéfenseurs de confiance via son Fairwind Program, une diffusion plus large étant prévue pour les développeurs, les entreprises et le grand public, en commençant par les clients API payants et les abonnés Google AI Ultra.</p></details><details><summary>Combien coûte Gemini 4 Argon&nbsp;?</summary><p>Google affiche un tarif de lancement de 2 US$ par million de tokens en entrée et de 10 US$ par million de tokens en sortie, puis de 4 US$ et 20 US$ après la période de lancement, avec une remise de 95 % sur les tokens d'entrée en cache.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Modèles · 7 octobre 2026</span><h3>Claude Haiku 5.5 et l'intérêt des petits modèles en marketing</h3><p>Claude Haiku 5.5 d'Anthropic est conçu pour un travail rapide, peu coûteux et à grand volume. Pourquoi le plus petit modèle d'une famille est souvent le plus important pour les marketeurs.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Modèles · 29 septembre 2026</span><h3>Pourquoi OpenAI a mis GPT-6.1 Astra de côté, et pourquoi c'est important</h3><p>OpenAI a annulé la sortie de GPT-6.1 Astra après que des tests ont révélé des problèmes de périmètre, d'autorisation et de compte rendu. Les mêmes tests s'appliquent à vos agents.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Modèles · 22 septembre 2026</span><h3>Claude Opus 5.5&nbsp;: filigranes, audits et étiquetage des contenus IA</h3><p>Claude Opus 5.5 d'Anthropic intègre un filigrane pour la conformité à l'EU AI Act et précise que le modèle soupçonne souvent d'être testé. Les deux points comptent pour les marketeurs.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

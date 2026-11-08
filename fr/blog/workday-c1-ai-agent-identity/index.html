@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workday rachète C1.ai&nbsp;: vos agents marketing ont aussi besoin d'identités | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/workday-c1-ai-agent-identity/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Workday rachète C1.ai : vos agents marketing ont aussi besoin d&#x27;identités | Prof. Aleks Farseev" />
+<meta property="og:description" content="Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles." />
+<meta property="og:url" content="https://farseev.com/fr/blog/workday-c1-ai-agent-identity/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agents" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Workday rachète C1.ai : vos agents marketing ont aussi besoin d&#x27;identités | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/#article","mainEntityOfPage":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/","url":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/","headline":"Workday rachète C1.ai : vos agents marketing ont aussi besoin d'identités","description":"Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Agents","about":{"@type":"Thing","name":"Workday signe un accord définitif pour acquérir C1.ai, une plateforme d'identité agentique pour les personnes et les agents"},"wordCount":864,"citation":[{"@type":"CreativeWork","name":"Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents","url":"https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents","publisher":"Workday Newsroom","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce que C1.ai ?","acceptedAnswer":{"@type":"Answer","text":"Selon Workday, C1.ai est une plateforme d'identité agentique qui se connecte aux systèmes de l'entreprise comme la messagerie, le CRM, les dépôts de code, les systèmes financiers et l'infrastructure cloud, accordant aux personnes et aux agents IA un accès lorsqu'il est nécessaire et le retirant lorsqu'il ne l'est plus, avec des accès délimités, des politiques, une validation humaine et un historique des actions."}},{"@type":"Question","name":"Quand l'acquisition de C1.ai par Workday sera-t-elle finalisée ?","acceptedAnswer":{"@type":"Answer","text":"Workday prévoit de finaliser la transaction au quatrième trimestre de son exercice 2027, qui se termine le 31 janvier 2027, sous réserve des conditions de clôture habituelles. Le prix n'a pas été divulgué."}},{"@type":"Question","name":"Pourquoi les agents IA en marketing ont-ils besoin de leurs propres identités ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les agents touchent de plus en plus aux données clients, aux budgets publicitaires et aux canaux de marque. Des identités distinctes, délimitées et journalisées permettent de limiter ce que chaque agent peut faire, d'exiger une validation pour les actions risquées et d'attribuer chaque modification à des fins d'audit."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Workday rachète C1.ai : vos agents marketing ont aussi besoin d'identités","item":"https://farseev.com/fr/blog/workday-c1-ai-agent-identity/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/workday-c1-ai-agent-identity/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/workday-c1-ai-agent-identity/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/workday-c1-ai-agent-identity/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/workday-c1-ai-agent-identity/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/workday-c1-ai-agent-identity/">한국어</option><option value="th" lang="th" data-href="/th/blog/workday-c1-ai-agent-identity/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/workday-c1-ai-agent-identity/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/workday-c1-ai-agent-identity/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/workday-c1-ai-agent-identity/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/workday-c1-ai-agent-identity/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/workday-c1-ai-agent-identity/">Filipino</option><option value="es" lang="es" data-href="/es/blog/workday-c1-ai-agent-identity/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/workday-c1-ai-agent-identity/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/workday-c1-ai-agent-identity/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Workday rachète C1.ai&nbsp;: vos agents marketing ont aussi besoin d'identités</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Agents</p>
+      <h1 class="h-display">Workday rachète C1.ai&nbsp;: vos agents marketing ont aussi besoin d'identités</h1>
+      <p class="lead">Workday a accepté de racheter C1.ai, qui gère les accès des personnes et des agents IA. Les agents marketing qui touchent au CRM et aux comptes publicitaires ont besoin des mêmes règles.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Workday signe un accord définitif pour acquérir C1.ai, une plateforme d'identité agentique pour les personnes et les agents (<time datetime="2026-10-13">13 octobre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Quand un nouveau collaborateur arrive, quelqu'un crée ses comptes, décide de ce qu'il peut voir et lui retire ses accès lorsqu'il part. Quand un nouvel agent IA rejoint votre équipe marketing, qui s'en charge&nbsp;? Le 13 octobre, Workday a annoncé le rachat d'une entreprise dont toute l'activité consiste à répondre à cette question.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">le communiqué de presse de Workday</a>, l'entreprise a signé un accord définitif pour acquérir C1.ai, une «&nbsp;plateforme d'identité agentique pour les personnes et les agents&nbsp;». Le prix n'a pas été divulgué, et la transaction devrait être finalisée au quatrième trimestre de l'exercice 2027 de Workday, qui se termine le 31 janvier 2027, sous réserve des conditions habituelles.</p>
+<p>C1.ai se connecte aux systèmes de l'entreprise comme la messagerie, le CRM, les dépôts de code, les systèmes financiers et l'infrastructure cloud. Elle accorde à chaque personne et à chaque agent un accès lorsqu'il est nécessaire et le retire dès qu'il ne l'est plus. Selon sa propre description, la plateforme offre des accès délimités, des politiques appliquées, une validation humaine et un historique de chaque action.</p>
+<p>Le communiqué pose le problème à l'aide de deux chiffres&nbsp;: citant les recherches de C1.ai, il indique que 95 % des grandes entreprises américaines utilisent déjà des agents autonomes&nbsp;; citant Deloitte, il précise que seulement 21 % déclarent disposer d'une méthode mature pour les gouverner. Gerrit Kazmaier, de Workday, a déclaré&nbsp;: «&nbsp;Les entreprises d'aujourd'hui fonctionnent avec une main-d'œuvre combinant personnes et agents IA.&nbsp;» Le CEO de C1.ai, Alex Bovee, a été plus direct&nbsp;: «&nbsp;Les entreprises ne peuvent pas sécuriser l'ère de l'IA avec les tickets informatiques d'hier.&nbsp;»</p>
+<h2>Pourquoi c'est important</h2>
+<p>Le marketing est l'une des fonctions les plus gourmandes en autorisations dans une entreprise, même si l'on n'en a pas l'impression. Pensez à tout ce à quoi un agent marketing performant pourrait devoir accéder&nbsp;: le CRM avec les données clients, les comptes publicitaires avec les budgets, l'analytique, le système de gestion de contenu, les comptes sociaux qui parlent au nom de la marque, la plateforme d'e-mailing, des espaces partagés remplis de plans non publiés.</p>
+<p>La plupart des équipes accordent ces accès à l'ancienne. Quelqu'un partage un identifiant. Une clé API traîne dans un tableur. Un outil reçoit des droits «&nbsp;admin&nbsp;» parce que c'était plus simple. C'était déjà risqué avec des personnes. Avec des agents qui fonctionnent en continu et agissent à la vitesse de la machine, cela devient le principal risque.</p>
+<p>Ce que la proposition de C1.ai a de juste, c'est la forme de la réponse&nbsp;: un accès délimité à la tâche, accordé juste à temps, validé par un humain lorsque c'est nécessaire, et journalisé. Ce n'est pas un détail informatique. C'est ce qui détermine si l'on peut confier en toute sécurité un vrai travail à un agent.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Bien avant les agents, mon équipe a travaillé sur un problème d'identité plus simple. Dans <a href="https://doi.org/10.1007/978-3-030-13283-5_9" target="_blank" rel="noopener">Person, Organization, or Personage: Towards User Account Type Prediction in Microblogs</a> (EGOSE 2018), nous avons étudié comment distinguer les comptes personnels, institutionnels et de célébrités. L'idée de départ était qu'on ne peut pas interpréter correctement un comportement si l'on ne sait pas quel type d'acteur l'a produit.</p>
+<p>Le même principe s'applique désormais au sein de l'entreprise. Chaque action dans votre stack marketing doit être attribuable&nbsp;: cette modification de budget a-t-elle été faite par une personne, par un agent agissant pour une personne ou par une règle automatisée&nbsp;? Sans cela, vous ne pouvez ni auditer les résultats, ni expliquer les erreurs, ni tirer des enseignements de ce qui a fonctionné. Dans nos recherches sur l'IA explicable, d'<a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> à <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a>, les explications reposent sur la connaissance des entrées et des décisions qui ont mené à un résultat. L'identité est la première de ces entrées.</p>
+<p>J'y vois aussi une part de l'évolution que je défends dans mes <a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">chroniques Forbes</a>&nbsp;: le passage des marketeurs du statut de créateurs de contenu manuels à celui de curateurs d'outils d'IA. Être curateur d'agents implique de décider ce que chacun est autorisé à faire.</p>
+<h2>Ce que les opérations marketing doivent faire dès maintenant</h2>
+<ul><li>Donnez à chaque agent sa propre identité. Pas d'identifiants humains partagés. Si une plateforme ne prend pas en charge les comptes de service ou les clés API à portée limitée, considérez-le comme un signal d'alarme.</li><li>Délimitez par tâche. Un agent qui rédige des rapports a besoin d'un accès en lecture à l'analytique, pas d'un accès en écriture aux budgets publicitaires.</li><li>Exigez une validation pour les actions irréversibles. Publier, dépenser au-delà d'un seuil et supprimer des données devraient nécessiter le feu vert d'un humain.</li><li>Faites expirer les accès. Accordez les accès pour la durée d'une campagne ou d'une tâche, et retirez-les automatiquement ensuite.</li><li>Journalisez et vérifiez. Gardez un historique des actions des agents et consultez-le, en particulier après tout événement inattendu concernant les dépenses ou les messages.</li><li>Incluez les agents dans les procédures de départ. Quand une relation avec un prestataire, un outil ou une agence prend fin, révoquez les agents et les clés qui l'accompagnaient.</li></ul>
+<p>L'opération de Workday montre que le monde du logiciel d'entreprise considère désormais les agents comme des membres de la main-d'œuvre. Le marketing devrait faire de même, en commençant par la question de savoir qui détient les clés.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce que C1.ai&nbsp;?</summary><p>Selon Workday, C1.ai est une plateforme d'identité agentique qui se connecte aux systèmes de l'entreprise comme la messagerie, le CRM, les dépôts de code, les systèmes financiers et l'infrastructure cloud, accordant aux personnes et aux agents IA un accès lorsqu'il est nécessaire et le retirant lorsqu'il ne l'est plus, avec des accès délimités, des politiques, une validation humaine et un historique des actions.</p></details><details><summary>Quand l'acquisition de C1.ai par Workday sera-t-elle finalisée&nbsp;?</summary><p>Workday prévoit de finaliser la transaction au quatrième trimestre de son exercice 2027, qui se termine le 31 janvier 2027, sous réserve des conditions de clôture habituelles. Le prix n'a pas été divulgué.</p></details><details><summary>Pourquoi les agents IA en marketing ont-ils besoin de leurs propres identités&nbsp;?</summary><p>Parce que les agents touchent de plus en plus aux données clients, aux budgets publicitaires et aux canaux de marque. Des identités distinctes, délimitées et journalisées permettent de limiter ce que chaque agent peut faire, d'exiger une validation pour les actions risquées et d'attribuer chaque modification à des fins d'audit.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents" target="_blank" rel="noopener">Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents</a> — Workday Newsroom, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Agents · 22 octobre 2026</span><h3>Agent Skills devient neutre vis-à-vis des fournisseurs&nbsp;: pourquoi c'est important pour les marketeurs</h3><p>Anthropic a fait don du standard Agent Skills à l'Agentic AI Foundation. Un savoir-faire portable et consigné par écrit, c'est exactement ce dont les équipes marketing ont besoin de la part des agents IA.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/openai-agent-medicare-portal-australia/"><span class="meta">Agents · 24 septembre 2026</span><h3>L'agent IA qui ne voulait pas accepter un refus</h3><p>Le Premier ministre australien a déclaré qu'un agent de recherche d'OpenAI avait contourné des blocages sur un portail de statistiques de Medicare. La leçon pour les agents marketing porte sur le périmètre.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/meta-muse-personal-ai-agent/"><span class="meta">Agents · 8 septembre 2026</span><h3>Meta Muse&nbsp;: que se passe-t-il quand votre client envoie un agent&nbsp;?</h3><p>Meta a lancé Muse, un agent IA personnel capable de réserver, d'acheter et de négocier au nom d'un utilisateur. Faire du marketing auprès d'agents, et pas seulement de personnes, est désormais une question concrète.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

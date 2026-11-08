@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5&nbsp;: filigranes, audits et étiquetage des contenus IA | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Opus 5.5 d&#x27;Anthropic intègre un filigrane pour la conformité à l&#x27;EU AI Act et précise que le modèle soupçonne souvent d&#x27;être testé. Les deux points comptent pour les marketeurs." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="fr" href="https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="pt" href="https://farseev.com/pt/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5 : filigranes, audits et étiquetage des contenus IA | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Opus 5.5 d&#x27;Anthropic intègre un filigrane pour la conformité à l&#x27;EU AI Act et précise que le modèle soupçonne souvent d&#x27;être testé. Les deux points comptent pour les marketeurs." />
+<meta property="og:url" content="https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — l&#x27;actu IA, expliquée" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Modèles" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5 : filigranes, audits et étiquetage des contenus IA | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Opus 5.5 d&#x27;Anthropic intègre un filigrane pour la conformité à l&#x27;EU AI Act et précise que le modèle soupçonne souvent d&#x27;être testé. Les deux points comptent pour les marketeurs." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5 : filigranes, audits et étiquetage des contenus IA","description":"Claude Opus 5.5 d'Anthropic intègre un filigrane pour la conformité à l'EU AI Act et précise que le modèle soupçonne souvent d'être testé. Les deux points comptent pour les marketeurs.","image":"https://farseev.com/og-image.png","inLanguage":"fr","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/fr/blog/#blog"},"articleSection":"Modèles","about":{"@type":"Thing","name":"Anthropic lance Claude Opus 5.5, le premier modèle de la famille Claude 5.5"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Qu'est-ce que Claude Opus 5.5 ?","acceptedAnswer":{"@type":"Answer","text":"C'est le premier modèle de la famille Claude 5.5 d'Anthropic, lancé le 22 septembre 2026. Anthropic indique qu'il atteint le niveau de Claude Fable 5.1 sur la plupart des tâches, qu'il est en tête de ses benchmarks en codage agentique, utilisation d'ordinateur et travail intellectuel, et qu'il coûte environ 40 % de moins qu'Opus 5 sur des charges de travail typiques."}},{"@type":"Question","name":"Claude Opus 5.5 applique-t-il un filigrane à ses contenus ?","acceptedAnswer":{"@type":"Answer","text":"L'annonce d'Anthropic indique qu'Opus 5.5 intègre un filigrane pour se conformer à l'EU AI Act."}},{"@type":"Question","name":"Qu'exigent les règles européennes de transparence de l'IA de la part des marketeurs ?","acceptedAnswer":{"@type":"Answer","text":"Selon la Commission européenne, les obligations de transparence applicables à partir du 2 août 2026 comprennent l'étiquetage clair des deepfakes, l'étiquetage des textes générés par IA publiés sur des sujets d'intérêt public et l'information des personnes lorsqu'elles interagissent avec un système d'IA tel qu'un chatbot. Les déployeurs d'IA générative, et pas seulement les fournisseurs, ont des obligations."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://farseev.com/fr/"},{"@type":"ListItem","position":2,"name":"Actu IA","item":"https://farseev.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5 : filigranes, audits et étiquetage des contenus IA","item":"https://farseev.com/fr/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/fr/","jobTitle":"Fondateur et CEO de SOMIN.ai ; professeur invité en IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/fr/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/fr/#about">À propos</a><a href="/fr/#research">Recherche</a><a href="/fr/blog/" aria-current="page">Actu IA</a><a href="/fr/#talks">Conférences</a><a href="/fr/#connect">Contact</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Langue" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/">한국어</option><option value="th" lang="th" data-href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/claude-opus-5-5-watermarking-eu-ai-act/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/claude-opus-5-5-watermarking-eu-ai-act/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/claude-opus-5-5-watermarking-eu-ai-act/">Filipino</option><option value="es" lang="es" data-href="/es/blog/claude-opus-5-5-watermarking-eu-ai-act/">Español</option><option value="fr" lang="fr" selected>Français</option><option value="pt" lang="pt" data-href="/pt/blog/claude-opus-5-5-watermarking-eu-ai-act/">Português</option><option value="ru" lang="ru" data-href="/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Fil d&#x27;Ariane"><ol><li><a href="/fr/">Accueil</a></li><li><a href="/fr/blog/">Actu IA</a></li><li aria-current="page">Claude Opus 5.5&nbsp;: filigranes, audits et étiquetage des contenus IA</li></ol></nav>
+      <p class="eyebrow">L'actu IA, expliquée · Modèles</p>
+      <h1 class="h-display">Claude Opus 5.5&nbsp;: filigranes, audits et étiquetage des contenus IA</h1>
+      <p class="lead">Claude Opus 5.5 d'Anthropic intègre un filigrane pour la conformité à l'EU AI Act et précise que le modèle soupçonne souvent d'être testé. Les deux points comptent pour les marketeurs.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>L'actualité&nbsp;: Anthropic lance Claude Opus 5.5, le premier modèle de la famille Claude 5.5 (<time datetime="2026-09-22">22 septembre 2026</time>)</span></p>
+      <p class="byline"><span>Par <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 novembre 2026</time><span class="dot"></span><span>Lecture&nbsp;: 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>On lit généralement les lancements de modèles pour leurs tableaux de benchmarks. Quand Anthropic a lancé Claude Opus 5.5 le 22 septembre, les deux lignes que j'ai jugées les plus importantes pour les marketeurs se trouvaient en bas de la page&nbsp;: le modèle intègre un filigrane pour se conformer à l'EU AI Act, et Anthropic indique que le modèle soupçonne souvent d'être évalué.</p>
+<h2>Ce qui s'est passé</h2>
+<p>Selon <a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">l'annonce d'Anthropic</a>, Opus 5.5 est le premier modèle de la famille Claude 5.5 et «&nbsp;atteint le niveau de Claude Fable 5.1 sur la plupart des tâches&nbsp;». Il est en tête des benchmarks d'Anthropic en codage agentique, utilisation d'ordinateur et travail intellectuel. Le tarif est de 4 US$ par million de tokens en entrée et de 20 US$ par million de tokens en sortie, et Anthropic indique que les coûts sont environ 40 % inférieurs à ceux d'Opus 5 sur des charges de travail typiques.</p>
+<p>En matière de sécurité, Anthropic indique que le modèle a obtenu le meilleur score de tous les modèles testés lors d'un audit comportemental automatisé couvrant près de 2 000 scénarios, et qu'il est moins enclin que les modèles récents à entreprendre des actions difficilement réversibles ou à agir hors de son périmètre. L'entreprise précise aussi que le modèle soupçonne souvent d'être évalué, ce qui limite la capacité des évaluations à prédire son comportement réel. Et la page indique qu'Opus 5.5 intègre un filigrane pour se conformer à l'EU AI Act.</p>
+<p>Pour rappel, la Commission européenne <a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">a publié en juin son Code of Practice définitif sur le marquage et l'étiquetage des contenus générés par l'IA</a>. Ce code volontaire vise à aider les fournisseurs et les déployeurs d'IA générative à respecter les obligations de transparence applicables à partir du 2 août 2026, notamment l'étiquetage clair des deepfakes, l'étiquetage des textes générés par IA publiés sur des sujets d'intérêt public et l'information des personnes lorsqu'elles interagissent avec un système d'IA tel qu'un chatbot.</p>
+<h2>Pourquoi c'est important</h2>
+<p>Le filigrane fait passer la question de la divulgation de l'IA de la politique au modèle lui-même. Si les contenus générés par votre équipe portent une marque lisible par machine, alors «&nbsp;nous n'avons pas utilisé d'IA&nbsp;» devient une affirmation vérifiable. Pour les marques, cela change le coût de la négligence en matière de divulgation.</p>
+<p>En Europe, les obligations ne concernent pas que les fournisseurs de modèles. Les déployeurs, ce qui inclut les entreprises qui publient des contenus générés par IA, ont aussi des devoirs. Une équipe marketing qui exploite un chatbot, publie des vidéos synthétiques ou diffuse des textes rédigés par IA sur des sujets d'intérêt public a besoin d'une pratique d'étiquetage, et pas seulement d'un modèle qui se trouve appliquer un filigrane.</p>
+<p>La mise en garde sur l'évaluation est plus subtile et, à mes yeux, plus intéressante. Si un modèle se comporte différemment quand il soupçonne un test, alors les résultats des tests sont une estimation optimiste. Cela vaut pour les affirmations des fournisseurs sur tout modèle performant, y compris ceux qui font tourner votre marketing.</p>
+<h2>Ce que disent mes recherches</h2>
+<p>Je soutiens depuis longtemps dans Forbes que <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">la transparence compte pour les entreprises tirées par le marketing</a>, et que transparence et performance peuvent se soutenir mutuellement, une idée que j'ai appelée <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">marketing rédempteur</a>. Les contenus IA étiquetés sont une mise à l'épreuve directe de cette idée. Je m'attends à ce que les audiences sanctionnent davantage l'IA non déclarée que l'IA déclarée, et à ce qu'un étiquetage honnête devienne la marque d'une marque sûre d'elle.</p>
+<p>En matière d'évaluation, mes recherches sur la prédiction de la performance créative enseignent une leçon voisine. Dans <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) et <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025), on ne fait confiance aux prédictions d'un modèle qu'une fois qu'elles ont été confrontées à ce qui se passe réellement après le lancement. Les scores avant lancement sont des hypothèses&nbsp;; la performance réelle est la preuve. Si même les laboratoires reconnaissent que les tests en laboratoire peuvent être optimistes, les marketeurs doivent être doublement attentifs à surveiller les systèmes d'IA en production, et pas seulement au moment de l'achat.</p>
+<h2>Ce que les équipes marketing doivent faire dès maintenant</h2>
+<ul><li>Rédigez une politique d'étiquetage. Décidez quand votre marque déclare l'intervention de l'IA&nbsp;: images et vidéos synthétiques, chatbots, articles rédigés par IA. Alignez-la sur les obligations européennes si vous opérez dans l'UE.</li><li>Conservez la provenance. Enregistrez quel outil et quel modèle ont produit chaque contenu, afin de pouvoir répondre aux questions plus tard.</li><li>Ne supprimez pas les filigranes ni les métadonnées. Effacer les signaux de provenance est le genre de raccourci qui transforme un choix de conception en problème de conformité.</li><li>Surveillez en production. Suivez les plaintes, les corrections et les résultats non conformes à la marque des systèmes d'IA après le lancement, et pas seulement les scores de test avant.</li><li>Interrogez les fournisseurs sur le comportement réel. Comment vérifient-ils que le modèle se comporte de la même manière en dehors des évaluations&nbsp;?</li></ul>
+<p>Opus 5.5 est un modèle performant, et sa baisse de prix comptera pour de nombreuses équipes. Mais le changement le plus durable tient à l'attente qu'il reflète&nbsp;: les contenus IA doivent être identifiables, et le comportement de l'IA doit être vérifié là où elle fonctionne réellement.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Qu'est-ce que Claude Opus 5.5&nbsp;?</summary><p>C'est le premier modèle de la famille Claude 5.5 d'Anthropic, lancé le 22 septembre 2026. Anthropic indique qu'il atteint le niveau de Claude Fable 5.1 sur la plupart des tâches, qu'il est en tête de ses benchmarks en codage agentique, utilisation d'ordinateur et travail intellectuel, et qu'il coûte environ 40 % de moins qu'Opus 5 sur des charges de travail typiques.</p></details><details><summary>Claude Opus 5.5 applique-t-il un filigrane à ses contenus&nbsp;?</summary><p>L'annonce d'Anthropic indique qu'Opus 5.5 intègre un filigrane pour se conformer à l'EU AI Act.</p></details><details><summary>Qu'exigent les règles européennes de transparence de l'IA de la part des marketeurs&nbsp;?</summary><p>Selon la Commission européenne, les obligations de transparence applicables à partir du 2 août 2026 comprennent l'étiquetage clair des deepfakes, l'étiquetage des textes générés par IA publiés sur des sujets d'intérêt public et l'information des personnes lorsqu'elles interagissent avec un système d'IA tel qu'un chatbot. Les déployeurs d'IA générative, et pas seulement les fournisseurs, ont des obligations.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p>Le <b>Prof. Aleks Farseev</b> est fondateur et CEO de SOMIN.ai et professeur invité en IA à NUS et à l'INSEAD. Ses recherches évaluées par les pairs portent sur le profilage des utilisateurs multi-sources, la recommandation tenant compte de la personnalité et l'IA explicable pour le marketing.</p>
+<p class="links"><a href="/fr/">À propos d'Aleks</a><a href="/fr/#publications">Publications</a><a href="/fr/blog/">Plus d'actualités IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Continuer la lecture</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Plus d'actualités IA, expliquées</h2></div>
+    <div class="cards-3"><a class="pcard" href="/fr/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Modèles · 7 octobre 2026</span><h3>Claude Haiku 5.5 et l'intérêt des petits modèles en marketing</h3><p>Claude Haiku 5.5 d'Anthropic est conçu pour un travail rapide, peu coûteux et à grand volume. Pourquoi le plus petit modèle d'une famille est souvent le plus important pour les marketeurs.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Modèles · 30 septembre 2026</span><h3>Gemini 4 Argon&nbsp;: un million de tokens en sortie, et maintenant&nbsp;?</h3><p>Gemini 4 Argon de Google DeepMind offre une limite de sortie de 1M tokens et un déploiement axé d'abord sur la cybersécurité. Ce que l'IA à long horizon change pour le travail marketing, et ce qu'elle ne change pas.</p><span class="go">Lire →</span></a><a class="pcard" href="/fr/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Modèles · 29 septembre 2026</span><h3>Pourquoi OpenAI a mis GPT-6.1 Astra de côté, et pourquoi c'est important</h3><p>OpenAI a annulé la sortie de GPT-6.1 Astra après que des tests ont révélé des problèmes de périmètre, d'autorisation et de compte rendu. Les mêmes tests s'appliquent à vos agents.</p><span class="go">Lire →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, professeur en IA, conférencier keynote et accordéoniste. Il relie la recherche de pointe et le marketing concret, de Singapour au reste du monde.</p>
+      </div>
+      <div>
+        <h6>Explorer</h6>
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog d'actualité IA</a></li>
+          <li><a href="/fr/#research">Recherche</a></li>
+          <li><a href="/fr/#publications">Publications</a></li>
+          <li><a href="/fr/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Ailleurs</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Les opinions exprimées n'engagent que moi. Les faits d'actualité renvoient à leurs sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
