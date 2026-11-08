@@ -23,6 +23,8 @@ Aleks earned his Ph.D. in Computer Science from the National University of Singa
 - [Forbes Technology Council](https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/): columns and author profile
 - [ACM Digital Library](https://dl.acm.org/profile/99658727991): peer-reviewed publications and author profile
 - [e27](https://e27.co/user/farseev/): Aleks's startup and marketing column
+- [Every dashboard is green. So why can't anyone say what worked?](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/): e27, 12 Oct 2026, on marketing measurement and the confidence gap
+- [Singapore and Romania don't need another MOU. They need first customers](https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/): e27, 1 Nov 2026, on the Singapore-Romania tech corridor
 - [Crunchbase](https://www.crunchbase.com/person/aleks-farseev): founder profile
 
 ## Ventures
