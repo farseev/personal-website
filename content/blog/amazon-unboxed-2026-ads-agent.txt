@@ -1,0 +1,54 @@
+title: Amazon Ads Agent: Retail Media Goes Agentic at unBoxed 2026
+dek: At unBoxed 2026 Amazon merged its buying tools into Amazon Ads Agent, with conversational measurement and AI creative. What to keep in human hands.
+news: Amazon Ads announces Amazon Ads Agent, Full-Funnel Campaigns, AI creative tools and an Ads MCP server at unBoxed 2026
+news_date: 2026-09-30
+published: 2026-11-08
+topic: Ads and marketing AI
+source: The 11 biggest takeaways from unBoxed 2026 | Amazon Ads | 2026-09-30 | https://advertising.amazon.com/library/news/unboxed-2026-news-announcements
+---
+Retail media has always had one advantage over the rest of digital advertising: it sits next to the purchase. At unBoxed 2026, Amazon added a second advantage. It put an AI agent in front of almost everything an advertiser does on its platform, from buying to creative to measurement.
+
+## What happened
+
+Amazon's own summary, [The 11 biggest takeaways from unBoxed 2026](https://advertising.amazon.com/library/news/unboxed-2026-news-announcements), lists the announcements. The centrepiece is Amazon Ads Agent, a unified buying experience that merges the former DSP and Ads Console and covers Sponsored ads, Full-Funnel Campaigns and DVA+, with a conversational AI experience in expanded closed beta.
+
+Full-Funnel Campaigns let AI manage channel mix, creative, audiences and optimisation across video, display and audio. Amazon says beta testers saw 67% higher long-term return on ad spend and 29% lower cost to acquire new-to-brand customers. AI creative tools inside Ads Agent generate display ads and video from existing product assets; Amazon says advertisers using them saw up to 71% more product coverage and up to 15% sales growth compared with their prior results.
+
+On measurement, Ads Agent gives access to nearly 1,000 metrics through conversational queries, producing business reviews with visualisations and peer benchmarks. An AMC Expert Tool turns natural-language requests into Amazon Marketing Cloud SQL. Amazon also announced an Ads MCP Server (Lite) so that outside agents can work with Amazon Ads, Branded Conversations for presenting brand differentiators inside Alexa for Shopping, and Sponsored Services, with Yelp as anchor partner for local services. All performance figures are Amazon's own.
+
+## Why it matters
+
+Two shifts stand out.
+
+The first is that the interface to the ad platform is becoming a conversation. Asking for a business review in plain language, across nearly a thousand metrics, removes a lot of drudgery. It also means the question you ask shapes the answer you get. Analysts used to spend hours deciding which cut of the data was fair. A chat box makes it easy to skip that step.
+
+The second is that the platform is taking over the full funnel. When AI chooses the channel mix, creative and audiences, and the same platform measures the result, advertisers need to be clear about which decisions they are delegating and how they will verify outcomes.
+
+## What my research says
+
+I have written about this tension in measurement on e27, in [Every dashboard is green. So why can't anyone say what worked?](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/) Better reporting tools do not automatically produce better understanding. Natural-language analytics will make dashboards even easier to produce. The discipline of asking "compared with what?" becomes more important, not less.
+
+On the creative side, our research has focused on predicting performance and explaining it. In [Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing](https://doi.org/10.1145/3725885) (ACM TOIS 2025) we paired performance prediction with LLMs so that a creative score becomes an actionable recommendation. Generating display and video from product assets at scale is powerful, but generation is only half of the loop. The other half is knowing which variant to back and why, and that knowledge should belong to the brand, not only to the platform's optimiser.
+
+There is also a long-tail point. Amazon says advertisers using its AI creative tools reached more product coverage. In my view, long-tail coverage is where AI earns its keep: the thousands of SKUs and niche audiences that no human team would ever write individual ads for. I discussed long-tail and lower-funnel optimisation in Forbes in [Low-Funnel Ad Optimization On Social Media Platforms](https://www.forbes.com/councils/forbestechcouncil/2024/01/12/low-funnel-ad-optimization-on-social-media-platforms/). The opportunity is real, as long as quality control scales with it.
+
+## What retail media teams should do now
+
+- Decide your delegation map. Write down which levers the Ads Agent may control (bids, channel mix, creative variants) and which need human sign-off.
+- Ask better questions of conversational analytics. Always request the comparison: versus last period, versus a holdout, versus a peer benchmark, and note which one you used.
+- Use AI creative for coverage, then prune. Generate assets for the long tail of products, but review performance and retire weak variants on a schedule.
+- Keep your own record of outcomes. Export the results that matter into your own analysis so you can compare Amazon with other channels on the same basis.
+- Explore MCP carefully. Connecting your own agents to Amazon Ads is efficient, but give them the narrowest permissions that work.
+
+Amazon has made the ad platform talk back. The teams that get the most out of it will be the ones that keep asking it hard questions.
+
+## FAQ
+
+? What is Amazon Ads Agent?
+Announced at unBoxed 2026, it is a unified buying experience that merges Amazon's former DSP and Ads Console, covering Sponsored ads, Full-Funnel Campaigns and DVA+, with a conversational AI experience in expanded closed beta.
+
+? What results does Amazon report for Full-Funnel Campaigns?
+Amazon says beta testers saw 67% higher long-term return on ad spend and 29% lower cost to acquire new-to-brand customers. These are Amazon's own figures.
+
+? How should advertisers use AI-generated ad creative on Amazon?
+Use it to cover more products and audiences than a human team could, but review performance regularly, retire weak variants, and keep your own record of which creative worked and why.

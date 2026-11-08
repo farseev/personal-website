@@ -1,0 +1,52 @@
+title: Meta Muse: What Happens When Your Customer Sends an Agent
+dek: Meta launched Muse, a personal AI agent that can book, shop and negotiate on a user's behalf. Marketing to agents, not only people, is now a practical question.
+news: Meta launches Muse, a personal AI agent for everyday tasks, in the US
+news_date: 2026-09-08
+published: 2026-11-08
+topic: Agents
+source: Meta launches personal AI agent, Muse, to help with everyday tasks | PBS NewsHour (Associated Press) | 2026-09-08 | https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks
+---
+For twenty years, digital marketing has assumed that a person sits at the end of the funnel. On 8 September Meta launched Muse, a personal AI agent that can act for that person: send an email, book travel, fill out forms and, in Meta's words, "negotiate on their behalf". The person is still there. But increasingly, an agent is standing between them and you.
+
+## What happened
+
+According to the [Associated Press report](https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks), Muse is a personal AI agent for day-to-day tasks such as schedules and shopping. Meta says that once a user shares a goal, Muse builds a personalised plan, coordinates time and resources and advances the work on its own. Examples range from sending an email or booking travel to building a year-long exercise plan or setting up a new business. Meta says Muse can open a browser, fill out forms and negotiate for the user.
+
+Muse is available to people aged 18 and over, currently only in the US, through a separate Muse app or inside WhatsApp. Meta emphasised safety and privacy and says Muse runs on a dedicated, secure virtual machine that holds both the agent and the user's data. The AP links the launch to Mark Zuckerberg's essay on personal superintelligence, in which he wrote that everyone will have "an exceptionally capable personal agent that understands you, your goals".
+
+## Why it matters
+
+When a person compares three hotels, your brand gets a chance to charm them: a photo, a review, a feeling. When an agent compares three hotels on the person's behalf, it reads structured facts, policies and prices, and it may never "see" the photo the way a human does. Negotiation is the more radical part. An agent that negotiates does not respond to scarcity banners.
+
+Distribution matters too. Muse lives inside WhatsApp, one of the most important messaging channels in Asia, Latin America and Africa. It is US-only for now, but a personal agent embedded in the messaging app many of our customers already use is not a niche experiment.
+
+## What my research says
+
+My research has always been about understanding people from their digital traces. In [Harvesting Multiple Sources for User Profile Learning](https://doi.org/10.1145/2671188.2749381) (ICMR 2015) and in [TweetFit](https://doi.org/10.1609/aaai.v31i1.10497) (AAAI 2017), which combined social media posts with wearable-sensor data to learn wellness profiles, we showed that combining sources gives a much richer picture of a person than any single one.
+
+A personal agent is the ultimate version of that idea, with one big difference: the profile now sits with the user's agent, not with the advertiser. Muse is designed to understand the user's goals and act on them. That shifts the balance of information. The brand no longer profiles the customer to decide what to show. The customer's agent profiles the brand to decide what to accept.
+
+That changes what "personalisation" means. In our work on [personality-driven content recommendation](https://doi.org/10.1145/3503161.3548769) (ACM Multimedia 2022), the goal was to match content to the person's traits. With agents in the loop, you need two layers: a clear, factual, machine-readable offer that an agent can evaluate, and human-facing creative for the moment the person looks up and decides. Good marketing to agents will look like good documentation. Good marketing to people will still look like good storytelling.
+
+There is also a responsibility question I care about. An agent that negotiates on a user's behalf must be loyal to that user. If agents start accepting paid preferences without disclosure, we will have rebuilt the worst parts of the ad industry inside the most intimate software people have ever used. Meta's emphasis on privacy is welcome; transparency about commercial influence on agent decisions will matter just as much.
+
+## What marketers should do now
+
+- Make your offer legible to machines. Prices, availability, return policies, delivery times and terms should be explicit, consistent and easy to parse on your site and in your feeds.
+- Remove dark patterns. Countdown timers and hidden fees are friction for agents and a trust problem for people.
+- Prepare to negotiate. Decide in advance which terms are flexible, such as bundles, delivery windows or loyalty perks, so that an automated request can get a fast, consistent answer.
+- Keep the human moment. The final "yes" is often still human. Your brand story, reviews and creative still matter at that step.
+- Watch messaging channels. If agents live inside WhatsApp, your conversational commerce setup is about to matter more.
+
+Muse is one product in one country. The pattern it represents, a customer who delegates, will spread. Build for both audiences: the agent that compares and the person who decides.
+
+## FAQ
+
+? What is Meta Muse?
+Muse is a personal AI agent launched by Meta on 8 September 2026. According to the Associated Press, it helps with everyday tasks such as scheduling and shopping, and Meta says it can open a browser, fill out forms and negotiate on a user's behalf.
+
+? Where is Meta Muse available?
+At launch it was available only in the US, to people aged 18 and over, through a separate Muse app or inside WhatsApp.
+
+? How should brands prepare for personal AI agents?
+By publishing clear, machine-readable offers and policies, removing manipulative design patterns, deciding in advance which terms can be negotiated, and keeping strong human-facing creative for the moment the customer makes the final decision.

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Rules Now Treat Fake Commercial Buzz Like Election Fraud | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="AI Rules Now Treat Fake Commercial Buzz Like Election Fraud | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers." />
+<meta property="og:url" content="https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — AI news, explained" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Responsible marketing" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI Rules Now Treat Fake Commercial Buzz Like Election Fraud | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/#article","mainEntityOfPage":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/","url":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/","headline":"AI Rules Now Treat Fake Commercial Buzz Like Election Fraud","description":"Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers.","image":"https://farseev.com/og-image.png","inLanguage":"en","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/blog/#blog"},"articleSection":"Responsible marketing","about":{"@type":"Thing","name":"Anthropic updates its Usage Policy with a section on deceptive campaigns and reports on election-related misuse ahead of the US midterms"},"wordCount":854,"citation":[{"@type":"CreativeWork","name":"2026 Usage Policy update","url":"https://www.anthropic.com/news/2026-usage-policy-update","publisher":"Anthropic","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Preparing for the 2026 US midterms","url":"https://www.anthropic.com/news/2026-us-midterms","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/#faq","mainEntity":[{"@type":"Question","name":"What does Anthropic's 2026 usage policy say about commercial deception?","acceptedAnswer":{"@type":"Answer","text":"Its new section \"Do Not Engage in Deceptive Campaigns or Artificial Activity\" applies to deceptive activity \"whether political or commercial\", including obscuring who is behind a message, amplifying content through fake accounts or posts and building infrastructure for influence operations. Anthropic says the update takes effect on 12 November."}},{"@type":"Question","name":"Did Anthropic find AI being used to make fake news for ad money?","acceptedAnswer":{"@type":"Answer","text":"Yes. In its midterms report, Anthropic says some actors used Claude to produce fabricated news for advertising revenue and that it banned the accounts involved."}},{"@type":"Question","name":"Is personalised targeting banned under the new policy?","acceptedAnswer":{"@type":"Answer","text":"Anthropic removed a blanket ban on personalised vote and campaign targeting. Targeting that relies on deception or misuse of personal data is still prohibited under other sections of the policy."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/"},{"@type":"ListItem","position":2,"name":"AI news","item":"https://farseev.com/blog/"},{"@type":"ListItem","position":3,"name":"AI Rules Now Treat Fake Commercial Buzz Like Election Fraud","item":"https://farseev.com/blog/ai-usage-policy-deceptive-commercial-campaigns/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/","jobTitle":"Founder & CEO of SOMIN.ai; Guest Professor in AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="/#about">About</a><a href="/#research">Research</a><a href="/blog/" aria-current="page">AI news</a><a href="/#talks">Talks</a><a href="/#connect">Connect</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Language" translate="no"><option value="en" selected>English</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">AI news</a></li><li aria-current="page">AI Rules Now Treat Fake Commercial Buzz Like Election Fraud</li></ol></nav>
+      <p class="eyebrow">AI news, explained · Responsible marketing</p>
+      <h1 class="h-display">AI Rules Now Treat Fake Commercial Buzz Like Election Fraud</h1>
+      <p class="lead">Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>The news: Anthropic updates its Usage Policy with a section on deceptive campaigns and reports on election-related misuse ahead of the US midterms (<time datetime="2026-10-14">14 October 2026</time>)</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 min read</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>For years, the conversation about AI and manipulation has been about elections. That focus makes sense. But the same techniques that fake a political movement can fake a product's popularity. In October Anthropic made that link explicit in its rules, and marketers should read it as a line drawn in their direction too.</p>
+<h2>What happened</h2>
+<p>On 8 October Anthropic published its <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a>, effective 12 November. It adds a section called &quot;Do Not Engage in Deceptive Campaigns or Artificial Activity&quot;, which consolidates rules previously spread across the elections, fraud, privacy and disinformation sections. The new section &quot;applies to deceptive activity of any kind (whether political or commercial)&quot;. It covers obscuring who is behind a message, amplifying content through fake accounts or posts, and building tools or infrastructure for influence operations.</p>
+<p>The update also removes a blanket ban on personalised vote and campaign targeting. Targeting that relies on deception or misuse of voters' personal data remains prohibited under the deceptive campaigns, surveillance and privacy sections.</p>
+<p>A week later, in <a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a>, Anthropic described what it sees in practice. Among other cases, it reports that some actors used Claude to produce fabricated news for advertising revenue, and that it banned the accounts involved. It also reports that partners testing its safeguards found Claude reliably refused single harmful requests but could miss campaigns split into individually harmless tasks, and that it added classifiers for multi-step misuse such as fake social media accounts and news sites.</p>
+<h2>Why it matters</h2>
+<p>Two details deserve attention from anyone in marketing.</p>
+<p>The words &quot;or commercial&quot; put fake reviews, sock-puppet accounts, bot-amplified launches and astroturfed &quot;grassroots&quot; buzz in the same category as political influence operations. You may not use Claude for any of this, but the direction of travel across the industry is clear: AI providers are watching for coordinated inauthentic activity, and they are not distinguishing between selling a candidate and selling a product.</p>
+<p>The second detail is the business model behind some of the abuse: fabricated news made to earn advertising revenue. That is not only a content problem. It is an ad-funding problem. When brand budgets flow through automated programmatic buying into fabricated sites, advertisers end up paying for the deception, usually without knowing.</p>
+<p>The targeting change is also worth noting. Personalisation as such is not treated as the harm. Deception and misuse of personal data are. I think that is the right distinction.</p>
+<h2>What my research says</h2>
+<p>I have spent much of my career building systems that profile audiences: <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">learning user profiles from multiple social networks</a>, <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">inferring personality across networks</a> and <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">using personality to recommend content</a>. I know how powerful these techniques are, which is exactly why I gave a WSDM 2023 talk on <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">using AI responsibly for advertising targeting and creative evaluation</a>.</p>
+<p>My view, which I set out in Forbes as <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">redemptive marketing</a>, is that transparency and performance do not have to be traded against each other. Understanding an audience in order to serve it better is legitimate. Pretending to be the audience, with fake accounts and fake voices, is not. The new policy draws the line in roughly the same place.</p>
+<p>There is a measurement angle too. Fake engagement pollutes the very data that modern marketing AI learns from. If your competitor's buzz is partly synthetic, any model that reads &quot;what works in the category&quot; will learn the wrong lesson. Cleaning inauthentic signal out of social data has become part of good analytics.</p>
+<h2>What marketers should do now</h2>
+<ul><li>Write it into your agency and influencer contracts. No fake accounts, purchased engagement or undisclosed sponsored content, including when produced with AI.</li><li>Disclose who is speaking. If an AI writes on behalf of your brand or a person, make sure the account and sponsorship are clear.</li><li>Audit where your programmatic money goes. Ask for site-level reporting and block placements on sites with no identifiable publisher.</li><li>Separate personalisation from deception in your own policies. Using first-party data with consent to tailor a message is one thing; obscuring who is behind it is another.</li><li>Expect monitoring. If your workflows automate posting at scale, document them so legitimate use is easy to demonstrate.</li></ul>
+<p>Elections made the problem visible. Commerce is where most of the money is. AI providers have noticed; marketers should get ahead of it.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>What does Anthropic's 2026 usage policy say about commercial deception?</summary><p>Its new section &quot;Do Not Engage in Deceptive Campaigns or Artificial Activity&quot; applies to deceptive activity &quot;whether political or commercial&quot;, including obscuring who is behind a message, amplifying content through fake accounts or posts and building infrastructure for influence operations. Anthropic says the update takes effect on 12 November.</p></details><details><summary>Did Anthropic find AI being used to make fake news for ad money?</summary><p>Yes. In its midterms report, Anthropic says some actors used Claude to produce fabricated news for advertising revenue and that it banned the accounts involved.</p></details><details><summary>Is personalised targeting banned under the new policy?</summary><p>Anthropic removed a blanket ban on personalised vote and campaign targeting. Targeting that relies on deception or misuse of personal data is still prohibited under other sections of the policy.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener">2026 Usage Policy update</a> — Anthropic, 8 October 2026</li><li translate="no"><a href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Preparing for the 2026 US midterms</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> is the founder and CEO of SOMIN.ai and a Guest Professor in AI at NUS and INSEAD. His peer-reviewed research covers multi-source user profiling, personality-aware recommendation and explainable AI for marketing.</p>
+<p class="links"><a href="/">About Aleks</a><a href="/#publications">Publications</a><a href="/blog/">More AI news</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keep reading</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">More AI news, explained</h2></div>
+    <div class="cards-3"><a class="pcard" href="/blog/character-ai-chapter-11-ai-personas/"><span class="meta">Responsible marketing · 12 October 2026</span><h3>Character.AI's Chapter 11: Lessons for AI Persona Products</h3><p>Character.AI filed for Chapter 11 to pursue a sale, with Disney preparing a $20m bid. What brands building AI characters and companions should learn.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads and marketing AI · 29 October 2026</span><h3>WPP's Q3 2026: The Agency Model Under AI Pressure</h3><p>WPP reported falling like-for-like net revenue while its CEO pointed to demand for AI-enabled services via WPP Open. What it says about agencies.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/malaysia-ai-governance-bill/"><span class="meta">Asia and Singapore · 29 October 2026</span><h3>Malaysia's AI Governance Bill: Responsibility by Role</h3><p>Malaysia's draft AI Governance Bill, due by early 2027, puts duties on those who develop, provide or use AI. What role-based rules mean for marketers.</p><span class="go">Read →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">AI news blog</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#publications">Publications</a></li>
+          <li><a href="/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Elsewhere</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opinions are my own. News facts link to their sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

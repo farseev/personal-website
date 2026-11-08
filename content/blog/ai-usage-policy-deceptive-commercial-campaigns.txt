@@ -1,0 +1,57 @@
+title: AI Rules Now Treat Fake Commercial Buzz Like Election Fraud
+dek: Anthropic's new usage policy bans deceptive campaigns 'whether political or commercial', and it found fake news made for ad money. A line for marketers.
+news: Anthropic updates its Usage Policy with a section on deceptive campaigns and reports on election-related misuse ahead of the US midterms
+news_date: 2026-10-14
+published: 2026-11-08
+topic: Responsible marketing
+source: 2026 Usage Policy update | Anthropic | 2026-10-08 | https://www.anthropic.com/news/2026-usage-policy-update
+source: Preparing for the 2026 US midterms | Anthropic | 2026-10-14 | https://www.anthropic.com/news/2026-us-midterms
+---
+For years, the conversation about AI and manipulation has been about elections. That focus makes sense. But the same techniques that fake a political movement can fake a product's popularity. In October Anthropic made that link explicit in its rules, and marketers should read it as a line drawn in their direction too.
+
+## What happened
+
+On 8 October Anthropic published its [2026 Usage Policy update](https://www.anthropic.com/news/2026-usage-policy-update), effective 12 November. It adds a section called "Do Not Engage in Deceptive Campaigns or Artificial Activity", which consolidates rules previously spread across the elections, fraud, privacy and disinformation sections. The new section "applies to deceptive activity of any kind (whether political or commercial)". It covers obscuring who is behind a message, amplifying content through fake accounts or posts, and building tools or infrastructure for influence operations.
+
+The update also removes a blanket ban on personalised vote and campaign targeting. Targeting that relies on deception or misuse of voters' personal data remains prohibited under the deceptive campaigns, surveillance and privacy sections.
+
+A week later, in [Preparing for the 2026 US midterms](https://www.anthropic.com/news/2026-us-midterms), Anthropic described what it sees in practice. Among other cases, it reports that some actors used Claude to produce fabricated news for advertising revenue, and that it banned the accounts involved. It also reports that partners testing its safeguards found Claude reliably refused single harmful requests but could miss campaigns split into individually harmless tasks, and that it added classifiers for multi-step misuse such as fake social media accounts and news sites.
+
+## Why it matters
+
+Two details deserve attention from anyone in marketing.
+
+The words "or commercial" put fake reviews, sock-puppet accounts, bot-amplified launches and astroturfed "grassroots" buzz in the same category as political influence operations. You may not use Claude for any of this, but the direction of travel across the industry is clear: AI providers are watching for coordinated inauthentic activity, and they are not distinguishing between selling a candidate and selling a product.
+
+The second detail is the business model behind some of the abuse: fabricated news made to earn advertising revenue. That is not only a content problem. It is an ad-funding problem. When brand budgets flow through automated programmatic buying into fabricated sites, advertisers end up paying for the deception, usually without knowing.
+
+The targeting change is also worth noting. Personalisation as such is not treated as the harm. Deception and misuse of personal data are. I think that is the right distinction.
+
+## What my research says
+
+I have spent much of my career building systems that profile audiences: [learning user profiles from multiple social networks](https://doi.org/10.1145/2671188.2749381), [inferring personality across networks](https://doi.org/10.3389/fdata.2022.931206) and [using personality to recommend content](https://doi.org/10.1145/3503161.3548769). I know how powerful these techniques are, which is exactly why I gave a WSDM 2023 talk on [using AI responsibly for advertising targeting and creative evaluation](https://doi.org/10.1145/3539597.3575791).
+
+My view, which I set out in Forbes as [redemptive marketing](https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/), is that transparency and performance do not have to be traded against each other. Understanding an audience in order to serve it better is legitimate. Pretending to be the audience, with fake accounts and fake voices, is not. The new policy draws the line in roughly the same place.
+
+There is a measurement angle too. Fake engagement pollutes the very data that modern marketing AI learns from. If your competitor's buzz is partly synthetic, any model that reads "what works in the category" will learn the wrong lesson. Cleaning inauthentic signal out of social data has become part of good analytics.
+
+## What marketers should do now
+
+- Write it into your agency and influencer contracts. No fake accounts, purchased engagement or undisclosed sponsored content, including when produced with AI.
+- Disclose who is speaking. If an AI writes on behalf of your brand or a person, make sure the account and sponsorship are clear.
+- Audit where your programmatic money goes. Ask for site-level reporting and block placements on sites with no identifiable publisher.
+- Separate personalisation from deception in your own policies. Using first-party data with consent to tailor a message is one thing; obscuring who is behind it is another.
+- Expect monitoring. If your workflows automate posting at scale, document them so legitimate use is easy to demonstrate.
+
+Elections made the problem visible. Commerce is where most of the money is. AI providers have noticed; marketers should get ahead of it.
+
+## FAQ
+
+? What does Anthropic's 2026 usage policy say about commercial deception?
+Its new section "Do Not Engage in Deceptive Campaigns or Artificial Activity" applies to deceptive activity "whether political or commercial", including obscuring who is behind a message, amplifying content through fake accounts or posts and building infrastructure for influence operations. Anthropic says the update takes effect on 12 November.
+
+? Did Anthropic find AI being used to make fake news for ad money?
+Yes. In its midterms report, Anthropic says some actors used Claude to produce fabricated news for advertising revenue and that it banned the accounts involved.
+
+? Is personalised targeting banned under the new policy?
+Anthropic removed a blanket ban on personalised vote and campaign targeting. Targeting that relies on deception or misuse of personal data is still prohibited under other sections of the policy.

@@ -1,0 +1,54 @@
+title: Agent Skills Goes Vendor-Neutral: Why Marketers Should Care
+dek: Anthropic donated the Agent Skills standard to the Agentic AI Foundation. Portable, written-down know-how is exactly what marketing teams need from AI agents.
+news: Anthropic donates the Agent Skills open standard to the Agentic AI Foundation under the Linux Foundation
+news_date: 2026-10-22
+published: 2026-11-08
+topic: Agents
+source: Donating Agent Skills to the Agentic AI Foundation | Anthropic | 2026-10-22 | https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+---
+Some of the most important AI news is boring on the surface. On 22 October Anthropic said it is handing the Agent Skills standard to the Agentic AI Foundation, a body under the Linux Foundation. No new model, no benchmark. But if you run marketing with AI agents, this is the kind of plumbing that decides whether your know-how stays yours.
+
+## What happened
+
+According to [Anthropic's post](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation), a skill is "a folder containing a SKILL.md file that teaches an agent a specific task or domain, along with any scripts or reference material it needs." Anthropic developed the format while building Claude Code, because general-purpose agents often lacked the procedural knowledge real business tasks require. It launched skills in October 2025 and published Agent Skills as an open standard in December 2025.
+
+The adoption figures are large. Anthropic says more than 70 agent platforms have integrated Agent Skills, including ChatGPT, Cursor, GitHub Copilot and VS Code, and that 1 million skills have been published and nearly 280 million installed.
+
+Now the standard itself, its name and logo, the GitHub organisation and the agentskills.io domain go to the Agentic AI Foundation (AAIF), which Anthropic co-founded with Block and OpenAI and to which it previously donated the Model Context Protocol. Engineers from Anthropic, Google, OpenAI and other companies will maintain it as individuals. The proposed roadmap includes versioned releases, a formal proposal process and security guidance for people who write and install skills.
+
+## Why it matters
+
+Every marketing team I know has the same hidden asset: the way it does things. How it writes a brief. Which competitors it checks first. What "on brand" means for this client in this market. Today most of that lives in people's heads and in slide decks nobody reads.
+
+A skill is a way to write that procedure down so an agent can follow it. And a vendor-neutral standard means you can write it once and expect it to work across the tools your team uses. That is the difference between building on a platform and building on a format. Formats outlive platforms.
+
+There is a second, quieter benefit. A skill is readable. You can open the folder and see what the agent was told to do. In a field where "the AI decided" is becoming a common excuse, a plain-text procedure is a small but real piece of accountability.
+
+## What my research says
+
+I have written in Forbes about the ladder from [prompting and fine-tuning to RAG and AI agents in marketing](https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/), and about [18 applications of AI agents in marketing](https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/). The pattern I keep coming back to is that agents fail less because they lack intelligence and more because they lack context: the specific data and the specific procedure for the job.
+
+Our most recent paper makes that concrete. In [SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization](https://doi.org/10.1145/3805712.3808371) (SIGIR 2026) we describe retrieval-augmented agents that help professionals write distinctive LinkedIn content. The core idea is that an agent should retrieve real context data before it writes, so its output stays distinctive instead of converging on the same generic text everyone else's agent produces.
+
+Skills are the procedural twin of retrieval. Retrieval gives the agent the facts. A skill gives it the method. Both push against homogenisation, because both inject what is specific to you into a system that otherwise defaults to the average of the internet. If every brand runs the same agent with the same default behaviour, every brand will sound the same. Your skills are where your difference lives.
+
+## What marketing teams should do now
+
+- Write down three procedures you repeat every week, such as competitor checks, campaign post-mortems or creative briefs, as plain step-by-step instructions with examples of good output.
+- Keep the brand-specific parts separate: tone of voice, banned claims, legal disclaimers, market differences. These are the parts that make your output yours.
+- Version them. When a procedure changes, the agent's behaviour changes. Treat skills like code, with an owner and a change log.
+- Review security before installing third-party skills. A skill can include scripts. The new governance roadmap mentions security guidance for this reason; until it exists, read what you install.
+- Measure distinctiveness, not only speed. If your agent-written content starts to look like your competitors', your context is too thin.
+
+Open standards are not exciting until you need to switch tools. When that day comes, the teams that wrote their know-how down in a portable format will move in a week. The others will start again.
+
+## FAQ
+
+? What is an Agent Skill?
+According to Anthropic, a skill is a folder containing a SKILL.md file that teaches an AI agent a specific task or domain, together with any scripts or reference material the task needs.
+
+? Who maintains the Agent Skills standard now?
+Anthropic donated the standard, its name, logo, GitHub organisation and the agentskills.io domain to the Agentic AI Foundation under the Linux Foundation. Engineers from Anthropic, Google, OpenAI and other companies maintain it as individuals.
+
+? How can marketers use Agent Skills?
+By writing down repeatable procedures, such as briefs, competitor reviews or campaign reports, together with brand rules and examples, so that AI agents across different tools follow the team's own method instead of generic defaults.

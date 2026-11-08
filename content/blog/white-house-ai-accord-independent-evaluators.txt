@@ -1,0 +1,51 @@
+title: The White House AI Accord and Independent Evaluators
+dek: Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI.
+news: Tech leaders sign the White House Accord on Super Intelligence; Anthropic embeds METR evaluators with employee-like access
+news_date: 2026-09-29
+published: 2026-11-08
+topic: Regulation and security
+source: White House releases 'Accord' between billionaire AI execs: Here's what it says | Forbes Australia | 2026-09-30 | https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/
+source: Trump and six tech companies sign a voluntary artificial intelligence safety accord | MercoPress | 2026-09-30 | https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord
+source: An update on independent evaluators | Anthropic | 2026-10-15 | https://www.anthropic.com/news/an-update-on-independent-evaluators
+---
+Voluntary commitments from AI companies have a mixed record. Some are forgotten within a year. What makes the latest one interesting is not the ceremony at the White House but one concrete idea inside it: independent evaluators. Two weeks later, one lab showed what that can look like in practice.
+
+## What happened
+
+On 29 September, according to [Forbes](https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/), President Trump and the heads of several technology companies signed the "White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities", a document of just over 300 words. The signatories listed are Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai and OpenAI president Greg Brockman, alongside the president.
+
+Forbes summarises four commitments for companies training and deploying frontier models: maintain internal controls that monitor model capabilities and alignment, including ensuring models do not access technical systems in unintended ways; have an internal team ensure those controls work and issues are fixed; partner with an "independent external auditor or evaluator"; and designate an "independent committee of the board of directors" to oversee the controls and auditors. Trump called the accord "morally binding" and "almost like a constitution in a way". [MercoPress](https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord) notes that it sets no consequences for breaches and quotes University of Sydney professor Kimberlee Weatherall calling it "deeply unimpressive".
+
+On 15 October, Anthropic published [An update on independent evaluators](https://www.anthropic.com/news/an-update-on-independent-evaluators). It says it has given a team from METR, a nonprofit that evaluates frontier models, employee-like access: six METR staff onboarded with company hardware and internal tools, broadly on par with Anthropic's own risk teams. METR will publish its risk assessments; Anthropic says it cannot veto those publications, though it can require redaction of predefined categories such as confidential IP. Anthropic compares the model to bank supervisors placing examiners inside large banks, and says all frontier AI companies should do the same.
+
+## Why it matters
+
+The accord is thin, and critics are right that a voluntary text without consequences guarantees nothing. But the independent-evaluator commitment is a useful hook, because it can be checked. Either a company has an outside evaluator with real access and freedom to publish, or it does not.
+
+Anthropic's arrangement sets a visible bar: deep access, publication rights and clear limits on redaction. Other companies can now be compared against it. That is how voluntary commitments become norms.
+
+## What my research says
+
+My research field, explainable AI for marketing, rests on the same principle at a smaller scale: claims about what a model does should be verifiable by someone other than the model's owner. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) and [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025), the explanation layer exists so that a marketer can check why a prediction was made instead of taking it on faith.
+
+I have argued in Forbes that [transparency matters for marketing-driven companies](https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/). The frontier labs are now converging on a version of that for safety: internal controls, internal teams, external evaluators, board oversight. Marketing AI does not carry the same catastrophic risks, but it does carry real ones: biased targeting, misleading claims, privacy breaches, budgets spent on the wrong signal. The same four-layer structure scales down well.
+
+## A four-layer model for marketing AI governance
+
+- Internal controls. Monitor what your AI systems do: which audiences they target, which claims they generate, which data they use.
+- An internal owner. Name a person or team responsible for checking those controls and fixing issues.
+- Outside eyes. Have an independent party, such as an auditor, a research partner or a second vendor, periodically test your key models and claims.
+- Senior oversight. Report AI risks to leadership the way you report financial risks, with the authority to pause a system.
+
+When you buy marketing AI, ask vendors the same questions the accord raises. Who evaluates your models from outside? What access do they have? Can they publish what they find? The answers will tell you more than a feature list.
+
+## FAQ
+
+? What is the White House Accord on Super Intelligence?
+It is a voluntary document, titled "Joint Commitment on Frontier Responsibilities", signed on 29 September 2026 by President Trump and leaders including Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai and Greg Brockman. It commits companies to internal controls, internal teams, independent external evaluators and board-level oversight.
+
+? Is the White House AI accord binding?
+No. Trump described it as "morally binding", but according to MercoPress it sets no consequences for breaches, and some academics criticised it as weak.
+
+? What access did Anthropic give independent evaluators?
+Anthropic says six METR staff were onboarded with employee-like access to company hardware, tools and systems, that METR will publish its risk assessments, and that Anthropic cannot veto those publications but can require redaction of predefined categories such as confidential IP.

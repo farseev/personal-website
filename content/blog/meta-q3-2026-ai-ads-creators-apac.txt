@@ -1,0 +1,53 @@
+title: Meta Q3 2026: AI Lifts Ad Prices, Creators Become a Channel
+dek: Meta's Q3 2026: ad revenue up 26%, price per ad up 14%, partnership ads past a $15bn run rate, and a very different Asia-Pacific. What it means.
+news: Meta reports Q3 2026 results: revenue up 26%, AI ranking and generative creative tools cited
+news_date: 2026-10-21
+published: 2026-11-08
+topic: Ads and marketing AI
+source: Meta Beats Q3 Expectations With Strong Earnings | Adweek | 2026-10-21 | https://www.adweek.com/media/meta-beats-q3-expectations-with-strong-earnings/
+source: Meta Q3 2026: ad price per ad up 14% worldwide but just 1% in Asia-Pacific | Relevant Audience | 2026-10-23 | https://www.relevantaudience.com/meta/meta-q3-2026-ad-price-impressions-asia-pacific/
+---
+Quarterly earnings are not usually a marketing strategy document. Meta's third quarter of 2026 comes close. Hidden in the numbers are three signals for advertisers: AI is raising the price of attention, creators are becoming a paid channel in their own right, and Asia-Pacific is priced very differently from the West.
+
+## What happened
+
+According to [Adweek](https://www.adweek.com/media/meta-beats-q3-expectations-with-strong-earnings/), Meta reported Q3 revenue of US$64.6 billion, up 26% year on year, and advertising revenue of US$63.1 billion, also up 26%. Ad impressions grew 10%, while the average price per ad rose 14%. Operating income fell 37% to US$13 billion because of a US$9.9 billion legal charge; capital expenditure was US$34.9 billion.
+
+Meta tied part of the growth to AI. Adweek reports conversion lifts from Meta's expanded GEM ranking model of 1.7% for off-site conversion campaigns and 9.6% for app ad conversions, nearly 10 million advertisers using at least one generative AI creative tool in the quarter, and partnership ads growing more than 97% year on year to pass a US$15 billion annual revenue run rate. CFO Susan Li said: "Our AI investments are already delivering substantial incremental advertising revenue through stronger engagement, better recommendations, and more efficient monetization."
+
+[Relevant Audience's regional breakdown](https://www.relevantaudience.com/meta/meta-q3-2026-ad-price-impressions-asia-pacific/) adds the Asia-Pacific picture: impressions up 14% but price per ad up only 1%, against 23% in the US and Canada. It also reports that Meta's Creator Marketing Hub rolled out to all advertisers globally in Q3, with more than 10 million creators discoverable. All AI-impact figures are Meta's own estimates.
+
+## Why it matters
+
+Prices rising faster than impressions means advertisers are paying more for each slot. Meta attributes that partly to better ad performance: if AI ranking makes each impression convert better, advertisers bid more. That may be true. It also means the auction is getting more competitive, and that efficiency gains from AI do not automatically flow to the advertiser. Some of them flow to the platform as higher prices.
+
+The partnership ads figure is the one I would put on a slide. A channel growing almost 97% to a US$15 billion run rate is no longer an experiment. Creator content, boosted as ads, has become a mainstream paid format.
+
+And Asia-Pacific looks like a different market: lots of new impressions at nearly flat prices. For advertisers in the region, attention is relatively cheap today. That is an opportunity, and a reason not to import Western cost benchmarks blindly.
+
+## What my research says
+
+Creators have been part of my research for a long time. In 2018 we presented [an influencer discovery marketplace built on social multimedia analytics](https://doi.org/10.1145/3240508.3241387) at ACM Multimedia, and in [Person, Organization, or Personage](https://doi.org/10.1007/978-3-030-13283-5_9) (EGOSE 2018) we worked on telling apart personal, organisational and celebrity accounts. The core lesson was that choosing the right creator is a matching problem between a creator's real audience and the brand's target, not a popularity contest. With 10 million creators discoverable and partnership ads scaling fast, that matching problem gets bigger, not smaller.
+
+On prices, I wrote in Forbes about [overcoming the volatility of ad prices](https://www.forbes.com/councils/forbestechcouncil/2023/11/13/overcoming-the-volatility-of-todays-ad-prices/). When the auction gets more expensive, the advertiser's lever is relevance: better creative and better audience fit, so you win impressions without simply paying more. That is where pre-launch creative scoring helps. In [SoCraft](https://doi.org/10.1145/3539597.3573032) (WSDM 2023) we demonstrated a multimodal model that scores Meta ad creatives before launch. Knowing which creative is likely to perform, and why, is how you keep cost per result in check when price per ad is rising 14%.
+
+## What advertisers should do now
+
+- Watch cost per outcome, not CPM alone. Rising price per ad is fine if conversions rise faster; check that they do in your own data.
+- Treat creators as a planned channel. Budget for partnership ads deliberately, and choose creators by audience fit and content quality, not follower count.
+- Score creative before you spend. With nearly 10 million advertisers using generative tools, the volume of creative is exploding. Filtering it is where advantage lies.
+- Use regional benchmarks. Plan Asia-Pacific budgets on regional price and impression trends rather than global or US averages.
+- Verify AI lift claims. Platform-reported conversion gains are a starting point. Run your own holdout tests.
+
+Meta's AI is clearly making its ad machine more effective. The advertiser's job is to make sure some of that effectiveness ends up on their side of the ledger.
+
+## FAQ
+
+? How much did Meta's ad revenue grow in Q3 2026?
+Adweek reports advertising revenue of US$63.1 billion, up 26% year on year, with ad impressions up 10% and average price per ad up 14%.
+
+? What did Meta say about AI's impact on ads in Q3 2026?
+Meta cited conversion lifts from its GEM model of 1.7% for off-site campaigns and 9.6% for app ads, and said nearly 10 million advertisers used at least one generative AI creative tool in the quarter. These are Meta's own estimates.
+
+? How did Asia-Pacific differ in Meta's Q3 2026 results?
+According to Relevant Audience's reading of Meta's figures, Asia-Pacific impressions grew 14% while price per ad rose only 1%, compared with a 23% price increase in the US and Canada.

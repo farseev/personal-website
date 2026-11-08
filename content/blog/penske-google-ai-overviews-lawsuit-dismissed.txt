@@ -1,0 +1,54 @@
+title: Penske v. Google Dismissed: What It Means for AI Visibility
+dek: A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO.
+news: US District Judge Amit Mehta dismisses Penske Media's and Chegg's antitrust suits over Google's AI Overviews
+news_date: 2026-10-01
+published: 2026-11-08
+topic: AI search
+source: Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google | Press Gazette | 2026-10-01 | https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/
+---
+For two decades the web ran on an unwritten deal: let Google crawl your pages, and Google sends you visitors. In a ruling reported on 1 October, a US federal judge said, in effect, that the deal was never a deal. For anyone who depends on search traffic, that ruling is a reason to rethink visibility from the ground up.
+
+## What happened
+
+According to [Press Gazette](https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/), US District Judge Amit Mehta dismissed Penske Media Corporation's antitrust suit against Google over AI Overviews, and rejected Chegg's similar arguments. Penske had alleged lost search traffic and lost affiliate, advertising and subscription revenue after AI Overviews launched.
+
+The judge found no "formal bargain" between publishers and Google. Publishers, he wrote, "have pleaded only that they have an 'expectation' that Google will send them search traffic", and "an expectation is not an agreement. It is simply how a general search engine works." He also rejected the argument that search and AI Overviews are separate products that Google unlawfully tied together. He noted that "the court does not treat Plaintiffs' alleged harms lightly."
+
+Press Gazette's update of 30 October adds that Penske and Chegg are appealing, that Google is rolling out a Search Console option for publishers to opt out of AI Overviews following a UK Competition and Markets Authority order, and that Google is reportedly trialling payments to publishers whose content contributes significantly to its AI features.
+
+## Why it matters
+
+Whatever happens on appeal, the ruling clarifies where things stand: there is no legal entitlement to traffic. The search engine can decide to answer the question itself. If your business model or your marketing plan assumes that ranking equals visits, you are building on an expectation, not an agreement.
+
+This is not only a publisher problem. Brands publish too: guides, product pages, comparison content, research. All of it is now raw material for AI answers that may satisfy the user without a click. The question shifts from "how do I rank?" to "how do I get cited, chosen and remembered inside the answer?" That is what people now call generative engine optimisation, or GEO.
+
+The opt-out and payment trials make the trade-off explicit. Opting out may protect your content, and it also removes you from the answers your customers read. For most brands, that is too high a price. For some publishers, it may be the only leverage they have.
+
+## What my research says
+
+Being cited by an AI answer is, at its core, a retrieval problem. My early work on [cross-domain recommendation via clustering on multi-layer graphs](https://doi.org/10.1145/3077136.3080774) (SIGIR 2017) was about pooling signals from different sources to decide what to recommend. Modern answer engines are distant descendants of that idea: they retrieve, cluster and choose sources before they generate. Content that is specific, consistent across sources and easy to attribute is more likely to be retrieved and chosen.
+
+My work on explainable AI points to the other half. In [SOEX](https://doi.org/10.1145/3701716.3715198) (WWW 2025 Companion) we focused on explaining competitors' communications: what they say and why it works. GEO needs the same discipline. It is not enough to know that a competitor appears in AI answers; you need to understand which claims, formats and sources make that happen.
+
+And measurement is a trap here too. I wrote on e27 that [every dashboard is green, yet nobody can say what worked](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/). AI visibility tools will add another set of green numbers. Treat them as signals, test them against outcomes, and do not confuse a mention with a customer.
+
+## What publishers and brands should do now
+
+- Stop planning on traffic as a right. Model scenarios where informational queries are answered without a click, and decide which content still earns its cost.
+- Write to be cited. Clear claims, original data, named authors, dates and sources make content easier for AI systems to retrieve and attribute.
+- Be consistent across the web. Answer engines cross-check. Your product facts should match on your site, marketplaces and partner pages.
+- Decide on opt-out deliberately. Weigh the visibility you lose against the leverage you gain, page type by page type, not site-wide by reflex.
+- Build direct relationships. Newsletters, communities and apps are the channels no ruling can take away.
+
+The court has not settled the bigger question of what AI search owes the people whose work it reads. But it has settled one practical point for now: nobody is owed a click.
+
+## FAQ
+
+? Why was Penske Media's lawsuit against Google dismissed?
+According to Press Gazette, Judge Amit Mehta found there was no "formal bargain" between publishers and Google to exchange crawling for traffic, writing that an expectation of traffic "is not an agreement", and he rejected the claim that search and AI Overviews are separate products unlawfully tied together.
+
+? Is the Penske ruling final?
+No. Press Gazette reported on 30 October 2026 that Penske and Chegg are appealing the dismissal.
+
+? What should brands do about visibility in AI search after the ruling?
+Plan for fewer clicks on informational queries, publish specific and attributable content that AI systems can cite, keep product facts consistent across sites, weigh any opt-out decision carefully, and build direct channels to customers.

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5 and the Case for Small Models in Marketing | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5 and the Case for Small Models in Marketing | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers." />
+<meta property="og:url" content="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — AI news, explained" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Models" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5 and the Case for Small Models in Marketing | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5 and the Case for Small Models in Marketing","description":"Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers.","image":"https://farseev.com/og-image.png","inLanguage":"en","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/blog/#blog"},"articleSection":"Models","about":{"@type":"Thing","name":"Anthropic releases Claude Haiku 5.5, a small model for high-volume, cost-sensitive work"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"What is Claude Haiku 5.5 designed for?","acceptedAnswer":{"@type":"Answer","text":"Anthropic positions it for high-volume, cost-sensitive work such as summaries, classification, database queries, live customer support, browser use and subagent tasks, while recommending Sonnet 5.5 and Opus 5.5 for complex agentic coding."}},{"@type":"Question","name":"How much does Claude Haiku 5.5 cost?","acceptedAnswer":{"@type":"Answer","text":"Anthropic lists US$0.10 per million input tokens and US$0.50 per million output tokens for prompts up to 100,000 tokens, and says it costs about 75% less than Haiku 4.5 on average."}},{"@type":"Question","name":"Are small language models good enough for marketing tasks?","acceptedAnswer":{"@type":"Answer","text":"For many high-volume tasks, such as tagging, summarising and routing, a well-chosen small model is enough and much cheaper. Test on your own labelled examples, and keep specialised predictive models for jobs like creative scoring, using LLMs to explain their output."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/"},{"@type":"ListItem","position":2,"name":"AI news","item":"https://farseev.com/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5 and the Case for Small Models in Marketing","item":"https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/","jobTitle":"Founder & CEO of SOMIN.ai; Guest Professor in AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="/#about">About</a><a href="/#research">Research</a><a href="/blog/" aria-current="page">AI news</a><a href="/#talks">Talks</a><a href="/#connect">Connect</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Language" translate="no"><option value="en" selected>English</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">AI news</a></li><li aria-current="page">Claude Haiku 5.5 and the Case for Small Models in Marketing</li></ol></nav>
+      <p class="eyebrow">AI news, explained · Models</p>
+      <h1 class="h-display">Claude Haiku 5.5 and the Case for Small Models in Marketing</h1>
+      <p class="lead">Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>The news: Anthropic releases Claude Haiku 5.5, a small model for high-volume, cost-sensitive work (<time datetime="2026-10-07">7 October 2026</time>)</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 min read</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Every model launch gets measured against the biggest model in the room. I think that is the wrong lens for most marketing work. On 7 October Anthropic released Claude Haiku 5.5, and the interesting part is not how close it gets to the frontier. It is what it costs to run a million times.</p>
+<h2>What happened</h2>
+<p>Anthropic calls Haiku 5.5 <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">the cheapest, fastest and most capable small model it has released</a>. It is aimed at high-volume, cost-sensitive work: summaries, classification, database queries, live customer support, browser use and subagent work alongside the larger Opus 5.5 and Sonnet 5.5 models. It is the first Haiku-class model with an adjustable effort setting, so users can trade cost against intelligence. Anthropic is explicit that Sonnet 5.5 and Opus 5.5 remain better for complex agentic coding.</p>
+<p>The price is the headline. For prompts up to 100,000 tokens, Anthropic lists US$0.10 per million input tokens and US$0.50 per million output tokens, and says Haiku 5.5 costs about 75% less than Haiku 4.5 on average. The launch page also includes customer reports; HubSpot, for example, says it scored 92.8% on its CRM evaluation suite. Those are the company's and its customers' figures, not independent tests.</p>
+<h2>Why it matters</h2>
+<p>Marketing AI is a volume business. A single campaign can involve thousands of creative variants, tens of thousands of comments to classify, product feeds with hundreds of thousands of rows, and daily reports across dozens of markets. Almost none of that needs the most powerful model available. It needs a model that is good enough, fast, predictable and cheap enough to run on everything.</p>
+<p>When the small model gets much better and much cheaper at the same time, the economics of what you automate change. Tasks that were too expensive to run on every item, like tagging every competitor ad or summarising every customer review, become routine. And the architecture changes: a large model plans and judges, small models do the repetitive work underneath. Anthropic's own description of Haiku as a subagent is exactly that pattern.</p>
+<h2>What my research says</h2>
+<p>I have argued this for a long time. In Forbes I asked whether <a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">bigger is better</a>, and later compared <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">LLMs and small neural networks in marketing</a>. My answer has not changed: model size matters far less than technique and fit for the task.</p>
+<p>Our research has always combined the two kinds of model rather than choosing one. In <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) we demonstrated a multimodal model that scores an advertiser's Meta ad creatives, using text, image, targeting and settings, before launch. In <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a> (ACM Transactions on Information Systems, 2025) we paired ad-performance prediction models with LLMs, so that a creative score becomes a recommendation a marketer can act on.</p>
+<p>The lesson from that work is that specialised, efficient models do the measuring and large language models do the explaining. A cheaper, more capable small LLM does not replace the specialised predictor. It makes the explanation and orchestration layer affordable at the scale where marketing actually happens.</p>
+<h2>How I would use a model like this</h2>
+<ul><li>Classification at full coverage. Tag every competitor post, every review, every ad in your category by theme, offer and format, instead of sampling.</li><li>First-pass summaries. Turn long reports, transcripts and comment threads into short digests that a person, or a larger model, reviews.</li><li>Subagents in a pipeline. Let a larger model plan a competitor analysis and hand the repetitive extraction steps to the small model.</li><li>Customer-facing speed. Use the fast model where latency matters, such as live chat, and route difficult cases to a stronger model or a human.</li></ul>
+<h2>What marketers should check before switching</h2>
+<ul><li>Run your own evaluation. Vendor benchmarks are not your task. Take 200 real examples from your work, label them, and compare models on that set.</li><li>Watch cost per task, not cost per token. Anthropic notes that Haiku 5.5 uses a new tokenizer and slightly more tokens per task. The bill depends on the whole workflow.</li><li>Use the effort setting deliberately. Default to low effort for simple tagging and raise it only where your evaluation shows a quality gain.</li><li>Keep the specialised models where they are better. If you already have a model trained on your own performance data, an LLM should explain its output, not replace it.</li></ul>
+<p>The frontier gets the headlines. The small model is where most of the work, and most of the savings, will be.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>What is Claude Haiku 5.5 designed for?</summary><p>Anthropic positions it for high-volume, cost-sensitive work such as summaries, classification, database queries, live customer support, browser use and subagent tasks, while recommending Sonnet 5.5 and Opus 5.5 for complex agentic coding.</p></details><details><summary>How much does Claude Haiku 5.5 cost?</summary><p>Anthropic lists US$0.10 per million input tokens and US$0.50 per million output tokens for prompts up to 100,000 tokens, and says it costs about 75% less than Haiku 4.5 on average.</p></details><details><summary>Are small language models good enough for marketing tasks?</summary><p>For many high-volume tasks, such as tagging, summarising and routing, a well-chosen small model is enough and much cheaper. Test on your own labelled examples, and keep specialised predictive models for jobs like creative scoring, using LLMs to explain their output.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> is the founder and CEO of SOMIN.ai and a Guest Professor in AI at NUS and INSEAD. His peer-reviewed research covers multi-source user profiling, personality-aware recommendation and explainable AI for marketing.</p>
+<p class="links"><a href="/">About Aleks</a><a href="/#publications">Publications</a><a href="/blog/">More AI news</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keep reading</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">More AI news, explained</h2></div>
+    <div class="cards-3"><a class="pcard" href="/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Models · 30 September 2026</span><h3>Gemini 4 Argon: A Million Output Tokens, Now What?</h3><p>Google DeepMind's Gemini 4 Argon brings a 1M-token output limit and a cyber-first rollout. What long-horizon AI changes for marketing work, and what it doesn't.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Models · 29 September 2026</span><h3>Why OpenAI Shelved GPT-6.1 Astra, and Why It Matters</h3><p>OpenAI cancelled the release of GPT-6.1 Astra after testing flagged problems with scope, authorisation and how it reported back. The same tests apply to your agents.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Models · 22 September 2026</span><h3>Claude Opus 5.5: Watermarks, Audits and AI Content Labels</h3><p>Anthropic's Claude Opus 5.5 ships with watermarking for EU AI Act compliance and a note that the model often suspects it is being tested. Both matter for marketers.</p><span class="go">Read →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">AI news blog</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#publications">Publications</a></li>
+          <li><a href="/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Elsewhere</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opinions are my own. News facts link to their sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

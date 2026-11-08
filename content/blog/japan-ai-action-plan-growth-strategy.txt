@@ -1,0 +1,52 @@
+title: Japan's AI Action Plan: Growth Policy Becomes Adoption Policy
+dek: PM Sanae Takaichi asked ministers for an AI promotion action plan by year-end, tied to Japan's growth strategy. What adoption-first policy means for marketers.
+news: Japan's government to compile an AI promotion action plan by year-end, Prime Minister Takaichi says
+news_date: 2026-10-01
+published: 2026-11-08
+topic: Asia and Singapore
+source: Japan to Compile Action Plan for Spreading AI Use | Nippon.com (Jiji Press) | 2026-10-01 | https://www.nippon.com/en/news/yjj2026100100960/japan-to-compile-action-plan-for-spreading-ai-use.html
+---
+Across Asia, governments are choosing different first moves on AI. Singapore leans on evaluation and guidance, Malaysia is drafting a law, Korea is handing out public agents. Japan, on 1 October, framed AI first as a growth policy: a national plan to spread its use. That emphasis has consequences for companies selling in Japan, including their marketing teams.
+
+## What happened
+
+According to [Jiji Press, via Nippon.com](https://www.nippon.com/en/news/yjj2026100100960/japan-to-compile-action-plan-for-spreading-ai-use.html), Prime Minister Sanae Takaichi announced that the government will prepare an AI promotion action plan by the end of the year, describing AI as a driver of economic growth. At a meeting of the Council for Japan's Growth Strategy she said: "The societal implementation of high-performance AI is essential for realizing the government's growth strategy."
+
+She directed the relevant ministers to develop a concrete vision for AI use and for regulatory and institutional reforms. The meeting also discussed a growth strategy implementation programme, to be compiled at year-end alongside the fiscal 2027 budget proposal. Takaichi said the government will designate the five years beginning next April as an intensive period for public and private investment in 17 strategic sectors, including AI and semiconductors. The programme will list priority sectors and investment amounts. The report does not give further details of the action plan's contents.
+
+## Why it matters
+
+"Societal implementation" is the key phrase. Japan's discussion is not mainly about frontier model capability or about prohibitions. It is about getting AI into daily use across the economy, with regulatory reform as a tool for that, not a brake on it.
+
+For marketers, an adoption-first national policy tends to do three things. It raises the baseline of AI use among businesses and consumers, which changes customer expectations. It brings public money and programmes that reduce the cost of experimenting. And it pushes regulators to clarify rules that currently make companies hesitate, which can open up uses of data and automation that were previously in a grey zone.
+
+It also matters regionally. Japan is one of Asia's largest advertising markets. Its approach will influence how global brands sequence AI adoption in the region, and how Japanese companies expand into Southeast Asia with their own AI-enabled marketing.
+
+## What my research says
+
+The danger of a pure adoption push is that companies adopt the same generic tools in the same way and end up sounding alike. Our SIGIR 2026 paper, [SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization](https://doi.org/10.1145/3805712.3808371), is about exactly that risk. Agents that retrieve real context before writing keep output distinctive. Without that, wider AI use can make a market's communications more uniform, not more effective.
+
+Local context is the other lesson. In [Do we behave differently on Twitter and Facebook?](https://doi.org/10.3389/fdata.2022.931206) (Frontiers in Big Data, 2022) and [I Know Where You Are Coming From](https://doi.org/10.1609/aaai.v34i10.7258) (AAAI 2020), we found that the platform and data source shape what an AI system learns about people. Japan's platforms, language and communication norms are specific. Models and prompts tuned elsewhere will miss nuances that Japanese consumers notice immediately.
+
+And adoption without measurement is just spending. I have written on e27 about the problem that [every dashboard is green, yet nobody can say what worked](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/). A national push to use AI will produce many pilots. The ones that last will have clear baselines and honest results.
+
+## What marketers in, or selling into, Japan should do now
+
+- Follow the plan's publication at year-end and the priority sectors it names. Public programmes may cover part of your experimentation costs.
+- Watch for regulatory reform. If rules on data use or automation are clarified, update your roadmap for personalisation and agents.
+- Localise deeply. Evaluate AI tools on Japanese-language tasks with native reviewers, including tone and politeness levels, before scaling.
+- Protect distinctiveness. Feed your AI systems brand-specific and market-specific context so that wider adoption does not flatten your voice.
+- Measure from day one. Every AI pilot should have a baseline and a defined outcome, so that you can show what actually changed.
+
+Japan's choice to treat AI primarily as a growth engine will make AI adoption faster and more widespread there. The marketers who benefit will be the ones who adopt with a strategy for staying distinct and a habit of measuring.
+
+## FAQ
+
+? What did Japan announce about AI on 1 October 2026?
+According to Jiji Press, Prime Minister Sanae Takaichi said the government will prepare an AI promotion action plan by the end of the year and directed ministers to develop a concrete vision for AI use and for regulatory and institutional reforms.
+
+? How does the AI plan fit Japan's growth strategy?
+Takaichi said societal implementation of high-performance AI is essential to the government's growth strategy, and that the five years from next April will be an intensive investment period for 17 strategic sectors, including AI and semiconductors.
+
+? What should marketers do in response to Japan's AI push?
+Track the action plan and any regulatory reforms, use public programmes to fund experiments, evaluate AI tools carefully in Japanese, protect brand distinctiveness and measure every pilot against a baseline.

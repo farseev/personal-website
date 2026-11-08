@@ -1,0 +1,53 @@
+title: Gemini 4 Argon: A Million Output Tokens, Now What?
+dek: Google DeepMind's Gemini 4 Argon brings a 1M-token output limit and a cyber-first rollout. What long-horizon AI changes for marketing work, and what it doesn't.
+news: Google DeepMind introduces Gemini 4 Argon, its frontier model for long, multi-step tasks
+news_date: 2026-09-30
+published: 2026-11-08
+topic: Models
+source: Gemini 4 Argon: our next era of frontier intelligence | Google (The Keyword) | 2026-09-30 | https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+---
+Context windows used to be the race. Gemini 4 Argon shifts attention to the other end of the model: how much it can produce in one go. On 30 September Google DeepMind introduced Argon with an output limit of one million tokens, up from 64,000. That is a book-length answer. The more interesting question for marketers is what kind of work needs one.
+
+## What happened
+
+In [Google's announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), Koray Kavukcuoglu describes Argon as Google's frontier model "for real-world coding, enterprise knowledge work, and cyber defense". The output token limit expands to 1M, and the model is designed for long, multi-step tasks in software engineering, legal and finance work and cybersecurity, with strong visual understanding such as chart analysis and long-video comprehension.
+
+The rollout is unusual. Argon goes first to a set of trusted cyber defenders through Google's Fairwind Program, with broader access planned for developers, enterprises and consumers, starting with paid API customers and Google AI Ultra subscribers. Introductory pricing is US$2 per million input tokens and US$10 per million output tokens, rising to US$4 and US$20 after the introductory period, with cached input at 95% off.
+
+Google lists benchmark results, including 77.9% on DeepSWE v1.1 and 91.7% on the LVBench long-video benchmark, and describes internal uses such as large code migrations. It also describes safety measures, including monitoring for misuse and misalignment and resilience against indirect prompt injection. These are Google's own results.
+
+## Why it matters
+
+A million output tokens is not about writing longer blog posts. Long outputs matter when the job is to produce a complete artefact in one coherent pass: a full codebase migration, a contract set, a large structured dataset. In marketing, the closest equivalents are things like a complete product-feed rewrite, a full localisation of a website, or a campaign library with hundreds of coordinated variants.
+
+The long-video comprehension is, to me, the more immediately useful capability. Video dominates social platforms, and most brands still analyse it by watching samples and taking notes. A model that can reliably read long video, at scale, opens up competitor and category analysis that used to be impossible to do thoroughly.
+
+And the cyber-first rollout is a signal about where frontier labs think the risk sits. When a lab gives defenders access before everyone else, it is telling you the model is capable enough to matter for attackers too.
+
+## What my research says
+
+Much of my research has been about social multimedia, not text alone. Early on we built [bBridge](https://doi.org/10.1145/2964284.2973836) (ACM Multimedia 2016), a big data platform for analysing social multimedia across networks. More recently, in [SOEX: Explainable AI for Competitor Communications Analytics](https://doi.org/10.1145/3701716.3715198) (WWW 2025 Companion), we focused on explaining what competitors communicate and why it works.
+
+The lesson from that work is that scale of analysis is only half the problem. A model that can watch a thousand competitor videos still has to answer the questions a strategist cares about: which messages repeat, which ones perform, which audience they target and what gap is left open. Long-context and long-output models make the reading and the writing cheaper. The framing and the validation remain the human contribution, supported by performance data.
+
+I would add one caution. Very long outputs are hard to check. A 200-page generated document can be 98% right and still contain the one claim that gets you into trouble. The longer the output, the more you need structure, sampling and automated checks.
+
+## How I would use a long-horizon model in marketing
+
+- Category video audits. Ask for structured findings across a full set of competitor videos: hooks, claims, formats, calls to action. Then validate a sample by hand.
+- Coordinated asset libraries. Generate a full set of variants for a campaign in one pass so tone and claims stay consistent, and review them against a checklist.
+- Full-site localisation drafts. Produce complete drafts for new markets, then have native reviewers check the high-traffic pages first.
+- Long documents with an index. Require the model to produce a table of claims with sources, so humans can verify the risky parts quickly.
+
+Argon's headline number is impressive. The value for marketers will come from pairing that capacity with the discipline to check what comes out.
+
+## FAQ
+
+? What is Gemini 4 Argon?
+It is Google DeepMind's frontier model introduced on 30 September 2026 for real-world coding, enterprise knowledge work and cyber defence, with an output limit of 1 million tokens, up from 64,000.
+
+? Who can use Gemini 4 Argon first?
+Google says it is rolling out first to trusted cyber defenders through its Fairwind Program, with broader release planned for developers, enterprises and consumers, starting with paid API customers and Google AI Ultra subscribers.
+
+? How much does Gemini 4 Argon cost?
+Google lists introductory pricing of US$2 per million input tokens and US$10 per million output tokens, rising to US$4 and US$20 after the introductory period, with cached input tokens at 95% off.

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The White House AI Accord and Independent Evaluators | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="The White House AI Accord and Independent Evaluators | Prof. Aleks Farseev" />
+<meta property="og:description" content="Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI." />
+<meta property="og:url" content="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — AI news, explained" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulation and security" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The White House AI Accord and Independent Evaluators | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/","headline":"The White House AI Accord and Independent Evaluators","description":"Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI.","image":"https://farseev.com/og-image.png","inLanguage":"en","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/blog/#blog"},"articleSection":"Regulation and security","about":{"@type":"Thing","name":"Tech leaders sign the White House Accord on Super Intelligence; Anthropic embeds METR evaluators with employee-like access"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"What is the White House Accord on Super Intelligence?","acceptedAnswer":{"@type":"Answer","text":"It is a voluntary document, titled \"Joint Commitment on Frontier Responsibilities\", signed on 29 September 2026 by President Trump and leaders including Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai and Greg Brockman. It commits companies to internal controls, internal teams, independent external evaluators and board-level oversight."}},{"@type":"Question","name":"Is the White House AI accord binding?","acceptedAnswer":{"@type":"Answer","text":"No. Trump described it as \"morally binding\", but according to MercoPress it sets no consequences for breaches, and some academics criticised it as weak."}},{"@type":"Question","name":"What access did Anthropic give independent evaluators?","acceptedAnswer":{"@type":"Answer","text":"Anthropic says six METR staff were onboarded with employee-like access to company hardware, tools and systems, that METR will publish its risk assessments, and that Anthropic cannot veto those publications but can require redaction of predefined categories such as confidential IP."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/"},{"@type":"ListItem","position":2,"name":"AI news","item":"https://farseev.com/blog/"},{"@type":"ListItem","position":3,"name":"The White House AI Accord and Independent Evaluators","item":"https://farseev.com/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/","jobTitle":"Founder & CEO of SOMIN.ai; Guest Professor in AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="/#about">About</a><a href="/#research">Research</a><a href="/blog/" aria-current="page">AI news</a><a href="/#talks">Talks</a><a href="/#connect">Connect</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Language" translate="no"><option value="en" selected>English</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">AI news</a></li><li aria-current="page">The White House AI Accord and Independent Evaluators</li></ol></nav>
+      <p class="eyebrow">AI news, explained · Regulation and security</p>
+      <h1 class="h-display">The White House AI Accord and Independent Evaluators</h1>
+      <p class="lead">Tech leaders signed a voluntary White House accord promising outside evaluators, and Anthropic gave METR deep access. Why audits matter for marketing AI.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>The news: Tech leaders sign the White House Accord on Super Intelligence; Anthropic embeds METR evaluators with employee-like access (<time datetime="2026-09-29">29 September 2026</time>)</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 min read</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Voluntary commitments from AI companies have a mixed record. Some are forgotten within a year. What makes the latest one interesting is not the ceremony at the White House but one concrete idea inside it: independent evaluators. Two weeks later, one lab showed what that can look like in practice.</p>
+<h2>What happened</h2>
+<p>On 29 September, according to <a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a>, President Trump and the heads of several technology companies signed the &quot;White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities&quot;, a document of just over 300 words. The signatories listed are Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai and OpenAI president Greg Brockman, alongside the president.</p>
+<p>Forbes summarises four commitments for companies training and deploying frontier models: maintain internal controls that monitor model capabilities and alignment, including ensuring models do not access technical systems in unintended ways; have an internal team ensure those controls work and issues are fixed; partner with an &quot;independent external auditor or evaluator&quot;; and designate an &quot;independent committee of the board of directors&quot; to oversee the controls and auditors. Trump called the accord &quot;morally binding&quot; and &quot;almost like a constitution in a way&quot;. <a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a> notes that it sets no consequences for breaches and quotes University of Sydney professor Kimberlee Weatherall calling it &quot;deeply unimpressive&quot;.</p>
+<p>On 15 October, Anthropic published <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a>. It says it has given a team from METR, a nonprofit that evaluates frontier models, employee-like access: six METR staff onboarded with company hardware and internal tools, broadly on par with Anthropic's own risk teams. METR will publish its risk assessments; Anthropic says it cannot veto those publications, though it can require redaction of predefined categories such as confidential IP. Anthropic compares the model to bank supervisors placing examiners inside large banks, and says all frontier AI companies should do the same.</p>
+<h2>Why it matters</h2>
+<p>The accord is thin, and critics are right that a voluntary text without consequences guarantees nothing. But the independent-evaluator commitment is a useful hook, because it can be checked. Either a company has an outside evaluator with real access and freedom to publish, or it does not.</p>
+<p>Anthropic's arrangement sets a visible bar: deep access, publication rights and clear limits on redaction. Other companies can now be compared against it. That is how voluntary commitments become norms.</p>
+<h2>What my research says</h2>
+<p>My research field, explainable AI for marketing, rests on the same principle at a smaller scale: claims about what a model does should be verifiable by someone other than the model's owner. In <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) and <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), the explanation layer exists so that a marketer can check why a prediction was made instead of taking it on faith.</p>
+<p>I have argued in Forbes that <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">transparency matters for marketing-driven companies</a>. The frontier labs are now converging on a version of that for safety: internal controls, internal teams, external evaluators, board oversight. Marketing AI does not carry the same catastrophic risks, but it does carry real ones: biased targeting, misleading claims, privacy breaches, budgets spent on the wrong signal. The same four-layer structure scales down well.</p>
+<h2>A four-layer model for marketing AI governance</h2>
+<ul><li>Internal controls. Monitor what your AI systems do: which audiences they target, which claims they generate, which data they use.</li><li>An internal owner. Name a person or team responsible for checking those controls and fixing issues.</li><li>Outside eyes. Have an independent party, such as an auditor, a research partner or a second vendor, periodically test your key models and claims.</li><li>Senior oversight. Report AI risks to leadership the way you report financial risks, with the authority to pause a system.</li></ul>
+<p>When you buy marketing AI, ask vendors the same questions the accord raises. Who evaluates your models from outside? What access do they have? Can they publish what they find? The answers will tell you more than a feature list.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>What is the White House Accord on Super Intelligence?</summary><p>It is a voluntary document, titled &quot;Joint Commitment on Frontier Responsibilities&quot;, signed on 29 September 2026 by President Trump and leaders including Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai and Greg Brockman. It commits companies to internal controls, internal teams, independent external evaluators and board-level oversight.</p></details><details><summary>Is the White House AI accord binding?</summary><p>No. Trump described it as &quot;morally binding&quot;, but according to MercoPress it sets no consequences for breaches, and some academics criticised it as weak.</p></details><details><summary>What access did Anthropic give independent evaluators?</summary><p>Anthropic says six METR staff were onboarded with employee-like access to company hardware, tools and systems, that METR will publish its risk assessments, and that Anthropic cannot veto those publications but can require redaction of predefined categories such as confidential IP.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> is the founder and CEO of SOMIN.ai and a Guest Professor in AI at NUS and INSEAD. His peer-reviewed research covers multi-source user profiling, personality-aware recommendation and explainable AI for marketing.</p>
+<p class="links"><a href="/">About Aleks</a><a href="/#publications">Publications</a><a href="/blog/">More AI news</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keep reading</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">More AI news, explained</h2></div>
+    <div class="cards-3"><a class="pcard" href="/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Regulation and security · 12 October 2026</span><h3>Distillation Attacks: What Copied AI Models Mean for You</h3><p>US agencies named six Chinese AI firms in a distillation advisory, and Anthropic says its defences cut harvested data by 90 to 99%. What this means for buyers of AI.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/mas-ai-risk-management-guidelines/"><span class="meta">Regulation and security · 7 October 2026</span><h3>MAS AI Risk Guidelines: A Useful Template Beyond Banking</h3><p>MAS issued AI risk management guidelines for financial institutions. Their inventory and third-party rules make a good template for marketing teams.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads and marketing AI · 29 October 2026</span><h3>WPP's Q3 2026: The Agency Model Under AI Pressure</h3><p>WPP reported falling like-for-like net revenue while its CEO pointed to demand for AI-enabled services via WPP Open. What it says about agencies.</p><span class="go">Read →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">AI news blog</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#publications">Publications</a></li>
+          <li><a href="/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Elsewhere</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opinions are my own. News facts link to their sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

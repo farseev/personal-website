@@ -1,0 +1,54 @@
+title: AI's Deployment Gap Is a People Problem
+dek: Anthropic committed $100m to train 10,000 Frontier Deployed Engineers by 2027 with consultancies and banks. Why marketing needs its own version of this role.
+news: Anthropic launches Claude Frontier Academy with a $100 million commitment to train 10,000 engineers
+news_date: 2026-10-02
+published: 2026-11-08
+topic: Work and skills
+source: Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap | Anthropic | 2026-10-02 | https://www.anthropic.com/news/claude-frontier-academy
+---
+The most common reason AI projects disappoint is not the model. It is that nobody in the organisation knows how to turn a capable model into a working process. On 2 October Anthropic put a price on that problem: US$100 million to train 10,000 people whose job is exactly that.
+
+## What happened
+
+According to [Anthropic's announcement](https://www.anthropic.com/news/claude-frontier-academy), the new Claude Frontier Academy aims to train 10,000 "Frontier Deployed Engineers" by the end of 2027, backed by a US$100 million commitment. The first programme is a residency that, in Anthropic's words, "follows the medical model for building expertise". Organisations nominate strong engineers, each arriving with a named Claude project. They first attend a multi-day in-person programme with a simulated enterprise deployment and a graded practical, then spend 12 weeks leading a real use case at their own organisation with support from Anthropic engineers, followed by a final assessment.
+
+Cohorts are running in San Francisco, New York and London. Companies named in the first cohorts include Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk. Anthropic says the academy builds on its partner network, where professionals across 46,000 firms have earned more than 175,000 certifications.
+
+An Accenture lead quoted in the announcement says the residency assesses "judgment tested against a simulated enterprise deployment, not technical skills in isolation."
+
+## Why it matters
+
+Read the list of first participants: consultancies, banks, a pharmaceutical company. These are the organisations that will be deploying AI inside other companies, including inside marketing departments. The model is not new; field engineers and solution architects exist in every enterprise software category. What is new is the scale and the emphasis on judgement in real deployments.
+
+Marketing has the same gap, and fewer people working on it. Many teams now have access to excellent models and tools. Far fewer have someone whose job is to take a messy marketing process, such as competitor monitoring, creative testing or reporting, and redesign it around AI with measurement, guardrails and adoption built in.
+
+The cohort locations are also worth noting. None is in Asia. For our region, that is either a gap to fill locally or a sign that the first wave of certified deployment talent will be concentrated elsewhere.
+
+## What my research says
+
+In my view, the hardest step in applied AI is the one between a working model and a working process. Our research reflects that. In [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025) and in the [SOMIN industry demonstration at ACM Multimedia 2025](https://doi.org/10.1145/3746027.3761835), the contribution is not only the models but how they fit into a marketer's strategy work: performance prediction plus an LLM that explains and recommends.
+
+I have written in Forbes about [closing the gap between marketing and AI systems](https://www.forbes.com/councils/forbestechcouncil/2022/09/26/closing-the-gap-between-marketing-and-ai-systems/) and about [harnessing LLMs in business beyond chatbots](https://www.forbes.com/councils/forbestechcouncil/2023/07/26/beyond-chatbots-harnessing-the-power-of-llms-in-business/). The consistent theme is that value appears when someone understands both sides: what the model can reliably do, and what the business actually needs. That person is rare in marketing.
+
+I also teach, at NUS and INSEAD among others, and the medical-residency framing resonates with me. You do not learn deployment from slides. You learn it by owning a real case, under supervision, and being assessed on judgement.
+
+## How marketing teams can build this role now
+
+- Name an owner. Give one person explicit responsibility for turning AI capability into marketing process, with time to do it.
+- Learn on a real case. Pick one live workflow, such as weekly competitor reporting, and redesign it end to end, with a baseline and a target.
+- Pair marketing and engineering. The best deployments come from a marketer who knows the decision and a technologist who knows the system, working together.
+- Assess judgement, not tool fluency. Can the person explain when the AI should not be trusted and what happens then?
+- Share what works. Write down each deployment as a short case: the problem, the design, the result, the failure modes.
+
+A hundred million dollars is a large number for training. It is a small number compared with what organisations lose on AI projects that never make it into daily work. Marketing should not wait for someone else to train its deployers.
+
+## FAQ
+
+? What is Claude Frontier Academy?
+It is a training programme launched by Anthropic on 2 October 2026, backed by a US$100 million commitment, to train 10,000 Frontier Deployed Engineers by the end of 2027 through an in-person programme followed by a 12-week residency on a real project.
+
+? Which companies are in the first Claude Frontier Academy cohorts?
+Anthropic names Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk, among others, with cohorts in San Francisco, New York and London.
+
+? Why does marketing need AI deployment specialists?
+Because access to models is no longer the bottleneck. Value comes from redesigning real marketing workflows around AI with measurement and guardrails, which requires people who understand both the technology and the marketing decision.

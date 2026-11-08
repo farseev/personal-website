@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta's New AI Ad Tools: Automation Still Needs Explanation | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta's New AI Ad Tools: Automation Still Needs Explanation | Prof. Aleks Farseev" />
+<meta property="og:description" content="At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own." />
+<meta property="og:url" content="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — AI news, explained" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Ads and marketing AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta's New AI Ad Tools: Automation Still Needs Explanation | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Meta's New AI Ad Tools: Automation Still Needs Explanation","description":"At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own.","image":"https://farseev.com/og-image.png","inLanguage":"en","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/blog/#blog"},"articleSection":"Ads and marketing AI","about":{"@type":"Thing","name":"Meta announces new AI advertising tools at Advertising Week New York 2026"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"What AI ad tools did Meta announce at Advertising Week 2026?","acceptedAnswer":{"@type":"Answer","text":"According to Relevant Audience and TechJuice, Meta announced generally available Advantage+ creative video from static images, a wider rollout of Ads Creative Studio, an assistant with memory and tests of agentic actions, plain-language audience discovery in Detailed Targeting, an expanded Ads MCP server and tests of in-chat checkout."}},{"@type":"Question","name":"What is Meta's Ads MCP server?","acceptedAnswer":{"@type":"Answer","text":"It is an interface based on the Model Context Protocol that lets third-party AI tools connect to Meta's advertising system for tasks such as creative uploads, previews, reporting and drafting campaigns. Relevant Audience lists ten partners, including Databricks, Perplexity and Snowflake."}},{"@type":"Question","name":"Should advertisers let AI assistants change budgets and targeting?","acceptedAnswer":{"@type":"Answer","text":"Only with rules. Use previews and approvals, define which changes can happen automatically, and check results with independent measurement such as holdout tests rather than relying only on platform-reported conversions."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/"},{"@type":"ListItem","position":2,"name":"AI news","item":"https://farseev.com/blog/"},{"@type":"ListItem","position":3,"name":"Meta's New AI Ad Tools: Automation Still Needs Explanation","item":"https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/","jobTitle":"Founder & CEO of SOMIN.ai; Guest Professor in AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="/#about">About</a><a href="/#research">Research</a><a href="/blog/" aria-current="page">AI news</a><a href="/#talks">Talks</a><a href="/#connect">Connect</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Language" translate="no"><option value="en" selected>English</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">AI news</a></li><li aria-current="page">Meta's New AI Ad Tools: Automation Still Needs Explanation</li></ol></nav>
+      <p class="eyebrow">AI news, explained · Ads and marketing AI</p>
+      <h1 class="h-display">Meta's New AI Ad Tools: Automation Still Needs Explanation</h1>
+      <p class="lead">At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>The news: Meta announces new AI advertising tools at Advertising Week New York 2026 (<time datetime="2026-10-06">6 October 2026</time>)</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 min read</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Each year the big platforms take another step toward running the whole campaign for you. At Advertising Week New York on 6 October, Meta took several at once: an advertising assistant with memory, video generated from static images, plain-language audience discovery and an expanded server that lets outside AI tools operate its ads system. Useful tools. But automation without explanation is a risk you take on, not one Meta takes on for you.</p>
+<h2>What happened</h2>
+<p>I could not open Meta's own announcement page, so I rely on two detailed write-ups. According to <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Relevant Audience's breakdown</a> and <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">TechJuice's report</a>, Meta announced:</p>
+<ul><li>Advantage+ creative video from static images, now generally available, and catalog product video in beta for eligible advertisers.</li><li>Ads Creative Studio, a creative workspace previously limited to selected partners, beginning to roll out to more advertisers.</li><li>A business AI assistant with memory across conversations, with tests of importing strategy documents and brand guidelines, scheduled reports and alerts, and agentic actions such as campaign setup and budget changes with previews and approvals.</li><li>A customer lifecycle strategy tool, now available to all advertisers, plus AI-enabled audience discovery in Detailed Targeting, where advertisers describe an ideal customer in plain language. Relevant Audience reports Meta's timing for this as &quot;by the end of the year&quot;.</li><li>An expanded Ads MCP server, with ten named partners including Databricks, Perplexity, Snowflake and Triple Whale, so that third-party AI tools can work with Meta's advertising system.</li><li>Commerce features, including tests of direct checkout through Meta's Business Agent on Messenger with Shopify, and direct checkout in Meta AI with partners such as Adyen, PayPal, Shopify and Stripe.</li></ul>
+<p>Meta also claimed that advertisers who adopt its assistant's recommendations &quot;typically&quot; see 5% more conversions at the same cost per conversion, and that more than 60% of time on Facebook and Instagram is spent with video. Relevant Audience notes that Meta did not publish a method for these figures.</p>
+<h2>Why it matters</h2>
+<p>Two of these launches change who does the thinking.</p>
+<p>Plain-language audience discovery means the platform translates your description of a customer into targeting. That is a profiling decision. Assistant-driven budget and targeting changes mean the platform also decides what to do with the result. And the MCP server means the AI you use outside Meta can now act inside Meta.</p>
+<p>Each step saves time. Together they concentrate decisions inside systems that are optimised for the platform's objectives and measured with the platform's own data. When the same company sells the ad, chooses the audience, generates the creative and reports the result, an independent view becomes more valuable, not less.</p>
+<h2>What my research says</h2>
+<p>Describing an audience in words and getting a target segment back is a problem I have studied for a long time. Our work on <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">multi-view user personality profiling across Twitter, Facebook and PersonalityCafe</a> (Frontiers in Big Data, 2022) showed that what you infer about people depends heavily on which signals you use. A plain-language description is a hypothesis about your customer. It deserves to be tested, not just executed.</p>
+<p>On creative, my team has worked on scoring before launch. In <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) we demonstrated a multimodal model that scores an advertiser's Meta ad creatives, using text, image, targeting and settings, before they go live. In <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) we added an LLM assistant that explains what drives a predicted click-through rate. The principle is the same one I apply to platform tools: a score you cannot explain is a score you cannot learn from.</p>
+<p>Generated video from static images will multiply the number of variants a brand can run. That is good, provided someone still decides which variants deserve budget and understands why the winners won. Otherwise you get more creative and less knowledge.</p>
+<h2>What advertisers should do now</h2>
+<ul><li>Use the new video and creative tools, but keep a pre-launch filter. Review and score variants before they spend money, and keep a record of why each one shipped.</li><li>Treat plain-language audiences as experiments. Write the description, run it against your existing best audience, and compare cost per real outcome, not just platform conversions.</li><li>Approve agentic changes deliberately. Use the previews and approvals Meta describes, and set rules for which changes an assistant may make without a human.</li><li>Be careful what you import. Strategy documents and brand guidelines are sensitive. Decide what the assistant really needs.</li><li>Keep an independent measurement view. Holdouts, incrementality tests and your own analytics are the counterweight to platform-reported results.</li></ul>
+<p>Meta's tools are getting good enough that the bottleneck moves from execution to judgement. Make sure your team is still the one exercising it.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>What AI ad tools did Meta announce at Advertising Week 2026?</summary><p>According to Relevant Audience and TechJuice, Meta announced generally available Advantage+ creative video from static images, a wider rollout of Ads Creative Studio, an assistant with memory and tests of agentic actions, plain-language audience discovery in Detailed Targeting, an expanded Ads MCP server and tests of in-chat checkout.</p></details><details><summary>What is Meta's Ads MCP server?</summary><p>It is an interface based on the Model Context Protocol that lets third-party AI tools connect to Meta's advertising system for tasks such as creative uploads, previews, reporting and drafting campaigns. Relevant Audience lists ten partners, including Databricks, Perplexity and Snowflake.</p></details><details><summary>Should advertisers let AI assistants change budgets and targeting?</summary><p>Only with rules. Use previews and approvals, define which changes can happen automatically, and check results with independent measurement such as holdout tests rather than relying only on platform-reported conversions.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> is the founder and CEO of SOMIN.ai and a Guest Professor in AI at NUS and INSEAD. His peer-reviewed research covers multi-source user profiling, personality-aware recommendation and explainable AI for marketing.</p>
+<p class="links"><a href="/">About Aleks</a><a href="/#publications">Publications</a><a href="/blog/">More AI news</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keep reading</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">More AI news, explained</h2></div>
+    <div class="cards-3"><a class="pcard" href="/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Ads and marketing AI · 29 October 2026</span><h3>WPP's Q3 2026: The Agency Model Under AI Pressure</h3><p>WPP reported falling like-for-like net revenue while its CEO pointed to demand for AI-enabled services via WPP Open. What it says about agencies.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">Ads and marketing AI · 21 October 2026</span><h3>Meta Q3 2026: AI Lifts Ad Prices, Creators Become a Channel</h3><p>Meta's Q3 2026: ad revenue up 26%, price per ad up 14%, partnership ads past a $15bn run rate, and a very different Asia-Pacific. What it means.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">Ads and marketing AI · 30 September 2026</span><h3>Amazon Ads Agent: Retail Media Goes Agentic at unBoxed 2026</h3><p>At unBoxed 2026 Amazon merged its buying tools into Amazon Ads Agent, with conversational measurement and AI creative. What to keep in human hands.</p><span class="go">Read →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">AI news blog</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#publications">Publications</a></li>
+          <li><a href="/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Elsewhere</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opinions are my own. News facts link to their sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

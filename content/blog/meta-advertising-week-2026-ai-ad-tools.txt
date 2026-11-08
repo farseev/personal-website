@@ -1,0 +1,60 @@
+title: Meta's New AI Ad Tools: Automation Still Needs Explanation
+dek: At Advertising Week New York, Meta expanded AI video, its ads assistant, plain-language audiences and an Ads MCP server. What marketers should still own.
+news: Meta announces new AI advertising tools at Advertising Week New York 2026
+news_date: 2026-10-06
+published: 2026-11-08
+topic: Ads and marketing AI
+source: Meta's Advertising Week 2026 ad tools: what is live, in test or coming | Relevant Audience | 2026-10-08 | https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/
+source: Meta unveils AI advertising tools at Advertising Week 2026 | TechJuice | 2026-10-07 | https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/
+---
+Each year the big platforms take another step toward running the whole campaign for you. At Advertising Week New York on 6 October, Meta took several at once: an advertising assistant with memory, video generated from static images, plain-language audience discovery and an expanded server that lets outside AI tools operate its ads system. Useful tools. But automation without explanation is a risk you take on, not one Meta takes on for you.
+
+## What happened
+
+I could not open Meta's own announcement page, so I rely on two detailed write-ups. According to [Relevant Audience's breakdown](https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/) and [TechJuice's report](https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/), Meta announced:
+
+- Advantage+ creative video from static images, now generally available, and catalog product video in beta for eligible advertisers.
+- Ads Creative Studio, a creative workspace previously limited to selected partners, beginning to roll out to more advertisers.
+- A business AI assistant with memory across conversations, with tests of importing strategy documents and brand guidelines, scheduled reports and alerts, and agentic actions such as campaign setup and budget changes with previews and approvals.
+- A customer lifecycle strategy tool, now available to all advertisers, plus AI-enabled audience discovery in Detailed Targeting, where advertisers describe an ideal customer in plain language. Relevant Audience reports Meta's timing for this as "by the end of the year".
+- An expanded Ads MCP server, with ten named partners including Databricks, Perplexity, Snowflake and Triple Whale, so that third-party AI tools can work with Meta's advertising system.
+- Commerce features, including tests of direct checkout through Meta's Business Agent on Messenger with Shopify, and direct checkout in Meta AI with partners such as Adyen, PayPal, Shopify and Stripe.
+
+Meta also claimed that advertisers who adopt its assistant's recommendations "typically" see 5% more conversions at the same cost per conversion, and that more than 60% of time on Facebook and Instagram is spent with video. Relevant Audience notes that Meta did not publish a method for these figures.
+
+## Why it matters
+
+Two of these launches change who does the thinking.
+
+Plain-language audience discovery means the platform translates your description of a customer into targeting. That is a profiling decision. Assistant-driven budget and targeting changes mean the platform also decides what to do with the result. And the MCP server means the AI you use outside Meta can now act inside Meta.
+
+Each step saves time. Together they concentrate decisions inside systems that are optimised for the platform's objectives and measured with the platform's own data. When the same company sells the ad, chooses the audience, generates the creative and reports the result, an independent view becomes more valuable, not less.
+
+## What my research says
+
+Describing an audience in words and getting a target segment back is a problem I have studied for a long time. Our work on [multi-view user personality profiling across Twitter, Facebook and PersonalityCafe](https://doi.org/10.3389/fdata.2022.931206) (Frontiers in Big Data, 2022) showed that what you infer about people depends heavily on which signals you use. A plain-language description is a hypothesis about your customer. It deserves to be tested, not just executed.
+
+On creative, my team has worked on scoring before launch. In [SoCraft](https://doi.org/10.1145/3539597.3573032) (WSDM 2023) we demonstrated a multimodal model that scores an advertiser's Meta ad creatives, using text, image, targeting and settings, before they go live. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) we added an LLM assistant that explains what drives a predicted click-through rate. The principle is the same one I apply to platform tools: a score you cannot explain is a score you cannot learn from.
+
+Generated video from static images will multiply the number of variants a brand can run. That is good, provided someone still decides which variants deserve budget and understands why the winners won. Otherwise you get more creative and less knowledge.
+
+## What advertisers should do now
+
+- Use the new video and creative tools, but keep a pre-launch filter. Review and score variants before they spend money, and keep a record of why each one shipped.
+- Treat plain-language audiences as experiments. Write the description, run it against your existing best audience, and compare cost per real outcome, not just platform conversions.
+- Approve agentic changes deliberately. Use the previews and approvals Meta describes, and set rules for which changes an assistant may make without a human.
+- Be careful what you import. Strategy documents and brand guidelines are sensitive. Decide what the assistant really needs.
+- Keep an independent measurement view. Holdouts, incrementality tests and your own analytics are the counterweight to platform-reported results.
+
+Meta's tools are getting good enough that the bottleneck moves from execution to judgement. Make sure your team is still the one exercising it.
+
+## FAQ
+
+? What AI ad tools did Meta announce at Advertising Week 2026?
+According to Relevant Audience and TechJuice, Meta announced generally available Advantage+ creative video from static images, a wider rollout of Ads Creative Studio, an assistant with memory and tests of agentic actions, plain-language audience discovery in Detailed Targeting, an expanded Ads MCP server and tests of in-chat checkout.
+
+? What is Meta's Ads MCP server?
+It is an interface based on the Model Context Protocol that lets third-party AI tools connect to Meta's advertising system for tasks such as creative uploads, previews, reporting and drafting campaigns. Relevant Audience lists ten partners, including Databricks, Perplexity and Snowflake.
+
+? Should advertisers let AI assistants change budgets and targeting?
+Only with rules. Use previews and approvals, define which changes can happen automatically, and check results with independent measurement such as holdout tests rather than relying only on platform-reported conversions.

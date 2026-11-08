@@ -1,0 +1,56 @@
+title: Anthropic Opens in Singapore: What the MOU Really Signals
+dek: Anthropic opened a Singapore office and signed an MOU with MDDI on AI safety and evaluation. Why testing in local languages is the real story.
+news: Anthropic opens a Singapore office and signs an MOU with Singapore's Ministry of Digital Development and Information
+news_date: 2026-10-14
+published: 2026-11-08
+topic: Asia and Singapore
+source: Anthropic opens Singapore office and signs MOU with the Government of Singapore | Anthropic | 2026-10-14 | https://www.anthropic.com/news/singapore-office-opening
+---
+Another AI lab has planted a flag in Singapore. On 14 October Anthropic opened an office here and signed a memorandum of understanding with the government. I live and build in this city, so I read the announcement with two questions: what does it actually commit to, and what does it change for companies that use AI to talk to customers in Asia?
+
+## What happened
+
+According to [Anthropic's announcement](https://www.anthropic.com/news/singapore-office-opening), Singapore is its fifth office in Asia-Pacific. The MOU is with the Ministry of Digital Development and Information (MDDI). It was signed by MDDI Permanent Secretary Kai Fong Chng and Anthropic co-founder Ben Mann on the sidelines of Singapore International Cyber Week, and witnessed by Minister Josephine Teo.
+
+The MOU covers three areas: cooperation on AI safety, security and model evaluation; research on AI adoption and its impact; and responsible adoption across the public and private sectors. Planned activities include technical exchanges with Singapore's AI safety and assurance institutions on evaluation, testing standards and incident response, support for small and medium-sized businesses, and sharing research such as Anthropic's Economic Index.
+
+Some numbers in the post stood out. Anthropic says Singapore ranks second of 121 countries for Claude.ai usage relative to population, at nearly six times what its size would predict. It says more than 1,500 engineers and technical staff at GovTech Singapore have adopted Claude Code, and that Grab's BriX sales assistant, built on Claude, saves its sales teams about 40,000 hours a quarter. These are the company's own figures.
+
+The detail I found most interesting is historical. Anthropic says it joined the Generative AI Evaluation Sandbox run by IMDA and the AI Verify Foundation in 2023, and later partnered with them on a red-teaming project in English, Mandarin, Malay and Tamil.
+
+## Why it matters
+
+Office openings are easy to over-read. An MOU is a statement of intent, not a product. I made a related point recently on e27: [Singapore and Romania don't need another MOU, they need first customers](https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/). Agreements matter when they turn into work that someone can use.
+
+What makes this one worth watching is the evaluation clause. Singapore has been unusually consistent about treating AI evaluation as infrastructure: sandboxes, testing toolkits, and now model-evaluation exchanges with a frontier lab. For businesses, that is the part that compounds. Clear testing standards make it cheaper for a bank, a telco or a retailer to say yes to an AI deployment, because the burden of proof is shared and documented.
+
+The multilingual red-teaming matters for a different reason. Most published safety and quality testing still happens in English. Southeast Asia does not shop, complain or search in English only. A model that behaves well in English and drifts in Malay or Tamil is not a safe model for this market.
+
+## What my research says
+
+My PhD work at NUS was about learning who people are from many sources at once: posts, images, check-ins and sensor data across different networks. One finding that has stayed with me came later, in [I Know Where You Are Coming From](https://doi.org/10.1609/aaai.v34i10.7258) (AAAI 2020): the data source you choose changes how accurate your AI user model is. Language is a source, too. A model evaluated on one language has not been evaluated on the population you serve.
+
+The same logic drives my work on explainable AI for marketing. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) we predicted click-through rates for new ad creatives and used an LLM assistant to explain what drove the prediction. In [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025) we combined creative scoring with LLMs to co-create strategy from real ad data. In both cases, the explanation is what lets a marketer trust and act on the output. Evaluation and explanation are two halves of the same promise: show me that it works, and show me why.
+
+So when a government and a lab agree to work on evaluation standards, I read it as good news for marketers, not only for regulators. It is the beginning of a shared language for "this AI is fit for this job in this market".
+
+## What companies in Singapore should do now
+
+- Test in the languages your customers use. If your chatbot or content tool serves Malay, Tamil or Mandarin speakers, evaluate it in those languages before launch, not only in English.
+- Document your evaluation, even if nobody asks yet. A short record of what you tested, how and with what result is the cheapest compliance asset you will ever build.
+- Ask vendors about evaluation, not only features. Which tests did they run, in which languages, and what failed?
+- Use the public programmes. SMEs in particular should look at what the government and its partners offer under this MOU and similar schemes before buying expensive consulting.
+- Keep humans on the final call for anything that speaks for your brand in a new language.
+
+Singapore is good at turning agreements into standards. If this MOU produces practical evaluation guidance for multilingual AI, it will matter well beyond one company's office.
+
+## FAQ
+
+? What does Anthropic's MOU with Singapore cover?
+According to Anthropic, it covers cooperation on AI safety, security and model evaluation, research on AI adoption and its impact, and responsible AI adoption across the public and private sectors, including support for SMEs and public officers.
+
+? Who signed the MOU?
+MDDI Permanent Secretary Kai Fong Chng and Anthropic co-founder Ben Mann signed it on the sidelines of Singapore International Cyber Week, witnessed by Minister for Digital Development and Information Josephine Teo and Anthropic's Head of APAC Policy, Michael Sellitto.
+
+? Why does multilingual AI evaluation matter for marketers in Asia?
+Because customers in Southeast Asia use many languages, and a model's quality and safety in English does not guarantee the same behaviour in Malay, Tamil or Mandarin. Testing in each customer language reduces the risk of off-brand or unsafe output.

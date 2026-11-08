@@ -1,0 +1,56 @@
+title: Claude Haiku 5.5 and the Case for Small Models in Marketing
+dek: Anthropic's Claude Haiku 5.5 is built for cheap, fast, high-volume work. Why the smallest model in a family is often the most important one for marketers.
+news: Anthropic releases Claude Haiku 5.5, a small model for high-volume, cost-sensitive work
+news_date: 2026-10-07
+published: 2026-11-08
+topic: Models
+source: Introducing Claude Haiku 5.5 | Anthropic | 2026-10-07 | https://www.anthropic.com/claude-haiku-5-5
+---
+Every model launch gets measured against the biggest model in the room. I think that is the wrong lens for most marketing work. On 7 October Anthropic released Claude Haiku 5.5, and the interesting part is not how close it gets to the frontier. It is what it costs to run a million times.
+
+## What happened
+
+Anthropic calls Haiku 5.5 [the cheapest, fastest and most capable small model it has released](https://www.anthropic.com/claude-haiku-5-5). It is aimed at high-volume, cost-sensitive work: summaries, classification, database queries, live customer support, browser use and subagent work alongside the larger Opus 5.5 and Sonnet 5.5 models. It is the first Haiku-class model with an adjustable effort setting, so users can trade cost against intelligence. Anthropic is explicit that Sonnet 5.5 and Opus 5.5 remain better for complex agentic coding.
+
+The price is the headline. For prompts up to 100,000 tokens, Anthropic lists US$0.10 per million input tokens and US$0.50 per million output tokens, and says Haiku 5.5 costs about 75% less than Haiku 4.5 on average. The launch page also includes customer reports; HubSpot, for example, says it scored 92.8% on its CRM evaluation suite. Those are the company's and its customers' figures, not independent tests.
+
+## Why it matters
+
+Marketing AI is a volume business. A single campaign can involve thousands of creative variants, tens of thousands of comments to classify, product feeds with hundreds of thousands of rows, and daily reports across dozens of markets. Almost none of that needs the most powerful model available. It needs a model that is good enough, fast, predictable and cheap enough to run on everything.
+
+When the small model gets much better and much cheaper at the same time, the economics of what you automate change. Tasks that were too expensive to run on every item, like tagging every competitor ad or summarising every customer review, become routine. And the architecture changes: a large model plans and judges, small models do the repetitive work underneath. Anthropic's own description of Haiku as a subagent is exactly that pattern.
+
+## What my research says
+
+I have argued this for a long time. In Forbes I asked whether [bigger is better](https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/), and later compared [LLMs and small neural networks in marketing](https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/). My answer has not changed: model size matters far less than technique and fit for the task.
+
+Our research has always combined the two kinds of model rather than choosing one. In [SoCraft](https://doi.org/10.1145/3539597.3573032) (WSDM 2023) we demonstrated a multimodal model that scores an advertiser's Meta ad creatives, using text, image, targeting and settings, before launch. In [Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing](https://doi.org/10.1145/3725885) (ACM Transactions on Information Systems, 2025) we paired ad-performance prediction models with LLMs, so that a creative score becomes a recommendation a marketer can act on.
+
+The lesson from that work is that specialised, efficient models do the measuring and large language models do the explaining. A cheaper, more capable small LLM does not replace the specialised predictor. It makes the explanation and orchestration layer affordable at the scale where marketing actually happens.
+
+## How I would use a model like this
+
+- Classification at full coverage. Tag every competitor post, every review, every ad in your category by theme, offer and format, instead of sampling.
+- First-pass summaries. Turn long reports, transcripts and comment threads into short digests that a person, or a larger model, reviews.
+- Subagents in a pipeline. Let a larger model plan a competitor analysis and hand the repetitive extraction steps to the small model.
+- Customer-facing speed. Use the fast model where latency matters, such as live chat, and route difficult cases to a stronger model or a human.
+
+## What marketers should check before switching
+
+- Run your own evaluation. Vendor benchmarks are not your task. Take 200 real examples from your work, label them, and compare models on that set.
+- Watch cost per task, not cost per token. Anthropic notes that Haiku 5.5 uses a new tokenizer and slightly more tokens per task. The bill depends on the whole workflow.
+- Use the effort setting deliberately. Default to low effort for simple tagging and raise it only where your evaluation shows a quality gain.
+- Keep the specialised models where they are better. If you already have a model trained on your own performance data, an LLM should explain its output, not replace it.
+
+The frontier gets the headlines. The small model is where most of the work, and most of the savings, will be.
+
+## FAQ
+
+? What is Claude Haiku 5.5 designed for?
+Anthropic positions it for high-volume, cost-sensitive work such as summaries, classification, database queries, live customer support, browser use and subagent tasks, while recommending Sonnet 5.5 and Opus 5.5 for complex agentic coding.
+
+? How much does Claude Haiku 5.5 cost?
+Anthropic lists US$0.10 per million input tokens and US$0.50 per million output tokens for prompts up to 100,000 tokens, and says it costs about 75% less than Haiku 4.5 on average.
+
+? Are small language models good enough for marketing tasks?
+For many high-volume tasks, such as tagging, summarising and routing, a well-chosen small model is enough and much cheaper. Test on your own labelled examples, and keep specialised predictive models for jobs like creative scoring, using LLMs to explain their output.

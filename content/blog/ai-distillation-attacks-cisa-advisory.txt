@@ -1,0 +1,53 @@
+title: Distillation Attacks: What Copied AI Models Mean for You
+dek: US agencies named six Chinese AI firms in a distillation advisory, and Anthropic says its defences cut harvested data by 90 to 99%. What this means for buyers of AI.
+news: CISA, NSA and FBI issue an advisory on industrial-scale distillation of US AI models; Anthropic reports new anti-distillation defences
+news_date: 2026-10-12
+published: 2026-11-08
+topic: Regulation and security
+source: Chinese AI firms are siphoning capabilities from American models, CISA warns | Help Net Security | 2026-09-09 | https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies
+source: Strengthening our defenses against distillation attacks | Anthropic | 2026-10-12 | https://www.anthropic.com/news/distillation-defenses
+---
+"Distillation" used to be a polite word in machine learning. It described training a small model to imitate a large one, a standard and useful technique. In September and October 2026 it became a security and trade story. If you buy or build AI for marketing, you should understand both meanings.
+
+## What happened
+
+In early September, CISA, the NSA and the FBI published a joint advisory on what they describe as industrial-scale knowledge distillation by China-based AI companies. According to [Help Net Security's report on the advisory](https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies), the agencies named DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun and Z.AI, and said they had extracted billions of tokens through millions of requests to US frontier models since at least late 2024. The advisory lists detection signals, such as round-the-clock usage without human idle time and pools of accounts behaving in coordination, and recommends stronger identity checks, monitoring and information sharing between AI providers. The report notes it did not include a statement from the companies named.
+
+On 12 October Anthropic described its own response. In [Strengthening our defenses against distillation attacks](https://www.anthropic.com/news/distillation-defenses), it said early evidence suggests its methods have reduced the data harvested by distillers by around 90 to 99%. The measures include preventing newer API accounts from editing Claude's prior reasoning, a two-stage classifier trained on extraction attempts with a false positive rate below 0.1%, stricter limits and bans for repeated attempts, and charging for requests blocked by its safeguards. Anthropic says it has banned tens of thousands of distillation-linked accounts and expects an ongoing "cat-and-mouse game".
+
+## Why it matters
+
+There are two reasons a marketer should care about a fight between AI labs.
+
+The first is supply-chain risk. If a model was built by copying another model's behaviour without permission, you do not know which safeguards came with it. Anthropic's post argues that distilled models can approach frontier capability while shipping with weaker protections. When you choose a model to run your customer service or to generate ads, provenance is part of quality.
+
+The second is friction for legitimate users. Defences have costs. Anthropic acknowledges that some developers had to update integrations, that a small share of benign requests can be blocked, and that blocked requests can now be charged. If your marketing stack makes heavy automated calls to a frontier API, some of that traffic can look like an extraction campaign. Read your providers' policies now, not after your pipeline breaks.
+
+## What my research says
+
+Distillation is not the villain here. Done legitimately, it is how we make AI affordable. A big model teaches a small one; the small one runs cheaply at scale. I have argued in Forbes that in marketing, [technique matters more than model size](https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/), and distillation is one of those techniques.
+
+What changes the picture is consent and transparency. My work on explainable AI starts from a simple principle: a marketer should be able to see why a system recommends something. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) we paired click-through-rate prediction with an LLM assistant that explains the drivers. In [SOMONITOR](https://arxiv.org/abs/2407.13117) (a 2024 preprint) we described combining explainable performance models with LLMs for competitor analytics. Explanations only mean something if you know what the model is and where it came from.
+
+There is also an irony worth noticing. The defence Anthropic describes, summarising or restricting access to the model's full reasoning, makes systems a little less transparent to everyone, because the reasoning is what copiers want. That trade-off will shape how much explanation AI vendors are willing to expose. Buyers should ask for explanations designed for them, about their data and their decisions, rather than raw reasoning traces.
+
+## What buyers of marketing AI should do now
+
+- Ask every vendor which models sit under their product and where those models come from.
+- Check the terms of the APIs you call. Automated, high-volume use is normal in marketing; make sure yours is clearly legitimate, identified and within limits.
+- Plan for a model switch. Policies, prices and access can change quickly. Keep prompts, procedures and evaluation sets portable.
+- Distil your own models legitimately. If you need a cheap model for a narrow task, train it on your own data or on outputs you are licensed to use.
+- Prefer explanations of decisions over exposure of internals. What you need to audit is why a recommendation was made for your campaign.
+
+The distillation fight is about who gets to copy whom. For marketers, it is a reminder that "which model?" is now a governance question, not just a technical one.
+
+## FAQ
+
+? What is an AI distillation attack?
+It is a covert, large-scale campaign that extracts a model's capabilities by querying it, often through networks of fraudulent accounts, and uses the outputs to train another model without the original developer's permission.
+
+? Which companies did the US advisory name?
+According to Help Net Security's report, the CISA, NSA and FBI advisory named DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun and Z.AI. The report did not include a response from the companies.
+
+? Is model distillation always bad?
+No. Distillation is a standard technique for training a smaller, cheaper model from a larger one. The problem is unauthorised extraction from someone else's model, which raises questions about consent, safeguards and provenance.

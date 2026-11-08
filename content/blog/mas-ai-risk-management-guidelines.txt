@@ -1,0 +1,55 @@
+title: MAS AI Risk Guidelines: A Useful Template Beyond Banking
+dek: MAS issued AI risk management guidelines for financial institutions. Their inventory and third-party rules make a good template for marketing teams.
+news: MAS issues Guidelines on Artificial Intelligence Risk Management for financial institutions
+news_date: 2026-10-07
+published: 2026-11-08
+topic: Regulation and security
+source: MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions | Monetary Authority of Singapore | 2026-10-07 | https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions
+---
+Regulation written for banks rarely makes marketers excited. This one should at least make them take notes. On 7 October the Monetary Authority of Singapore published its Guidelines on Artificial Intelligence Risk Management. Banks, insurers and other financial institutions are the direct audience. But the logic of the guidelines is a clean template for any team that uses AI to make decisions about customers, including marketing.
+
+## What happened
+
+According to [MAS's media release](https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions), the guidelines apply to all financial institutions and all forms of AI technology, with a "principles-based and risk-proportionate approach". MAS consulted on them in November 2025.
+
+The expectations fall into a few groups. Boards and senior management should oversee AI risks and set clear roles, risk appetite and frameworks; a dedicated AI committee is not required if existing structures provide adequate oversight. Institutions should identify their AI use, maintain inventories, assess how material each use is, and apply proportionate controls across the life cycle, covering data governance, testing, human oversight, cybersecurity, monitoring and change management. They remain accountable for AI used in their services even when it comes from third parties, and should obtain assurance and apply compensating controls, or limit, suspend or replace a service whose risks fall outside their appetite.
+
+The guidelines take effect on 7 October 2027, with some sections applying by 7 October 2028. MAS also flagged the growing use of agentic AI systems that can act autonomously and use tools, and said it intends to consult the sector in 2027 on what additional guidance would be useful.
+
+## Why it matters
+
+Look at where AI touches customers in a bank today: product recommendations, next-best-offer engines, chatbots, credit marketing, fraud screening, generated content in campaigns. A lot of it is run or commissioned by marketing. Under these guidelines, much of it needs to be in an inventory, assessed for materiality and governed across its life cycle.
+
+The third-party clause matters most for marketing. Marketing teams buy a lot of AI: from ad platforms, martech vendors, agencies and freelancers using their own tools. MAS is clear that the institution stays accountable. "The vendor did it" is not a control.
+
+And the timeline is generous but not long. A year until the main sections take effect is enough time to build an inventory properly, and not enough time to do it in the last quarter.
+
+## What my research says
+
+I gave a talk at WSDM 2023 titled [Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation](https://doi.org/10.1145/3539597.3575791). The core argument was that the ethics and privacy questions around automated profiling, targeting and creative scoring are not abstract. They come from specific design choices that can be documented and controlled.
+
+That is exactly what an AI inventory forces you to do. For each use, write down what data goes in, what decision comes out, who checks it and what happens when it goes wrong. My research on explainable AI for marketing, from [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) to [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025), was built on the same instinct: if a model's recommendation affects money or customers, the people responsible should be able to see why it made that recommendation.
+
+I have also argued in Forbes that [transparency matters for marketing-driven companies](https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/). Regulators are now turning that principle into supervisory expectations. Teams that already practise explainability will find compliance much cheaper.
+
+## A practical checklist for marketing teams (in finance and beyond)
+
+- Build the inventory. List every AI system marketing uses or commissions: targeting, recommendations, chatbots, content generation, creative scoring, analytics.
+- Rate materiality honestly. A tool that drafts internal notes is low risk. A model that decides which customers see a credit offer is not.
+- Map third parties. For each vendor and agency, record which AI they use on your behalf and what assurance you have received.
+- Put humans where it matters. Define where human review is required before customer-facing output goes live.
+- Monitor after launch. Models drift and campaigns change. Schedule reviews, especially after vendor model updates.
+- Watch the agentic consultation. If you are piloting agents that act on customer data, expect specific guidance and design for auditability now.
+
+Singapore regulators have a habit of writing guidance that later becomes the regional default. If your company operates across Southeast Asia, it is reasonable to treat these guidelines as a preview, even if you are not a bank.
+
+## FAQ
+
+? When do the MAS AI risk management guidelines take effect?
+MAS says the guidelines take effect on 7 October 2027, with institutions able to phase implementation and certain later sections applying by 7 October 2028.
+
+? Do the MAS guidelines cover AI from vendors?
+Yes. MAS says financial institutions remain accountable for AI used in their services, including AI from third parties, and should obtain assurance, assess suitability and apply compensating controls, or limit, suspend or replace a service if risks fall outside their risk appetite.
+
+? Do the MAS guidelines cover agentic AI?
+MAS flagged the growing use of agentic AI systems that can act autonomously and access tools, and said it intends to consult the sector in 2027 on what additional guidance on agentic AI would be useful.

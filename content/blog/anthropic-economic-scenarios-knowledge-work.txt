@@ -1,0 +1,52 @@
+title: Three AI Economic Scenarios and the Future of Marketing Jobs
+dek: Anthropic published three scenarios for AI's effect on the US economy to 2030, from modest to extreme. What the knowledge-work findings mean for marketing careers.
+news: Anthropic publishes an interactive explorer of economic scenarios for transformative AI
+news_date: 2026-09-09
+published: 2026-11-08
+topic: Work and skills
+source: Scenarios for our Economic Future | Anthropic | 2026-09-09 | https://www.anthropic.com/institute/econ-scenarios
+---
+Most forecasts about AI and jobs give you one number and a lot of confidence. In September Anthropic published something more useful: three scenarios, with the assumptions written down. Marketing is knowledge work, so I read it as a forecast about my own field and the people I teach.
+
+## What happened
+
+Anthropic's Economics team released [Scenarios for our Economic Future](https://www.anthropic.com/institute/econ-scenarios), an interactive explorer based on a technical report, *Economic Scenarios for Transformative AI* (Korinek et al., 2026). It models how AI could affect jobs, growth and unemployment in the United States through 2030, treating the economy as bundles of tasks that AI can augment, automate or create.
+
+There are three scenarios. In the modest one, AI's impact resembles the internet's, with US GDP reaching US$34.1 trillion in 2030. In the substantial one, AI can do half of knowledge work by 2030 but most of it is still done without AI; growth runs at about twice the normal rate, GDP reaches US$36.3 trillion, and knowledge-worker wages are roughly flat while other workers see gains. In the extreme one, AI outperforms humans on most knowledge tasks, growth reaches 15% a year, GDP reaches US$44.4 trillion, unemployment could rise beyond typical recession levels and knowledge-worker wages fall by more than 10%.
+
+Across scenarios, labour's share of GDP falls as capital's share rises. Anthropic also surveyed 10,980 members of the public. It states that "the main challenge is not achieving economic growth, but making sure the benefits are broadly shared", and calls the tool a version 1.0 whose actual outcomes may differ materially.
+
+## Why it matters
+
+Notice where the pressure lands. In the substantial and extreme scenarios, it is knowledge occupations that face displacement, while demand rises in other occupations. Marketing sits squarely in the knowledge column: research, writing, analysis, planning, reporting.
+
+The substantial scenario is the one I find most realistic as a planning base, and its most interesting detail is the gap: AI can do half of knowledge work, yet most of it is still done without AI. That gap is where careers will be made or lost over the next few years. The question for a marketer is not whether AI can do parts of the job. It is whether you are the person who knows how to apply it to the parts that matter.
+
+## What my research says
+
+I have argued in my [Forbes columns](https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/) that marketers need to evolve from manual content creators into curators of autonomous AI tools, and I asked a related question in [Will AI Make Agencies Obsolete?](https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/) The scenarios give that argument a sharper edge. If tasks are what get automated, then a job built only from automatable tasks is fragile, and a job built around judgement, context and accountability is resilient.
+
+My research suggests where the durable value sits. In [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025) we framed AI as a co-creator of marketing strategy, combining creative performance scoring with LLMs, with the human steering. In [Fusing Predictive and Large Language Models](https://doi.org/10.1145/3725885) (ACM TOIS 2025) the output is a recommendation a marketer must still choose to act on. These systems remove a lot of analysis work. They increase the value of the person who frames the question, judges the trade-offs and owns the decision.
+
+Our SIGIR 2026 paper on [countering content homogenization](https://doi.org/10.1145/3805712.3808371) adds a market-level point. When everyone uses the same tools on the same tasks, outputs converge. Distinctiveness becomes scarce, and scarce things command a premium. The marketers who can make AI-assisted work sound and perform like nobody else's will be in demand in every scenario.
+
+## What marketers should do now
+
+- Map your own job into tasks. Mark which ones AI already does well, which it assists, and which still need you. Shift your time toward the last group deliberately.
+- Learn to evaluate, not just prompt. Being able to judge AI output against real data is the skill the scenarios reward.
+- Own outcomes, not outputs. Roles defined by deliverables are easier to automate than roles defined by results.
+- Build domain depth. Context about a market, a category or a customer is hard for general models to replicate.
+- Push for shared gains. If AI raises productivity in your team, argue for training, career paths and new roles, not only for cost cuts.
+
+Scenarios are not predictions. Their value is that they make the assumptions discussable. For marketing, the assumption worth discussing is simple: the tasks will change faster than the job titles. Plan for that.
+
+## FAQ
+
+? What are Anthropic's three economic scenarios for AI?
+Modest, where AI's impact resembles the internet's; substantial, where AI can do half of knowledge work by 2030 and growth runs at about twice the normal rate; and extreme, where AI outperforms humans on most knowledge tasks and growth reaches 15% a year, with higher unemployment possible.
+
+? What do the scenarios say about knowledge workers?
+In the substantial scenario, knowledge-worker wages are roughly flat while other workers see gains. In the extreme scenario, knowledge-worker wages fall by more than 10% and knowledge occupations face displacement.
+
+? How should marketers prepare for AI's impact on jobs?
+Break the job into tasks, shift time toward judgement and accountability, learn to evaluate AI output against real data, build domain depth and focus on outcomes rather than deliverables.

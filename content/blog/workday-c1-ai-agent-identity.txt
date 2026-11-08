@@ -1,0 +1,55 @@
+title: Workday Buys C1.ai: Your Marketing Agents Need Identities Too
+dek: Workday agreed to buy C1.ai, which governs access for people and AI agents. Marketing agents that touch CRM and ad accounts need the same rules.
+news: Workday signs a definitive agreement to acquire C1.ai, an agentic identity platform for people and agents
+news_date: 2026-10-13
+published: 2026-11-08
+topic: Agents
+source: Workday to Acquire C1.ai, a Leading Agentic Identity Platform for People and Agents | Workday Newsroom | 2026-10-13 | https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents
+---
+When a new employee joins, someone creates their accounts, decides what they can see, and removes access when they leave. When a new AI agent joins your marketing team, who does that? On 13 October Workday announced it will buy a company whose whole business is answering that question.
+
+## What happened
+
+According to [Workday's press release](https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents), it has signed a definitive agreement to acquire C1.ai, an "agentic identity platform for people and agents". The price was not disclosed, and the deal is expected to close in the fourth quarter of Workday's fiscal year 2027, which ends on 31 January 2027, subject to customary conditions.
+
+C1.ai connects to business systems such as email, CRM, code repositories, finance systems and cloud infrastructure. It grants each person and agent access when it is needed and removes it once it is not. In its own description, the platform provides scoped access, enforced policies, human approval and a record of every action.
+
+The release frames the problem with two figures: citing C1.ai's research, it says 95% of large US companies already run autonomous agents; citing Deloitte, it says only 21% report a mature way to govern them. Workday's Gerrit Kazmaier said: "Today's companies run on a combined workforce of people and AI agents." C1.ai's CEO Alex Bovee put it more bluntly: "Enterprises can't secure the AI era using yesterday's IT tickets."
+
+## Why it matters
+
+Marketing is one of the most permission-heavy functions in a company, even if it does not feel that way. Think of what a capable marketing agent might need to touch: the CRM with customer data, ad accounts with budgets, analytics, the content management system, social accounts that speak for the brand, the email platform, shared drives full of unreleased plans.
+
+Most teams grant this access the old way. Someone shares a login. An API key lives in a spreadsheet. A tool gets "admin" because it was easier. That was already risky with people. With agents that run continuously and act at machine speed, it becomes the main risk.
+
+What the C1.ai pitch gets right is the shape of the answer: access that is scoped to the task, granted just in time, approved by a human where needed, and logged. That is not an IT detail. It determines whether an agent can safely be given real work.
+
+## What my research says
+
+Long before agents, my team worked on a simpler identity problem. In [Person, Organization, or Personage: Towards User Account Type Prediction in Microblogs](https://doi.org/10.1007/978-3-030-13283-5_9) (EGOSE 2018) we studied how to tell apart personal, organisational and celebrity accounts. The motivation was that you cannot interpret behaviour correctly if you do not know what kind of actor produced it.
+
+The same principle now applies inside the company. Every action in your marketing stack should be attributable: was this budget change made by a person, by an agent acting for a person, or by an automated rule? Without that, you cannot audit results, explain mistakes or learn from what worked. In our explainable AI research, from [Against Opacity](https://doi.org/10.1145/3581783.3612817) to [MindFuse](https://doi.org/10.1145/3746027.3758167), explanations depend on knowing which inputs and which decisions led to an outcome. Identity is the first input.
+
+I also see this as part of the shift I have argued for in my [Forbes columns](https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/), from marketers as manual content creators to curators of AI tools. Curating agents includes deciding what each one is allowed to do.
+
+## What marketing operations should do now
+
+- Give every agent its own identity. No shared human logins. If a platform does not support service accounts or scoped API keys, treat that as a red flag.
+- Scope by task. An agent that writes reports needs read access to analytics, not write access to ad budgets.
+- Require approval for irreversible actions. Publishing, spending above a threshold and deleting data should need a human yes.
+- Expire access. Grant access for the duration of a campaign or task, and remove it automatically afterwards.
+- Log and review. Keep a record of agent actions and look at it, especially after anything unexpected happens to spend or messaging.
+- Include agents in offboarding. When a vendor, tool or agency relationship ends, revoke the agents and keys that came with it.
+
+Workday's deal is a sign that the enterprise software world now treats agents as members of the workforce. Marketing should, too, starting with who gets the keys.
+
+## FAQ
+
+? What is C1.ai?
+According to Workday, C1.ai is an agentic identity platform that connects to business systems such as email, CRM, code repositories, finance systems and cloud infrastructure, granting people and AI agents access when needed and removing it when it is not, with scoped access, policies, human approval and an action record.
+
+? When will Workday's acquisition of C1.ai close?
+Workday expects the deal to close in the fourth quarter of its fiscal year 2027, which ends on 31 January 2027, subject to customary closing conditions. The price was not disclosed.
+
+? Why do AI agents in marketing need their own identities?
+Because agents increasingly touch customer data, ad budgets and brand channels. Separate, scoped and logged identities make it possible to limit what each agent can do, require approval for risky actions and attribute every change for auditing.

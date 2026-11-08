@@ -1,0 +1,57 @@
+title: Character.AI's Chapter 11: Lessons for AI Persona Products
+dek: Character.AI filed for Chapter 11 to pursue a sale, with Disney preparing a $20m bid. What brands building AI characters and companions should learn.
+news: Character.AI files for Chapter 11 bankruptcy; Disney readies a $20 million stalking-horse bid for an IP licence
+news_date: 2026-10-12
+published: 2026-11-08
+topic: Responsible marketing
+source: Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy | TheWrap | 2026-10-13 | https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal
+---
+A few years ago, AI characters looked like the most natural consumer application of large language models: a chatbot with a personality, available all day. On 12 October one of the best-known companies in that space, Character.AI, filed for Chapter 11 bankruptcy. Brands are now building their own AI characters, mascots and companions. The story is worth reading closely.
+
+## What happened
+
+According to [TheWrap](https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal), Character.AI filed for Chapter 11 late on Monday 12 October to "facilitate a value-maximizing sale" of its assets. Disney is preparing a US$20 million bid for a non-exclusive perpetual licence to certain intellectual property, acting as the "stalking horse" whose offer sets the baseline for the auction, which is expected in late November or early December. Other bidders can still make better offers.
+
+TheWrap notes that Disney sent Character.AI a cease-and-desist letter in September 2025 over unauthorised use of its characters, that the platform had shifted towards microdramas after settling multiple lawsuits accusing its AI agents of leading teens towards self-harm, and that Pennsylvania sued over the generation of a fake medical professional licence. CEO Colin Adams said the court-supervised sale "provides the Company with the best opportunity" to maximise value and that a safe and engaging user experience "remains a top priority". The service continues to operate.
+
+## Why it matters
+
+I will not speculate about the company's finances beyond what was reported. But the public facts already outline the three risks that any AI persona product carries.
+
+The first is intellectual property. Characters people love usually belong to someone. A product built on users imitating famous characters invites exactly the kind of dispute that TheWrap describes.
+
+The second is safety. A character designed to be engaging and emotionally responsive is, by design, influential. When the users include teenagers, that influence becomes a liability if guardrails fail.
+
+The third is trust and authority. A chatbot that can produce a convincing fake credential shows how easily a persona can claim expertise it does not have.
+
+For brands, the lesson is not "avoid AI characters". It is that a persona is a promise, and the company that deploys it is responsible for everything it says.
+
+## What my research says
+
+Personality is one of my core research themes. With colleagues I have worked on [inferring personality from activity across multiple social networks](https://doi.org/10.1609/aaai.v31i1.11105) (AAAI 2017), on [personality-driven content generation](https://doi.org/10.1145/3437963.3441714) (WSDM 2021) and on [personality-driven social multimedia content recommendation](https://doi.org/10.1145/3503161.3548769) (ACM Multimedia 2022). The research is clear that matching content to personality makes it more engaging.
+
+That is exactly why the responsibility is heavy. A system that adapts its personality to each user can build attachment faster than any static ad. Used well, that means more relevant, more helpful brand experiences. Used carelessly, it means manipulation, especially of vulnerable users. I discussed the ethics and privacy side of automated profiling and targeting in my WSDM 2023 talk, [Under the Hood of Social Media Advertising](https://doi.org/10.1145/3539597.3575791), and I have argued in Forbes for [redemptive marketing](https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/), where transparency is part of performance rather than a cost.
+
+A brand persona should be designed as carefully as a brand spokesperson, with the difference that it talks to millions of people at once and never gets tired.
+
+## A checklist for brands building AI characters
+
+- Own your IP. Build personas on characters and voices you own or have licensed, and block imitation of others' characters.
+- Define what the persona must never claim. No credentials, no professional advice outside defined limits, no promises the company would not honour.
+- Design for the most vulnerable user. Assume minors and people in distress may use it, even if they are not your target, and build escalation to human help.
+- Disclose clearly. Users should always know they are talking to an AI and who stands behind it.
+- Measure wellbeing, not only engagement. Time spent is not a success metric for a companion product. Track complaints, escalations and harmful-content flags too.
+- Plan for the end. Decide what happens to user conversations and data if the product is closed or sold.
+
+AI personas will be part of brand experiences. The companies that treat them as responsibilities, not just engagement engines, will be the ones still running them in five years.
+
+## FAQ
+
+? Did Character.AI file for bankruptcy?
+Yes. According to TheWrap, Character.AI filed for Chapter 11 bankruptcy on 12 October 2026 to facilitate a sale of its assets, and the service continues to operate during the process.
+
+? What is Disney's role in the Character.AI sale?
+TheWrap reports that Disney is preparing a US$20 million bid for a non-exclusive perpetual licence to certain intellectual property and would act as the stalking-horse bidder, setting the baseline for an auction expected in late November or early December.
+
+? What should brands learn from Character.AI's troubles?
+That AI personas carry intellectual property, safety and trust risks. Brands should build on IP they own, set strict limits on what a persona may claim, design for vulnerable users, disclose that users are talking to AI and measure wellbeing alongside engagement.

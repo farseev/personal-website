@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Penske v. Google Dismissed: What It Means for AI Visibility | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Penske v. Google Dismissed: What It Means for AI Visibility | Prof. Aleks Farseev" />
+<meta property="og:description" content="A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO." />
+<meta property="og:url" content="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — AI news, explained" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="AI search" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Penske v. Google Dismissed: What It Means for AI Visibility | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","mainEntityOfPage":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/","url":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/","headline":"Penske v. Google Dismissed: What It Means for AI Visibility","description":"A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO.","image":"https://farseev.com/og-image.png","inLanguage":"en","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/blog/#blog"},"articleSection":"AI search","about":{"@type":"Thing","name":"US District Judge Amit Mehta dismisses Penske Media's and Chegg's antitrust suits over Google's AI Overviews"},"wordCount":856,"citation":[{"@type":"CreativeWork","name":"Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google","url":"https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/","publisher":"Press Gazette","datePublished":"2026-10-01"}]},{"@type":"FAQPage","@id":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/#faq","mainEntity":[{"@type":"Question","name":"Why was Penske Media's lawsuit against Google dismissed?","acceptedAnswer":{"@type":"Answer","text":"According to Press Gazette, Judge Amit Mehta found there was no \"formal bargain\" between publishers and Google to exchange crawling for traffic, writing that an expectation of traffic \"is not an agreement\", and he rejected the claim that search and AI Overviews are separate products unlawfully tied together."}},{"@type":"Question","name":"Is the Penske ruling final?","acceptedAnswer":{"@type":"Answer","text":"No. Press Gazette reported on 30 October 2026 that Penske and Chegg are appealing the dismissal."}},{"@type":"Question","name":"What should brands do about visibility in AI search after the ruling?","acceptedAnswer":{"@type":"Answer","text":"Plan for fewer clicks on informational queries, publish specific and attributable content that AI systems can cite, keep product facts consistent across sites, weigh any opt-out decision carefully, and build direct channels to customers."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://farseev.com/"},{"@type":"ListItem","position":2,"name":"AI news","item":"https://farseev.com/blog/"},{"@type":"ListItem","position":3,"name":"Penske v. Google Dismissed: What It Means for AI Visibility","item":"https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/","jobTitle":"Founder & CEO of SOMIN.ai; Guest Professor in AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/" class="mark" aria-label="Aleks Farseev — home"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="/#about">About</a><a href="/#research">Research</a><a href="/blog/" aria-current="page">AI news</a><a href="/#talks">Talks</a><a href="/#connect">Connect</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Language" translate="no"><option value="en" selected>English</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">AI news</a></li><li aria-current="page">Penske v. Google Dismissed: What It Means for AI Visibility</li></ol></nav>
+      <p class="eyebrow">AI news, explained · AI search</p>
+      <h1 class="h-display">Penske v. Google Dismissed: What It Means for AI Visibility</h1>
+      <p class="lead">A US judge dismissed Penske Media's antitrust suit over Google's AI Overviews, finding no 'formal bargain' for traffic. What brands should do about GEO.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>The news: US District Judge Amit Mehta dismisses Penske Media's and Chegg's antitrust suits over Google's AI Overviews (<time datetime="2026-10-01">1 October 2026</time>)</span></p>
+      <p class="byline"><span>By <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>4 min read</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>For two decades the web ran on an unwritten deal: let Google crawl your pages, and Google sends you visitors. In a ruling reported on 1 October, a US federal judge said, in effect, that the deal was never a deal. For anyone who depends on search traffic, that ruling is a reason to rethink visibility from the ground up.</p>
+<h2>What happened</h2>
+<p>According to <a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Press Gazette</a>, US District Judge Amit Mehta dismissed Penske Media Corporation's antitrust suit against Google over AI Overviews, and rejected Chegg's similar arguments. Penske had alleged lost search traffic and lost affiliate, advertising and subscription revenue after AI Overviews launched.</p>
+<p>The judge found no &quot;formal bargain&quot; between publishers and Google. Publishers, he wrote, &quot;have pleaded only that they have an 'expectation' that Google will send them search traffic&quot;, and &quot;an expectation is not an agreement. It is simply how a general search engine works.&quot; He also rejected the argument that search and AI Overviews are separate products that Google unlawfully tied together. He noted that &quot;the court does not treat Plaintiffs' alleged harms lightly.&quot;</p>
+<p>Press Gazette's update of 30 October adds that Penske and Chegg are appealing, that Google is rolling out a Search Console option for publishers to opt out of AI Overviews following a UK Competition and Markets Authority order, and that Google is reportedly trialling payments to publishers whose content contributes significantly to its AI features.</p>
+<h2>Why it matters</h2>
+<p>Whatever happens on appeal, the ruling clarifies where things stand: there is no legal entitlement to traffic. The search engine can decide to answer the question itself. If your business model or your marketing plan assumes that ranking equals visits, you are building on an expectation, not an agreement.</p>
+<p>This is not only a publisher problem. Brands publish too: guides, product pages, comparison content, research. All of it is now raw material for AI answers that may satisfy the user without a click. The question shifts from &quot;how do I rank?&quot; to &quot;how do I get cited, chosen and remembered inside the answer?&quot; That is what people now call generative engine optimisation, or GEO.</p>
+<p>The opt-out and payment trials make the trade-off explicit. Opting out may protect your content, and it also removes you from the answers your customers read. For most brands, that is too high a price. For some publishers, it may be the only leverage they have.</p>
+<h2>What my research says</h2>
+<p>Being cited by an AI answer is, at its core, a retrieval problem. My early work on <a href="https://doi.org/10.1145/3077136.3080774" target="_blank" rel="noopener">cross-domain recommendation via clustering on multi-layer graphs</a> (SIGIR 2017) was about pooling signals from different sources to decide what to recommend. Modern answer engines are distant descendants of that idea: they retrieve, cluster and choose sources before they generate. Content that is specific, consistent across sources and easy to attribute is more likely to be retrieved and chosen.</p>
+<p>My work on explainable AI points to the other half. In <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion) we focused on explaining competitors' communications: what they say and why it works. GEO needs the same discipline. It is not enough to know that a competitor appears in AI answers; you need to understand which claims, formats and sources make that happen.</p>
+<p>And measurement is a trap here too. I wrote on e27 that <a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">every dashboard is green, yet nobody can say what worked</a>. AI visibility tools will add another set of green numbers. Treat them as signals, test them against outcomes, and do not confuse a mention with a customer.</p>
+<h2>What publishers and brands should do now</h2>
+<ul><li>Stop planning on traffic as a right. Model scenarios where informational queries are answered without a click, and decide which content still earns its cost.</li><li>Write to be cited. Clear claims, original data, named authors, dates and sources make content easier for AI systems to retrieve and attribute.</li><li>Be consistent across the web. Answer engines cross-check. Your product facts should match on your site, marketplaces and partner pages.</li><li>Decide on opt-out deliberately. Weigh the visibility you lose against the leverage you gain, page type by page type, not site-wide by reflex.</li><li>Build direct relationships. Newsletters, communities and apps are the channels no ruling can take away.</li></ul>
+<p>The court has not settled the bigger question of what AI search owes the people whose work it reads. But it has settled one practical point for now: nobody is owed a click.</p>
+<h2 id="faq">FAQ</h2>
+<div class="faq"><details><summary>Why was Penske Media's lawsuit against Google dismissed?</summary><p>According to Press Gazette, Judge Amit Mehta found there was no &quot;formal bargain&quot; between publishers and Google to exchange crawling for traffic, writing that an expectation of traffic &quot;is not an agreement&quot;, and he rejected the claim that search and AI Overviews are separate products unlawfully tied together.</p></details><details><summary>Is the Penske ruling final?</summary><p>No. Press Gazette reported on 30 October 2026 that Penske and Chegg are appealing the dismissal.</p></details><details><summary>What should brands do about visibility in AI search after the ruling?</summary><p>Plan for fewer clicks on informational queries, publish specific and attributable content that AI systems can cite, keep product facts consistent across sites, weigh any opt-out decision carefully, and build direct channels to customers.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2><ol><li translate="no"><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google</a> — Press Gazette, 1 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> is the founder and CEO of SOMIN.ai and a Guest Professor in AI at NUS and INSEAD. His peer-reviewed research covers multi-source user profiling, personality-aware recommendation and explainable AI for marketing.</p>
+<p class="links"><a href="/">About Aleks</a><a href="/#publications">Publications</a><a href="/blog/">More AI news</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Keep reading</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">More AI news, explained</h2></div>
+    <div class="cards-3"><a class="pcard" href="/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">AI search · 29 October 2026</span><h3>Adobe: AI Traffic Now Converts Better Than Other Visits</h3><p>Adobe says AI-referred visits to US retailers converted 90% better than other traffic in September. Why AI answers became a channel, and what to do.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">AI search · 28 October 2026</span><h3>Google's AI Mode Ads Arrive in Singapore and Beyond</h3><p>Google is scaling ads in AI Mode to ten markets, including Singapore, Malaysia and the Philippines. Here is what changes when the ad sits inside the answer.</p><span class="go">Read →</span></a><a class="pcard" href="/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">AI search · 21 October 2026</span><h3>ChatGPT Ads Become Conversations: Sponsored Agents</h3><p>OpenAI is testing Sponsored Agents inside ChatGPT and has expanded ChatGPT ads to 89 countries. When an ad can talk back, labelling and honesty become the product.</p><span class="go">Read →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">GenAI CEO, Professor in AI, keynote speaker and accordionist. Bridging deep research and real-world marketing from Singapore to the world.</p>
+      </div>
+      <div>
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">AI news blog</a></li>
+          <li><a href="/#research">Research</a></li>
+          <li><a href="/#publications">Publications</a></li>
+          <li><a href="/#connect">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Elsewhere</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Opinions are my own. News facts link to their sources.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

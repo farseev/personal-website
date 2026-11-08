@@ -1,0 +1,53 @@
+title: Korea's Free AI Agents for Every Citizen: A New Front Door
+dek: South Korea plans free AI agents for every citizen via KakaoTalk, calls and texts, run by SKT, KT and Kakao. What a public agent layer means for brands.
+news: Korea's "AI for All" operators outline free agentic AI services for all citizens via messengers, calls and texts
+news_date: 2026-09-04
+published: 2026-11-08
+topic: Asia and Singapore
+source: Korea to provide free AI agents for all citizens through messenger, texts | The Korea Times | 2026-09-04 | https://www.koreatimes.co.kr/business/tech-science/20260904/korea-to-provide-free-ai-agents-for-all-citizens-through-messenger-texts
+---
+Most countries are debating how to regulate AI agents. South Korea is planning to give one to everybody. In September the government and three operator groups set out how "AI for All" will work: free agents that can make reservations and payments for citizens, reachable through a messenger, a phone call or a text message. For brands, this could become a new front door to customers.
+
+## What happened
+
+According to [The Korea Times](https://www.koreatimes.co.kr/business/tech-science/20260904/korea-to-provide-free-ai-agents-for-all-citizens-through-messenger-texts), the Ministry of Science and ICT and the project operators held a briefing on 4 September. Korea plans to launch free agentic AI services for all citizens by the end of 2026, with beta testing starting in October. The agents are meant to complete real tasks such as reservations and payments through mobile messengers, phone calls and text messages.
+
+Three consortia, led by SK Telecom, KT and Kakao, will operate the services. Kakao, teaming with LG, will use KakaoTalk as the entry point and build on its Kanana and LG's EXAONE models; it targets 5 million monthly active users by December and 10 million by the end of 2027. KT unveiled Ieum, a general-purpose agent with real-time search plus services in public administration, education, finance and shopping, run on homegrown models and infrastructure. SK Telecom will offer phone- and text-based agents for people who struggle with apps, handling authentication, public service applications and payments.
+
+Deputy Prime Minister and Science Minister Bae Kyung-hoon said: "Our ultimate goal is to have new homegrown AI services blend naturally into people's daily lives." The article gives no budget figures and does not discuss privacy measures.
+
+## Why it matters
+
+This is the first time I have seen a government plan to put a transactional agent in front of an entire population, using domestic models and the country's dominant messaging app. If it reaches its targets, a large share of Korean consumers will have a default assistant that searches, books and pays for them.
+
+That changes the path to purchase. Today a Korean consumer looking for a restaurant, a clinic or a product goes through search, maps, apps and platforms where brands buy visibility. With a public agent in the middle, the first question is: what does the agent know about you, and will it pick you? A free, state-backed agent is also unlikely to be an advertising surface in the usual sense, so paid visibility may not be an option at all.
+
+The inclusion angle is significant too. SK Telecom's phone and text agents are explicitly for people who struggle with apps. That opens digital commerce to customers who were hard to reach online, older people especially.
+
+## What my research says
+
+My research has always been about understanding people through the many channels they use. In [Harvesting Multiple Sources for User Profile Learning](https://doi.org/10.1145/2671188.2749381) (ICMR 2015) and our [360° user profiling](https://doi.org/10.1145/2956573.2956577) overview, the idea was that each channel shows a different side of the same person. Korea's plan adds new channels, such as a voice call to an agent, and concentrates them in a few agent operators. Whoever runs those agents will hold a remarkably complete picture of daily intent. That makes privacy design, which the briefing did not address, a central question.
+
+On the brand side, I have argued in Forbes about the many [applications of AI agents in marketing](https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/). The flip side is marketing to agents. An agent choosing a restaurant or a product for a citizen will rely on structured, trustworthy information: availability, prices, locations, policies. Brands that publish that clearly, in the formats Korean platforms use, will be easier for agents to select.
+
+## What brands in Korea, and watching Korea, should do now
+
+- Make your business agent-readable. Keep hours, prices, availability and booking options accurate on the platforms these agents are likely to draw on.
+- Support booking and payment flows that an agent can complete without a human filling in forms.
+- Design for voice and text. If some customers will reach you through a phone-based agent, your information must make sense without visuals.
+- Watch the beta. October's testing will show which sources and partners the agents rely on.
+- Take privacy seriously in your own integrations. If you connect to public agents, collect only what the task needs.
+- Think regionally. Other Asian governments are watching. A public agent layer could appear elsewhere.
+
+Korea is running a large experiment in what happens when AI agents become public infrastructure. Brands should treat it as an early look at a future where the agent, not the search box, is the front door.
+
+## FAQ
+
+? What is Korea's "AI for All" project?
+It is a government programme to provide free agentic AI services to all citizens. According to The Korea Times, the agents will handle tasks such as reservations and payments through messengers, phone calls and text messages, with beta testing from October and a launch planned by the end of 2026.
+
+? Which companies run Korea's free AI agents?
+Three consortia led by SK Telecom, KT and Kakao. Kakao is working with LG and uses KakaoTalk, KT offers an agent called Ieum, and SK Telecom focuses on phone- and text-based agents.
+
+? How can brands prepare for public AI agents?
+By keeping business information accurate and machine-readable, supporting booking and payment flows that agents can complete, making information usable by voice and text, and minimising the personal data they collect through any integration.

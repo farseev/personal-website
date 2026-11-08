@@ -1,0 +1,53 @@
+title: Claude Opus 5.5: Watermarks, Audits and AI Content Labels
+dek: Anthropic's Claude Opus 5.5 ships with watermarking for EU AI Act compliance and a note that the model often suspects it is being tested. Both matter for marketers.
+news: Anthropic releases Claude Opus 5.5, the first model in the Claude 5.5 family
+news_date: 2026-09-22
+published: 2026-11-08
+topic: Models
+source: Introducing Claude Opus 5.5 | Anthropic | 2026-09-22 | https://www.anthropic.com/claude-opus-5-5
+source: Commission publishes Code of Practice on marking and labelling AI-generated content | European Commission | 2026-06-10 | https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content
+---
+Model launches are usually read for their benchmark tables. When Anthropic released Claude Opus 5.5 on 22 September, the two lines I found most important for marketers were near the bottom of the page: the model includes watermarking to comply with the EU AI Act, and Anthropic says the model often suspects it is being evaluated.
+
+## What happened
+
+According to [Anthropic's announcement](https://www.anthropic.com/claude-opus-5-5), Opus 5.5 is the first model in the Claude 5.5 family and "performs at the level of Claude Fable 5.1 on most work". It leads Anthropic's benchmarks in agentic coding, computer use and knowledge work. Pricing is US$4 per million input tokens and US$20 per million output tokens, and Anthropic says costs run about 40% lower than Opus 5 on typical workloads.
+
+On safety, Anthropic says the model scored best of any model it tested on an automated behavioural audit covering nearly 2,000 scenarios, and is less likely than recent models to take hard-to-reverse actions or act outside its boundaries. It also says the model often suspects it is being evaluated, which limits how well evaluations predict real-world behaviour. And the page states that Opus 5.5 includes watermarking to comply with the EU AI Act.
+
+For context, the European Commission [published its final Code of Practice on marking and labelling AI-generated content](https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content) in June. The voluntary code is meant to help providers and deployers of generative AI meet transparency obligations that apply from 2 August 2026, including clear labelling of deepfakes, labelling of AI-generated text published on matters of public interest, and telling people when they are interacting with an AI system such as a chatbot.
+
+## Why it matters
+
+Watermarking moves the question of AI disclosure from policy into the model itself. If the content your team generates carries a machine-readable mark, then "we did not use AI" is a claim that can be checked. For brands, that changes the cost of being careless with disclosure.
+
+The obligations in Europe are not only for model providers. Deployers, which includes companies that publish AI-generated content, have duties too. A marketing team that runs a chatbot, publishes synthetic video, or puts AI-written text on matters of public interest needs a labelling practice, not just a model that happens to watermark.
+
+The evaluation caveat is subtler and, to me, more interesting. If a model behaves differently when it suspects a test, then test results are an optimistic estimate. That applies to vendor claims about any capable model, including the ones running your marketing.
+
+## What my research says
+
+I have long argued in Forbes that [transparency matters for marketing-driven companies](https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/), and that transparency and performance can support each other, the idea I called [redemptive marketing](https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/). Labelled AI content is a direct test of that idea. My expectation is that audiences will punish undisclosed AI more than disclosed AI, and that honest labelling will become a mark of a confident brand.
+
+On evaluation, my research on predicting creative performance teaches a related lesson. In [SoCraft](https://doi.org/10.1145/3539597.3573032) (WSDM 2023) and [Fusing Predictive and Large Language Models](https://doi.org/10.1145/3725885) (ACM TOIS 2025), a model's predictions are only trusted once they are checked against what actually happens after launch. Pre-launch scores are hypotheses; live performance is the evidence. If even the labs say lab tests can be optimistic, marketers should be doubly careful to monitor AI systems in production, not just at procurement.
+
+## What marketing teams should do now
+
+- Write a labelling policy. Decide when your brand discloses AI involvement: synthetic images and video, chatbots, AI-written articles. Align it with the EU obligations if you operate there.
+- Keep provenance. Record which tool and model produced each asset, so you can answer questions later.
+- Do not strip watermarks or metadata. Removing provenance signals is the kind of shortcut that turns a design choice into a compliance problem.
+- Monitor in production. Track complaints, corrections and off-brand outputs from AI systems after launch, not only test scores before it.
+- Ask vendors about real-world behaviour. How do they check that the model behaves the same outside evaluations?
+
+Opus 5.5 is a capable model, and its price cut will matter to many teams. But the more lasting change is the expectation it reflects: AI content should be identifiable, and AI behaviour should be verified where it actually runs.
+
+## FAQ
+
+? What is Claude Opus 5.5?
+It is the first model in Anthropic's Claude 5.5 family, released on 22 September 2026. Anthropic says it performs at the level of Claude Fable 5.1 on most work, leads its benchmarks in agentic coding, computer use and knowledge work, and costs about 40% less than Opus 5 on typical workloads.
+
+? Does Claude Opus 5.5 watermark its output?
+Anthropic's announcement states that Opus 5.5 includes watermarking to comply with the EU AI Act.
+
+? What do EU AI transparency rules require from marketers?
+According to the European Commission, transparency obligations applying from 2 August 2026 include clearly labelling deepfakes, labelling AI-generated text published on matters of public interest and informing people when they interact with an AI system such as a chatbot. Deployers of generative AI, not only providers, have duties.

@@ -1,0 +1,55 @@
+title: Google's AI Mode Ads Arrive in Singapore and Beyond
+dek: Google is scaling ads in AI Mode to ten markets, including Singapore, Malaysia and the Philippines. Here is what changes when the ad sits inside the answer.
+news: Google expands ads in AI Mode to 10 new markets and launches multiturn ads in the US
+news_date: 2026-10-28
+published: 2026-11-08
+topic: AI search
+source: Ads in AI Mode expand to new markets | Google (The Keyword) | 2026-10-28 | https://blog.google/products/ads-commerce/ads-in-ai-mode-global/
+source: Alphabet Q3 2026: Google Search revenue up 12% to $63.35 billion, flat on Q2 | Relevant Audience | 2026-10-29 | https://www.relevantaudience.com/google-ads-en/alphabet-q3-2026-search-revenue-ai-mode-monetization/
+---
+On 28 October Google announced that ads in AI Mode, its conversational search experience, are scaling to ten more markets. Singapore is on the list. So are Malaysia and the Philippines. For marketers in Southeast Asia, the question of how to show up inside an AI answer has stopped being theoretical.
+
+## What happened
+
+In a post on The Keyword, Shashi Thakur, who runs Google Search Ads, said Google is [scaling ads in AI Mode](https://blog.google/products/ads-commerce/ads-in-ai-mode-global/) in Australia, Canada, India, Kenya, Malaysia, New Zealand, Nigeria, Pakistan, the Philippines and Singapore. Brazil, Mexico and the United Kingdom are planned for Q4 2026. In the US, Google is also launching multiturn ads, which can appear on the follow-up questions a person asks inside AI Mode. The ads carry a "Sponsored" label.
+
+Google backed the move with two internal data points. It says AI Mode queries are on average three times longer than traditional searches (its AI Mode report, US, May 2026). And it says click-through rates for sponsored and organic product list items inside AI Mode are already similar (internal data, US, 20 August to 3 September 2026).
+
+The same day, Alphabet reported its third quarter. According to [Relevant Audience's reading of the results](https://www.relevantaudience.com/google-ads-en/alphabet-q3-2026-search-revenue-ai-mode-monetization/), Google Search and other revenue grew 12% year on year to US$63.35 billion, almost flat on the previous quarter, and Sundar Pichai described query growth as the highest in five years. The report attributes part of the slower revenue growth to lower monetisation of AI Mode queries, based on management commentary.
+
+## Why it matters
+
+Put those facts together and you get a simple picture. People are asking longer, more specific questions. Google is answering them in a conversation. And Google is now selling space inside that conversation, in our region, at a moment when it has a commercial reason to make AI Mode earn more.
+
+For an advertiser, a three-times-longer query is a gift. "Running shoes" tells you almost nothing. "Lightweight running shoes for humid weather, wide feet, under SGD 200, for a first half-marathon" tells you the climate, the body, the budget and the goal. That is a profile, not a keyword.
+
+Multiturn ads matter even more. In a conversation, intent is built up turn by turn. The ad that appears on the third follow-up question is matched to everything the person has said so far, not to one string of words.
+
+## What my research says
+
+I have spent most of my career on one idea: you understand people better when you combine many signals than when you look at one. In [Harvesting Multiple Sources for User Profile Learning](https://doi.org/10.1145/2671188.2749381) (ICMR 2015) we built a multi-source social media dataset and an ensemble model for learning users' demographic and mobility profiles. Later, in [I Know Where You Are Coming From](https://doi.org/10.1609/aaai.v34i10.7258) (AAAI 2020), we showed that the choice of data source changes how accurate an AI user model is.
+
+A multiturn conversation is a multi-source signal compressed into minutes. Each turn adds a view of the same person: what they need, what they rule out, what they care about. The lesson from profiling research applies directly. The value is in the combination, and the order matters. An ad system that reads the whole conversation will beat one that reacts to a single query, and an advertiser who writes for the whole conversation will beat one who writes for a keyword.
+
+The second lesson is about the label. Google says sponsored and organic product listings already get similar click-through rates inside AI Mode. That is good news for advertisers in the short term. It is also exactly why the "Sponsored" label has to stay clear. I have argued for years, including in my Forbes column on [redemptive marketing](https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/), that transparency and performance are not opposites. In an answer engine, trust is the product. If people stop being able to tell the answer from the ad, both lose value.
+
+## What marketers in Southeast Asia should do now
+
+- Rewrite briefs around situations, not keywords. List the long, specific questions your customer actually asks, in their own words, and make sure your landing pages answer them plainly.
+- Treat the conversation as the unit. Map the likely second and third questions after the first one, because that is where multiturn ads will sit.
+- Feed the machine clean product data. Answer engines quote what they can parse. Prices, sizes, availability and policies should be explicit on the page.
+- Measure incrementality, not clicks. Similar click-through rates do not tell you whether an AI Mode ad created a sale that would not have happened anyway. Run holdouts before you move budget.
+- Keep your organic house in order. If sponsored and organic listings sit side by side, being the cited source in the organic answer is still the cheapest visibility you can get.
+
+The ten markets are a start, not an end state. When an answer engine starts selling space in Singapore, Kuala Lumpur and Manila at the same time, regional teams should plan for it as one channel with local nuance, not ten separate experiments.
+
+## FAQ
+
+? Which markets now have ads in Google's AI Mode?
+Google says it is scaling ads in AI Mode in Australia, Canada, India, Kenya, Malaysia, New Zealand, Nigeria, Pakistan, the Philippines and Singapore, with Brazil, Mexico and the UK planned for Q4 2026. Multiturn ads are launching in the US.
+
+? What are multiturn ads in AI Mode?
+They are ads that can appear on follow-up questions inside an AI Mode conversation, not only on the first query. Google says they launch in the US first and carry a "Sponsored" label.
+
+? How should advertisers prepare for ads in AI search?
+Write for long, situational questions, map the follow-up questions a customer is likely to ask, publish clear and parseable product information, and judge results with holdout tests rather than click-through rate alone.

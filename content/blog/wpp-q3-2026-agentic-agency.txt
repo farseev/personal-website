@@ -1,0 +1,52 @@
+title: WPP's Q3 2026: The Agency Model Under AI Pressure
+dek: WPP reported falling like-for-like net revenue while its CEO pointed to demand for AI-enabled services via WPP Open. What it says about agencies.
+news: WPP publishes its Q3 2026 trading update, citing demand for AI-enabled services through WPP Open
+news_date: 2026-10-29
+published: 2026-11-08
+topic: Ads and marketing AI
+source: WPP Third Quarter Trading Update 2026 | WPP plc | 2026-10-29 | https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf
+---
+In 2025 I asked in Forbes whether AI will make agencies obsolete. A year and a half later, the world's largest advertising group gives a partial answer in its own numbers: the old business is shrinking, and the company is betting its future on AI-enabled services. Both halves of that sentence matter.
+
+## What happened
+
+WPP's [Q3 2026 trading update](https://www.directorstalkinterviews.com/wp-content/uploads/2026/10/WPP-Third-Quarter-Trading-Update-2026.pdf), published on 29 October, reported revenue less pass-through costs of £2,411 million for the quarter, down 2.0% reported and 2.1% like-for-like. Year to date, the figure was £7,156 million, down 3.9% like-for-like. Headline revenue for the quarter was up 0.5%. WPP expects like-for-like revenue less pass-through costs to decline by low to mid-single digits in the second half of 2026, and a full-year headline operating margin of 12% to 13%.
+
+On AI, chief executive Cindy Rose said that "client demand remains healthy for our AI-enabled media, creative, production and enterprise solutions", which are "powered by our agentic marketing platform WPP Open." The update also describes AI-enabled virtual production at a new East London production hub, Burson's acquisition of Limbik, a cognitive AI company behind its Decipher predictive intelligence platform, and a longer-term plan to scale agentic workflows globally. It lists the use of AI and generative AI as a risk factor too.
+
+## Why it matters
+
+For years, agency economics were built on people's time. AI attacks that model from two directions. Clients can do more in-house with AI tools, and the work agencies still do takes fewer hours. If you bill by the hour, efficiency is a revenue problem.
+
+WPP's answer, like that of other holding companies, is to become a platform: an agentic operating system that runs client marketing, with humans supervising and specialists adding judgement. That makes sense strategically. The open question, which no single quarter can settle, is whether clients will pay platform-level margins for it, or whether they will build or buy similar capabilities directly.
+
+The acquisition of a predictive intelligence company by Burson is a small detail with a big signal. Prediction, not just production, is becoming part of the agency offer.
+
+## What my research says
+
+When I wrote [Will AI Make Agencies Obsolete? The Future Of Advertising](https://www.forbes.com/councils/forbestechcouncil/2025/05/22/will-ai-make-agencies-obsolete-the-future-of-advertising/) for Forbes, and later discussed the topic in my ACM Multimedia 2025 industry talk, I compared three ways AI enters advertising: replacing creative work, assisting it, and explaining it. My view is that "explaining" is the most underrated of the three, and the one where agencies can build lasting value.
+
+My research is built on that third path. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) we predicted click-through rates for new creatives and explained the drivers with an LLM. In [SOEX](https://doi.org/10.1145/3701716.3715198) (WWW 2025 Companion) we applied explainable AI to competitors' communications. In [MindFuse](https://doi.org/10.1145/3746027.3758167) (ACM Multimedia 2025) we used explainable generative AI to co-create strategy from real ad data. An agency that can tell a client why something will work, with evidence, sells judgement. An agency that only produces more assets faster sells hours, and hours are exactly what AI is compressing.
+
+There is also a homogenisation risk. If every holding company runs similar agentic platforms on similar foundation models, client work could start to converge. Our SIGIR 2026 paper on [countering content homogenization](https://doi.org/10.1145/3805712.3808371) argues that agents need distinctive context data to avoid producing the same output as everyone else. For agencies, proprietary data and expertise are that context.
+
+## What brands and agencies should do now
+
+- Brands: renegotiate on outcomes. If AI makes production cheaper, pricing based on hours or deliverables no longer reflects value. Agree on results and on what the agency's AI actually does.
+- Brands: ask about the platform. Which models, which data, who owns the outputs and the learnings, and what happens to them if you leave?
+- Agencies: sell explanation. Build services that tell clients why work performs, backed by measurement, not just more of it.
+- Agencies: protect distinctiveness. Feed your agents proprietary insight, cultural knowledge and creative judgement so output does not converge.
+- Both: invest in people who can supervise AI. The scarce skill is judging and steering automated work, not operating tools.
+
+WPP's quarter does not prove that agencies are obsolete. It shows that the version of the agency built on billable hours is under real pressure, and that the version built on AI-supported judgement is still being proven.
+
+## FAQ
+
+? How did WPP perform in Q3 2026?
+WPP reported Q3 revenue less pass-through costs of £2,411 million, down 2.1% like-for-like, and headline revenue up 0.5%. It expects a low to mid-single-digit like-for-like decline in the second half of 2026.
+
+? What is WPP Open?
+WPP describes WPP Open as its agentic marketing platform. In the Q3 2026 update, CEO Cindy Rose said it powers WPP's AI-enabled media, creative, production and enterprise solutions.
+
+? Will AI make advertising agencies obsolete?
+Not necessarily, but it is pressuring agency models built on billable hours. Agencies that can explain and predict what works, using proprietary data and expertise, are better placed than those that mainly produce more assets.

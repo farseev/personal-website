@@ -80,3 +80,23 @@ UPDATE (2026-08) — favicon, Faith journey, live Scholar
    no-JS visitors see). To point it at a different profile, change USER_ID
    in the Scholar <script> near the end of index.html. Public proxies can
    rate-limit; the curated fallback guarantees the section is never empty.
+
+============================================================
+UPDATE (2026-11) — AI news blog (/blog/)
+============================================================
+"AI news, explained by Aleks": one real AI news item per article, with links to
+the primary source, Aleks's commentary and links to his peer-reviewed research.
+
+  content/blog/<slug>.txt     article source (header fields, ---, body, ## FAQ)
+  tools/build_blog.py         renders blog/<slug>/index.html, the hub blog/index.html,
+                              the home-page "Latest from the AI news blog" strip and
+                              nav link, and the "## AI news blog" section of llms.txt
+  assets/blog.css             article/hub styles (same tokens and fonts as index.html)
+  tools/check_site.py         checker: one h1, JSON-LD, canonical, hreflang, links, sitemaps
+
+  python3 tools/build_blog.py && python3 tools/check_site.py     # must end with 0 errors
+
+Honesty rules: every news fact comes from a listed source that was opened and read;
+no invented quotes, statistics, events or personal anecdotes; opinions are fine.
+Articles carry the publication date (published:) and the news date (news_date:);
+the hub and the home strip sort by news date, newest first.

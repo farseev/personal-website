@@ -1,0 +1,53 @@
+title: Alibaba's Apsara 2026: Giant Models, Small-Model Reality
+dek: At Apsara 2026 Alibaba said it plans a 5 to 10 trillion-parameter model while praising its open 27B model. Why Asia's marketers should watch both ends.
+news: Alibaba CEO Eddie Wu outlines plans for a 5 to 10 trillion-parameter model and the Zhenwu V900 chip at the Apsara Conference
+news_date: 2026-09-22
+published: 2026-11-08
+topic: Asia and Singapore
+source: Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip | The Standard (Reuters) | 2026-09-22 | https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip
+source: AliViews: Eddie Wu Shares Alibaba's Strategic Full-Stack AI Roadmap at the 2026 Apsara Conference | Alizila (Alibaba) | 2026-09-22 | https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/
+---
+The biggest AI conference in China every September is Alibaba Cloud's Apsara Conference in Hangzhou. This year's keynote had two stories in it. One was about scale: a model several times larger than anything Alibaba has trained. The other, almost in passing, was about a small open model that developers actually use. For marketers in Asia, the second story may matter more.
+
+## What happened
+
+According to [Reuters, via The Standard](https://www.thestandard.com.hk/innovation/article/343438/Alibaba-plans-AI-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip), Alibaba CEO Eddie Wu said on 22 September that the Qwen team plans to train a new model with 5 to 10 trillion parameters, aimed at more complex, longer-horizon tasks. Alibaba's current flagship, Qwen 3.8 Max, has 2.4 trillion parameters. Wu also said the team has made "meaningful progress" on recursive self-improvement, introduced the Zhenwu V900 AI chip from Alibaba's T-Head unit with three times the performance of its predecessor, and set a target for Alibaba Cloud's global data-centre capacity to surpass 20 gigawatts by 2032. He said: "The industry's mid-to-long-term demand far outpaces our supply capabilities."
+
+In the keynote text published on [Alizila](https://www.alizila.com/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference/), Wu called the open-source Qwen-27B "the most popular model among developers worldwide" and said Alibaba will keep refining models for local deployment. He also said he expects agents to become long-term "residents" of the cloud, running long-horizon tasks and consuming compute continuously.
+
+## Why it matters
+
+For a regional marketer, the trillion-parameter race is mostly a spectator sport. You will use such models through an API, if at all. The open, locally deployable model is different. It is something your company or your vendor can run on its own infrastructure, in a jurisdiction of its choosing, fine-tuned on its own data.
+
+That matters in Asia for practical reasons. Data residency rules vary across the region. Many companies are uncomfortable sending customer data to a foreign API. And languages and cultural references across Southeast and East Asia are poorly served by models tuned mainly on English. A capable mid-sized open model that can be adapted locally addresses all three.
+
+Wu's comment about agents as "residents" of the cloud is the other signal. If agents run continuously, cost per task becomes a strategic variable. Efficient models will run most of that work.
+
+## What my research says
+
+I have made the case in Forbes that, in marketing, [technique matters more than model size](https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/). A smaller model that is well adapted to your audience, your language and your task usually beats a giant general model used carelessly.
+
+My research also shows why local adaptation matters. In [I Know Where You Are Coming From](https://doi.org/10.1609/aaai.v34i10.7258) (AAAI 2020) we found that the social network a model learns from changes how accurate it is. In [Do we behave differently on Twitter and Facebook?](https://doi.org/10.3389/fdata.2022.931206) (Frontiers in Big Data, 2022) we showed that people express personality differently across platforms. The broader point: behaviour is contextual, and models need context-specific data to read it correctly. Asia's platforms, languages and cultures are context that a model trained elsewhere does not automatically have.
+
+And efficient models make explainability affordable at scale. In [Fusing Predictive and Large Language Models](https://doi.org/10.1145/3725885) (ACM TOIS 2025) we paired performance prediction with LLM explanations. Running the explanation layer on every creative, every day, is only realistic when the language model is cheap enough to run on everything.
+
+## What marketing teams in Asia should do now
+
+- Test an open mid-sized model on a regional task, such as classifying social posts in Bahasa Indonesia or Thai, and compare it with your current API model on accuracy and cost.
+- Decide where your data may go. Map which customer data can be sent to external APIs and which needs local processing.
+- Fine-tune on your own context. Even a small amount of labelled, local data can improve tone and accuracy markedly.
+- Plan for always-on agents. Estimate the compute cost of continuous monitoring and reporting, and choose models accordingly.
+- Keep an eye on the frontier without depending on it. Use the largest models where they clearly add value, and the efficient ones everywhere else.
+
+The headline from Hangzhou was a number with twelve zeros. The practical news for marketers was that good small models keep getting better, and they can live closer to your customers.
+
+## FAQ
+
+? What did Alibaba announce at the Apsara Conference 2026?
+According to Reuters, CEO Eddie Wu said Alibaba plans to train a model with 5 to 10 trillion parameters, unveiled the Zhenwu V900 AI chip with three times its predecessor's performance, and set a target for Alibaba Cloud data-centre capacity above 20 gigawatts by 2032.
+
+? How large is Alibaba's current flagship Qwen model?
+Reuters reports that Alibaba's current flagship, Qwen 3.8 Max, has 2.4 trillion parameters, so the planned model would be roughly two to four times larger.
+
+? Why do open, locally deployable models matter for marketers in Asia?
+They can run in a chosen jurisdiction, be adapted to local languages and data, and cost less to run at scale, which helps with data residency, cultural relevance and always-on agent workloads.

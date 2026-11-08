@@ -1,0 +1,57 @@
+title: ChatGPT Ads Become Conversations: Sponsored Agents
+dek: OpenAI is testing Sponsored Agents inside ChatGPT and has expanded ChatGPT ads to 89 countries. When an ad can talk back, labelling and honesty become the product.
+news: OpenAI tests Sponsored Agents in ChatGPT and expands ChatGPT ads to 26 more countries
+news_date: 2026-10-21
+published: 2026-11-08
+topic: AI search
+source: "A clearly labeled conversation": OpenAI tests Sponsored Agents in ChatGPT | The Next Web | 2026-09-16 | https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify
+source: OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue | The Star (Reuters) | 2026-10-21 | https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue
+---
+A search ad is a sentence and a link. A ChatGPT Sponsored Agent is a conversation. Between September and October, OpenAI started testing ads that talk back and pushed ChatGPT advertising into 89 countries. Together, those two moves change what an ad is.
+
+## What happened
+
+On 16 September, according to [The Next Web](https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify), OpenAI began testing Sponsored Agents with select US advertisers. After clicking an ad, a user can choose to start what OpenAI calls "a clearly labeled conversation" with "a business-sponsored agent in ChatGPT", for example to ask whether a dining table fits a room or how to care for its finish, before following a link to the business's site. OpenAI says the sponsored conversation is "distinct from ChatGPT's independent answers".
+
+The same announcement brought tools for advertisers: an Ads Manager plugin to create and analyse campaigns in plain language inside ChatGPT, suggested ad copy and images based on a landing page, and an opt-in feature that adapts headlines to the conversation's context and translates ad copy into the user's language. HubSpot and Shopify were named as the first CRM and ecommerce partners.
+
+On 21 October, [Reuters reported](https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue) that OpenAI is expanding ChatGPT advertising to 26 more countries, bringing the total to 89, including markets in Latin America, Europe, Africa and Asia such as Cambodia, Bangladesh and Pakistan. The company said more than 100,000 advertisers have run campaigns and that its ads business reached a US$1 billion annualised revenue run rate in August. Ads appear only on the Free and Go plans; Plus, Pro and Enterprise remain ad-free.
+
+## Why it matters
+
+Three things change when an ad becomes an agent.
+
+First, the ad can now answer questions. That is better for users than a static banner, if the answers are accurate. It is also a new liability: a sponsored agent that overstates a product's features is a misleading ad that speaks.
+
+Second, the line between the assistant and the advertiser has to be visible at every turn. OpenAI's wording, a clearly labelled conversation distinct from ChatGPT's independent answers, is the right principle. Its value depends entirely on how clear that separation feels to an ordinary user halfway through a chat.
+
+Third, there is now a two-tier attention market. Paying users see no ads; free users do. In fast-growing markets, where most people are on free tiers, ChatGPT is becoming an ad channel at scale. In markets with more paying subscribers, a valuable audience will be reachable only through organic answers.
+
+## What my research says
+
+A sponsored agent is personalisation in real time. The conversation itself is the profile. My research on [personality-driven content recommendation](https://doi.org/10.1145/3503161.3548769) (ACM Multimedia 2022) and on [personality-driven content generation](https://doi.org/10.1145/3437963.3441714) (WSDM 2021) explored how to infer what a person responds to and tailor content to it. Those techniques work. That is precisely why the guardrails matter: an agent that adapts its persuasion to each user's personality is very effective and, without transparency, very easy to abuse.
+
+I have argued in Forbes for [redemptive marketing](https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/), the idea that transparency and performance can reinforce each other. Conversational ads are where that idea gets tested. The brands that win long term will be the ones whose sponsored agents are honest about limits, say "this product is not right for you" when it isn't, and hand over to a human when the question is beyond them.
+
+The automatic translation feature also deserves care. Translating ad copy into the user's language is useful, and risky for claims that are regulated differently in each market.
+
+## What advertisers should do now
+
+- Write your sponsored agent's rules before its script. Which claims are allowed, which questions it must decline, when it hands off to a person.
+- Ground it in your own facts. Product specs, prices, policies and care instructions should come from a maintained source, not from the model's general knowledge.
+- Review translated copy for regulated claims, especially in health, finance and children's products.
+- Plan for both tiers. Use paid placement where free users are your audience, and invest in organic visibility for users on ad-free plans.
+- Measure beyond the click. Track whether conversations lead to purchases, returns or complaints, not just how long they last.
+
+Search ads taught us to write for a query. Conversational ads will teach us to answer like a trustworthy salesperson, at scale, in every language. That is harder, and more interesting.
+
+## FAQ
+
+? What are ChatGPT Sponsored Agents?
+They are business-sponsored agents that a user can choose to talk to after clicking an ad in ChatGPT. OpenAI describes the experience as a clearly labelled conversation that is distinct from ChatGPT's independent answers. The test began with select US advertisers.
+
+? In how many countries are ChatGPT ads available?
+Reuters reported on 21 October 2026 that OpenAI is expanding ChatGPT ads to 26 more countries, bringing the total to 89.
+
+? Do paying ChatGPT users see ads?
+According to Reuters, ads appear only on ChatGPT's Free and Go plans; Plus, Pro and Enterprise subscriptions remain ad-free.

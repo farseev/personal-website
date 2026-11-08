@@ -1,0 +1,53 @@
+title: Adobe: AI Traffic Now Converts Better Than Other Visits
+dek: Adobe says AI-referred visits to US retailers converted 90% better than other traffic in September. Why AI answers became a channel, and what to do.
+news: Adobe reports AI traffic converting better than non-AI traffic and forecasts holiday AI traffic growth
+news_date: 2026-10-29
+published: 2026-11-08
+topic: AI search
+source: Adobe report: AI traffic now generates 83% higher revenue per visit for U.S. retailers heading into the holiday shopping season | Adobe | 2026-10-29 | https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday
+source: Adobe projection: 2026 online holiday sales to reach $275.1 billion | Digital Commerce 360 | 2026-09-29 | https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion
+---
+A year ago, the polite thing to say about traffic from AI assistants was that it was small but promising. Adobe's latest numbers suggest it is no longer small, and in one important way it is already better than the rest: people who arrive from AI answers buy more.
+
+## What happened
+
+In a report published on 29 October, [Adobe says](https://business.adobe.com/blog/ai-traffic-higher-revenue-per-visit-retail-holiday) that in September 2026 traffic to US retail sites from AI sources grew 71% year on year and converted 90% better than non-AI traffic, the highest level it has observed. In August 2025, by contrast, AI traffic converted 9% worse. AI visitors spent 73% more time on site, viewed 25% more pages per visit and added products to carts at a 53% higher rate. Revenue per visit from AI traffic was 83% higher than from non-AI traffic. Adobe's summary: "In just 12 months, AI traffic has gone from being worth less than half of a typical visit to nearly twice as much."
+
+Adobe also introduced a measure of how readable sites are for AI systems. The average US retail homepage scored 63%, which Adobe says means "more than a third of homepage content is not visible to the AI systems and agents"; general merchandise homepages scored 40%. The data covers more than 1 trillion visits to US retail sites, plus a survey of more than 5,000 US respondents.
+
+A month earlier, according to [Digital Commerce 360](https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion), Adobe forecast US online holiday sales of US$275.1 billion for 1 November to 31 December, up 6.7%, with AI traffic to US retail sites up 130% year on year and the steepest growth on Thanksgiving.
+
+## Why it matters
+
+Conversion is the number that settles arguments. Traffic growth can be dismissed as curiosity. Visitors who stay longer, add more to their carts and generate more revenue per visit are a channel.
+
+The likely reason is intuitive. Someone who has already asked an assistant detailed questions about a product arrives further along in their decision. The AI conversation did the early part of the funnel. That makes AI answers a powerful, and largely unpaid, top and middle of funnel, for the brands that get cited.
+
+The readability score is the actionable part. If a third of a typical homepage is invisible to AI systems, then many retailers are being represented in AI answers by a partial picture of themselves, or not at all.
+
+## What my research says
+
+A visitor who arrives from an AI conversation is a pre-profiled visitor. My research on [learning user profiles from multiple sources](https://doi.org/10.1145/2671188.2749381) (ICMR 2015) and on [how the data source affects AI user models](https://doi.org/10.1609/aaai.v34i10.7258) (AAAI 2020) points to the same conclusion: the richer and more relevant the signal about intent, the better the match. A long, specific conversation with an assistant is about as rich an intent signal as a shopper produces. When that conversation sends the shopper to you, the match is already good, so conversion is higher.
+
+The flip side is measurement. In my e27 column [Every dashboard is green. So why can't anyone say what worked?](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/) I wrote about the gap between reported success and real understanding. AI traffic is a perfect example. It is easy to celebrate a conversion rate; it is harder to know which of your pages, claims or reviews earned the citation that sent the visitor. Explainability, which has been central to my research from [Against Opacity](https://doi.org/10.1145/3581783.3612817) to [MindFuse](https://doi.org/10.1145/3746027.3758167), applies to channels as much as to models.
+
+## What retailers and brands should do now
+
+- Measure AI traffic separately. Tag and report AI referrals as their own channel, with conversion, revenue per visit and returns.
+- Make key pages readable. Put prices, specifications, availability, delivery and return policies in plain, crawlable text, not only in images or scripts.
+- Answer the questions people ask assistants. Comparison points, sizing, compatibility, care: content that resolves real questions is what gets cited.
+- Check how you appear. Regularly ask major assistants about your category and see whether and how you are described. Correct inaccuracies at the source.
+- Prepare for the holidays. If AI traffic grows the way Adobe forecasts, the pages AI systems read should be finalised before peak season, not during it.
+
+AI answers have become a channel that sends better-qualified visitors than search did. The brands that get the most from it will be the ones that make themselves easy for machines to read and honest for people to trust.
+
+## FAQ
+
+? How well does AI traffic convert for retailers?
+Adobe reports that in September 2026, AI-referred traffic to US retail sites converted 90% better than non-AI traffic and generated 83% higher revenue per visit, the strongest performance it has observed.
+
+? How much will AI traffic grow this holiday season?
+Adobe forecast that AI traffic to US retail sites would grow 130% year on year over the 1 November to 31 December 2026 period, according to Digital Commerce 360.
+
+? How can retailers make their sites more visible to AI assistants?
+By putting key product and policy information in plain, crawlable text, answering the questions shoppers ask assistants, measuring AI traffic as its own channel and regularly checking how assistants describe their brand.

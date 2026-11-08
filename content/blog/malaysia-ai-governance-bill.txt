@@ -1,0 +1,51 @@
+title: Malaysia's AI Governance Bill: Responsibility by Role
+dek: Malaysia's draft AI Governance Bill, due by early 2027, puts duties on those who develop, provide or use AI. What role-based rules mean for marketers.
+news: Malaysia completes its draft AI Governance Bill and plans to table it in Parliament by early 2027
+news_date: 2026-10-29
+published: 2026-11-08
+topic: Asia and Singapore
+source: AI Governance Bill expected by early 2027, says Gobind | The Star | 2026-09-11 | https://www.thestar.com.my/news/nation/2026/09/11/ai-governance-bill-expected-by-early-2027-says-gobind
+source: Gobind: Artificial Intelligence Governance Bill to be tabled in Parliament early next year | The Edge Malaysia | 2026-10-29 | https://theedgemalaysia.com/node/823773
+---
+Southeast Asia is not going to copy Europe's AI Act, but it is not standing still either. Malaysia is the latest country to move from guidelines towards law. Its draft AI Governance Bill is finished, and the government plans to table it by early 2027. The interesting part for marketers is how it assigns responsibility.
+
+## What happened
+
+In September, Digital Minister Gobind Singh Deo said [the draft has already been completed](https://www.thestar.com.my/news/nation/2026/09/11/ai-governance-bill-expected-by-early-2027-says-gobind) and was being submitted to the Cabinet, according to The Star. He described AI governance in three layers: standards, regulations and laws, with some matters handled through standards first. MY-AI Standards have been established with Sirim Berhad, and the creation of AI Malaysia is part of building enforcement alongside the bill.
+
+On 29 October, answering questions in the Dewan Rakyat, he gave more detail. According to [The Edge Malaysia](https://theedgemalaysia.com/node/823773), the bill would set a legal framework requiring those who develop, provide or use AI systems to identify, assess and manage potential risks, covering AI risk management, accountability among parties and procedures for reporting and handling incidents. The government plans to table it by early 2027. Until then, fraud, deepfakes, content manipulation and false information are handled under existing laws, including the Penal Code, the Communications and Multimedia Act 1998, the Online Safety Act 2025 and the Cybersecurity Act 2024. Malaysia is also working with other ASEAN member states on a more consistent regional approach. Gobind said the approach "aligns with the principle that responsibility should be determined based on one's role".
+
+## Why it matters
+
+"Responsibility based on one's role" is the phrase to remember. It means that a brand using an AI tool is not off the hook because someone else built the model. Developers, providers and users each carry obligations proportionate to what they do. For marketing, that most often puts companies in the "user" or "deployer" role: you did not train the model, but you chose to use it on your customers.
+
+Incident reporting is the other practical element. If an AI system you use causes harm, such as a deepfake ad, a discriminatory targeting outcome or a chatbot giving dangerous advice, there will likely be a procedure for reporting and handling it.
+
+Regional alignment matters too. Many brands run campaigns across Malaysia, Singapore, Indonesia, Thailand and Vietnam at once. A more consistent ASEAN approach would make compliance across those markets far simpler.
+
+## What my research says
+
+Role-based responsibility mirrors how I think about AI in marketing. In my WSDM 2023 talk, [Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation](https://doi.org/10.1145/3539597.3575791), I looked at the ethical and privacy questions raised by automated profiling, ad targeting and creative scoring. Many of those questions are not about the model itself. They are about how a company chooses to apply it: which audiences, which data, which claims.
+
+That is why I care about explainability. In [Against Opacity](https://doi.org/10.1145/3581783.3612817) (ACM Multimedia 2023) we explained the drivers of predicted ad performance; in [SOMONITOR](https://arxiv.org/abs/2407.13117) we described combining explainable models with LLMs for marketing analytics. If you are accountable as a user of AI, you need to be able to explain what it did on your behalf. Systems that cannot explain themselves make that accountability very hard to meet.
+
+## What marketers operating in Malaysia should do now
+
+- Identify your role for each AI system: are you developing, providing or using it? Most marketing teams will be users; some agencies and platforms will be providers.
+- Start a simple risk register. For each AI use, note the possible harm, the safeguard and the person responsible.
+- Prepare an incident path. Decide how you would detect, stop and report a harmful AI output, such as a deepfake or misleading claim.
+- Check existing laws now. Deepfakes and false information are already covered under current legislation; do not wait for the new bill.
+- Think regionally. Build one governance approach for your ASEAN campaigns that can absorb each country's specifics.
+
+Malaysia's bill is still a draft, and details will matter. But the direction is clear, and it matches what regulators across the region are signalling: if you use AI on your customers, you own the consequences.
+
+## FAQ
+
+? When will Malaysia's AI Governance Bill be tabled?
+According to The Edge Malaysia, Digital Minister Gobind Singh Deo told Parliament on 29 October 2026 that the government plans to table the bill in the Dewan Rakyat by early 2027.
+
+? Who will Malaysia's AI Governance Bill apply to?
+Based on the minister's description, it would require those who develop, provide or use AI systems to identify, assess and manage potential risks, with responsibility determined by each party's role.
+
+? How are deepfakes handled in Malaysia before the new law?
+The Edge Malaysia reports that, until the bill is passed, fraud, deepfakes, content manipulation and false information are addressed under existing laws including the Penal Code, the Communications and Multimedia Act 1998, the Online Safety Act 2025 and the Cybersecurity Act 2024.
