@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- sitemap.xml — Prof. Aleks Farseev. Replace the domain with your live domain. -->
+<!-- sitemap.xml — Prof. Aleks Farseev. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aleksfarseev.com/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <loc>https://farseev.com/</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

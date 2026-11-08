@@ -1,6 +1,6 @@
-# robots.txt — Prof. Aleks Farseev (https://aleksfarseev.com/)
+# robots.txt — Prof. Aleks Farseev (https://farseev.com/)
 # Personal site of the Founder & CEO of SOMIN.ai. Search indexing and
-# AI citation are welcome. Replace the domain below with your live domain.
+# AI citation are welcome. Live domain: farseev.com.
 
 # --- Standard search engines: allow everything ---
 User-agent: *
@@ -56,4 +56,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 # --- Sitemap ---
-Sitemap: https://aleksfarseev.com/sitemap.xml
+Sitemap: https://farseev.com/sitemap.xml
