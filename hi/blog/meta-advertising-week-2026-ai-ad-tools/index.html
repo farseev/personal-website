@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Advertising Week New York में Meta ने एआई वीडियो, अपने विज्ञापन असिस्टेंट, सरल भाषा वाली ऑडियंस और एक Ads MCP server का विस्तार किया। मार्केटर्स को अब भी किस पर नियंत्रण रखना चाहिए।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए | Prof. Aleks Farseev" />
+<meta property="og:description" content="Advertising Week New York में Meta ने एआई वीडियो, अपने विज्ञापन असिस्टेंट, सरल भाषा वाली ऑडियंस और एक Ads MCP server का विस्तार किया। मार्केटर्स को अब भी किस पर नियंत्रण रखना चाहिए।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="विज्ञापन और मार्केटिंग एआई" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Advertising Week New York में Meta ने एआई वीडियो, अपने विज्ञापन असिस्टेंट, सरल भाषा वाली ऑडियंस और एक Ads MCP server का विस्तार किया। मार्केटर्स को अब भी किस पर नियंत्रण रखना चाहिए।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए","description":"Advertising Week New York में Meta ने एआई वीडियो, अपने विज्ञापन असिस्टेंट, सरल भाषा वाली ऑडियंस और एक Ads MCP server का विस्तार किया। मार्केटर्स को अब भी किस पर नियंत्रण रखना चाहिए।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"विज्ञापन और मार्केटिंग एआई","about":{"@type":"Thing","name":"Meta ने Advertising Week New York 2026 में नए एआई विज्ञापन टूल की घोषणा की"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Meta ने Advertising Week 2026 में कौन-से एआई विज्ञापन टूल की घोषणा की?","acceptedAnswer":{"@type":"Answer","text":"Relevant Audience और TechJuice के अनुसार, Meta ने स्थिर छवियों से Advantage+ क्रिएटिव वीडियो की सामान्य उपलब्धता, Ads Creative Studio के व्यापक रोलआउट, मेमोरी वाले असिस्टेंट और एजेंटिक कार्रवाइयों के परीक्षण, Detailed Targeting में सामान्य भाषा वाली ऑडियंस खोज, एक विस्तारित Ads MCP server और चैट के भीतर चेकआउट के परीक्षण की घोषणा की।"}},{"@type":"Question","name":"Meta का Ads MCP server क्या है?","acceptedAnswer":{"@type":"Answer","text":"यह Model Context Protocol पर आधारित एक इंटरफ़ेस है जो थर्ड-पार्टी एआई टूल्स को क्रिएटिव अपलोड, पूर्वावलोकन, रिपोर्टिंग और अभियान ड्राफ़्ट करने जैसे कार्यों के लिए Meta की विज्ञापन प्रणाली से जुड़ने देता है। Relevant Audience दस साझेदार सूचीबद्ध करता है, जिनमें Databricks, Perplexity और Snowflake शामिल हैं।"}},{"@type":"Question","name":"क्या विज्ञापनदाताओं को एआई असिस्टेंट को बजट और टार्गेटिंग बदलने देना चाहिए?","acceptedAnswer":{"@type":"Answer","text":"केवल नियमों के साथ। पूर्वावलोकन और स्वीकृतियों का उपयोग करें, परिभाषित करें कि कौन-से परिवर्तन स्वचालित रूप से हो सकते हैं, और केवल प्लेटफ़ॉर्म द्वारा रिपोर्ट किए गए कन्वर्ज़न पर निर्भर रहने के बजाय होल्डआउट परीक्षण जैसे स्वतंत्र मापन से परिणाम जाँचें।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए","item":"https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · विज्ञापन और मार्केटिंग एआई</p>
+      <h1 class="h-display">Meta के नए एआई विज्ञापन टूल: ऑटोमेशन को अब भी व्याख्या चाहिए</h1>
+      <p class="lead">Advertising Week New York में Meta ने एआई वीडियो, अपने विज्ञापन असिस्टेंट, सरल भाषा वाली ऑडियंस और एक Ads MCP server का विस्तार किया। मार्केटर्स को अब भी किस पर नियंत्रण रखना चाहिए।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: Meta ने Advertising Week New York 2026 में नए एआई विज्ञापन टूल की घोषणा की (<time datetime="2026-10-06">6 अक्टूबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>हर साल बड़े प्लेटफ़ॉर्म आपके लिए पूरा अभियान चलाने की ओर एक और कदम बढ़ाते हैं। 6 अक्टूबर को Advertising Week New York में Meta ने एक साथ कई कदम उठाए: मेमोरी वाला एक विज्ञापन असिस्टेंट, स्थिर छवियों से बनाया गया वीडियो, सामान्य भाषा में ऑडियंस की खोज, और एक विस्तारित सर्वर जो बाहरी एआई टूल्स को इसकी विज्ञापन प्रणाली चलाने देता है। उपयोगी टूल। लेकिन व्याख्या के बिना ऑटोमेशन एक जोखिम है जो आप उठाते हैं, Meta आपकी ओर से नहीं उठाता।</p>
+<h2>क्या हुआ</h2>
+<p>मैं Meta का अपना घोषणा पेज नहीं खोल सका, इसलिए मैं दो विस्तृत विवरणों पर निर्भर हूँ। <a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Relevant Audience के विश्लेषण</a> और <a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">TechJuice की रिपोर्ट</a> के अनुसार, Meta ने घोषणा की:</p>
+<ul><li>स्थिर छवियों से Advantage+ क्रिएटिव वीडियो, जो अब सामान्य रूप से उपलब्ध है, और पात्र विज्ञापनदाताओं के लिए बीटा में कैटलॉग प्रोडक्ट वीडियो।</li><li>Ads Creative Studio, एक क्रिएटिव वर्कस्पेस जो पहले चुनिंदा साझेदारों तक सीमित था, अब और विज्ञापनदाताओं के लिए उपलब्ध होना शुरू हो रहा है।</li><li>बातचीत के दौरान मेमोरी रखने वाला एक व्यावसायिक एआई असिस्टेंट, जिसमें रणनीति दस्तावेज़ और ब्रांड दिशानिर्देश आयात करने, निर्धारित रिपोर्ट और अलर्ट, और पूर्वावलोकन व स्वीकृति के साथ अभियान सेटअप और बजट परिवर्तन जैसी एजेंटिक कार्रवाइयों का परीक्षण शामिल है।</li><li>एक ग्राहक लाइफ़साइकिल रणनीति टूल, जो अब सभी विज्ञापनदाताओं के लिए उपलब्ध है, साथ ही Detailed Targeting में एआई-सक्षम ऑडियंस खोज, जहाँ विज्ञापनदाता सामान्य भाषा में आदर्श ग्राहक का वर्णन करते हैं। Relevant Audience के अनुसार इसके लिए Meta की समय-सीमा "साल के अंत तक" है।</li><li>एक विस्तारित Ads MCP server, जिसमें Databricks, Perplexity, Snowflake और Triple Whale सहित दस नामित साझेदार हैं, ताकि थर्ड-पार्टी एआई टूल Meta की विज्ञापन प्रणाली के साथ काम कर सकें।</li><li>कॉमर्स फ़ीचर्स, जिनमें Shopify के साथ Messenger पर Meta के Business Agent के ज़रिए सीधे चेकआउट का परीक्षण, और Adyen, PayPal, Shopify और Stripe जैसे साझेदारों के साथ Meta AI में सीधा चेकआउट शामिल है।</li></ul>
+<p>Meta ने यह दावा भी किया कि उसके असिस्टेंट की अनुशंसाएँ अपनाने वाले विज्ञापनदाता "आमतौर पर" प्रति कन्वर्ज़न समान लागत पर 5% अधिक कन्वर्ज़न देखते हैं, और Facebook और Instagram पर 60% से अधिक समय वीडियो के साथ बिताया जाता है। Relevant Audience बताता है कि Meta ने इन आँकड़ों की पद्धति प्रकाशित नहीं की।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>इनमें से दो लॉन्च यह बदल देते हैं कि सोचने का काम कौन करता है।</p>
+<p>सामान्य भाषा में ऑडियंस खोज का अर्थ है कि प्लेटफ़ॉर्म ग्राहक के आपके वर्णन को टार्गेटिंग में बदलता है। यह एक प्रोफाइलिंग निर्णय है। असिस्टेंट-संचालित बजट और टार्गेटिंग परिवर्तनों का अर्थ है कि परिणाम के साथ क्या करना है, यह भी प्लेटफ़ॉर्म तय करता है। और MCP server का अर्थ है कि Meta के बाहर आप जो एआई उपयोग करते हैं, वह अब Meta के भीतर काम कर सकता है।</p>
+<p>हर कदम समय बचाता है। साथ मिलकर वे निर्णयों को ऐसी प्रणालियों के भीतर केंद्रित कर देते हैं जो प्लेटफ़ॉर्म के उद्देश्यों के लिए ऑप्टिमाइज़ होती हैं और प्लेटफ़ॉर्म के अपने डेटा से मापी जाती हैं। जब एक ही कंपनी विज्ञापन बेचती है, ऑडियंस चुनती है, क्रिएटिव बनाती है और परिणाम रिपोर्ट करती है, तो एक स्वतंत्र दृष्टिकोण कम नहीं, बल्कि और अधिक मूल्यवान हो जाता है।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>शब्दों में किसी ऑडियंस का वर्णन करना और बदले में एक लक्ष्य सेगमेंट पाना, ऐसी समस्या है जिसका मैंने लंबे समय तक अध्ययन किया है। <a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">Twitter, Facebook और PersonalityCafe पर मल्टी-व्यू यूज़र व्यक्तित्व प्रोफाइलिंग</a> (Frontiers in Big Data, 2022) पर हमारे काम ने दिखाया कि आप लोगों के बारे में क्या अनुमान लगाते हैं, यह काफ़ी हद तक इस पर निर्भर करता है कि आप कौन-से संकेत उपयोग करते हैं। सामान्य भाषा का वर्णन आपके ग्राहक के बारे में एक परिकल्पना है। इसका परीक्षण होना चाहिए, केवल निष्पादन नहीं।</p>
+<p>क्रिएटिव के मामले में, मेरी टीम ने लॉन्च से पहले स्कोरिंग पर काम किया है। <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) में हमने एक मल्टीमोडल मॉडल प्रदर्शित किया जो किसी विज्ञापनदाता के Meta विज्ञापन क्रिएटिव को, उनके लाइव होने से पहले, टेक्स्ट, छवि, टार्गेटिंग और सेटिंग्स का उपयोग करके स्कोर करता है। <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) में हमने एक एलएलएम असिस्टेंट जोड़ा जो बताता है कि अनुमानित क्लिक-थ्रू दर किन कारकों से तय होती है। सिद्धांत वही है जो मैं प्लेटफ़ॉर्म टूल्स पर लागू करता हूँ: जिस स्कोर की आप व्याख्या नहीं कर सकते, उससे आप सीख भी नहीं सकते।</p>
+<p>स्थिर छवियों से बनाया गया वीडियो किसी ब्रांड द्वारा चलाए जा सकने वाले वेरिएंट्स की संख्या कई गुना कर देगा। यह अच्छा है, बशर्ते कोई अब भी तय करे कि कौन-से वेरिएंट बजट के लायक हैं और समझे कि विजेता क्यों जीते। वरना आपको ज़्यादा क्रिएटिव और कम ज्ञान मिलेगा।</p>
+<h2>विज्ञापनदाताओं को अभी क्या करना चाहिए</h2>
+<ul><li>नए वीडियो और क्रिएटिव टूल्स का उपयोग करें, लेकिन लॉन्च-पूर्व फ़िल्टर रखें। पैसा ख़र्च होने से पहले वेरिएंट्स की समीक्षा और स्कोरिंग करें, और रिकॉर्ड रखें कि हर एक क्यों लॉन्च हुआ।</li><li>सामान्य भाषा वाली ऑडियंस को प्रयोग मानें। वर्णन लिखें, उसे अपनी मौजूदा सबसे अच्छी ऑडियंस के मुक़ाबले चलाएँ, और केवल प्लेटफ़ॉर्म कन्वर्ज़न नहीं, बल्कि प्रति वास्तविक परिणाम लागत की तुलना करें।</li><li>एजेंटिक परिवर्तनों को सोच-समझकर स्वीकृत करें। Meta द्वारा बताए गए पूर्वावलोकन और स्वीकृतियों का उपयोग करें, और नियम तय करें कि कोई असिस्टेंट बिना इंसान के कौन-से परिवर्तन कर सकता है।</li><li>सावधान रहें कि आप क्या आयात करते हैं। रणनीति दस्तावेज़ और ब्रांड दिशानिर्देश संवेदनशील होते हैं। तय करें कि असिस्टेंट को वास्तव में किसकी ज़रूरत है।</li><li>मापन का एक स्वतंत्र दृष्टिकोण रखें। होल्डआउट, वृद्धिशीलता परीक्षण और आपका अपना एनालिटिक्स प्लेटफ़ॉर्म द्वारा रिपोर्ट किए गए परिणामों का संतुलन हैं।</li></ul>
+<p>Meta के टूल इतने अच्छे होते जा रहे हैं कि बाधा निष्पादन से हटकर विवेक पर आ जाती है। सुनिश्चित करें कि उसका उपयोग अब भी आपकी टीम ही कर रही है।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>Meta ने Advertising Week 2026 में कौन-से एआई विज्ञापन टूल की घोषणा की?</summary><p>Relevant Audience और TechJuice के अनुसार, Meta ने स्थिर छवियों से Advantage+ क्रिएटिव वीडियो की सामान्य उपलब्धता, Ads Creative Studio के व्यापक रोलआउट, मेमोरी वाले असिस्टेंट और एजेंटिक कार्रवाइयों के परीक्षण, Detailed Targeting में सामान्य भाषा वाली ऑडियंस खोज, एक विस्तारित Ads MCP server और चैट के भीतर चेकआउट के परीक्षण की घोषणा की।</p></details><details><summary>Meta का Ads MCP server क्या है?</summary><p>यह Model Context Protocol पर आधारित एक इंटरफ़ेस है जो थर्ड-पार्टी एआई टूल्स को क्रिएटिव अपलोड, पूर्वावलोकन, रिपोर्टिंग और अभियान ड्राफ़्ट करने जैसे कार्यों के लिए Meta की विज्ञापन प्रणाली से जुड़ने देता है। Relevant Audience दस साझेदार सूचीबद्ध करता है, जिनमें Databricks, Perplexity और Snowflake शामिल हैं।</p></details><details><summary>क्या विज्ञापनदाताओं को एआई असिस्टेंट को बजट और टार्गेटिंग बदलने देना चाहिए?</summary><p>केवल नियमों के साथ। पूर्वावलोकन और स्वीकृतियों का उपयोग करें, परिभाषित करें कि कौन-से परिवर्तन स्वचालित रूप से हो सकते हैं, और केवल प्लेटफ़ॉर्म द्वारा रिपोर्ट किए गए कन्वर्ज़न पर निर्भर रहने के बजाय होल्डआउट परीक्षण जैसे स्वतंत्र मापन से परिणाम जाँचें।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">विज्ञापन और मार्केटिंग एआई · 29 अक्टूबर 2026</span><h3>WPP की 2026 की तीसरी तिमाही: एआई के दबाव में एजेंसी मॉडल</h3><p>WPP ने लाइक-फ़ॉर-लाइक शुद्ध राजस्व में गिरावट दर्ज की, जबकि उसके सीईओ ने WPP Open के ज़रिए एआई-सक्षम सेवाओं की माँग की ओर इशारा किया। एजेंसियों के लिए इसका क्या अर्थ है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">विज्ञापन और मार्केटिंग एआई · 21 अक्टूबर 2026</span><h3>Meta Q3 2026: एआई ने विज्ञापन कीमतें बढ़ाईं, क्रिएटर्स बने एक चैनल</h3><p>Meta की 2026 की तीसरी तिमाही: विज्ञापन राजस्व 26% ऊपर, प्रति विज्ञापन कीमत 14% ऊपर, पार्टनरशिप विज्ञापन $15bn रन रेट से आगे, और एक बहुत अलग एशिया-प्रशांत। इसका क्या अर्थ है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">विज्ञापन और मार्केटिंग एआई · 30 सितंबर 2026</span><h3>Amazon Ads Agent: unBoxed 2026 में रिटेल मीडिया एजेंटिक हुआ</h3><p>unBoxed 2026 में Amazon ने अपने बाइंग टूल्स को Amazon Ads Agent में मिला दिया, जिसमें बातचीत-आधारित मापन और एआई क्रिएटिव शामिल हैं। किन चीज़ों को इंसानों के हाथ में रखें।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

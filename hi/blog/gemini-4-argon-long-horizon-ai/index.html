@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="मॉडल" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या?","description":"Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"मॉडल","about":{"@type":"Thing","name":"Google DeepMind ने लंबे, बहु-चरणीय कार्यों के लिए अपना फ़्रंटियर मॉडल Gemini 4 Argon पेश किया"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Gemini 4 Argon क्या है?","acceptedAnswer":{"@type":"Answer","text":"यह 30 सितंबर 2026 को पेश किया गया Google DeepMind का फ़्रंटियर मॉडल है, जो वास्तविक दुनिया की कोडिंग, एंटरप्राइज़ ज्ञान-आधारित काम और साइबर रक्षा के लिए है, और जिसकी आउटपुट सीमा 64,000 से बढ़कर 10 लाख टोकन है।"}},{"@type":"Question","name":"Gemini 4 Argon का उपयोग सबसे पहले कौन कर सकता है?","acceptedAnswer":{"@type":"Answer","text":"Google का कहना है कि यह सबसे पहले उसके Fairwind Program के ज़रिए भरोसेमंद साइबर रक्षकों को उपलब्ध कराया जा रहा है, और डेवलपर्स, उद्यमों और उपभोक्ताओं के लिए व्यापक रिलीज़ की योजना है, जिसकी शुरुआत पेड API ग्राहकों और Google AI Ultra सब्सक्राइबर्स से होगी।"}},{"@type":"Question","name":"Gemini 4 Argon की क़ीमत कितनी है?","acceptedAnswer":{"@type":"Answer","text":"Google शुरुआती क़ीमत प्रति मिलियन इनपुट टोकन US$2 और प्रति मिलियन आउटपुट टोकन US$10 सूचीबद्ध करता है, जो शुरुआती अवधि के बाद US$4 और US$20 हो जाएगी, और कैश्ड इनपुट टोकन पर 95% छूट है।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या?","item":"https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या?</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · मॉडल</p>
+      <h1 class="h-display">Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या?</h1>
+      <p class="lead">Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: Google DeepMind ने लंबे, बहु-चरणीय कार्यों के लिए अपना फ़्रंटियर मॉडल Gemini 4 Argon पेश किया (<time datetime="2026-09-30">30 सितंबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>पहले होड़ कॉन्टेक्स्ट विंडो की थी। Gemini 4 Argon ध्यान को मॉडल के दूसरे छोर पर ले जाता है: वह एक बार में कितना उत्पन्न कर सकता है। 30 सितंबर को Google DeepMind ने Argon पेश किया, जिसकी आउटपुट सीमा 64,000 से बढ़कर दस लाख टोकन हो गई है। यह एक किताब जितना लंबा उत्तर है। मार्केटर्स के लिए ज़्यादा दिलचस्प प्रश्न यह है कि किस तरह के काम को इसकी ज़रूरत होती है।</p>
+<h2>क्या हुआ</h2>
+<p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Google की घोषणा</a> में Koray Kavukcuoglu, Argon को Google का फ़्रंटियर मॉडल बताते हैं "वास्तविक दुनिया की कोडिंग, एंटरप्राइज़ ज्ञान-आधारित काम और साइबर रक्षा के लिए"। आउटपुट टोकन सीमा 1M तक बढ़ जाती है, और मॉडल को सॉफ़्टवेयर इंजीनियरिंग, क़ानूनी और वित्तीय काम तथा साइबर सुरक्षा में लंबे, बहु-चरणीय कार्यों के लिए डिज़ाइन किया गया है, जिसमें चार्ट विश्लेषण और लंबे वीडियो की समझ जैसी मज़बूत दृश्य समझ है।</p>
+<p>रोलआउट असामान्य है। Argon सबसे पहले Google के Fairwind Program के ज़रिए भरोसेमंद साइबर रक्षकों के एक समूह को मिलता है, और डेवलपर्स, उद्यमों और उपभोक्ताओं के लिए व्यापक पहुँच की योजना है, जिसकी शुरुआत पेड API ग्राहकों और Google AI Ultra सब्सक्राइबर्स से होगी। शुरुआती क़ीमत प्रति मिलियन इनपुट टोकन US$2 और प्रति मिलियन आउटपुट टोकन US$10 है, जो शुरुआती अवधि के बाद US$4 और US$20 हो जाएगी, और कैश्ड इनपुट पर 95% छूट है।</p>
+<p>Google बेंचमार्क परिणाम सूचीबद्ध करता है, जिनमें DeepSWE v1.1 पर 77.9% और LVBench लंबे-वीडियो बेंचमार्क पर 91.7% शामिल हैं, और बड़े कोड माइग्रेशन जैसे आंतरिक उपयोगों का वर्णन करता है। वह सुरक्षा उपायों का भी वर्णन करता है, जिनमें दुरुपयोग और मिसअलाइनमेंट की निगरानी और अप्रत्यक्ष प्रॉम्प्ट इंजेक्शन के ख़िलाफ़ मज़बूती शामिल है। ये Google के अपने परिणाम हैं।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>दस लाख आउटपुट टोकन का मतलब लंबे ब्लॉग पोस्ट लिखना नहीं है। लंबे आउटपुट तब मायने रखते हैं जब काम एक ही सुसंगत प्रयास में पूरी कृति तैयार करना हो: पूरे कोडबेस का माइग्रेशन, अनुबंधों का एक सेट, एक बड़ा संरचित डेटासेट। मार्केटिंग में सबसे क़रीबी समकक्ष हैं पूरे प्रोडक्ट फ़ीड को फिर से लिखना, किसी वेबसाइट का पूर्ण स्थानीयकरण, या सैकड़ों समन्वित वेरिएंट्स वाली अभियान लाइब्रेरी।</p>
+<p>मेरे लिए लंबे वीडियो की समझ ज़्यादा तुरंत उपयोगी क्षमता है। सोशल प्लेटफ़ॉर्म पर वीडियो हावी है, और ज़्यादातर ब्रांड अब भी नमूने देखकर और नोट्स लेकर उसका विश्लेषण करते हैं। जो मॉडल बड़े पैमाने पर भरोसेमंद ढंग से लंबे वीडियो पढ़ सके, वह ऐसे प्रतिस्पर्धी और श्रेणी विश्लेषण का रास्ता खोलता है जिसे पहले पूरी गहराई से करना असंभव था।</p>
+<p>और साइबर-प्रथम रोलआउट इस बात का संकेत है कि फ़्रंटियर लैब्स के अनुसार जोखिम कहाँ है। जब कोई लैब बाकी सबसे पहले रक्षकों को पहुँच देती है, तो वह आपको बता रही है कि मॉडल इतना सक्षम है कि हमलावरों के लिए भी मायने रखता है।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>मेरा बहुत-सा शोध केवल टेक्स्ट नहीं, बल्कि सोशल मल्टीमीडिया पर रहा है। शुरुआत में हमने <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> (ACM Multimedia 2016) बनाया, जो विभिन्न नेटवर्कों पर सोशल मल्टीमीडिया का विश्लेषण करने वाला एक बिग डेटा प्लेटफ़ॉर्म है। हाल ही में, <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> (WWW 2025 Companion) में हमने इस पर ध्यान केंद्रित किया कि प्रतिस्पर्धी क्या संप्रेषित करते हैं और वह क्यों काम करता है, इसकी व्याख्या कैसे की जाए।</p>
+<p>उस काम से सबक यह है कि विश्लेषण का पैमाना समस्या का केवल आधा हिस्सा है। जो मॉडल प्रतिस्पर्धियों के हज़ार वीडियो देख सकता है, उसे फिर भी उन सवालों के जवाब देने होते हैं जिनकी किसी रणनीतिकार को परवाह है: कौन-से संदेश दोहराए जाते हैं, कौन-से प्रदर्शन करते हैं, वे किस ऑडियंस को लक्षित करते हैं और कौन-सी खाई खुली रह जाती है। लंबे संदर्भ और लंबे आउटपुट वाले मॉडल पढ़ना और लिखना सस्ता करते हैं। प्रश्न तय करना और सत्यापन करना, प्रदर्शन डेटा के सहारे, इंसानी योगदान बना रहता है।</p>
+<p>मैं एक सावधानी जोड़ूँगा। बहुत लंबे आउटपुट जाँचना कठिन है। 200 पेज का जनरेट किया गया दस्तावेज़ 98% सही होकर भी वह एक दावा रख सकता है जो आपको मुसीबत में डाल दे। आउटपुट जितना लंबा होगा, संरचना, सैंपलिंग और स्वचालित जाँचों की उतनी ही ज़्यादा ज़रूरत होगी।</p>
+<h2>मैं मार्केटिंग में लंबी अवधि वाले मॉडल का उपयोग कैसे करूँगा</h2>
+<ul><li>श्रेणी के वीडियो ऑडिट। प्रतिस्पर्धियों के वीडियो के पूरे सेट पर संरचित निष्कर्ष माँगें: हुक, दावे, फ़ॉर्मेट, कॉल टू एक्शन। फिर एक नमूने का हाथ से सत्यापन करें।</li><li>समन्वित एसेट लाइब्रेरी। एक ही बार में किसी अभियान के सभी वेरिएंट बनाएँ ताकि लहजा और दावे सुसंगत रहें, और एक चेकलिस्ट के आधार पर उनकी समीक्षा करें।</li><li>पूरी साइट के स्थानीयकरण के ड्राफ़्ट। नए बाज़ारों के लिए पूरे ड्राफ़्ट तैयार करें, फिर मूल भाषी समीक्षकों से पहले ज़्यादा ट्रैफ़िक वाले पेज जँचवाएँ।</li><li>इंडेक्स के साथ लंबे दस्तावेज़। मॉडल से स्रोतों सहित दावों की एक तालिका बनवाएँ, ताकि इंसान जोखिम भरे हिस्सों का जल्दी सत्यापन कर सकें।</li></ul>
+<p>Argon की सुर्ख़ी वाली संख्या प्रभावशाली है। मार्केटर्स के लिए मूल्य इस क्षमता को, जो निकलता है उसे जाँचने के अनुशासन के साथ जोड़ने से आएगा।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>Gemini 4 Argon क्या है?</summary><p>यह 30 सितंबर 2026 को पेश किया गया Google DeepMind का फ़्रंटियर मॉडल है, जो वास्तविक दुनिया की कोडिंग, एंटरप्राइज़ ज्ञान-आधारित काम और साइबर रक्षा के लिए है, और जिसकी आउटपुट सीमा 64,000 से बढ़कर 10 लाख टोकन है।</p></details><details><summary>Gemini 4 Argon का उपयोग सबसे पहले कौन कर सकता है?</summary><p>Google का कहना है कि यह सबसे पहले उसके Fairwind Program के ज़रिए भरोसेमंद साइबर रक्षकों को उपलब्ध कराया जा रहा है, और डेवलपर्स, उद्यमों और उपभोक्ताओं के लिए व्यापक रिलीज़ की योजना है, जिसकी शुरुआत पेड API ग्राहकों और Google AI Ultra सब्सक्राइबर्स से होगी।</p></details><details><summary>Gemini 4 Argon की क़ीमत कितनी है?</summary><p>Google शुरुआती क़ीमत प्रति मिलियन इनपुट टोकन US$2 और प्रति मिलियन आउटपुट टोकन US$10 सूचीबद्ध करता है, जो शुरुआती अवधि के बाद US$4 और US$20 हो जाएगी, और कैश्ड इनपुट टोकन पर 95% छूट है।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">मॉडल · 7 अक्टूबर 2026</span><h3>Claude Haiku 5.5 और मार्केटिंग में छोटे मॉडलों का पक्ष</h3><p>Anthropic का Claude Haiku 5.5 सस्ते, तेज़, बड़े पैमाने के काम के लिए बना है। किसी मॉडल परिवार का सबसे छोटा मॉडल अक्सर मार्केटर्स के लिए सबसे महत्वपूर्ण क्यों होता है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">मॉडल · 29 सितंबर 2026</span><h3>OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है</h3><p>परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">मॉडल · 22 सितंबर 2026</span><h3>Claude Opus 5.5: वॉटरमार्क, ऑडिट और एआई कंटेंट लेबल</h3><p>Anthropic का Claude Opus 5.5, EU AI Act अनुपालन के लिए वॉटरमार्किंग के साथ आया है, और इस टिप्पणी के साथ कि मॉडल अक्सर संदेह करता है कि उसका परीक्षण हो रहा है। दोनों बातें मार्केटर्स के लिए मायने रखती हैं।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

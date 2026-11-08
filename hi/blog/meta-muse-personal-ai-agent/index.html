@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: जब आपका ग्राहक एक एजेंट भेजे | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उपयोगकर्ता की ओर से बुकिंग, ख़रीदारी और मोलभाव कर सकता है। केवल लोगों को नहीं, एजेंटों को मार्केटिंग करना अब एक व्यावहारिक प्रश्न है।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: जब आपका ग्राहक एक एजेंट भेजे | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उपयोगकर्ता की ओर से बुकिंग, ख़रीदारी और मोलभाव कर सकता है। केवल लोगों को नहीं, एजेंटों को मार्केटिंग करना अब एक व्यावहारिक प्रश्न है।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="एजेंट" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: जब आपका ग्राहक एक एजेंट भेजे | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उपयोगकर्ता की ओर से बुकिंग, ख़रीदारी और मोलभाव कर सकता है। केवल लोगों को नहीं, एजेंटों को मार्केटिंग करना अब एक व्यावहारिक प्रश्न है।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: जब आपका ग्राहक एक एजेंट भेजे","description":"Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उपयोगकर्ता की ओर से बुकिंग, ख़रीदारी और मोलभाव कर सकता है। केवल लोगों को नहीं, एजेंटों को मार्केटिंग करना अब एक व्यावहारिक प्रश्न है।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"एजेंट","about":{"@type":"Thing","name":"Meta ने अमेरिका में रोज़मर्रा के कार्यों के लिए एक निजी एआई एजेंट Muse लॉन्च किया"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Meta Muse क्या है?","acceptedAnswer":{"@type":"Answer","text":"Muse, 8 सितंबर 2026 को Meta द्वारा लॉन्च किया गया एक निजी एआई एजेंट है। Associated Press के अनुसार, यह शेड्यूलिंग और ख़रीदारी जैसे रोज़मर्रा के कार्यों में मदद करता है, और Meta का कहना है कि यह ब्राउज़र खोल सकता है, फ़ॉर्म भर सकता है और उपयोगकर्ता की ओर से मोलभाव कर सकता है।"}},{"@type":"Question","name":"Meta Muse कहाँ उपलब्ध है?","acceptedAnswer":{"@type":"Answer","text":"लॉन्च के समय यह केवल अमेरिका में, 18 वर्ष और उससे अधिक उम्र के लोगों के लिए, एक अलग Muse ऐप के ज़रिए या WhatsApp के भीतर उपलब्ध था।"}},{"@type":"Question","name":"ब्रांडों को निजी एआई एजेंटों के लिए कैसे तैयारी करनी चाहिए?","acceptedAnswer":{"@type":"Answer","text":"स्पष्ट, मशीन-पठनीय ऑफ़र और नीतियाँ प्रकाशित करके, हेरफेर करने वाले डिज़ाइन पैटर्न हटाकर, पहले से तय करके कि किन शर्तों पर मोलभाव हो सकता है, और उस क्षण के लिए मज़बूत, इंसानों को ध्यान में रखकर बना क्रिएटिव रखकर जब ग्राहक अंतिम निर्णय लेता है।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: जब आपका ग्राहक एक एजेंट भेजे","item":"https://farseev.com/hi/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">Meta Muse: जब आपका ग्राहक एक एजेंट भेजे</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · एजेंट</p>
+      <h1 class="h-display">Meta Muse: जब आपका ग्राहक एक एजेंट भेजे</h1>
+      <p class="lead">Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उपयोगकर्ता की ओर से बुकिंग, ख़रीदारी और मोलभाव कर सकता है। केवल लोगों को नहीं, एजेंटों को मार्केटिंग करना अब एक व्यावहारिक प्रश्न है।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: Meta ने अमेरिका में रोज़मर्रा के कार्यों के लिए एक निजी एआई एजेंट Muse लॉन्च किया (<time datetime="2026-09-08">8 सितंबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>बीस वर्षों से डिजिटल मार्केटिंग यह मानकर चलती रही है कि फ़नल के अंत में एक व्यक्ति बैठा है। 8 सितंबर को Meta ने Muse लॉन्च किया, एक निजी एआई एजेंट जो उस व्यक्ति की ओर से काम कर सकता है: ईमेल भेजना, यात्रा बुक करना, फ़ॉर्म भरना और, Meta के शब्दों में, "उनकी ओर से मोलभाव करना"। व्यक्ति अब भी वहाँ है। लेकिन तेज़ी से, उनके और आपके बीच एक एजेंट खड़ा हो रहा है।</p>
+<h2>क्या हुआ</h2>
+<p><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Associated Press की रिपोर्ट</a> के अनुसार, Muse शेड्यूल और ख़रीदारी जैसे रोज़मर्रा के कार्यों के लिए एक निजी एआई एजेंट है। Meta का कहना है कि उपयोगकर्ता द्वारा कोई लक्ष्य साझा करने पर Muse एक व्यक्तिगत योजना बनाता है, समय और संसाधनों का समन्वय करता है और ख़ुद काम आगे बढ़ाता है। उदाहरण ईमेल भेजने या यात्रा बुक करने से लेकर साल भर की व्यायाम योजना बनाने या नया व्यवसाय शुरू करने तक हैं। Meta के अनुसार Muse ब्राउज़र खोल सकता है, फ़ॉर्म भर सकता है और उपयोगकर्ता के लिए मोलभाव कर सकता है।</p>
+<p>Muse 18 वर्ष और उससे अधिक उम्र के लोगों के लिए उपलब्ध है, फ़िलहाल केवल अमेरिका में, एक अलग Muse ऐप के ज़रिए या WhatsApp के भीतर। Meta ने सुरक्षा और निजता पर ज़ोर दिया और कहा कि Muse एक समर्पित, सुरक्षित वर्चुअल मशीन पर चलता है जिसमें एजेंट और उपयोगकर्ता का डेटा दोनों रहते हैं। AP इस लॉन्च को Mark Zuckerberg के पर्सनल सुपरइंटेलिजेंस वाले निबंध से जोड़ता है, जिसमें उन्होंने लिखा था कि हर किसी के पास "एक असाधारण रूप से सक्षम निजी एजेंट होगा जो आपको, आपके लक्ष्यों को समझता है"।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>जब कोई व्यक्ति तीन होटलों की तुलना करता है, तो आपके ब्रांड को उसे लुभाने का मौक़ा मिलता है: एक फ़ोटो, एक समीक्षा, एक एहसास। जब कोई एजेंट व्यक्ति की ओर से तीन होटलों की तुलना करता है, तो वह संरचित तथ्य, नीतियाँ और कीमतें पढ़ता है, और हो सकता है वह फ़ोटो को कभी उस तरह "देखे" ही नहीं जैसे कोई इंसान देखता है। मोलभाव ज़्यादा क्रांतिकारी हिस्सा है। मोलभाव करने वाला एजेंट कमी दर्शाने वाले बैनरों पर प्रतिक्रिया नहीं देता।</p>
+<p>वितरण भी मायने रखता है। Muse, WhatsApp के भीतर रहता है, जो एशिया, लैटिन अमेरिका और अफ़्रीका के सबसे महत्वपूर्ण मैसेजिंग चैनलों में से एक है। फ़िलहाल यह केवल अमेरिका में है, लेकिन हमारे कई ग्राहकों द्वारा पहले से उपयोग किए जाने वाले मैसेजिंग ऐप में बसा एक निजी एजेंट कोई सीमित प्रयोग नहीं है।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>मेरा शोध हमेशा लोगों को उनके डिजिटल निशानों से समझने के बारे में रहा है। <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) और <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017) में, जिसने कल्याण प्रोफ़ाइल सीखने के लिए सोशल मीडिया पोस्ट को वियरेबल-सेंसर डेटा के साथ जोड़ा, हमने दिखाया कि स्रोतों को जोड़ने से किसी व्यक्ति की तस्वीर किसी एक स्रोत की तुलना में कहीं अधिक समृद्ध होती है।</p>
+<p>निजी एजेंट इस विचार का चरम रूप है, एक बड़े अंतर के साथ: प्रोफ़ाइल अब विज्ञापनदाता के पास नहीं, बल्कि उपयोगकर्ता के एजेंट के पास है। Muse को उपयोगकर्ता के लक्ष्यों को समझने और उन पर काम करने के लिए डिज़ाइन किया गया है। इससे जानकारी का संतुलन बदल जाता है। ब्रांड अब यह तय करने के लिए ग्राहक की प्रोफ़ाइल नहीं बनाता कि क्या दिखाना है। ग्राहक का एजेंट यह तय करने के लिए ब्रांड की प्रोफ़ाइल बनाता है कि क्या स्वीकार करना है।</p>
+<p>इससे "पर्सनलाइज़ेशन" का अर्थ बदल जाता है। <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">व्यक्तित्व-आधारित कंटेंट अनुशंसा</a> (ACM Multimedia 2022) पर हमारे काम में लक्ष्य कंटेंट को व्यक्ति के गुणों से मिलाना था। जब एजेंट इस प्रक्रिया में हों, तो आपको दो परतें चाहिए: एक स्पष्ट, तथ्यात्मक, मशीन-पठनीय ऑफ़र जिसका एजेंट मूल्यांकन कर सके, और उस क्षण के लिए इंसानों को ध्यान में रखकर बना क्रिएटिव जब व्यक्ति नज़र उठाकर निर्णय लेता है। एजेंटों के लिए अच्छी मार्केटिंग अच्छे दस्तावेज़ीकरण जैसी दिखेगी। लोगों के लिए अच्छी मार्केटिंग अब भी अच्छी कहानी कहने जैसी दिखेगी।</p>
+<p>ज़िम्मेदारी का एक प्रश्न भी है जिसकी मुझे परवाह है। उपयोगकर्ता की ओर से मोलभाव करने वाले एजेंट को उसी उपयोगकर्ता के प्रति निष्ठावान होना चाहिए। यदि एजेंट बिना ख़ुलासे के भुगतान-आधारित प्राथमिकताएँ स्वीकार करने लगें, तो हम विज्ञापन उद्योग के सबसे बुरे हिस्सों को उस सबसे निजी सॉफ़्टवेयर के भीतर फिर से बना देंगे जिसका लोगों ने कभी उपयोग किया है। निजता पर Meta का ज़ोर स्वागतयोग्य है; एजेंट के निर्णयों पर व्यावसायिक प्रभाव के बारे में पारदर्शिता भी उतनी ही मायने रखेगी।</p>
+<h2>मार्केटर्स को अभी क्या करना चाहिए</h2>
+<ul><li>अपने ऑफ़र को मशीनों के लिए पठनीय बनाएँ। कीमतें, उपलब्धता, रिटर्न नीतियाँ, डिलीवरी समय और शर्तें आपकी साइट और आपके फ़ीड में स्पष्ट, सुसंगत और आसानी से पार्स होने योग्य होनी चाहिए।</li><li>डार्क पैटर्न हटाएँ। काउंटडाउन टाइमर और छिपे हुए शुल्क एजेंटों के लिए रुकावट हैं और लोगों के लिए भरोसे की समस्या।</li><li>मोलभाव के लिए तैयार रहें। पहले से तय करें कि कौन-सी शर्तें लचीली हैं, जैसे बंडल, डिलीवरी का समय या लॉयल्टी लाभ, ताकि किसी स्वचालित अनुरोध को तेज़, सुसंगत उत्तर मिल सके।</li><li>इंसानी क्षण को बनाए रखें। अंतिम "हाँ" अक्सर अब भी इंसान ही कहता है। उस चरण पर आपकी ब्रांड कहानी, समीक्षाएँ और क्रिएटिव अब भी मायने रखते हैं।</li><li>मैसेजिंग चैनलों पर नज़र रखें। यदि एजेंट WhatsApp के भीतर रहते हैं, तो आपकी बातचीत-आधारित कॉमर्स व्यवस्था और ज़्यादा मायने रखने वाली है।</li></ul>
+<p>Muse एक देश में एक उत्पाद है। जिस पैटर्न का यह प्रतिनिधित्व करता है — काम सौंपने वाला ग्राहक — वह फैलेगा। दोनों ऑडियंस के लिए निर्माण करें: तुलना करने वाला एजेंट और निर्णय लेने वाला व्यक्ति।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>Meta Muse क्या है?</summary><p>Muse, 8 सितंबर 2026 को Meta द्वारा लॉन्च किया गया एक निजी एआई एजेंट है। Associated Press के अनुसार, यह शेड्यूलिंग और ख़रीदारी जैसे रोज़मर्रा के कार्यों में मदद करता है, और Meta का कहना है कि यह ब्राउज़र खोल सकता है, फ़ॉर्म भर सकता है और उपयोगकर्ता की ओर से मोलभाव कर सकता है।</p></details><details><summary>Meta Muse कहाँ उपलब्ध है?</summary><p>लॉन्च के समय यह केवल अमेरिका में, 18 वर्ष और उससे अधिक उम्र के लोगों के लिए, एक अलग Muse ऐप के ज़रिए या WhatsApp के भीतर उपलब्ध था।</p></details><details><summary>ब्रांडों को निजी एआई एजेंटों के लिए कैसे तैयारी करनी चाहिए?</summary><p>स्पष्ट, मशीन-पठनीय ऑफ़र और नीतियाँ प्रकाशित करके, हेरफेर करने वाले डिज़ाइन पैटर्न हटाकर, पहले से तय करके कि किन शर्तों पर मोलभाव हो सकता है, और उस क्षण के लिए मज़बूत, इंसानों को ध्यान में रखकर बना क्रिएटिव रखकर जब ग्राहक अंतिम निर्णय लेता है।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/agent-skills-agentic-ai-foundation/"><span class="meta">एजेंट · 22 अक्टूबर 2026</span><h3>Agent Skills वेंडर-न्यूट्रल हुआ: मार्केटर्स को क्यों परवाह करनी चाहिए</h3><p>Anthropic ने Agent Skills मानक Agentic AI Foundation को दान कर दिया। पोर्टेबल, लिखित जानकारी ठीक वही है जिसकी मार्केटिंग टीमों को एआई एजेंटों से ज़रूरत है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/workday-c1-ai-agent-identity/"><span class="meta">एजेंट · 13 अक्टूबर 2026</span><h3>Workday ने C1.ai खरीदा: आपके मार्केटिंग एजेंटों को भी पहचान चाहिए</h3><p>Workday ने C1.ai को खरीदने पर सहमति दी, जो लोगों और एआई एजेंटों की पहुँच को नियंत्रित करता है। CRM और विज्ञापन खातों को छूने वाले मार्केटिंग एजेंटों पर भी यही नियम लागू होने चाहिए।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/openai-agent-medicare-portal-australia/"><span class="meta">एजेंट · 24 सितंबर 2026</span><h3>वह एआई एजेंट जिसने 'ना' नहीं मानी</h3><p>ऑस्ट्रेलिया के प्रधानमंत्री ने कहा कि OpenAI के एक रिसर्च एजेंट ने Medicare आँकड़ों के एक पोर्टल पर लगी रोक को दरकिनार कर दिया। मार्केटिंग एजेंटों के लिए सबक दायरे के बारे में है।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

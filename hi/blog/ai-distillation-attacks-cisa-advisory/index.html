@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं | Prof. Aleks Farseev" />
+<meta property="og:description" content="अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="विनियमन और सुरक्षा" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/","headline":"डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं","description":"अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"विनियमन और सुरक्षा","about":{"@type":"Thing","name":"CISA, NSA और FBI ने अमेरिकी एआई मॉडलों के औद्योगिक पैमाने पर डिस्टिलेशन पर एडवाइज़री जारी की; Anthropic ने नई एंटी-डिस्टिलेशन सुरक्षा की जानकारी दी"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"एआई डिस्टिलेशन हमला क्या है?","acceptedAnswer":{"@type":"Answer","text":"यह एक गुप्त, बड़े पैमाने का अभियान है जो किसी मॉडल से प्रश्न पूछकर — अक्सर फ़र्ज़ी खातों के नेटवर्क के ज़रिए — उसकी क्षमताएँ निकालता है, और मूल डेवलपर की अनुमति के बिना उन आउटपुट का उपयोग दूसरे मॉडल को प्रशिक्षित करने के लिए करता है।"}},{"@type":"Question","name":"अमेरिकी एडवाइज़री में किन कंपनियों के नाम थे?","acceptedAnswer":{"@type":"Answer","text":"Help Net Security की रिपोर्ट के अनुसार, CISA, NSA और FBI की एडवाइज़री में DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun और Z.AI के नाम थे। रिपोर्ट में कंपनियों की कोई प्रतिक्रिया शामिल नहीं थी।"}},{"@type":"Question","name":"क्या मॉडल डिस्टिलेशन हमेशा बुरा है?","acceptedAnswer":{"@type":"Answer","text":"नहीं। डिस्टिलेशन एक बड़े मॉडल से छोटा, सस्ता मॉडल प्रशिक्षित करने की एक मानक तकनीक है। समस्या किसी और के मॉडल से अनधिकृत निष्कर्षण है, जो सहमति, सुरक्षा उपायों और उद्गम पर प्रश्न उठाता है।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं","item":"https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · विनियमन और सुरक्षा</p>
+      <h1 class="h-display">डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं</h1>
+      <p class="lead">अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: CISA, NSA और FBI ने अमेरिकी एआई मॉडलों के औद्योगिक पैमाने पर डिस्टिलेशन पर एडवाइज़री जारी की; Anthropic ने नई एंटी-डिस्टिलेशन सुरक्षा की जानकारी दी (<time datetime="2026-10-12">12 अक्टूबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>मशीन लर्निंग में "डिस्टिलेशन" कभी एक सौम्य शब्द हुआ करता था। इसका अर्थ था एक छोटे मॉडल को एक बड़े मॉडल की नकल करने के लिए प्रशिक्षित करना, एक मानक और उपयोगी तकनीक। सितंबर और अक्टूबर 2026 में यह सुरक्षा और व्यापार की ख़बर बन गया। यदि आप मार्केटिंग के लिए एआई ख़रीदते या बनाते हैं, तो आपको दोनों अर्थ समझने चाहिए।</p>
+<h2>क्या हुआ</h2>
+<p>सितंबर की शुरुआत में CISA, NSA और FBI ने एक संयुक्त एडवाइज़री प्रकाशित की, जिसे वे चीन-स्थित एआई कंपनियों द्वारा औद्योगिक पैमाने पर नॉलेज डिस्टिलेशन बताते हैं। <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Help Net Security की एडवाइज़री पर रिपोर्ट</a> के अनुसार, एजेंसियों ने DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun और Z.AI के नाम लिए, और कहा कि उन्होंने कम से कम 2024 के अंत से अमेरिकी फ़्रंटियर मॉडलों को लाखों अनुरोध भेजकर अरबों टोकन निकाले हैं। एडवाइज़री में पहचान के संकेत सूचीबद्ध हैं, जैसे बिना मानवीय विराम के चौबीसों घंटे उपयोग और तालमेल से व्यवहार करने वाले खातों के समूह, और यह मज़बूत पहचान जाँच, निगरानी तथा एआई प्रदाताओं के बीच सूचना साझा करने की सिफ़ारिश करती है। रिपोर्ट में बताया गया है कि इसमें नामित कंपनियों का कोई बयान शामिल नहीं था।</p>
+<p>12 अक्टूबर को Anthropic ने अपनी प्रतिक्रिया बताई। <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> में उसने कहा कि शुरुआती साक्ष्य बताते हैं कि उसके तरीक़ों ने डिस्टिलर्स द्वारा निकाले गए डेटा को लगभग 90 से 99% तक घटा दिया है। उपायों में नए API खातों को Claude के पिछले तर्क को संपादित करने से रोकना, निष्कर्षण प्रयासों पर प्रशिक्षित दो-चरणीय क्लासिफ़ायर जिसकी फ़ॉल्स पॉज़िटिव दर 0.1% से कम है, बार-बार प्रयास करने पर सख़्त सीमाएँ और प्रतिबंध, और उसके सुरक्षा उपायों द्वारा रोके गए अनुरोधों के लिए शुल्क लेना शामिल है। Anthropic का कहना है कि उसने डिस्टिलेशन से जुड़े दसियों हज़ार खातों पर प्रतिबंध लगाया है और वह एक निरंतर "चूहे-बिल्ली के खेल" की उम्मीद करता है।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>एआई लैब्स के बीच की लड़ाई की परवाह किसी मार्केटर को दो कारणों से करनी चाहिए।</p>
+<p>पहला है सप्लाई-चेन जोखिम। यदि कोई मॉडल किसी अन्य मॉडल के व्यवहार की बिना अनुमति नकल करके बनाया गया है, तो आप नहीं जानते कि उसके साथ कौन-से सुरक्षा उपाय आए। Anthropic की पोस्ट का तर्क है कि डिस्टिल किए गए मॉडल फ़्रंटियर क्षमता के क़रीब पहुँच सकते हैं, जबकि उनकी सुरक्षा कमज़ोर होती है। जब आप अपनी ग्राहक सेवा चलाने या विज्ञापन बनाने के लिए कोई मॉडल चुनते हैं, तो उसका उद्गम गुणवत्ता का हिस्सा है।</p>
+<p>दूसरा है वैध उपयोगकर्ताओं के लिए रुकावट। सुरक्षा उपायों की क़ीमत होती है। Anthropic स्वीकार करता है कि कुछ डेवलपर्स को अपने इंटीग्रेशन अपडेट करने पड़े, कि हानिरहित अनुरोधों का एक छोटा हिस्सा रोका जा सकता है, और कि रोके गए अनुरोधों के लिए अब शुल्क लिया जा सकता है। यदि आपका मार्केटिंग स्टैक किसी फ़्रंटियर API को भारी मात्रा में स्वचालित कॉल करता है, तो उस ट्रैफ़िक का कुछ हिस्सा निष्कर्षण अभियान जैसा दिख सकता है। अपने प्रदाताओं की नीतियाँ अभी पढ़ें, अपनी पाइपलाइन टूटने के बाद नहीं।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>यहाँ डिस्टिलेशन खलनायक नहीं है। वैध तरीक़े से किया जाए, तो यही वह तरीक़ा है जिससे हम एआई को किफ़ायती बनाते हैं। एक बड़ा मॉडल छोटे को सिखाता है; छोटा मॉडल बड़े पैमाने पर सस्ते में चलता है। मैंने Forbes में तर्क दिया है कि मार्केटिंग में <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">मॉडल के आकार से ज़्यादा तकनीक मायने रखती है</a>, और डिस्टिलेशन उन्हीं तकनीकों में से एक है।</p>
+<p>तस्वीर को सहमति और पारदर्शिता बदलती है। व्याख्या-योग्य एआई पर मेरा काम एक सरल सिद्धांत से शुरू होता है: मार्केटर को यह देख पाना चाहिए कि कोई प्रणाली कुछ क्यों सुझाती है। <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) में हमने क्लिक-थ्रू-रेट पूर्वानुमान को एक एलएलएम असिस्टेंट के साथ जोड़ा जो उसके कारकों की व्याख्या करता है। <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (2024 का एक प्रीप्रिंट) में हमने प्रतिस्पर्धी विश्लेषण के लिए व्याख्या-योग्य प्रदर्शन मॉडलों को एलएलएम के साथ जोड़ने का वर्णन किया। व्याख्याओं का अर्थ तभी है जब आप जानते हों कि मॉडल क्या है और कहाँ से आया है।</p>
+<p>एक विडंबना भी ध्यान देने योग्य है। Anthropic जिस सुरक्षा का वर्णन करता है — मॉडल के पूरे तर्क का सारांश देना या उस तक पहुँच सीमित करना — वह प्रणालियों को सभी के लिए थोड़ा कम पारदर्शी बनाती है, क्योंकि नकल करने वाले यही तर्क चाहते हैं। यह समझौता तय करेगा कि एआई वेंडर कितनी व्याख्या उजागर करने को तैयार हैं। ख़रीदारों को कच्चे तर्क के ब्योरे के बजाय अपने लिए बनाई गई व्याख्याएँ माँगनी चाहिए, अपने डेटा और अपने निर्णयों के बारे में।</p>
+<h2>मार्केटिंग एआई के ख़रीदारों को अभी क्या करना चाहिए</h2>
+<ul><li>हर वेंडर से पूछें कि उनके उत्पाद के नीचे कौन-से मॉडल हैं और वे मॉडल कहाँ से आते हैं।</li><li>जिन API को आप कॉल करते हैं, उनकी शर्तें जाँचें। मार्केटिंग में स्वचालित, बड़े पैमाने का उपयोग सामान्य है; सुनिश्चित करें कि आपका उपयोग स्पष्ट रूप से वैध, पहचान-योग्य और सीमाओं के भीतर हो।</li><li>मॉडल बदलने की योजना बनाएँ। नीतियाँ, कीमतें और पहुँच तेज़ी से बदल सकती हैं। प्रॉम्प्ट, प्रक्रियाएँ और मूल्यांकन सेट पोर्टेबल रखें।</li><li>अपने मॉडल वैध तरीक़े से डिस्टिल करें। यदि किसी सीमित कार्य के लिए आपको सस्ता मॉडल चाहिए, तो उसे अपने डेटा पर या उन आउटपुट पर प्रशिक्षित करें जिनके उपयोग का आपके पास लाइसेंस है।</li><li>आंतरिक हिस्सों को उजागर करने के बजाय निर्णयों की व्याख्या को प्राथमिकता दें। आपको यह ऑडिट करना है कि आपके अभियान के लिए कोई अनुशंसा क्यों की गई।</li></ul>
+<p>डिस्टिलेशन की लड़ाई इस बारे में है कि कौन किसकी नकल कर सकता है। मार्केटर्स के लिए यह एक याद दिलाना है कि "कौन-सा मॉडल?" अब केवल तकनीकी नहीं, बल्कि गवर्नेंस का प्रश्न है।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>एआई डिस्टिलेशन हमला क्या है?</summary><p>यह एक गुप्त, बड़े पैमाने का अभियान है जो किसी मॉडल से प्रश्न पूछकर — अक्सर फ़र्ज़ी खातों के नेटवर्क के ज़रिए — उसकी क्षमताएँ निकालता है, और मूल डेवलपर की अनुमति के बिना उन आउटपुट का उपयोग दूसरे मॉडल को प्रशिक्षित करने के लिए करता है।</p></details><details><summary>अमेरिकी एडवाइज़री में किन कंपनियों के नाम थे?</summary><p>Help Net Security की रिपोर्ट के अनुसार, CISA, NSA और FBI की एडवाइज़री में DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun और Z.AI के नाम थे। रिपोर्ट में कंपनियों की कोई प्रतिक्रिया शामिल नहीं थी।</p></details><details><summary>क्या मॉडल डिस्टिलेशन हमेशा बुरा है?</summary><p>नहीं। डिस्टिलेशन एक बड़े मॉडल से छोटा, सस्ता मॉडल प्रशिक्षित करने की एक मानक तकनीक है। समस्या किसी और के मॉडल से अनधिकृत निष्कर्षण है, जो सहमति, सुरक्षा उपायों और उद्गम पर प्रश्न उठाता है।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/mas-ai-risk-management-guidelines/"><span class="meta">विनियमन और सुरक्षा · 7 अक्टूबर 2026</span><h3>MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट</h3><p>MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">विनियमन और सुरक्षा · 29 सितंबर 2026</span><h3>व्हाइट हाउस एआई समझौता और स्वतंत्र मूल्यांकनकर्ता</h3><p>टेक लीडर्स ने व्हाइट हाउस के एक स्वैच्छिक समझौते पर हस्ताक्षर किए, जिसमें बाहरी मूल्यांकनकर्ताओं का वादा है, और Anthropic ने METR को गहरी पहुँच दी। मार्केटिंग एआई के लिए ऑडिट क्यों मायने रखते हैं।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">विज्ञापन और मार्केटिंग एआई · 29 अक्टूबर 2026</span><h3>WPP की 2026 की तीसरी तिमाही: एआई के दबाव में एजेंसी मॉडल</h3><p>WPP ने लाइक-फ़ॉर-लाइक शुद्ध राजस्व में गिरावट दर्ज की, जबकि उसके सीईओ ने WPP Open के ज़रिए एआई-सक्षम सेवाओं की माँग की ओर इशारा किया। एजेंसियों के लिए इसका क्या अर्थ है।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

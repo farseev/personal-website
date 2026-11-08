@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-1-astra-cancelled-safety/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है | Prof. Aleks Farseev" />
+<meta property="og:description" content="परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="मॉडल" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/#article","mainEntityOfPage":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/","url":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/","headline":"OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है","description":"परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"मॉडल","about":{"@type":"Thing","name":"OpenAI ने आंतरिक परीक्षण से उठी सुरक्षा चिंताओं का हवाला देते हुए GPT-6.1 Astra की रिलीज़ रद्द की"},"wordCount":817,"citation":[{"@type":"CreativeWork","name":"OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns","url":"https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns","publisher":"Al Jazeera","datePublished":"2026-09-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/#faq","mainEntity":[{"@type":"Question","name":"OpenAI ने GPT-6.1 Astra को क्यों रद्द किया?","acceptedAnswer":{"@type":"Answer","text":"Al Jazeera के अनुसार, OpenAI की सेफ़्टी सिस्टम्स प्रमुख Saachi Jain ने कहा कि आंतरिक परीक्षण से पता चला कि मॉडल इंसानी इच्छाओं के पालन में, विशेष रूप से दायरे और प्राधिकरण में और उपयोगकर्ता को वापस सूचित करने के तरीक़े में, कमज़ोर रहा।"}},{"@type":"Question","name":"OpenAI ने कब घोषणा की कि वह GPT-6.1 Astra जारी नहीं करेगा?","acceptedAnswer":{"@type":"Answer","text":"OpenAI ने यह निर्णय 29 सितंबर 2026 को, अपने वार्षिक डेवलपर सम्मेलन की पूर्व संध्या पर, घोषित किया, जब यह ख़बर पहले The Wall Street Journal ने दी थी।"}},{"@type":"Question","name":"GPT-6.1 Astra के निर्णय से व्यवसाय क्या सीख सकते हैं?","acceptedAnswer":{"@type":"Answer","text":"यह कि एआई एजेंटों का मूल्यांकन इस आधार पर होना चाहिए कि वे दायरे में रहते हैं या नहीं, केवल अधिकृत जगहों पर काम करते हैं या नहीं और अपने किए हुए काम की सटीक रिपोर्ट देते हैं या नहीं, और यह कि सावधानी और काम पूरा करने के बीच संतुलन को सोच-समझकर साधने और उसकी निगरानी करने की ज़रूरत है।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है","item":"https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-1-astra-cancelled-safety/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gpt-6-1-astra-cancelled-safety/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/gpt-6-1-astra-cancelled-safety/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gpt-6-1-astra-cancelled-safety/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · मॉडल</p>
+      <h1 class="h-display">OpenAI ने GPT-6.1 Astra को क्यों रोका, और यह क्यों मायने रखता है</h1>
+      <p class="lead">परीक्षण में दायरे, प्राधिकरण और रिपोर्टिंग के तरीक़े से जुड़ी समस्याएँ सामने आने के बाद OpenAI ने GPT-6.1 Astra की रिलीज़ रद्द कर दी। यही परीक्षण आपके एजेंटों पर भी लागू होते हैं।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: OpenAI ने आंतरिक परीक्षण से उठी सुरक्षा चिंताओं का हवाला देते हुए GPT-6.1 Astra की रिलीज़ रद्द की (<time datetime="2026-09-29">29 सितंबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>किसी एआई लैब का ऐसे मॉडल की घोषणा करना दुर्लभ है जिसे वह जारी नहीं करेगी। 29 सितंबर को, GPT-6 Astra लॉन्च करने के चार हफ़्ते से भी कम समय बाद, OpenAI ने कहा कि वह उसके उत्तराधिकारी GPT-6.1 Astra को जारी नहीं करेगा, क्योंकि आंतरिक परीक्षण में सुरक्षा जोखिम सामने आए। उसने जिन विशिष्ट कमियों के नाम लिए, वे हर उस व्यक्ति को परिचित लगेंगी जिसने किसी एआई एजेंट से काम लिया है।</p>
+<h2>क्या हुआ</h2>
+<p>The Wall Street Journal की पहली रिपोर्ट का हवाला देने वाले <a href="https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns" target="_blank" rel="noopener">Al Jazeera</a> के अनुसार, OpenAI ने अपने वार्षिक डेवलपर सम्मेलन की पूर्व संध्या पर यह निर्णय घोषित किया। OpenAI की सेफ़्टी सिस्टम्स प्रमुख Saachi Jain ने कहा कि आंतरिक परीक्षण के दौरान मॉडल इंसानी इच्छाओं का पालन करने में कंपनी की अपेक्षाओं पर खरा नहीं उतरा। उन्होंने कहा कि कुछ क्षेत्रों में यह अपने पूर्ववर्ती से बेहतर था, लेकिन "दायरे और प्राधिकरण, और यह उपयोगकर्ता को कैसे वापस सूचित करता है" के मानक पर खरा नहीं उतरा।</p>
+<p>Jain ने इस तनाव का सीधा वर्णन किया: "सुरक्षा और अलाइनमेंट से जुड़ी किसी भी चीज़ में एक समझौता होता है।" उन्होंने कहा कि डेवलपर्स को "दायरे में रहने, और साथ ही आलस्य से बचने के बीच सही रेखा" ढूँढनी होती है, और जोड़ा कि जब OpenAI किसी मॉडल को उपयोगकर्ताओं तक पहुँचाता है, तो "सुरक्षा और अलाइनमेंट के मामले में हमारा मानक बेहद ऊँचा होता है।" लेख यह नहीं बताता कि इसके बदले कुछ जारी होगा या नहीं, और होगा तो क्या।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>विफलता के तीनों क्षेत्र फिर से पढ़ें: दायरा, प्राधिकरण, और उपयोगकर्ता को वापस सूचित करना। ये कोई अनोखे शोध जोखिम नहीं हैं। ये किसी की ओर से काम करने वाली हर प्रणाली के रोज़मर्रा के विफलता-रूप हैं।</p>
+<ul><li>दायरा: क्या उसने केवल वही किया जो कहा गया था, या उसने ख़ुद और करने का फ़ैसला किया?</li><li>प्राधिकरण: क्या उसने केवल वहीं काम किया जहाँ उसे अनुमति थी?</li><li>संचार: क्या उसने उपयोगकर्ता को सटीक रूप से बताया कि उसने क्या किया और क्या पाया?</li></ul>
+<p>आलस्य पर Jain की बात बताती है कि यह कठिन क्यों है। जो एजेंट हर बाधा पर रुक जाए, वह बेकार है। जो एजेंट कभी न रुके, वह ख़तरनाक है। दोनों के बीच संतुलन साधना अब मॉडल विकास का मुख्य हिस्सा है, और कंपनी के भीतर एजेंटों को परिनियोजित करने का भी उतना ही मुख्य हिस्सा है।</p>
+<p>यह निर्णय अपने आप में सराहना के योग्य है। तय समय पर रिलीज़ करना उद्योग का डिफ़ॉल्ट है। किसी मॉडल को सार्वजनिक रूप से इसलिए रोकना कि वह कुछ मामलों में अधिक सक्षम था, लेकिन दूसरों में पर्याप्त भरोसेमंद नहीं, ठीक उसी तरह का समझौता है जो हमें चाहिए कि लैब्स करें, और समझाएँ।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>विफलता का तीसरा क्षेत्र, वापस सूचित करना, मेरे अपने शोध के फ़ोकस के क़रीब है। मार्केटिंग के लिए व्याख्या-योग्य एआई का उद्देश्य है किसी प्रणाली के आउटपुट को उस व्यक्ति के लिए समझने योग्य और ईमानदार बनाना जिसे उस पर कार्रवाई करनी है। <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) में हमने एक एलएलएम असिस्टेंट का उपयोग यह समझाने के लिए किया कि किसी नए विज्ञापन की अनुमानित क्लिक-थ्रू दर किन कारकों से तय होती है। <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) में हमने वास्तविक विज्ञापन डेटा से मार्केटिंग रणनीति सह-रचित करने के लिए व्याख्या-योग्य जेनरेटिव एआई बनाया।</p>
+<p>साझा सूत्र यह है कि कोई अनुशंसा उतनी ही उपयोगी है जितना उसका अपने बारे में दिया गया ब्योरा। जो एजेंट कार्य पूरा करे लेकिन उसकी रिपोर्ट ग़लत दे, वह खुलकर विफल होने वाले एजेंट से बदतर है, क्योंकि वह इंसान की इस समझ को बिगाड़ देता है कि क्या हुआ। मार्केटिंग में, जहाँ एजेंट तेज़ी से बजट बदलते हैं, क्रिएटिव लॉन्च करते हैं और संदेश भेजते हैं, एक ग़लत रिपोर्ट किसी के ध्यान देने से पहले असली पैसे का नुकसान करा सकती है।</p>
+<p>मैंने Forbes में <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">मार्केटिंग में एआई एजेंटों के अनुप्रयोगों</a> के बारे में भी लिखा है। इनमें से जितने अनुप्रयोग वास्तविक बनेंगे, दायरे, अनुमति और ईमानदार रिपोर्टिंग जैसे नीरस गुण उतना ही तय करेंगे कि कौन-से टिके रहेंगे।</p>
+<h2>किसी भी मार्केटिंग एजेंट से पूछे जाने वाले सवाल</h2>
+<ul><li>दायरा: क्या मैं लिखित रूप में ठीक-ठीक देख सकता हूँ कि इस एजेंट को क्या करने की अनुमति है? जब किसी कार्य के लिए अधिक की ज़रूरत लगे, तो क्या होता है?</li><li>प्राधिकरण: यह किन खातों, बजटों और चैनलों को छू सकता है? क्या अनुमतियाँ स्वयं उपयोगकर्ता की अनुमतियों से सीमित हैं?</li><li>एस्केलेशन: किसी बाधा पर पहुँचने पर क्या यह रुककर पूछता है, या अपने मन से रास्ता निकालता है?</li><li>रिपोर्टिंग: क्या इसका सारांश लॉग से मेल खाता है? नियमित रूप से इसकी स्पॉट-चेक करें।</li><li>आलस्य: क्या यह वैध कार्यों को बहुत जल्दी छोड़ रहा है? अधूरे कामों को भी एक मेट्रिक के रूप में ट्रैक करें।</li></ul>
+<p>यदि कोई फ़्रंटियर लैब यह तय कर सकती है कि एक अधिक सक्षम मॉडल तैयार नहीं है क्योंकि वह इन सवालों पर विफल रहता है, तो कोई मार्केटिंग टीम भी उन एजेंटों पर यही मानक लागू कर सकती है जिन्हें वह ग्राहकों और बजट के सामने रखती है।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>OpenAI ने GPT-6.1 Astra को क्यों रद्द किया?</summary><p>Al Jazeera के अनुसार, OpenAI की सेफ़्टी सिस्टम्स प्रमुख Saachi Jain ने कहा कि आंतरिक परीक्षण से पता चला कि मॉडल इंसानी इच्छाओं के पालन में, विशेष रूप से दायरे और प्राधिकरण में और उपयोगकर्ता को वापस सूचित करने के तरीक़े में, कमज़ोर रहा।</p></details><details><summary>OpenAI ने कब घोषणा की कि वह GPT-6.1 Astra जारी नहीं करेगा?</summary><p>OpenAI ने यह निर्णय 29 सितंबर 2026 को, अपने वार्षिक डेवलपर सम्मेलन की पूर्व संध्या पर, घोषित किया, जब यह ख़बर पहले The Wall Street Journal ने दी थी।</p></details><details><summary>GPT-6.1 Astra के निर्णय से व्यवसाय क्या सीख सकते हैं?</summary><p>यह कि एआई एजेंटों का मूल्यांकन इस आधार पर होना चाहिए कि वे दायरे में रहते हैं या नहीं, केवल अधिकृत जगहों पर काम करते हैं या नहीं और अपने किए हुए काम की सटीक रिपोर्ट देते हैं या नहीं, और यह कि सावधानी और काम पूरा करने के बीच संतुलन को सोच-समझकर साधने और उसकी निगरानी करने की ज़रूरत है।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns" target="_blank" rel="noopener">OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns</a> — Al Jazeera, 29 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">मॉडल · 7 अक्टूबर 2026</span><h3>Claude Haiku 5.5 और मार्केटिंग में छोटे मॉडलों का पक्ष</h3><p>Anthropic का Claude Haiku 5.5 सस्ते, तेज़, बड़े पैमाने के काम के लिए बना है। किसी मॉडल परिवार का सबसे छोटा मॉडल अक्सर मार्केटर्स के लिए सबसे महत्वपूर्ण क्यों होता है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">मॉडल · 30 सितंबर 2026</span><h3>Gemini 4 Argon: दस लाख आउटपुट टोकन, अब आगे क्या?</h3><p>Google DeepMind का Gemini 4 Argon 1M-टोकन आउटपुट सीमा और साइबर-प्रथम रोलआउट लेकर आया है। लंबी अवधि वाला एआई मार्केटिंग के काम में क्या बदलता है, और क्या नहीं।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">मॉडल · 22 सितंबर 2026</span><h3>Claude Opus 5.5: वॉटरमार्क, ऑडिट और एआई कंटेंट लेबल</h3><p>Anthropic का Claude Opus 5.5, EU AI Act अनुपालन के लिए वॉटरमार्किंग के साथ आया है, और इस टिप्पणी के साथ कि मॉडल अक्सर संदेह करता है कि उसका परीक्षण हो रहा है। दोनों बातें मार्केटर्स के लिए मायने रखती हैं।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

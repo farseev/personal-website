@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट | Prof. Aleks Farseev" />
+<meta property="og:description" content="MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।" />
+<meta property="og:url" content="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="प्रो. Aleks Farseev — एआई समाचार की व्याख्या" />
+<meta property="og:locale" content="hi_IN" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="विनियमन और सुरक्षा" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/","headline":"MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट","description":"MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।","image":"https://farseev.com/og-image.png","inLanguage":"hi","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/hi/blog/#blog"},"articleSection":"विनियमन और सुरक्षा","about":{"@type":"Thing","name":"MAS ने वित्तीय संस्थानों के लिए Guidelines on Artificial Intelligence Risk Management जारी किए"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"MAS के एआई जोखिम प्रबंधन दिशानिर्देश कब प्रभावी होंगे?","acceptedAnswer":{"@type":"Answer","text":"MAS के अनुसार, दिशानिर्देश 7 अक्टूबर 2027 से प्रभावी होंगे, संस्थान चरणबद्ध कार्यान्वयन कर सकेंगे, और कुछ बाद के खंड 7 अक्टूबर 2028 तक लागू होंगे।"}},{"@type":"Question","name":"क्या MAS दिशानिर्देश वेंडर्स से आने वाले एआई को कवर करते हैं?","acceptedAnswer":{"@type":"Answer","text":"हाँ। MAS के अनुसार, वित्तीय संस्थान अपनी सेवाओं में उपयोग किए गए एआई के लिए जवाबदेह बने रहते हैं, जिसमें तीसरे पक्ष का एआई भी शामिल है, और उन्हें आश्वासन प्राप्त करना चाहिए, उपयुक्तता का आकलन करना चाहिए और प्रतिपूरक नियंत्रण लागू करने चाहिए, या जोखिम उनकी जोखिम-सहनशीलता से बाहर होने पर सेवा को सीमित, निलंबित या प्रतिस्थापित करना चाहिए।"}},{"@type":"Question","name":"क्या MAS दिशानिर्देश एजेंटिक एआई को कवर करते हैं?","acceptedAnswer":{"@type":"Answer","text":"MAS ने स्वायत्त रूप से काम करने और टूल्स तक पहुँचने वाली एजेंटिक एआई प्रणालियों के बढ़ते उपयोग की ओर ध्यान दिलाया, और कहा कि वह 2027 में इस क्षेत्र से परामर्श करना चाहता है कि एजेंटिक एआई पर कौन-सा अतिरिक्त मार्गदर्शन उपयोगी होगा।"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"होम","item":"https://farseev.com/hi/"},{"@type":"ListItem","position":2,"name":"एआई समाचार","item":"https://farseev.com/hi/blog/"},{"@type":"ListItem","position":3,"name":"MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट","item":"https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/hi/","jobTitle":"SOMIN.ai के संस्थापक और सीईओ; एआई में अतिथि प्रोफेसर","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/hi/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="मुख्य"><a href="/hi/#about">परिचय</a><a href="/hi/#research">अनुसंधान</a><a href="/hi/blog/" aria-current="page">एआई समाचार</a><a href="/hi/#talks">वार्ता</a><a href="/hi/#connect">संपर्क</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="भाषा" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/mas-ai-risk-management-guidelines/">简体中文</option><option value="ja" lang="ja" data-href="/ja/blog/mas-ai-risk-management-guidelines/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/mas-ai-risk-management-guidelines/">한국어</option><option value="hi" lang="hi" selected>हिन्दी</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="मेन्यू" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">होम</a></li><li><a href="/hi/blog/">एआई समाचार</a></li><li aria-current="page">MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट</li></ol></nav>
+      <p class="eyebrow">एआई समाचार की व्याख्या · विनियमन और सुरक्षा</p>
+      <h1 class="h-display">MAS एआई जोखिम दिशानिर्देश: बैंकिंग से आगे भी उपयोगी टेम्पलेट</h1>
+      <p class="lead">MAS ने वित्तीय संस्थानों के लिए एआई जोखिम प्रबंधन दिशानिर्देश जारी किए। उनकी इन्वेंटरी और थर्ड-पार्टी नियम मार्केटिंग टीमों के लिए एक अच्छा टेम्पलेट हैं।</p>
+      <p class="newsline"><span class="loc-dot"></span><span>समाचार: MAS ने वित्तीय संस्थानों के लिए Guidelines on Artificial Intelligence Risk Management जारी किए (<time datetime="2026-10-07">7 अक्टूबर 2026</time>)</span></p>
+      <p class="byline"><span>लेखक: <b>प्रो. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 नवंबर 2026</time><span class="dot"></span><span>4 मिनट में पढ़ें</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>बैंकों के लिए लिखे गए विनियम शायद ही कभी मार्केटर्स को उत्साहित करते हैं। यह विनियम कम से कम उन्हें नोट्स लेने पर मजबूर करना चाहिए। 7 अक्टूबर को Monetary Authority of Singapore ने अपने Guidelines on Artificial Intelligence Risk Management प्रकाशित किए। बैंक, बीमाकर्ता और अन्य वित्तीय संस्थान इसकी प्रत्यक्ष ऑडियंस हैं। लेकिन दिशानिर्देशों का तर्क किसी भी ऐसी टीम के लिए एक साफ़-सुथरा टेम्पलेट है जो ग्राहकों के बारे में निर्णय लेने के लिए एआई का उपयोग करती है, जिसमें मार्केटिंग भी शामिल है।</p>
+<h2>क्या हुआ</h2>
+<p><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS की मीडिया विज्ञप्ति</a> के अनुसार, ये दिशानिर्देश सभी वित्तीय संस्थानों और एआई तकनीक के सभी रूपों पर "सिद्धांत-आधारित और जोखिम-अनुपातिक दृष्टिकोण" के साथ लागू होते हैं। MAS ने नवंबर 2025 में इन पर परामर्श किया था।</p>
+<p>अपेक्षाएँ कुछ समूहों में बँटती हैं। बोर्ड और वरिष्ठ प्रबंधन को एआई जोखिमों की निगरानी करनी चाहिए और स्पष्ट भूमिकाएँ, जोखिम-सहनशीलता और ढाँचे तय करने चाहिए; यदि मौजूदा संरचनाएँ पर्याप्त निगरानी प्रदान करती हैं, तो एक समर्पित एआई समिति आवश्यक नहीं है। संस्थानों को अपने एआई उपयोग की पहचान करनी चाहिए, इन्वेंटरी बनाए रखनी चाहिए, हर उपयोग कितना महत्वपूर्ण है इसका आकलन करना चाहिए, और पूरे जीवन-चक्र में अनुपातिक नियंत्रण लागू करने चाहिए, जिनमें डेटा गवर्नेंस, परीक्षण, मानवीय निगरानी, साइबर सुरक्षा, मॉनिटरिंग और परिवर्तन प्रबंधन शामिल हैं। वे अपनी सेवाओं में उपयोग किए गए एआई के लिए जवाबदेह बने रहते हैं, भले ही वह तीसरे पक्ष से आया हो, और उन्हें आश्वासन प्राप्त करना चाहिए और प्रतिपूरक नियंत्रण लागू करने चाहिए, या ऐसी सेवा को सीमित, निलंबित या प्रतिस्थापित करना चाहिए जिसके जोखिम उनकी सहनशीलता से बाहर हों।</p>
+<p>दिशानिर्देश 7 अक्टूबर 2027 से प्रभावी होंगे, और कुछ खंड 7 अक्टूबर 2028 तक लागू होंगे। MAS ने स्वायत्त रूप से काम करने और टूल्स का उपयोग करने वाली एजेंटिक एआई प्रणालियों के बढ़ते उपयोग की ओर भी ध्यान दिलाया, और कहा कि वह 2027 में इस क्षेत्र से परामर्श करना चाहता है कि कौन-सा अतिरिक्त मार्गदर्शन उपयोगी होगा।</p>
+<h2>यह क्यों मायने रखता है</h2>
+<p>देखें कि आज किसी बैंक में एआई ग्राहकों को कहाँ छूता है: उत्पाद अनुशंसाएँ, नेक्स्ट-बेस्ट-ऑफ़र इंजन, चैटबॉट, क्रेडिट मार्केटिंग, धोखाधड़ी जाँच, अभियानों में जनरेट किया गया कंटेंट। इसका बहुत-सा हिस्सा मार्केटिंग द्वारा चलाया या कमीशन किया जाता है। इन दिशानिर्देशों के तहत इसके अधिकांश हिस्से को इन्वेंटरी में होना चाहिए, उसकी महत्ता का आकलन होना चाहिए और पूरे जीवन-चक्र में उसका संचालन होना चाहिए।</p>
+<p>मार्केटिंग के लिए थर्ड-पार्टी वाली धारा सबसे ज़्यादा मायने रखती है। मार्केटिंग टीमें बहुत-सा एआई ख़रीदती हैं: विज्ञापन प्लेटफ़ॉर्म, मार्टेक वेंडर्स, एजेंसियों और अपने टूल्स इस्तेमाल करने वाले फ़्रीलांसरों से। MAS स्पष्ट है कि संस्थान जवाबदेह बना रहता है। "वेंडर ने किया" कोई नियंत्रण नहीं है।</p>
+<p>और समय-सीमा उदार है लेकिन लंबी नहीं। मुख्य खंडों के प्रभावी होने तक एक साल इन्वेंटरी को ठीक से बनाने के लिए पर्याप्त समय है, और आख़िरी तिमाही में बनाने के लिए पर्याप्त नहीं।</p>
+<h2>मेरा शोध क्या कहता है</h2>
+<p>मैंने WSDM 2023 में <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a> शीर्षक से एक वार्ता दी थी। मुख्य तर्क यह था कि स्वचालित प्रोफाइलिंग, टार्गेटिंग और क्रिएटिव स्कोरिंग से जुड़े नैतिकता और निजता के प्रश्न अमूर्त नहीं हैं। वे विशिष्ट डिज़ाइन विकल्पों से आते हैं जिनका दस्तावेज़ीकरण और नियंत्रण किया जा सकता है।</p>
+<p>एआई इन्वेंटरी आपको ठीक यही करने के लिए बाध्य करती है। हर उपयोग के लिए लिखें कि कौन-सा डेटा अंदर जाता है, कौन-सा निर्णय बाहर आता है, कौन इसकी जाँच करता है और कुछ ग़लत होने पर क्या होता है। मार्केटिंग के लिए व्याख्या-योग्य एआई पर मेरा शोध, <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) से <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) तक, इसी सहज समझ पर बना था: यदि किसी मॉडल की अनुशंसा पैसे या ग्राहकों को प्रभावित करती है, तो ज़िम्मेदार लोगों को यह देख पाना चाहिए कि उसने वह अनुशंसा क्यों की।</p>
+<p>मैंने Forbes में यह तर्क भी दिया है कि <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">मार्केटिंग-संचालित कंपनियों के लिए पारदर्शिता मायने रखती है</a>। नियामक अब इस सिद्धांत को पर्यवेक्षी अपेक्षाओं में बदल रहे हैं। जो टीमें पहले से व्याख्या-योग्यता अपनाती हैं, उनके लिए अनुपालन कहीं सस्ता होगा।</p>
+<h2>मार्केटिंग टीमों के लिए एक व्यावहारिक चेकलिस्ट (वित्त में और उससे आगे)</h2>
+<ul><li>इन्वेंटरी बनाएँ। मार्केटिंग द्वारा उपयोग या कमीशन की जाने वाली हर एआई प्रणाली को सूचीबद्ध करें: टार्गेटिंग, अनुशंसाएँ, चैटबॉट, कंटेंट जनरेशन, क्रिएटिव स्कोरिंग, एनालिटिक्स।</li><li>महत्ता का ईमानदारी से आकलन करें। आंतरिक नोट्स का ड्राफ़्ट बनाने वाला टूल कम जोखिम वाला है। यह तय करने वाला मॉडल कि कौन-से ग्राहक क्रेडिट ऑफ़र देखेंगे, कम जोखिम वाला नहीं है।</li><li>थर्ड पार्टियों का नक्शा बनाएँ। हर वेंडर और एजेंसी के लिए दर्ज करें कि वे आपकी ओर से कौन-सा एआई उपयोग करते हैं और आपको क्या आश्वासन मिला है।</li><li>जहाँ ज़रूरी हो वहाँ इंसानों को रखें। परिभाषित करें कि ग्राहक-सामना वाले आउटपुट के लाइव होने से पहले कहाँ मानवीय समीक्षा आवश्यक है।</li><li>लॉन्च के बाद निगरानी करें। मॉडल बदलते हैं और अभियान बदलते हैं। समीक्षाएँ निर्धारित करें, विशेष रूप से वेंडर के मॉडल अपडेट के बाद।</li><li>एजेंटिक परामर्श पर नज़र रखें। यदि आप ग्राहक डेटा पर काम करने वाले एजेंटों का पायलट चला रहे हैं, तो विशिष्ट मार्गदर्शन की उम्मीद रखें और अभी से ऑडिट-योग्यता के लिए डिज़ाइन करें।</li></ul>
+<p>सिंगापुर के नियामकों की आदत है ऐसे मार्गदर्शन लिखने की जो बाद में क्षेत्रीय डिफ़ॉल्ट बन जाते हैं। यदि आपकी कंपनी पूरे दक्षिण-पूर्व एशिया में काम करती है, तो इन दिशानिर्देशों को एक पूर्वावलोकन मानना उचित है, भले ही आप बैंक न हों।</p>
+<h2 id="faq">अक्सर पूछे जाने वाले प्रश्न</h2>
+<div class="faq"><details><summary>MAS के एआई जोखिम प्रबंधन दिशानिर्देश कब प्रभावी होंगे?</summary><p>MAS के अनुसार, दिशानिर्देश 7 अक्टूबर 2027 से प्रभावी होंगे, संस्थान चरणबद्ध कार्यान्वयन कर सकेंगे, और कुछ बाद के खंड 7 अक्टूबर 2028 तक लागू होंगे।</p></details><details><summary>क्या MAS दिशानिर्देश वेंडर्स से आने वाले एआई को कवर करते हैं?</summary><p>हाँ। MAS के अनुसार, वित्तीय संस्थान अपनी सेवाओं में उपयोग किए गए एआई के लिए जवाबदेह बने रहते हैं, जिसमें तीसरे पक्ष का एआई भी शामिल है, और उन्हें आश्वासन प्राप्त करना चाहिए, उपयुक्तता का आकलन करना चाहिए और प्रतिपूरक नियंत्रण लागू करने चाहिए, या जोखिम उनकी जोखिम-सहनशीलता से बाहर होने पर सेवा को सीमित, निलंबित या प्रतिस्थापित करना चाहिए।</p></details><details><summary>क्या MAS दिशानिर्देश एजेंटिक एआई को कवर करते हैं?</summary><p>MAS ने स्वायत्त रूप से काम करने और टूल्स तक पहुँचने वाली एजेंटिक एआई प्रणालियों के बढ़ते उपयोग की ओर ध्यान दिलाया, और कहा कि वह 2027 में इस क्षेत्र से परामर्श करना चाहता है कि एजेंटिक एआई पर कौन-सा अतिरिक्त मार्गदर्शन उपयोगी होगा।</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">स्रोत</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>प्रो. Aleks Farseev</b> SOMIN.ai के संस्थापक और सीईओ तथा NUS और INSEAD में एआई के अतिथि प्रोफेसर हैं। उनका सहकर्मी-समीक्षित शोध मल्टी-सोर्स यूज़र प्रोफाइलिंग, व्यक्तित्व-सजग अनुशंसा और मार्केटिंग के लिए व्याख्या-योग्य एआई पर केंद्रित है।</p>
+<p class="links"><a href="/hi/">Aleks के बारे में</a><a href="/hi/#publications">प्रकाशन</a><a href="/hi/blog/">और एआई समाचार</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">पढ़ना जारी रखें</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">और एआई समाचार, व्याख्या के साथ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/hi/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">विनियमन और सुरक्षा · 12 अक्टूबर 2026</span><h3>डिस्टिलेशन हमले: कॉपी किए गए एआई मॉडल आपके लिए क्या मायने रखते हैं</h3><p>अमेरिकी एजेंसियों ने एक डिस्टिलेशन एडवाइज़री में छह चीनी एआई कंपनियों के नाम लिए, और Anthropic का कहना है कि उसकी सुरक्षा व्यवस्था ने निकाले गए डेटा को 90 से 99% तक घटा दिया। एआई खरीदारों के लिए इसका क्या अर्थ है।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">विनियमन और सुरक्षा · 29 सितंबर 2026</span><h3>व्हाइट हाउस एआई समझौता और स्वतंत्र मूल्यांकनकर्ता</h3><p>टेक लीडर्स ने व्हाइट हाउस के एक स्वैच्छिक समझौते पर हस्ताक्षर किए, जिसमें बाहरी मूल्यांकनकर्ताओं का वादा है, और Anthropic ने METR को गहरी पहुँच दी। मार्केटिंग एआई के लिए ऑडिट क्यों मायने रखते हैं।</p><span class="go">पढ़ें →</span></a><a class="pcard" href="/hi/blog/wpp-q3-2026-agentic-agency/"><span class="meta">विज्ञापन और मार्केटिंग एआई · 29 अक्टूबर 2026</span><h3>WPP की 2026 की तीसरी तिमाही: एआई के दबाव में एजेंसी मॉडल</h3><p>WPP ने लाइक-फ़ॉर-लाइक शुद्ध राजस्व में गिरावट दर्ज की, जबकि उसके सीईओ ने WPP Open के ज़रिए एआई-सक्षम सेवाओं की माँग की ओर इशारा किया। एजेंसियों के लिए इसका क्या अर्थ है।</p><span class="go">पढ़ें →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">जेनएआई सीईओ, एआई प्रोफेसर, कीनोट वक्ता और अकॉर्डियन वादक। सिंगापुर से दुनिया तक, गहन शोध और वास्तविक मार्केटिंग को जोड़ते हुए।</p>
+      </div>
+      <div>
+        <h6>अन्वेषण</h6>
+        <ul>
+          <li><a href="/hi/">होम</a></li>
+          <li><a href="/hi/blog/">एआई समाचार ब्लॉग</a></li>
+          <li><a href="/hi/#research">अनुसंधान</a></li>
+          <li><a href="/hi/#publications">प्रकाशन</a></li>
+          <li><a href="/hi/#connect">संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>अन्य जगहों पर</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>विचार मेरे अपने हैं। समाचार तथ्यों के साथ उनके स्रोतों के लिंक दिए गए हैं।</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
