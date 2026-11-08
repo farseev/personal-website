@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Iklan ChatGPT Menjadi Perbualan: Sponsored Agents | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI sedang menguji Sponsored Agents di dalam ChatGPT dan telah meluaskan iklan ChatGPT ke 89 negara. Apabila iklan boleh menjawab balik, pelabelan dan kejujuran menjadi produknya." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Iklan ChatGPT Menjadi Perbualan: Sponsored Agents | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI sedang menguji Sponsored Agents di dalam ChatGPT dan telah meluaskan iklan ChatGPT ke 89 negara. Apabila iklan boleh menjawab balik, pelabelan dan kejujuran menjadi produknya." />
+<meta property="og:url" content="https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Carian AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Iklan ChatGPT Menjadi Perbualan: Sponsored Agents | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI sedang menguji Sponsored Agents di dalam ChatGPT dan telah meluaskan iklan ChatGPT ke 89 negara. Apabila iklan boleh menjawab balik, pelabelan dan kejujuran menjadi produknya." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/#article","mainEntityOfPage":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/","url":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/","headline":"Iklan ChatGPT Menjadi Perbualan: Sponsored Agents","description":"OpenAI sedang menguji Sponsored Agents di dalam ChatGPT dan telah meluaskan iklan ChatGPT ke 89 negara. Apabila iklan boleh menjawab balik, pelabelan dan kejujuran menjadi produknya.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Carian AI","about":{"@type":"Thing","name":"OpenAI menguji Sponsored Agents dalam ChatGPT dan meluaskan iklan ChatGPT ke 26 lagi negara"},"wordCount":827,"citation":[{"@type":"CreativeWork","name":"\"A clearly labeled conversation\": OpenAI tests Sponsored Agents in ChatGPT","url":"https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify","publisher":"The Next Web","datePublished":"2026-09-16"},{"@type":"CreativeWork","name":"OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue","url":"https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue","publisher":"The Star (Reuters)","datePublished":"2026-10-21"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/#faq","mainEntity":[{"@type":"Question","name":"Apakah ChatGPT Sponsored Agents?","acceptedAnswer":{"@type":"Answer","text":"Ia ialah ejen tajaan perniagaan yang boleh dipilih oleh pengguna untuk berbual selepas mengklik iklan dalam ChatGPT. OpenAI menggambarkan pengalaman itu sebagai perbualan yang dilabel dengan jelas dan berbeza daripada jawapan bebas ChatGPT. Ujian itu bermula dengan pengiklan AS terpilih."}},{"@type":"Question","name":"Di berapa buah negara iklan ChatGPT tersedia?","acceptedAnswer":{"@type":"Answer","text":"Reuters melaporkan pada 21 Oktober 2026 bahawa OpenAI meluaskan iklan ChatGPT ke 26 lagi negara, menjadikan jumlahnya 89."}},{"@type":"Question","name":"Adakah pengguna ChatGPT berbayar melihat iklan?","acceptedAnswer":{"@type":"Answer","text":"Menurut Reuters, iklan hanya dipaparkan pada pelan Free dan Go ChatGPT; langganan Plus, Pro dan Enterprise kekal tanpa iklan."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Iklan ChatGPT Menjadi Perbualan: Sponsored Agents","item":"https://farseev.com/ms/blog/chatgpt-sponsored-agents-ads-expansion/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/chatgpt-sponsored-agents-ads-expansion/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/chatgpt-sponsored-agents-ads-expansion/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/chatgpt-sponsored-agents-ads-expansion/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/chatgpt-sponsored-agents-ads-expansion/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/chatgpt-sponsored-agents-ads-expansion/">한국어</option><option value="th" lang="th" data-href="/th/blog/chatgpt-sponsored-agents-ads-expansion/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/chatgpt-sponsored-agents-ads-expansion/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/chatgpt-sponsored-agents-ads-expansion/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/chatgpt-sponsored-agents-ads-expansion/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/chatgpt-sponsored-agents-ads-expansion/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Iklan ChatGPT Menjadi Perbualan: Sponsored Agents</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Carian AI</p>
+      <h1 class="h-display">Iklan ChatGPT Menjadi Perbualan: Sponsored Agents</h1>
+      <p class="lead">OpenAI sedang menguji Sponsored Agents di dalam ChatGPT dan telah meluaskan iklan ChatGPT ke 89 negara. Apabila iklan boleh menjawab balik, pelabelan dan kejujuran menjadi produknya.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: OpenAI menguji Sponsored Agents dalam ChatGPT dan meluaskan iklan ChatGPT ke 26 lagi negara (<time datetime="2026-10-21">21 Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Iklan carian ialah satu ayat dan satu pautan. Sponsored Agent ChatGPT ialah perbualan. Antara September dan Oktober, OpenAI mula menguji iklan yang boleh menjawab balik dan membawa pengiklanan ChatGPT ke 89 negara. Bersama-sama, kedua-dua langkah itu mengubah maksud sebuah iklan.</p>
+<h2>Apa yang berlaku</h2>
+<p>Pada 16 September, menurut <a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">The Next Web</a>, OpenAI mula menguji Sponsored Agents dengan pengiklan AS terpilih. Selepas mengklik iklan, pengguna boleh memilih untuk memulakan apa yang disebut OpenAI sebagai "perbualan yang dilabel dengan jelas" dengan "ejen tajaan perniagaan dalam ChatGPT", contohnya untuk bertanya sama ada meja makan sesuai untuk sesebuah bilik atau cara menjaga kemasannya, sebelum mengikuti pautan ke laman perniagaan itu. OpenAI menyatakan perbualan tajaan itu "berbeza daripada jawapan bebas ChatGPT".</p>
+<p>Pengumuman yang sama membawa alat untuk pengiklan: pemalam Ads Manager untuk mencipta dan menganalisis kempen dalam bahasa biasa di dalam ChatGPT, cadangan salinan iklan dan imej berdasarkan halaman pendaratan, dan ciri pilihan yang menyesuaikan tajuk dengan konteks perbualan dan menterjemah salinan iklan ke dalam bahasa pengguna. HubSpot dan Shopify dinamakan sebagai rakan kongsi CRM dan e-dagang pertama.</p>
+<p>Pada 21 Oktober, <a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">Reuters melaporkan</a> bahawa OpenAI meluaskan pengiklanan ChatGPT ke 26 lagi negara, menjadikan jumlahnya 89, termasuk pasaran di Amerika Latin, Eropah, Afrika dan Asia seperti Kemboja, Bangladesh dan Pakistan. Syarikat itu berkata lebih 100,000 pengiklan telah menjalankan kempen dan perniagaan iklannya mencapai kadar hasil tahunan US$1 bilion pada bulan Ogos. Iklan hanya dipaparkan pada pelan Free dan Go; Plus, Pro dan Enterprise kekal tanpa iklan.</p>
+<h2>Mengapa ia penting</h2>
+<p>Tiga perkara berubah apabila iklan menjadi ejen.</p>
+<p>Pertama, iklan kini boleh menjawab soalan. Itu lebih baik bagi pengguna berbanding sepanduk statik, jika jawapannya tepat. Ia juga liabiliti baharu: ejen tajaan yang membesar-besarkan ciri produk ialah iklan mengelirukan yang boleh bercakap.</p>
+<p>Kedua, garis antara pembantu dan pengiklan mesti kelihatan pada setiap giliran. Kata-kata OpenAI, iaitu perbualan yang dilabel dengan jelas dan berbeza daripada jawapan bebas ChatGPT, ialah prinsip yang betul. Nilainya bergantung sepenuhnya pada sejauh mana pemisahan itu terasa jelas kepada pengguna biasa di pertengahan sembang.</p>
+<p>Ketiga, kini wujud pasaran perhatian dua peringkat. Pengguna berbayar tidak melihat iklan; pengguna percuma melihatnya. Dalam pasaran yang berkembang pesat, di mana kebanyakan orang menggunakan peringkat percuma, ChatGPT sedang menjadi saluran iklan berskala besar. Dalam pasaran dengan lebih ramai pelanggan berbayar, khalayak bernilai hanya boleh dicapai melalui jawapan organik.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Ejen tajaan ialah pemperibadian dalam masa nyata. Perbualan itu sendiri ialah profilnya. Penyelidikan saya tentang <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">cadangan kandungan berasaskan personaliti</a> (ACM Multimedia 2022) dan tentang <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">penjanaan kandungan berasaskan personaliti</a> (WSDM 2021) meneroka cara membuat inferens tentang apa yang direspons seseorang dan menyesuaikan kandungan dengannya. Teknik-teknik itu berkesan. Itulah sebabnya kawalan penting: ejen yang menyesuaikan pujukannya dengan personaliti setiap pengguna sangat berkesan dan, tanpa ketelusan, sangat mudah disalahgunakan.</p>
+<p>Saya telah berhujah di Forbes untuk <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">pemasaran penebusan</a>, idea bahawa ketelusan dan prestasi boleh saling mengukuhkan. Iklan perbualan ialah tempat idea itu diuji. Jenama yang menang dalam jangka panjang ialah jenama yang ejen tajaannya jujur tentang batasan, berkata "produk ini tidak sesuai untuk anda" apabila memang tidak sesuai, dan menyerahkan kepada manusia apabila soalan itu di luar kemampuannya.</p>
+<p>Ciri terjemahan automatik juga perlu diberi perhatian. Menterjemah salinan iklan ke dalam bahasa pengguna adalah berguna, dan berisiko bagi dakwaan yang dikawal selia secara berbeza di setiap pasaran.</p>
+<h2>Apa yang perlu dilakukan pengiklan sekarang</h2>
+<ul><li>Tulis peraturan ejen tajaan anda sebelum skripnya. Dakwaan mana yang dibenarkan, soalan mana yang mesti ditolaknya, bila ia menyerahkan kepada manusia.</li><li>Asaskannya pada fakta anda sendiri. Spesifikasi produk, harga, dasar dan arahan penjagaan perlu datang daripada sumber yang diselenggara, bukan daripada pengetahuan am model.</li><li>Semak salinan yang diterjemah bagi dakwaan yang dikawal selia, terutamanya dalam produk kesihatan, kewangan dan kanak-kanak.</li><li>Rancang untuk kedua-dua peringkat. Gunakan penempatan berbayar di mana pengguna percuma ialah khalayak anda, dan labur dalam keterlihatan organik untuk pengguna pada pelan tanpa iklan.</li><li>Ukur melangkaui klik. Jejaki sama ada perbualan membawa kepada pembelian, pemulangan atau aduan, bukan sekadar berapa lama ia berlangsung.</li></ul>
+<p>Iklan carian mengajar kita menulis untuk satu pertanyaan. Iklan perbualan akan mengajar kita menjawab seperti jurujual yang boleh dipercayai, pada skala besar, dalam setiap bahasa. Itu lebih sukar, dan lebih menarik.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Apakah ChatGPT Sponsored Agents?</summary><p>Ia ialah ejen tajaan perniagaan yang boleh dipilih oleh pengguna untuk berbual selepas mengklik iklan dalam ChatGPT. OpenAI menggambarkan pengalaman itu sebagai perbualan yang dilabel dengan jelas dan berbeza daripada jawapan bebas ChatGPT. Ujian itu bermula dengan pengiklan AS terpilih.</p></details><details><summary>Di berapa buah negara iklan ChatGPT tersedia?</summary><p>Reuters melaporkan pada 21 Oktober 2026 bahawa OpenAI meluaskan iklan ChatGPT ke 26 lagi negara, menjadikan jumlahnya 89.</p></details><details><summary>Adakah pengguna ChatGPT berbayar melihat iklan?</summary><p>Menurut Reuters, iklan hanya dipaparkan pada pelan Free dan Go ChatGPT; langganan Plus, Pro dan Enterprise kekal tanpa iklan.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-chatgpt-sponsored-agents-ads-manager-hubspot-shopify" target="_blank" rel="noopener">&quot;A clearly labeled conversation&quot;: OpenAI tests Sponsored Agents in ChatGPT</a> — The Next Web, 16 September 2026</li><li translate="no"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/21/openai-expands-chatgpt-ads-to-26-more-countries-in-bid-to-boost-revenue" target="_blank" rel="noopener">OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue</a> — The Star (Reuters), 21 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">Carian AI · 29 Oktober 2026</span><h3>Adobe: Trafik AI Kini Menukar Lebih Baik Daripada Lawatan Lain</h3><p>Adobe menyatakan lawatan rujukan AI ke peruncit AS menukar 90% lebih baik daripada trafik lain pada bulan September. Mengapa jawapan AI menjadi saluran, dan apa yang perlu dilakukan.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">Carian AI · 28 Oktober 2026</span><h3>Iklan AI Mode Google Tiba di Singapura dan Lebih Jauh</h3><p>Google meluaskan iklan dalam AI Mode ke sepuluh pasaran, termasuk Singapura, Malaysia dan Filipina. Inilah yang berubah apabila iklan berada di dalam jawapan.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/penske-google-ai-overviews-lawsuit-dismissed/"><span class="meta">Carian AI · 1 Oktober 2026</span><h3>Penske lwn. Google Ditolak: Maksudnya bagi Keterlihatan AI</h3><p>Seorang hakim AS menolak saman antitrust Penske Media berhubung AI Overviews Google, kerana tiada 'tawar-menawar formal' untuk trafik. Apa yang perlu jenama lakukan tentang GEO.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

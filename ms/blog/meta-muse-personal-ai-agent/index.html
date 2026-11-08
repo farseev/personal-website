@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meta Muse: Apabila Pelanggan Anda Menghantar Ejen | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Meta melancarkan Muse, ejen AI peribadi yang boleh membuat tempahan, membeli-belah dan berunding bagi pihak pengguna. Memasarkan kepada ejen, bukan hanya manusia, kini menjadi persoalan praktikal." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-muse-personal-ai-agent/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Meta Muse: Apabila Pelanggan Anda Menghantar Ejen | Prof. Aleks Farseev" />
+<meta property="og:description" content="Meta melancarkan Muse, ejen AI peribadi yang boleh membuat tempahan, membeli-belah dan berunding bagi pihak pengguna. Memasarkan kepada ejen, bukan hanya manusia, kini menjadi persoalan praktikal." />
+<meta property="og:url" content="https://farseev.com/ms/blog/meta-muse-personal-ai-agent/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Ejen" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Meta Muse: Apabila Pelanggan Anda Menghantar Ejen | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Meta melancarkan Muse, ejen AI peribadi yang boleh membuat tempahan, membeli-belah dan berunding bagi pihak pengguna. Memasarkan kepada ejen, bukan hanya manusia, kini menjadi persoalan praktikal." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/#article","mainEntityOfPage":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/","url":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/","headline":"Meta Muse: Apabila Pelanggan Anda Menghantar Ejen","description":"Meta melancarkan Muse, ejen AI peribadi yang boleh membuat tempahan, membeli-belah dan berunding bagi pihak pengguna. Memasarkan kepada ejen, bukan hanya manusia, kini menjadi persoalan praktikal.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Ejen","about":{"@type":"Thing","name":"Meta melancarkan Muse, ejen AI peribadi untuk tugas harian, di AS"},"wordCount":880,"citation":[{"@type":"CreativeWork","name":"Meta launches personal AI agent, Muse, to help with everyday tasks","url":"https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks","publisher":"PBS NewsHour (Associated Press)","datePublished":"2026-09-08"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/#faq","mainEntity":[{"@type":"Question","name":"Apakah Meta Muse?","acceptedAnswer":{"@type":"Answer","text":"Muse ialah ejen AI peribadi yang dilancarkan oleh Meta pada 8 September 2026. Menurut Associated Press, ia membantu tugas harian seperti penjadualan dan membeli-belah, dan Meta menyatakan ia boleh membuka pelayar, mengisi borang dan berunding bagi pihak pengguna."}},{"@type":"Question","name":"Di manakah Meta Muse tersedia?","acceptedAnswer":{"@type":"Answer","text":"Semasa pelancaran ia hanya tersedia di AS, kepada mereka yang berumur 18 tahun ke atas, melalui aplikasi Muse yang berasingan atau di dalam WhatsApp."}},{"@type":"Question","name":"Bagaimanakah jenama patut bersedia untuk ejen AI peribadi?","acceptedAnswer":{"@type":"Answer","text":"Dengan menerbitkan tawaran dan dasar yang jelas dan boleh dibaca mesin, membuang corak reka bentuk manipulatif, menentukan lebih awal terma mana yang boleh dirundingkan, dan mengekalkan kreatif berhadapan manusia yang kukuh untuk saat pelanggan membuat keputusan akhir."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Meta Muse: Apabila Pelanggan Anda Menghantar Ejen","item":"https://farseev.com/ms/blog/meta-muse-personal-ai-agent/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/meta-muse-personal-ai-agent/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-muse-personal-ai-agent/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-muse-personal-ai-agent/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-muse-personal-ai-agent/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-muse-personal-ai-agent/">한국어</option><option value="th" lang="th" data-href="/th/blog/meta-muse-personal-ai-agent/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/meta-muse-personal-ai-agent/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/meta-muse-personal-ai-agent/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/meta-muse-personal-ai-agent/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-muse-personal-ai-agent/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Meta Muse: Apabila Pelanggan Anda Menghantar Ejen</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Ejen</p>
+      <h1 class="h-display">Meta Muse: Apabila Pelanggan Anda Menghantar Ejen</h1>
+      <p class="lead">Meta melancarkan Muse, ejen AI peribadi yang boleh membuat tempahan, membeli-belah dan berunding bagi pihak pengguna. Memasarkan kepada ejen, bukan hanya manusia, kini menjadi persoalan praktikal.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: Meta melancarkan Muse, ejen AI peribadi untuk tugas harian, di AS (<time datetime="2026-09-08">8 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Selama dua puluh tahun, pemasaran digital mengandaikan seseorang berada di hujung corong. Pada 8 September Meta melancarkan Muse, ejen AI peribadi yang boleh bertindak bagi pihak orang itu: menghantar e-mel, menempah perjalanan, mengisi borang dan, dalam kata-kata Meta, "berunding bagi pihak mereka". Orang itu masih ada. Tetapi semakin kerap, sebuah ejen berdiri di antara mereka dan anda.</p>
+<h2>Apa yang berlaku</h2>
+<p>Menurut <a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">laporan Associated Press</a>, Muse ialah ejen AI peribadi untuk tugas harian seperti jadual dan membeli-belah. Meta menyatakan bahawa sebaik sahaja pengguna berkongsi matlamat, Muse membina pelan yang diperibadikan, menyelaraskan masa dan sumber serta memajukan kerja itu dengan sendirinya. Contoh-contohnya merangkumi menghantar e-mel atau menempah perjalanan hingga membina pelan senaman setahun atau menubuhkan perniagaan baharu. Meta menyatakan Muse boleh membuka pelayar, mengisi borang dan berunding untuk pengguna.</p>
+<p>Muse tersedia kepada mereka yang berumur 18 tahun ke atas, kini hanya di AS, melalui aplikasi Muse yang berasingan atau di dalam WhatsApp. Meta menekankan keselamatan dan privasi dan menyatakan Muse berjalan pada mesin maya khusus yang selamat yang menyimpan kedua-dua ejen dan data pengguna. AP mengaitkan pelancaran itu dengan esei Mark Zuckerberg tentang kecerdasan super peribadi, di mana beliau menulis bahawa setiap orang akan mempunyai "ejen peribadi yang sangat berkebolehan yang memahami anda, matlamat anda".</p>
+<h2>Mengapa ia penting</h2>
+<p>Apabila seseorang membandingkan tiga hotel, jenama anda berpeluang memikat mereka: sekeping foto, satu ulasan, satu perasaan. Apabila ejen membandingkan tiga hotel bagi pihak orang itu, ia membaca fakta, dasar dan harga yang berstruktur, dan ia mungkin tidak pernah "melihat" foto itu seperti manusia. Rundingan ialah bahagian yang lebih radikal. Ejen yang berunding tidak bertindak balas kepada sepanduk kekurangan stok.</p>
+<p>Pengedaran juga penting. Muse berada di dalam WhatsApp, salah satu saluran pesanan paling penting di Asia, Amerika Latin dan Afrika. Ia hanya untuk AS buat masa ini, tetapi ejen peribadi yang terbenam dalam aplikasi pesanan yang sudah digunakan oleh ramai pelanggan kita bukanlah eksperimen niche.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Penyelidikan saya sentiasa tentang memahami manusia daripada jejak digital mereka. Dalam <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">Harvesting Multiple Sources for User Profile Learning</a> (ICMR 2015) dan dalam <a href="https://doi.org/10.1609/aaai.v31i1.10497" target="_blank" rel="noopener">TweetFit</a> (AAAI 2017), yang menggabungkan hantaran media sosial dengan data sensor boleh pakai untuk mempelajari profil kesejahteraan, kami menunjukkan bahawa menggabungkan sumber memberi gambaran yang jauh lebih kaya tentang seseorang berbanding mana-mana satu sumber.</p>
+<p>Ejen peribadi ialah versi muktamad idea itu, dengan satu perbezaan besar: profil itu kini berada pada ejen pengguna, bukan pada pengiklan. Muse direka untuk memahami matlamat pengguna dan bertindak berdasarkannya. Ini mengalihkan keseimbangan maklumat. Jenama tidak lagi memprofilkan pelanggan untuk memutuskan apa yang hendak ditunjukkan. Ejen pelanggan memprofilkan jenama untuk memutuskan apa yang hendak diterima.</p>
+<p>Ini mengubah maksud "pemperibadian". Dalam kerja kami tentang <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">cadangan kandungan berasaskan personaliti</a> (ACM Multimedia 2022), matlamatnya ialah memadankan kandungan dengan sifat seseorang. Dengan ejen dalam kitaran, anda memerlukan dua lapisan: tawaran yang jelas, berasaskan fakta dan boleh dibaca mesin yang boleh dinilai oleh ejen, dan kreatif berhadapan manusia untuk saat orang itu mendongak dan membuat keputusan. Pemasaran yang baik kepada ejen akan kelihatan seperti dokumentasi yang baik. Pemasaran yang baik kepada manusia masih akan kelihatan seperti penceritaan yang baik.</p>
+<p>Ada juga persoalan tanggungjawab yang saya ambil berat. Ejen yang berunding bagi pihak pengguna mesti setia kepada pengguna itu. Jika ejen mula menerima keutamaan berbayar tanpa pendedahan, kita akan membina semula bahagian terburuk industri iklan di dalam perisian paling peribadi yang pernah digunakan manusia. Penekanan Meta pada privasi dialu-alukan; ketelusan tentang pengaruh komersial ke atas keputusan ejen akan sama pentingnya.</p>
+<h2>Apa yang perlu dilakukan pemasar sekarang</h2>
+<ul><li>Jadikan tawaran anda boleh dibaca oleh mesin. Harga, ketersediaan, dasar pemulangan, masa penghantaran dan terma perlu jelas, konsisten dan mudah dihuraikan di laman dan dalam suapan anda.</li><li>Buang corak gelap. Pemasa undur dan yuran tersembunyi ialah geseran bagi ejen dan masalah kepercayaan bagi manusia.</li><li>Bersedia untuk berunding. Tentukan lebih awal terma mana yang fleksibel, seperti pakej, tempoh penghantaran atau faedah kesetiaan, supaya permintaan automatik boleh mendapat jawapan yang pantas dan konsisten.</li><li>Kekalkan detik manusia. "Ya" yang terakhir selalunya masih datang daripada manusia. Kisah jenama, ulasan dan kreatif anda masih penting pada langkah itu.</li><li>Perhatikan saluran pesanan. Jika ejen berada di dalam WhatsApp, persediaan perdagangan perbualan anda akan menjadi lebih penting.</li></ul>
+<p>Muse ialah satu produk di satu negara. Corak yang diwakilinya, pelanggan yang menyerahkan tugas, akan merebak. Bina untuk kedua-dua khalayak: ejen yang membandingkan dan orang yang membuat keputusan.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Apakah Meta Muse?</summary><p>Muse ialah ejen AI peribadi yang dilancarkan oleh Meta pada 8 September 2026. Menurut Associated Press, ia membantu tugas harian seperti penjadualan dan membeli-belah, dan Meta menyatakan ia boleh membuka pelayar, mengisi borang dan berunding bagi pihak pengguna.</p></details><details><summary>Di manakah Meta Muse tersedia?</summary><p>Semasa pelancaran ia hanya tersedia di AS, kepada mereka yang berumur 18 tahun ke atas, melalui aplikasi Muse yang berasingan atau di dalam WhatsApp.</p></details><details><summary>Bagaimanakah jenama patut bersedia untuk ejen AI peribadi?</summary><p>Dengan menerbitkan tawaran dan dasar yang jelas dan boleh dibaca mesin, membuang corak reka bentuk manipulatif, menentukan lebih awal terma mana yang boleh dirundingkan, dan mengekalkan kreatif berhadapan manusia yang kukuh untuk saat pelanggan membuat keputusan akhir.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks" target="_blank" rel="noopener">Meta launches personal AI agent, Muse, to help with everyday tasks</a> — PBS NewsHour (Associated Press), 8 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Ejen · 22 Oktober 2026</span><h3>Agent Skills Menjadi Neutral Vendor: Mengapa Pemasar Perlu Peduli</h3><p>Anthropic mendermakan piawaian Agent Skills kepada Agentic AI Foundation. Pengetahuan praktikal yang mudah alih dan bertulis ialah apa yang diperlukan pasukan pemasaran daripada ejen AI.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/workday-c1-ai-agent-identity/"><span class="meta">Ejen · 13 Oktober 2026</span><h3>Workday Membeli C1.ai: Ejen Pemasaran Anda Juga Perlukan Identiti</h3><p>Workday bersetuju membeli C1.ai, yang mentadbir akses untuk manusia dan ejen AI. Ejen pemasaran yang menyentuh CRM dan akaun iklan memerlukan peraturan yang sama.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/openai-agent-medicare-portal-australia/"><span class="meta">Ejen · 24 September 2026</span><h3>Ejen AI yang Enggan Menerima Jawapan Tidak</h3><p>Perdana Menteri Australia berkata ejen penyelidikan OpenAI telah memintas sekatan pada portal statistik Medicare. Pengajaran untuk ejen pemasaran adalah tentang skop.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

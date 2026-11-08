@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak." />
+<meta property="og:url" content="https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Model" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa?","description":"Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Model","about":{"@type":"Thing","name":"Google DeepMind memperkenalkan Gemini 4 Argon, model terdepannya untuk tugas panjang berbilang langkah"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Apakah Gemini 4 Argon?","acceptedAnswer":{"@type":"Answer","text":"Ia ialah model terdepan Google DeepMind yang diperkenalkan pada 30 September 2026 untuk pengekodan dunia sebenar, kerja pengetahuan perusahaan dan pertahanan siber, dengan had output 1 juta token, naik daripada 64,000."}},{"@type":"Question","name":"Siapakah yang boleh menggunakan Gemini 4 Argon terlebih dahulu?","acceptedAnswer":{"@type":"Answer","text":"Google menyatakan ia dilancarkan terlebih dahulu kepada pembela siber yang dipercayai melalui Fairwind Program, dengan keluaran lebih luas dirancang untuk pembangun, perusahaan dan pengguna, bermula dengan pelanggan API berbayar dan pelanggan Google AI Ultra."}},{"@type":"Question","name":"Berapakah kos Gemini 4 Argon?","acceptedAnswer":{"@type":"Answer","text":"Google menyenaraikan harga pengenalan US$2 bagi sejuta token input dan US$10 bagi sejuta token output, meningkat kepada US$4 dan US$20 selepas tempoh pengenalan, dengan token input cache pada diskaun 95%."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa?","item":"https://farseev.com/ms/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="th" lang="th" data-href="/th/blog/gemini-4-argon-long-horizon-ai/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/gemini-4-argon-long-horizon-ai/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/gemini-4-argon-long-horizon-ai/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/gemini-4-argon-long-horizon-ai/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/gemini-4-argon-long-horizon-ai/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa?</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Model</p>
+      <h1 class="h-display">Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa?</h1>
+      <p class="lead">Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: Google DeepMind memperkenalkan Gemini 4 Argon, model terdepannya untuk tugas panjang berbilang langkah (<time datetime="2026-09-30">30 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Tetingkap konteks dahulunya menjadi perlumbaan. Gemini 4 Argon mengalihkan perhatian ke hujung model yang satu lagi: berapa banyak yang boleh dihasilkannya sekali gus. Pada 30 September Google DeepMind memperkenalkan Argon dengan had output sejuta token, naik daripada 64,000. Itu jawapan sepanjang sebuah buku. Soalan yang lebih menarik bagi pemasar ialah jenis kerja apa yang memerlukannya.</p>
+<h2>Apa yang berlaku</h2>
+<p>Dalam <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">pengumuman Google</a>, Koray Kavukcuoglu menggambarkan Argon sebagai model terdepan Google "untuk pengekodan dunia sebenar, kerja pengetahuan perusahaan dan pertahanan siber". Had token output diperluas kepada 1M, dan model itu direka untuk tugas panjang berbilang langkah dalam kejuruteraan perisian, kerja undang-undang dan kewangan serta keselamatan siber, dengan pemahaman visual yang kukuh seperti analisis carta dan kefahaman video panjang.</p>
+<p>Pelancarannya luar biasa. Argon diberikan terlebih dahulu kepada sekumpulan pembela siber yang dipercayai melalui Fairwind Program Google, dengan akses lebih luas dirancang untuk pembangun, perusahaan dan pengguna, bermula dengan pelanggan API berbayar dan pelanggan Google AI Ultra. Harga pengenalan ialah US$2 bagi sejuta token input dan US$10 bagi sejuta token output, meningkat kepada US$4 dan US$20 selepas tempoh pengenalan, dengan input cache pada diskaun 95%.</p>
+<p>Google menyenaraikan keputusan penanda aras, termasuk 77.9% pada DeepSWE v1.1 dan 91.7% pada penanda aras video panjang LVBench, dan menghuraikan kegunaan dalaman seperti migrasi kod berskala besar. Ia juga menghuraikan langkah keselamatan, termasuk pemantauan penyalahgunaan dan salah jajaran serta ketahanan terhadap suntikan prompt tidak langsung. Ini ialah keputusan Google sendiri.</p>
+<h2>Mengapa ia penting</h2>
+<p>Sejuta token output bukanlah tentang menulis catatan blog yang lebih panjang. Output panjang penting apabila tugasnya ialah menghasilkan artifak lengkap dalam satu laluan yang koheren: migrasi seluruh pangkalan kod, satu set kontrak, set data berstruktur yang besar. Dalam pemasaran, padanan terdekat ialah perkara seperti penulisan semula suapan produk sepenuhnya, penyetempatan penuh sesebuah laman web, atau pustaka kempen dengan ratusan varian yang diselaraskan.</p>
+<p>Kefahaman video panjang, bagi saya, ialah keupayaan yang lebih segera berguna. Video mendominasi platform sosial, dan kebanyakan jenama masih menganalisisnya dengan menonton sampel dan mencatat nota. Model yang boleh membaca video panjang dengan boleh dipercayai, pada skala besar, membuka analisis pesaing dan kategori yang dahulunya mustahil dilakukan dengan teliti.</p>
+<p>Dan pelancaran yang mengutamakan siber ialah isyarat tentang di mana makmal terdepan fikir risikonya berada. Apabila makmal memberi pembela akses sebelum orang lain, ia memberitahu anda bahawa model itu cukup berkebolehan untuk memberi kesan kepada penyerang juga.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Sebahagian besar penyelidikan saya adalah tentang multimedia sosial, bukan teks semata-mata. Pada peringkat awal kami membina <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> (ACM Multimedia 2016), platform data raya untuk menganalisis multimedia sosial merentas rangkaian. Lebih baru-baru ini, dalam <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> (WWW 2025 Companion), kami memberi tumpuan kepada menjelaskan apa yang disampaikan pesaing dan mengapa ia berkesan.</p>
+<p>Pengajaran daripada kerja itu ialah skala analisis hanya separuh daripada masalah. Model yang boleh menonton seribu video pesaing masih perlu menjawab soalan yang dipedulikan oleh ahli strategi: mesej mana yang berulang, yang mana berprestasi, khalayak mana yang disasarkan dan jurang apa yang masih terbuka. Model konteks panjang dan output panjang menjadikan pembacaan dan penulisan lebih murah. Pembingkaian dan pengesahan kekal sebagai sumbangan manusia, disokong oleh data prestasi.</p>
+<p>Saya ingin menambah satu peringatan. Output yang sangat panjang sukar disemak. Dokumen 200 halaman yang dijana boleh 98% betul dan masih mengandungi satu dakwaan yang menyebabkan anda bermasalah. Semakin panjang output, semakin anda memerlukan struktur, pensampelan dan semakan automatik.</p>
+<h2>Bagaimana saya akan menggunakan model jangka panjang dalam pemasaran</h2>
+<ul><li>Audit video kategori. Minta dapatan berstruktur merentas satu set lengkap video pesaing: cangkuk, dakwaan, format, seruan bertindak. Kemudian sahkan sampel secara manual.</li><li>Pustaka aset yang diselaraskan. Jana set varian lengkap untuk sesuatu kempen dalam satu laluan supaya nada dan dakwaan kekal konsisten, dan semak berbanding senarai semak.</li><li>Draf penyetempatan seluruh laman. Hasilkan draf lengkap untuk pasaran baharu, kemudian minta penyemak penutur asli menyemak halaman bertrafik tinggi dahulu.</li><li>Dokumen panjang dengan indeks. Minta model menghasilkan jadual dakwaan bersama sumber, supaya manusia boleh mengesahkan bahagian yang berisiko dengan cepat.</li></ul>
+<p>Angka utama Argon mengagumkan. Nilainya bagi pemasar akan datang daripada menggandingkan kapasiti itu dengan disiplin untuk menyemak apa yang dihasilkan.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Apakah Gemini 4 Argon?</summary><p>Ia ialah model terdepan Google DeepMind yang diperkenalkan pada 30 September 2026 untuk pengekodan dunia sebenar, kerja pengetahuan perusahaan dan pertahanan siber, dengan had output 1 juta token, naik daripada 64,000.</p></details><details><summary>Siapakah yang boleh menggunakan Gemini 4 Argon terlebih dahulu?</summary><p>Google menyatakan ia dilancarkan terlebih dahulu kepada pembela siber yang dipercayai melalui Fairwind Program, dengan keluaran lebih luas dirancang untuk pembangun, perusahaan dan pengguna, bermula dengan pelanggan API berbayar dan pelanggan Google AI Ultra.</p></details><details><summary>Berapakah kos Gemini 4 Argon?</summary><p>Google menyenaraikan harga pengenalan US$2 bagi sejuta token input dan US$10 bagi sejuta token output, meningkat kepada US$4 dan US$20 selepas tempoh pengenalan, dengan token input cache pada diskaun 95%.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Model · 7 Oktober 2026</span><h3>Claude Haiku 5.5 dan Hujah untuk Model Kecil dalam Pemasaran</h3><p>Claude Haiku 5.5 daripada Anthropic dibina untuk kerja murah, pantas dan berjumlah tinggi. Mengapa model terkecil dalam satu keluarga sering menjadi yang paling penting bagi pemasar.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">Model · 29 September 2026</span><h3>Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting</h3><p>OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Model · 22 September 2026</span><h3>Claude Opus 5.5: Tera Air, Audit dan Label Kandungan AI</h3><p>Claude Opus 5.5 daripada Anthropic dilancarkan dengan tera air untuk pematuhan EU AI Act dan catatan bahawa model itu sering mengesyaki ia sedang diuji. Kedua-duanya penting bagi pemasar.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

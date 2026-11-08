@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Perjanjian AI White House dan Penilai Bebas | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/white-house-ai-accord-independent-evaluators/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Perjanjian AI White House dan Penilai Bebas | Prof. Aleks Farseev" />
+<meta property="og:description" content="Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran." />
+<meta property="og:url" content="https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Peraturan dan keselamatan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Perjanjian AI White House dan Penilai Bebas | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/#article","mainEntityOfPage":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/","url":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/","headline":"Perjanjian AI White House dan Penilai Bebas","description":"Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Peraturan dan keselamatan","about":{"@type":"Thing","name":"Pemimpin teknologi menandatangani White House Accord on Super Intelligence; Anthropic menempatkan penilai METR dengan akses seperti pekerja"},"wordCount":785,"citation":[{"@type":"CreativeWork","name":"White House releases 'Accord' between billionaire AI execs: Here's what it says","url":"https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/","publisher":"Forbes Australia","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"Trump and six tech companies sign a voluntary artificial intelligence safety accord","url":"https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord","publisher":"MercoPress","datePublished":"2026-09-30"},{"@type":"CreativeWork","name":"An update on independent evaluators","url":"https://www.anthropic.com/news/an-update-on-independent-evaluators","publisher":"Anthropic","datePublished":"2026-10-15"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/#faq","mainEntity":[{"@type":"Question","name":"Apakah White House Accord on Super Intelligence?","acceptedAnswer":{"@type":"Answer","text":"Ia ialah dokumen sukarela, bertajuk \"Joint Commitment on Frontier Responsibilities\", yang ditandatangani pada 29 September 2026 oleh Presiden Trump dan pemimpin termasuk Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai dan Greg Brockman. Ia mengikat syarikat kepada kawalan dalaman, pasukan dalaman, penilai luar yang bebas dan penyeliaan peringkat lembaga."}},{"@type":"Question","name":"Adakah perjanjian AI White House itu mengikat?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Trump menyifatkannya sebagai \"mengikat dari segi moral\", tetapi menurut MercoPress ia tidak menetapkan sebarang akibat bagi pelanggaran, dan sesetengah ahli akademik mengkritiknya sebagai lemah."}},{"@type":"Question","name":"Apakah akses yang diberikan Anthropic kepada penilai bebas?","acceptedAnswer":{"@type":"Answer","text":"Anthropic menyatakan enam kakitangan METR diterima masuk dengan akses seperti pekerja kepada perkakasan, alat dan sistem syarikat, bahawa METR akan menerbitkan penilaian risikonya, dan bahawa Anthropic tidak boleh memveto penerbitan itu tetapi boleh mewajibkan penyuntingan kategori yang telah ditetapkan seperti IP sulit."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Perjanjian AI White House dan Penilai Bebas","item":"https://farseev.com/ms/blog/white-house-ai-accord-independent-evaluators/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/white-house-ai-accord-independent-evaluators/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/white-house-ai-accord-independent-evaluators/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/white-house-ai-accord-independent-evaluators/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/white-house-ai-accord-independent-evaluators/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/white-house-ai-accord-independent-evaluators/">한국어</option><option value="th" lang="th" data-href="/th/blog/white-house-ai-accord-independent-evaluators/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/white-house-ai-accord-independent-evaluators/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/white-house-ai-accord-independent-evaluators/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/white-house-ai-accord-independent-evaluators/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/white-house-ai-accord-independent-evaluators/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Perjanjian AI White House dan Penilai Bebas</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Peraturan dan keselamatan</p>
+      <h1 class="h-display">Perjanjian AI White House dan Penilai Bebas</h1>
+      <p class="lead">Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: Pemimpin teknologi menandatangani White House Accord on Super Intelligence; Anthropic menempatkan penilai METR dengan akses seperti pekerja (<time datetime="2026-09-29">29 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Komitmen sukarela daripada syarikat AI mempunyai rekod yang bercampur-campur. Sesetengahnya dilupakan dalam masa setahun. Apa yang menjadikan komitmen terbaharu ini menarik bukanlah majlis di White House tetapi satu idea konkrit di dalamnya: penilai bebas. Dua minggu kemudian, sebuah makmal menunjukkan bagaimana ia boleh dilaksanakan dalam amalan.</p>
+<h2>Apa yang berlaku</h2>
+<p>Pada 29 September, menurut <a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">Forbes</a>, Presiden Trump dan ketua beberapa syarikat teknologi menandatangani "White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities", dokumen yang mengandungi lebih sedikit daripada 300 perkataan. Penandatangan yang disenaraikan ialah Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai dan presiden OpenAI Greg Brockman, bersama presiden.</p>
+<p>Forbes meringkaskan empat komitmen bagi syarikat yang melatih dan melaksanakan model terdepan: mengekalkan kawalan dalaman yang memantau keupayaan dan penjajaran model, termasuk memastikan model tidak mengakses sistem teknikal dengan cara yang tidak diingini; mempunyai pasukan dalaman yang memastikan kawalan itu berfungsi dan isu diperbaiki; bekerjasama dengan "juruaudit atau penilai luar yang bebas"; dan melantik "jawatankuasa bebas lembaga pengarah" untuk menyelia kawalan dan juruaudit. Trump menyifatkan perjanjian itu sebagai "mengikat dari segi moral" dan "hampir seperti perlembagaan dalam satu segi". <a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">MercoPress</a> mencatat bahawa ia tidak menetapkan sebarang akibat bagi pelanggaran dan memetik profesor University of Sydney Kimberlee Weatherall yang menyifatkannya sebagai "sangat tidak mengagumkan".</p>
+<p>Pada 15 Oktober, Anthropic menerbitkan <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a>. Ia menyatakan telah memberi pasukan dari METR, sebuah organisasi bukan untung yang menilai model terdepan, akses seperti pekerja: enam kakitangan METR diterima masuk dengan perkakasan syarikat dan alat dalaman, secara amnya setara dengan pasukan risiko Anthropic sendiri. METR akan menerbitkan penilaian risikonya; Anthropic menyatakan ia tidak boleh memveto penerbitan itu, walaupun ia boleh mewajibkan penyuntingan kategori yang telah ditetapkan seperti IP sulit. Anthropic membandingkan model ini dengan penyelia bank yang menempatkan pemeriksa di dalam bank-bank besar, dan menyatakan semua syarikat AI terdepan patut melakukan perkara yang sama.</p>
+<h2>Mengapa ia penting</h2>
+<p>Perjanjian itu nipis, dan pengkritik betul bahawa teks sukarela tanpa akibat tidak menjamin apa-apa. Tetapi komitmen penilai bebas ialah pegangan yang berguna, kerana ia boleh disemak. Sama ada syarikat mempunyai penilai luar dengan akses sebenar dan kebebasan untuk menerbitkan, atau tidak.</p>
+<p>Pengaturan Anthropic menetapkan piawaian yang kelihatan: akses mendalam, hak penerbitan dan had yang jelas terhadap penyuntingan. Syarikat lain kini boleh dibandingkan dengannya. Begitulah komitmen sukarela menjadi norma.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Bidang penyelidikan saya, AI yang boleh dijelaskan untuk pemasaran, berasaskan prinsip yang sama pada skala yang lebih kecil: dakwaan tentang apa yang dilakukan oleh model perlu boleh disahkan oleh pihak selain pemilik model itu. Dalam <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) dan <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), lapisan penjelasan wujud supaya pemasar boleh menyemak mengapa sesuatu ramalan dibuat dan bukannya menerimanya bulat-bulat.</p>
+<p>Saya telah berhujah di Forbes bahawa <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">ketelusan penting bagi syarikat yang dipacu pemasaran</a>. Makmal terdepan kini menuju ke arah versi itu untuk keselamatan: kawalan dalaman, pasukan dalaman, penilai luar, penyeliaan lembaga. AI pemasaran tidak membawa risiko bencana yang sama, tetapi ia membawa risiko yang nyata: penyasaran berat sebelah, dakwaan mengelirukan, pelanggaran privasi, bajet yang dibelanjakan pada isyarat yang salah. Struktur empat lapisan yang sama boleh dikecilkan skalanya dengan baik.</p>
+<h2>Model empat lapisan untuk tadbir urus AI pemasaran</h2>
+<ul><li>Kawalan dalaman. Pantau apa yang dilakukan sistem AI anda: khalayak mana yang disasarkan, dakwaan apa yang dijana, data apa yang digunakan.</li><li>Pemilik dalaman. Namakan seseorang atau pasukan yang bertanggungjawab menyemak kawalan itu dan membetulkan isu.</li><li>Mata luar. Minta pihak bebas, seperti juruaudit, rakan penyelidikan atau vendor kedua, menguji model dan dakwaan utama anda secara berkala.</li><li>Penyeliaan kanan. Laporkan risiko AI kepada kepimpinan seperti anda melaporkan risiko kewangan, dengan kuasa untuk menghentikan sementara sesuatu sistem.</li></ul>
+<p>Apabila anda membeli AI pemasaran, tanya vendor soalan yang sama yang ditimbulkan oleh perjanjian itu. Siapa yang menilai model anda dari luar? Akses apa yang mereka ada? Bolehkah mereka menerbitkan apa yang mereka temui? Jawapannya akan memberitahu anda lebih banyak daripada senarai ciri.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Apakah White House Accord on Super Intelligence?</summary><p>Ia ialah dokumen sukarela, bertajuk "Joint Commitment on Frontier Responsibilities", yang ditandatangani pada 29 September 2026 oleh Presiden Trump dan pemimpin termasuk Elon Musk, Mark Zuckerberg, Jensen Huang, Dario Amodei, Sundar Pichai dan Greg Brockman. Ia mengikat syarikat kepada kawalan dalaman, pasukan dalaman, penilai luar yang bebas dan penyeliaan peringkat lembaga.</p></details><details><summary>Adakah perjanjian AI White House itu mengikat?</summary><p>Tidak. Trump menyifatkannya sebagai "mengikat dari segi moral", tetapi menurut MercoPress ia tidak menetapkan sebarang akibat bagi pelanggaran, dan sesetengah ahli akademik mengkritiknya sebagai lemah.</p></details><details><summary>Apakah akses yang diberikan Anthropic kepada penilai bebas?</summary><p>Anthropic menyatakan enam kakitangan METR diterima masuk dengan akses seperti pekerja kepada perkakasan, alat dan sistem syarikat, bahawa METR akan menerbitkan penilaian risikonya, dan bahawa Anthropic tidak boleh memveto penerbitan itu tetapi boleh mewajibkan penyuntingan kategori yang telah ditetapkan seperti IP sulit.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.forbes.com.au/news/innovation/white-house-releases-accord-between-billionaire-ai-execs-heres-what-it-says/" target="_blank" rel="noopener">White House releases 'Accord' between billionaire AI execs: Here's what it says</a> — Forbes Australia, 30 September 2026</li><li translate="no"><a href="https://en.mercopress.com/2026/09/30/trump-and-six-tech-companies-sign-a-voluntary-artificial-intelligence-safety-accord" target="_blank" rel="noopener">Trump and six tech companies sign a voluntary artificial intelligence safety accord</a> — MercoPress, 30 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">An update on independent evaluators</a> — Anthropic, 15 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Peraturan dan keselamatan · 12 Oktober 2026</span><h3>Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda</h3><p>Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/mas-ai-risk-management-guidelines/"><span class="meta">Peraturan dan keselamatan · 7 Oktober 2026</span><h3>Garis Panduan Risiko AI MAS: Templat Berguna Melangkaui Perbankan</h3><p>MAS mengeluarkan garis panduan pengurusan risiko AI untuk institusi kewangan. Peraturan inventori dan pihak ketiganya menjadi templat yang baik untuk pasukan pemasaran.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Iklan dan AI pemasaran · 29 Oktober 2026</span><h3>Q3 2026 WPP: Model Agensi di Bawah Tekanan AI</h3><p>WPP melaporkan hasil bersih setara yang menurun, manakala CEOnya menunjuk kepada permintaan untuk perkhidmatan berasaskan AI melalui WPP Open. Apa maknanya bagi agensi.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

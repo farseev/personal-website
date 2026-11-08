@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gpt-6-1-astra-cancelled-safety/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gpt-6-1-astra-cancelled-safety/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting | Prof. Aleks Farseev" />
+<meta property="og:description" content="OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda." />
+<meta property="og:url" content="https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Model" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/#article","mainEntityOfPage":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/","url":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/","headline":"Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting","description":"OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Model","about":{"@type":"Thing","name":"OpenAI membatalkan pelancaran GPT-6.1 Astra, memetik kebimbangan keselamatan daripada ujian dalaman"},"wordCount":817,"citation":[{"@type":"CreativeWork","name":"OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns","url":"https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns","publisher":"Al Jazeera","datePublished":"2026-09-29"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/#faq","mainEntity":[{"@type":"Question","name":"Mengapakah OpenAI membatalkan GPT-6.1 Astra?","acceptedAnswer":{"@type":"Answer","text":"Menurut Al Jazeera, ketua sistem keselamatan OpenAI, Saachi Jain, berkata ujian dalaman menunjukkan model itu tidak memenuhi piawaian dalam mengikut kehendak manusia, khususnya dari segi skop dan kebenaran serta cara ia berkomunikasi semula dengan pengguna."}},{"@type":"Question","name":"Bilakah OpenAI mengumumkan ia tidak akan mengeluarkan GPT-6.1 Astra?","acceptedAnswer":{"@type":"Answer","text":"OpenAI mengumumkan keputusan itu pada 29 September 2026, pada malam sebelum persidangan pembangun tahunannya, selepas berita itu mula-mula dilaporkan oleh The Wall Street Journal."}},{"@type":"Question","name":"Apakah yang boleh dipelajari perniagaan daripada keputusan GPT-6.1 Astra?","acceptedAnswer":{"@type":"Answer","text":"Bahawa ejen AI perlu dinilai sama ada ia kekal dalam skop, bertindak hanya di tempat yang dibenarkan dan melaporkan dengan tepat apa yang dilakukannya, dan bahawa keseimbangan antara berhati-hati dan menyiapkan kerja memerlukan penalaan dan pemantauan yang disengajakan."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting","item":"https://farseev.com/ms/blog/gpt-6-1-astra-cancelled-safety/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/gpt-6-1-astra-cancelled-safety/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gpt-6-1-astra-cancelled-safety/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gpt-6-1-astra-cancelled-safety/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gpt-6-1-astra-cancelled-safety/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gpt-6-1-astra-cancelled-safety/">한국어</option><option value="th" lang="th" data-href="/th/blog/gpt-6-1-astra-cancelled-safety/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/gpt-6-1-astra-cancelled-safety/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/gpt-6-1-astra-cancelled-safety/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/gpt-6-1-astra-cancelled-safety/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/gpt-6-1-astra-cancelled-safety/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Model</p>
+      <h1 class="h-display">Mengapa OpenAI Menangguhkan GPT-6.1 Astra, dan Mengapa Ia Penting</h1>
+      <p class="lead">OpenAI membatalkan pelancaran GPT-6.1 Astra selepas ujian mengenal pasti masalah dengan skop, kebenaran dan cara ia melaporkan semula. Ujian yang sama terpakai pada ejen anda.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: OpenAI membatalkan pelancaran GPT-6.1 Astra, memetik kebimbangan keselamatan daripada ujian dalaman (<time datetime="2026-09-29">29 September 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Jarang sekali makmal AI mengumumkan model yang tidak akan dilancarkannya. Pada 29 September, kurang empat minggu selepas melancarkan GPT-6 Astra, OpenAI berkata ia tidak akan mengeluarkan penggantinya, GPT-6.1 Astra, kerana ujian dalaman mengenal pasti risiko keselamatan. Kelemahan khusus yang dinamakannya pasti biasa bagi sesiapa yang pernah menggunakan ejen AI untuk bekerja.</p>
+<h2>Apa yang berlaku</h2>
+<p>Menurut <a href="https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns" target="_blank" rel="noopener">Al Jazeera</a>, yang memetik laporan pertama oleh The Wall Street Journal, OpenAI mengumumkan keputusan itu pada malam sebelum persidangan pembangun tahunannya. Saachi Jain, ketua sistem keselamatan OpenAI, berkata model itu tidak mencapai jangkaan syarikat dalam mengikut kehendak manusia semasa ujian dalaman. Beliau berkata ia lebih baik daripada pendahulunya dalam beberapa bidang tetapi tidak mencapai piawaian dari segi "skop dan kebenaran, dan cara ia berkomunikasi semula dengan pengguna".</p>
+<p>Jain menggambarkan ketegangan itu secara langsung: "Bagi apa sahaja berkaitan keselamatan dan penjajaran, ada pertukaran." Beliau berkata pembangun perlu mencari "garis yang betul antara kekal dalam skop, tetapi juga mengelakkan kemalasan", dan menambah bahawa apabila OpenAI melancarkan model kepada pengguna, "kami mempunyai piawaian yang sangat tinggi dari segi keselamatan dan penjajaran." Artikel itu tidak menyatakan apa, jika ada, yang akan dikeluarkan sebagai ganti.</p>
+<h2>Mengapa ia penting</h2>
+<p>Baca semula tiga bidang kegagalan itu: skop, kebenaran, dan berkomunikasi semula dengan pengguna. Ia bukan risiko penyelidikan yang eksotik. Ia ialah mod kegagalan harian bagi mana-mana sistem yang bertindak bagi pihak seseorang.</p>
+<ul><li>Skop: adakah ia melakukan hanya apa yang diminta, atau adakah ia memutuskan untuk melakukan lebih?</li><li>Kebenaran: adakah ia bertindak hanya di tempat ia mempunyai kebenaran?</li><li>Komunikasi: adakah ia memberitahu pengguna dengan tepat apa yang dilakukannya dan apa yang ditemuinya?</li></ul>
+<p>Perkara yang dikemukakan Jain tentang kemalasan menjelaskan mengapa ini sukar. Ejen yang berhenti pada setiap halangan tidak berguna. Ejen yang tidak pernah berhenti berbahaya. Menala keseimbangan antara kedua-duanya kini menjadi bahagian teras pembangunan model, dan sama juga bahagian teras melaksanakan ejen di dalam syarikat.</p>
+<p>Keputusan itu sendiri wajar diiktiraf. Melancarkan mengikut jadual ialah amalan lalai industri. Menahan model secara terbuka kerana ia lebih berkebolehan dalam beberapa aspek tetapi tidak cukup boleh dipercayai dalam aspek lain ialah jenis pertukaran yang sepatutnya kita mahu makmal lakukan, dan jelaskan.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Bidang kegagalan ketiga, berkomunikasi semula, hampir dengan tumpuan penyelidikan saya sendiri. AI yang boleh dijelaskan untuk pemasaran adalah tentang menjadikan output sistem mudah difahami dan jujur kepada orang yang mesti bertindak berdasarkannya. Dalam <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) kami menggunakan pembantu LLM untuk menjelaskan apa yang mendorong kadar klik lalu yang diramal bagi iklan baharu. Dalam <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) kami membina AI generatif yang boleh dijelaskan untuk mencipta strategi pemasaran bersama daripada data iklan sebenar.</p>
+<p>Benang merahnya ialah cadangan hanya berguna setakat mana ia boleh menerangkan dirinya. Ejen yang menyelesaikan tugas tetapi melaporkannya secara tidak tepat lebih buruk daripada ejen yang gagal secara terbuka, kerana ia merosakkan gambaran manusia tentang apa yang berlaku. Dalam pemasaran, di mana ejen semakin banyak mengubah bajet, melancarkan kreatif dan menghantar mesej, laporan yang tidak tepat boleh menyebabkan kerugian wang sebenar sebelum sesiapa menyedarinya.</p>
+<p>Saya juga telah menulis di Forbes tentang <a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">aplikasi ejen AI dalam pemasaran</a>. Semakin banyak aplikasi itu menjadi kenyataan, semakin banyak nilai-nilai yang membosankan seperti skop, kebenaran dan pelaporan jujur akan menentukan yang mana akan kekal.</p>
+<h2>Soalan untuk ditanya kepada mana-mana ejen pemasaran</h2>
+<ul><li>Skop: Bolehkah saya melihat, secara bertulis, tepat apa yang dibenarkan untuk dilakukan oleh ejen ini? Apa yang berlaku apabila sesuatu tugas kelihatan memerlukan lebih?</li><li>Kebenaran: Akaun, bajet dan saluran mana yang boleh disentuhnya? Adakah kebenarannya lebih sempit daripada kebenaran pengguna sendiri?</li><li>Peningkatan: Apabila ia menemui halangan, adakah ia berhenti dan bertanya, atau berimprovisasi?</li><li>Pelaporan: Adakah ringkasannya sepadan dengan log? Buat semakan rawak secara berkala.</li><li>Kemalasan: Adakah ia berputus asa terlalu awal pada tugas yang sah? Jejaki kerja yang tidak lengkap sebagai metrik juga.</li></ul>
+<p>Jika makmal terdepan boleh memutuskan bahawa model yang lebih berkebolehan belum bersedia kerana ia gagal dalam soalan-soalan ini, pasukan pemasaran boleh menggunakan piawaian yang sama pada ejen yang diletakkannya di hadapan pelanggan dan bajet.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Mengapakah OpenAI membatalkan GPT-6.1 Astra?</summary><p>Menurut Al Jazeera, ketua sistem keselamatan OpenAI, Saachi Jain, berkata ujian dalaman menunjukkan model itu tidak memenuhi piawaian dalam mengikut kehendak manusia, khususnya dari segi skop dan kebenaran serta cara ia berkomunikasi semula dengan pengguna.</p></details><details><summary>Bilakah OpenAI mengumumkan ia tidak akan mengeluarkan GPT-6.1 Astra?</summary><p>OpenAI mengumumkan keputusan itu pada 29 September 2026, pada malam sebelum persidangan pembangun tahunannya, selepas berita itu mula-mula dilaporkan oleh The Wall Street Journal.</p></details><details><summary>Apakah yang boleh dipelajari perniagaan daripada keputusan GPT-6.1 Astra?</summary><p>Bahawa ejen AI perlu dinilai sama ada ia kekal dalam skop, bertindak hanya di tempat yang dibenarkan dan melaporkan dengan tepat apa yang dilakukannya, dan bahawa keseimbangan antara berhati-hati dan menyiapkan kerja memerlukan penalaan dan pemantauan yang disengajakan.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.aljazeera.com/amp/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns" target="_blank" rel="noopener">OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns</a> — Al Jazeera, 29 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">Model · 7 Oktober 2026</span><h3>Claude Haiku 5.5 dan Hujah untuk Model Kecil dalam Pemasaran</h3><p>Claude Haiku 5.5 daripada Anthropic dibina untuk kerja murah, pantas dan berjumlah tinggi. Mengapa model terkecil dalam satu keluarga sering menjadi yang paling penting bagi pemasar.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">Model · 30 September 2026</span><h3>Gemini 4 Argon: Sejuta Token Output, Seterusnya Apa?</h3><p>Gemini 4 Argon daripada Google DeepMind membawa had output 1M token dan pelancaran yang mengutamakan siber. Apa yang diubah oleh AI jangka panjang bagi kerja pemasaran, dan apa yang tidak.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">Model · 22 September 2026</span><h3>Claude Opus 5.5: Tera Air, Audit dan Label Kandungan AI</h3><p>Claude Opus 5.5 daripada Anthropic dilancarkan dengan tera air untuk pematuhan EU AI Act dan catatan bahawa model itu sering mengesyaki ia sedang diuji. Kedua-duanya penting bagi pemasar.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

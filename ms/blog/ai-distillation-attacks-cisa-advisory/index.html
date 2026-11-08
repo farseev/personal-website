@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda | Prof. Aleks Farseev" />
+<meta property="og:description" content="Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI." />
+<meta property="og:url" content="https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Peraturan dan keselamatan" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/","headline":"Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda","description":"Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Peraturan dan keselamatan","about":{"@type":"Thing","name":"CISA, NSA dan FBI mengeluarkan nasihat tentang penyulingan model AI AS berskala industri; Anthropic melaporkan pertahanan anti-penyulingan baharu"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"Apakah serangan penyulingan AI?","acceptedAnswer":{"@type":"Answer","text":"Ia ialah kempen terselindung berskala besar yang mengekstrak keupayaan sesuatu model dengan membuat pertanyaan kepadanya, selalunya melalui rangkaian akaun palsu, dan menggunakan output itu untuk melatih model lain tanpa kebenaran pembangun asal."}},{"@type":"Question","name":"Syarikat manakah yang dinamakan dalam nasihat AS itu?","acceptedAnswer":{"@type":"Answer","text":"Menurut laporan Help Net Security, nasihat CISA, NSA dan FBI menamakan DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun dan Z.AI. Laporan itu tidak memasukkan maklum balas daripada syarikat-syarikat tersebut."}},{"@type":"Question","name":"Adakah penyulingan model sentiasa buruk?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Penyulingan ialah teknik standard untuk melatih model yang lebih kecil dan lebih murah daripada model yang lebih besar. Masalahnya ialah pengekstrakan tanpa kebenaran daripada model orang lain, yang menimbulkan persoalan tentang persetujuan, perlindungan dan asal usul."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda","item":"https://farseev.com/ms/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" data-href="/th/blog/ai-distillation-attacks-cisa-advisory/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/ai-distillation-attacks-cisa-advisory/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/ai-distillation-attacks-cisa-advisory/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Peraturan dan keselamatan</p>
+      <h1 class="h-display">Serangan Penyulingan: Maksud Model AI yang Disalin bagi Anda</h1>
+      <p class="lead">Agensi AS menamakan enam firma AI China dalam satu nasihat tentang penyulingan, dan Anthropic menyatakan pertahanannya mengurangkan data yang dituai sebanyak 90 hingga 99%. Maksudnya bagi pembeli AI.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: CISA, NSA dan FBI mengeluarkan nasihat tentang penyulingan model AI AS berskala industri; Anthropic melaporkan pertahanan anti-penyulingan baharu (<time datetime="2026-10-12">12 Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>"Penyulingan" (distillation) dahulunya perkataan yang sopan dalam pembelajaran mesin. Ia menggambarkan latihan model kecil untuk meniru model besar, satu teknik standard dan berguna. Pada September dan Oktober 2026 ia menjadi kisah keselamatan dan perdagangan. Jika anda membeli atau membina AI untuk pemasaran, anda perlu memahami kedua-dua maksudnya.</p>
+<h2>Apa yang berlaku</h2>
+<p>Pada awal September, CISA, NSA dan FBI menerbitkan nasihat bersama tentang apa yang mereka gambarkan sebagai penyulingan pengetahuan berskala industri oleh syarikat AI yang berpangkalan di China. Menurut <a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">laporan Help Net Security mengenai nasihat itu</a>, agensi-agensi tersebut menamakan DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun dan Z.AI, dan berkata mereka telah mengekstrak berbilion token melalui berjuta-juta permintaan kepada model terdepan AS sejak sekurang-kurangnya akhir 2024. Nasihat itu menyenaraikan isyarat pengesanan, seperti penggunaan sepanjang masa tanpa masa rehat manusia dan kumpulan akaun yang bertindak secara terselaras, serta mengesyorkan semakan identiti yang lebih ketat, pemantauan dan perkongsian maklumat antara penyedia AI. Laporan itu menyatakan ia tidak memasukkan kenyataan daripada syarikat yang dinamakan.</p>
+<p>Pada 12 Oktober Anthropic menghuraikan tindak balasnya sendiri. Dalam <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a>, ia berkata bukti awal menunjukkan kaedahnya telah mengurangkan data yang dituai oleh penyuling sebanyak kira-kira 90 hingga 99%. Langkah-langkah itu termasuk menghalang akaun API yang lebih baharu daripada menyunting penaakulan terdahulu Claude, pengelas dua peringkat yang dilatih pada cubaan pengekstrakan dengan kadar positif palsu di bawah 0.1%, had dan larangan yang lebih ketat bagi cubaan berulang, serta mengenakan caj bagi permintaan yang disekat oleh perlindungannya. Anthropic menyatakan ia telah mengharamkan puluhan ribu akaun yang berkaitan dengan penyulingan dan menjangkakan "permainan kucing dan tikus" yang berterusan.</p>
+<h2>Mengapa ia penting</h2>
+<p>Terdapat dua sebab mengapa pemasar perlu mengambil berat tentang pertelingkahan antara makmal AI.</p>
+<p>Yang pertama ialah risiko rantaian bekalan. Jika sesuatu model dibina dengan menyalin tingkah laku model lain tanpa kebenaran, anda tidak tahu perlindungan mana yang turut disertakan. Catatan Anthropic berhujah bahawa model yang disuling boleh menghampiri keupayaan terdepan sambil dilancarkan dengan perlindungan yang lebih lemah. Apabila anda memilih model untuk menjalankan khidmat pelanggan atau menjana iklan, asal usul ialah sebahagian daripada kualiti.</p>
+<p>Yang kedua ialah geseran bagi pengguna yang sah. Pertahanan ada kosnya. Anthropic mengakui bahawa sesetengah pembangun terpaksa mengemas kini integrasi, bahawa sebahagian kecil permintaan yang tidak berbahaya boleh disekat, dan bahawa permintaan yang disekat kini boleh dikenakan caj. Jika timbunan pemasaran anda membuat panggilan automatik yang banyak kepada API terdepan, sebahagian trafik itu boleh kelihatan seperti kempen pengekstrakan. Baca dasar penyedia anda sekarang, bukan selepas saluran paip anda rosak.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Penyulingan bukanlah penjahatnya di sini. Jika dilakukan secara sah, inilah cara kita menjadikan AI mampu milik. Model besar mengajar model kecil; model kecil berjalan dengan murah pada skala besar. Saya telah berhujah di Forbes bahawa dalam pemasaran, <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">teknik lebih penting daripada saiz model</a>, dan penyulingan ialah salah satu teknik tersebut.</p>
+<p>Apa yang mengubah gambaran ialah persetujuan dan ketelusan. Kerja saya tentang AI yang boleh dijelaskan bermula daripada prinsip mudah: pemasar seharusnya dapat melihat mengapa sesuatu sistem mengesyorkan sesuatu. Dalam <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) kami menggandingkan ramalan kadar klik lalu dengan pembantu LLM yang menjelaskan faktor pemacunya. Dalam <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (pracetak 2024) kami menghuraikan gabungan model prestasi yang boleh dijelaskan dengan LLM untuk analitik pesaing. Penjelasan hanya bermakna jika anda tahu model itu apa dan dari mana asalnya.</p>
+<p>Ada juga ironi yang patut diperhatikan. Pertahanan yang dihuraikan Anthropic, iaitu meringkaskan atau menyekat akses kepada penaakulan penuh model, menjadikan sistem sedikit kurang telus kepada semua orang, kerana penaakulan itulah yang dikehendaki oleh penyalin. Pertukaran itu akan membentuk sejauh mana penjelasan yang sanggup didedahkan oleh vendor AI. Pembeli perlu meminta penjelasan yang direka untuk mereka, tentang data dan keputusan mereka, dan bukannya jejak penaakulan mentah.</p>
+<h2>Apa yang perlu dilakukan pembeli AI pemasaran sekarang</h2>
+<ul><li>Tanya setiap vendor model mana yang berada di bawah produk mereka dan dari mana model itu datang.</li><li>Semak terma API yang anda panggil. Penggunaan automatik berjumlah tinggi adalah biasa dalam pemasaran; pastikan penggunaan anda jelas sah, dikenal pasti dan dalam had.</li><li>Rancang untuk pertukaran model. Dasar, harga dan akses boleh berubah dengan cepat. Pastikan prompt, prosedur dan set penilaian mudah alih.</li><li>Suling model anda sendiri secara sah. Jika anda memerlukan model murah untuk tugas yang sempit, latih ia menggunakan data anda sendiri atau output yang anda dilesenkan untuk gunakan.</li><li>Utamakan penjelasan keputusan berbanding pendedahan bahagian dalaman. Apa yang perlu anda audit ialah mengapa sesuatu cadangan dibuat untuk kempen anda.</li></ul>
+<p>Pertelingkahan penyulingan adalah tentang siapa yang boleh menyalin siapa. Bagi pemasar, ia peringatan bahawa "model yang mana?" kini soalan tadbir urus, bukan sekadar soalan teknikal.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Apakah serangan penyulingan AI?</summary><p>Ia ialah kempen terselindung berskala besar yang mengekstrak keupayaan sesuatu model dengan membuat pertanyaan kepadanya, selalunya melalui rangkaian akaun palsu, dan menggunakan output itu untuk melatih model lain tanpa kebenaran pembangun asal.</p></details><details><summary>Syarikat manakah yang dinamakan dalam nasihat AS itu?</summary><p>Menurut laporan Help Net Security, nasihat CISA, NSA dan FBI menamakan DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun dan Z.AI. Laporan itu tidak memasukkan maklum balas daripada syarikat-syarikat tersebut.</p></details><details><summary>Adakah penyulingan model sentiasa buruk?</summary><p>Tidak. Penyulingan ialah teknik standard untuk melatih model yang lebih kecil dan lebih murah daripada model yang lebih besar. Masalahnya ialah pengekstrakan tanpa kebenaran daripada model orang lain, yang menimbulkan persoalan tentang persetujuan, perlindungan dan asal usul.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/mas-ai-risk-management-guidelines/"><span class="meta">Peraturan dan keselamatan · 7 Oktober 2026</span><h3>Garis Panduan Risiko AI MAS: Templat Berguna Melangkaui Perbankan</h3><p>MAS mengeluarkan garis panduan pengurusan risiko AI untuk institusi kewangan. Peraturan inventori dan pihak ketiganya menjadi templat yang baik untuk pasukan pemasaran.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Peraturan dan keselamatan · 29 September 2026</span><h3>Perjanjian AI White House dan Penilai Bebas</h3><p>Pemimpin teknologi menandatangani perjanjian sukarela White House yang menjanjikan penilai luar, dan Anthropic memberi METR akses mendalam. Mengapa audit penting bagi AI pemasaran.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Iklan dan AI pemasaran · 29 Oktober 2026</span><h3>Q3 2026 WPP: Model Agensi di Bawah Tekanan AI</h3><p>WPP melaporkan hasil bersih setara yang menurun, manakala CEOnya menunjuk kepada permintaan untuk perkhidmatan berasaskan AI melalui WPP Open. Apa maknanya bagi agensi.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

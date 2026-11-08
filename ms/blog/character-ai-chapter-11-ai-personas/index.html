@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Character.AI memfailkan Chapter 11 untuk mendapatkan penjualan, dengan Disney menyediakan tawaran $20m. Apa yang perlu dipelajari jenama yang membina watak dan teman AI." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/character-ai-chapter-11-ai-personas/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="Character.AI memfailkan Chapter 11 untuk mendapatkan penjualan, dengan Disney menyediakan tawaran $20m. Apa yang perlu dipelajari jenama yang membina watak dan teman AI." />
+<meta property="og:url" content="https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — berita AI, dijelaskan" />
+<meta property="og:locale" content="ms_MY" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Pemasaran bertanggungjawab" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Character.AI memfailkan Chapter 11 untuk mendapatkan penjualan, dengan Disney menyediakan tawaran $20m. Apa yang perlu dipelajari jenama yang membina watak dan teman AI." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/#article","mainEntityOfPage":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/","url":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/","headline":"Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI","description":"Character.AI memfailkan Chapter 11 untuk mendapatkan penjualan, dengan Disney menyediakan tawaran $20m. Apa yang perlu dipelajari jenama yang membina watak dan teman AI.","image":"https://farseev.com/og-image.png","inLanguage":"ms","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/ms/blog/#blog"},"articleSection":"Pemasaran bertanggungjawab","about":{"@type":"Thing","name":"Character.AI memfailkan kebankrapan Chapter 11; Disney menyediakan tawaran stalking-horse $20 juta untuk lesen IP"},"wordCount":831,"citation":[{"@type":"CreativeWork","name":"Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy","url":"https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal","publisher":"TheWrap","datePublished":"2026-10-13"}]},{"@type":"FAQPage","@id":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/#faq","mainEntity":[{"@type":"Question","name":"Adakah Character.AI memfailkan kebankrapan?","acceptedAnswer":{"@type":"Answer","text":"Ya. Menurut TheWrap, Character.AI memfailkan kebankrapan Chapter 11 pada 12 Oktober 2026 untuk memudahkan penjualan asetnya, dan perkhidmatan itu terus beroperasi sepanjang proses tersebut."}},{"@type":"Question","name":"Apakah peranan Disney dalam penjualan Character.AI?","acceptedAnswer":{"@type":"Answer","text":"TheWrap melaporkan bahawa Disney sedang menyediakan tawaran US$20 juta untuk lesen kekal bukan eksklusif bagi harta intelek tertentu dan akan bertindak sebagai pembida stalking-horse, menetapkan asas bagi lelongan yang dijangka pada akhir November atau awal Disember."}},{"@type":"Question","name":"Apakah yang perlu dipelajari jenama daripada masalah Character.AI?","acceptedAnswer":{"@type":"Answer","text":"Bahawa persona AI membawa risiko harta intelek, keselamatan dan kepercayaan. Jenama perlu membina atas IP yang mereka miliki, menetapkan had ketat tentang apa yang boleh didakwa oleh persona, mereka bentuk untuk pengguna yang terdedah, mendedahkan bahawa pengguna sedang bercakap dengan AI dan mengukur kesejahteraan di samping penglibatan."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Utama","item":"https://farseev.com/ms/"},{"@type":"ListItem","position":2,"name":"Berita AI","item":"https://farseev.com/ms/blog/"},{"@type":"ListItem","position":3,"name":"Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI","item":"https://farseev.com/ms/blog/character-ai-chapter-11-ai-personas/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/ms/","jobTitle":"Pengasas & CEO SOMIN.ai; Profesor Jemputan dalam AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/ms/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Utama"><a href="/ms/#about">Tentang</a><a href="/ms/#research">Penyelidikan</a><a href="/ms/blog/" aria-current="page">Berita AI</a><a href="/ms/#talks">Ceramah</a><a href="/ms/#connect">Hubungi</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Bahasa" translate="no"><option value="en" lang="en" data-href="/blog/character-ai-chapter-11-ai-personas/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/character-ai-chapter-11-ai-personas/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/character-ai-chapter-11-ai-personas/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/character-ai-chapter-11-ai-personas/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/character-ai-chapter-11-ai-personas/">한국어</option><option value="th" lang="th" data-href="/th/blog/character-ai-chapter-11-ai-personas/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/character-ai-chapter-11-ai-personas/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/character-ai-chapter-11-ai-personas/">Bahasa Indonesia</option><option value="ms" lang="ms" selected>Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/character-ai-chapter-11-ai-personas/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/character-ai-chapter-11-ai-personas/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Serbuk roti"><ol><li><a href="/ms/">Utama</a></li><li><a href="/ms/blog/">Berita AI</a></li><li aria-current="page">Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI</li></ol></nav>
+      <p class="eyebrow">Berita AI, dijelaskan · Pemasaran bertanggungjawab</p>
+      <h1 class="h-display">Chapter 11 Character.AI: Pengajaran untuk Produk Persona AI</h1>
+      <p class="lead">Character.AI memfailkan Chapter 11 untuk mendapatkan penjualan, dengan Disney menyediakan tawaran $20m. Apa yang perlu dipelajari jenama yang membina watak dan teman AI.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>Berita: Character.AI memfailkan kebankrapan Chapter 11; Disney menyediakan tawaran stalking-horse $20 juta untuk lesen IP (<time datetime="2026-10-12">12 Oktober 2026</time>)</span></p>
+      <p class="byline"><span>Oleh <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 November 2026</time><span class="dot"></span><span>Bacaan 4 min</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Beberapa tahun lalu, watak AI kelihatan seperti aplikasi pengguna paling semula jadi bagi model bahasa besar: chatbot dengan personaliti, tersedia sepanjang hari. Pada 12 Oktober salah satu syarikat paling terkenal dalam ruang itu, Character.AI, memfailkan kebankrapan Chapter 11. Jenama kini membina watak, maskot dan teman AI mereka sendiri. Kisah ini wajar dibaca dengan teliti.</p>
+<h2>Apa yang berlaku</h2>
+<p>Menurut <a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">TheWrap</a>, Character.AI memfailkan Chapter 11 lewat Isnin 12 Oktober untuk "memudahkan penjualan yang memaksimumkan nilai" asetnya. Disney sedang menyediakan tawaran US$20 juta untuk lesen kekal bukan eksklusif bagi harta intelek tertentu, bertindak sebagai "stalking horse" yang tawarannya menetapkan asas bagi lelongan, yang dijangka pada akhir November atau awal Disember. Pembida lain masih boleh membuat tawaran yang lebih baik.</p>
+<p>TheWrap mencatat bahawa Disney menghantar surat henti dan hindar kepada Character.AI pada September 2025 berhubung penggunaan watak-wataknya tanpa kebenaran, bahawa platform itu telah beralih ke arah drama mikro selepas menyelesaikan beberapa tuntutan mahkamah yang menuduh ejen AInya mendorong remaja ke arah mencederakan diri, dan bahawa Pennsylvania menyaman berhubung penjanaan lesen profesional perubatan palsu. CEO Colin Adams berkata penjualan di bawah seliaan mahkamah itu "memberi Syarikat peluang terbaik" untuk memaksimumkan nilai dan bahawa pengalaman pengguna yang selamat dan menarik "kekal menjadi keutamaan". Perkhidmatan itu terus beroperasi.</p>
+<h2>Mengapa ia penting</h2>
+<p>Saya tidak akan membuat spekulasi tentang kewangan syarikat itu melebihi apa yang dilaporkan. Tetapi fakta awam sudah menggariskan tiga risiko yang dibawa oleh mana-mana produk persona AI.</p>
+<p>Yang pertama ialah harta intelek. Watak yang disayangi orang biasanya dimiliki oleh seseorang. Produk yang dibina atas pengguna meniru watak terkenal mengundang jenis pertikaian yang digambarkan oleh TheWrap.</p>
+<p>Yang kedua ialah keselamatan. Watak yang direka untuk menarik dan responsif dari segi emosi, mengikut reka bentuknya, berpengaruh. Apabila penggunanya termasuk remaja, pengaruh itu menjadi liabiliti jika kawalan gagal.</p>
+<p>Yang ketiga ialah kepercayaan dan autoriti. Chatbot yang boleh menghasilkan kelayakan palsu yang meyakinkan menunjukkan betapa mudahnya sesuatu persona mendakwa kepakaran yang tidak dimilikinya.</p>
+<p>Bagi jenama, pengajarannya bukanlah "elakkan watak AI". Pengajarannya ialah persona ialah satu janji, dan syarikat yang melaksanakannya bertanggungjawab atas segala yang diucapkannya.</p>
+<h2>Apa kata penyelidikan saya</h2>
+<p>Personaliti ialah salah satu tema teras penyelidikan saya. Bersama rakan sekerja saya telah mengkaji <a href="https://doi.org/10.1609/aaai.v31i1.11105" target="_blank" rel="noopener">inferens personaliti daripada aktiviti merentas pelbagai rangkaian sosial</a> (AAAI 2017), <a href="https://doi.org/10.1145/3437963.3441714" target="_blank" rel="noopener">penjanaan kandungan berasaskan personaliti</a> (WSDM 2021) dan <a href="https://doi.org/10.1145/3503161.3548769" target="_blank" rel="noopener">cadangan kandungan multimedia sosial berasaskan personaliti</a> (ACM Multimedia 2022). Penyelidikan jelas menunjukkan bahawa memadankan kandungan dengan personaliti menjadikannya lebih menarik.</p>
+<p>Itulah sebabnya tanggungjawabnya berat. Sistem yang menyesuaikan personalitinya kepada setiap pengguna boleh membina keterikatan lebih cepat daripada mana-mana iklan statik. Jika digunakan dengan baik, ia bermakna pengalaman jenama yang lebih relevan dan lebih membantu. Jika digunakan secara cuai, ia bermakna manipulasi, terutamanya terhadap pengguna yang terdedah. Saya membincangkan sudut etika dan privasi pemprofilan dan penyasaran automatik dalam ceramah WSDM 2023 saya, <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>, dan saya telah berhujah di Forbes untuk <a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">pemasaran penebusan</a>, di mana ketelusan ialah sebahagian daripada prestasi dan bukannya kos.</p>
+<p>Persona jenama perlu direka dengan teliti seperti jurucakap jenama, dengan perbezaan bahawa ia bercakap dengan berjuta-juta orang serentak dan tidak pernah letih.</p>
+<h2>Senarai semak untuk jenama yang membina watak AI</h2>
+<ul><li>Miliki IP anda. Bina persona atas watak dan suara yang anda miliki atau telah dilesenkan, dan sekat peniruan watak pihak lain.</li><li>Tentukan apa yang tidak boleh sekali-kali didakwa oleh persona. Tiada kelayakan, tiada nasihat profesional di luar had yang ditetapkan, tiada janji yang tidak akan ditunaikan oleh syarikat.</li><li>Reka untuk pengguna yang paling terdedah. Anggap kanak-kanak bawah umur dan orang dalam kesusahan mungkin menggunakannya, walaupun mereka bukan sasaran anda, dan bina laluan peningkatan kepada bantuan manusia.</li><li>Dedahkan dengan jelas. Pengguna perlu sentiasa tahu bahawa mereka bercakap dengan AI dan siapa yang berada di belakangnya.</li><li>Ukur kesejahteraan, bukan hanya penglibatan. Masa yang diluangkan bukanlah metrik kejayaan bagi produk teman. Jejaki juga aduan, peningkatan kes dan tanda kandungan berbahaya.</li><li>Rancang untuk pengakhiran. Tentukan apa yang berlaku kepada perbualan dan data pengguna jika produk itu ditutup atau dijual.</li></ul>
+<p>Persona AI akan menjadi sebahagian daripada pengalaman jenama. Syarikat yang melayannya sebagai tanggungjawab, bukan sekadar enjin penglibatan, ialah syarikat yang masih menjalankannya dalam lima tahun lagi.</p>
+<h2 id="faq">Soalan Lazim</h2>
+<div class="faq"><details><summary>Adakah Character.AI memfailkan kebankrapan?</summary><p>Ya. Menurut TheWrap, Character.AI memfailkan kebankrapan Chapter 11 pada 12 Oktober 2026 untuk memudahkan penjualan asetnya, dan perkhidmatan itu terus beroperasi sepanjang proses tersebut.</p></details><details><summary>Apakah peranan Disney dalam penjualan Character.AI?</summary><p>TheWrap melaporkan bahawa Disney sedang menyediakan tawaran US$20 juta untuk lesen kekal bukan eksklusif bagi harta intelek tertentu dan akan bertindak sebagai pembida stalking-horse, menetapkan asas bagi lelongan yang dijangka pada akhir November atau awal Disember.</p></details><details><summary>Apakah yang perlu dipelajari jenama daripada masalah Character.AI?</summary><p>Bahawa persona AI membawa risiko harta intelek, keselamatan dan kepercayaan. Jenama perlu membina atas IP yang mereka miliki, menetapkan had ketat tentang apa yang boleh didakwa oleh persona, mereka bentuk untuk pengguna yang terdedah, mendedahkan bahawa pengguna sedang bercakap dengan AI dan mengukur kesejahteraan di samping penglibatan.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Sumber</h2><ol><li translate="no"><a href="https://www.thewrap.com/industry-news/tech/disney-character-ai-chatbot-bankruptcy-deal" target="_blank" rel="noopener">Disney Readies $20 Million Bid for Character.ai Assets After Chatbot Company Files for Bankruptcy</a> — TheWrap, 13 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> ialah pengasas dan CEO SOMIN.ai serta Profesor Jemputan dalam AI di NUS dan INSEAD. Penyelidikan bersemak rakan sebayanya merangkumi pemprofilan pengguna pelbagai sumber, cadangan yang peka personaliti dan AI yang boleh dijelaskan untuk pemasaran.</p>
+<p class="links"><a href="/ms/">Tentang Aleks</a><a href="/ms/#publications">Penerbitan</a><a href="/ms/blog/">Lebih banyak berita AI</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Teruskan membaca</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Lebih banyak berita AI, dijelaskan</h2></div>
+    <div class="cards-3"><a class="pcard" href="/ms/blog/ai-usage-policy-deceptive-commercial-campaigns/"><span class="meta">Pemasaran bertanggungjawab · 14 Oktober 2026</span><h3>Peraturan AI Kini Melayan Hebahan Komersial Palsu Seperti Penipuan Pilihan Raya</h3><p>Dasar penggunaan baharu Anthropic melarang kempen mengelirukan 'sama ada politik atau komersial', dan ia menemui berita palsu yang dibuat demi wang iklan. Satu garis panduan untuk pemasar.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Iklan dan AI pemasaran · 29 Oktober 2026</span><h3>Q3 2026 WPP: Model Agensi di Bawah Tekanan AI</h3><p>WPP melaporkan hasil bersih setara yang menurun, manakala CEOnya menunjuk kepada permintaan untuk perkhidmatan berasaskan AI melalui WPP Open. Apa maknanya bagi agensi.</p><span class="go">Baca →</span></a><a class="pcard" href="/ms/blog/malaysia-ai-governance-bill/"><span class="meta">Asia dan Singapura · 29 Oktober 2026</span><h3>AI Governance Bill Malaysia: Tanggungjawab Mengikut Peranan</h3><p>Draf AI Governance Bill Malaysia, dijangka menjelang awal 2027, meletakkan kewajipan ke atas pihak yang membangunkan, menyediakan atau menggunakan AI. Maksud peraturan berasaskan peranan bagi pemasar.</p><span class="go">Baca →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO GenAI, Profesor AI, penceramah utama dan pemain akordion. Merapatkan penyelidikan mendalam dan pemasaran dunia sebenar dari Singapura ke seluruh dunia.</p>
+      </div>
+      <div>
+        <h6>Terokai</h6>
+        <ul>
+          <li><a href="/ms/">Utama</a></li>
+          <li><a href="/ms/blog/">Blog berita AI</a></li>
+          <li><a href="/ms/#research">Penyelidikan</a></li>
+          <li><a href="/ms/#publications">Penerbitan</a></li>
+          <li><a href="/ms/#connect">Hubungi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Di tempat lain</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Pendapat adalah pendapat saya sendiri. Fakta berita dipautkan kepada sumbernya.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
