@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anthropic abre en Singapur: lo que de verdad indica el MOU | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic abrió oficina en Singapur y firmó un MOU con el MDDI sobre seguridad y evaluación de la IA. Por qué las pruebas en idiomas locales son la clave." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/es/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/anthropic-singapore-office-mou/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/anthropic-singapore-office-mou/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Anthropic abre en Singapur: lo que de verdad indica el MOU | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic abrió oficina en Singapur y firmó un MOU con el MDDI sobre seguridad y evaluación de la IA. Por qué las pruebas en idiomas locales son la clave." />
+<meta property="og:url" content="https://farseev.com/es/blog/anthropic-singapore-office-mou/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — noticias de IA, explicadas" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Asia y Singapur" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Anthropic abre en Singapur: lo que de verdad indica el MOU | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic abrió oficina en Singapur y firmó un MOU con el MDDI sobre seguridad y evaluación de la IA. Por qué las pruebas en idiomas locales son la clave." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/es/blog/anthropic-singapore-office-mou/#article","mainEntityOfPage":"https://farseev.com/es/blog/anthropic-singapore-office-mou/","url":"https://farseev.com/es/blog/anthropic-singapore-office-mou/","headline":"Anthropic abre en Singapur: lo que de verdad indica el MOU","description":"Anthropic abrió oficina en Singapur y firmó un MOU con el MDDI sobre seguridad y evaluación de la IA. Por qué las pruebas en idiomas locales son la clave.","image":"https://farseev.com/og-image.png","inLanguage":"es","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/es/blog/#blog"},"articleSection":"Asia y Singapur","about":{"@type":"Thing","name":"Anthropic abre una oficina en Singapur y firma un MOU con el Ministerio de Desarrollo Digital e Información de Singapur"},"wordCount":970,"citation":[{"@type":"CreativeWork","name":"Anthropic opens Singapore office and signs MOU with the Government of Singapore","url":"https://www.anthropic.com/news/singapore-office-opening","publisher":"Anthropic","datePublished":"2026-10-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/es/blog/anthropic-singapore-office-mou/#faq","mainEntity":[{"@type":"Question","name":"¿Qué abarca el MOU de Anthropic con Singapur?","acceptedAnswer":{"@type":"Answer","text":"Según Anthropic, abarca la cooperación en seguridad de la IA, ciberseguridad y evaluación de modelos, la investigación sobre la adopción de la IA y su impacto, y la adopción responsable de la IA en los sectores público y privado, incluido el apoyo a pymes y a funcionarios públicos."}},{"@type":"Question","name":"¿Quién firmó el MOU?","acceptedAnswer":{"@type":"Answer","text":"Lo firmaron el secretario permanente del MDDI, Kai Fong Chng, y el cofundador de Anthropic Ben Mann al margen de la Singapore International Cyber Week, en presencia de la ministra de Desarrollo Digital e Información, Josephine Teo, y del responsable de políticas para APAC de Anthropic, Michael Sellitto."}},{"@type":"Question","name":"¿Por qué importa la evaluación multilingüe de la IA para el marketing en Asia?","acceptedAnswer":{"@type":"Answer","text":"Porque los clientes del Sudeste Asiático usan muchos idiomas, y la calidad y la seguridad de un modelo en inglés no garantizan el mismo comportamiento en malayo, tamil o mandarín. Hacer pruebas en cada idioma de los clientes reduce el riesgo de resultados inadecuados para la marca o inseguros."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/es/blog/anthropic-singapore-office-mou/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://farseev.com/es/"},{"@type":"ListItem","position":2,"name":"Noticias de IA","item":"https://farseev.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Anthropic abre en Singapur: lo que de verdad indica el MOU","item":"https://farseev.com/es/blog/anthropic-singapore-office-mou/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/es/","jobTitle":"Fundador y CEO de SOMIN.ai; profesor invitado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/es/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/es/#about">Sobre mí</a><a href="/es/#research">Investigación</a><a href="/es/blog/" aria-current="page">Noticias de IA</a><a href="/es/#talks">Conferencias</a><a href="/es/#connect">Contacto</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/anthropic-singapore-office-mou/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/anthropic-singapore-office-mou/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/anthropic-singapore-office-mou/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/anthropic-singapore-office-mou/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/anthropic-singapore-office-mou/">한국어</option><option value="th" lang="th" data-href="/th/blog/anthropic-singapore-office-mou/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/anthropic-singapore-office-mou/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/anthropic-singapore-office-mou/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/anthropic-singapore-office-mou/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/anthropic-singapore-office-mou/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/anthropic-singapore-office-mou/">Filipino</option><option value="es" lang="es" selected>Español</option><option value="ru" lang="ru" data-href="/ru/blog/anthropic-singapore-office-mou/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Inicio</a></li><li><a href="/es/blog/">Noticias de IA</a></li><li aria-current="page">Anthropic abre en Singapur: lo que de verdad indica el MOU</li></ol></nav>
+      <p class="eyebrow">Noticias de IA, explicadas · Asia y Singapur</p>
+      <h1 class="h-display">Anthropic abre en Singapur: lo que de verdad indica el MOU</h1>
+      <p class="lead">Anthropic abrió oficina en Singapur y firmó un MOU con el MDDI sobre seguridad y evaluación de la IA. Por qué las pruebas en idiomas locales son la clave.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>La noticia: Anthropic abre una oficina en Singapur y firma un MOU con el Ministerio de Desarrollo Digital e Información de Singapur (<time datetime="2026-10-14">14 de octubre de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de noviembre de 2026</time><span class="dot"></span><span>4 min de lectura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>Otro laboratorio de IA ha plantado su bandera en Singapur. El 14 de octubre, Anthropic abrió una oficina aquí y firmó un memorando de entendimiento con el Gobierno. Vivo y emprendo en esta ciudad, así que leí el anuncio con dos preguntas: ¿a qué se compromete realmente y qué cambia para las empresas que usan la IA para hablar con clientes en Asia?</p>
+<h2>Qué ha pasado</h2>
+<p>Según <a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">el anuncio de Anthropic</a>, Singapur es su quinta oficina en Asia-Pacífico. El MOU es con el Ministerio de Desarrollo Digital e Información (MDDI). Lo firmaron el secretario permanente del MDDI, Kai Fong Chng, y el cofundador de Anthropic Ben Mann, al margen de la Singapore International Cyber Week, en presencia de la ministra Josephine Teo.</p>
+<p>El MOU abarca tres áreas: cooperación en seguridad de la IA, ciberseguridad y evaluación de modelos; investigación sobre la adopción de la IA y su impacto; y adopción responsable en los sectores público y privado. Las actividades previstas incluyen intercambios técnicos con las instituciones de seguridad y garantía de la IA de Singapur sobre evaluación, estándares de pruebas y respuesta a incidentes, apoyo a pequeñas y medianas empresas e intercambio de investigación, como el Economic Index de Anthropic.</p>
+<p>Algunas cifras de la publicación llamaron la atención. Anthropic afirma que Singapur ocupa el segundo puesto entre 121 países en uso de Claude.ai en relación con su población, casi seis veces lo que predeciría su tamaño. Dice que más de 1.500 ingenieros y técnicos de GovTech Singapore han adoptado Claude Code, y que BriX, el asistente de ventas de Grab basado en Claude, ahorra a sus equipos comerciales unas 40.000 horas por trimestre. Son cifras de la propia empresa.</p>
+<p>El detalle que me pareció más interesante es histórico. Anthropic afirma que se unió en 2023 al Generative AI Evaluation Sandbox gestionado por IMDA y la AI Verify Foundation, y que más tarde colaboró con ellos en un proyecto de red teaming en inglés, mandarín, malayo y tamil.</p>
+<h2>Por qué importa</h2>
+<p>Es fácil sobreinterpretar la apertura de oficinas. Un MOU es una declaración de intenciones, no un producto. Hace poco planteé una idea relacionada en e27: <a href="https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/" target="_blank" rel="noopener">Singapore and Romania don't need another MOU, they need first customers</a>. Los acuerdos importan cuando se convierten en trabajo que alguien puede usar.</p>
+<p>Lo que hace que este merezca seguimiento es la cláusula de evaluación. Singapur ha sido inusualmente coherente al tratar la evaluación de la IA como infraestructura: sandboxes, kits de herramientas de pruebas y ahora intercambios de evaluación de modelos con un laboratorio de frontera. Para las empresas, esa es la parte que se acumula. Unos estándares de prueba claros abaratan que un banco, una operadora o un minorista dé luz verde a un despliegue de IA, porque la carga de la prueba se comparte y se documenta.</p>
+<p>El red teaming multilingüe importa por otro motivo. La mayoría de las pruebas publicadas de seguridad y calidad siguen haciéndose en inglés. El Sudeste Asiático no compra, no se queja ni busca solo en inglés. Un modelo que se comporta bien en inglés y se desvía en malayo o tamil no es un modelo seguro para este mercado.</p>
+<h2>Lo que dice mi investigación</h2>
+<p>Mi doctorado en la NUS trataba de aprender quiénes son las personas a partir de muchas fuentes a la vez: publicaciones, imágenes, check-ins y datos de sensores en distintas redes. Un hallazgo que me ha acompañado llegó más tarde, en <a href="https://doi.org/10.1609/aaai.v34i10.7258" target="_blank" rel="noopener">I Know Where You Are Coming From</a> (AAAI 2020): la fuente de datos que se elige cambia la precisión del modelo de usuario de IA. El idioma también es una fuente. Un modelo evaluado en un idioma no ha sido evaluado en la población a la que usted atiende.</p>
+<p>La misma lógica impulsa mi trabajo sobre IA explicable para marketing. En <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) predijimos las tasas de clics de nuevas creatividades publicitarias y usamos un asistente basado en LLM para explicar qué impulsaba la predicción. En <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025) combinamos la puntuación creativa con LLM para cocrear la estrategia a partir de datos publicitarios reales. En ambos casos, la explicación es lo que permite a un profesional del marketing confiar en el resultado y actuar. La evaluación y la explicación son dos mitades de la misma promesa: demuéstrame que funciona y muéstrame por qué.</p>
+<p>Así que, cuando un gobierno y un laboratorio acuerdan trabajar en estándares de evaluación, lo leo como una buena noticia para el marketing, no solo para los reguladores. Es el comienzo de un lenguaje común para decir “esta IA es apta para este trabajo en este mercado”.</p>
+<h2>Qué deben hacer ahora las empresas en Singapur</h2>
+<ul><li>Haga pruebas en los idiomas que usan sus clientes. Si su chatbot o su herramienta de contenido atiende a hablantes de malayo, tamil o mandarín, evalúelo en esos idiomas antes del lanzamiento, no solo en inglés.</li><li>Documente su evaluación, aunque nadie se lo pida todavía. Un breve registro de qué probó, cómo y con qué resultado es el activo de cumplimiento más barato que construirá jamás.</li><li>Pregunte a los proveedores por la evaluación, no solo por las funciones. ¿Qué pruebas hicieron, en qué idiomas y qué falló?</li><li>Aproveche los programas públicos. Las pymes, en particular, deberían ver qué ofrecen el Gobierno y sus socios en el marco de este MOU y de iniciativas similares antes de contratar consultoría cara.</li><li>Mantenga a las personas en la decisión final sobre todo lo que hable en nombre de su marca en un nuevo idioma.</li></ul>
+<p>Singapur sabe convertir los acuerdos en estándares. Si este MOU produce orientaciones prácticas de evaluación para la IA multilingüe, importará mucho más allá de la oficina de una empresa.</p>
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq"><details><summary>¿Qué abarca el MOU de Anthropic con Singapur?</summary><p>Según Anthropic, abarca la cooperación en seguridad de la IA, ciberseguridad y evaluación de modelos, la investigación sobre la adopción de la IA y su impacto, y la adopción responsable de la IA en los sectores público y privado, incluido el apoyo a pymes y a funcionarios públicos.</p></details><details><summary>¿Quién firmó el MOU?</summary><p>Lo firmaron el secretario permanente del MDDI, Kai Fong Chng, y el cofundador de Anthropic Ben Mann al margen de la Singapore International Cyber Week, en presencia de la ministra de Desarrollo Digital e Información, Josephine Teo, y del responsable de políticas para APAC de Anthropic, Michael Sellitto.</p></details><details><summary>¿Por qué importa la evaluación multilingüe de la IA para el marketing en Asia?</summary><p>Porque los clientes del Sudeste Asiático usan muchos idiomas, y la calidad y la seguridad de un modelo en inglés no garantizan el mismo comportamiento en malayo, tamil o mandarín. Hacer pruebas en cada idioma de los clientes reduce el riesgo de resultados inadecuados para la marca o inseguros.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fuentes</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">Anthropic opens Singapore office and signs MOU with the Government of Singapore</a> — Anthropic, 14 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> es fundador y CEO de SOMIN.ai y profesor invitado de IA en la NUS y en INSEAD. Su investigación revisada por pares abarca el perfilado de usuarios a partir de múltiples fuentes, la recomendación basada en la personalidad y la IA explicable para marketing.</p>
+<p class="links"><a href="/es/">Sobre Aleks</a><a href="/es/#publications">Publicaciones</a><a href="/es/blog/">Más noticias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Siga leyendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Más noticias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/es/blog/malaysia-ai-governance-bill/"><span class="meta">Asia y Singapur · 29 de octubre de 2026</span><h3>La AI Governance Bill de Malasia: responsabilidad según el rol</h3><p>El borrador de la AI Governance Bill de Malasia, previsto para inicios de 2027, obliga a quien desarrolla, provee o usa IA. Qué supone para el marketing.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/japan-ai-action-plan-growth-strategy/"><span class="meta">Asia y Singapur · 1 de octubre de 2026</span><h3>El plan de acción de IA de Japón: la política de crecimiento se vuelve política de adopción</h3><p>La primera ministra Sanae Takaichi pidió un plan de acción de IA para fin de año, ligado a la estrategia de crecimiento de Japón. Qué supone para el marketing.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/alibaba-apsara-2026-qwen-roadmap/"><span class="meta">Asia y Singapur · 22 de septiembre de 2026</span><h3>Apsara 2026 de Alibaba: modelos gigantes, realidad de modelos pequeños</h3><p>En Apsara 2026, Alibaba anunció un modelo de 5 a 10 billones de parámetros y elogió su modelo abierto de 27B. Por qué el marketing en Asia debe mirar ambos.</p><span class="go">Leer →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO en IA generativa, profesor de IA, conferenciante principal y acordeonista. Une la investigación profunda y el marketing real, desde Singapur para el mundo.</p>
+      </div>
+      <div>
+        <h6>Explorar</h6>
+        <ul>
+          <li><a href="/es/">Inicio</a></li>
+          <li><a href="/es/blog/">Blog de noticias de IA</a></li>
+          <li><a href="/es/#research">Investigación</a></li>
+          <li><a href="/es/#publications">Publicaciones</a></li>
+          <li><a href="/es/#connect">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>En otros sitios</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Las opiniones son mías. Los datos de las noticias enlazan a sus fuentes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

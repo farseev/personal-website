@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="La MAS publicó directrices de riesgo de IA para entidades financieras. Sus reglas de inventario y terceros sirven de plantilla para el marketing." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/es/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/mas-ai-risk-management-guidelines/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca | Prof. Aleks Farseev" />
+<meta property="og:description" content="La MAS publicó directrices de riesgo de IA para entidades financieras. Sus reglas de inventario y terceros sirven de plantilla para el marketing." />
+<meta property="og:url" content="https://farseev.com/es/blog/mas-ai-risk-management-guidelines/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — noticias de IA, explicadas" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Regulación y seguridad" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="La MAS publicó directrices de riesgo de IA para entidades financieras. Sus reglas de inventario y terceros sirven de plantilla para el marketing." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/#article","mainEntityOfPage":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/","url":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/","headline":"Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca","description":"La MAS publicó directrices de riesgo de IA para entidades financieras. Sus reglas de inventario y terceros sirven de plantilla para el marketing.","image":"https://farseev.com/og-image.png","inLanguage":"es","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/es/blog/#blog"},"articleSection":"Regulación y seguridad","about":{"@type":"Thing","name":"La MAS publica sus Guidelines on Artificial Intelligence Risk Management para entidades financieras"},"wordCount":862,"citation":[{"@type":"CreativeWork","name":"MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions","url":"https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions","publisher":"Monetary Authority of Singapore","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/#faq","mainEntity":[{"@type":"Question","name":"¿Cuándo entran en vigor las directrices de gestión del riesgo de IA de la MAS?","acceptedAnswer":{"@type":"Answer","text":"La MAS indica que las directrices entran en vigor el 7 de octubre de 2027, que las entidades pueden aplicarlas de forma escalonada y que algunas secciones posteriores se aplicarán a partir del 7 de octubre de 2028."}},{"@type":"Question","name":"¿Abarcan las directrices de la MAS la IA de proveedores?","acceptedAnswer":{"@type":"Answer","text":"Sí. La MAS afirma que las entidades financieras siguen siendo responsables de la IA utilizada en sus servicios, incluida la de terceros, y deben obtener garantías, evaluar su idoneidad y aplicar controles compensatorios, o limitar, suspender o sustituir un servicio si los riesgos quedan fuera de su apetito de riesgo."}},{"@type":"Question","name":"¿Abarcan las directrices de la MAS la IA agéntica?","acceptedAnswer":{"@type":"Answer","text":"La MAS señaló el creciente uso de sistemas de IA agéntica capaces de actuar de forma autónoma y acceder a herramientas, y dijo que tiene previsto consultar al sector en 2027 sobre qué orientaciones adicionales sobre IA agéntica serían útiles."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://farseev.com/es/"},{"@type":"ListItem","position":2,"name":"Noticias de IA","item":"https://farseev.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca","item":"https://farseev.com/es/blog/mas-ai-risk-management-guidelines/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/es/","jobTitle":"Fundador y CEO de SOMIN.ai; profesor invitado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/es/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/es/#about">Sobre mí</a><a href="/es/#research">Investigación</a><a href="/es/blog/" aria-current="page">Noticias de IA</a><a href="/es/#talks">Conferencias</a><a href="/es/#connect">Contacto</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/mas-ai-risk-management-guidelines/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/mas-ai-risk-management-guidelines/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/mas-ai-risk-management-guidelines/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/mas-ai-risk-management-guidelines/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/mas-ai-risk-management-guidelines/">한국어</option><option value="th" lang="th" data-href="/th/blog/mas-ai-risk-management-guidelines/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/mas-ai-risk-management-guidelines/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/mas-ai-risk-management-guidelines/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/mas-ai-risk-management-guidelines/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/mas-ai-risk-management-guidelines/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/mas-ai-risk-management-guidelines/">Filipino</option><option value="es" lang="es" selected>Español</option><option value="ru" lang="ru" data-href="/ru/blog/mas-ai-risk-management-guidelines/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Inicio</a></li><li><a href="/es/blog/">Noticias de IA</a></li><li aria-current="page">Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca</li></ol></nav>
+      <p class="eyebrow">Noticias de IA, explicadas · Regulación y seguridad</p>
+      <h1 class="h-display">Las directrices de riesgo de IA de la MAS: una plantilla útil más allá de la banca</h1>
+      <p class="lead">La MAS publicó directrices de riesgo de IA para entidades financieras. Sus reglas de inventario y terceros sirven de plantilla para el marketing.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>La noticia: la MAS publica sus Guidelines on Artificial Intelligence Risk Management para entidades financieras (<time datetime="2026-10-07">7 de octubre de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de noviembre de 2026</time><span class="dot"></span><span>4 min de lectura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La normativa escrita para los bancos rara vez entusiasma al marketing. Esta debería, al menos, hacerle tomar notas. El 7 de octubre, la Monetary Authority of Singapore publicó sus Guidelines on Artificial Intelligence Risk Management. Los bancos, las aseguradoras y otras entidades financieras son el público directo. Pero la lógica de las directrices es una plantilla limpia para cualquier equipo que use la IA para tomar decisiones sobre clientes, incluido el de marketing.</p>
+<h2>Qué ha pasado</h2>
+<p>Según <a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">el comunicado de prensa de la MAS</a>, las directrices se aplican a todas las entidades financieras y a todas las formas de tecnología de IA, con un “enfoque basado en principios y proporcional al riesgo”. La MAS las sometió a consulta en noviembre de 2025.</p>
+<p>Las expectativas se agrupan en unos pocos bloques. Los consejos y la alta dirección deben supervisar los riesgos de la IA y fijar funciones claras, el apetito de riesgo y los marcos de actuación; no se exige un comité específico de IA si las estructuras existentes ofrecen una supervisión adecuada. Las entidades deben identificar su uso de la IA, mantener inventarios, evaluar la importancia de cada uso y aplicar controles proporcionales a lo largo del ciclo de vida, que abarquen la gobernanza de datos, las pruebas, la supervisión humana, la ciberseguridad, el seguimiento y la gestión de cambios. Siguen siendo responsables de la IA utilizada en sus servicios aunque proceda de terceros, y deben obtener garantías y aplicar controles compensatorios, o limitar, suspender o sustituir un servicio cuyos riesgos queden fuera de su apetito.</p>
+<p>Las directrices entran en vigor el 7 de octubre de 2027, y algunas secciones se aplicarán a partir del 7 de octubre de 2028. La MAS también señaló el creciente uso de sistemas de IA agéntica capaces de actuar de forma autónoma y usar herramientas, y dijo que tiene previsto consultar al sector en 2027 sobre qué orientaciones adicionales serían útiles.</p>
+<h2>Por qué importa</h2>
+<p>Observe dónde toca hoy la IA a los clientes en un banco: recomendaciones de productos, motores de siguiente mejor oferta, chatbots, marketing de crédito, detección de fraude, contenido generado en campañas. Gran parte lo gestiona o lo encarga el marketing. Según estas directrices, buena parte debe figurar en un inventario, evaluarse por su importancia y gobernarse a lo largo de su ciclo de vida.</p>
+<p>La cláusula sobre terceros es la que más importa al marketing. Los equipos de marketing compran mucha IA: a plataformas publicitarias, proveedores de martech, agencias y freelancers que usan sus propias herramientas. La MAS deja claro que la entidad sigue siendo responsable. “Lo hizo el proveedor” no es un control.</p>
+<p>Y el plazo es generoso, pero no largo. Un año hasta que entren en vigor las secciones principales basta para construir bien un inventario, pero no para hacerlo en el último trimestre.</p>
+<h2>Lo que dice mi investigación</h2>
+<p>Di una charla en WSDM 2023 titulada <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising: How Do We use AI Responsibly for Advertising Targeting and Creative Evaluation</a>. El argumento central era que las cuestiones éticas y de privacidad en torno al perfilado automatizado, la segmentación y la puntuación creativa no son abstractas. Surgen de decisiones de diseño concretas que pueden documentarse y controlarse.</p>
+<p>Eso es exactamente lo que obliga a hacer un inventario de IA. Para cada uso, anote qué datos entran, qué decisión sale, quién la revisa y qué ocurre cuando algo falla. Mi investigación sobre IA explicable para marketing, de <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) a <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> (ACM Multimedia 2025), se basó en el mismo instinto: si la recomendación de un modelo afecta al dinero o a los clientes, los responsables deben poder ver por qué la hizo.</p>
+<p>También he defendido en Forbes que <a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">la transparencia importa para las empresas orientadas al marketing</a>. Los reguladores están convirtiendo ese principio en expectativas de supervisión. Los equipos que ya practican la explicabilidad verán que el cumplimiento les sale mucho más barato.</p>
+<h2>Una lista de comprobación práctica para equipos de marketing (en finanzas y más allá)</h2>
+<ul><li>Construya el inventario. Enumere todos los sistemas de IA que usa o encarga el marketing: segmentación, recomendaciones, chatbots, generación de contenido, puntuación creativa, analítica.</li><li>Valore la importancia con honestidad. Una herramienta que redacta notas internas es de bajo riesgo. Un modelo que decide qué clientes ven una oferta de crédito no lo es.</li><li>Identifique a los terceros. Para cada proveedor y agencia, registre qué IA usan en su nombre y qué garantías ha recibido.</li><li>Ponga personas donde importa. Defina dónde se requiere revisión humana antes de publicar resultados de cara al cliente.</li><li>Supervise después del lanzamiento. Los modelos se desvían y las campañas cambian. Programe revisiones, sobre todo tras las actualizaciones de modelos de los proveedores.</li><li>Siga la consulta sobre IA agéntica. Si está probando agentes que actúan sobre datos de clientes, cuente con orientaciones específicas y diseñe ya pensando en la auditabilidad.</li></ul>
+<p>Los reguladores de Singapur suelen redactar directrices que luego se convierten en la norma regional por defecto. Si su empresa opera en el Sudeste Asiático, es razonable tratar estas directrices como un anticipo, aunque no sea un banco.</p>
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq"><details><summary>¿Cuándo entran en vigor las directrices de gestión del riesgo de IA de la MAS?</summary><p>La MAS indica que las directrices entran en vigor el 7 de octubre de 2027, que las entidades pueden aplicarlas de forma escalonada y que algunas secciones posteriores se aplicarán a partir del 7 de octubre de 2028.</p></details><details><summary>¿Abarcan las directrices de la MAS la IA de proveedores?</summary><p>Sí. La MAS afirma que las entidades financieras siguen siendo responsables de la IA utilizada en sus servicios, incluida la de terceros, y deben obtener garantías, evaluar su idoneidad y aplicar controles compensatorios, o limitar, suspender o sustituir un servicio si los riesgos quedan fuera de su apetito de riesgo.</p></details><details><summary>¿Abarcan las directrices de la MAS la IA agéntica?</summary><p>La MAS señaló el creciente uso de sistemas de IA agéntica capaces de actuar de forma autónoma y acceder a herramientas, y dijo que tiene previsto consultar al sector en 2027 sobre qué orientaciones adicionales sobre IA agéntica serían útiles.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fuentes</h2><ol><li translate="no"><a href="https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions" target="_blank" rel="noopener">MAS Sets Out Supervisory Expectations on Responsible AI Adoption by Financial Institutions</a> — Monetary Authority of Singapore, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> es fundador y CEO de SOMIN.ai y profesor invitado de IA en la NUS y en INSEAD. Su investigación revisada por pares abarca el perfilado de usuarios a partir de múltiples fuentes, la recomendación basada en la personalidad y la IA explicable para marketing.</p>
+<p class="links"><a href="/es/">Sobre Aleks</a><a href="/es/#publications">Publicaciones</a><a href="/es/blog/">Más noticias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Siga leyendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Más noticias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/es/blog/ai-distillation-attacks-cisa-advisory/"><span class="meta">Regulación y seguridad · 12 de octubre de 2026</span><h3>Ataques de destilación: qué significan los modelos de IA copiados para usted</h3><p>EE. UU. señaló a seis empresas chinas de IA por destilación, y Anthropic dice que sus defensas reducen los datos extraídos un 90–99 %. Qué implica al comprar.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">Regulación y seguridad · 29 de septiembre de 2026</span><h3>El acuerdo de IA de la Casa Blanca y los evaluadores independientes</h3><p>Líderes tecnológicos firmaron un acuerdo voluntario en la Casa Blanca con evaluadores externos, y Anthropic dio acceso a METR. Por qué importan las auditorías.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/wpp-q3-2026-agentic-agency/"><span class="meta">Publicidad e IA para marketing · 29 de octubre de 2026</span><h3>El tercer trimestre de 2026 de WPP: el modelo de agencia bajo la presión de la IA</h3><p>WPP registró una caída de los ingresos netos comparables, mientras su CEO destacaba la demanda de servicios con IA vía WPP Open. Qué dice de las agencias.</p><span class="go">Leer →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO en IA generativa, profesor de IA, conferenciante principal y acordeonista. Une la investigación profunda y el marketing real, desde Singapur para el mundo.</p>
+      </div>
+      <div>
+        <h6>Explorar</h6>
+        <ul>
+          <li><a href="/es/">Inicio</a></li>
+          <li><a href="/es/blog/">Blog de noticias de IA</a></li>
+          <li><a href="/es/#research">Investigación</a></li>
+          <li><a href="/es/#publications">Publicaciones</a></li>
+          <li><a href="/es/#connect">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>En otros sitios</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Las opiniones son mías. Los datos de las noticias enlazan a sus fuentes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

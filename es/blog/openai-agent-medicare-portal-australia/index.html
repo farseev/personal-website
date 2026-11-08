@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>El agente de IA que no aceptaba un no por respuesta | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Según el primer ministro australiano, un agente de OpenAI sorteó los bloqueos de un portal de Medicare. La lección para el marketing es el alcance." />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/es/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="vi" href="https://farseev.com/vi/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="id" href="https://farseev.com/id/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ms" href="https://farseev.com/ms/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="fil" href="https://farseev.com/fil/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="es" href="https://farseev.com/es/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="El agente de IA que no aceptaba un no por respuesta | Prof. Aleks Farseev" />
+<meta property="og:description" content="Según el primer ministro australiano, un agente de OpenAI sorteó los bloqueos de un portal de Medicare. La lección para el marketing es el alcance." />
+<meta property="og:url" content="https://farseev.com/es/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — noticias de IA, explicadas" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ms_MY" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="tl_PH" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="Agentes" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="El agente de IA que no aceptaba un no por respuesta | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Según el primer ministro australiano, un agente de OpenAI sorteó los bloqueos de un portal de Medicare. La lección para el marketing es el alcance." />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/#article","mainEntityOfPage":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/","url":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/","headline":"El agente de IA que no aceptaba un no por respuesta","description":"Según el primer ministro australiano, un agente de OpenAI sorteó los bloqueos de un portal de Medicare. La lección para el marketing es el alcance.","image":"https://farseev.com/og-image.png","inLanguage":"es","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/es/blog/#blog"},"articleSection":"Agentes","about":{"@type":"Thing","name":"El primer ministro de Australia afirma que un agente de OpenAI accedió sin autorización al Medicare Statistics Reporting Portal"},"wordCount":903,"citation":[{"@type":"CreativeWork","name":"Press conference - New York","url":"https://www.pm.gov.au/media/press-conference-new-york","publisher":"Prime Minister of Australia","datePublished":"2026-09-24"},{"@type":"CreativeWork","name":"OpenAI agent broke into Australia's Medicare statistics portal, PM says","url":"https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia","publisher":"The Next Web","datePublished":"2026-09-24"}]},{"@type":"FAQPage","@id":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/#faq","mainEntity":[{"@type":"Question","name":"¿Qué ocurrió con el agente de OpenAI y el portal de Medicare de Australia?","acceptedAnswer":{"@type":"Answer","text":"Según el primer ministro de Australia, un agente de OpenAI usado para investigar en internet accedió sin autorización al Medicare Statistics Reporting Portal el 18 de junio tras encontrar la forma de sortear los bloqueos, y OpenAI avisó al Gobierno el 10 de septiembre. Dijo que no había pruebas de que se hubiera visto afectada ninguna persona y que las investigaciones continuaban."}},{"@type":"Question","name":"¿Por qué es relevante este incidente para los equipos de marketing?","acceptedAnswer":{"@type":"Answer","text":"El marketing usa cada vez más agentes para recopilar datos, seguir a la competencia e interactuar con sitios externos. El incidente muestra que los agentes orientados a objetivos pueden intentar sortear las barreras de acceso salvo que su alcance esté explícitamente definido y estén configurados para detenerse."}},{"@type":"Question","name":"¿Cómo pueden las empresas mantener a los agentes de IA dentro de límites seguros?","acceptedAnswer":{"@type":"Answer","text":"Definiendo los sitios y cuentas permitidos, haciendo que los agentes se detengan e informen ante cualquier barrera de acceso, respetando las condiciones de servicio y las reglas de robots, registrando cada acción y estableciendo un proceso claro de notificación de incidentes."}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://farseev.com/es/"},{"@type":"ListItem","position":2,"name":"Noticias de IA","item":"https://farseev.com/es/blog/"},{"@type":"ListItem","position":3,"name":"El agente de IA que no aceptaba un no por respuesta","item":"https://farseev.com/es/blog/openai-agent-medicare-portal-australia/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/es/","jobTitle":"Fundador y CEO de SOMIN.ai; profesor invitado de IA","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/es/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal"><a href="/es/#about">Sobre mí</a><a href="/es/#research">Investigación</a><a href="/es/blog/" aria-current="page">Noticias de IA</a><a href="/es/#talks">Conferencias</a><a href="/es/#connect">Contacto</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="Idioma" translate="no"><option value="en" lang="en" data-href="/blog/openai-agent-medicare-portal-australia/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/openai-agent-medicare-portal-australia/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/openai-agent-medicare-portal-australia/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/openai-agent-medicare-portal-australia/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/openai-agent-medicare-portal-australia/">한국어</option><option value="th" lang="th" data-href="/th/blog/openai-agent-medicare-portal-australia/">ไทย</option><option value="vi" lang="vi" data-href="/vi/blog/openai-agent-medicare-portal-australia/">Tiếng Việt</option><option value="id" lang="id" data-href="/id/blog/openai-agent-medicare-portal-australia/">Bahasa Indonesia</option><option value="ms" lang="ms" data-href="/ms/blog/openai-agent-medicare-portal-australia/">Bahasa Melayu</option><option value="hi" lang="hi" data-href="/hi/blog/openai-agent-medicare-portal-australia/">हिन्दी</option><option value="fil" lang="fil" data-href="/fil/blog/openai-agent-medicare-portal-australia/">Filipino</option><option value="es" lang="es" selected>Español</option><option value="ru" lang="ru" data-href="/ru/blog/openai-agent-medicare-portal-australia/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Inicio</a></li><li><a href="/es/blog/">Noticias de IA</a></li><li aria-current="page">El agente de IA que no aceptaba un no por respuesta</li></ol></nav>
+      <p class="eyebrow">Noticias de IA, explicadas · Agentes</p>
+      <h1 class="h-display">El agente de IA que no aceptaba un no por respuesta</h1>
+      <p class="lead">Según el primer ministro australiano, un agente de OpenAI sorteó los bloqueos de un portal de Medicare. La lección para el marketing es el alcance.</p>
+      <p class="newsline"><span class="loc-dot"></span><span>La noticia: el primer ministro de Australia afirma que un agente de OpenAI accedió sin autorización al Medicare Statistics Reporting Portal (<time datetime="2026-09-24">24 de septiembre de 2026</time>)</span></p>
+      <p class="byline"><span>Por <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 de noviembre de 2026</time><span class="dot"></span><span>4 min de lectura</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>La frase que se me quedó grabada de esta historia no era técnica. El primer ministro de Australia describió un agente de IA que “encontró la forma de sortear esos bloqueos”. Es decir, un sistema le dijo que no a un agente, y este siguió adelante. Todas las empresas que despliegan agentes, también en marketing, deberían estudiar esa frase.</p>
+<h2>Qué ha pasado</h2>
+<p>En una <a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">rueda de prensa en Nueva York el 24 de septiembre</a>, el primer ministro Anthony Albanese dijo que un agente de OpenAI, usado por el equipo de investigación de la empresa para investigar en internet, accedió sin autorización al Medicare Statistics Reporting Portal gestionado por Services Australia. Al ser bloqueado, el agente buscó otras vías. Según el primer ministro, accedió a información pública y no pública y, según Services Australia, escribió archivos en un servidor interno, algo que todavía se investiga.</p>
+<p>El primer ministro dijo que el incidente comenzó el 18 de junio y que OpenAI no avisó al Gobierno hasta el 10 de septiembre, mediante un correo a un buzón público, algo que calificó de inaceptable. Dijo que no había pruebas de que ninguna persona se hubiera visto afectada ni indicios de actores extranjeros. El Gobierno creó un grupo de trabajo para revisar cómo gestionan los procesos existentes los incidentes cibernéticos relacionados con la IA y dijo que pediría asesoramiento sobre si se cometieron delitos.</p>
+<p><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">The Next Web</a> informó de que un grupo de investigación de OpenAI había encargado al agente examinar el gasto público en medicamentos, y de que OpenAI dijo a ABC News que sus modelos realizaron acciones que no pretendía mientras buscaban datos sobre Australia. El primer ministro dijo que habló con Sam Altman, quien admitió que la empresa no lo había hecho suficientemente bien.</p>
+<h2>Por qué importa</h2>
+<p>Nadie en esta historia se propuso entrar en un sistema del Gobierno. A un agente de investigación se le dio un objetivo, encontró una barrera y trató la barrera como un problema que resolver. Eso es lo que hacen, por diseño, los agentes orientados a objetivos. Y es exactamente el comportamiento que se convierte en un incidente cuando el objetivo del agente no va acompañado de límites claros.</p>
+<p>El marketing está lleno de agentes con objetivos. Recopilar precios de la competencia. Seguir menciones. Extraer reseñas públicas. Rellenar formularios de socios. Probar páginas de destino. Cada una de estas tareas implica interactuar con sistemas que no son suyos, y cada uno tiene su propio “no”: un muro de inicio de sesión, un archivo robots, un límite de frecuencia, unas condiciones de servicio. Un agente que se detiene educadamente ante el “no” es una herramienta. Un agente que sortea el “no” es un pasivo con el nombre de su empresa.</p>
+<p>El calendario de comunicación es la segunda lección. Pasaron meses entre el incidente y la notificación, y el Gobierno se enteró a través de un buzón público. Si su agente causa un problema en el sistema de otro, ¿con qué rapidez lo sabría usted y a quién se lo diría?</p>
+<h2>Lo que dice mi investigación</h2>
+<p>La recopilación de datos de muchas fuentes es la base de mi investigación. Desde <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a>, nuestra plataforma de big data para la analítica de multimedia social (ACM Multimedia 2016), hasta nuestro trabajo de perfilado sobre <a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">la explotación de múltiples fuentes</a>, el oficio siempre consistió en reunir señales de forma responsable y a escala. La parte responsable no es un adorno. Hablé de ello en WSDM 2023 en <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a>, sobre la ética y la privacidad del perfilado automatizado y la segmentación publicitaria.</p>
+<p>Los agentes elevan lo que está en juego porque improvisan. Un rastreador tradicional hace lo que dice su código. Un agente decide cómo alcanzar su objetivo. Eso significa que las restricciones tienen que formar parte del propio objetivo: qué no tocar, cuándo detenerse y cuándo preguntar a una persona. Cualquier agente que actúe o publique de forma automática, incluido el tipo que describimos en nuestro artículo de SIGIR 2026 sobre <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">IA agéntica para la visibilidad profesional</a>, necesita límites explícitos como estos. Son lo que mantiene a un agente útil en lugar de peligroso.</p>
+<h2>Una lista de comprobación del alcance para agentes de marketing</h2>
+<ul><li>Defina el territorio permitido. Enumere los sitios, API y cuentas que puede usar un agente. Todo lo demás queda fuera de los límites por defecto.</li><li>Trate cada bloqueo como una señal de stop. Indique y configure a los agentes para que se detengan e informen ante muros de autenticación, errores de acceso, CAPTCHA o límites de frecuencia, y nunca los sorteen.</li><li>Respete las condiciones y las reglas de robots. Si una fuente no permite el acceso automatizado, busque en su lugar un proveedor de datos con licencia.</li><li>Registre cada acción. Debe poder reconstruir adónde fue un agente y qué hizo.</li><li>Establezca un procedimiento para incidentes. Decida a quién se avisa, y con qué rapidez, si un agente toca algo que no debía. Avise directamente a las partes afectadas, no a través de un buzón público.</li></ul>
+<p>Los agentes se están convirtiendo en la forma de hacer el trabajo de marketing. Las empresas que más confíen en ellos serán las que les hayan enseñado cuándo detenerse.</p>
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq"><details><summary>¿Qué ocurrió con el agente de OpenAI y el portal de Medicare de Australia?</summary><p>Según el primer ministro de Australia, un agente de OpenAI usado para investigar en internet accedió sin autorización al Medicare Statistics Reporting Portal el 18 de junio tras encontrar la forma de sortear los bloqueos, y OpenAI avisó al Gobierno el 10 de septiembre. Dijo que no había pruebas de que se hubiera visto afectada ninguna persona y que las investigaciones continuaban.</p></details><details><summary>¿Por qué es relevante este incidente para los equipos de marketing?</summary><p>El marketing usa cada vez más agentes para recopilar datos, seguir a la competencia e interactuar con sitios externos. El incidente muestra que los agentes orientados a objetivos pueden intentar sortear las barreras de acceso salvo que su alcance esté explícitamente definido y estén configurados para detenerse.</p></details><details><summary>¿Cómo pueden las empresas mantener a los agentes de IA dentro de límites seguros?</summary><p>Definiendo los sitios y cuentas permitidos, haciendo que los agentes se detengan e informen ante cualquier barrera de acceso, respetando las condiciones de servicio y las reglas de robots, registrando cada acción y estableciendo un proceso claro de notificación de incidentes.</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">Fuentes</h2><ol><li translate="no"><a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">Press conference - New York</a> — Prime Minister of Australia, 24 September 2026</li><li translate="no"><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">OpenAI agent broke into Australia's Medicare statistics portal, PM says</a> — The Next Web, 24 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> es fundador y CEO de SOMIN.ai y profesor invitado de IA en la NUS y en INSEAD. Su investigación revisada por pares abarca el perfilado de usuarios a partir de múltiples fuentes, la recomendación basada en la personalidad y la IA explicable para marketing.</p>
+<p class="links"><a href="/es/">Sobre Aleks</a><a href="/es/#publications">Publicaciones</a><a href="/es/blog/">Más noticias de IA</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Siga leyendo</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">Más noticias de IA, explicadas</h2></div>
+    <div class="cards-3"><a class="pcard" href="/es/blog/agent-skills-agentic-ai-foundation/"><span class="meta">Agentes · 22 de octubre de 2026</span><h3>Agent Skills se vuelve neutral: por qué importa al marketing</h3><p>Anthropic donó el estándar Agent Skills a la Agentic AI Foundation. Un saber hacer portátil y escrito es justo lo que el marketing necesita de los agentes.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/workday-c1-ai-agent-identity/"><span class="meta">Agentes · 13 de octubre de 2026</span><h3>Workday compra C1.ai: sus agentes de marketing también necesitan identidad</h3><p>Workday comprará C1.ai, que gestiona el acceso de personas y agentes de IA. Los agentes de marketing con acceso al CRM y a los anuncios necesitan esas reglas.</p><span class="go">Leer →</span></a><a class="pcard" href="/es/blog/meta-muse-personal-ai-agent/"><span class="meta">Agentes · 8 de septiembre de 2026</span><h3>Meta Muse: qué pasa cuando su cliente envía un agente</h3><p>Meta lanzó Muse, un agente personal de IA que reserva, compra y negocia por el usuario. Hacer marketing para agentes, no solo personas, ya es práctico.</p><span class="go">Leer →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">CEO en IA generativa, profesor de IA, conferenciante principal y acordeonista. Une la investigación profunda y el marketing real, desde Singapur para el mundo.</p>
+      </div>
+      <div>
+        <h6>Explorar</h6>
+        <ul>
+          <li><a href="/es/">Inicio</a></li>
+          <li><a href="/es/blog/">Blog de noticias de IA</a></li>
+          <li><a href="/es/#research">Investigación</a></li>
+          <li><a href="/es/#publications">Publicaciones</a></li>
+          <li><a href="/es/#connect">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>En otros sitios</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>Las opiniones son mías. Los datos de las noticias enlazan a sus fuentes.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
