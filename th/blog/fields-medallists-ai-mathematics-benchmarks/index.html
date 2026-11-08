@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="ผู้ได้รับเหรียญ Fields ยี่สิบห้าคนเตือนว่าการเร่งให้ AI แข่งกันแก้ปัญหาที่ยังไม่มีใครแก้ได้ คือการสับสนระหว่างตัวแทนวัดผลกับเป้าหมาย การตลาดก็มีปัญหาเบนช์มาร์กแบบเดียวกัน" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด | Prof. Aleks Farseev" />
+<meta property="og:description" content="ผู้ได้รับเหรียญ Fields ยี่สิบห้าคนเตือนว่าการเร่งให้ AI แข่งกันแก้ปัญหาที่ยังไม่มีใครแก้ได้ คือการสับสนระหว่างตัวแทนวัดผลกับเป้าหมาย การตลาดก็มีปัญหาเบนช์มาร์กแบบเดียวกัน" />
+<meta property="og:url" content="https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="งานวิจัย" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="ผู้ได้รับเหรียญ Fields ยี่สิบห้าคนเตือนว่าการเร่งให้ AI แข่งกันแก้ปัญหาที่ยังไม่มีใครแก้ได้ คือการสับสนระหว่างตัวแทนวัดผลกับเป้าหมาย การตลาดก็มีปัญหาเบนช์มาร์กแบบเดียวกัน" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/#article","mainEntityOfPage":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/","url":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/","headline":"ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด","description":"ผู้ได้รับเหรียญ Fields ยี่สิบห้าคนเตือนว่าการเร่งให้ AI แข่งกันแก้ปัญหาที่ยังไม่มีใครแก้ได้ คือการสับสนระหว่างตัวแทนวัดผลกับเป้าหมาย การตลาดก็มีปัญหาเบนช์มาร์กแบบเดียวกัน","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"งานวิจัย","about":{"@type":"Thing","name":"ผู้ได้รับเหรียญ Fields เผยแพร่ \"A Severe Misalignment of AI in Mathematics\" และ OpenAI ถอนตัวจากงาน AI mathathon ของ Caltech"},"wordCount":804,"citation":[{"@type":"CreativeWork","name":"'Slop mathematics': OpenAI walks away from a Caltech AI maths contest","url":"https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists","publisher":"The Next Web","datePublished":"2026-09-14"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/#faq","mainEntity":[{"@type":"Question","name":"\"A Severe Misalignment of AI in Mathematics\" คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"ตามรายงานของ The Next Web เป็นคำประกาศที่เผยแพร่เมื่อวันที่ 11 กันยายน 2026 และลงนามโดยผู้ได้รับเหรียญ Fields 25 คน โต้แย้งว่าการแก้ปัญหาเป็นตัวแทนวัดผลของเป้าหมายที่แท้จริงของคณิตศาสตร์ คือความเข้าใจเชิงแนวคิด และเตือนว่าการผลิตข้อความจำนวนมากอย่างรวดเร็วอาจทำร้ายสาขานี้"}},{"@type":"Question","name":"OpenAI ถอนตัวจาก Caltech Mathathon หรือไม่?","acceptedAnswer":{"@type":"Answer","text":"The Next Web รายงานว่า OpenAI ถอนเครดิตมูลค่า US$1 ล้านจาก Caltech Mathathon ที่นักศึกษาจัดเมื่อวันที่ 10 กันยายน 2026 ขณะที่ Anthropic ยังคงการสนับสนุนไว้ และงานยังคงดำเนินต่อไป"}},{"@type":"Question","name":"การถกเถียงเรื่อง AI ในคณิตศาสตร์มีความหมายอย่างไรต่อการตลาด?","acceptedAnswer":{"@type":"Answer","text":"เป็นคำเตือนเรื่องการปรับแต่งเพื่อตัวชี้วัดแทน ทีมการตลาดควรผูกตัวชี้วัด AI เข้ากับผลลัพธ์จริง นับต้นทุนการตรวจสอบโดยมนุษย์ และวัดว่างานที่ใช้ AI ช่วยยังคงโดดเด่นหรือไม่"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด","item":"https://farseev.com/th/blog/fields-medallists-ai-mathematics-benchmarks/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/fields-medallists-ai-mathematics-benchmarks/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/fields-medallists-ai-mathematics-benchmarks/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/fields-medallists-ai-mathematics-benchmarks/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/fields-medallists-ai-mathematics-benchmarks/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/fields-medallists-ai-mathematics-benchmarks/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/fields-medallists-ai-mathematics-benchmarks/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/fields-medallists-ai-mathematics-benchmarks/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · งานวิจัย</p>
+      <h1 class="h-display">ผู้ได้รับเหรียญ Fields กับเบนช์มาร์ก AI: บทเรียนสำหรับนักการตลาด</h1>
+      <p class="lead">ผู้ได้รับเหรียญ Fields ยี่สิบห้าคนเตือนว่าการเร่งให้ AI แข่งกันแก้ปัญหาที่ยังไม่มีใครแก้ได้ คือการสับสนระหว่างตัวแทนวัดผลกับเป้าหมาย การตลาดก็มีปัญหาเบนช์มาร์กแบบเดียวกัน</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: ผู้ได้รับเหรียญ Fields เผยแพร่ "A Severe Misalignment of AI in Mathematics" และ OpenAI ถอนตัวจากงาน AI mathathon ของ Caltech (<time datetime="2026-09-11">11 กันยายน 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>นักคณิตศาสตร์มักไม่เขียนจดหมายเปิดผนึกเรื่องการตลาด แต่ข้อโต้แย้งที่กลุ่มผู้ได้รับเหรียญ Fields เสนอในเดือนกันยายนใช้ได้แทบคำต่อคำกับวิธีที่อุตสาหกรรมของเราวัดผล AI ประเด็นของพวกเขาคือ การแก้ปัญหาเป็นเพียงตัวแทนวัดผล และเป้าหมายที่แท้จริงคือความเข้าใจ หากสับสนทั้งสองอย่าง คุณอาจทำลายสิ่งที่คุณพยายามจะปรับปรุง</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ตามรายงานของ <a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">The Next Web</a> เมื่อวันที่ 11 กันยายน มีการเผยแพร่คำประกาศชื่อ <em>A Severe Misalignment of AI in Mathematics</em> ที่ mathandai.org เว็บไซต์ระบุผู้ลงนาม 25 คน รวมถึง Terence Tao, Peter Scholze, Maryna Viazovska, Cédric Villani, Pierre Deligne, Manjul Bhargava และ Martin Hairer คำประกาศโต้แย้งว่าการแก้ปัญหาเป็นเครื่องมือและตัวแทนวัดผล ขณะที่เป้าหมายหลักของคณิตศาสตร์คือความเข้าใจเชิงแนวคิดและการหยั่งรู้ และเตือนว่าการผลิตข้อความที่จริงหรือเท็จจำนวนมากในอัตราที่เร่งขึ้น "อาจทำลายผืนดินที่อุดมสมบูรณ์" TNW อธิบายว่าเป็นแถลงการณ์เกี่ยวกับเบนช์มาร์ก โดยไม่ได้ระบุเหตุการณ์เฉพาะใด</p>
+<p>ในสัปดาห์เดียวกัน จดหมายเปิดผนึกอีกฉบับวิจารณ์งาน AI "Mathathon" ที่นักศึกษา Caltech จัด โดยเรียกรูปแบบนี้ว่า "คณิตศาสตร์ขยะ" (slop mathematics) และโต้แย้งว่าแรงงานในการตรวจสอบและแก้ไขผลลัพธ์ของ AI "ไม่ได้รับค่าตอบแทน ไม่ได้รับเครดิต และไม่ได้รับการยอมรับ" TNW รายงานว่า OpenAI ถอนเครดิตมูลค่า US$1 ล้านจากงานนี้เมื่อวันที่ 10 กันยายน ขณะที่ Anthropic ยังคงการสนับสนุนไว้ และผู้จัดได้เพิ่มข้อกำหนดแต่ไม่ได้ยกเลิกงาน</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>ข้อร้องเรียนของนักคณิตศาสตร์เป็นเรื่องกับดักที่คุ้นเคย เมื่อปัญหาที่ยากและมีชื่อเสียงกลายเป็นเบนช์มาร์ก ห้องแล็บก็ปรับแต่งเพื่อผลิตคำตอบให้ปัญหานั้น คำตอบวัดได้ ความเข้าใจวัดไม่ได้ เมื่อเวลาผ่านไป สิ่งที่วัดได้จะเบียดสิ่งที่มีคุณค่าออกไป และคนอื่นต้องรับหน้าที่ตรวจสอบผลลัพธ์</p>
+<p>AI เพื่อการตลาดมีปัญหานี้ทุกประการ เราวัดเครื่องมือด้วยสิ่งที่นับได้ง่าย: จำนวนสินทรัพย์ที่สร้าง เวลาที่ประหยัด อัตราการคลิกผ่าน สัดส่วนคำตอบ AI ที่กล่าวถึงแบรนด์ ตัวเลขเหล่านั้นสำคัญ แต่เป้าหมายของการตลาดไม่ใช่ผลผลิต แต่คือการเข้าใจลูกค้ามากพอที่จะให้บริการพวกเขา และสร้างแบรนด์ที่ผู้คนไว้วางใจ ระบบที่ท่วมช่องทางด้วยคอนเทนต์และชนะด้วยตัวชี้วัดแทนอาจกัดกร่อนทั้งสองอย่างอย่างเงียบ ๆ</p>
+<p>ประเด็นเรื่องการตรวจสอบที่ไม่ได้รับค่าตอบแทนก็ตรงเป้าเช่นกัน คอนเทนต์ที่สร้างขึ้นผลิตได้ถูก แต่ตรวจสอบได้แพง หากการตรวจสอบมองไม่เห็นในตัวชี้วัดของคุณ "ผลิตภาพที่เพิ่มขึ้น" ของคุณก็เป็นกลทางบัญชีส่วนหนึ่ง</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>งานวิจัยล่าสุดของผมสร้างขึ้นรอบความแตกต่างนี้ ในบทความ SIGIR 2026 ของเรา <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> ปัญหาที่เราแก้คือคอนเทนต์ที่ AI เขียนลู่เข้าหากัน: ผู้ช่วย AI ของทุกคนผลิตโพสต์ทั่วไปที่ดูดีแบบเดียวกัน แนวทางของเราคือดึงข้อมูลบริบทจริงก่อนเขียน เพื่อให้ผลลัพธ์ยังคงโดดเด่น ปริมาณที่ไม่มีความโดดเด่นคือ "ขยะ" ในแบบของการตลาด</p>
+<p>ด้านการวัดผล ผมเคยเสนอบน e27 ว่า<a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">ทุกแดชบอร์ดเป็นสีเขียว แต่ไม่มีใครบอกได้ว่าอะไรได้ผล</a> ตัวชี้วัดแทนที่ชี้ขึ้นทั้งหมดไม่เท่ากับการรู้ว่าอะไรเป็นสาเหตุของผลลัพธ์ และในงานด้าน AI ที่อธิบายได้ของเรา ตั้งแต่ <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> ถึง <a href="https://doi.org/10.1145/3746027.3758167" target="_blank" rel="noopener">MindFuse</a> เป้าหมายไม่ใช่แค่การคาดการณ์ที่ดีขึ้น แต่คือคำอธิบายที่นักการตลาดเรียนรู้ได้ นั่นคือ "ความเข้าใจเชิงแนวคิด" ของนักคณิตศาสตร์ในแบบการตลาด</p>
+<h2>สิ่งที่ทีมการตลาดนำไปใช้ได้จากเรื่องนี้</h2>
+<ul><li>ระบุเป้าหมายเบื้องหลังตัวชี้วัดแต่ละตัว สำหรับ KPI ของ AI ทุกตัว เขียนหนึ่งประโยคว่ามันควรแทนผลลัพธ์จริงอะไร และตรวจสอบเป็นระยะว่าความเชื่อมโยงนั้นยังคงอยู่</li><li>นับต้นทุนการตรวจสอบ ติดตามเวลาที่มนุษย์ใช้ตรวจทานและแก้ไขผลลัพธ์ของ AI และรวมไว้ใน ROI ของคุณ</li><li>วัดความโดดเด่น เปรียบเทียบคอนเทนต์ที่ใช้ AI ช่วยของคุณกับของคู่แข่ง หากเริ่มแยกไม่ออก คุณกำลังชนะตัวชี้วัดแทนแต่เสียแบรนด์</li><li>เลือกคำอธิบายมากกว่าคะแนน เครื่องมือที่บอกว่าทำไมสิ่งหนึ่งได้ผลจะสร้างความรู้ให้ทีม เครื่องมือที่บอกเพียงว่ามันได้ผลจะสร้างการพึ่งพา</li><li>ให้เครดิตมนุษย์ หากมีคนคอยเก็บกวาดผลลัพธ์ของ AI ให้ทำให้งานนั้นมองเห็นได้และได้รับการเห็นคุณค่า ไม่ใช่ถูกมองว่าเป็นเรื่องปกติ</li></ul>
+<p>นักคณิตศาสตร์กำลังปกป้องสาขาของตนจากวัฒนธรรมเบนช์มาร์กที่เข้าใจผิดว่าคำตอบคือความเข้าใจ การตลาดก็ควรปกป้องตนเองจากความผิดพลาดเดียวกัน</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>"A Severe Misalignment of AI in Mathematics" คืออะไร?</summary><p>ตามรายงานของ The Next Web เป็นคำประกาศที่เผยแพร่เมื่อวันที่ 11 กันยายน 2026 และลงนามโดยผู้ได้รับเหรียญ Fields 25 คน โต้แย้งว่าการแก้ปัญหาเป็นตัวแทนวัดผลของเป้าหมายที่แท้จริงของคณิตศาสตร์ คือความเข้าใจเชิงแนวคิด และเตือนว่าการผลิตข้อความจำนวนมากอย่างรวดเร็วอาจทำร้ายสาขานี้</p></details><details><summary>OpenAI ถอนตัวจาก Caltech Mathathon หรือไม่?</summary><p>The Next Web รายงานว่า OpenAI ถอนเครดิตมูลค่า US$1 ล้านจาก Caltech Mathathon ที่นักศึกษาจัดเมื่อวันที่ 10 กันยายน 2026 ขณะที่ Anthropic ยังคงการสนับสนุนไว้ และงานยังคงดำเนินต่อไป</p></details><details><summary>การถกเถียงเรื่อง AI ในคณิตศาสตร์มีความหมายอย่างไรต่อการตลาด?</summary><p>เป็นคำเตือนเรื่องการปรับแต่งเพื่อตัวชี้วัดแทน ทีมการตลาดควรผูกตัวชี้วัด AI เข้ากับผลลัพธ์จริง นับต้นทุนการตรวจสอบโดยมนุษย์ และวัดว่างานที่ใช้ AI ช่วยยังคงโดดเด่นหรือไม่</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://thenextweb.com/news/openai-withdraws-caltech-mathathon-slop-mathematics-fields-medallists" target="_blank" rel="noopener">'Slop mathematics': OpenAI walks away from a Caltech AI maths contest</a> — The Next Web, 14 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/wpp-q3-2026-agentic-agency/"><span class="meta">โฆษณาและ AI เพื่อการตลาด · 29 ตุลาคม 2026</span><h3>ไตรมาส 3/2026 ของ WPP: โมเดลเอเจนซีภายใต้แรงกดดันจาก AI</h3><p>WPP รายงานรายได้สุทธิแบบเทียบเคียงที่ลดลง ขณะที่ซีอีโอชี้ถึงความต้องการบริการที่ขับเคลื่อนด้วย AI ผ่าน WPP Open สิ่งนี้บอกอะไรเกี่ยวกับเอเจนซี</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/malaysia-ai-governance-bill/"><span class="meta">เอเชียและสิงคโปร์ · 29 ตุลาคม 2026</span><h3>AI Governance Bill ของมาเลเซีย: ความรับผิดชอบตามบทบาท</h3><p>ร่าง AI Governance Bill ของมาเลเซียซึ่งกำหนดออกภายในต้นปี 2027 กำหนดหน้าที่ให้ผู้พัฒนา ผู้ให้บริการ และผู้ใช้ AI กฎตามบทบาทมีความหมายอย่างไรต่อนักการตลาด</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">การค้นหาด้วย AI · 29 ตุลาคม 2026</span><h3>Adobe: ทราฟฟิกจาก AI แปลงเป็นยอดขายได้ดีกว่าการเข้าชมอื่น</h3><p>Adobe ระบุว่าการเข้าชมร้านค้าปลีกในสหรัฐฯ ที่มาจาก AI มีอัตราการแปลงสูงกว่าทราฟฟิกอื่น 90% ในเดือนกันยายน เหตุใดคำตอบจาก AI จึงกลายเป็นช่องทาง และควรทำอย่างไร</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

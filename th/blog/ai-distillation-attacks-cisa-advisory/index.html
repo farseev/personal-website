@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="หน่วยงานสหรัฐฯ ระบุชื่อบริษัท AI จีนหกแห่งในคำแนะนำเรื่อง distillation และ Anthropic ระบุว่าการป้องกันของบริษัทลดข้อมูลที่ถูกเก็บเกี่ยวลง 90 ถึง 99% สิ่งนี้มีความหมายอย่างไรต่อผู้ซื้อ AI" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/ai-distillation-attacks-cisa-advisory/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร | Prof. Aleks Farseev" />
+<meta property="og:description" content="หน่วยงานสหรัฐฯ ระบุชื่อบริษัท AI จีนหกแห่งในคำแนะนำเรื่อง distillation และ Anthropic ระบุว่าการป้องกันของบริษัทลดข้อมูลที่ถูกเก็บเกี่ยวลง 90 ถึง 99% สิ่งนี้มีความหมายอย่างไรต่อผู้ซื้อ AI" />
+<meta property="og:url" content="https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="กฎระเบียบและความปลอดภัย" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="หน่วยงานสหรัฐฯ ระบุชื่อบริษัท AI จีนหกแห่งในคำแนะนำเรื่อง distillation และ Anthropic ระบุว่าการป้องกันของบริษัทลดข้อมูลที่ถูกเก็บเกี่ยวลง 90 ถึง 99% สิ่งนี้มีความหมายอย่างไรต่อผู้ซื้อ AI" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/#article","mainEntityOfPage":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/","url":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/","headline":"การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร","description":"หน่วยงานสหรัฐฯ ระบุชื่อบริษัท AI จีนหกแห่งในคำแนะนำเรื่อง distillation และ Anthropic ระบุว่าการป้องกันของบริษัทลดข้อมูลที่ถูกเก็บเกี่ยวลง 90 ถึง 99% สิ่งนี้มีความหมายอย่างไรต่อผู้ซื้อ AI","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"กฎระเบียบและความปลอดภัย","about":{"@type":"Thing","name":"CISA, NSA และ FBI ออกคำแนะนำเรื่องการ distillation โมเดล AI ของสหรัฐฯ ในระดับอุตสาหกรรม และ Anthropic รายงานการป้องกันใหม่ต่อการ distillation"},"wordCount":872,"citation":[{"@type":"CreativeWork","name":"Chinese AI firms are siphoning capabilities from American models, CISA warns","url":"https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies","publisher":"Help Net Security","datePublished":"2026-09-09"},{"@type":"CreativeWork","name":"Strengthening our defenses against distillation attacks","url":"https://www.anthropic.com/news/distillation-defenses","publisher":"Anthropic","datePublished":"2026-10-12"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/#faq","mainEntity":[{"@type":"Question","name":"การโจมตีแบบ AI distillation คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"คือแคมเปญขนาดใหญ่แบบลับที่ดึงความสามารถของโมเดลด้วยการส่งคำถามไปยังโมเดลนั้น มักผ่านเครือข่ายบัญชีปลอม แล้วนำผลลัพธ์ไปฝึกโมเดลอื่นโดยไม่ได้รับอนุญาตจากผู้พัฒนาต้นฉบับ"}},{"@type":"Question","name":"คำแนะนำของสหรัฐฯ ระบุชื่อบริษัทใดบ้าง?","acceptedAnswer":{"@type":"Answer","text":"ตามรายงานของ Help Net Security คำแนะนำของ CISA, NSA และ FBI ระบุชื่อ DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun และ Z.AI รายงานไม่มีคำตอบจากบริษัทเหล่านั้น"}},{"@type":"Question","name":"การ distillation โมเดลเป็นเรื่องไม่ดีเสมอไปหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ไม่ Distillation เป็นเทคนิคมาตรฐานในการฝึกโมเดลที่เล็กกว่าและถูกกว่าจากโมเดลที่ใหญ่กว่า ปัญหาคือการดึงข้อมูลจากโมเดลของผู้อื่นโดยไม่ได้รับอนุญาต ซึ่งก่อให้เกิดคำถามเรื่องความยินยอม มาตรการป้องกัน และแหล่งที่มา"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร","item":"https://farseev.com/th/blog/ai-distillation-attacks-cisa-advisory/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/ai-distillation-attacks-cisa-advisory/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/ai-distillation-attacks-cisa-advisory/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/ai-distillation-attacks-cisa-advisory/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/ai-distillation-attacks-cisa-advisory/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/ai-distillation-attacks-cisa-advisory/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/ai-distillation-attacks-cisa-advisory/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/ai-distillation-attacks-cisa-advisory/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · กฎระเบียบและความปลอดภัย</p>
+      <h1 class="h-display">การโจมตีแบบ Distillation: โมเดล AI ที่ถูกลอกเลียนมีความหมายต่อคุณอย่างไร</h1>
+      <p class="lead">หน่วยงานสหรัฐฯ ระบุชื่อบริษัท AI จีนหกแห่งในคำแนะนำเรื่อง distillation และ Anthropic ระบุว่าการป้องกันของบริษัทลดข้อมูลที่ถูกเก็บเกี่ยวลง 90 ถึง 99% สิ่งนี้มีความหมายอย่างไรต่อผู้ซื้อ AI</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: CISA, NSA และ FBI ออกคำแนะนำเรื่องการ distillation โมเดล AI ของสหรัฐฯ ในระดับอุตสาหกรรม และ Anthropic รายงานการป้องกันใหม่ต่อการ distillation (<time datetime="2026-10-12">12 ตุลาคม 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>"Distillation" เคยเป็นคำสุภาพในแมชชีนเลิร์นนิง หมายถึงการฝึกโมเดลเล็กให้เลียนแบบโมเดลใหญ่ ซึ่งเป็นเทคนิคมาตรฐานที่มีประโยชน์ ในเดือนกันยายนและตุลาคม 2026 คำนี้กลายเป็นเรื่องความมั่นคงและการค้า หากคุณซื้อหรือสร้าง AI เพื่อการตลาด คุณควรเข้าใจทั้งสองความหมาย</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ต้นเดือนกันยายน CISA, NSA และ FBI เผยแพร่คำแนะนำร่วมเรื่องสิ่งที่พวกเขาเรียกว่าการ distillation ความรู้ในระดับอุตสาหกรรมโดยบริษัท AI ที่ตั้งอยู่ในจีน ตาม<a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">รายงานของ Help Net Security เกี่ยวกับคำแนะนำดังกล่าว</a> หน่วยงานเหล่านี้ระบุชื่อ DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun และ Z.AI และกล่าวว่าบริษัทเหล่านี้ดึงโทเค็นหลายพันล้านโทเค็นผ่านคำขอหลายล้านครั้งไปยังโมเดลแนวหน้าของสหรัฐฯ ตั้งแต่อย่างน้อยปลายปี 2024 คำแนะนำนี้ระบุสัญญาณสำหรับการตรวจจับ เช่น การใช้งานตลอด 24 ชั่วโมงโดยไม่มีช่วงว่างแบบมนุษย์ และกลุ่มบัญชีที่ทำงานอย่างประสานกัน และแนะนำให้ตรวจสอบตัวตนให้เข้มงวดขึ้น เฝ้าติดตาม และแบ่งปันข้อมูลระหว่างผู้ให้บริการ AI รายงานระบุว่าไม่มีคำแถลงจากบริษัทที่ถูกระบุชื่อ</p>
+<p>เมื่อวันที่ 12 ตุลาคม Anthropic อธิบายการตอบสนองของตนเอง ใน <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> บริษัทระบุว่าหลักฐานเบื้องต้นชี้ว่าวิธีการของบริษัทลดข้อมูลที่ผู้ทำ distillation เก็บเกี่ยวได้ลงประมาณ 90 ถึง 99% มาตรการรวมถึงการป้องกันไม่ให้บัญชี API ที่ใหม่กว่าแก้ไขการให้เหตุผลก่อนหน้าของ Claude ตัวจำแนกสองขั้นที่ฝึกจากความพยายามดึงข้อมูลโดยมีอัตราผลบวกลวงต่ำกว่า 0.1% การจำกัดที่เข้มงวดขึ้นและการแบนสำหรับความพยายามซ้ำ และการคิดค่าบริการสำหรับคำขอที่ถูกบล็อกโดยมาตรการป้องกัน Anthropic ระบุว่าได้แบนบัญชีที่เชื่อมโยงกับ distillation หลายหมื่นบัญชี และคาดว่าจะเป็น "เกมแมวจับหนู" ที่ดำเนินต่อไป</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>มีเหตุผลสองประการที่นักการตลาดควรใส่ใจการต่อสู้ระหว่างห้องแล็บ AI</p>
+<p>ประการแรกคือความเสี่ยงในห่วงโซ่อุปทาน หากโมเดลถูกสร้างโดยลอกเลียนพฤติกรรมของโมเดลอื่นโดยไม่ได้รับอนุญาต คุณไม่รู้ว่ามาตรการป้องกันใดติดมาด้วย โพสต์ของ Anthropic โต้แย้งว่าโมเดลที่ผ่านการ distillation อาจมีความสามารถใกล้เคียงระดับแนวหน้า แต่มาพร้อมการป้องกันที่อ่อนแอกว่า เมื่อคุณเลือกโมเดลมาใช้กับงานบริการลูกค้าหรือสร้างโฆษณา แหล่งที่มาของโมเดลเป็นส่วนหนึ่งของคุณภาพ</p>
+<p>ประการที่สองคือความยุ่งยากสำหรับผู้ใช้ที่ถูกต้องตามกฎ การป้องกันมีต้นทุน Anthropic ยอมรับว่านักพัฒนาบางรายต้องอัปเดตการเชื่อมต่อ คำขอที่ไม่เป็นอันตรายส่วนน้อยอาจถูกบล็อก และคำขอที่ถูกบล็อกอาจถูกคิดค่าบริการแล้ว หากระบบการตลาดของคุณเรียก API แนวหน้าแบบอัตโนมัติปริมาณมาก ทราฟฟิกบางส่วนอาจดูเหมือนแคมเปญดึงข้อมูล อ่านนโยบายของผู้ให้บริการตั้งแต่ตอนนี้ ไม่ใช่หลังจากระบบของคุณพัง</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>Distillation ไม่ใช่ตัวร้ายในเรื่องนี้ เมื่อทำอย่างถูกต้อง มันคือวิธีที่ทำให้ AI มีราคาที่จ่ายได้ โมเดลใหญ่สอนโมเดลเล็ก โมเดลเล็กทำงานในระดับใหญ่ด้วยต้นทุนต่ำ ผมเคยโต้แย้งใน Forbes ว่าในการตลาด <a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">เทคนิคสำคัญกว่าขนาดของโมเดล</a> และ distillation ก็เป็นหนึ่งในเทคนิคเหล่านั้น</p>
+<p>สิ่งที่เปลี่ยนภาพคือความยินยอมและความโปร่งใส งานของผมด้าน AI ที่อธิบายได้เริ่มต้นจากหลักการง่าย ๆ: นักการตลาดควรเห็นได้ว่าทำไมระบบจึงแนะนำบางสิ่ง ใน <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) เราจับคู่การคาดการณ์อัตราการคลิกผ่านเข้ากับผู้ช่วย LLM ที่อธิบายปัจจัยขับเคลื่อน ใน <a href="https://arxiv.org/abs/2407.13117" target="_blank" rel="noopener">SOMONITOR</a> (preprint ปี 2024) เราอธิบายการผสานแบบจำลองประสิทธิภาพที่อธิบายได้เข้ากับ LLM เพื่อการวิเคราะห์คู่แข่ง คำอธิบายจะมีความหมายก็ต่อเมื่อคุณรู้ว่าโมเดลคืออะไรและมาจากไหน</p>
+<p>ยังมีความย้อนแย้งที่ควรสังเกต การป้องกันที่ Anthropic อธิบาย คือการสรุปหรือจำกัดการเข้าถึงการให้เหตุผลทั้งหมดของโมเดล ทำให้ระบบโปร่งใสน้อยลงเล็กน้อยสำหรับทุกคน เพราะการให้เหตุผลคือสิ่งที่ผู้ลอกเลียนต้องการ การแลกเปลี่ยนนี้จะกำหนดว่าผู้ขาย AI ยินดีเปิดเผยคำอธิบายมากเพียงใด ผู้ซื้อควรขอคำอธิบายที่ออกแบบมาสำหรับพวกเขา เกี่ยวกับข้อมูลและการตัดสินใจของพวกเขา แทนที่จะขอร่องรอยการให้เหตุผลดิบ</p>
+<h2>สิ่งที่ผู้ซื้อ AI เพื่อการตลาดควรทำตอนนี้</h2>
+<ul><li>ถามผู้ขายทุกรายว่าผลิตภัณฑ์ของตนใช้โมเดลใดอยู่เบื้องหลัง และโมเดลเหล่านั้นมาจากไหน</li><li>ตรวจสอบเงื่อนไขของ API ที่คุณเรียกใช้ การใช้งานอัตโนมัติปริมาณมากเป็นเรื่องปกติในการตลาด ตรวจสอบให้แน่ใจว่าการใช้งานของคุณถูกต้องชัดเจน ระบุตัวตนได้ และอยู่ในขีดจำกัด</li><li>วางแผนสำหรับการเปลี่ยนโมเดล นโยบาย ราคา และการเข้าถึงอาจเปลี่ยนได้อย่างรวดเร็ว เก็บพรอมต์ ขั้นตอน และชุดประเมินผลให้พกพาได้</li><li>ทำ distillation โมเดลของคุณเองอย่างถูกต้อง หากคุณต้องการโมเดลราคาถูกสำหรับงานเฉพาะ ให้ฝึกด้วยข้อมูลของคุณเองหรือด้วยผลลัพธ์ที่คุณได้รับอนุญาตให้ใช้</li><li>เลือกคำอธิบายการตัดสินใจมากกว่าการเปิดเผยกลไกภายใน สิ่งที่คุณต้องตรวจสอบคือเหตุผลที่มีการแนะนำสิ่งหนึ่งสำหรับแคมเปญของคุณ</li></ul>
+<p>การต่อสู้เรื่อง distillation เป็นเรื่องว่าใครมีสิทธิ์ลอกเลียนใคร สำหรับนักการตลาด มันเป็นเครื่องเตือนใจว่า "ใช้โมเดลไหน?" ตอนนี้เป็นคำถามด้านธรรมาภิบาล ไม่ใช่แค่คำถามทางเทคนิค</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>การโจมตีแบบ AI distillation คืออะไร?</summary><p>คือแคมเปญขนาดใหญ่แบบลับที่ดึงความสามารถของโมเดลด้วยการส่งคำถามไปยังโมเดลนั้น มักผ่านเครือข่ายบัญชีปลอม แล้วนำผลลัพธ์ไปฝึกโมเดลอื่นโดยไม่ได้รับอนุญาตจากผู้พัฒนาต้นฉบับ</p></details><details><summary>คำแนะนำของสหรัฐฯ ระบุชื่อบริษัทใดบ้าง?</summary><p>ตามรายงานของ Help Net Security คำแนะนำของ CISA, NSA และ FBI ระบุชื่อ DeepSeek, Moonshot AI, Alibaba Group, MiniMax, StepFun และ Z.AI รายงานไม่มีคำตอบจากบริษัทเหล่านั้น</p></details><details><summary>การ distillation โมเดลเป็นเรื่องไม่ดีเสมอไปหรือไม่?</summary><p>ไม่ Distillation เป็นเทคนิคมาตรฐานในการฝึกโมเดลที่เล็กกว่าและถูกกว่าจากโมเดลที่ใหญ่กว่า ปัญหาคือการดึงข้อมูลจากโมเดลของผู้อื่นโดยไม่ได้รับอนุญาต ซึ่งก่อให้เกิดคำถามเรื่องความยินยอม มาตรการป้องกัน และแหล่งที่มา</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://helpnetsecurity.com/2026/09/09/china-malicious-ai-knowledge-distillation-against-us-companies" target="_blank" rel="noopener">Chinese AI firms are siphoning capabilities from American models, CISA warns</a> — Help Net Security, 9 September 2026</li><li translate="no"><a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener">Strengthening our defenses against distillation attacks</a> — Anthropic, 12 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/mas-ai-risk-management-guidelines/"><span class="meta">กฎระเบียบและความปลอดภัย · 7 ตุลาคม 2026</span><h3>แนวทางความเสี่ยง AI ของ MAS: แม่แบบที่มีประโยชน์เกินกว่าภาคธนาคาร</h3><p>MAS ออกแนวทางการบริหารความเสี่ยง AI สำหรับสถาบันการเงิน กฎด้านการจัดทำบัญชีรายการและบุคคลที่สามเป็นแม่แบบที่ดีสำหรับทีมการตลาด</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/white-house-ai-accord-independent-evaluators/"><span class="meta">กฎระเบียบและความปลอดภัย · 29 กันยายน 2026</span><h3>ข้อตกลง AI ของทำเนียบขาวกับผู้ประเมินอิสระ</h3><p>ผู้นำด้านเทคโนโลยีลงนามข้อตกลงโดยสมัครใจกับทำเนียบขาวที่สัญญาว่าจะมีผู้ประเมินภายนอก และ Anthropic ให้ METR เข้าถึงอย่างลึกซึ้ง เหตุใดการตรวจสอบจึงสำคัญต่อ AI เพื่อการตลาด</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/wpp-q3-2026-agentic-agency/"><span class="meta">โฆษณาและ AI เพื่อการตลาด · 29 ตุลาคม 2026</span><h3>ไตรมาส 3/2026 ของ WPP: โมเดลเอเจนซีภายใต้แรงกดดันจาก AI</h3><p>WPP รายงานรายได้สุทธิแบบเทียบเคียงที่ลดลง ขณะที่ซีอีโอชี้ถึงความต้องการบริการที่ขับเคลื่อนด้วย AI ผ่าน WPP Open สิ่งนี้บอกอะไรเกี่ยวกับเอเจนซี</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

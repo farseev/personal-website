@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="ที่ Advertising Week New York, Meta ขยายวิดีโอ AI ผู้ช่วยโฆษณา การกำหนดกลุ่มเป้าหมายด้วยภาษาธรรมดา และ Ads MCP server สิ่งที่นักการตลาดยังควรถือครองเอง" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย | Prof. Aleks Farseev" />
+<meta property="og:description" content="ที่ Advertising Week New York, Meta ขยายวิดีโอ AI ผู้ช่วยโฆษณา การกำหนดกลุ่มเป้าหมายด้วยภาษาธรรมดา และ Ads MCP server สิ่งที่นักการตลาดยังควรถือครองเอง" />
+<meta property="og:url" content="https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="โฆษณาและ AI เพื่อการตลาด" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="ที่ Advertising Week New York, Meta ขยายวิดีโอ AI ผู้ช่วยโฆษณา การกำหนดกลุ่มเป้าหมายด้วยภาษาธรรมดา และ Ads MCP server สิ่งที่นักการตลาดยังควรถือครองเอง" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/#article","mainEntityOfPage":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/","url":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/","headline":"เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย","description":"ที่ Advertising Week New York, Meta ขยายวิดีโอ AI ผู้ช่วยโฆษณา การกำหนดกลุ่มเป้าหมายด้วยภาษาธรรมดา และ Ads MCP server สิ่งที่นักการตลาดยังควรถือครองเอง","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"โฆษณาและ AI เพื่อการตลาด","about":{"@type":"Thing","name":"Meta ประกาศเครื่องมือโฆษณา AI ใหม่ในงาน Advertising Week New York 2026"},"wordCount":919,"citation":[{"@type":"CreativeWork","name":"Meta's Advertising Week 2026 ad tools: what is live, in test or coming","url":"https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/","publisher":"Relevant Audience","datePublished":"2026-10-08"},{"@type":"CreativeWork","name":"Meta unveils AI advertising tools at Advertising Week 2026","url":"https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/","publisher":"TechJuice","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/#faq","mainEntity":[{"@type":"Question","name":"Meta ประกาศเครื่องมือโฆษณา AI อะไรบ้างในงาน Advertising Week 2026?","acceptedAnswer":{"@type":"Answer","text":"ตามรายงานของ Relevant Audience และ TechJuice Meta ประกาศวิดีโอครีเอทีฟ Advantage+ จากภาพนิ่งที่เปิดให้ใช้ทั่วไป การขยาย Ads Creative Studio ผู้ช่วยที่มีหน่วยความจำและการทดสอบการดำเนินการแบบเอเจนต์ การค้นหากลุ่มเป้าหมายด้วยภาษาธรรมดาใน Detailed Targeting, Ads MCP server ที่ขยายขึ้น และการทดสอบการชำระเงินในแชต"}},{"@type":"Question","name":"Ads MCP server ของ Meta คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"คืออินเทอร์เฟซที่อิง Model Context Protocol ซึ่งให้เครื่องมือ AI ของบุคคลที่สามเชื่อมต่อกับระบบโฆษณาของ Meta สำหรับงานต่าง ๆ เช่น การอัปโหลดครีเอทีฟ การแสดงตัวอย่าง การรายงาน และการร่างแคมเปญ Relevant Audience ระบุพันธมิตรสิบราย รวมถึง Databricks, Perplexity และ Snowflake"}},{"@type":"Question","name":"ผู้ลงโฆษณาควรให้ผู้ช่วย AI เปลี่ยนงบประมาณและการกำหนดเป้าหมายหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ทำได้เฉพาะเมื่อมีกฎ ใช้การแสดงตัวอย่างและการอนุมัติ กำหนดว่าการเปลี่ยนแปลงใดเกิดขึ้นอัตโนมัติได้ และตรวจสอบผลลัพธ์ด้วยการวัดผลที่เป็นอิสระ เช่น การทดสอบแบบมีกลุ่มควบคุม แทนการพึ่งพาเพียง Conversion ที่แพลตฟอร์มรายงาน"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย","item":"https://farseev.com/th/blog/meta-advertising-week-2026-ai-ad-tools/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/meta-advertising-week-2026-ai-ad-tools/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/meta-advertising-week-2026-ai-ad-tools/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/meta-advertising-week-2026-ai-ad-tools/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/meta-advertising-week-2026-ai-ad-tools/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/meta-advertising-week-2026-ai-ad-tools/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/meta-advertising-week-2026-ai-ad-tools/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/meta-advertising-week-2026-ai-ad-tools/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · โฆษณาและ AI เพื่อการตลาด</p>
+      <h1 class="h-display">เครื่องมือโฆษณา AI ใหม่ของ Meta: ระบบอัตโนมัติยังต้องมีคำอธิบาย</h1>
+      <p class="lead">ที่ Advertising Week New York, Meta ขยายวิดีโอ AI ผู้ช่วยโฆษณา การกำหนดกลุ่มเป้าหมายด้วยภาษาธรรมดา และ Ads MCP server สิ่งที่นักการตลาดยังควรถือครองเอง</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: Meta ประกาศเครื่องมือโฆษณา AI ใหม่ในงาน Advertising Week New York 2026 (<time datetime="2026-10-06">6 ตุลาคม 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>ทุกปีแพลตฟอร์มใหญ่ ๆ จะก้าวเข้าใกล้การดำเนินแคมเปญทั้งหมดแทนคุณอีกขั้น ที่ Advertising Week New York เมื่อวันที่ 6 ตุลาคม Meta ก้าวไปหลายขั้นพร้อมกัน: ผู้ช่วยโฆษณาที่มีหน่วยความจำ วิดีโอที่สร้างจากภาพนิ่ง การค้นหากลุ่มเป้าหมายด้วยภาษาธรรมดา และเซิร์ฟเวอร์ที่ขยายขึ้นซึ่งให้เครื่องมือ AI ภายนอกควบคุมระบบโฆษณาได้ เป็นเครื่องมือที่มีประโยชน์ แต่ระบบอัตโนมัติที่ไม่มีคำอธิบายคือความเสี่ยงที่คุณต้องรับเอง ไม่ใช่ความเสี่ยงที่ Meta รับแทนคุณ</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ผมเปิดหน้าประกาศของ Meta เองไม่ได้ จึงอาศัยบทสรุปที่ละเอียดสองฉบับ ตาม<a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">การวิเคราะห์ของ Relevant Audience</a> และ<a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">รายงานของ TechJuice</a> Meta ประกาศ:</p>
+<ul><li>วิดีโอครีเอทีฟ Advantage+ จากภาพนิ่ง ซึ่งเปิดให้ใช้ทั่วไปแล้ว และวิดีโอสินค้าจากแค็ตตาล็อกในเวอร์ชันเบต้าสำหรับผู้ลงโฆษณาที่มีสิทธิ์</li><li>Ads Creative Studio พื้นที่ทำงานด้านครีเอทีฟที่ก่อนหน้านี้จำกัดเฉพาะพันธมิตรที่คัดเลือก เริ่มทยอยเปิดให้ผู้ลงโฆษณามากขึ้น</li><li>ผู้ช่วย AI สำหรับธุรกิจที่มีหน่วยความจำข้ามบทสนทนา พร้อมการทดสอบการนำเข้าเอกสารกลยุทธ์และแนวทางแบรนด์ รายงานและการแจ้งเตือนตามกำหนด และการดำเนินการแบบเอเจนต์ เช่น การตั้งค่าแคมเปญและการเปลี่ยนงบประมาณ พร้อมการแสดงตัวอย่างและการอนุมัติ</li><li>เครื่องมือกลยุทธ์วงจรชีวิตลูกค้า ซึ่งเปิดให้ผู้ลงโฆษณาทุกรายใช้แล้ว และการค้นหากลุ่มเป้าหมายด้วย AI ใน Detailed Targeting ที่ผู้ลงโฆษณาอธิบายลูกค้าในอุดมคติด้วยภาษาธรรมดา Relevant Audience รายงานกำหนดเวลาของ Meta สำหรับฟีเจอร์นี้ว่า "ภายในสิ้นปี"</li><li>Ads MCP server ที่ขยายขึ้น โดยมีพันธมิตรที่ระบุชื่อสิบราย รวมถึง Databricks, Perplexity, Snowflake และ Triple Whale เพื่อให้เครื่องมือ AI ของบุคคลที่สามทำงานกับระบบโฆษณาของ Meta ได้</li><li>ฟีเจอร์ด้านการค้า รวมถึงการทดสอบการชำระเงินโดยตรงผ่าน Business Agent ของ Meta บน Messenger ร่วมกับ Shopify และการชำระเงินโดยตรงใน Meta AI ร่วมกับพันธมิตร เช่น Adyen, PayPal, Shopify และ Stripe</li></ul>
+<p>Meta ยังอ้างว่าผู้ลงโฆษณาที่ทำตามคำแนะนำของผู้ช่วย "โดยทั่วไป" ได้ Conversion มากขึ้น 5% ที่ต้นทุนต่อ Conversion เท่าเดิม และเวลามากกว่า 60% บน Facebook และ Instagram ใช้ไปกับวิดีโอ Relevant Audience ระบุว่า Meta ไม่ได้เผยแพร่วิธีการคำนวณตัวเลขเหล่านี้</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>การเปิดตัวสองรายการในนี้เปลี่ยนว่าใครเป็นคนคิด</p>
+<p>การค้นหากลุ่มเป้าหมายด้วยภาษาธรรมดาหมายความว่าแพลตฟอร์มแปลคำอธิบายลูกค้าของคุณเป็นการกำหนดเป้าหมาย นั่นคือการตัดสินใจด้านการสร้างโปรไฟล์ การเปลี่ยนงบประมาณและการกำหนดเป้าหมายโดยผู้ช่วยหมายความว่าแพลตฟอร์มยังตัดสินใจว่าจะทำอะไรกับผลลัพธ์ด้วย และ MCP server หมายความว่า AI ที่คุณใช้นอก Meta สามารถทำงานภายใน Meta ได้แล้ว</p>
+<p>แต่ละขั้นประหยัดเวลา เมื่อรวมกัน มันรวมศูนย์การตัดสินใจไว้ในระบบที่ปรับแต่งเพื่อเป้าหมายของแพลตฟอร์มและวัดผลด้วยข้อมูลของแพลตฟอร์มเอง เมื่อบริษัทเดียวกันขายโฆษณา เลือกกลุ่มเป้าหมาย สร้างครีเอทีฟ และรายงานผล มุมมองที่เป็นอิสระก็ยิ่งมีคุณค่ามากขึ้น ไม่ใช่น้อยลง</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>การอธิบายกลุ่มเป้าหมายด้วยคำพูดแล้วได้กลุ่มเป้าหมายกลับมาเป็นปัญหาที่ผมศึกษามานาน งานของเราเรื่อง<a href="https://doi.org/10.3389/fdata.2022.931206" target="_blank" rel="noopener">การสร้างโปรไฟล์บุคลิกภาพผู้ใช้แบบหลายมุมมองข้าม Twitter, Facebook และ PersonalityCafe</a> (Frontiers in Big Data, 2022) แสดงให้เห็นว่าสิ่งที่คุณอนุมานเกี่ยวกับผู้คนขึ้นอยู่กับสัญญาณที่คุณใช้อย่างมาก คำอธิบายด้วยภาษาธรรมดาคือสมมติฐานเกี่ยวกับลูกค้าของคุณ มันควรถูกทดสอบ ไม่ใช่แค่ถูกนำไปปฏิบัติ</p>
+<p>ด้านครีเอทีฟ ทีมของผมทำงานเรื่องการให้คะแนนก่อนเปิดตัว ใน <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) เราสาธิตโมเดลมัลติโมดัลที่ให้คะแนนครีเอทีฟโฆษณา Meta ของผู้ลงโฆษณาก่อนเผยแพร่ โดยใช้ข้อความ รูปภาพ การกำหนดเป้าหมาย และการตั้งค่า ใน <a href="https://doi.org/10.1145/3581783.3612817" target="_blank" rel="noopener">Against Opacity</a> (ACM Multimedia 2023) เราเพิ่มผู้ช่วย LLM ที่อธิบายว่าอะไรขับเคลื่อนอัตราการคลิกผ่านที่คาดการณ์ หลักการเดียวกับที่ผมใช้กับเครื่องมือของแพลตฟอร์ม: คะแนนที่คุณอธิบายไม่ได้คือคะแนนที่คุณเรียนรู้จากมันไม่ได้</p>
+<p>วิดีโอที่สร้างจากภาพนิ่งจะเพิ่มจำนวนเวอร์ชันที่แบรนด์ใช้ได้หลายเท่า ซึ่งเป็นเรื่องดี หากยังมีคนตัดสินว่าเวอร์ชันใดควรได้งบประมาณ และเข้าใจว่าทำไมผู้ชนะจึงชนะ ไม่เช่นนั้นคุณจะได้ครีเอทีฟมากขึ้นแต่ความรู้น้อยลง</p>
+<h2>สิ่งที่ผู้ลงโฆษณาควรทำตอนนี้</h2>
+<ul><li>ใช้เครื่องมือวิดีโอและครีเอทีฟใหม่ แต่คงตัวกรองก่อนเปิดตัวไว้ ตรวจทานและให้คะแนนเวอร์ชันต่าง ๆ ก่อนใช้เงิน และเก็บบันทึกว่าทำไมแต่ละชิ้นจึงถูกปล่อย</li><li>มองกลุ่มเป้าหมายจากภาษาธรรมดาเป็นการทดลอง เขียนคำอธิบาย ทดสอบเทียบกับกลุ่มเป้าหมายที่ดีที่สุดที่มีอยู่ และเปรียบเทียบต้นทุนต่อผลลัพธ์จริง ไม่ใช่แค่ Conversion ของแพลตฟอร์ม</li><li>อนุมัติการเปลี่ยนแปลงแบบเอเจนต์อย่างตั้งใจ ใช้การแสดงตัวอย่างและการอนุมัติที่ Meta อธิบาย และกำหนดกฎว่าการเปลี่ยนแปลงใดที่ผู้ช่วยทำได้โดยไม่ต้องมีมนุษย์</li><li>ระมัดระวังสิ่งที่คุณนำเข้า เอกสารกลยุทธ์และแนวทางแบรนด์เป็นข้อมูลอ่อนไหว ตัดสินใจว่าผู้ช่วยต้องการอะไรจริง ๆ</li><li>คงมุมมองการวัดผลที่เป็นอิสระไว้ กลุ่มควบคุม การทดสอบผลส่วนเพิ่ม และการวิเคราะห์ของคุณเองคือตัวถ่วงดุลกับผลลัพธ์ที่แพลตฟอร์มรายงาน</li></ul>
+<p>เครื่องมือของ Meta ดีขึ้นจนคอขวดย้ายจากการลงมือทำไปสู่วิจารณญาณ ตรวจสอบให้แน่ใจว่าทีมของคุณยังเป็นผู้ใช้วิจารณญาณนั้น</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>Meta ประกาศเครื่องมือโฆษณา AI อะไรบ้างในงาน Advertising Week 2026?</summary><p>ตามรายงานของ Relevant Audience และ TechJuice Meta ประกาศวิดีโอครีเอทีฟ Advantage+ จากภาพนิ่งที่เปิดให้ใช้ทั่วไป การขยาย Ads Creative Studio ผู้ช่วยที่มีหน่วยความจำและการทดสอบการดำเนินการแบบเอเจนต์ การค้นหากลุ่มเป้าหมายด้วยภาษาธรรมดาใน Detailed Targeting, Ads MCP server ที่ขยายขึ้น และการทดสอบการชำระเงินในแชต</p></details><details><summary>Ads MCP server ของ Meta คืออะไร?</summary><p>คืออินเทอร์เฟซที่อิง Model Context Protocol ซึ่งให้เครื่องมือ AI ของบุคคลที่สามเชื่อมต่อกับระบบโฆษณาของ Meta สำหรับงานต่าง ๆ เช่น การอัปโหลดครีเอทีฟ การแสดงตัวอย่าง การรายงาน และการร่างแคมเปญ Relevant Audience ระบุพันธมิตรสิบราย รวมถึง Databricks, Perplexity และ Snowflake</p></details><details><summary>ผู้ลงโฆษณาควรให้ผู้ช่วย AI เปลี่ยนงบประมาณและการกำหนดเป้าหมายหรือไม่?</summary><p>ทำได้เฉพาะเมื่อมีกฎ ใช้การแสดงตัวอย่างและการอนุมัติ กำหนดว่าการเปลี่ยนแปลงใดเกิดขึ้นอัตโนมัติได้ และตรวจสอบผลลัพธ์ด้วยการวัดผลที่เป็นอิสระ เช่น การทดสอบแบบมีกลุ่มควบคุม แทนการพึ่งพาเพียง Conversion ที่แพลตฟอร์มรายงาน</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://www.relevantaudience.com/meta/meta-advertising-week-new-york-2026-ad-tools/" target="_blank" rel="noopener">Meta's Advertising Week 2026 ad tools: what is live, in test or coming</a> — Relevant Audience, 8 October 2026</li><li translate="no"><a href="https://www.techjuice.pk/meta-ai-advertising-tools-advertising-week-2026/" target="_blank" rel="noopener">Meta unveils AI advertising tools at Advertising Week 2026</a> — TechJuice, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/wpp-q3-2026-agentic-agency/"><span class="meta">โฆษณาและ AI เพื่อการตลาด · 29 ตุลาคม 2026</span><h3>ไตรมาส 3/2026 ของ WPP: โมเดลเอเจนซีภายใต้แรงกดดันจาก AI</h3><p>WPP รายงานรายได้สุทธิแบบเทียบเคียงที่ลดลง ขณะที่ซีอีโอชี้ถึงความต้องการบริการที่ขับเคลื่อนด้วย AI ผ่าน WPP Open สิ่งนี้บอกอะไรเกี่ยวกับเอเจนซี</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/meta-q3-2026-ai-ads-creators-apac/"><span class="meta">โฆษณาและ AI เพื่อการตลาด · 21 ตุลาคม 2026</span><h3>Meta ไตรมาส 3/2026: AI ดันราคาโฆษณา ครีเอเตอร์กลายเป็นช่องทาง</h3><p>Meta ไตรมาส 3/2026: รายได้โฆษณาเพิ่ม 26% ราคาต่อโฆษณาเพิ่ม 14% โฆษณาแบบพาร์ทเนอร์ทะลุอัตรา $15bn ต่อปี และเอเชียแปซิฟิกที่ต่างไปมาก หมายความว่าอย่างไร</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/amazon-unboxed-2026-ads-agent/"><span class="meta">โฆษณาและ AI เพื่อการตลาด · 30 กันยายน 2026</span><h3>Amazon Ads Agent: Retail Media ก้าวสู่ยุคเอเจนต์ที่ unBoxed 2026</h3><p>ที่ unBoxed 2026 Amazon รวมเครื่องมือซื้อโฆษณาเข้าเป็น Amazon Ads Agent พร้อมการวัดผลแบบสนทนาและครีเอทีฟจาก AI สิ่งที่ควรอยู่ในมือมนุษย์</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

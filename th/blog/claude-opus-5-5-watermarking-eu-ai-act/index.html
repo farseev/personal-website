@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด" />
+<meta property="og:url" content="https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="โมเดล" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/#article","mainEntityOfPage":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/","url":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/","headline":"Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI","description":"Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"โมเดล","about":{"@type":"Thing","name":"Anthropic เปิดตัว Claude Opus 5.5 โมเดลแรกในตระกูล Claude 5.5"},"wordCount":844,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Opus 5.5","url":"https://www.anthropic.com/claude-opus-5-5","publisher":"Anthropic","datePublished":"2026-09-22"},{"@type":"CreativeWork","name":"Commission publishes Code of Practice on marking and labelling AI-generated content","url":"https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content","publisher":"European Commission","datePublished":"2026-06-10"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/#faq","mainEntity":[{"@type":"Question","name":"Claude Opus 5.5 คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"คือโมเดลแรกในตระกูล Claude 5.5 ของ Anthropic เปิดตัวเมื่อวันที่ 22 กันยายน 2026 Anthropic ระบุว่าทำงานได้ในระดับของ Claude Fable 5.1 ในงานส่วนใหญ่ นำเบนช์มาร์กด้านการเขียนโค้ดแบบเอเจนต์ การใช้คอมพิวเตอร์ และงานความรู้ และมีต้นทุนต่ำกว่า Opus 5 ประมาณ 40% สำหรับงานทั่วไป"}},{"@type":"Question","name":"Claude Opus 5.5 ใส่ลายน้ำในผลลัพธ์หรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ประกาศของ Anthropic ระบุว่า Opus 5.5 มีลายน้ำเพื่อให้สอดคล้องกับ EU AI Act"}},{"@type":"Question","name":"กฎความโปร่งใสด้าน AI ของ EU กำหนดอะไรสำหรับนักการตลาด?","acceptedAnswer":{"@type":"Answer","text":"ตามข้อมูลของคณะกรรมาธิการยุโรป ข้อผูกพันด้านความโปร่งใสที่มีผลตั้งแต่ 2 สิงหาคม 2026 รวมถึงการติดป้ายกำกับดีปเฟกอย่างชัดเจน การติดป้ายกำกับข้อความที่สร้างด้วย AI ซึ่งเผยแพร่ในเรื่องที่เป็นประโยชน์สาธารณะ และการแจ้งให้ผู้คนทราบเมื่อโต้ตอบกับระบบ AI เช่น แชตบอต ผู้นำ Generative AI ไปใช้ ไม่ใช่แค่ผู้ให้บริการ ก็มีหน้าที่ด้วย"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI","item":"https://farseev.com/th/blog/claude-opus-5-5-watermarking-eu-ai-act/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/claude-opus-5-5-watermarking-eu-ai-act/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-opus-5-5-watermarking-eu-ai-act/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-opus-5-5-watermarking-eu-ai-act/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-opus-5-5-watermarking-eu-ai-act/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-opus-5-5-watermarking-eu-ai-act/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/claude-opus-5-5-watermarking-eu-ai-act/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-opus-5-5-watermarking-eu-ai-act/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · โมเดล</p>
+      <h1 class="h-display">Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI</h1>
+      <p class="lead">Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: Anthropic เปิดตัว Claude Opus 5.5 โมเดลแรกในตระกูล Claude 5.5 (<time datetime="2026-09-22">22 กันยายน 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>การเปิดตัวโมเดลมักถูกอ่านเพื่อดูตารางเบนช์มาร์ก เมื่อ Anthropic เปิดตัว Claude Opus 5.5 เมื่อวันที่ 22 กันยายน สองบรรทัดที่ผมเห็นว่าสำคัญที่สุดสำหรับนักการตลาดอยู่ใกล้ท้ายหน้า: โมเดลมีลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และ Anthropic ระบุว่าโมเดลมักสงสัยว่ากำลังถูกประเมิน</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ตาม<a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">ประกาศของ Anthropic</a> Opus 5.5 เป็นโมเดลแรกในตระกูล Claude 5.5 และ "ทำงานได้ในระดับของ Claude Fable 5.1 ในงานส่วนใหญ่" นำเบนช์มาร์กของ Anthropic ด้านการเขียนโค้ดแบบเอเจนต์ การใช้คอมพิวเตอร์ และงานความรู้ ราคาอยู่ที่ US$4 ต่อล้านโทเค็นอินพุต และ US$20 ต่อล้านโทเค็นเอาต์พุต และ Anthropic ระบุว่าต้นทุนต่ำกว่า Opus 5 ประมาณ 40% สำหรับงานทั่วไป</p>
+<p>ด้านความปลอดภัย Anthropic ระบุว่าโมเดลได้คะแนนดีที่สุดในบรรดาโมเดลที่บริษัททดสอบในการตรวจสอบพฤติกรรมอัตโนมัติที่ครอบคลุมเกือบ 2,000 สถานการณ์ และมีแนวโน้มน้อยกว่าโมเดลล่าสุดที่จะทำสิ่งที่ย้อนกลับได้ยากหรือทำนอกขอบเขต บริษัทยังระบุว่าโมเดลมักสงสัยว่ากำลังถูกประเมิน ซึ่งจำกัดว่าการประเมินจะคาดการณ์พฤติกรรมในโลกจริงได้ดีเพียงใด และหน้าเว็บระบุว่า Opus 5.5 มีลายน้ำเพื่อให้สอดคล้องกับ EU AI Act</p>
+<p>เพื่อให้เห็นบริบท คณะกรรมาธิการยุโรป<a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">เผยแพร่ Code of Practice ฉบับสุดท้ายว่าด้วยการทำเครื่องหมายและติดป้ายกำกับคอนเทนต์ที่สร้างด้วย AI</a> ในเดือนมิถุนายน แนวปฏิบัติแบบสมัครใจนี้มุ่งช่วยผู้ให้บริการและผู้นำ Generative AI ไปใช้ให้ปฏิบัติตามข้อผูกพันด้านความโปร่งใสที่มีผลตั้งแต่ 2 สิงหาคม 2026 ซึ่งรวมถึงการติดป้ายกำกับดีปเฟกอย่างชัดเจน การติดป้ายกำกับข้อความที่สร้างด้วย AI ซึ่งเผยแพร่ในเรื่องที่เป็นประโยชน์สาธารณะ และการแจ้งให้ผู้คนทราบเมื่อกำลังโต้ตอบกับระบบ AI เช่น แชตบอต</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>ลายน้ำย้ายคำถามเรื่องการเปิดเผยการใช้ AI จากนโยบายเข้าไปอยู่ในตัวโมเดล หากคอนเทนต์ที่ทีมของคุณสร้างมีเครื่องหมายที่เครื่องอ่านได้ คำกล่าวว่า "เราไม่ได้ใช้ AI" ก็เป็นข้อกล่าวอ้างที่ตรวจสอบได้ สำหรับแบรนด์ สิ่งนี้เปลี่ยนต้นทุนของการประมาทเรื่องการเปิดเผย</p>
+<p>ข้อผูกพันในยุโรปไม่ได้มีไว้สำหรับผู้ให้บริการโมเดลเท่านั้น ผู้นำไปใช้ ซึ่งรวมถึงบริษัทที่เผยแพร่คอนเทนต์ที่สร้างด้วย AI ก็มีหน้าที่ด้วย ทีมการตลาดที่ใช้แชตบอต เผยแพร่วิดีโอสังเคราะห์ หรือนำข้อความที่ AI เขียนไปเผยแพร่ในเรื่องที่เป็นประโยชน์สาธารณะ ต้องมีแนวปฏิบัติด้านการติดป้ายกำกับ ไม่ใช่แค่มีโมเดลที่บังเอิญใส่ลายน้ำ</p>
+<p>ข้อสังเกตเรื่องการประเมินนั้นละเอียดอ่อนกว่า และสำหรับผม น่าสนใจกว่า หากโมเดลมีพฤติกรรมต่างไปเมื่อสงสัยว่ากำลังถูกทดสอบ ผลการทดสอบก็เป็นการประมาณการในแง่ดี สิ่งนี้ใช้กับคำกล่าวอ้างของผู้ขายเกี่ยวกับโมเดลที่มีความสามารถใด ๆ รวมถึงโมเดลที่ขับเคลื่อนการตลาดของคุณ</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>ผมเสนอใน Forbes มานานแล้วว่า<a href="https://www.forbes.com/councils/forbestechcouncil/2024/02/28/why-transparency-matters-for-todays-marketing-driven-companies/" target="_blank" rel="noopener">ความโปร่งใสสำคัญต่อบริษัทที่ขับเคลื่อนด้วยการตลาด</a> และความโปร่งใสกับประสิทธิภาพสามารถส่งเสริมกันได้ ซึ่งเป็นแนวคิดที่ผมเรียกว่า<a href="https://www.forbes.com/councils/forbestechcouncil/2024/05/20/redemptive-marketing-the-path-to-resolving-transparency-and-performance-dilemmas-in-digital-advertising/" target="_blank" rel="noopener">การตลาดเชิงไถ่ (redemptive marketing)</a> คอนเทนต์ AI ที่ติดป้ายกำกับคือการทดสอบแนวคิดนั้นโดยตรง ผมคาดว่าผู้ชมจะลงโทษ AI ที่ไม่เปิดเผยมากกว่า AI ที่เปิดเผย และการติดป้ายกำกับอย่างซื่อตรงจะกลายเป็นเครื่องหมายของแบรนด์ที่มั่นใจ</p>
+<p>ด้านการประเมิน งานวิจัยของผมเรื่องการคาดการณ์ประสิทธิภาพครีเอทีฟสอนบทเรียนที่เกี่ยวข้อง ใน <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) และ <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models</a> (ACM TOIS 2025) การคาดการณ์ของโมเดลจะได้รับความเชื่อถือก็ต่อเมื่อถูกตรวจสอบกับสิ่งที่เกิดขึ้นจริงหลังเปิดตัว คะแนนก่อนเปิดตัวคือสมมติฐาน ประสิทธิภาพจริงคือหลักฐาน หากแม้แต่ห้องแล็บเองยังบอกว่าการทดสอบในห้องแล็บอาจมองในแง่ดีเกินไป นักการตลาดก็ควรระมัดระวังเป็นสองเท่าในการเฝ้าติดตามระบบ AI ในการใช้งานจริง ไม่ใช่แค่ตอนจัดซื้อ</p>
+<h2>สิ่งที่ทีมการตลาดควรทำตอนนี้</h2>
+<ul><li>เขียนนโยบายการติดป้ายกำกับ ตัดสินใจว่าแบรนด์ของคุณจะเปิดเผยการใช้ AI เมื่อใด: ภาพและวิดีโอสังเคราะห์ แชตบอต บทความที่ AI เขียน ปรับให้สอดคล้องกับข้อผูกพันของ EU หากคุณดำเนินธุรกิจที่นั่น</li><li>เก็บแหล่งที่มา บันทึกว่าเครื่องมือและโมเดลใดสร้างสินทรัพย์แต่ละชิ้น เพื่อตอบคำถามได้ในภายหลัง</li><li>อย่าลบลายน้ำหรือเมทาดาทา การลบสัญญาณแหล่งที่มาคือทางลัดที่เปลี่ยนทางเลือกด้านการออกแบบให้กลายเป็นปัญหาด้านการปฏิบัติตามกฎ</li><li>เฝ้าติดตามในการใช้งานจริง ติดตามข้อร้องเรียน การแก้ไข และผลลัพธ์ที่ไม่ตรงกับแบรนด์จากระบบ AI หลังเปิดตัว ไม่ใช่แค่คะแนนทดสอบก่อนเปิดตัว</li><li>ถามผู้ขายเรื่องพฤติกรรมในโลกจริง พวกเขาตรวจสอบอย่างไรว่าโมเดลมีพฤติกรรมเหมือนเดิมนอกการประเมิน?</li></ul>
+<p>Opus 5.5 เป็นโมเดลที่มีความสามารถ และการลดราคาจะมีความหมายต่อหลายทีม แต่การเปลี่ยนแปลงที่ยั่งยืนกว่าคือความคาดหวังที่มันสะท้อน: คอนเทนต์ AI ควรระบุได้ และพฤติกรรมของ AI ควรได้รับการตรวจสอบในที่ที่มันทำงานจริง</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>Claude Opus 5.5 คืออะไร?</summary><p>คือโมเดลแรกในตระกูล Claude 5.5 ของ Anthropic เปิดตัวเมื่อวันที่ 22 กันยายน 2026 Anthropic ระบุว่าทำงานได้ในระดับของ Claude Fable 5.1 ในงานส่วนใหญ่ นำเบนช์มาร์กด้านการเขียนโค้ดแบบเอเจนต์ การใช้คอมพิวเตอร์ และงานความรู้ และมีต้นทุนต่ำกว่า Opus 5 ประมาณ 40% สำหรับงานทั่วไป</p></details><details><summary>Claude Opus 5.5 ใส่ลายน้ำในผลลัพธ์หรือไม่?</summary><p>ประกาศของ Anthropic ระบุว่า Opus 5.5 มีลายน้ำเพื่อให้สอดคล้องกับ EU AI Act</p></details><details><summary>กฎความโปร่งใสด้าน AI ของ EU กำหนดอะไรสำหรับนักการตลาด?</summary><p>ตามข้อมูลของคณะกรรมาธิการยุโรป ข้อผูกพันด้านความโปร่งใสที่มีผลตั้งแต่ 2 สิงหาคม 2026 รวมถึงการติดป้ายกำกับดีปเฟกอย่างชัดเจน การติดป้ายกำกับข้อความที่สร้างด้วย AI ซึ่งเผยแพร่ในเรื่องที่เป็นประโยชน์สาธารณะ และการแจ้งให้ผู้คนทราบเมื่อโต้ตอบกับระบบ AI เช่น แชตบอต ผู้นำ Generative AI ไปใช้ ไม่ใช่แค่ผู้ให้บริการ ก็มีหน้าที่ด้วย</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener">Introducing Claude Opus 5.5</a> — Anthropic, 22 September 2026</li><li translate="no"><a href="https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content" target="_blank" rel="noopener">Commission publishes Code of Practice on marking and labelling AI-generated content</a> — European Commission, 10 June 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">โมเดล · 7 ตุลาคม 2026</span><h3>Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด</h3><p>Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">โมเดล · 30 กันยายน 2026</span><h3>Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?</h3><p>Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">โมเดล · 29 กันยายน 2026</span><h3>ทำไม OpenAI จึงพักการเปิดตัว GPT-6.1 Astra และทำไมจึงสำคัญ</h3><p>OpenAI ยกเลิกการเปิดตัว GPT-6.1 Astra หลังการทดสอบพบปัญหาด้านขอบเขต การอนุญาต และวิธีรายงานผลกลับ การทดสอบเดียวกันนี้ใช้กับเอเจนต์ของคุณได้</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

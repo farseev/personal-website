@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="ผู้พิพากษาสหรัฐฯ ยกฟ้องคดีผูกขาดของ Penske Media เรื่อง AI Overviews ของ Google โดยไม่พบ &#x27;ข้อตกลงอย่างเป็นทางการ&#x27; เรื่องทราฟฟิก แบรนด์ควรทำอย่างไรกับ GEO" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI | Prof. Aleks Farseev" />
+<meta property="og:description" content="ผู้พิพากษาสหรัฐฯ ยกฟ้องคดีผูกขาดของ Penske Media เรื่อง AI Overviews ของ Google โดยไม่พบ &#x27;ข้อตกลงอย่างเป็นทางการ&#x27; เรื่องทราฟฟิก แบรนด์ควรทำอย่างไรกับ GEO" />
+<meta property="og:url" content="https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="การค้นหาด้วย AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="ผู้พิพากษาสหรัฐฯ ยกฟ้องคดีผูกขาดของ Penske Media เรื่อง AI Overviews ของ Google โดยไม่พบ &#x27;ข้อตกลงอย่างเป็นทางการ&#x27; เรื่องทราฟฟิก แบรนด์ควรทำอย่างไรกับ GEO" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/#article","mainEntityOfPage":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/","url":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/","headline":"คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI","description":"ผู้พิพากษาสหรัฐฯ ยกฟ้องคดีผูกขาดของ Penske Media เรื่อง AI Overviews ของ Google โดยไม่พบ 'ข้อตกลงอย่างเป็นทางการ' เรื่องทราฟฟิก แบรนด์ควรทำอย่างไรกับ GEO","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"การค้นหาด้วย AI","about":{"@type":"Thing","name":"ผู้พิพากษาศาลแขวงสหรัฐฯ Amit Mehta ยกฟ้องคดีผูกขาดของ Penske Media และ Chegg เรื่อง AI Overviews ของ Google"},"wordCount":856,"citation":[{"@type":"CreativeWork","name":"Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google","url":"https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/","publisher":"Press Gazette","datePublished":"2026-10-01"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/#faq","mainEntity":[{"@type":"Question","name":"ทำไมคดีของ Penske Media ต่อ Google จึงถูกยกฟ้อง?","acceptedAnswer":{"@type":"Answer","text":"ตามรายงานของ Press Gazette ผู้พิพากษา Amit Mehta ไม่พบ \"ข้อตกลงอย่างเป็นทางการ\" ระหว่างผู้เผยแพร่กับ Google ในการแลกการเก็บข้อมูลหน้าเว็บกับทราฟฟิก โดยเขียนว่าความคาดหวังเรื่องทราฟฟิก \"ไม่ใช่ข้อตกลง\" และปฏิเสธข้อกล่าวอ้างว่าการค้นหาและ AI Overviews เป็นผลิตภัณฑ์แยกกันที่ถูกผูกมัดเข้าด้วยกันอย่างผิดกฎหมาย"}},{"@type":"Question","name":"คำตัดสินคดี Penske เป็นที่สุดแล้วหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"ไม่ Press Gazette รายงานเมื่อวันที่ 30 ตุลาคม 2026 ว่า Penske และ Chegg กำลังอุทธรณ์คำสั่งยกฟ้อง"}},{"@type":"Question","name":"หลังคำตัดสิน แบรนด์ควรทำอย่างไรกับการมองเห็นในการค้นหาด้วย AI?","acceptedAnswer":{"@type":"Answer","text":"วางแผนรับมือกับการคลิกที่น้อยลงในคำค้นหาเชิงข้อมูล เผยแพร่คอนเทนต์ที่เจาะจงและระบุที่มาได้ซึ่งระบบ AI อ้างอิงได้ ดูแลข้อเท็จจริงของสินค้าให้สอดคล้องกันในทุกเว็บไซต์ ชั่งน้ำหนักการตัดสินใจเลือกไม่เข้าร่วมอย่างรอบคอบ และสร้างช่องทางตรงสู่ลูกค้า"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI","item":"https://farseev.com/th/blog/penske-google-ai-overviews-lawsuit-dismissed/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/penske-google-ai-overviews-lawsuit-dismissed/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/penske-google-ai-overviews-lawsuit-dismissed/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/penske-google-ai-overviews-lawsuit-dismissed/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/penske-google-ai-overviews-lawsuit-dismissed/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/penske-google-ai-overviews-lawsuit-dismissed/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/penske-google-ai-overviews-lawsuit-dismissed/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/penske-google-ai-overviews-lawsuit-dismissed/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · การค้นหาด้วย AI</p>
+      <h1 class="h-display">คดี Penske v. Google ถูกยกฟ้อง: ความหมายต่อการมองเห็นใน AI</h1>
+      <p class="lead">ผู้พิพากษาสหรัฐฯ ยกฟ้องคดีผูกขาดของ Penske Media เรื่อง AI Overviews ของ Google โดยไม่พบ 'ข้อตกลงอย่างเป็นทางการ' เรื่องทราฟฟิก แบรนด์ควรทำอย่างไรกับ GEO</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: ผู้พิพากษาศาลแขวงสหรัฐฯ Amit Mehta ยกฟ้องคดีผูกขาดของ Penske Media และ Chegg เรื่อง AI Overviews ของ Google (<time datetime="2026-10-01">1 ตุลาคม 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>ตลอดสองทศวรรษ เว็บทำงานบนข้อตกลงที่ไม่ได้เขียนไว้: ให้ Google เก็บข้อมูลหน้าเว็บของคุณ แล้ว Google จะส่งผู้เข้าชมมาให้ ในคำตัดสินที่มีรายงานเมื่อวันที่ 1 ตุลาคม ผู้พิพากษาศาลรัฐบาลกลางสหรัฐฯ กล่าวโดยนัยว่าข้อตกลงนั้นไม่เคยเป็นข้อตกลงจริง สำหรับทุกคนที่พึ่งพาทราฟฟิกจากการค้นหา คำตัดสินนี้คือเหตุผลที่ต้องคิดเรื่องการมองเห็นใหม่ตั้งแต่ต้น</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ตามรายงานของ <a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Press Gazette</a> ผู้พิพากษาศาลแขวงสหรัฐฯ Amit Mehta ยกฟ้องคดีผูกขาดของ Penske Media Corporation ต่อ Google เรื่อง AI Overviews และปฏิเสธข้อโต้แย้งในทำนองเดียวกันของ Chegg Penske กล่าวหาว่าสูญเสียทราฟฟิกจากการค้นหา และสูญเสียรายได้จาก affiliate โฆษณา และการสมัครสมาชิก หลังจาก AI Overviews เปิดตัว</p>
+<p>ผู้พิพากษาไม่พบ "ข้อตกลงอย่างเป็นทางการ" ระหว่างผู้เผยแพร่กับ Google เขาเขียนว่าผู้เผยแพร่ "อ้างเพียงว่าพวกเขามี 'ความคาดหวัง' ว่า Google จะส่งทราฟฟิกจากการค้นหามาให้" และ "ความคาดหวังไม่ใช่ข้อตกลง มันเป็นเพียงวิธีที่เสิร์ชเอนจินทั่วไปทำงาน" เขายังปฏิเสธข้อโต้แย้งว่าการค้นหาและ AI Overviews เป็นผลิตภัณฑ์แยกกันที่ Google ผูกมัดเข้าด้วยกันอย่างผิดกฎหมาย และระบุว่า "ศาลไม่ได้มองความเสียหายที่โจทก์กล่าวอ้างอย่างเบาบาง"</p>
+<p>ข้อมูลอัปเดตของ Press Gazette เมื่อวันที่ 30 ตุลาคมเพิ่มเติมว่า Penske และ Chegg กำลังอุทธรณ์ Google กำลังเปิดตัวตัวเลือกใน Search Console ให้ผู้เผยแพร่เลือกไม่เข้าร่วม AI Overviews ตามคำสั่งของ UK Competition and Markets Authority และมีรายงานว่า Google กำลังทดลองจ่ายเงินให้ผู้เผยแพร่ที่คอนเทนต์มีส่วนสำคัญต่อฟีเจอร์ AI ของบริษัท</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>ไม่ว่าผลอุทธรณ์จะเป็นอย่างไร คำตัดสินนี้ทำให้สถานการณ์ชัดเจน: ไม่มีสิทธิตามกฎหมายที่จะได้รับทราฟฟิก เสิร์ชเอนจินตัดสินใจตอบคำถามเองได้ หากโมเดลธุรกิจหรือแผนการตลาดของคุณสันนิษฐานว่าการติดอันดับเท่ากับการเข้าชม คุณกำลังสร้างบนความคาดหวัง ไม่ใช่ข้อตกลง</p>
+<p>นี่ไม่ใช่แค่ปัญหาของผู้เผยแพร่ แบรนด์ก็เผยแพร่เช่นกัน: คู่มือ หน้าสินค้า คอนเทนต์เปรียบเทียบ งานวิจัย ทั้งหมดนี้ตอนนี้เป็นวัตถุดิบสำหรับคำตอบของ AI ที่อาจตอบสนองผู้ใช้ได้โดยไม่ต้องคลิก คำถามจึงเปลี่ยนจาก "ฉันจะติดอันดับได้อย่างไร?" เป็น "ฉันจะได้รับการอ้างอิง ถูกเลือก และถูกจดจำภายในคำตอบได้อย่างไร?" นั่นคือสิ่งที่ตอนนี้เรียกว่า generative engine optimisation หรือ GEO</p>
+<p>ตัวเลือกไม่เข้าร่วมและการทดลองจ่ายเงินทำให้การแลกเปลี่ยนชัดเจน การเลือกไม่เข้าร่วมอาจปกป้องคอนเทนต์ของคุณ แต่ก็ทำให้คุณหายไปจากคำตอบที่ลูกค้าอ่าน สำหรับแบรนด์ส่วนใหญ่ นั่นเป็นราคาที่สูงเกินไป สำหรับผู้เผยแพร่บางราย นั่นอาจเป็นอำนาจต่อรองเดียวที่มี</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>การได้รับการอ้างอิงในคำตอบของ AI โดยแก่นแท้แล้วเป็นปัญหาการดึงข้อมูล งานยุคแรกของผมเรื่อง<a href="https://doi.org/10.1145/3077136.3080774" target="_blank" rel="noopener">การแนะนำข้ามโดเมนผ่านการจัดกลุ่มบนกราฟหลายชั้น</a> (SIGIR 2017) เกี่ยวกับการรวมสัญญาณจากแหล่งต่าง ๆ เพื่อตัดสินว่าจะแนะนำอะไร เครื่องมือตอบคำถามสมัยใหม่คือลูกหลานที่ห่างไกลของแนวคิดนั้น: มันดึงข้อมูล จัดกลุ่ม และเลือกแหล่งที่มาก่อนสร้างคำตอบ คอนเทนต์ที่เจาะจง สอดคล้องกันในหลายแหล่ง และระบุที่มาได้ง่าย มีแนวโน้มจะถูกดึงและถูกเลือกมากกว่า</p>
+<p>งานของผมด้าน AI ที่อธิบายได้ชี้ไปยังอีกครึ่งหนึ่ง ใน <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX</a> (WWW 2025 Companion) เรามุ่งอธิบายการสื่อสารของคู่แข่ง: พวกเขาพูดอะไรและทำไมจึงได้ผล GEO ต้องการวินัยแบบเดียวกัน การรู้ว่าคู่แข่งปรากฏในคำตอบของ AI ยังไม่พอ คุณต้องเข้าใจว่าข้อกล่าวอ้าง รูปแบบ และแหล่งที่มาใดที่ทำให้เป็นเช่นนั้น</p>
+<p>และการวัดผลก็เป็นกับดักในเรื่องนี้เช่นกัน ผมเขียนบน e27 ว่า<a href="https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/" target="_blank" rel="noopener">ทุกแดชบอร์ดเป็นสีเขียว แต่ไม่มีใครบอกได้ว่าอะไรได้ผล</a> เครื่องมือวัดการมองเห็นใน AI จะเพิ่มตัวเลขสีเขียวอีกชุด มองมันเป็นสัญญาณ ทดสอบเทียบกับผลลัพธ์ และอย่าสับสนระหว่างการถูกกล่าวถึงกับลูกค้า</p>
+<h2>สิ่งที่ผู้เผยแพร่และแบรนด์ควรทำตอนนี้</h2>
+<ul><li>เลิกวางแผนโดยถือว่าทราฟฟิกเป็นสิทธิ จำลองฉากทัศน์ที่คำค้นหาเชิงข้อมูลได้รับคำตอบโดยไม่มีการคลิก และตัดสินใจว่าคอนเทนต์ใดยังคุ้มค่ากับต้นทุน</li><li>เขียนเพื่อให้ได้รับการอ้างอิง ข้อกล่าวอ้างที่ชัดเจน ข้อมูลต้นฉบับ ชื่อผู้เขียน วันที่ และแหล่งที่มา ทำให้ระบบ AI ดึงและระบุที่มาของคอนเทนต์ได้ง่ายขึ้น</li><li>สอดคล้องกันทั่วทั้งเว็บ เครื่องมือตอบคำถามตรวจสอบไขว้ ข้อเท็จจริงเกี่ยวกับสินค้าของคุณควรตรงกันทั้งบนเว็บไซต์ของคุณ มาร์เก็ตเพลส และหน้าของพันธมิตร</li><li>ตัดสินใจเรื่องการเลือกไม่เข้าร่วมอย่างรอบคอบ ชั่งน้ำหนักการมองเห็นที่เสียไปกับอำนาจต่อรองที่ได้มา แยกตามประเภทหน้า ไม่ใช่ทั้งเว็บไซต์ตามความเคยชิน</li><li>สร้างความสัมพันธ์โดยตรง จดหมายข่าว ชุมชน และแอปคือช่องทางที่ไม่มีคำตัดสินใดพรากไปได้</li></ul>
+<p>ศาลยังไม่ได้ตัดสินคำถามที่ใหญ่กว่าว่าการค้นหาด้วย AI ติดค้างอะไรต่อผู้คนที่มันอ่านผลงาน แต่ได้ตัดสินประเด็นเชิงปฏิบัติข้อหนึ่งไว้แล้วในตอนนี้: ไม่มีใครมีสิทธิได้รับคลิก</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>ทำไมคดีของ Penske Media ต่อ Google จึงถูกยกฟ้อง?</summary><p>ตามรายงานของ Press Gazette ผู้พิพากษา Amit Mehta ไม่พบ "ข้อตกลงอย่างเป็นทางการ" ระหว่างผู้เผยแพร่กับ Google ในการแลกการเก็บข้อมูลหน้าเว็บกับทราฟฟิก โดยเขียนว่าความคาดหวังเรื่องทราฟฟิก "ไม่ใช่ข้อตกลง" และปฏิเสธข้อกล่าวอ้างว่าการค้นหาและ AI Overviews เป็นผลิตภัณฑ์แยกกันที่ถูกผูกมัดเข้าด้วยกันอย่างผิดกฎหมาย</p></details><details><summary>คำตัดสินคดี Penske เป็นที่สุดแล้วหรือไม่?</summary><p>ไม่ Press Gazette รายงานเมื่อวันที่ 30 ตุลาคม 2026 ว่า Penske และ Chegg กำลังอุทธรณ์คำสั่งยกฟ้อง</p></details><details><summary>หลังคำตัดสิน แบรนด์ควรทำอย่างไรกับการมองเห็นในการค้นหาด้วย AI?</summary><p>วางแผนรับมือกับการคลิกที่น้อยลงในคำค้นหาเชิงข้อมูล เผยแพร่คอนเทนต์ที่เจาะจงและระบุที่มาได้ซึ่งระบบ AI อ้างอิงได้ ดูแลข้อเท็จจริงของสินค้าให้สอดคล้องกันในทุกเว็บไซต์ ชั่งน้ำหนักการตัดสินใจเลือกไม่เข้าร่วมอย่างรอบคอบ และสร้างช่องทางตรงสู่ลูกค้า</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://pressgazette.co.uk/news/penske-ai-overviews-lawsuit-dismissed-because-no-formal-bargain-struck-with-google/" target="_blank" rel="noopener">Penske AI Overviews lawsuit dismissed because 'no formal bargain' struck with Google</a> — Press Gazette, 1 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/adobe-ai-traffic-retail-conversion-2026/"><span class="meta">การค้นหาด้วย AI · 29 ตุลาคม 2026</span><h3>Adobe: ทราฟฟิกจาก AI แปลงเป็นยอดขายได้ดีกว่าการเข้าชมอื่น</h3><p>Adobe ระบุว่าการเข้าชมร้านค้าปลีกในสหรัฐฯ ที่มาจาก AI มีอัตราการแปลงสูงกว่าทราฟฟิกอื่น 90% ในเดือนกันยายน เหตุใดคำตอบจาก AI จึงกลายเป็นช่องทาง และควรทำอย่างไร</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/google-ai-mode-ads-singapore-expansion/"><span class="meta">การค้นหาด้วย AI · 28 ตุลาคม 2026</span><h3>โฆษณาใน AI Mode ของ Google มาถึงสิงคโปร์และตลาดอื่น</h3><p>Google กำลังขยายโฆษณาใน AI Mode ไปยังสิบตลาด รวมถึงสิงคโปร์ มาเลเซีย และฟิลิปปินส์ นี่คือสิ่งที่เปลี่ยนไปเมื่อโฆษณาอยู่ภายในคำตอบ</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/chatgpt-sponsored-agents-ads-expansion/"><span class="meta">การค้นหาด้วย AI · 21 ตุลาคม 2026</span><h3>โฆษณาใน ChatGPT กลายเป็นบทสนทนา: Sponsored Agents</h3><p>OpenAI กำลังทดสอบ Sponsored Agents ใน ChatGPT และขยายโฆษณาใน ChatGPT ไปยัง 89 ประเทศ เมื่อโฆษณาพูดตอบได้ การติดป้ายกำกับและความซื่อตรงก็กลายเป็นตัวสินค้า</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ? | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/gemini-4-argon-long-horizon-ai/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ? | Prof. Aleks Farseev" />
+<meta property="og:description" content="Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร" />
+<meta property="og:url" content="https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="โมเดล" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ? | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/#article","mainEntityOfPage":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/","url":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/","headline":"Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?","description":"Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"โมเดล","about":{"@type":"Thing","name":"Google DeepMind เปิดตัว Gemini 4 Argon โมเดลแนวหน้าสำหรับงานยาวหลายขั้นตอน"},"wordCount":814,"citation":[{"@type":"CreativeWork","name":"Gemini 4 Argon: our next era of frontier intelligence","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/","publisher":"Google (The Keyword)","datePublished":"2026-09-30"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/#faq","mainEntity":[{"@type":"Question","name":"Gemini 4 Argon คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"คือโมเดลแนวหน้าของ Google DeepMind ที่เปิดตัวเมื่อวันที่ 30 กันยายน 2026 สำหรับการเขียนโค้ดในโลกจริง งานความรู้ในองค์กร และการป้องกันทางไซเบอร์ มีขีดจำกัดเอาต์พุต 1 ล้านโทเค็น เพิ่มจาก 64,000"}},{"@type":"Question","name":"ใครใช้ Gemini 4 Argon ได้ก่อน?","acceptedAnswer":{"@type":"Answer","text":"Google ระบุว่าจะเปิดให้ผู้ป้องกันทางไซเบอร์ที่เชื่อถือได้ผ่าน Fairwind Program ก่อน โดยวางแผนเปิดกว้างขึ้นสำหรับนักพัฒนา องค์กร และผู้บริโภค เริ่มจากลูกค้า API แบบจ่ายเงินและผู้สมัคร Google AI Ultra"}},{"@type":"Question","name":"Gemini 4 Argon ราคาเท่าไร?","acceptedAnswer":{"@type":"Answer","text":"Google ระบุราคาช่วงแนะนำที่ US$2 ต่อล้านโทเค็นอินพุต และ US$10 ต่อล้านโทเค็นเอาต์พุต เพิ่มเป็น US$4 และ US$20 หลังช่วงแนะนำ โดยโทเค็นอินพุตที่แคชไว้ลด 95%"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?","item":"https://farseev.com/th/blog/gemini-4-argon-long-horizon-ai/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/gemini-4-argon-long-horizon-ai/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/gemini-4-argon-long-horizon-ai/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/gemini-4-argon-long-horizon-ai/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/gemini-4-argon-long-horizon-ai/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/gemini-4-argon-long-horizon-ai/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/gemini-4-argon-long-horizon-ai/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/gemini-4-argon-long-horizon-ai/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · โมเดล</p>
+      <h1 class="h-display">Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?</h1>
+      <p class="lead">Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: Google DeepMind เปิดตัว Gemini 4 Argon โมเดลแนวหน้าสำหรับงานยาวหลายขั้นตอน (<time datetime="2026-09-30">30 กันยายน 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>หน้าต่างบริบท (context window) เคยเป็นสนามแข่งขัน Gemini 4 Argon ย้ายความสนใจไปยังอีกด้านของโมเดล: มันผลิตได้มากเพียงใดในครั้งเดียว เมื่อวันที่ 30 กันยายน Google DeepMind เปิดตัว Argon ที่มีขีดจำกัดเอาต์พุตหนึ่งล้านโทเค็น เพิ่มจาก 64,000 นั่นคือคำตอบยาวเท่าหนังสือหนึ่งเล่ม คำถามที่น่าสนใจกว่าสำหรับนักการตลาดคืองานแบบไหนที่ต้องการมัน</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ใน<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">ประกาศของ Google</a> Koray Kavukcuoglu อธิบาย Argon ว่าเป็นโมเดลแนวหน้าของ Google "สำหรับการเขียนโค้ดในโลกจริง งานความรู้ในองค์กร และการป้องกันทางไซเบอร์" ขีดจำกัดโทเค็นเอาต์พุตขยายเป็น 1M และโมเดลออกแบบมาสำหรับงานยาวหลายขั้นตอนด้านวิศวกรรมซอฟต์แวร์ งานกฎหมายและการเงิน และความมั่นคงปลอดภัยไซเบอร์ พร้อมความเข้าใจภาพที่แข็งแกร่ง เช่น การวิเคราะห์แผนภูมิและการทำความเข้าใจวิดีโอยาว</p>
+<p>การเปิดตัวนี้ไม่ธรรมดา Argon ให้บริการแก่กลุ่มผู้ป้องกันทางไซเบอร์ที่เชื่อถือได้ผ่าน Fairwind Program ของ Google ก่อน โดยวางแผนขยายการเข้าถึงไปยังนักพัฒนา องค์กร และผู้บริโภค เริ่มจากลูกค้า API แบบจ่ายเงินและผู้สมัคร Google AI Ultra ราคาช่วงแนะนำอยู่ที่ US$2 ต่อล้านโทเค็นอินพุต และ US$10 ต่อล้านโทเค็นเอาต์พุต เพิ่มเป็น US$4 และ US$20 หลังช่วงแนะนำ โดยอินพุตที่แคชไว้ลด 95%</p>
+<p>Google ระบุผลเบนช์มาร์ก รวมถึง 77.9% บน DeepSWE v1.1 และ 91.7% บนเบนช์มาร์กวิดีโอยาว LVBench และอธิบายการใช้งานภายใน เช่น การย้ายโค้ดขนาดใหญ่ บริษัทยังอธิบายมาตรการความปลอดภัย รวมถึงการเฝ้าติดตามการใช้ในทางที่ผิดและความไม่สอดคล้อง และความทนทานต่อ indirect prompt injection ผลลัพธ์เหล่านี้เป็นของ Google เอง</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>เอาต์พุตล้านโทเค็นไม่ได้เกี่ยวกับการเขียนบล็อกโพสต์ให้ยาวขึ้น เอาต์พุตยาวสำคัญเมื่องานคือการผลิตชิ้นงานที่สมบูรณ์ในรอบเดียวอย่างสอดคล้อง: การย้ายโค้ดเบสทั้งหมด ชุดสัญญา ชุดข้อมูลที่มีโครงสร้างขนาดใหญ่ ในการตลาด สิ่งที่ใกล้เคียงที่สุดคือการเขียนฟีดสินค้าใหม่ทั้งหมด การแปลเว็บไซต์ทั้งเว็บ หรือคลังแคมเปญที่มีเวอร์ชันประสานกันหลายร้อยชิ้น</p>
+<p>สำหรับผม ความสามารถในการทำความเข้าใจวิดีโอยาวมีประโยชน์ทันทีมากกว่า วิดีโอครองแพลตฟอร์มโซเชียล และแบรนด์ส่วนใหญ่ยังวิเคราะห์ด้วยการดูตัวอย่างและจดบันทึก โมเดลที่อ่านวิดีโอยาวได้อย่างน่าเชื่อถือในระดับใหญ่เปิดทางให้การวิเคราะห์คู่แข่งและหมวดหมู่ที่เคยทำอย่างละเอียดไม่ได้</p>
+<p>และการเปิดตัวที่ให้ความสำคัญกับไซเบอร์ก่อนเป็นสัญญาณว่าห้องแล็บแนวหน้าคิดว่าความเสี่ยงอยู่ที่ใด เมื่อห้องแล็บให้ผู้ป้องกันเข้าถึงก่อนคนอื่น มันกำลังบอกคุณว่าโมเดลมีความสามารถมากพอที่จะมีความหมายต่อผู้โจมตีด้วย</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>งานวิจัยส่วนใหญ่ของผมเกี่ยวกับมัลติมีเดียโซเชียล ไม่ใช่ข้อความเพียงอย่างเดียว ในช่วงแรกเราสร้าง <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> (ACM Multimedia 2016) แพลตฟอร์มบิ๊กดาต้าสำหรับวิเคราะห์มัลติมีเดียโซเชียลข้ามเครือข่าย ล่าสุดใน <a href="https://doi.org/10.1145/3701716.3715198" target="_blank" rel="noopener">SOEX: Explainable AI for Competitor Communications Analytics</a> (WWW 2025 Companion) เรามุ่งอธิบายว่าคู่แข่งสื่อสารอะไรและทำไมจึงได้ผล</p>
+<p>บทเรียนจากงานนั้นคือ ขนาดของการวิเคราะห์เป็นเพียงครึ่งหนึ่งของปัญหา โมเดลที่ดูวิดีโอคู่แข่งได้พันชิ้นยังต้องตอบคำถามที่นักกลยุทธ์สนใจ: ข้อความใดซ้ำ ข้อความใดได้ผล มุ่งเป้ากลุ่มใด และเหลือช่องว่างใดไว้ โมเดลบริบทยาวและเอาต์พุตยาวทำให้การอ่านและการเขียนถูกลง การวางกรอบและการตรวจสอบยังคงเป็นส่วนของมนุษย์ โดยมีข้อมูลประสิทธิภาพสนับสนุน</p>
+<p>ผมขอเพิ่มข้อควรระวังหนึ่งข้อ เอาต์พุตที่ยาวมากตรวจสอบได้ยาก เอกสาร 200 หน้าที่สร้างขึ้นอาจถูกต้อง 98% แต่ยังมีข้อกล่าวอ้างข้อเดียวที่ทำให้คุณเดือดร้อน ยิ่งเอาต์พุตยาว คุณยิ่งต้องมีโครงสร้าง การสุ่มตรวจ และการตรวจสอบอัตโนมัติ</p>
+<h2>ผมจะใช้โมเดลระยะยาวในการตลาดอย่างไร</h2>
+<ul><li>ตรวจสอบวิดีโอทั้งหมวดหมู่ ขอข้อค้นพบที่มีโครงสร้างจากวิดีโอคู่แข่งทั้งชุด: จุดดึงดูดความสนใจ ข้อกล่าวอ้าง รูปแบบ และคำกระตุ้นการตัดสินใจ จากนั้นตรวจสอบตัวอย่างด้วยมือ</li><li>คลังสินทรัพย์ที่ประสานกัน สร้างเวอร์ชันทั้งชุดสำหรับแคมเปญในรอบเดียวเพื่อให้น้ำเสียงและข้อกล่าวอ้างสอดคล้องกัน และตรวจทานตามรายการตรวจสอบ</li><li>ร่างการแปลทั้งเว็บไซต์ ผลิตร่างที่สมบูรณ์สำหรับตลาดใหม่ แล้วให้ผู้ตรวจทานที่เป็นเจ้าของภาษาตรวจหน้าที่มีทราฟฟิกสูงก่อน</li><li>เอกสารยาวพร้อมดัชนี กำหนดให้โมเดลจัดทำตารางข้อกล่าวอ้างพร้อมแหล่งที่มา เพื่อให้มนุษย์ตรวจสอบส่วนที่มีความเสี่ยงได้อย่างรวดเร็ว</li></ul>
+<p>ตัวเลขพาดหัวของ Argon น่าประทับใจ คุณค่าสำหรับนักการตลาดจะมาจากการจับคู่ขีดความสามารถนั้นกับวินัยในการตรวจสอบสิ่งที่ได้ออกมา</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>Gemini 4 Argon คืออะไร?</summary><p>คือโมเดลแนวหน้าของ Google DeepMind ที่เปิดตัวเมื่อวันที่ 30 กันยายน 2026 สำหรับการเขียนโค้ดในโลกจริง งานความรู้ในองค์กร และการป้องกันทางไซเบอร์ มีขีดจำกัดเอาต์พุต 1 ล้านโทเค็น เพิ่มจาก 64,000</p></details><details><summary>ใครใช้ Gemini 4 Argon ได้ก่อน?</summary><p>Google ระบุว่าจะเปิดให้ผู้ป้องกันทางไซเบอร์ที่เชื่อถือได้ผ่าน Fairwind Program ก่อน โดยวางแผนเปิดกว้างขึ้นสำหรับนักพัฒนา องค์กร และผู้บริโภค เริ่มจากลูกค้า API แบบจ่ายเงินและผู้สมัคร Google AI Ultra</p></details><details><summary>Gemini 4 Argon ราคาเท่าไร?</summary><p>Google ระบุราคาช่วงแนะนำที่ US$2 ต่อล้านโทเค็นอินพุต และ US$10 ต่อล้านโทเค็นเอาต์พุต เพิ่มเป็น US$4 และ US$20 หลังช่วงแนะนำ โดยโทเค็นอินพุตที่แคชไว้ลด 95%</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: our next era of frontier intelligence</a> — Google (The Keyword), 30 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/claude-haiku-5-5-small-models-marketing/"><span class="meta">โมเดล · 7 ตุลาคม 2026</span><h3>Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด</h3><p>Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">โมเดล · 29 กันยายน 2026</span><h3>ทำไม OpenAI จึงพักการเปิดตัว GPT-6.1 Astra และทำไมจึงสำคัญ</h3><p>OpenAI ยกเลิกการเปิดตัว GPT-6.1 Astra หลังการทดสอบพบปัญหาด้านขอบเขต การอนุญาต และวิธีรายงานผลกลับ การทดสอบเดียวกันนี้ใช้กับเอเจนต์ของคุณได้</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">โมเดล · 22 กันยายน 2026</span><h3>Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI</h3><p>Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

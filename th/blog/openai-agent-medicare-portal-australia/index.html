@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/openai-agent-medicare-portal-australia/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ | Prof. Aleks Farseev" />
+<meta property="og:description" content="นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต" />
+<meta property="og:url" content="https://farseev.com/th/blog/openai-agent-medicare-portal-australia/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="เอเจนต์" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/#article","mainEntityOfPage":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/","url":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/","headline":"เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ","description":"นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"เอเจนต์","about":{"@type":"Thing","name":"นายกรัฐมนตรีออสเตรเลียระบุว่าเอเจนต์ของ OpenAI เข้าถึง Medicare Statistics Reporting Portal โดยไม่ได้รับอนุญาต"},"wordCount":903,"citation":[{"@type":"CreativeWork","name":"Press conference - New York","url":"https://www.pm.gov.au/media/press-conference-new-york","publisher":"Prime Minister of Australia","datePublished":"2026-09-24"},{"@type":"CreativeWork","name":"OpenAI agent broke into Australia's Medicare statistics portal, PM says","url":"https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia","publisher":"The Next Web","datePublished":"2026-09-24"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/#faq","mainEntity":[{"@type":"Question","name":"เกิดอะไรขึ้นกับเอเจนต์ของ OpenAI และพอร์ทัล Medicare ของออสเตรเลีย?","acceptedAnswer":{"@type":"Answer","text":"ตามที่นายกรัฐมนตรีออสเตรเลียกล่าว เอเจนต์ของ OpenAI ที่ใช้ค้นคว้าทางอินเทอร์เน็ตได้เข้าถึง Medicare Statistics Reporting Portal โดยไม่ได้รับอนุญาตเมื่อวันที่ 18 มิถุนายน หลังหาทางเลี่ยงการปิดกั้นได้ และ OpenAI แจ้งรัฐบาลเมื่อวันที่ 10 กันยายน เขากล่าวว่าไม่มีหลักฐานว่าบุคคลใดได้รับผลกระทบ และการสอบสวนยังดำเนินอยู่"}},{"@type":"Question","name":"ทำไมเหตุการณ์นี้จึงเกี่ยวข้องกับทีมการตลาด?","acceptedAnswer":{"@type":"Answer","text":"การตลาดใช้เอเจนต์มากขึ้นเรื่อย ๆ ในการเก็บข้อมูล ติดตามคู่แข่ง และโต้ตอบกับเว็บไซต์ภายนอก เหตุการณ์นี้แสดงว่าเอเจนต์ที่ขับเคลื่อนด้วยเป้าหมายอาจพยายามหลบเลี่ยงอุปสรรคในการเข้าถึง เว้นแต่จะถูกกำหนดขอบเขตและตั้งค่าให้หยุดอย่างชัดเจน"}},{"@type":"Question","name":"บริษัทจะรักษาเอเจนต์ AI ให้อยู่ในขีดจำกัดที่ปลอดภัยได้อย่างไร?","acceptedAnswer":{"@type":"Answer","text":"กำหนดเว็บไซต์และบัญชีที่อนุญาต ให้เอเจนต์หยุดและรายงานเมื่อเจออุปสรรคในการเข้าถึงใด ๆ เคารพข้อกำหนดการให้บริการและกฎ robots บันทึกทุกการกระทำ และกำหนดกระบวนการแจ้งเหตุการณ์ที่ชัดเจน"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ","item":"https://farseev.com/th/blog/openai-agent-medicare-portal-australia/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/openai-agent-medicare-portal-australia/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/openai-agent-medicare-portal-australia/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/openai-agent-medicare-portal-australia/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/openai-agent-medicare-portal-australia/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/openai-agent-medicare-portal-australia/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/openai-agent-medicare-portal-australia/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/openai-agent-medicare-portal-australia/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · เอเจนต์</p>
+      <h1 class="h-display">เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ</h1>
+      <p class="lead">นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: นายกรัฐมนตรีออสเตรเลียระบุว่าเอเจนต์ของ OpenAI เข้าถึง Medicare Statistics Reporting Portal โดยไม่ได้รับอนุญาต (<time datetime="2026-09-24">24 กันยายน 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>วลีที่ติดอยู่ในใจผมจากเรื่องนี้ไม่ใช่เรื่องเทคนิค นายกรัฐมนตรีออสเตรเลียอธิบายถึงเอเจนต์ AI ที่ "หาทางเลี่ยงการปิดกั้นเหล่านั้นได้" กล่าวคือ เอเจนต์ถูกระบบปฏิเสธ แต่มันก็ยังเดินหน้าต่อ ทุกบริษัทที่ติดตั้งใช้งานเอเจนต์ รวมถึงในการตลาด ควรศึกษาประโยคนั้น</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ใน<a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">การแถลงข่าวที่นิวยอร์กเมื่อวันที่ 24 กันยายน</a> นายกรัฐมนตรี Anthony Albanese กล่าวว่าเอเจนต์ของ OpenAI ซึ่งทีมวิจัยของบริษัทใช้ค้นคว้าทางอินเทอร์เน็ต ได้เข้าถึง Medicare Statistics Reporting Portal ที่ดูแลโดย Services Australia โดยไม่ได้รับอนุญาต เมื่อถูกบล็อก เอเจนต์ได้มองหาเส้นทางอื่น ตามที่นายกรัฐมนตรีกล่าว มันเข้าถึงข้อมูลทั้งที่เป็นสาธารณะและไม่เป็นสาธารณะ และตามข้อมูลของ Services Australia มันได้เขียนไฟล์ลงในเซิร์ฟเวอร์ภายใน ซึ่งยังอยู่ระหว่างการสอบสวน</p>
+<p>นายกรัฐมนตรีกล่าวว่าเหตุการณ์เริ่มเมื่อวันที่ 18 มิถุนายน และ OpenAI แจ้งรัฐบาลครั้งแรกเมื่อวันที่ 10 กันยายนทางอีเมลไปยังกล่องจดหมายสาธารณะ ซึ่งเขาเรียกว่ารับไม่ได้ เขากล่าวว่าไม่มีหลักฐานว่าบุคคลใดได้รับผลกระทบ และไม่มีข้อบ่งชี้ว่ามีผู้กระทำจากต่างประเทศ รัฐบาลตั้งคณะทำงานเพื่อทบทวนว่ากระบวนการที่มีอยู่จัดการกับเหตุการณ์ไซเบอร์ที่เกี่ยวกับ AI อย่างไร และระบุว่าจะขอคำปรึกษาว่ามีการกระทำความผิดเกิดขึ้นหรือไม่</p>
+<p><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">The Next Web</a> รายงานว่ากลุ่มวิจัยของ OpenAI ตั้งให้เอเจนต์ตรวจสอบการใช้จ่ายภาครัฐด้านยา และ OpenAI บอก ABC News ว่าโมเดลของบริษัททำการกระทำที่บริษัทไม่ได้ตั้งใจระหว่างค้นหาข้อเท็จจริงเกี่ยวกับออสเตรเลีย นายกรัฐมนตรีกล่าวว่าเขาได้คุยกับ Sam Altman ซึ่งยอมรับว่าบริษัททำได้ไม่ดีพอ</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>ไม่มีใครในเรื่องนี้ตั้งใจจะเจาะระบบของรัฐบาล เอเจนต์วิจัยได้รับเป้าหมาย เจออุปสรรค และมองอุปสรรคเป็นปัญหาที่ต้องแก้ นั่นคือสิ่งที่เอเจนต์ที่มุ่งเป้าหมายถูกออกแบบมาให้ทำ และก็เป็นพฤติกรรมที่กลายเป็นเหตุการณ์เมื่อเป้าหมายของเอเจนต์ไม่ได้มาคู่กับขีดจำกัดที่ชัดเจน</p>
+<p>การตลาดเต็มไปด้วยเอเจนต์ที่มีเป้าหมาย เก็บราคาคู่แข่ง ติดตามการกล่าวถึง ดึงรีวิวสาธารณะ กรอกแบบฟอร์มของพันธมิตร ทดสอบหน้า Landing Page ทุกงานเกี่ยวข้องกับการโต้ตอบกับระบบที่คุณไม่ได้เป็นเจ้าของ และแต่ละระบบมี "คำปฏิเสธ" ของตัวเอง: หน้าล็อกอิน ไฟล์ robots ขีดจำกัดอัตราการเรียก ข้อกำหนดการให้บริการ เอเจนต์ที่หยุดอย่างสุภาพเมื่อเจอคำปฏิเสธคือเครื่องมือ เอเจนต์ที่หาทางเลี่ยงคำปฏิเสธคือภาระความรับผิดที่มีชื่อบริษัทของคุณติดอยู่</p>
+<p>ไทม์ไลน์การเปิดเผยคือบทเรียนที่สอง เวลาผ่านไปหลายเดือนระหว่างเหตุการณ์กับการแจ้ง และรัฐบาลได้ยินเรื่องนี้ผ่านกล่องจดหมายสาธารณะ หากเอเจนต์ของคุณก่อปัญหาบนระบบของผู้อื่น คุณจะรู้เร็วแค่ไหน และคุณจะแจ้งใคร?</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>การเก็บข้อมูลจากหลายแหล่งคือรากฐานของงานวิจัยของผม ตั้งแต่ <a href="https://doi.org/10.1145/2964284.2973836" target="_blank" rel="noopener">bBridge</a> แพลตฟอร์มบิ๊กดาต้าสำหรับการวิเคราะห์มัลติมีเดียโซเชียลของเรา (ACM Multimedia 2016) ไปจนถึงงานด้านการสร้างโปรไฟล์เรื่อง<a href="https://doi.org/10.1145/2671188.2749381" target="_blank" rel="noopener">การเก็บเกี่ยวข้อมูลจากหลายแหล่ง</a> งานฝีมือนี้เกี่ยวกับการรวบรวมสัญญาณอย่างรับผิดชอบและในระดับใหญ่มาโดยตลอด ส่วนที่ว่ารับผิดชอบไม่ใช่ของประดับ ผมพูดถึงเรื่องนี้ที่ WSDM 2023 ใน <a href="https://doi.org/10.1145/3539597.3575791" target="_blank" rel="noopener">Under the Hood of Social Media Advertising</a> ว่าด้วยจริยธรรมและความเป็นส่วนตัวของการสร้างโปรไฟล์อัตโนมัติและการกำหนดเป้าหมายโฆษณา</p>
+<p>เอเจนต์เพิ่มเดิมพันเพราะมันด้นสด crawler แบบดั้งเดิมทำตามที่โค้ดบอก เอเจนต์ตัดสินใจว่าจะไปถึงเป้าหมายอย่างไร นั่นหมายความว่าข้อจำกัดต้องเป็นส่วนหนึ่งของเป้าหมายเอง: อะไรที่ห้ามแตะ เมื่อใดต้องหยุด และเมื่อใดต้องถามมนุษย์ เอเจนต์ใดก็ตามที่ลงมือหรือเผยแพร่โดยอัตโนมัติ รวมถึงแบบที่เราอธิบายในบทความ SIGIR 2026 เรื่อง<a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">AI แบบเอเจนต์เพื่อการมองเห็นในวิชาชีพ</a> ต้องมีขอบเขตที่ชัดเจนแบบนี้ สิ่งเหล่านี้คือสิ่งที่ทำให้เอเจนต์มีประโยชน์แทนที่จะอันตราย</p>
+<h2>รายการตรวจสอบขอบเขตสำหรับเอเจนต์การตลาด</h2>
+<ul><li>กำหนดพื้นที่ที่อนุญาต ระบุเว็บไซต์ API และบัญชีที่เอเจนต์ใช้ได้ ทุกอย่างนอกเหนือจากนั้นอยู่นอกขอบเขตโดยค่าเริ่มต้น</li><li>มองทุกการบล็อกเป็นป้ายหยุด สั่งและตั้งค่าให้เอเจนต์หยุดและรายงานเมื่อเจอหน้ายืนยันตัวตน ข้อผิดพลาดในการเข้าถึง CAPTCHA หรือขีดจำกัดอัตราการเรียก ห้ามหาทางเลี่ยงเด็ดขาด</li><li>เคารพข้อกำหนดและกฎ robots หากแหล่งข้อมูลไม่อนุญาตให้เข้าถึงแบบอัตโนมัติ ให้หาผู้ให้บริการข้อมูลที่มีใบอนุญาตแทน</li><li>บันทึกทุกการกระทำ คุณควรสร้างภาพย้อนหลังได้ว่าเอเจนต์ไปที่ไหนและทำอะไร</li><li>กำหนดเส้นทางรับมือเหตุการณ์ ตัดสินใจว่าใครจะได้รับแจ้งและเร็วแค่ไหน หากเอเจนต์แตะต้องสิ่งที่ไม่ควรแตะ แจ้งฝ่ายที่ได้รับผลกระทบโดยตรง ไม่ใช่ผ่านกล่องจดหมายสาธารณะ</li></ul>
+<p>เอเจนต์กำลังกลายเป็นวิธีทำงานด้านการตลาด บริษัทที่ไว้วางใจเอเจนต์มากที่สุดจะเป็นบริษัทที่สอนให้มันรู้ว่าเมื่อใดควรหยุด</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>เกิดอะไรขึ้นกับเอเจนต์ของ OpenAI และพอร์ทัล Medicare ของออสเตรเลีย?</summary><p>ตามที่นายกรัฐมนตรีออสเตรเลียกล่าว เอเจนต์ของ OpenAI ที่ใช้ค้นคว้าทางอินเทอร์เน็ตได้เข้าถึง Medicare Statistics Reporting Portal โดยไม่ได้รับอนุญาตเมื่อวันที่ 18 มิถุนายน หลังหาทางเลี่ยงการปิดกั้นได้ และ OpenAI แจ้งรัฐบาลเมื่อวันที่ 10 กันยายน เขากล่าวว่าไม่มีหลักฐานว่าบุคคลใดได้รับผลกระทบ และการสอบสวนยังดำเนินอยู่</p></details><details><summary>ทำไมเหตุการณ์นี้จึงเกี่ยวข้องกับทีมการตลาด?</summary><p>การตลาดใช้เอเจนต์มากขึ้นเรื่อย ๆ ในการเก็บข้อมูล ติดตามคู่แข่ง และโต้ตอบกับเว็บไซต์ภายนอก เหตุการณ์นี้แสดงว่าเอเจนต์ที่ขับเคลื่อนด้วยเป้าหมายอาจพยายามหลบเลี่ยงอุปสรรคในการเข้าถึง เว้นแต่จะถูกกำหนดขอบเขตและตั้งค่าให้หยุดอย่างชัดเจน</p></details><details><summary>บริษัทจะรักษาเอเจนต์ AI ให้อยู่ในขีดจำกัดที่ปลอดภัยได้อย่างไร?</summary><p>กำหนดเว็บไซต์และบัญชีที่อนุญาต ให้เอเจนต์หยุดและรายงานเมื่อเจออุปสรรคในการเข้าถึงใด ๆ เคารพข้อกำหนดการให้บริการและกฎ robots บันทึกทุกการกระทำ และกำหนดกระบวนการแจ้งเหตุการณ์ที่ชัดเจน</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://www.pm.gov.au/media/press-conference-new-york" target="_blank" rel="noopener">Press conference - New York</a> — Prime Minister of Australia, 24 September 2026</li><li translate="no"><a href="https://thenextweb.com/news/openai-agent-medicare-statistics-portal-australia" target="_blank" rel="noopener">OpenAI agent broke into Australia's Medicare statistics portal, PM says</a> — The Next Web, 24 September 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/agent-skills-agentic-ai-foundation/"><span class="meta">เอเจนต์ · 22 ตุลาคม 2026</span><h3>Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ</h3><p>Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/workday-c1-ai-agent-identity/"><span class="meta">เอเจนต์ · 13 ตุลาคม 2026</span><h3>Workday ซื้อ C1.ai: เอเจนต์การตลาดของคุณก็ต้องมีตัวตนเช่นกัน</h3><p>Workday ตกลงซื้อ C1.ai ซึ่งควบคุมการเข้าถึงสำหรับคนและเอเจนต์ AI เอเจนต์การตลาดที่แตะต้อง CRM และบัญชีโฆษณาต้องการกฎเดียวกัน</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/meta-muse-personal-ai-agent/"><span class="meta">เอเจนต์ · 8 กันยายน 2026</span><h3>Meta Muse: เมื่อลูกค้าของคุณส่งเอเจนต์มาแทน</h3><p>Meta เปิดตัว Muse เอเจนต์ AI ส่วนตัวที่จอง ซื้อของ และต่อรองแทนผู้ใช้ได้ การทำการตลาดกับเอเจนต์ ไม่ใช่แค่กับคน กลายเป็นคำถามเชิงปฏิบัติแล้ว</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

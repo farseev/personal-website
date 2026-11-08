@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/agent-skills-agentic-ai-foundation/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ | Prof. Aleks Farseev" />
+<meta property="og:description" content="Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI" />
+<meta property="og:url" content="https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="เอเจนต์" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/#article","mainEntityOfPage":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/","url":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/","headline":"Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ","description":"Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"เอเจนต์","about":{"@type":"Thing","name":"Anthropic บริจาคมาตรฐานเปิด Agent Skills ให้กับ Agentic AI Foundation ภายใต้ Linux Foundation"},"wordCount":873,"citation":[{"@type":"CreativeWork","name":"Donating Agent Skills to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","publisher":"Anthropic","datePublished":"2026-10-22"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/#faq","mainEntity":[{"@type":"Question","name":"Agent Skill คืออะไร?","acceptedAnswer":{"@type":"Answer","text":"ตามที่ Anthropic ระบุ สกิลคือโฟลเดอร์ที่มีไฟล์ SKILL.md ซึ่งสอนเอเจนต์ AI ให้ทำงานหรือเข้าใจโดเมนเฉพาะ พร้อมสคริปต์หรือเอกสารอ้างอิงที่งานนั้นต้องใช้"}},{"@type":"Question","name":"ตอนนี้ใครดูแลมาตรฐาน Agent Skills?","acceptedAnswer":{"@type":"Answer","text":"Anthropic บริจาคมาตรฐาน ชื่อ โลโก้ องค์กรบน GitHub และโดเมน agentskills.io ให้กับ Agentic AI Foundation ภายใต้ Linux Foundation วิศวกรจาก Anthropic, Google, OpenAI และบริษัทอื่น ๆ ดูแลมาตรฐานนี้ในฐานะบุคคล"}},{"@type":"Question","name":"นักการตลาดจะใช้ Agent Skills ได้อย่างไร?","acceptedAnswer":{"@type":"Answer","text":"โดยเขียนขั้นตอนที่ทำซ้ำได้ เช่น บรีฟ การทบทวนคู่แข่ง หรือรายงานแคมเปญ พร้อมกฎของแบรนด์และตัวอย่าง เพื่อให้เอเจนต์ AI ในเครื่องมือต่าง ๆ ทำตามวิธีการของทีมเอง แทนที่จะใช้ค่าเริ่มต้นทั่วไป"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ","item":"https://farseev.com/th/blog/agent-skills-agentic-ai-foundation/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/agent-skills-agentic-ai-foundation/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/agent-skills-agentic-ai-foundation/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/agent-skills-agentic-ai-foundation/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/agent-skills-agentic-ai-foundation/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/agent-skills-agentic-ai-foundation/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/agent-skills-agentic-ai-foundation/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/agent-skills-agentic-ai-foundation/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · เอเจนต์</p>
+      <h1 class="h-display">Agent Skills เป็นกลางทางผู้ขาย: ทำไมนักการตลาดควรใส่ใจ</h1>
+      <p class="lead">Anthropic บริจาคมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ความรู้เชิงปฏิบัติที่เขียนไว้และพกพาได้คือสิ่งที่ทีมการตลาดต้องการจากเอเจนต์ AI</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: Anthropic บริจาคมาตรฐานเปิด Agent Skills ให้กับ Agentic AI Foundation ภายใต้ Linux Foundation (<time datetime="2026-10-22">22 ตุลาคม 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>ข่าว AI ที่สำคัญที่สุดบางเรื่องดูน่าเบื่อเมื่อมองผิวเผิน เมื่อวันที่ 22 ตุลาคม Anthropic ประกาศว่าจะส่งมอบมาตรฐาน Agent Skills ให้กับ Agentic AI Foundation ซึ่งเป็นองค์กรภายใต้ Linux Foundation ไม่มีโมเดลใหม่ ไม่มีเบนช์มาร์ก แต่หากคุณทำการตลาดด้วยเอเจนต์ AI นี่คือโครงสร้างพื้นฐานที่ตัดสินว่าความรู้ความชำนาญของคุณจะยังเป็นของคุณหรือไม่</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>ตาม<a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">โพสต์ของ Anthropic</a> สกิลคือ "โฟลเดอร์ที่มีไฟล์ SKILL.md ซึ่งสอนเอเจนต์ให้ทำงานหรือเข้าใจโดเมนเฉพาะ พร้อมสคริปต์หรือเอกสารอ้างอิงที่จำเป็น" Anthropic พัฒนารูปแบบนี้ขึ้นระหว่างสร้าง Claude Code เพราะเอเจนต์อเนกประสงค์มักขาดความรู้เชิงขั้นตอนที่งานธุรกิจจริงต้องการ บริษัทเปิดตัวสกิลในเดือนตุลาคม 2025 และเผยแพร่ Agent Skills เป็นมาตรฐานเปิดในเดือนธันวาคม 2025</p>
+<p>ตัวเลขการนำไปใช้นั้นสูงมาก Anthropic ระบุว่ามีแพลตฟอร์มเอเจนต์มากกว่า 70 แพลตฟอร์มที่ผสานรวม Agent Skills แล้ว รวมถึง ChatGPT, Cursor, GitHub Copilot และ VS Code และมีการเผยแพร่สกิลแล้ว 1 ล้านรายการ และติดตั้งเกือบ 280 ล้านครั้ง</p>
+<p>ตอนนี้ตัวมาตรฐาน ชื่อและโลโก้ องค์กรบน GitHub และโดเมน agentskills.io จะถูกโอนไปยัง Agentic AI Foundation (AAIF) ซึ่ง Anthropic ร่วมก่อตั้งกับ Block และ OpenAI และเคยบริจาค Model Context Protocol ให้มาก่อน วิศวกรจาก Anthropic, Google, OpenAI และบริษัทอื่น ๆ จะดูแลมาตรฐานนี้ในฐานะบุคคล แผนงานที่เสนอรวมถึงการออกเวอร์ชันตามลำดับ กระบวนการยื่นข้อเสนออย่างเป็นทางการ และแนวทางด้านความปลอดภัยสำหรับผู้ที่เขียนและติดตั้งสกิล</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>ทุกทีมการตลาดที่ผมรู้จักมีทรัพย์สินที่ซ่อนอยู่แบบเดียวกัน: วิธีทำงานของทีม วิธีเขียนบรีฟ คู่แข่งรายใดที่ตรวจสอบก่อน "ตรงกับแบรนด์" หมายถึงอะไรสำหรับลูกค้ารายนี้ในตลาดนี้ ทุกวันนี้สิ่งเหล่านั้นส่วนใหญ่อยู่ในหัวของคนและในสไลด์ที่ไม่มีใครอ่าน</p>
+<p>สกิลคือวิธีเขียนขั้นตอนนั้นลงไปเพื่อให้เอเจนต์ทำตามได้ และมาตรฐานที่เป็นกลางทางผู้ขายหมายความว่าคุณเขียนครั้งเดียวแล้วคาดหวังให้ใช้ได้กับเครื่องมือทุกตัวที่ทีมของคุณใช้ นั่นคือความแตกต่างระหว่างการสร้างบนแพลตฟอร์มกับการสร้างบนรูปแบบ รูปแบบอยู่ได้นานกว่าแพลตฟอร์ม</p>
+<p>ยังมีประโยชน์ประการที่สองที่เงียบกว่า สกิลอ่านได้ คุณเปิดโฟลเดอร์แล้วเห็นได้ว่าเอเจนต์ได้รับคำสั่งให้ทำอะไร ในวงการที่ "AI เป็นคนตัดสินใจ" กำลังกลายเป็นข้ออ้างทั่วไป ขั้นตอนที่เขียนเป็นข้อความธรรมดาคือความรับผิดชอบที่เล็กแต่มีอยู่จริง</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>ผมเคยเขียนใน Forbes ถึงบันไดขั้นตั้งแต่<a href="https://www.forbes.com/councils/forbestechcouncil/2025/02/28/prompting-fine-tuning-rag-and-ai-agents-for-future-marketing/" target="_blank" rel="noopener">การเขียนพรอมต์และการ fine-tune ไปจนถึง RAG และเอเจนต์ AI ในการตลาด</a> และถึง<a href="https://www.forbes.com/councils/forbestechcouncil/2025/07/22/18-powerful-applications-of-ai-agents-in-marketing/" target="_blank" rel="noopener">การประยุกต์ใช้เอเจนต์ AI ในการตลาด 18 รูปแบบ</a> รูปแบบที่ผมกลับมาพบเสมอคือ เอเจนต์ล้มเหลวไม่ใช่เพราะขาดความฉลาด แต่เพราะขาดบริบท: ข้อมูลเฉพาะและขั้นตอนเฉพาะสำหรับงานนั้น</p>
+<p>บทความล่าสุดของเราทำให้เรื่องนี้เป็นรูปธรรม ใน <a href="https://doi.org/10.1145/3805712.3808371" target="_blank" rel="noopener">SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization</a> (SIGIR 2026) เราอธิบายเอเจนต์แบบ retrieval-augmented ที่ช่วยมืออาชีพเขียนคอนเทนต์ LinkedIn ที่โดดเด่น แนวคิดหลักคือเอเจนต์ควรดึงข้อมูลบริบทจริงก่อนเขียน เพื่อให้ผลลัพธ์ยังคงโดดเด่น แทนที่จะลู่เข้าหาข้อความทั่วไปแบบเดียวกับที่เอเจนต์ของคนอื่นสร้าง</p>
+<p>สกิลคือฝาแฝดเชิงขั้นตอนของการดึงข้อมูล (retrieval) การดึงข้อมูลให้ข้อเท็จจริงแก่เอเจนต์ สกิลให้วิธีการ ทั้งสองต้านการทำให้ทุกอย่างเหมือนกัน เพราะทั้งสองใส่สิ่งที่เฉพาะตัวคุณเข้าไปในระบบที่หากไม่ทำเช่นนั้นจะใช้ค่าเฉลี่ยของอินเทอร์เน็ตเป็นค่าเริ่มต้น หากทุกแบรนด์ใช้เอเจนต์ตัวเดียวกันด้วยพฤติกรรมเริ่มต้นแบบเดียวกัน ทุกแบรนด์ก็จะฟังดูเหมือนกัน สกิลของคุณคือที่ที่ความแตกต่างของคุณอยู่</p>
+<h2>สิ่งที่ทีมการตลาดควรทำตอนนี้</h2>
+<ul><li>เขียนขั้นตอนสามอย่างที่คุณทำซ้ำทุกสัปดาห์ เช่น การตรวจสอบคู่แข่ง การสรุปบทเรียนหลังแคมเปญ หรือบรีฟงานครีเอทีฟ ให้เป็นคำแนะนำทีละขั้นตอนแบบธรรมดาพร้อมตัวอย่างผลงานที่ดี</li><li>แยกส่วนที่เฉพาะของแบรนด์ไว้ต่างหาก: น้ำเสียงของแบรนด์ ข้อกล่าวอ้างที่ห้ามใช้ ข้อจำกัดความรับผิดทางกฎหมาย ความแตกต่างของแต่ละตลาด สิ่งเหล่านี้คือส่วนที่ทำให้ผลงานเป็นของคุณ</li><li>จัดการเวอร์ชัน เมื่อขั้นตอนเปลี่ยน พฤติกรรมของเอเจนต์ก็เปลี่ยน ปฏิบัติต่อสกิลเหมือนโค้ด มีผู้รับผิดชอบและบันทึกการเปลี่ยนแปลง</li><li>ตรวจสอบความปลอดภัยก่อนติดตั้งสกิลจากบุคคลที่สาม สกิลอาจมีสคริปต์รวมอยู่ด้วย แผนงานด้านธรรมาภิบาลใหม่จึงกล่าวถึงแนวทางด้านความปลอดภัยด้วยเหตุนี้ จนกว่าจะมีแนวทางนั้น ให้อ่านสิ่งที่คุณติดตั้ง</li><li>วัดความโดดเด่น ไม่ใช่แค่ความเร็ว หากคอนเทนต์ที่เอเจนต์เขียนเริ่มดูเหมือนของคู่แข่ง แสดงว่าบริบทของคุณบางเกินไป</li></ul>
+<p>มาตรฐานเปิดไม่น่าตื่นเต้นจนกว่าคุณจะต้องเปลี่ยนเครื่องมือ เมื่อวันนั้นมาถึง ทีมที่เขียนความรู้ความชำนาญไว้ในรูปแบบที่พกพาได้จะย้ายได้ภายในหนึ่งสัปดาห์ ทีมอื่นจะต้องเริ่มใหม่</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>Agent Skill คืออะไร?</summary><p>ตามที่ Anthropic ระบุ สกิลคือโฟลเดอร์ที่มีไฟล์ SKILL.md ซึ่งสอนเอเจนต์ AI ให้ทำงานหรือเข้าใจโดเมนเฉพาะ พร้อมสคริปต์หรือเอกสารอ้างอิงที่งานนั้นต้องใช้</p></details><details><summary>ตอนนี้ใครดูแลมาตรฐาน Agent Skills?</summary><p>Anthropic บริจาคมาตรฐาน ชื่อ โลโก้ องค์กรบน GitHub และโดเมน agentskills.io ให้กับ Agentic AI Foundation ภายใต้ Linux Foundation วิศวกรจาก Anthropic, Google, OpenAI และบริษัทอื่น ๆ ดูแลมาตรฐานนี้ในฐานะบุคคล</p></details><details><summary>นักการตลาดจะใช้ Agent Skills ได้อย่างไร?</summary><p>โดยเขียนขั้นตอนที่ทำซ้ำได้ เช่น บรีฟ การทบทวนคู่แข่ง หรือรายงานแคมเปญ พร้อมกฎของแบรนด์และตัวอย่าง เพื่อให้เอเจนต์ AI ในเครื่องมือต่าง ๆ ทำตามวิธีการของทีมเอง แทนที่จะใช้ค่าเริ่มต้นทั่วไป</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a> — Anthropic, 22 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/workday-c1-ai-agent-identity/"><span class="meta">เอเจนต์ · 13 ตุลาคม 2026</span><h3>Workday ซื้อ C1.ai: เอเจนต์การตลาดของคุณก็ต้องมีตัวตนเช่นกัน</h3><p>Workday ตกลงซื้อ C1.ai ซึ่งควบคุมการเข้าถึงสำหรับคนและเอเจนต์ AI เอเจนต์การตลาดที่แตะต้อง CRM และบัญชีโฆษณาต้องการกฎเดียวกัน</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/openai-agent-medicare-portal-australia/"><span class="meta">เอเจนต์ · 24 กันยายน 2026</span><h3>เอเจนต์ AI ที่ไม่ยอมรับคำปฏิเสธ</h3><p>นายกรัฐมนตรีออสเตรเลียกล่าวว่าเอเจนต์วิจัยของ OpenAI หลบเลี่ยงการปิดกั้นบนพอร์ทัลสถิติ Medicare บทเรียนสำหรับเอเจนต์การตลาดคือเรื่องขอบเขต</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/meta-muse-personal-ai-agent/"><span class="meta">เอเจนต์ · 8 กันยายน 2026</span><h3>Meta Muse: เมื่อลูกค้าของคุณส่งเอเจนต์มาแทน</h3><p>Meta เปิดตัว Muse เอเจนต์ AI ส่วนตัวที่จอง ซื้อของ และต่อรองแทนผู้ใช้ได้ การทำการตลาดกับเอเจนต์ ไม่ใช่แค่กับคน กลายเป็นคำถามเชิงปฏิบัติแล้ว</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>

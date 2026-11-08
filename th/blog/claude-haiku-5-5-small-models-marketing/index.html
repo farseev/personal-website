@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด | Prof. Aleks Farseev</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EVX69SN1TT"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EVX69SN1TT');
+/* Same events as the home page: contact_click, venture_click, publication_click, social_click; plus source_click
+   (links in an article's Sources list) and language_switch (language menu). No cookies are set here. */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+ function ev(n,p){try{gtag('event',n,p)}catch(_){}}
+ var sx=a.closest('[data-sec]'),sec=sx?sx.getAttribute('data-sec'):'page';
+ if(/^mailto:|^tel:/.test(h))return ev('contact_click',{method:h.slice(0,h.indexOf(':')),section:sec});
+ var host=(h.match(/^https?:\/\/(?:www\.)?([^\/]+)/)||[])[1]||'';if(!host||host==='farseev.com')return;
+ if(a.closest('.sources'))return ev('source_click',{destination:host,section:'sources'});
+ if(/somin\.ai|accordion\.sg|faithdriven\.sg|orthodox\.sg|touchigh\.ai|defygroup\.ai|fg\.ventures/.test(host))return ev('venture_click',{destination:host,section:sec});
+ if(/scholar\.google|acm\.org|doi\.org|arxiv\.org|forbes\.com|e27\.co|saltandlight|ceoinsightsasia|crunchbase|acmmm/.test(host))return ev('publication_click',{destination:host,section:sec});
+ if(/linkedin|youtube|youtu\.be|instagram|facebook|x\.com|twitter/.test(host))return ev('social_click',{destination:host,section:sec});
+},true);</script>
+<meta name="description" content="Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด" />
+<meta name="author" content="Prof. Aleks Farseev" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0E1614" />
+<link rel="canonical" href="https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="en" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://farseev.com/zh-hans/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://farseev.com/zh-hant/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ja" href="https://farseev.com/ja/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ko" href="https://farseev.com/ko/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="th" href="https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="hi" href="https://farseev.com/hi/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="ru" href="https://farseev.com/ru/blog/claude-haiku-5-5-small-models-marketing/" />
+<link rel="alternate" hreflang="x-default" href="https://farseev.com/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Prof. Aleks Farseev" />
+<meta property="og:title" content="Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด | Prof. Aleks Farseev" />
+<meta property="og:description" content="Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด" />
+<meta property="og:url" content="https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/" />
+<meta property="og:image" content="https://farseev.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Prof. Aleks Farseev — ข่าว AI อธิบายให้เข้าใจ" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="article:published_time" content="2026-11-08" />
+<meta property="article:author" content="https://farseev.com/" />
+<meta property="article:section" content="โมเดล" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด | Prof. Aleks Farseev" />
+<meta name="twitter:description" content="Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด" />
+<meta name="twitter:image" content="https://farseev.com/og-image.png" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/#article","mainEntityOfPage":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/","url":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/","headline":"Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด","description":"Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด","image":"https://farseev.com/og-image.png","inLanguage":"th","datePublished":"2026-11-08","dateModified":"2026-11-08","author":{"@id":"https://farseev.com/#person"},"publisher":{"@id":"https://farseev.com/#person"},"isPartOf":{"@id":"https://farseev.com/th/blog/#blog"},"articleSection":"โมเดล","about":{"@type":"Thing","name":"Anthropic เปิดตัว Claude Haiku 5.5 โมเดลขนาดเล็กสำหรับงานปริมาณมากที่คำนึงถึงต้นทุน"},"wordCount":875,"citation":[{"@type":"CreativeWork","name":"Introducing Claude Haiku 5.5","url":"https://www.anthropic.com/claude-haiku-5-5","publisher":"Anthropic","datePublished":"2026-10-07"}]},{"@type":"FAQPage","@id":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/#faq","mainEntity":[{"@type":"Question","name":"Claude Haiku 5.5 ออกแบบมาเพื่ออะไร?","acceptedAnswer":{"@type":"Answer","text":"Anthropic วางตำแหน่งไว้สำหรับงานปริมาณมากที่คำนึงถึงต้นทุน เช่น การสรุป การจัดหมวดหมู่ การสืบค้นฐานข้อมูล การบริการลูกค้าแบบสด การใช้เบราว์เซอร์ และงานแบบ subagent ขณะที่แนะนำ Sonnet 5.5 และ Opus 5.5 สำหรับการเขียนโค้ดแบบเอเจนต์ที่ซับซ้อน"}},{"@type":"Question","name":"Claude Haiku 5.5 ราคาเท่าไร?","acceptedAnswer":{"@type":"Answer","text":"Anthropic กำหนดราคา US$0.10 ต่อล้านโทเค็นอินพุต และ US$0.50 ต่อล้านโทเค็นเอาต์พุต สำหรับพรอมต์ไม่เกิน 100,000 โทเค็น และระบุว่ามีต้นทุนต่ำกว่า Haiku 4.5 ประมาณ 75% โดยเฉลี่ย"}},{"@type":"Question","name":"โมเดลภาษาขนาดเล็กดีพอสำหรับงานการตลาดหรือไม่?","acceptedAnswer":{"@type":"Answer","text":"สำหรับงานปริมาณมากหลายอย่าง เช่น การติดแท็ก การสรุป และการส่งต่องาน โมเดลขนาดเล็กที่เลือกมาอย่างดีก็เพียงพอและถูกกว่ามาก ทดสอบกับตัวอย่างที่ติดป้ายกำกับของคุณเอง และเก็บโมเดลคาดการณ์เฉพาะทางไว้สำหรับงานอย่างการให้คะแนนครีเอทีฟ โดยใช้ LLM อธิบายผลลัพธ์ของมัน"}}]},{"@type":"BreadcrumbList","@id":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://farseev.com/th/"},{"@type":"ListItem","position":2,"name":"ข่าว AI","item":"https://farseev.com/th/blog/"},{"@type":"ListItem","position":3,"name":"Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด","item":"https://farseev.com/th/blog/claude-haiku-5-5-small-models-marketing/"}]},{"@type":"Person","@id":"https://farseev.com/#person","name":"Aleks Farseev","url":"https://farseev.com/th/","jobTitle":"ผู้ก่อตั้งและซีอีโอของ SOMIN.ai ศาสตราจารย์รับเชิญด้าน AI","sameAs":["https://www.linkedin.com/in/aiprof/","https://scholar.google.com/citations?user=ZJW7F18AAAAJ&hl=en"]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/blog.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="/th/" class="mark" aria-label="Aleks Farseev — home" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="หลัก"><a href="/th/#about">เกี่ยวกับ</a><a href="/th/#research">งานวิจัย</a><a href="/th/blog/" aria-current="page">ข่าว AI</a><a href="/th/#talks">การบรรยาย</a><a href="/th/#connect">ติดต่อ</a></nav>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" aria-label="ภาษา" translate="no"><option value="en" lang="en" data-href="/blog/claude-haiku-5-5-small-models-marketing/">English</option><option value="zh-hans" lang="zh-Hans" data-href="/zh-hans/blog/claude-haiku-5-5-small-models-marketing/">简体中文</option><option value="zh-hant" lang="zh-Hant" data-href="/zh-hant/blog/claude-haiku-5-5-small-models-marketing/">繁體中文</option><option value="ja" lang="ja" data-href="/ja/blog/claude-haiku-5-5-small-models-marketing/">日本語</option><option value="ko" lang="ko" data-href="/ko/blog/claude-haiku-5-5-small-models-marketing/">한국어</option><option value="th" lang="th" selected>ไทย</option><option value="hi" lang="hi" data-href="/hi/blog/claude-haiku-5-5-small-models-marketing/">हिन्दी</option><option value="ru" lang="ru" data-href="/ru/blog/claude-haiku-5-5-small-models-marketing/">Русский</option></select>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <header class="band on-dark" data-sec="article-header">
+    <div class="read">
+      <nav class="crumbs" aria-label="เส้นทางนำทาง"><ol><li><a href="/th/">หน้าแรก</a></li><li><a href="/th/blog/">ข่าว AI</a></li><li aria-current="page">Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด</li></ol></nav>
+      <p class="eyebrow">ข่าว AI อธิบายให้เข้าใจ · โมเดล</p>
+      <h1 class="h-display">Claude Haiku 5.5 และเหตุผลที่โมเดลเล็กสำคัญต่อการตลาด</h1>
+      <p class="lead">Claude Haiku 5.5 ของ Anthropic สร้างมาสำหรับงานปริมาณมากที่ถูกและเร็ว เหตุใดโมเดลที่เล็กที่สุดในตระกูลจึงมักสำคัญที่สุดสำหรับนักการตลาด</p>
+      <p class="newsline"><span class="loc-dot"></span><span>ข่าว: Anthropic เปิดตัว Claude Haiku 5.5 โมเดลขนาดเล็กสำหรับงานปริมาณมากที่คำนึงถึงต้นทุน (<time datetime="2026-10-07">7 ตุลาคม 2026</time>)</span></p>
+      <p class="byline"><span>โดย <b>Prof. Aleks Farseev</b></span><span class="dot"></span><time datetime="2026-11-08">8 พฤศจิกายน 2026</time><span class="dot"></span><span>อ่าน 4 นาที</span></p>
+    </div>
+  </header>
+  <div class="post" data-sec="article">
+    <div class="read">
+<p>การเปิดตัวโมเดลทุกครั้งถูกวัดเทียบกับโมเดลที่ใหญ่ที่สุดในห้อง ผมคิดว่านั่นเป็นมุมมองที่ผิดสำหรับงานการตลาดส่วนใหญ่ เมื่อวันที่ 7 ตุลาคม Anthropic เปิดตัว Claude Haiku 5.5 และส่วนที่น่าสนใจไม่ใช่ว่ามันใกล้แนวหน้าแค่ไหน แต่คือต้นทุนในการรันมันหนึ่งล้านครั้ง</p>
+<h2>เกิดอะไรขึ้น</h2>
+<p>Anthropic เรียก Haiku 5.5 ว่าเป็น<a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">โมเดลขนาดเล็กที่ถูกที่สุด เร็วที่สุด และมีความสามารถมากที่สุดเท่าที่บริษัทเคยเปิดตัว</a> มุ่งเป้าไปที่งานปริมาณมากที่คำนึงถึงต้นทุน: การสรุป การจัดหมวดหมู่ การสืบค้นฐานข้อมูล การบริการลูกค้าแบบสด การใช้เบราว์เซอร์ และงานแบบ subagent ควบคู่กับโมเดล Opus 5.5 และ Sonnet 5.5 ที่ใหญ่กว่า เป็นโมเดลระดับ Haiku ตัวแรกที่มีการตั้งค่าระดับความพยายามที่ปรับได้ ผู้ใช้จึงชั่งต้นทุนกับความฉลาดได้ Anthropic ระบุชัดเจนว่า Sonnet 5.5 และ Opus 5.5 ยังดีกว่าสำหรับการเขียนโค้ดแบบเอเจนต์ที่ซับซ้อน</p>
+<p>ราคาคือพาดหัว สำหรับพรอมต์ไม่เกิน 100,000 โทเค็น Anthropic กำหนดราคา US$0.10 ต่อล้านโทเค็นอินพุต และ US$0.50 ต่อล้านโทเค็นเอาต์พุต และระบุว่า Haiku 5.5 มีต้นทุนต่ำกว่า Haiku 4.5 ประมาณ 75% โดยเฉลี่ย หน้าเปิดตัวยังมีรายงานจากลูกค้า เช่น HubSpot ระบุว่าได้คะแนน 92.8% ในชุดประเมิน CRM ของตน ตัวเลขเหล่านี้เป็นของบริษัทและลูกค้า ไม่ใช่การทดสอบอิสระ</p>
+<h2>ทำไมเรื่องนี้จึงสำคัญ</h2>
+<p>AI เพื่อการตลาดเป็นธุรกิจเชิงปริมาณ แคมเปญเดียวอาจมีครีเอทีฟหลายพันเวอร์ชัน ความคิดเห็นหลายหมื่นรายการที่ต้องจัดหมวดหมู่ ฟีดสินค้าหลายแสนแถว และรายงานรายวันในหลายสิบตลาด แทบไม่มีงานใดในนั้นที่ต้องใช้โมเดลที่ทรงพลังที่สุด แต่ต้องการโมเดลที่ดีพอ เร็ว คาดเดาได้ และถูกพอที่จะรันกับทุกอย่าง</p>
+<p>เมื่อโมเดลเล็กดีขึ้นมากและถูกลงมากในเวลาเดียวกัน เศรษฐศาสตร์ของสิ่งที่คุณทำอัตโนมัติก็เปลี่ยนไป งานที่เคยแพงเกินกว่าจะรันกับทุกรายการ เช่น การติดแท็กโฆษณาของคู่แข่งทุกชิ้น หรือการสรุปรีวิวลูกค้าทุกรายการ กลายเป็นงานประจำ และสถาปัตยกรรมก็เปลี่ยน: โมเดลใหญ่วางแผนและตัดสิน โมเดลเล็กทำงานซ้ำ ๆ อยู่เบื้องล่าง คำอธิบายของ Anthropic เองที่ให้ Haiku เป็น subagent คือรูปแบบนั้นพอดี</p>
+<h2>งานวิจัยของผมบอกอะไร</h2>
+<p>ผมเสนอเรื่องนี้มานานแล้ว ใน Forbes ผมตั้งคำถามว่า<a href="https://www.forbes.com/councils/forbestechcouncil/2023/02/17/is-bigger-better-why-the-chatgpt-vs-gpt-3-vs-gpt-4-battle-is-just-a-family-chat/" target="_blank" rel="noopener">ใหญ่กว่าดีกว่าหรือไม่</a> และต่อมาได้เปรียบเทียบ<a href="https://www.forbes.com/councils/forbestechcouncil/2024/07/31/llms-vs-small-neural-networks-in-marketing-is-bigger-always-better-or-is-it-about-the-technique/" target="_blank" rel="noopener">LLM กับโครงข่ายประสาทเทียมขนาดเล็กในการตลาด</a> คำตอบของผมไม่เปลี่ยน: ขนาดของโมเดลสำคัญน้อยกว่าเทคนิคและความเหมาะสมกับงานมาก</p>
+<p>งานวิจัยของเราผสานโมเดลทั้งสองแบบเข้าด้วยกันเสมอแทนที่จะเลือกอย่างใดอย่างหนึ่ง ใน <a href="https://doi.org/10.1145/3539597.3573032" target="_blank" rel="noopener">SoCraft</a> (WSDM 2023) เราสาธิตโมเดลมัลติโมดัลที่ให้คะแนนครีเอทีฟโฆษณา Meta ของผู้ลงโฆษณาก่อนเปิดตัว โดยใช้ข้อความ รูปภาพ การกำหนดเป้าหมาย และการตั้งค่า ใน <a href="https://doi.org/10.1145/3725885" target="_blank" rel="noopener">Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing</a> (ACM Transactions on Information Systems, 2025) เราจับคู่โมเดลคาดการณ์ประสิทธิภาพโฆษณาเข้ากับ LLM เพื่อให้คะแนนครีเอทีฟกลายเป็นคำแนะนำที่นักการตลาดนำไปปฏิบัติได้</p>
+<p>บทเรียนจากงานนั้นคือ โมเดลเฉพาะทางที่มีประสิทธิภาพทำหน้าที่วัด และโมเดลภาษาขนาดใหญ่ทำหน้าที่อธิบาย LLM ขนาดเล็กที่ถูกกว่าและเก่งกว่าไม่ได้มาแทนที่ตัวคาดการณ์เฉพาะทาง แต่ทำให้ชั้นการอธิบายและการประสานงานมีต้นทุนที่จ่ายได้ในระดับที่การตลาดเกิดขึ้นจริง</p>
+<h2>ผมจะใช้โมเดลแบบนี้อย่างไร</h2>
+<ul><li>จัดหมวดหมู่แบบครอบคลุมทั้งหมด ติดแท็กโพสต์คู่แข่งทุกโพสต์ รีวิวทุกรายการ โฆษณาทุกชิ้นในหมวดหมู่ของคุณตามธีม ข้อเสนอ และรูปแบบ แทนการสุ่มตัวอย่าง</li><li>สรุปรอบแรก เปลี่ยนรายงานยาว ๆ บทถอดความ และเธรดความคิดเห็นให้เป็นสรุปสั้น ๆ ที่คนหรือโมเดลที่ใหญ่กว่าตรวจทาน</li><li>Subagent ในไปป์ไลน์ ให้โมเดลที่ใหญ่กว่าวางแผนการวิเคราะห์คู่แข่ง แล้วส่งขั้นตอนการดึงข้อมูลซ้ำ ๆ ให้โมเดลเล็ก</li><li>ความเร็วในการให้บริการลูกค้า ใช้โมเดลที่เร็วในจุดที่ความหน่วงสำคัญ เช่น แชตสด และส่งกรณียากไปยังโมเดลที่แข็งแกร่งกว่าหรือมนุษย์</li></ul>
+<h2>สิ่งที่นักการตลาดควรตรวจสอบก่อนเปลี่ยน</h2>
+<ul><li>ทำการประเมินของคุณเอง เบนช์มาร์กของผู้ขายไม่ใช่งานของคุณ นำตัวอย่างจริง 200 รายการจากงานของคุณมาติดป้ายกำกับ และเปรียบเทียบโมเดลกับชุดข้อมูลนั้น</li><li>ดูต้นทุนต่องาน ไม่ใช่ต้นทุนต่อโทเค็น Anthropic ระบุว่า Haiku 5.5 ใช้ tokenizer ใหม่และใช้โทเค็นต่องานมากขึ้นเล็กน้อย ค่าใช้จ่ายขึ้นอยู่กับเวิร์กโฟลว์ทั้งหมด</li><li>ใช้การตั้งค่าระดับความพยายามอย่างตั้งใจ ตั้งค่าเริ่มต้นเป็นระดับต่ำสำหรับการติดแท็กง่าย ๆ และเพิ่มเฉพาะในจุดที่การประเมินของคุณแสดงว่าคุณภาพดีขึ้น</li><li>เก็บโมเดลเฉพาะทางไว้ในจุดที่มันดีกว่า หากคุณมีโมเดลที่ฝึกด้วยข้อมูลประสิทธิภาพของคุณเองอยู่แล้ว LLM ควรอธิบายผลลัพธ์ของมัน ไม่ใช่แทนที่มัน</li></ul>
+<p>แนวหน้าได้พาดหัวข่าว แต่โมเดลเล็กคือที่ที่งานส่วนใหญ่และการประหยัดส่วนใหญ่จะเกิดขึ้น</p>
+<h2 id="faq">คำถามที่พบบ่อย</h2>
+<div class="faq"><details><summary>Claude Haiku 5.5 ออกแบบมาเพื่ออะไร?</summary><p>Anthropic วางตำแหน่งไว้สำหรับงานปริมาณมากที่คำนึงถึงต้นทุน เช่น การสรุป การจัดหมวดหมู่ การสืบค้นฐานข้อมูล การบริการลูกค้าแบบสด การใช้เบราว์เซอร์ และงานแบบ subagent ขณะที่แนะนำ Sonnet 5.5 และ Opus 5.5 สำหรับการเขียนโค้ดแบบเอเจนต์ที่ซับซ้อน</p></details><details><summary>Claude Haiku 5.5 ราคาเท่าไร?</summary><p>Anthropic กำหนดราคา US$0.10 ต่อล้านโทเค็นอินพุต และ US$0.50 ต่อล้านโทเค็นเอาต์พุต สำหรับพรอมต์ไม่เกิน 100,000 โทเค็น และระบุว่ามีต้นทุนต่ำกว่า Haiku 4.5 ประมาณ 75% โดยเฉลี่ย</p></details><details><summary>โมเดลภาษาขนาดเล็กดีพอสำหรับงานการตลาดหรือไม่?</summary><p>สำหรับงานปริมาณมากหลายอย่าง เช่น การติดแท็ก การสรุป และการส่งต่องาน โมเดลขนาดเล็กที่เลือกมาอย่างดีก็เพียงพอและถูกกว่ามาก ทดสอบกับตัวอย่างที่ติดป้ายกำกับของคุณเอง และเก็บโมเดลคาดการณ์เฉพาะทางไว้สำหรับงานอย่างการให้คะแนนครีเอทีฟ โดยใช้ LLM อธิบายผลลัพธ์ของมัน</p></details></div>
+<section class="sources" aria-labelledby="sources-h"><h2 id="sources-h">แหล่งที่มา</h2><ol><li translate="no"><a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Introducing Claude Haiku 5.5</a> — Anthropic, 7 October 2026</li></ol></section>
+<div class="author"><div class="av" aria-hidden="true" translate="no">AF</div><div>
+<p><b>Prof. Aleks Farseev</b> เป็นผู้ก่อตั้งและซีอีโอของ SOMIN.ai และศาสตราจารย์รับเชิญด้าน AI ที่ NUS และ INSEAD งานวิจัยที่ผ่านการพิชญพิจารณ์ของเขาครอบคลุมการสร้างโปรไฟล์ผู้ใช้จากหลายแหล่ง การแนะนำที่คำนึงถึงบุคลิกภาพ และ AI ที่อธิบายได้สำหรับการตลาด</p>
+<p class="links"><a href="/th/">เกี่ยวกับ Aleks</a><a href="/th/#publications">ผลงานตีพิมพ์</a><a href="/th/blog/">ข่าว AI เพิ่มเติม</a></p>
+</div></div>
+    </div>
+  </div>
+</article>
+<section class="section section--mist related" aria-labelledby="related-h" data-sec="related">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">อ่านต่อ</p><h2 class="h-display" id="related-h" style="font-size:clamp(1.5rem,3vw,2.1rem)">ข่าว AI เพิ่มเติม อธิบายให้เข้าใจ</h2></div>
+    <div class="cards-3"><a class="pcard" href="/th/blog/gemini-4-argon-long-horizon-ai/"><span class="meta">โมเดล · 30 กันยายน 2026</span><h3>Gemini 4 Argon: เอาต์พุตล้านโทเค็น แล้วอย่างไรต่อ?</h3><p>Gemini 4 Argon ของ Google DeepMind มาพร้อมขีดจำกัดเอาต์พุต 1M โทเค็นและการเปิดตัวที่เน้นงานไซเบอร์เป็นอันดับแรก AI ระยะยาวเปลี่ยนอะไรในงานการตลาด และไม่เปลี่ยนอะไร</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/gpt-6-1-astra-cancelled-safety/"><span class="meta">โมเดล · 29 กันยายน 2026</span><h3>ทำไม OpenAI จึงพักการเปิดตัว GPT-6.1 Astra และทำไมจึงสำคัญ</h3><p>OpenAI ยกเลิกการเปิดตัว GPT-6.1 Astra หลังการทดสอบพบปัญหาด้านขอบเขต การอนุญาต และวิธีรายงานผลกลับ การทดสอบเดียวกันนี้ใช้กับเอเจนต์ของคุณได้</p><span class="go">อ่าน →</span></a><a class="pcard" href="/th/blog/claude-opus-5-5-watermarking-eu-ai-act/"><span class="meta">โมเดล · 22 กันยายน 2026</span><h3>Claude Opus 5.5: ลายน้ำ การตรวจสอบ และป้ายกำกับคอนเทนต์ AI</h3><p>Claude Opus 5.5 ของ Anthropic มาพร้อมลายน้ำเพื่อให้สอดคล้องกับ EU AI Act และข้อสังเกตว่าโมเดลมักสงสัยว่ากำลังถูกทดสอบ ทั้งสองเรื่องสำคัญต่อนักการตลาด</p><span class="go">อ่าน →</span></a></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-sec="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="mark" translate="no"><span class="a">Aleks&nbsp;</span><span class="b">Farseev</span></div>
+        <p class="foot-tag">ซีอีโอด้าน GenAI ศาสตราจารย์ด้าน AI ผู้บรรยายหลัก และนักแอคคอร์เดียน เชื่อมงานวิจัยเชิงลึกเข้ากับการตลาดในโลกจริง จากสิงคโปร์สู่ทั่วโลก</p>
+      </div>
+      <div>
+        <h6>สำรวจ</h6>
+        <ul>
+          <li><a href="/th/">หน้าแรก</a></li>
+          <li><a href="/th/blog/">บล็อกข่าว AI</a></li>
+          <li><a href="/th/#research">งานวิจัย</a></li>
+          <li><a href="/th/#publications">ผลงานตีพิมพ์</a></li>
+          <li><a href="/th/#connect">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>ช่องทางอื่น</h6>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/aiprof/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=ZJW7F18AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://www.forbes.com/councils/forbestechcouncil/people/aleksfarseev/" target="_blank" rel="noopener">Forbes</a></li>
+          <li><a href="https://somin.ai/" target="_blank" rel="noopener">SOMIN.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2026</span> Aleks Farseev · <span translate="no">法信夫</span></span>
+      <span>ความเห็นเป็นของผมเอง ข้อเท็จจริงในข่าวลิงก์ไปยังแหล่งที่มา</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');
+  if(b&&n){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});}
+  var y=document.getElementById('yr');if(y){y.textContent=new Date().getFullYear();}
+  var s=document.getElementById('langSelect');
+  if(s){s.addEventListener('change',function(){var o=this.options[this.selectedIndex],h=o.getAttribute('data-href');
+    try{gtag('event','language_switch',{language:o.value,from:document.documentElement.lang})}catch(_){}
+    if(h){location.href=h;}});}
+})();
+</script>
+</body>
+</html>
